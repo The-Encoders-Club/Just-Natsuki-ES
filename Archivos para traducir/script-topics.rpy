@@ -1402,7 +1402,7 @@ translate spanish talk_did_you_have_pets_754202e0:
 translate spanish talk_did_you_have_pets_27cc23a3:
 
     # n 3fchbll "Love you too,{w=0.2} [player]~!"
-    n 3fchbll "¡Yo también te amo, {w=0.2}[player]~!"
+    n 3fchbll "¡Yo también te amo, {w=0.2}[player]~! "
 
 # game/script-topics.rpy:465
 translate spanish talk_did_you_have_pets_754202e0_1:
@@ -1462,7 +1462,7 @@ translate spanish talk_did_you_have_pets_7956cdf6:
 translate spanish talk_did_you_have_pets_b4340ed4:
 
     # extend 3fcsbg " {i}color{/i} me surprised!"
-    extend 3fcsbg "¡{i}Que{/i} me sorprenda!"
+    extend 3fcsbg "¡{i}que{/i} me sorprenda! "
 
 # game/script-topics.rpy:477
 translate spanish talk_did_you_have_pets_849deea0:
