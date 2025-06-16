@@ -322,7 +322,7 @@ translate spanish talk_did_you_have_pets_d6bc6058:
 translate spanish talk_did_you_have_pets_c3a86cb2:
 
     # extend 7csrfl " now that I think about it..."
-    extend 7csrfl " ahora que lo pienso..."
+    extend 7csrfl "ahora que lo pienso..."
 
 # game/script-topics.rpy:151
 translate spanish talk_did_you_have_pets_6b431c32:
@@ -334,7 +334,7 @@ translate spanish talk_did_you_have_pets_6b431c32:
 translate spanish talk_did_you_have_pets_ba3e73eb:
 
     # extend 4clremsbl " L-{w=0.2}let alone all the stuff I'd need to actually keep it here!"
-    extend 4clremsbl "Y no hablemos de todo lo que necesitaría para mantenerlo aquí en realidad."
+    extend 4clremsbl "Y-{w=0.2}Y no hablemos de todo lo que necesitaría para mantenerlo aquí en realidad."
 
 # game/script-topics.rpy:153
 translate spanish talk_did_you_have_pets_f4b25088:
@@ -406,7 +406,7 @@ translate spanish talk_did_you_have_pets_c75b8a37:
 translate spanish talk_did_you_have_pets_545ea6fb:
 
     # extend 5cllpu " That's..."
-    extend 5cllpu " Eso es..."
+    extend 5cllpu "Eso es..."
 
 # game/script-topics.rpy:174
 translate spanish talk_did_you_have_pets_d04821e8:
@@ -460,7 +460,7 @@ translate spanish talk_did_you_have_pets_78db66f3:
 translate spanish talk_did_you_have_pets_e3609b9e:
 
     # n 7kcsflsbr "I don't know,{w=0.2} [player].{w=0.75}{nw}"
-    n 7kcsflsbr "No lo sé, {w=0.2}[player]. {w=0.75}{nw}"
+    n 7kcsflsbr "No lo sé, {w=0.2}[player].{w=0.75}{nw}"
 
 # game/script-topics.rpy:185
 translate spanish talk_did_you_have_pets_35275a30:
@@ -664,7 +664,7 @@ translate spanish talk_did_you_have_pets_5d092bc8:
 translate spanish talk_did_you_have_pets_9541af7f:
 
     # extend 2flrwr " I was never allowed anything!{w=0.75}{nw}"
-    extend 2flrwr "¡Nunca me permitieron nada! {w=0.75}{nw}"
+    extend 2flrwr "¡nunca me permitieron nada! {w=0.75}{nw}"
 
 # game/script-topics.rpy:242
 translate spanish talk_did_you_have_pets_098ee717:
@@ -1084,7 +1084,7 @@ translate spanish talk_did_you_have_pets_c785b988:
 translate spanish talk_did_you_have_pets_058a22a7:
 
     # extend 4ksqsll " Okay?"
-    extend 4ksqsll "¿Okay?"
+    extend 4ksqsll "¿Okey?"
 
 # game/script-topics.rpy:375
 translate spanish talk_did_you_have_pets_b0f7abee:
@@ -1174,7 +1174,7 @@ translate spanish talk_did_you_have_pets_48e419b1:
 translate spanish talk_did_you_have_pets_0dd5b7b9:
 
     # n 4ccsemsbr "W-{w=0.2}wait.{w=0.75}{nw}"
-    n 4ccsemsbr "E-{w=0.2}Epera. {w=0.75}{nw}"
+    n 4ccsemsbr "E-{w=0.2}Espera. {w=0.75}{nw}"
 
 # game/script-topics.rpy:408
 translate spanish talk_did_you_have_pets_8861a02d:
