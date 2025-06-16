@@ -4,7 +4,7 @@
 translate spanish joke_clock_eating_f8e24eb8:
 
     # n 1fcsbg "Hey,{w=0.2} [player]..."
-    n 1fcsbg "Ey,{w=0.2} [player]..."
+    n 1fcsbg "Hey, {w=0.2}[player]..."
 
 # game/script-jokes.rpy:592
 translate spanish joke_clock_eating_ee8b2e38:
@@ -28,7 +28,7 @@ translate spanish joke_clock_eating_41f30f1b:
 translate spanish joke_clock_eating_781a841a:
 
     # n 1ullaj "Well,{w=0.2} I can't say I blame you."
-    n 1ullaj "Bueno,{w=0.2} no puedo decir que te culpe."
+    n 1ullaj "Bueno, {w=0.2}no puedo decir que te culpe."
 
 # game/script-jokes.rpy:596
 translate spanish joke_clock_eating_67b3b9d8:
@@ -76,7 +76,7 @@ translate spanish joke_anime_animated_29975a2e:
 translate spanish joke_anime_animated_590db1a0:
 
     # extend 1fsqbg " {i}anime{/i}{w=0.75}-ted?"
-    extend 1fsqbg "{i}¿animado{/i}{w=0.75}-res?"
+    extend 1fsqbg "{i}animado{/i}-{w=0.75}res?"
 
 # game/script-jokes.rpy:612
 translate spanish joke_pirate_shower_967fb58e:
@@ -148,7 +148,7 @@ translate spanish joke_cinderella_soccer_f0d3981d:
 translate spanish joke_blind_fish_c70d8b42:
 
     # n 1fcsaj "Alright,{w=0.2} [player]..."
-    n 1fcsaj "Bueno, {w=0.2}[player]..."
+    n 1fcsaj "De acuerdo, {w=0.2}[player]..."
 
 # game/script-jokes.rpy:632
 translate spanish joke_blind_fish_6666b1bb:
@@ -166,7 +166,7 @@ translate spanish joke_blind_fish_d9765246:
 translate spanish joke_blind_fish_259c7f7a:
 
     # n 1fcsss "Nope,{w=0.5}{nw}"
-    n 1fcsss "Nope, {w=0.5}{nw}"
+    n 1fcsss "Nop, {w=0.5}{nw}"
 
 # game/script-jokes.rpy:635
 translate spanish joke_blind_fish_7316261e:
@@ -184,13 +184,13 @@ translate spanish joke_blind_fish_8e9c7b35:
 translate spanish joke_skeleton_music_40416364:
 
     # n 1fcsaj "Alright!{w=0.75}{nw}"
-    n 1fcsaj "¡Bien! {w=0.75}{nw}"
+    n 1fcsaj "¡De acuerdo! {w=0.75}{nw}"
 
 # game/script-jokes.rpy:642
 translate spanish joke_skeleton_music_d1143737:
 
     # extend 1nslsssbr " Seeing as you love music so much,{w=0.2} [player]..."
-    extend 1nslsssbr "Viendo que te encanta la música tanto, {w=0.2} [player]..."
+    extend 1nslsssbr "Viendo que te encanta la música tanto, {w=0.2}[player]..."
 
 # game/script-jokes.rpy:643
 translate spanish joke_skeleton_music_72a6ac38:
@@ -208,7 +208,7 @@ translate spanish joke_skeleton_music_a1e6983b:
 translate spanish joke_skeleton_music_9625ed6b:
 
     # n 1nsrposbl "...A xylo-{w=1}{i}bone{/i}."
-    n 1nsrposbl "... Un xylo-{w=1}{i}hueso{/i}."
+    n 1nsrposbl "... Un saxo-{w=1}{i}ueso{/i}."
 
 # game/script-jokes.rpy:650
 translate spanish joke_skeleton_communication_343d80b2:
@@ -238,7 +238,7 @@ translate spanish joke_skeleton_communication_ea61814d:
 translate spanish joke_ocean_greeting_f042fdc9:
 
     # n 1fcsbg "Alright!"
-    n 1fcsbg "¡Bien!"
+    n 1fcsbg "¡De acuerdo!"
 
 # game/script-jokes.rpy:659
 translate spanish joke_ocean_greeting_c579d1b6:
@@ -256,7 +256,7 @@ translate spanish joke_ocean_greeting_f6c57e0b:
 translate spanish joke_ocean_greeting_362c093d:
 
     # n 1fcsbg "Nothing -{w=0.5}{nw}"
-    n 1fcsbg "Nada -{w=0.5}{nw}"
+    n 1fcsbg "Nada... {w=0.5}{nw}"
 
 # game/script-jokes.rpy:662
 translate spanish joke_ocean_greeting_e5e37a38:
@@ -280,7 +280,7 @@ translate spanish joke_tractor_trailer_822958c9:
 translate spanish joke_tractor_trailer_8142f4be:
 
     # n 1ulraj "It's fine though,{w=0.2} really."
-    n 1ulraj "Está bien, de verdad."
+    n 1ulraj "Está bien, {w=0.2}de verdad."
 
 # game/script-jokes.rpy:670
 translate spanish joke_tractor_trailer_33fe31aa:
@@ -292,7 +292,7 @@ translate spanish joke_tractor_trailer_33fe31aa:
 translate spanish joke_tractor_trailer_c632a687:
 
     # n 1fchbg "...But I at least saw the {i}trailer{/i}!"
-    n 1fchbg "¡Pero al menos vi el {i}tráiler{/i}!"
+    n 1fchbg "... ¡Pero al menos vi el {i}tráiler{/i}!"
 
 # game/script-jokes.rpy:676
 translate spanish joke_tentacle_tickles_a3b95060:
@@ -322,7 +322,7 @@ translate spanish joke_tentacle_tickles_e0ade798:
 translate spanish joke_tentacle_tickles_e71c521e:
 
     # extend 1fwlbg " {i}ten{/i}{w=1}-tickles!"
-    extend 1fwlbg "{i}¡diez{/i}{w=1}-cosquillas!"
+    extend 1fwlbg "¡{i}diez{/i}{w=1}-cosquillas!"
 
 # game/script-jokes.rpy:685
 translate spanish joke_basic_chemistry_17299487:
@@ -358,7 +358,7 @@ translate spanish joke_basic_chemistry_9866c69d:
 translate spanish joke_basic_chemistry_856920b3:
 
     # n 1fcsbg "{i}SWAG{/i},{w=0.5}{nw}"
-    n 1fcsbg "{i}¡BOTIN{/i}, {w=0.5}{nw}"
+    n 1fcsbg "¡{i}BOTIÍN{/i}, {w=0.5}{nw}"
 
 # game/script-jokes.rpy:691
 translate spanish joke_basic_chemistry_ba5813bd:
@@ -394,7 +394,7 @@ translate spanish joke_upset_cat_b1a58e22:
 translate spanish joke_upset_cat_fa5f1f4f:
 
     # extend 1fsqss " {i}{w=0.2}fe{w=0.2}-line{/i}{w=0.75}{nw}"
-    extend 1fsqss "{i}{w=0.2}fe{w=0.2}-línea{/i} {w=0.75}{nw}"
+    extend 1fsqss "{i}{w=0.2}fe{w=0.2}-lino{/i} {w=0.75}{nw}"
 
 # game/script-jokes.rpy:701
 translate spanish joke_upset_cat_d17fbad0:
@@ -418,13 +418,13 @@ translate spanish joke_cute_chicks_fb8591da:
 translate spanish joke_cute_chicks_373f4f87:
 
     # n 1fsrem "...Because he heard it'd be full of{w=0.75}{nw}"
-    n 1fsrem "...Porque escuchó que estaría lleno de {w=0.75}{nw}"
+    n 1fsrem "... Porque escuchó que estaría lleno de {w=0.75}{nw}"
 
 # game/script-jokes.rpy:709
 translate spanish joke_cute_chicks_8de4466d:
 
     # extend 1fcsem " 'cute{w=0.75}{nw}"
-    extend 1fcsem "'bonitas{w=0.75}{nw}"
+    extend 1fcsem "'bonitas {w=0.75}{nw}"
 
 # game/script-jokes.rpy:710
 translate spanish joke_cute_chicks_4e6def9b:
@@ -496,7 +496,7 @@ translate spanish joke_tallest_building_f6c57e0b:
 translate spanish joke_tallest_building_6d0e5f7c:
 
     # n 1fchbg "...Because they have the most {i}stories{/i}!"
-    n 1fchbg "...¡Porque tienen más {i}historias{/i}!"
+    n 1fchbg "... ¡Porque tienen más {i}historias{/i}!"
 
 # game/script-jokes.rpy:734
 translate spanish joke_baking_baseball_e974824f:
