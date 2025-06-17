@@ -254,3 +254,15 @@ translate spanish strings:
     old "Close"
     new "Cerrar"
 
+# TODO: Translation updated at 2025-06-16 17:24
+
+translate spanish strings:
+
+    # game/screens.rpy:1268
+    old "Unseen text"
+    new ""
+
+    # game/screens.rpy:1269
+    old "After choices"
+    new ""
+

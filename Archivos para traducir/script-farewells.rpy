@@ -4554,3 +4554,257 @@ translate spanish strings:
     old "Sorry, I really have to go."
     new ""
 
+# TODO: Translation updated at 2025-06-16 17:24
+
+# game/script-farewells.rpy:157
+translate spanish farewell_force_quit_946103c4:
+
+    # extend 4uscwr " N-{w=0.3}no!{w=0.2} Wait!!{w=0.2} PLEASE-{w=0.1}{nw}"
+    extend 4uscwr ""
+
+# game/script-farewells.rpy:908
+translate spanish farewell_love_stranger_056d073a:
+
+    # n 4ccsfllesi "Man...{w=1}{nw}"
+    n 4ccsfllesi ""
+
+# game/script-farewells.rpy:909
+translate spanish farewell_love_stranger_5a0e0f00:
+
+    # extend 4tnmfll " Already?{w=0.75}{nw}"
+    extend 4tnmfll ""
+
+# game/script-farewells.rpy:910
+translate spanish farewell_love_stranger_85a212a0:
+
+    # extend 2csqeml " You're kidding,{w=0.2} right?"
+    extend 2csqeml ""
+
+# game/script-farewells.rpy:911
+translate spanish farewell_love_stranger_3b1a7e6d:
+
+    # n 1kllsll "..."
+    n 1kllsll ""
+
+# game/script-farewells.rpy:912
+translate spanish farewell_love_stranger_dbb872c8:
+
+    # n 1ccsfllesi "..."
+    n 1ccsfllesi ""
+
+# game/script-farewells.rpy:913
+translate spanish farewell_love_stranger_6c9c7317:
+
+    # n 2cdrfll "Yeah,{w=0.2} yeah.{w=0.75}{nw}"
+    n 2cdrfll ""
+
+# game/script-farewells.rpy:914
+translate spanish farewell_love_stranger_c2bb9b15:
+
+    # extend 2ccsajl " I know,{w=0.2} [player].{w=0.75}{nw}"
+    extend 2ccsajl ""
+
+# game/script-farewells.rpy:915
+translate spanish farewell_love_stranger_63ad48ad:
+
+    # extend 2csrtrl " I've heard it enough times already."
+    extend 2csrtrl ""
+
+# game/script-farewells.rpy:916
+translate spanish farewell_love_stranger_9e362ec6:
+
+    # n 4ccspol "...Doesn't mean I have to like it though."
+    n 4ccspol ""
+
+# game/script-farewells.rpy:917
+translate spanish farewell_love_stranger_00f85da3:
+
+    # n 4fsqsml "Ehehe."
+    n 4fsqsml ""
+
+# game/script-farewells.rpy:918
+translate spanish farewell_love_stranger_125237d5:
+
+    # n 7ccsbgl "You know the deal by now.{w=0.75}{nw}"
+    n 7ccsbgl ""
+
+# game/script-farewells.rpy:920
+translate spanish farewell_love_stranger_4b1fc112:
+
+    # extend 7fchbgl " Better not be a stranger,{w=0.2} [chosen_endearment]!"
+    extend 7fchbgl ""
+
+# game/script-farewells.rpy:921
+translate spanish farewell_love_stranger_af3a63ad:
+
+    # n 3fchblleaf "L-{w=0.2}love you!"
+    n 3fchblleaf ""
+
+# game/script-farewells.rpy:1125
+translate spanish farewell_affectionate_enamored_stranger_e7503a50:
+
+    # n 1ccsflesi "..."
+    n 1ccsflesi ""
+
+# game/script-farewells.rpy:1126
+translate spanish farewell_affectionate_enamored_stranger_115cc0bc:
+
+    # n 1kllfl "Man...{w=1}{nw}"
+    n 1kllfl ""
+
+# game/script-farewells.rpy:1127
+translate spanish farewell_affectionate_enamored_stranger_d34258d7:
+
+    # extend 4tnmfl " Seriously?{w=0.75}{nw}"
+    extend 4tnmfl ""
+
+# game/script-farewells.rpy:1128
+translate spanish farewell_affectionate_enamored_stranger_6bc6324c:
+
+    # extend 4ksqflsbr " You sure you can't just hang around a bit longer?"
+    extend 4ksqflsbr ""
+
+# game/script-farewells.rpy:1129
+translate spanish farewell_affectionate_enamored_stranger_c807bf27:
+
+    # n 2ccsemlesisbr "..."
+    n 2ccsemlesisbr ""
+
+# game/script-farewells.rpy:1130
+translate spanish farewell_affectionate_enamored_stranger_0e6cb7e3:
+
+    # n 2clrfllsbr "Yeah,{w=0.2} yeah.{w=0.75}{nw}"
+    n 2clrfllsbr ""
+
+# game/script-farewells.rpy:1131
+translate spanish farewell_affectionate_enamored_stranger_79534008:
+
+    # extend 2cdrfll " I get it.{w=0.75}{nw}"
+    extend 2cdrfll ""
+
+# game/script-farewells.rpy:1133
+translate spanish farewell_affectionate_enamored_stranger_e2a9d495:
+
+    # extend 2csqcal " You big [chosen_tease]."
+    extend 2csqcal ""
+
+# game/script-farewells.rpy:1134
+translate spanish farewell_affectionate_enamored_stranger_00f85da3:
+
+    # n 4fsqsml "Ehehe."
+    n 4fsqsml ""
+
+# game/script-farewells.rpy:1135
+translate spanish farewell_affectionate_enamored_stranger_27724520:
+
+    # n 7fcsbglsbr "D-{w=0.2}don't be a stranger,{w=0.2} [player]!"
+    n 7fcsbglsbr ""
+
+# game/script-farewells.rpy:1138
+translate spanish farewell_affectionate_enamored_stranger_290fbb65:
+
+    # n 7fchbglsbr "S-{w=0.2}see you soon!"
+    n 7fchbglsbr ""
+
+# game/script-farewells.rpy:1263
+translate spanish farewell_happy_affectionate_stranger_4b11433b:
+
+    # n 7tnmpueqm "Eh?{w=0.75}{nw}"
+    n 7tnmpueqm ""
+
+# game/script-farewells.rpy:1264
+translate spanish farewell_happy_affectionate_stranger_f69edbde:
+
+    # extend 7tnmfl " You're going now,{w=0.2} then?"
+    extend 7tnmfl ""
+
+# game/script-farewells.rpy:1265
+translate spanish farewell_happy_affectionate_stranger_0c64c63d:
+
+    # n 2tllsl "..."
+    n 2tllsl ""
+
+# game/script-farewells.rpy:1266
+translate spanish farewell_happy_affectionate_stranger_0c78a643:
+
+    # n 2tllaj "Well...{w=1}{nw}"
+    n 2tllaj ""
+
+# game/script-farewells.rpy:1267
+translate spanish farewell_happy_affectionate_stranger_037390c7:
+
+    # extend 2clrfl " I guess that's fine.{w=0.75}{nw}"
+    extend 2clrfl ""
+
+# game/script-farewells.rpy:1268
+translate spanish farewell_happy_affectionate_stranger_8f575a18:
+
+    # extend 1ccscal " This time."
+    extend 1ccscal ""
+
+# game/script-farewells.rpy:1269
+translate spanish farewell_happy_affectionate_stranger_7a02fb3d:
+
+    # n 4ccsssl "Heh."
+    n 4ccsssl ""
+
+# game/script-farewells.rpy:1270
+translate spanish farewell_happy_affectionate_stranger_0b473c87:
+
+    # n 3ccsbgl "D-{w=0.2}don't be a stranger,{w=0.5} [player]!"
+    n 3ccsbgl ""
+
+# game/script-farewells.rpy:1271
+translate spanish farewell_happy_affectionate_stranger_285a7472:
+
+    # n 3ksrbolsbl "..."
+    n 3ksrbolsbl ""
+
+# game/script-farewells.rpy:1387
+translate spanish farewell_normal_happy_stranger_f5131973:
+
+    # n 1tsqpueqm "Eh?{w=0.75}{nw}"
+    n 1tsqpueqm ""
+
+# game/script-farewells.rpy:1388
+translate spanish farewell_normal_happy_stranger_92bc980c:
+
+    # extend 2cnmfl " You're done here for now,{w=0.2} [player]?{w=1.5}{nw}"
+    extend 2cnmfl ""
+
+# game/script-farewells.rpy:1389
+translate spanish farewell_normal_happy_stranger_cb14c2e7:
+
+    # extend 2cdlpu " Huh."
+    extend 2cdlpu ""
+
+# game/script-farewells.rpy:1390
+translate spanish farewell_normal_happy_stranger_5331e461:
+
+    # n 7cdlbo "..."
+    n 7cdlbo ""
+
+# game/script-farewells.rpy:1391
+translate spanish farewell_normal_happy_stranger_e58edac2:
+
+    # n 7cdlfl "Well..."
+    n 7cdlfl ""
+
+# game/script-farewells.rpy:1392
+translate spanish farewell_normal_happy_stranger_9b3b93da:
+
+    # n 3tnmaj "Don't be a stranger then,{w=0.5}{nw}"
+    n 3tnmaj ""
+
+# game/script-farewells.rpy:1393
+translate spanish farewell_normal_happy_stranger_53c98b26:
+
+    # extend 3clrbo " I guess."
+    extend 3clrbo ""
+
+# game/script-farewells.rpy:1394
+translate spanish farewell_normal_happy_stranger_8da680a4:
+
+    # n 4kdrbosbl "..."
+    n 4kdrbosbl ""
+

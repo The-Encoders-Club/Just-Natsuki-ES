@@ -174,3 +174,83 @@ translate spanish random_music_disable_a7fe8836:
     # n 2nwlbg "...And there we go!"
     n 2nwlbg "... ¡Yyyy listo!"
 
+# TODO: Translation updated at 2025-06-16 19:56
+
+translate spanish strings:
+
+    # game/random_music.rpy:38
+    old "Alright!{w=0.2} Time for a different tune!"
+    new ""
+
+    # game/random_music.rpy:38
+    old "Okaaay!{w=0.2} Time for another song!"
+    new ""
+
+    # game/random_music.rpy:38
+    old "Yeah,{w=0.2} I think I'm about done with this song."
+    new ""
+
+    # game/random_music.rpy:38
+    old "'Kay,{w=0.2} that's enough of that."
+    new ""
+
+    # game/random_music.rpy:38
+    old "New song time!"
+    new ""
+
+    # game/random_music.rpy:38
+    old "That's about enough of that number!"
+    new ""
+
+    # game/random_music.rpy:38
+    old "I wanna listen to something else..."
+    new ""
+
+    # game/random_music.rpy:38
+    old "Time to change things up!"
+    new ""
+
+    # game/random_music.rpy:57
+    old "Now,{w=0.2} let's see..."
+    new ""
+
+    # game/random_music.rpy:57
+    old "Now,{w=0.2} what have we got..."
+    new ""
+
+    # game/random_music.rpy:57
+    old "Let's see here..."
+    new ""
+
+    # game/random_music.rpy:57
+    old "What else have we got..."
+    new ""
+
+    # game/random_music.rpy:57
+    old "Aha!{w=0.5} Let's try this one!"
+    new ""
+
+    # game/random_music.rpy:57
+    old "Let me see..."
+    new ""
+
+    # game/random_music.rpy:76
+    old "Now playing: {0}"
+    new ""
+
+    # game/random_music.rpy:77
+    old "And...{w=1} we're good!"
+    new ""
+
+    # game/random_music.rpy:77
+    old "Okie-dokie!{w=0.75} Ehehe."
+    new ""
+
+    # game/random_music.rpy:96
+    old "Can you play random custom music for me?"
+    new ""
+
+    # game/random_music.rpy:154
+    old "Can you stop playing random custom music?"
+    new ""
+

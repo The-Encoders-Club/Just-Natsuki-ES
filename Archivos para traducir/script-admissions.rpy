@@ -4687,3 +4687,71 @@ translate spanish strings:
     # game/script-admissions.rpy:1227
     old "No,{w=0.2} I haven't eaten."
     new "No, {w=0.2}no he comido"
+# TODO: Translation updated at 2025-06-16 17:24
+
+# game/script-admissions.rpy:229
+translate spanish admission_anxious_34923c22:
+
+    # n 4fchbgl "Do your best,{w=0.2} [chosen_tease]."
+    n 4fchbgl ""
+
+# TODO: Translation updated at 2025-06-16 19:56
+
+translate spanish strings:
+
+    # game/script-admissions.rpy:53
+    old "Go back"
+    new ""
+
+    # game/script-admissions.rpy:62
+    old "Angry"
+    new ""
+
+    # game/script-admissions.rpy:142
+    old "Anxious"
+    new ""
+
+    # game/script-admissions.rpy:242
+    old "Ashamed"
+    new ""
+
+    # game/script-admissions.rpy:330
+    old "Bored"
+    new ""
+
+    # game/script-admissions.rpy:478
+    old "Confident"
+    new ""
+
+    # game/script-admissions.rpy:555
+    old "Excited"
+    new ""
+
+    # game/script-admissions.rpy:596
+    old "Happy"
+    new ""
+
+    # game/script-admissions.rpy:677
+    old "Hungry"
+    new ""
+
+    # game/script-admissions.rpy:780
+    old "Insecure"
+    new ""
+
+    # game/script-admissions.rpy:873
+    old "Proud"
+    new ""
+
+    # game/script-admissions.rpy:922
+    old "Sad"
+    new ""
+
+    # game/script-admissions.rpy:1095
+    old "Sick"
+    new ""
+
+    # game/script-admissions.rpy:1282
+    old "Tired"
+    new ""
+

@@ -40,7 +40,7 @@ translate spanish joke_clock_eating_67b3b9d8:
 translate spanish joke_clock_eating_50823114:
 
     # extend 1fsqbg " {i}time{w=0.3} consuming{/i}."
-    extend 1fsqbg "{i}consumo {w=0.3}de tiempo{/i}."
+    extend 1fsqbg " {i}consumo {w=0.3}de tiempo{/i}."
 
 # game/script-jokes.rpy:602
 translate spanish joke_anime_animated_b7fb3004:
@@ -3237,3 +3237,1037 @@ translate spanish strings:
     # game/script-jokes.rpy:964
     old "Nobel who?"
     new "¿Quién Nobel?"
+# TODO: Translation updated at 2025-06-16 17:24
+
+# game/script-jokes.rpy:766
+translate spanish joke_tractor_trailer_6e2d87bf:
+
+    # n 1fsqss "I didn't catch the tractor..."
+    n 1fsqss ""
+
+# game/script-jokes.rpy:1539
+translate spanish joke_butterfly_9f686cf2:
+
+    # n 1ccsss "Heh."
+    n 1ccsss ""
+
+# game/script-jokes.rpy:1540
+translate spanish joke_butterfly_d9882f45:
+
+    # n 1ccsbg "Better be sitting,{w=0.2} [player].{w=0.75}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1541
+translate spanish joke_butterfly_2156611a:
+
+    # extend 1fnmbg " 'Cause I can guarantee this one'll {i}bug{/i} you!"
+    extend 1fnmbg ""
+
+# game/script-jokes.rpy:1542
+translate spanish joke_butterfly_dbe6fb39:
+
+    # n 1fdwaj "What's the hardest kind of insect to catch?"
+    n 1fdwaj ""
+
+# game/script-jokes.rpy:1543
+translate spanish joke_butterfly_f6c57e0b:
+
+    # n 1fsqsm "..."
+    n 1fsqsm ""
+
+# game/script-jokes.rpy:1544
+translate spanish joke_butterfly_56f8fc70:
+
+    # n 1fcssm "Ehehe."
+    n 1fcssm ""
+
+# game/script-jokes.rpy:1545
+translate spanish joke_butterfly_c77fa5a0:
+
+    # n 1fnmbg "A {i}butter{/i}{w=0.75}{nw}"
+    n 1fnmbg ""
+
+# game/script-jokes.rpy:1546
+translate spanish joke_butterfly_60ddcdb7:
+
+    # extend 1fsgbs " -fly,{w=0.5}{nw}"
+    extend 1fsgbs ""
+
+# game/script-jokes.rpy:1547
+translate spanish joke_butterfly_2cae1efd:
+
+    # extend 1fchgn " Obviously!"
+    extend 1fchgn ""
+
+# game/script-jokes.rpy:1552
+translate spanish joke_crampons_98ec4511:
+
+    # n 1fdrfl "Sheesh...{w=1}{nw}"
+    n 1fdrfl ""
+
+# game/script-jokes.rpy:1553
+translate spanish joke_crampons_496ac653:
+
+    # extend 1fsrem " Is this one seriously the {i}best{/i} they could do?{w=0.75}{nw}"
+    extend 1fsrem ""
+
+# game/script-jokes.rpy:1554
+translate spanish joke_crampons_a409704d:
+
+    # extend 1fcsem " Cut me a break."
+    extend 1fcsem ""
+
+# game/script-jokes.rpy:1555
+translate spanish joke_crampons_e3f657ae:
+
+    # n 1fllfl "Ugh.{w=0.75}{nw}"
+    n 1fllfl ""
+
+# game/script-jokes.rpy:1556
+translate spanish joke_crampons_93642614:
+
+    # extend 1fcsfl " What's the worst thing to give an ice climber with a sprain?"
+    extend 1fcsfl ""
+
+# game/script-jokes.rpy:1557
+translate spanish joke_crampons_c0f58207:
+
+    # n 1csqsl "..."
+    n 1csqsl ""
+
+# game/script-jokes.rpy:1558
+translate spanish joke_crampons_1ac5d05b:
+
+    # n 1csremsbr "{i}Cramp{/i}{w=0.75}{nw}"
+    n 1csremsbr ""
+
+# game/script-jokes.rpy:1559
+translate spanish joke_crampons_56a94712:
+
+    # extend 1csrajsbr " -ons."
+    extend 1csrajsbr ""
+
+# game/script-jokes.rpy:1564
+translate spanish joke_frog_notes_ba4492d1:
+
+    # n 1ccsemesi "..."
+    n 1ccsemesi ""
+
+# game/script-jokes.rpy:1565
+translate spanish joke_frog_notes_a83ec0dc:
+
+    # n 1cslflsbl "Guess I better apologize in advance for this one,{w=0.2} [player].{w=0.75}{nw}"
+    n 1cslflsbl ""
+
+# game/script-jokes.rpy:1566
+translate spanish joke_frog_notes_2e1ea2d7:
+
+    # extend 1ccsemsbl " Ugh."
+    extend 1ccsemsbl ""
+
+# game/script-jokes.rpy:1567
+translate spanish joke_frog_notes_17bd5f3e:
+
+    # n 1ccsaj "Alright.{w=0.75}{nw}"
+    n 1ccsaj ""
+
+# game/script-jokes.rpy:1568
+translate spanish joke_frog_notes_997c6807:
+
+    # extend 1csgsl " How do frogs take their notes for class?"
+    extend 1csgsl ""
+
+# game/script-jokes.rpy:1569
+translate spanish joke_frog_notes_1a23af8f:
+
+    # n 1clrsl "..."
+    n 1clrsl ""
+
+# game/script-jokes.rpy:1570
+translate spanish joke_frog_notes_d496e4a7:
+
+    # n 1fsrsl "..."
+    n 1fsrsl ""
+
+# game/script-jokes.rpy:1571
+translate spanish joke_frog_notes_6a44ccdb:
+
+    # n 1fcsfl "They use lily-{w=0.75}{nw}"
+    n 1fcsfl ""
+
+# game/script-jokes.rpy:1572
+translate spanish joke_frog_notes_67df402e:
+
+    # extend 1csqfl " {i}pads{/i}."
+    extend 1csqfl ""
+
+# game/script-jokes.rpy:1577
+translate spanish joke_sea_urchins_e7503a50:
+
+    # n 1ccsflesi "..."
+    n 1ccsflesi ""
+
+# game/script-jokes.rpy:1578
+translate spanish joke_sea_urchins_efd9b049:
+
+    # n 1csqem "Do I seriously have to read {i}this{/i} one out to you?{w=0.75}{nw}"
+    n 1csqem ""
+
+# game/script-jokes.rpy:1579
+translate spanish joke_sea_urchins_7981f476:
+
+    # extend 1csrfl " Man..."
+    extend 1csrfl ""
+
+# game/script-jokes.rpy:1580
+translate spanish joke_sea_urchins_650c688b:
+
+    # n 1ccsaj "Alright.{w=0.2} What sort of sealife causes the most trouble on the streets?"
+    n 1ccsaj ""
+
+# game/script-jokes.rpy:1581
+translate spanish joke_sea_urchins_4dc6e1dd:
+
+    # n 1csgslsbl "..."
+    n 1csgslsbl ""
+
+# game/script-jokes.rpy:1582
+translate spanish joke_sea_urchins_7c26d41f:
+
+    # n 1fllemsbl "Ugh.{w=0.75}{nw}"
+    n 1fllemsbl ""
+
+# game/script-jokes.rpy:1583
+translate spanish joke_sea_urchins_d5252f79:
+
+    # extend 1fcsemsbr " A sea{w=0.5}{nw}"
+    extend 1fcsemsbr ""
+
+# game/script-jokes.rpy:1584
+translate spanish joke_sea_urchins_de34e1b1:
+
+    # extend 1fsqflsbr " {i}urchin{/i}."
+    extend 1fsqflsbr ""
+
+# game/script-jokes.rpy:1589
+translate spanish joke_airforce_wings_8ff82d74:
+
+    # n 1ulraj "Hey,{w=0.2} [player]...{w=1}{nw}"
+    n 1ulraj ""
+
+# game/script-jokes.rpy:1590
+translate spanish joke_airforce_wings_f330b8c0:
+
+    # extend 1tsgfl " Did you hear about the air force that began using birds to fly special missions?"
+    extend 1tsgfl ""
+
+# game/script-jokes.rpy:1591
+translate spanish joke_airforce_wings_53291f42:
+
+    # n 1unmgs "Yeah!{w=0.75}{nw}"
+    n 1unmgs ""
+
+# game/script-jokes.rpy:1592
+translate spanish joke_airforce_wings_f6c1cd0b:
+
+    # extend 1cllflsbl " Talk about unexpected!{w=0.75}{nw}"
+    extend 1cllflsbl ""
+
+# game/script-jokes.rpy:1593
+translate spanish joke_airforce_wings_29c73b34:
+
+    # extend 1cslbosbl " I thought someone was just pulling a prank when I found out!"
+    extend 1cslbosbl ""
+
+# game/script-jokes.rpy:1594
+translate spanish joke_airforce_wings_249334a7:
+
+    # n 1ccsajsbl "Well,{w=0.2} anyway."
+    n 1ccsajsbl ""
+
+# game/script-jokes.rpy:1595
+translate spanish joke_airforce_wings_a0197241:
+
+    # n 1csrss "They never exactly said what kind of stuff they'd do,{w=0.75}{nw}"
+    n 1csrss ""
+
+# game/script-jokes.rpy:1596
+translate spanish joke_airforce_wings_5e20201f:
+
+    # extend 1ccssmesm " but I can tell you one thing,{w=0.2} [player]."
+    extend 1ccssmesm ""
+
+# game/script-jokes.rpy:1597
+translate spanish joke_airforce_wings_0f30c06a:
+
+    # n 1ccsbg "At least they've already{w=0.5}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1598
+translate spanish joke_airforce_wings_9d098a58:
+
+    # extend 1fsqbg " {i}earned their wings{/i},{w=0.75}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1599
+translate spanish joke_airforce_wings_bf7e26fe:
+
+    # extend 1fchgn " right?"
+    extend 1fchgn ""
+
+# game/script-jokes.rpy:1604
+translate spanish joke_time_trial_ef685375:
+
+    # n 1ccsbg "Heh.{w=0.75}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1605
+translate spanish joke_time_trial_825cd79d:
+
+    # extend 1fcsss " So,{w=0.2} [player].{w=0.75}{nw}"
+    extend 1fcsss ""
+
+# game/script-jokes.rpy:1606
+translate spanish joke_time_trial_81378e4c:
+
+    # extend 1csqbg " What kind of motorsports does a clockmaker watch on the weekends?"
+    extend 1csqbg ""
+
+# game/script-jokes.rpy:1607
+translate spanish joke_time_trial_2dd49f58:
+
+    # n 1tsqsm "..."
+    n 1tsqsm ""
+
+# game/script-jokes.rpy:1608
+translate spanish joke_time_trial_6edf7b87:
+
+    # n 1tsqaj "No?{w=0.75}{nw}"
+    n 1tsqaj ""
+
+# game/script-jokes.rpy:1609
+translate spanish joke_time_trial_4b5525d8:
+
+    # extend 1tsgfl " Seriously?{w=0.75}{nw}"
+    extend 1tsgfl ""
+
+# game/script-jokes.rpy:1610
+translate spanish joke_time_trial_3d9a3f28:
+
+    # extend 1fcssm " {i}I{/i} thought it was easy enough,{w=0.2} [player]."
+    extend 1fcssm ""
+
+# game/script-jokes.rpy:1611
+translate spanish joke_time_trial_6f6ec7d6:
+
+    # n 1ccsbg "They'd be watching{w=0.5}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1612
+translate spanish joke_time_trial_808b8e13:
+
+    # extend 1csgbg " {i}time trials{/i},{w=0.75}{nw}"
+    extend 1csgbg ""
+
+# game/script-jokes.rpy:1613
+translate spanish joke_time_trial_df9c6a9c:
+
+    # extend 1fchbs " duh!"
+    extend 1fchbs ""
+
+# game/script-jokes.rpy:1617
+translate spanish joke_wolves_alphabet_ef685375:
+
+    # n 1ccsbg "Heh.{w=0.75}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1618
+translate spanish joke_wolves_alphabet_043b1095:
+
+    # extend 1fllbg " We'll see who's{w=0.75}{nw}"
+    extend 1fllbg ""
+
+# game/script-jokes.rpy:1619
+translate spanish joke_wolves_alphabet_78c12753:
+
+    # extend 1fsqss " {i}howling{/i}{w=0.75}{nw}"
+    extend 1fsqss ""
+
+# game/script-jokes.rpy:1620
+translate spanish joke_wolves_alphabet_a5e6aebe:
+
+    # extend 1fcsss " after this one."
+    extend 1fcsss ""
+
+# game/script-jokes.rpy:1621
+translate spanish joke_wolves_alphabet_de00ff37:
+
+    # n 1fcsaj "'Kay.{w=0.75}{nw}"
+    n 1fcsaj ""
+
+# game/script-jokes.rpy:1622
+translate spanish joke_wolves_alphabet_d68ffdff:
+
+    # extend 1fcssm " So!"
+    extend 1fcssm ""
+
+# game/script-jokes.rpy:1623
+translate spanish joke_wolves_alphabet_6774f6c7:
+
+    # n 1unmaj "What's the first thing a wolf would learn if it started going to school?"
+    n 1unmaj ""
+
+# game/script-jokes.rpy:1624
+translate spanish joke_wolves_alphabet_716c6c3c:
+
+    # n 1cnmsm "..."
+    n 1cnmsm ""
+
+# game/script-jokes.rpy:1625
+translate spanish joke_wolves_alphabet_e17be501:
+
+    # n 1csqss "Oh?{w=0.75}{nw}"
+    n 1csqss ""
+
+# game/script-jokes.rpy:1626
+translate spanish joke_wolves_alphabet_044977e4:
+
+    # extend 1csqbg " You're not gonna bite,{w=0.2} [player]?"
+    extend 1csqbg ""
+
+# game/script-jokes.rpy:1627
+translate spanish joke_wolves_alphabet_51f17ec9:
+
+    # n 1ccssm "Ehehe."
+    n 1ccssm ""
+
+# game/script-jokes.rpy:1628
+translate spanish joke_wolves_alphabet_f5a98a6f:
+
+    # n 1flrbg "They'd learn the {i}alpha{/i}-{w=0.75}{nw}"
+    n 1flrbg ""
+
+# game/script-jokes.rpy:1629
+translate spanish joke_wolves_alphabet_9085edb0:
+
+    # extend 1fsqbg "bet,{w=0.5}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1630
+translate spanish joke_wolves_alphabet_e95a81e2:
+
+    # extend 1fchbs " Duh!"
+    extend 1fchbs ""
+
+# game/script-jokes.rpy:1635
+translate spanish joke_sailor_shipshape_cdbdb7f4:
+
+    # n 1fupfl "Ugh.{w=0.75}{nw}"
+    n 1fupfl ""
+
+# game/script-jokes.rpy:1636
+translate spanish joke_sailor_shipshape_bdc24c83:
+
+    # extend 1fsrem " As if {i}this{/i} excuse for a joke holds any water.{w=0.75}{nw}"
+    extend 1fsrem ""
+
+# game/script-jokes.rpy:1637
+translate spanish joke_sailor_shipshape_03a29126:
+
+    # extend 1cnmem " Do I really have to read it out,{w=0.2} [player]?"
+    extend 1cnmem ""
+
+# game/script-jokes.rpy:1638
+translate spanish joke_sailor_shipshape_ba4492d1:
+
+    # n 1ccsemesi "..."
+    n 1ccsemesi ""
+
+# game/script-jokes.rpy:1639
+translate spanish joke_sailor_shipshape_3d69c841:
+
+    # n 1cslfl "How do you describe a sailor that works out every day?"
+    n 1cslfl ""
+
+# game/script-jokes.rpy:1640
+translate spanish joke_sailor_shipshape_3c81227d:
+
+    # n 1cllslsbr "..."
+    n 1cllslsbr ""
+
+# game/script-jokes.rpy:1641
+translate spanish joke_sailor_shipshape_22680f35:
+
+    # n 1fdlslsbr "..."
+    n 1fdlslsbr ""
+
+# game/script-jokes.rpy:1642
+translate spanish joke_sailor_shipshape_629c01ea:
+
+    # n 1fsqfl "...{i}Ship{/i}-{w=0.75}{nw}"
+    n 1fsqfl ""
+
+# game/script-jokes.rpy:1643
+translate spanish joke_sailor_shipshape_fea756c5:
+
+    # extend 1fsrem "{i}shape{/i}."
+    extend 1fsrem ""
+
+# game/script-jokes.rpy:1648
+translate spanish joke_seamstress_thread_7d73706b:
+
+    # n 1ccsaj "So,{w=0.2} [player] -{w=0.5}{nw}"
+    n 1ccsaj ""
+
+# game/script-jokes.rpy:1649
+translate spanish joke_seamstress_thread_c53cd957:
+
+    # extend 1unmaj " did you hear about the seamstress that always left her work up until the last possible minute?"
+    extend 1unmaj ""
+
+# game/script-jokes.rpy:1650
+translate spanish joke_seamstress_thread_71012c27:
+
+    # n 1clrfl "Yeah!{w=0.75}{nw}"
+    n 1clrfl ""
+
+# game/script-jokes.rpy:1651
+translate spanish joke_seamstress_thread_5db8abbb:
+
+    # extend 1cnmwr " Talk about unforgiving.{w=0.75}{nw}"
+    extend 1cnmwr ""
+
+# game/script-jokes.rpy:1652
+translate spanish joke_seamstress_thread_2e201789:
+
+    # extend 1csqemsbr " Can you imagine all it would take to totally screw everything up,{w=0.2} working like that?"
+    extend 1csqemsbr ""
+
+# game/script-jokes.rpy:1653
+translate spanish joke_seamstress_thread_5a95cf24:
+
+    # n 1ccsfl "Man...{w=1}{nw}"
+    n 1ccsfl ""
+
+# game/script-jokes.rpy:1654
+translate spanish joke_seamstress_thread_8c65c445:
+
+    # extend 1tnmpu " If anything happened?"
+    extend 1tnmpu ""
+
+# game/script-jokes.rpy:1655
+translate spanish joke_seamstress_thread_17854df1:
+
+    # n 1ccsss "...Heh."
+    n 1ccsss ""
+
+# game/script-jokes.rpy:1656
+translate spanish joke_seamstress_thread_36ee3e37:
+
+    # n 1fllss "I guess she really would be{w=0.5}{nw}"
+    n 1fllss ""
+
+# game/script-jokes.rpy:1657
+translate spanish joke_seamstress_thread_f35e2692:
+
+    # extend 1fsqbg " {i}hanging on by a thread{/i},{w=0.75}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1658
+translate spanish joke_seamstress_thread_bf7e26fe:
+
+    # extend 1fchgn " right?"
+    extend 1fchgn ""
+
+# game/script-jokes.rpy:1663
+translate spanish joke_sting_operation_bb084730:
+
+    # n 1clraj "Hey,{w=0.2} [player]...{w=1}{nw}"
+    n 1clraj ""
+
+# game/script-jokes.rpy:1664
+translate spanish joke_sting_operation_6749deff:
+
+    # extend 1tnmsl " did you hear about all the thefts targeting beekeepers recently?"
+    extend 1tnmsl ""
+
+# game/script-jokes.rpy:1665
+translate spanish joke_sting_operation_69087eb5:
+
+    # n 1ccsfl "I mean,{w=0.5}{nw}"
+    n 1ccsfl ""
+
+# game/script-jokes.rpy:1666
+translate spanish joke_sting_operation_b56e9942:
+
+    # extend 1fcswr " come on!{w=0.75}{nw}"
+    extend 1fcswr ""
+
+# game/script-jokes.rpy:1667
+translate spanish joke_sting_operation_9fd189bd:
+
+    # extend 1fsqem " {i}Bees{/i}?{w=0.75}{nw}"
+    extend 1fsqem ""
+
+# game/script-jokes.rpy:1668
+translate spanish joke_sting_operation_0f48f4c5:
+
+    # extend 1fllem " How low could you {i}possibly{/i} get?"
+    extend 1fllem ""
+
+# game/script-jokes.rpy:1669
+translate spanish joke_sting_operation_87b1e0dd:
+
+    # n 1fllpu "Though...{w=1}{nw}"
+    n 1fllpu ""
+
+# game/script-jokes.rpy:1670
+translate spanish joke_sting_operation_0993e346:
+
+    # extend 1cllbo " I gotta admit.{w=0.75}{nw}"
+    extend 1cllbo ""
+
+# game/script-jokes.rpy:1671
+translate spanish joke_sting_operation_25f8a8c5:
+
+    # extend 1unmfl " How they caught them in the end?"
+    extend 1unmfl ""
+
+# game/script-jokes.rpy:1672
+translate spanish joke_sting_operation_9f686cf2:
+
+    # n 1ccsss "Heh."
+    n 1ccsss ""
+
+# game/script-jokes.rpy:1673
+translate spanish joke_sting_operation_243b9bf0:
+
+    # n 1ccsbg "Now that's what I call a{w=0.5}{nw}"
+    n 1ccsbg ""
+
+# game/script-jokes.rpy:1674
+translate spanish joke_sting_operation_2978487e:
+
+    # extend 1fsqbg " {i}sting{/i}{w=0.75}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1675
+translate spanish joke_sting_operation_a72e4720:
+
+    # extend 1fchgn " operation!"
+    extend 1fchgn ""
+
+# game/script-jokes.rpy:1680
+translate spanish joke_sculptors_steak_marbled_9cf1c2c2:
+
+    # n 1fcsbg "'Kay!{w=0.75}{nw}"
+    n 1fcsbg ""
+
+# game/script-jokes.rpy:1681
+translate spanish joke_sculptors_steak_marbled_b730e231:
+
+    # extend 1fsqbg " So,{w=0.2} [player]..."
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1682
+translate spanish joke_sculptors_steak_marbled_7a152a36:
+
+    # n 1fsgss "How do sculptors prefer their steaks?"
+    n 1fsgss ""
+
+# game/script-jokes.rpy:1683
+translate spanish joke_sculptors_steak_marbled_185a55be:
+
+    # n 1fsgsm "..."
+    n 1fsgsm ""
+
+# game/script-jokes.rpy:1684
+translate spanish joke_sculptors_steak_marbled_c3976ed5:
+
+    # n 1tsqbg "No?{w=0.75}{nw}"
+    n 1tsqbg ""
+
+# game/script-jokes.rpy:1685
+translate spanish joke_sculptors_steak_marbled_120f5be4:
+
+    # extend 1fcssmesm " Come on,{w=0.2} [player]!{w=0.75}{nw}"
+    extend 1fcssmesm ""
+
+# game/script-jokes.rpy:1686
+translate spanish joke_sculptors_steak_marbled_4ab4c7c2:
+
+    # extend 1tlrbg " Isn't it obvious?"
+    extend 1tlrbg ""
+
+# game/script-jokes.rpy:1687
+translate spanish joke_sculptors_steak_marbled_0ec6bf1c:
+
+    # n 1tsgbg "...With plenty of{w=0.5}{nw}"
+    n 1tsgbg ""
+
+# game/script-jokes.rpy:1688
+translate spanish joke_sculptors_steak_marbled_622a03c9:
+
+    # extend 1fsqbg " {i}marbling{/i},{w=0.75}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1689
+translate spanish joke_sculptors_steak_marbled_df9c6a9c:
+
+    # extend 1fchbs " duh!"
+    extend 1fchbs ""
+
+# game/script-jokes.rpy:1694
+translate spanish joke_rhetorical_4906d7da:
+
+    # n 1ccsaj "...So."
+    n 1ccsaj ""
+
+# game/script-jokes.rpy:1695
+translate spanish joke_rhetorical_fe41ed80:
+
+    # n 1cdwpu "...What do you get if you cross a joke{w=0.5}{nw}"
+    n 1cdwpu ""
+
+# game/script-jokes.rpy:1696
+translate spanish joke_rhetorical_430de461:
+
+    # extend 1tsqsl " with a rhetorical question?"
+    extend 1tsqsl ""
+
+# game/script-jokes.rpy:1701
+translate spanish joke_fuzz_29c968f1:
+
+    # n 1ccsflesi "...Man,{w=0.2} this is dumb.{w=0.75}{nw}"
+    n 1ccsflesi ""
+
+# game/script-jokes.rpy:1702
+translate spanish joke_fuzz_43a13645:
+
+    # extend 1csrsl " Fine."
+    extend 1csrsl ""
+
+# game/script-jokes.rpy:1703
+translate spanish joke_fuzz_31b366b5:
+
+    # n 1ccsaj "Who do you call for someone who only steals wool,{w=0.2} yarn,{w=0.2} and fluffy socks?"
+    n 1ccsaj ""
+
+# game/script-jokes.rpy:1704
+translate spanish joke_fuzz_38682fb8:
+
+    # n 1cnmbo "..."
+    n 1cnmbo ""
+
+# game/script-jokes.rpy:1705
+translate spanish joke_fuzz_5738e6fb:
+
+    # n 1cllbo "..."
+    n 1cllbo ""
+
+# game/script-jokes.rpy:1706
+translate spanish joke_fuzz_29c456c8:
+
+    # n 1cnmfl "...The{w=0.5}{nw}"
+    n 1cnmfl ""
+
+# game/script-jokes.rpy:1707
+translate spanish joke_fuzz_4213b29e:
+
+    # extend 1cslfl " {i}fuzz{/i}."
+    extend 1cslfl ""
+
+# game/script-jokes.rpy:1712
+translate spanish joke_restroom_comedian_ba4492d1:
+
+    # n 1ccsemesi "..."
+    n 1ccsemesi ""
+
+# game/script-jokes.rpy:1713
+translate spanish joke_restroom_comedian_bcf25d98:
+
+    # n 1clrbo "Why did the comedian insist on warming up his act in the restroom?"
+    n 1clrbo ""
+
+# game/script-jokes.rpy:1714
+translate spanish joke_restroom_comedian_a8c4580a:
+
+    # n 1csqbo "..."
+    n 1csqbo ""
+
+# game/script-jokes.rpy:1715
+translate spanish joke_restroom_comedian_86de6d1c:
+
+    # n 1cslfl "...I can't believe I'm saying this."
+    n 1cslfl ""
+
+# game/script-jokes.rpy:1716
+translate spanish joke_restroom_comedian_5968aa0e:
+
+    # n 1ccsfl "So he always had jokes...{w=1}{nw}"
+    n 1ccsfl ""
+
+# game/script-jokes.rpy:1717
+translate spanish joke_restroom_comedian_bc1a9c26:
+
+    # extend 1csqpo " {i}on tap{/i}."
+    extend 1csqpo ""
+
+# game/script-jokes.rpy:1722
+translate spanish joke_glasses_framed_c4b9ef6e:
+
+    # n 1fsqbg "Let's see how you handle this one.{w=0.75}{nw}"
+    n 1fsqbg ""
+
+# game/script-jokes.rpy:1723
+translate spanish joke_glasses_framed_d8c38861:
+
+    # extend 1fcsaj " So!"
+    extend 1fcsaj ""
+
+# game/script-jokes.rpy:1724
+translate spanish joke_glasses_framed_7ab18a1c:
+
+    # n 1csqbg "How does someone with glasses react to being told bad news?"
+    n 1csqbg ""
+
+# game/script-jokes.rpy:1725
+translate spanish joke_glasses_framed_aebb9ddc:
+
+    # n 1csqsm "..."
+    n 1csqsm ""
+
+# game/script-jokes.rpy:1726
+translate spanish joke_glasses_framed_bcf7bc65:
+
+    # n 1fsqss "Heh.{w=0.75}{nw}"
+    n 1fsqss ""
+
+# game/script-jokes.rpy:1727
+translate spanish joke_glasses_framed_397e7fe6:
+
+    # extend 1csgbg " Don't you know,{w=0.2} [player]?"
+    extend 1csgbg ""
+
+# game/script-jokes.rpy:1728
+translate spanish joke_glasses_framed_87bef21c:
+
+    # n 1flrss "It all depends on how you{w=0.5}{nw}"
+    n 1flrss ""
+
+# game/script-jokes.rpy:1729
+translate spanish joke_glasses_framed_29319a11:
+
+    # extend 1fsqbg " {i}frame{/i}{w=0.5}{nw}"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1730
+translate spanish joke_glasses_framed_27c8023b:
+
+    # extend 1fchbs " the situation!"
+    extend 1fchbs ""
+
+# game/script-jokes.rpy:1735
+translate spanish joke_surround_sound_40bc044a:
+
+    # n 1csqflsbl "Don't say I didn't warn you,{w=0.2} [player]."
+    n 1csqflsbl ""
+
+# game/script-jokes.rpy:1736
+translate spanish joke_surround_sound_b9c4bc71:
+
+    # n 1ccsfl "How do audio technicians get over feeling lonely?"
+    n 1ccsfl ""
+
+# game/script-jokes.rpy:1737
+translate spanish joke_surround_sound_12199626:
+
+    # n 1csrca "..."
+    n 1csrca ""
+
+# game/script-jokes.rpy:1738
+translate spanish joke_surround_sound_fd333871:
+
+    # n 1ccsem "Ugh."
+    n 1ccsem ""
+
+# game/script-jokes.rpy:1739
+translate spanish joke_surround_sound_8ddaf4a1:
+
+    # n 1cllem "They use...{w=1}{nw}"
+    n 1cllem ""
+
+# game/script-jokes.rpy:1740
+translate spanish joke_surround_sound_29639ec2:
+
+    # extend 1cnmfl " {i}surround{/i}{w=0.5}{nw}"
+    extend 1cnmfl ""
+
+# game/script-jokes.rpy:1741
+translate spanish joke_surround_sound_89830cd4:
+
+    # extend 1csqfl " {i}sound{/i}."
+    extend 1csqfl ""
+
+# game/script-jokes.rpy:1746
+translate spanish joke_rose_thorns_7ed4dad6:
+
+    # n 1ccsss "You better{w=0.5}{nw}"
+    n 1ccsss ""
+
+# game/script-jokes.rpy:1747
+translate spanish joke_rose_thorns_56690115:
+
+    # extend 1csgbg " {i}prick{/i}{w=0.5}{nw}"
+    extend 1csgbg ""
+
+# game/script-jokes.rpy:1748
+translate spanish joke_rose_thorns_51736c42:
+
+    # extend 1fnmbg " your ears for this one!"
+    extend 1fnmbg ""
+
+# game/script-jokes.rpy:1749
+translate spanish joke_rose_thorns_40a1f212:
+
+    # n 1fcsaj "'Kay!{w=0.75}{nw}"
+    n 1fcsaj ""
+
+# game/script-jokes.rpy:1750
+translate spanish joke_rose_thorns_62261d68:
+
+    # extend 1fcssm " So."
+    extend 1fcssm ""
+
+# game/script-jokes.rpy:1751
+translate spanish joke_rose_thorns_c94323ed:
+
+    # n 1tsqbg "Why did the gardener give up on planting roses?"
+    n 1tsqbg ""
+
+# game/script-jokes.rpy:1752
+translate spanish joke_rose_thorns_2ea1a2d2:
+
+    # n 1fnmsm "..."
+    n 1fnmsm ""
+
+# game/script-jokes.rpy:1753
+translate spanish joke_rose_thorns_fea828b4:
+
+    # n 1ccssmesm "Heh."
+    n 1ccssmesm ""
+
+# game/script-jokes.rpy:1754
+translate spanish joke_rose_thorns_67414d75:
+
+    # n 1clrbg "'Cause they were turning out to be a real{w=0.5}{nw}"
+    n 1clrbg ""
+
+# game/script-jokes.rpy:1755
+translate spanish joke_rose_thorns_6b9683bf:
+
+    # extend 1csqbg " {i}thorn{/i}{w=0.75}{nw}"
+    extend 1csqbg ""
+
+# game/script-jokes.rpy:1756
+translate spanish joke_rose_thorns_54c76ff3:
+
+    # extend 1fchbs " in his side!"
+    extend 1fchbs ""
+
+# game/script-jokes.rpy:1761
+translate spanish joke_acrobats_somersault_a7d167dc:
+
+    # n 1ccssmesm "Heh.{w=0.75}{nw}"
+    n 1ccssmesm ""
+
+# game/script-jokes.rpy:1762
+translate spanish joke_acrobats_somersault_26cf31e9:
+
+    # extend 1fsqbg " Riddle me this,{w=0.2} [player]!"
+    extend 1fsqbg ""
+
+# game/script-jokes.rpy:1763
+translate spanish joke_acrobats_somersault_4d4f9cf9:
+
+    # n 1fcsbg "What kind of move do acrobats practice most in the middle of the year?"
+    n 1fcsbg ""
+
+# game/script-jokes.rpy:1764
+translate spanish joke_acrobats_somersault_2ea1a2d2:
+
+    # n 1fnmsm "..."
+    n 1fnmsm ""
+
+# game/script-jokes.rpy:1765
+translate spanish joke_acrobats_somersault_8ae04176:
+
+    # n 1fcsbs "Duh!"
+    n 1fcsbs ""
+
+# game/script-jokes.rpy:1766
+translate spanish joke_acrobats_somersault_6def79a1:
+
+    # n 1fsqbg "They'd practice{w=0.5}{nw}"
+    n 1fsqbg ""
+
+# game/script-jokes.rpy:1767
+translate spanish joke_acrobats_somersault_e406ea3e:
+
+    # extend 1fsgbg " {i}summer{/i}{w=0.75}{nw}"
+    extend 1fsgbg ""
+
+# game/script-jokes.rpy:1768
+translate spanish joke_acrobats_somersault_c4ad7757:
+
+    # extend 1fchbg " -saults,{w=0.5}{nw}"
+    extend 1fchbg ""
+
+# game/script-jokes.rpy:1769
+translate spanish joke_acrobats_somersault_ba5813bd:
+
+    # extend 1fchgn " of course!"
+    extend 1fchgn ""
+
+# game/script-jokes.rpy:1774
+translate spanish joke_frog_seating_1e7f88a2:
+
+    # n 1cslem "Who did they annoy to have to include {i}this{/i} one?{w=0.75}{nw}"
+    n 1cslem ""
+
+# game/script-jokes.rpy:1775
+translate spanish joke_frog_seating_fb476a9d:
+
+    # extend 1ccsem " Ugh."
+    extend 1ccsem ""
+
+# game/script-jokes.rpy:1776
+translate spanish joke_frog_seating_40934c34:
+
+    # n 1clrsl "What kind of seating do you set out for a frog?"
+    n 1clrsl ""
+
+# game/script-jokes.rpy:1777
+translate spanish joke_frog_seating_8b11618a:
+
+    # n 1csrsl "..."
+    n 1csrsl ""
+
+# game/script-jokes.rpy:1778
+translate spanish joke_frog_seating_e7503a50:
+
+    # n 1ccsflesi "..."
+    n 1ccsflesi ""
+
+# game/script-jokes.rpy:1779
+translate spanish joke_frog_seating_e4cae8fd:
+
+    # n 1cllfl "A {i}toad{/i}-{w=0.75}{nw}"
+    n 1cllfl ""
+
+# game/script-jokes.rpy:1780
+translate spanish joke_frog_seating_c250b39e:
+
+    # extend 1fsqca " stool."
+    extend 1fsqca ""
+

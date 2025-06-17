@@ -208,3 +208,65 @@ translate spanish strings:
     old "No."
     new "No"
 
+# TODO: Translation updated at 2025-06-16 17:24
+
+# game/custom-music.rpy:431
+translate spanish music_menu_7ee9619a:
+
+    # n 2knmsm "[music_quip]"
+    n 2knmsm ""
+
+# game/custom-music.rpy:523
+translate spanish music_menu_7ee9619a_1:
+
+    # n 2knmsm "[music_quip]"
+    n 2knmsm ""
+
+# game/custom-music.rpy:568
+translate spanish music_menu_e98a6771_1:
+
+    # n 2uchbgeme "[chosen_done_quip]{w=2}{nw}"
+    n 2uchbgeme ""
+
+translate spanish strings:
+
+    # game/custom-music.rpy:300
+    old "You pick!"
+    new ""
+
+    # game/custom-music.rpy:343
+    old "No music"
+    new ""
+
+# TODO: Translation updated at 2025-06-16 19:56
+
+translate spanish strings:
+
+    # game/custom-music.rpy:69
+    old "Done~!"
+    new ""
+
+    # game/custom-music.rpy:69
+    old "All done!"
+    new ""
+
+    # game/custom-music.rpy:69
+    old "All good!"
+    new ""
+
+    # game/custom-music.rpy:69
+    old "There we go!"
+    new ""
+
+    # game/custom-music.rpy:69
+    old "And...{w=0.3} we're good!"
+    new ""
+
+    # game/custom-music.rpy:69
+    old "Okie-dokie!{w=0.2} Ehehe."
+    new ""
+
+    # game/custom-music.rpy:277
+    old "Unknown track"
+    new ""
+

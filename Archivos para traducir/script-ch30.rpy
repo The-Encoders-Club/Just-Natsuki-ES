@@ -228,3 +228,11 @@ translate spanish strings:
     old "Android Menu"
     new "Menú de Android"
 
+# TODO: Translation updated at 2025-06-16 17:24
+
+translate spanish strings:
+
+    # game/script-ch30.rpy:689
+    old "More options..."
+    new ""
+

@@ -169,3 +169,51 @@ translate spanish weather_change_d244185e:
     # extend 4uchgnledz " It's snowing!{w=3}{nw}"
     extend 4uchgnledz "¡Está nevando!{w=3}{nw}"
 
+# TODO: Translation updated at 2025-06-16 19:56
+
+translate spanish strings:
+
+    # game/atmosphere.rpy:260
+    old "Ugh... raining again. [angry_emote]"
+    new ""
+
+    # game/atmosphere.rpy:260
+    old "Ew. Rain. [angry_emote]"
+    new ""
+
+    # game/atmosphere.rpy:260
+    old "Man... why does it have to rain so much?"
+    new ""
+
+    # game/atmosphere.rpy:260
+    old "Huh? It's raining? Gross... [angry_emote]"
+    new ""
+
+    # game/atmosphere.rpy:278
+    old "Those clouds look really dark, huh? :<"
+    new ""
+
+    # game/atmosphere.rpy:278
+    old "It was a dark and stormy night..."
+    new ""
+
+    # game/atmosphere.rpy:278
+    old "Ugh... I hate storms... [angry_emote]"
+    new ""
+
+    # game/atmosphere.rpy:278
+    old "Hey... is it stormy over there too? :/"
+    new ""
+
+    # game/atmosphere.rpy:296
+    old "[player]! [player]! It's snowing! [happy_emote]"
+    new ""
+
+    # game/atmosphere.rpy:296
+    old "It's snowing! It's snowing! [happy_emote]"
+    new ""
+
+    # game/atmosphere.rpy:296
+    old "[player]! Is it snowing for you too?! [happy_emote]"
+    new ""
+
