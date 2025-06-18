@@ -1032,3 +1032,27 @@ translate spanish strings:
     old "You're on!"
     new "¡Acepto el reto!"
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-blackjack.rpy:280
+    old "It's a draw!"
+    new ""
+
+    # game/script-blackjack.rpy:288
+    old "You win!"
+    new ""
+
+    # game/script-blackjack.rpy:296
+    old "You lose!"
+    new ""
+
+    # game/script-blackjack.rpy:299
+    old "Nobody!"
+    new ""
+
+    # game/script-blackjack.rpy:301
+    old "Yours!"
+    new ""
+

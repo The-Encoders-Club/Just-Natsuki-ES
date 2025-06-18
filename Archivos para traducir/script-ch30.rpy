@@ -236,3 +236,211 @@ translate spanish strings:
     old "More options..."
     new ""
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-ch30.rpy:622
+    old "What's up,{w=0.1} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "What's on your mind,{w=0.1} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Something up,{w=0.1} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "You wanna talk?{w=0.2} Ehehe."
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "I'd love to talk!"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "I always love talking to you,{w=0.1} [player]!"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "[player]!{w=0.2} What's up?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "[player]!{w=0.2} What's on your mind?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Ooh!{w=0.2} What did you wanna talk about?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "I'm all ears,{w=0.1} [player]!"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "I've always got time for you,{w=0.1} [player]!"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Hey!{w=0.2} What's up,{w=0.2} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "What have you got for me?{w=0.2} Ehehe."
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "[player]!{w=0.2} What's new?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "[player]!{w=0.2} You wanna talk?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Shoot,{w=0.2} [player]!{w=0.3} Ehehe."
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Shoot,{w=0.2} [player]!"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Oh!{w=0.2} Oh!{w=0.2} You got something for me?"
+    new ""
+
+    # game/script-ch30.rpy:622
+    old "Talk to me,{w=0.2} [player]!{w=0.3} Ehehe."
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "What's up?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "What's on your mind?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "What's happening?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "Something on your mind?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "Oh?{w=0.2} You wanna talk?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "Huh?{w=0.2} What's up?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "You wanna share something?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "What's new,{w=0.1} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "'Sup,{w=0.1} [player]?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "You wanna talk?"
+    new ""
+
+    # game/script-ch30.rpy:645
+    old "Hey,{w=0.2} [player]!"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "What do you want?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "What is it?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "Make it quick."
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "What now?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "What do you want now?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "What is it this time?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "Yeah?{w=0.2} What?"
+    new ""
+
+    # game/script-ch30.rpy:660
+    old "This better be good."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "...?"
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "What?"
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Just talk already."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Spit it out."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Start talking."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Get it over with."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "What do {i}you{/i} want?"
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Get on with it."
+    new ""
+
+    # game/script-ch30.rpy:673
+    old "Talk."
+    new ""
+
+    # game/script-ch30.rpy:805
+    old "Can you wear an outfit for me?"
+    new ""
+
+    # game/script-ch30.rpy:805
+    old "Can I suggest a new outfit?"
+    new ""
+
+    # game/script-ch30.rpy:805
+    old "Can you forget about an outfit I suggested?"
+    new ""
+
+    # game/script-ch30.rpy:805
+    old "Can you search again for new items?"
+    new ""
+

@@ -2970,3 +2970,43 @@ translate spanish apology_bad_player_name_d8fb4340:
     # extend 4fskwrftdcean " I'm gonna be the one listening to {b}you{/b}!"
     extend 4fskwrftdcean " ¡voy a ser yo quien te {b}escuche{/b}!"
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-apologies.rpy:69
+    old "For calling you a hurtful name."
+    new ""
+
+    # game/script-apologies.rpy:200
+    old "For cheating during our games."
+    new ""
+
+    # game/script-apologies.rpy:263
+    old "For something."
+    new ""
+
+    # game/script-apologies.rpy:371
+    old "For abandoning you."
+    new ""
+
+    # game/script-apologies.rpy:465
+    old "For being rude to you."
+    new ""
+
+    # game/script-apologies.rpy:541
+    old "For leaving without saying goodbye."
+    new ""
+
+    # game/script-apologies.rpy:621
+    old "For not taking care of myself properly."
+    new ""
+
+    # game/script-apologies.rpy:701
+    old "For scaring you."
+    new ""
+
+    # game/script-apologies.rpy:762
+    old "For asking you to call me a bad name."
+    new ""
+

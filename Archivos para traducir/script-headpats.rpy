@@ -322,3 +322,15 @@ translate spanish strings:
     old "That's it for now."
     new "Eso es todo por ahora"
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-headpats.rpy:43
+    old "Headpats"
+    new ""
+
+    # game/script-headpats.rpy:431
+    old "{0} headpats given"
+    new ""
+

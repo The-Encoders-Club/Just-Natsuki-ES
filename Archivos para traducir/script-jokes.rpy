@@ -4271,3 +4271,383 @@ translate spanish joke_frog_seating_c250b39e:
     # extend 1fsqca " stool."
     extend 1fsqca ""
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-jokes.rpy:213
+    old "Eating clocks"
+    new ""
+
+    # game/script-jokes.rpy:218
+    old "Anime"
+    new ""
+
+    # game/script-jokes.rpy:223
+    old "Pirate hygiene"
+    new ""
+
+    # game/script-jokes.rpy:228
+    old "Cinderella"
+    new ""
+
+    # game/script-jokes.rpy:233
+    old "Fish eyesight"
+    new ""
+
+    # game/script-jokes.rpy:238
+    old "Skeletal music"
+    new ""
+
+    # game/script-jokes.rpy:244
+    old "Skeletal communication"
+    new ""
+
+    # game/script-jokes.rpy:250
+    old "Ocean greetings"
+    new ""
+
+    # game/script-jokes.rpy:255
+    old "Tractor-trailer"
+    new ""
+
+    # game/script-jokes.rpy:260
+    old "Tentacles"
+    new ""
+
+    # game/script-jokes.rpy:265
+    old "Basic chemistry"
+    new ""
+
+    # game/script-jokes.rpy:270
+    old "Upsetting a cat"
+    new ""
+
+    # game/script-jokes.rpy:275
+    old "Cute chicks"
+    new ""
+
+    # game/script-jokes.rpy:280
+    old "Lumberjacks"
+    new ""
+
+    # game/script-jokes.rpy:285
+    old "Tallest building"
+    new ""
+
+    # game/script-jokes.rpy:290
+    old "Baking and baseball"
+    new ""
+
+    # game/script-jokes.rpy:295
+    old "Tofu"
+    new ""
+
+    # game/script-jokes.rpy:300
+    old "Atomic theory"
+    new ""
+
+    # game/script-jokes.rpy:305
+    old "Barista"
+    new ""
+
+    # game/script-jokes.rpy:310
+    old "Guitarist"
+    new ""
+
+    # game/script-jokes.rpy:315
+    old "Snake mathematics"
+    new ""
+
+    # game/script-jokes.rpy:320
+    old "Hot air"
+    new ""
+
+    # game/script-jokes.rpy:325
+    old "Cover story"
+    new ""
+
+    # game/script-jokes.rpy:330
+    old "Packaging"
+    new ""
+
+    # game/script-jokes.rpy:335
+    old "Nailed it"
+    new ""
+
+    # game/script-jokes.rpy:340
+    old "Neutrons"
+    new ""
+
+    # game/script-jokes.rpy:345
+    old "Sound tracks"
+    new ""
+
+    # game/script-jokes.rpy:350
+    old "Typists"
+    new ""
+
+    # game/script-jokes.rpy:355
+    old "Cows and stairs"
+    new ""
+
+    # game/script-jokes.rpy:360
+    old "Rabbit lottery"
+    new ""
+
+    # game/script-jokes.rpy:365
+    old "Logging out"
+    new ""
+
+    # game/script-jokes.rpy:370
+    old "Con-crete"
+    new ""
+
+    # game/script-jokes.rpy:375
+    old "Measuring snakes"
+    new ""
+
+    # game/script-jokes.rpy:380
+    old "Ball sports"
+    new ""
+
+    # game/script-jokes.rpy:385
+    old "Meeting walls"
+    new ""
+
+    # game/script-jokes.rpy:390
+    old "Clock and the watch"
+    new ""
+
+    # game/script-jokes.rpy:395
+    old "Tiger's stripes"
+    new ""
+
+    # game/script-jokes.rpy:400
+    old "No bell"
+    new ""
+
+    # game/script-jokes.rpy:405
+    old "Pizza"
+    new ""
+
+    # game/script-jokes.rpy:410
+    old "Vegetarian moods"
+    new ""
+
+    # game/script-jokes.rpy:415
+    old "Scarecrows"
+    new ""
+
+    # game/script-jokes.rpy:420
+    old "School"
+    new ""
+
+    # game/script-jokes.rpy:425
+    old "Burned tongues"
+    new ""
+
+    # game/script-jokes.rpy:430
+    old "Pencils"
+    new ""
+
+    # game/script-jokes.rpy:435
+    old "The drill"
+    new ""
+
+    # game/script-jokes.rpy:440
+    old "Cannery"
+    new ""
+
+    # game/script-jokes.rpy:445
+    old "Out of control"
+    new ""
+
+    # game/script-jokes.rpy:450
+    old "Dishwashing"
+    new ""
+
+    # game/script-jokes.rpy:455
+    old "Escape artist"
+    new ""
+
+    # game/script-jokes.rpy:460
+    old "Shoemakers"
+    new ""
+
+    # game/script-jokes.rpy:465
+    old "Dog walkers"
+    new ""
+
+    # game/script-jokes.rpy:470
+    old "Shark literature"
+    new ""
+
+    # game/script-jokes.rpy:475
+    old "Developers"
+    new ""
+
+    # game/script-jokes.rpy:480
+    old "Plans"
+    new ""
+
+    # game/script-jokes.rpy:485
+    old "Action"
+    new ""
+
+    # game/script-jokes.rpy:490
+    old "Befriending sharks"
+    new ""
+
+    # game/script-jokes.rpy:495
+    old "Fishermen video calls"
+    new ""
+
+    # game/script-jokes.rpy:500
+    old "Lighthouse keeper"
+    new ""
+
+    # game/script-jokes.rpy:505
+    old "Bakers"
+    new ""
+
+    # game/script-jokes.rpy:510
+    old "Ravioli"
+    new ""
+
+    # game/script-jokes.rpy:515
+    old "Spices"
+    new ""
+
+    # game/script-jokes.rpy:520
+    old "Movie theater"
+    new ""
+
+    # game/script-jokes.rpy:525
+    old "Eight-legged cat"
+    new ""
+
+    # game/script-jokes.rpy:530
+    old "Shaving as a skater"
+    new ""
+
+    # game/script-jokes.rpy:535
+    old "Psychic meals"
+    new ""
+
+    # game/script-jokes.rpy:540
+    old "Ex-press"
+    new ""
+
+    # game/script-jokes.rpy:545
+    old "Keymakers"
+    new ""
+
+    # game/script-jokes.rpy:550
+    old "Tube cuisine"
+    new ""
+
+    # game/script-jokes.rpy:555
+    old "Entomology"
+    new ""
+
+    # game/script-jokes.rpy:560
+    old "Author pulled over"
+    new ""
+
+    # game/script-jokes.rpy:565
+    old "Cults"
+    new ""
+
+    # game/script-jokes.rpy:570
+    old "Multiple choice"
+    new ""
+
+    # game/script-jokes.rpy:575
+    old "Horse hairstyles"
+    new ""
+
+    # game/script-jokes.rpy:580
+    old "Mountain climbers"
+    new ""
+
+    # game/script-jokes.rpy:585
+    old "Instant coffee"
+    new ""
+
+    # game/script-jokes.rpy:590
+    old "Butterflies"
+    new ""
+
+    # game/script-jokes.rpy:595
+    old "Ice climbers"
+    new ""
+
+    # game/script-jokes.rpy:600
+    old "Frog notes"
+    new ""
+
+    # game/script-jokes.rpy:605
+    old "Urchins"
+    new ""
+
+    # game/script-jokes.rpy:610
+    old "Air force"
+    new ""
+
+    # game/script-jokes.rpy:615
+    old "Time trials"
+    new ""
+
+    # game/script-jokes.rpy:620
+    old "Wolf education"
+    new ""
+
+    # game/script-jokes.rpy:625
+    old "Sailors"
+    new ""
+
+    # game/script-jokes.rpy:630
+    old "Seamstress"
+    new ""
+
+    # game/script-jokes.rpy:635
+    old "Bee theft"
+    new ""
+
+    # game/script-jokes.rpy:640
+    old "Sculptors"
+    new ""
+
+    # game/script-jokes.rpy:645
+    old "Rhetorical"
+    new ""
+
+    # game/script-jokes.rpy:650
+    old "Fuzz"
+    new ""
+
+    # game/script-jokes.rpy:655
+    old "Restroom comedian"
+    new ""
+
+    # game/script-jokes.rpy:660
+    old "Eyeglasses"
+    new ""
+
+    # game/script-jokes.rpy:665
+    old "Audio technician"
+    new ""
+
+    # game/script-jokes.rpy:670
+    old "Roses"
+    new ""
+
+    # game/script-jokes.rpy:675
+    old "Acrobats"
+    new ""
+
+    # game/script-jokes.rpy:680
+    old "Frog seating"
+    new ""
+

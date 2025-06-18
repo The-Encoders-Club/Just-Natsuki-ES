@@ -24,3 +24,15 @@ translate spanish strings:
     old "This game is an unofficial fan work, unaffiliated with Team Salvato."
     new "Este juego es un mod no oficial, desafiliado de Team Salvato."
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/splash.rpy:158
+    old "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
+    new ""
+
+    # game/splash.rpy:162
+    old "I agree."
+    new ""
+

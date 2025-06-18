@@ -1064,3 +1064,15 @@ translate spanish strings:
     old "Take your time, Natsuki."
     new "Tómate tu tiempo, Natsuki."
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-introduction.rpy:65
+    old "Restore natsuki.chr"
+    new ""
+
+    # game/script-introduction.rpy:223
+    old "What is your name?"
+    new ""
+

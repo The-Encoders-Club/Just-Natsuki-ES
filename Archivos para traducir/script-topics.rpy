@@ -43856,3 +43856,487 @@ translate spanish talk_windup_shaving_90f1d5d6:
     # n 7fchgn "T-{w=0.2}thanks a bunch,{w=0.2} [player]!~"
     n 7fchgn ""
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-topics.rpy:120
+    old "Did you ever have any pets?"
+    new ""
+
+    # game/script-topics.rpy:120
+    old "Animals"
+    new ""
+
+    # game/script-topics.rpy:120
+    old "Family"
+    new ""
+
+    # game/script-topics.rpy:818
+    old "Service animals"
+    new ""
+
+    # game/script-topics.rpy:1032
+    old "Using computers healthily"
+    new ""
+
+    # game/script-topics.rpy:1032
+    old "Health"
+    new ""
+
+    # game/script-topics.rpy:1032
+    old "Technology"
+    new ""
+
+    # game/script-topics.rpy:1296
+    old "Staying active"
+    new ""
+
+    # game/script-topics.rpy:1296
+    old "Life"
+    new ""
+
+    # game/script-topics.rpy:1296
+    old "You"
+    new ""
+
+    # game/script-topics.rpy:1467
+    old "Relieving stress"
+    new ""
+
+    # game/script-topics.rpy:1508
+    old "Careful spending"
+    new ""
+
+    # game/script-topics.rpy:1508
+    old "Society"
+    new ""
+
+    # game/script-topics.rpy:1558
+    old "Eating well"
+    new ""
+
+    # game/script-topics.rpy:1558
+    old "Food"
+    new ""
+
+    # game/script-topics.rpy:1618
+    old "Setting up the weather"
+    new ""
+
+    # game/script-topics.rpy:1618
+    old "Setup"
+    new ""
+
+    # game/script-topics.rpy:2197
+    old "What's your favorite season?"
+    new ""
+
+    # game/script-topics.rpy:2197
+    old "Nature"
+    new ""
+
+    # game/script-topics.rpy:2433
+    old "Time management"
+    new ""
+
+    # game/script-topics.rpy:2480
+    old "Do you have a sweet tooth?"
+    new ""
+
+    # game/script-topics.rpy:2550
+    old "My appearance"
+    new ""
+
+    # game/script-topics.rpy:2913
+    old "Do you drink alcohol?"
+    new ""
+
+    # game/script-topics.rpy:2992
+    old "Can you drive?"
+    new ""
+
+    # game/script-topics.rpy:2992
+    old "Transport"
+    new ""
+
+    # game/script-topics.rpy:3159
+    old "Sustainable fashion"
+    new ""
+
+    # game/script-topics.rpy:3159
+    old "Environment"
+    new ""
+
+    # game/script-topics.rpy:3159
+    old "Fashion"
+    new ""
+
+    # game/script-topics.rpy:3227
+    old "Can I give you a nickname?"
+    new ""
+
+    # game/script-topics.rpy:3463
+    old "Sleeping well"
+    new ""
+
+    # game/script-topics.rpy:3540
+    old "Aging"
+    new ""
+
+    # game/script-topics.rpy:3609
+    old "Work-life balance"
+    new ""
+
+    # game/script-topics.rpy:3687
+    old "Using headphones carefully"
+    new ""
+
+    # game/script-topics.rpy:3736
+    old "Thoughts on horror"
+    new ""
+
+    # game/script-topics.rpy:3736
+    old "Media"
+    new ""
+
+    # game/script-topics.rpy:3736
+    old "Literature"
+    new ""
+
+    # game/script-topics.rpy:3811
+    old "Are you into video games?"
+    new ""
+
+    # game/script-topics.rpy:3811
+    old "Games"
+    new ""
+
+    # game/script-topics.rpy:3917
+    old "[n_name]'s fang"
+    new ""
+
+    # game/script-topics.rpy:3981
+    old "I love you, {0}!"
+    new ""
+
+    # game/script-topics.rpy:3981
+    old "Romance"
+    new ""
+
+    # game/script-topics.rpy:4407
+    old "Why do you style your hair like that?"
+    new ""
+
+    # game/script-topics.rpy:4531
+    old "Having integrity"
+    new ""
+
+    # game/script-topics.rpy:4590
+    old "What's your favorite animal?"
+    new ""
+
+    # game/script-topics.rpy:4651
+    old "What's your favorite drink?"
+    new ""
+
+    # game/script-topics.rpy:4729
+    old "What do you think of your school uniform?"
+    new ""
+
+    # game/script-topics.rpy:4838
+    old "Have you ever flown anywhere?"
+    new ""
+
+    # game/script-topics.rpy:4947
+    old "Are you into cars?"
+    new ""
+
+    # game/script-topics.rpy:5060
+    old "How do you feel about me?"
+    new ""
+
+    # game/script-topics.rpy:5177
+    old "Are you into cosplay?"
+    new ""
+
+    # game/script-topics.rpy:5482
+    old "Why do you like me?"
+    new ""
+
+    # game/script-topics.rpy:5635
+    old "Fried squid"
+    new ""
+
+    # game/script-topics.rpy:5635
+    old "DDLC"
+    new ""
+
+    # game/script-topics.rpy:5699
+    old "Do you have any collectibles?"
+    new ""
+
+    # game/script-topics.rpy:5792
+    old "Do you want to play Snap?"
+    new ""
+
+    # game/script-topics.rpy:5860
+    old "Can you go over the rules of Snap again?"
+    new ""
+
+    # game/script-topics.rpy:5903
+    old "Chewing gum"
+    new ""
+
+    # game/script-topics.rpy:5903
+    old "Wind-ups"
+    new ""
+
+    # game/script-topics.rpy:5946
+    old "Indoor smoking"
+    new ""
+
+    # game/script-topics.rpy:5997
+    old "Handwashing"
+    new ""
+
+    # game/script-topics.rpy:6040
+    old "Littering"
+    new ""
+
+    # game/script-topics.rpy:6107
+    old "Music player"
+    new ""
+
+    # game/script-topics.rpy:6209
+    old "Can you explain custom music for me again?"
+    new ""
+
+    # game/script-topics.rpy:6287
+    old "Do you follow any VTubers?"
+    new ""
+
+    # game/script-topics.rpy:6351
+    old "Are you into skateboarding?"
+    new ""
+
+    # game/script-topics.rpy:6471
+    old "Do you play much sports?"
+    new ""
+
+    # game/script-topics.rpy:6555
+    old "Online shopping"
+    new ""
+
+    # game/script-topics.rpy:6633
+    old "Subscriptions"
+    new ""
+
+    # game/script-topics.rpy:6705
+    old "Contributions"
+    new ""
+
+    # game/script-topics.rpy:6705
+    old "Mod"
+    new ""
+
+    # game/script-topics.rpy:6774
+    old "DDLC memories"
+    new ""
+
+    # game/script-topics.rpy:6898
+    old "Monika and the other girls"
+    new ""
+
+    # game/script-topics.rpy:6983
+    old "Leaving the space classroom"
+    new ""
+
+    # game/script-topics.rpy:7035
+    old "Are you afraid of lightning?"
+    new ""
+
+    # game/script-topics.rpy:7035
+    old "Fears"
+    new ""
+
+    # game/script-topics.rpy:7158
+    old "Drowsiness"
+    new ""
+
+    # game/script-topics.rpy:7261
+    old "Are you afraid of spiders?"
+    new ""
+
+    # game/script-topics.rpy:7370
+    old "What do you think of Dan Salvato?"
+    new ""
+
+    # game/script-topics.rpy:7443
+    old "Custom outfits"
+    new ""
+
+    # game/script-topics.rpy:7524
+    old "Proper hygiene"
+    new ""
+
+    # game/script-topics.rpy:7681
+    old "How do you feel about Monika?"
+    new ""
+
+    # game/script-topics.rpy:7750
+    old "How do you feel about Yuri?"
+    new ""
+
+    # game/script-topics.rpy:7832
+    old "How do you feel about Sayori?"
+    new ""
+
+    # game/script-topics.rpy:7882
+    old "Do you drink much tea?"
+    new ""
+
+    # game/script-topics.rpy:8093
+    old "How do I make friends?"
+    new ""
+
+    # game/script-topics.rpy:8204
+    old "Can you do any impressions of the other girls?"
+    new ""
+
+    # game/script-topics.rpy:8325
+    old "Newspapers and bias"
+    new ""
+
+    # game/script-topics.rpy:8393
+    old "Are you afraid of flying?"
+    new ""
+
+    # game/script-topics.rpy:8493
+    old "What do you think about fanart?"
+    new ""
+
+    # game/script-topics.rpy:8493
+    old "Art"
+    new ""
+
+    # game/script-topics.rpy:8598
+    old "How to interview properly"
+    new ""
+
+    # game/script-topics.rpy:8732
+    old "Bullying"
+    new ""
+
+    # game/script-topics.rpy:8824
+    old "Can you call me something else?"
+    new ""
+
+    # game/script-topics.rpy:9082
+    old "My birthday"
+    new ""
+
+    # game/script-topics.rpy:9395
+    old "Can I see a poem you've written for me?"
+    new ""
+
+    # game/script-topics.rpy:9519
+    old "What sort of chocolate do you prefer?"
+    new ""
+
+    # game/script-topics.rpy:9735
+    old "Learning languages"
+    new ""
+
+    # game/script-topics.rpy:9922
+    old "Rage rooms"
+    new ""
+
+    # game/script-topics.rpy:9922
+    old "Entertainment"
+    new ""
+
+    # game/script-topics.rpy:9922
+    old "Hobbies"
+    new ""
+
+    # game/script-topics.rpy:10006
+    old "Can you tidy away the decorations for me?"
+    new ""
+
+    # game/script-topics.rpy:10006
+    old "Holidays"
+    new ""
+
+    # game/script-topics.rpy:10060
+    old "What do you think about vegetarianism?"
+    new ""
+
+    # game/script-topics.rpy:10215
+    old "Staying motivated"
+    new ""
+
+    # game/script-topics.rpy:10495
+    old "Daily joke"
+    new ""
+
+    # game/script-topics.rpy:10801
+    old "Can you start telling me daily jokes?"
+    new ""
+
+    # game/script-topics.rpy:10801
+    old "Jokes"
+    new ""
+
+    # game/script-topics.rpy:10836
+    old "Can you stop telling me daily jokes?"
+    new ""
+
+    # game/script-topics.rpy:10888
+    old "What jokes have you told me before?"
+    new ""
+
+    # game/script-topics.rpy:11278
+    old "Clothing problems"
+    new ""
+
+    # game/script-topics.rpy:11444
+    old "What's your favorite subject?"
+    new ""
+
+    # game/script-topics.rpy:11444
+    old "Education"
+    new ""
+
+    # game/script-topics.rpy:11652
+    old "Can you draw?"
+    new ""
+
+    # game/script-topics.rpy:11885
+    old "Can you remind me next time you run out of topics?"
+    new ""
+
+    # game/script-topics.rpy:11885
+    old "Reminders"
+    new ""
+
+    # game/script-topics.rpy:11975
+    old "Playing things out loud"
+    new ""
+
+    # game/script-topics.rpy:12127
+    old "Did you ever have any work experience?"
+    new ""
+
+    # game/script-topics.rpy:12532
+    old "Do you want to play Blackjack?"
+    new ""
+
+    # game/script-topics.rpy:12597
+    old "Can you go over the rules of Blackjack again?"
+    new ""
+
+    # game/script-topics.rpy:12652
+    old "Shaving"
+    new ""
+

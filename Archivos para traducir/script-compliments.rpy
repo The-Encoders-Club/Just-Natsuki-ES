@@ -2442,3 +2442,39 @@ translate spanish compliment_thoughtful_46e5fe55:
     # n 2fchsm "You're welcome,{w=0.2} [player]!"
     n 2fchsm "¡De nada, {w=0.2}[player]!"
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-compliments.rpy:56
+    old "I think you're amazing!"
+    new ""
+
+    # game/script-compliments.rpy:143
+    old "I think you're beautiful!"
+    new ""
+
+    # game/script-compliments.rpy:264
+    old "I love how confident you are!"
+    new ""
+
+    # game/script-compliments.rpy:328
+    old "I think you're cute!"
+    new ""
+
+    # game/script-compliments.rpy:440
+    old "I love your sense of humor!"
+    new ""
+
+    # game/script-compliments.rpy:515
+    old "You're an inspiration to me!"
+    new ""
+
+    # game/script-compliments.rpy:567
+    old "I love your sense of style!"
+    new ""
+
+    # game/script-compliments.rpy:691
+    old "I love how thoughtful you are!"
+    new ""
+

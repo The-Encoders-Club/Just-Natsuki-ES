@@ -4808,3 +4808,47 @@ translate spanish farewell_normal_happy_stranger_8da680a4:
     # n 4kdrbosbl "..."
     n 4kdrbosbl ""
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-farewells.rpy:59
+    old "I'm going to sleep."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to go eat something."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going out somewhere."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to work."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to school."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to play something else."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to do some studying."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to do something else."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going to do some chores."
+    new ""
+
+    # game/script-farewells.rpy:59
+    old "I'm going away for a while."
+    new ""
+

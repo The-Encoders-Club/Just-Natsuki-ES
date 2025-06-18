@@ -1006,3 +1006,203 @@ translate spanish strings:
     old "Forfeit"
     new "Rendirse"
 
+# TODO: Translation updated at 2025-06-18 17:08
+
+translate spanish strings:
+
+    # game/script-snap.rpy:440
+    old "Nnnnn-!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Ugh!{w=0.2} Come on!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Y-{w=0.2}You're fast!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "But I was just about to call ittt!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Just you wait,{w=0.2} [player]..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Uuuuuu-!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Not again!{w=0.2} Grrr..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Damn it..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Fudge..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "So dumb..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Again?{w=0.2} Really?"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Ugh..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "So ridiculous..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Jeez! Whatever..."
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Jeez!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Jeeeeeez!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "Oh come on,{w=0.2} [player]!"
+    new ""
+
+    # game/script-snap.rpy:440
+    old "How are you {i}that{/i} fast?!"
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Oh?{w=0.2} Someone's impatient,{w=0.2} huh?"
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Oopsie daisy,{w=0.2} [player]~.{w=0.2} Ehehe."
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Nice one,{w=0.2} dummy.{w=0.2} Ahaha!"
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Real smooth,{w=0.2} [player].{w=0.2} Ehehe."
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Ahaha!{w=0.2} What was that,{w=0.2} [player]?"
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Hey,{w=0.2} [player] -{w=0.2} you're meant to read the cards!{w=0.2} Ehehe."
+    new ""
+
+    # game/script-snap.rpy:520
+    old "Great play,{w=0.2} dummy!{w=0.2} Ahaha!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "SNAP!{w=0.2} Ahaha!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap!{w=0.2} Ahaha!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "SNAP!{w=0.2} Ehehe."
+    new ""
+
+    # game/script-snap.rpy:535
+    old "SNAP!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap~!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap!{w=0.2} Snap snap snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snappy snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Boom!{w=0.2} Snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap!{w=0.2} Snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap!{w=0.2} Snap!{w=0.2} Snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Yes!{w=0.2} SNAP!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Yeah!{w=0.2} SNAP!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Yeah!{w=0.2} Snap!{w=0.2} Snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Snap snap freaking snap!"
+    new ""
+
+    # game/script-snap.rpy:535
+    old "SNAAAP!{w=0.2} Ehehe."
+    new ""
+
+    # game/script-snap.rpy:535
+    old "Bam!{w=0.2} Snap!"
+    new ""
+
+    # game/script-snap.rpy:564
+    old "Sn-...{w=0.3} oh."
+    new ""
+
+    # game/script-snap.rpy:564
+    old "Snap!{w=0.2} Wait..."
+    new ""
+
+    # game/script-snap.rpy:564
+    old "SNAP!{w=0.2} Huh...?{w=0.2} O-{w=0.2}oh."
+    new ""
+
+    # game/script-snap.rpy:564
+    old "Snap sna-...{w=0.3} grrr."
+    new ""
+
+    # game/script-snap.rpy:824
+    old "Cards down: {0}"
+    new ""
+
+    # game/script-snap.rpy:825
+    old "Your hand: {0}"
+    new ""
+
+    # game/script-snap.rpy:826
+    old "[n_name]'s hand: {0}"
+    new ""
+
+    # game/script-snap.rpy:827
+    old "Turn: {0}"
+    new ""
+
