@@ -16,7 +16,7 @@ translate spanish splashscreen_12775544:
 translate spanish splashscreen_e193832f:
 
     # "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: http://ddlc.moe"
-    "Los archivos del juego Doki Doki Literature Club son necesarios para jugar este mod y se pueden descargar gratuitamente desde: http://ddlc.moe"
+    "Los archivos del juego Doki Doki Literature Club son necesarios para jugar este mod y se pueden descargar gratuitamente desde: http://ddlc.moe."
 
 translate spanish strings:
 
@@ -34,5 +34,5 @@ translate spanish strings:
 
     # game/splash.rpy:162
     old "I agree."
-    new "Acepto."
+    new "Acepto"
 
