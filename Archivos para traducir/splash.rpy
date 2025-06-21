@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2025-04-30 8:54 am
+# TODO: Translation updated at 2025-04-30 8:54 am
 
 # game/splash.rpy:155
 translate spanish splashscreen_0320a168:
@@ -30,9 +30,9 @@ translate spanish strings:
 
     # game/splash.rpy:158
     old "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
-    new ""
+    new "Al jugar [config.name] aceptas que has completado Doki Doki Literature Club y aceptas cualquier spoiler contenido dentro."
 
     # game/splash.rpy:162
     old "I agree."
-    new ""
+    new "Acepto."
 
