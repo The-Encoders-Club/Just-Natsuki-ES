@@ -43862,481 +43862,481 @@ translate spanish strings:
 
     # game/script-topics.rpy:120
     old "Did you ever have any pets?"
-    new ""
+    new "¿Alguna vez tuviste mascotas?"
 
     # game/script-topics.rpy:120
     old "Animals"
-    new ""
+    new "Animales"
 
     # game/script-topics.rpy:120
     old "Family"
-    new ""
+    new "Familia"
 
     # game/script-topics.rpy:818
     old "Service animals"
-    new ""
+    new "Animales de servicio"
 
     # game/script-topics.rpy:1032
     old "Using computers healthily"
-    new ""
+    new "Usar computadoras de forma saludable"
 
     # game/script-topics.rpy:1032
     old "Health"
-    new ""
+    new "Salud"
 
     # game/script-topics.rpy:1032
     old "Technology"
-    new ""
+    new "Tecnología"
 
     # game/script-topics.rpy:1296
     old "Staying active"
-    new ""
+    new "Mantenerse activo"
 
     # game/script-topics.rpy:1296
     old "Life"
-    new ""
+    new "Vida"
 
     # game/script-topics.rpy:1296
     old "You"
-    new ""
+    new "Tú"
 
     # game/script-topics.rpy:1467
     old "Relieving stress"
-    new ""
+    new "Aliviar el estrés"
 
     # game/script-topics.rpy:1508
     old "Careful spending"
-    new ""
+    new "Gastar con cuidado"
 
     # game/script-topics.rpy:1508
     old "Society"
-    new ""
+    new "Sociedad"
 
     # game/script-topics.rpy:1558
     old "Eating well"
-    new ""
+    new "Comer bien"
 
     # game/script-topics.rpy:1558
     old "Food"
-    new ""
+    new "Comida"
 
     # game/script-topics.rpy:1618
     old "Setting up the weather"
-    new ""
+    new "Configurar el clima"
 
     # game/script-topics.rpy:1618
     old "Setup"
-    new ""
+    new "Configuración"
 
     # game/script-topics.rpy:2197
     old "What's your favorite season?"
-    new ""
+    new "¿Cuál es tu estación favorita?"
 
     # game/script-topics.rpy:2197
     old "Nature"
-    new ""
+    new "Naturaleza"
 
     # game/script-topics.rpy:2433
     old "Time management"
-    new ""
+    new "Gestión del tiempo"
 
     # game/script-topics.rpy:2480
     old "Do you have a sweet tooth?"
-    new ""
+    new "¿Eres golosa?"
 
     # game/script-topics.rpy:2550
     old "My appearance"
-    new ""
+    new "Mi apariencia"
 
     # game/script-topics.rpy:2913
     old "Do you drink alcohol?"
-    new ""
+    new "¿Tú bebes alcohol?"
 
     # game/script-topics.rpy:2992
     old "Can you drive?"
-    new ""
+    new "¿Sabes conducir?"
 
     # game/script-topics.rpy:2992
     old "Transport"
-    new ""
+    new "Transporte"
 
     # game/script-topics.rpy:3159
     old "Sustainable fashion"
-    new ""
+    new "Moda sostenible"
 
     # game/script-topics.rpy:3159
     old "Environment"
-    new ""
+    new "Medio ambiente"
 
     # game/script-topics.rpy:3159
     old "Fashion"
-    new ""
+    new "Moda"
 
     # game/script-topics.rpy:3227
     old "Can I give you a nickname?"
-    new ""
+    new "¿Puedo darte un apodo?"
 
     # game/script-topics.rpy:3463
     old "Sleeping well"
-    new ""
+    new "Dormir bien"
 
     # game/script-topics.rpy:3540
     old "Aging"
-    new ""
+    new "Envejecer"
 
     # game/script-topics.rpy:3609
     old "Work-life balance"
-    new ""
+    new "Equilibrio trabajo-vida"
 
     # game/script-topics.rpy:3687
     old "Using headphones carefully"
-    new ""
+    new "Usar auriculares con cuidado"
 
     # game/script-topics.rpy:3736
     old "Thoughts on horror"
-    new ""
+    new "Opiniones sobre el horror"
 
     # game/script-topics.rpy:3736
     old "Media"
-    new ""
+    new "Medios"
 
     # game/script-topics.rpy:3736
     old "Literature"
-    new ""
+    new "Literatura"
 
     # game/script-topics.rpy:3811
     old "Are you into video games?"
-    new ""
+    new "¿Te gustan los videojuegos?"
 
     # game/script-topics.rpy:3811
     old "Games"
-    new ""
+    new "Juegos"
 
     # game/script-topics.rpy:3917
     old "[n_name]'s fang"
-    new ""
+    new "El colmillo de [n_name]"
 
     # game/script-topics.rpy:3981
     old "I love you, {0}!"
-    new ""
+    new "¡Te amo, {0}!"
 
     # game/script-topics.rpy:3981
     old "Romance"
-    new ""
+    new "Romance"
 
     # game/script-topics.rpy:4407
     old "Why do you style your hair like that?"
-    new ""
+    new "¿Por qué te peinas así?"
 
     # game/script-topics.rpy:4531
     old "Having integrity"
-    new ""
+    new "Tener integridad"
 
     # game/script-topics.rpy:4590
     old "What's your favorite animal?"
-    new ""
+    new "¿Cuál es tu animal favorito?"
 
     # game/script-topics.rpy:4651
     old "What's your favorite drink?"
-    new ""
+    new "¿Cuál es tu bebida favorita?"
 
     # game/script-topics.rpy:4729
     old "What do you think of your school uniform?"
-    new ""
+    new "¿Qué opinas de tu uniforme escolar?"
 
     # game/script-topics.rpy:4838
     old "Have you ever flown anywhere?"
-    new ""
+    new "¿Alguna vez has volado a algún lugar?"
 
     # game/script-topics.rpy:4947
     old "Are you into cars?"
-    new ""
+    new "¿Te gustan los autos?"
 
     # game/script-topics.rpy:5060
     old "How do you feel about me?"
-    new ""
+    new "¿Qué sientes por mí?"
 
     # game/script-topics.rpy:5177
     old "Are you into cosplay?"
-    new ""
+    new "¿Te gusta el cosplay?"
 
     # game/script-topics.rpy:5482
     old "Why do you like me?"
-    new ""
+    new "¿Por qué te gusto?"
 
     # game/script-topics.rpy:5635
     old "Fried squid"
-    new ""
+    new "Calamar frito"
 
     # game/script-topics.rpy:5635
     old "DDLC"
-    new ""
+    new "DDLC"
 
     # game/script-topics.rpy:5699
     old "Do you have any collectibles?"
-    new ""
+    new "¿Tienes coleccionables?"
 
     # game/script-topics.rpy:5792
     old "Do you want to play Snap?"
-    new ""
+    new "¿Quieres jugar al Snap?"
 
     # game/script-topics.rpy:5860
     old "Can you go over the rules of Snap again?"
-    new ""
+    new "¿Puedes repasar las reglas del Snap otra vez?"
 
     # game/script-topics.rpy:5903
     old "Chewing gum"
-    new ""
+    new "Goma de mascar"
 
     # game/script-topics.rpy:5903
     old "Wind-ups"
-    new ""
+    new "Bromas pesadas"
 
     # game/script-topics.rpy:5946
     old "Indoor smoking"
-    new ""
+    new "Fumar en interiores"
 
     # game/script-topics.rpy:5997
     old "Handwashing"
-    new ""
+    new "Lavado de manos"
 
     # game/script-topics.rpy:6040
     old "Littering"
-    new ""
+    new "Arrojar basura"
 
     # game/script-topics.rpy:6107
     old "Music player"
-    new ""
+    new "Reproductor de música"
 
     # game/script-topics.rpy:6209
     old "Can you explain custom music for me again?"
-    new ""
+    new "¿Puedes explicarme sobre la música personalizada otra vez?"
 
     # game/script-topics.rpy:6287
     old "Do you follow any VTubers?"
-    new ""
+    new "¿Sigues a algún VTuber?"
 
     # game/script-topics.rpy:6351
     old "Are you into skateboarding?"
-    new ""
+    new "¿Te gusta el skateboarding?"
 
     # game/script-topics.rpy:6471
     old "Do you play much sports?"
-    new ""
+    new "¿Practicas muchos deportes?"
 
     # game/script-topics.rpy:6555
     old "Online shopping"
-    new ""
+    new "Compras en línea"
 
     # game/script-topics.rpy:6633
     old "Subscriptions"
-    new ""
+    new "Suscripciones"
 
     # game/script-topics.rpy:6705
     old "Contributions"
-    new ""
+    new "Contribuciones"
 
     # game/script-topics.rpy:6705
     old "Mod"
-    new ""
+    new "Mod"
 
     # game/script-topics.rpy:6774
     old "DDLC memories"
-    new ""
+    new "Recuerdos de DDLC"
 
     # game/script-topics.rpy:6898
     old "Monika and the other girls"
-    new ""
+    new "Monika y las otras chicas"
 
     # game/script-topics.rpy:6983
     old "Leaving the space classroom"
-    new ""
+    new "Abandonar el aula espacial"
 
     # game/script-topics.rpy:7035
     old "Are you afraid of lightning?"
-    new ""
+    new "¿Le tienes miedo a los relámpagos?"
 
     # game/script-topics.rpy:7035
     old "Fears"
-    new ""
+    new "Miedos"
 
     # game/script-topics.rpy:7158
     old "Drowsiness"
-    new ""
+    new "Somnolencia"
 
     # game/script-topics.rpy:7261
     old "Are you afraid of spiders?"
-    new ""
+    new "¿Le tienes miedo a las arañas?"
 
     # game/script-topics.rpy:7370
     old "What do you think of Dan Salvato?"
-    new ""
+    new "¿Qué opinas de Dan Salvato?"
 
     # game/script-topics.rpy:7443
     old "Custom outfits"
-    new ""
+    new "Atuendos personalizados"
 
     # game/script-topics.rpy:7524
     old "Proper hygiene"
-    new ""
+    new "Higiene adecuada"
 
     # game/script-topics.rpy:7681
     old "How do you feel about Monika?"
-    new ""
+    new "¿Qué sientes por Monika?"
 
     # game/script-topics.rpy:7750
     old "How do you feel about Yuri?"
-    new ""
+    new "¿Qué sientes por Yuri?"
 
     # game/script-topics.rpy:7832
     old "How do you feel about Sayori?"
-    new ""
+    new "¿Qué sientes por Sayori?"
 
     # game/script-topics.rpy:7882
     old "Do you drink much tea?"
-    new ""
+    new "¿Bebes mucho té?"
 
     # game/script-topics.rpy:8093
     old "How do I make friends?"
-    new ""
+    new "¿Cómo hago amigos?"
 
     # game/script-topics.rpy:8204
     old "Can you do any impressions of the other girls?"
-    new ""
+    new "¿Puedes hacer imitaciones de las otras chicas?"
 
     # game/script-topics.rpy:8325
     old "Newspapers and bias"
-    new ""
+    new "Periódicos y parcialidad"
 
     # game/script-topics.rpy:8393
     old "Are you afraid of flying?"
-    new ""
+    new "¿Le tienes miedo a volar?"
 
     # game/script-topics.rpy:8493
     old "What do you think about fanart?"
-    new ""
+    new "¿Qué opinas del fanart?"
 
     # game/script-topics.rpy:8493
     old "Art"
-    new ""
+    new "Arte"
 
     # game/script-topics.rpy:8598
     old "How to interview properly"
-    new ""
+    new "Cómo entrevistar correctamente"
 
     # game/script-topics.rpy:8732
     old "Bullying"
-    new ""
+    new "Acoso"
 
     # game/script-topics.rpy:8824
     old "Can you call me something else?"
-    new ""
+    new "¿Puedes llamarme de otra manera?"
 
     # game/script-topics.rpy:9082
     old "My birthday"
-    new ""
+    new "Mi cumpleaños"
 
     # game/script-topics.rpy:9395
     old "Can I see a poem you've written for me?"
-    new ""
+    new "¿Puedo ver un poema que hayas escrito para mí?"
 
     # game/script-topics.rpy:9519
     old "What sort of chocolate do you prefer?"
-    new ""
+    new "¿Qué tipo de chocolate prefieres?"
 
     # game/script-topics.rpy:9735
     old "Learning languages"
-    new ""
+    new "Aprender idiomas"
 
     # game/script-topics.rpy:9922
     old "Rage rooms"
-    new ""
+    new "Cuartos de ira"
 
     # game/script-topics.rpy:9922
     old "Entertainment"
-    new ""
+    new "Entretenimiento"
 
     # game/script-topics.rpy:9922
     old "Hobbies"
-    new ""
+    new "Pasatiempos"
 
     # game/script-topics.rpy:10006
     old "Can you tidy away the decorations for me?"
-    new ""
+    new "¿Puedes guardar las decoraciones por mí?"
 
     # game/script-topics.rpy:10006
     old "Holidays"
-    new ""
+    new "Festividades"
 
     # game/script-topics.rpy:10060
     old "What do you think about vegetarianism?"
-    new ""
+    new "¿Qué opinas del vegetarianismo?"
 
     # game/script-topics.rpy:10215
     old "Staying motivated"
-    new ""
+    new "Mantenerse motivado"
 
     # game/script-topics.rpy:10495
     old "Daily joke"
-    new ""
+    new "Broma diaria"
 
     # game/script-topics.rpy:10801
     old "Can you start telling me daily jokes?"
-    new ""
+    new "¿Puedes empezar a contarme chistes diarios?"
 
     # game/script-topics.rpy:10801
     old "Jokes"
-    new ""
+    new "Bromas"
 
     # game/script-topics.rpy:10836
     old "Can you stop telling me daily jokes?"
-    new ""
+    new "¿Puedes dejar de contarme chistes diarios?"
 
     # game/script-topics.rpy:10888
     old "What jokes have you told me before?"
-    new ""
+    new "¿Qué chistes me has contado antes?"
 
     # game/script-topics.rpy:11278
     old "Clothing problems"
-    new ""
+    new "Problemas con la ropa"
 
     # game/script-topics.rpy:11444
     old "What's your favorite subject?"
-    new ""
+    new "¿Cuál es tu asignatura favorita?"
 
     # game/script-topics.rpy:11444
     old "Education"
-    new ""
+    new "Educación"
 
     # game/script-topics.rpy:11652
     old "Can you draw?"
-    new ""
+    new "¿Sabes dibujar?"
 
     # game/script-topics.rpy:11885
     old "Can you remind me next time you run out of topics?"
-    new ""
+    new "¿Puedes recordármelo la próxima vez que te quedes sin temas?"
 
     # game/script-topics.rpy:11885
     old "Reminders"
-    new ""
+    new "Recordatorios"
 
     # game/script-topics.rpy:11975
     old "Playing things out loud"
-    new ""
+    new "Reproducir cosas en voz alta"
 
     # game/script-topics.rpy:12127
     old "Did you ever have any work experience?"
-    new ""
+    new "¿Alguna vez tuviste experiencia laboral?"
 
     # game/script-topics.rpy:12532
     old "Do you want to play Blackjack?"
-    new ""
+    new "¿Quieres jugar Blackjack?"
 
     # game/script-topics.rpy:12597
     old "Can you go over the rules of Blackjack again?"
-    new ""
+    new "¿Puedes repasar las reglas del Blackjack otra vez?"
 
     # game/script-topics.rpy:12652
     old "Shaving"
-    new ""
+    new "Afeitarse"
 
