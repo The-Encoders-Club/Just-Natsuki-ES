@@ -58,7 +58,7 @@ translate spanish greeting_first_time_85450eea:
 translate spanish greeting_first_time_60b34e22:
 
     # n 2tnmslsbr "Did you wanna talk,{w=0.2} or...?"
-    n 2tnmslsbr "¿Querías hablar, {w=0.2}¿o...?"
+    n 2tnmslsbr "¿Querías hablar, {w=0.2}o...?"
 
 # game/script-greetings.rpy:91
 translate spanish greeting_first_time_a4821672_1:
