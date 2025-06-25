@@ -4,13 +4,13 @@
 translate spanish snap_intro_e2a4dba5:
 
     # n 1nchbs "Alriiiight!{w=0.75}{nw}"
-    n 1nchbs "¡Biennnn!{w=0.75}{nw}"
+    n 1nchbs "¡Biennnn! {w=0.75}{nw}"
 
 # game/script-snap.rpy:244
 translate spanish snap_intro_dcdd8be3:
 
     # extend 1fcsbg " Let's play some Snap!"
-    extend 1fcsbg " ¡Juguemos a Snap!"
+    extend 1fcsbg "¡Juguemos a Snap!"
 
 # game/script-snap.rpy:247
 translate spanish snap_intro_1ccd259a:
