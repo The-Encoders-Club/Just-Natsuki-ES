@@ -1012,197 +1012,197 @@ translate spanish strings:
 
     # game/script-snap.rpy:440
     old "Nnnnn-!"
-    new ""
+    new "¡Nnnnn-!"
 
     # game/script-snap.rpy:440
     old "Ugh!{w=0.2} Come on!"
-    new ""
+    new "¡Uf! {w=0.2}¡Vamos!"
 
     # game/script-snap.rpy:440
     old "Y-{w=0.2}You're fast!"
-    new ""
+    new "¡E-{w=0.2}Eres rápido!"
 
     # game/script-snap.rpy:440
     old "But I was just about to call ittt!"
-    new ""
+    new "¡Pero estaba a punto de decirlo!"
 
     # game/script-snap.rpy:440
     old "Just you wait,{w=0.2} [player]..."
-    new ""
+    new "Solo espera, {w=0.2}[player]..."
 
     # game/script-snap.rpy:440
     old "Uuuuuu-!"
-    new ""
+    new "¡Uuuuuu-!"
 
     # game/script-snap.rpy:440
     old "Not again!{w=0.2} Grrr..."
-    new ""
+    new "¡Otra vez no! {w=0.2}Grrr..."
 
     # game/script-snap.rpy:440
     old "Damn it..."
-    new ""
+    new "Maldición..."
 
     # game/script-snap.rpy:440
     old "Fudge..."
-    new ""
+    new "Rayos..."
 
     # game/script-snap.rpy:440
     old "So dumb..."
-    new ""
+    new "Qué tonto..."
 
     # game/script-snap.rpy:440
     old "Again?{w=0.2} Really?"
-    new ""
+    new "¿Otra vez? {w=0.2}¿En serio?"
 
     # game/script-snap.rpy:440
     old "Ugh..."
-    new ""
+    new "Uf..."
 
     # game/script-snap.rpy:440
     old "So ridiculous..."
-    new ""
+    new "Qué ridículo..."
 
     # game/script-snap.rpy:440
     old "Jeez! Whatever..."
-    new ""
+    new "¡Dios! Como sea..."
 
     # game/script-snap.rpy:440
     old "Jeez!"
-    new ""
+    new "¡Dios!"
 
     # game/script-snap.rpy:440
     old "Jeeeeeez!"
-    new ""
+    new "¡Dioooos!"
 
     # game/script-snap.rpy:440
     old "Oh come on,{w=0.2} [player]!"
-    new ""
+    new "¡Oh vamos, {w=0.2}[player]!"
 
     # game/script-snap.rpy:440
     old "How are you {i}that{/i} fast?!"
-    new ""
+    new "¿Cómo eres {i}tan{/i} rápido?"
 
     # game/script-snap.rpy:520
     old "Oh?{w=0.2} Someone's impatient,{w=0.2} huh?"
-    new ""
+    new "¿Oh? {w=0.2}Alguien está impaciente, {w=0.2}¿eh?"
 
     # game/script-snap.rpy:520
     old "Oopsie daisy,{w=0.2} [player]~.{w=0.2} Ehehe."
-    new ""
+    new "Uy uy, {w=0.2}[player]~. {w=0.2}Jejeje."
 
     # game/script-snap.rpy:520
     old "Nice one,{w=0.2} dummy.{w=0.2} Ahaha!"
-    new ""
+    new "Bien hecho, {w=0.2}tontito. {w=0.2}¡Jajaja!"
 
     # game/script-snap.rpy:520
     old "Real smooth,{w=0.2} [player].{w=0.2} Ehehe."
-    new ""
+    new "Muy hábil, {w=0.2}[player]. {w=0.2}Jejeje."
 
     # game/script-snap.rpy:520
     old "Ahaha!{w=0.2} What was that,{w=0.2} [player]?"
-    new ""
+    new "¡Jajaja! {w=0.2}¿Qué fue eso, {w=0.2}[player]?"
 
     # game/script-snap.rpy:520
     old "Hey,{w=0.2} [player] -{w=0.2} you're meant to read the cards!{w=0.2} Ehehe."
-    new ""
+    new "Oye, {w=0.2}[player] - {w=0.2}¡se supone que debes leer las cartas! {w=0.2}Jejeje."
 
     # game/script-snap.rpy:520
     old "Great play,{w=0.2} dummy!{w=0.2} Ahaha!"
-    new ""
+    new "¡Gran jugada, {w=0.2}tontito! {w=0.2}¡Jajaja!"
 
     # game/script-snap.rpy:535
     old "SNAP!{w=0.2} Ahaha!"
-    new ""
+    new "¡SNAP! {w=0.2}¡Jajaja!"
 
     # game/script-snap.rpy:535
     old "Snap!{w=0.2} Ahaha!"
-    new ""
+    new "¡Snap! {w=0.2}¡Jajaja!"
 
     # game/script-snap.rpy:535
     old "SNAP!{w=0.2} Ehehe."
-    new ""
+    new "¡SNAP! {w=0.2}Jejeje."
 
     # game/script-snap.rpy:535
     old "SNAP!"
-    new ""
+    new "¡SNAP!"
 
     # game/script-snap.rpy:535
     old "Snap~!"
-    new ""
+    new "¡Snap~!"
 
     # game/script-snap.rpy:535
     old "Snap!{w=0.2} Snap snap snap!"
-    new ""
+    new "¡Snap! {w=0.2}¡Snap snap snap!"
 
     # game/script-snap.rpy:535
     old "Snappy snap!"
-    new ""
+    new "¡Snappy snap!"
 
     # game/script-snap.rpy:535
     old "Boom!{w=0.2} Snap!"
-    new ""
+    new "¡Boom! {w=0.2}¡Snap!"
 
     # game/script-snap.rpy:535
     old "Snap!{w=0.2} Snap!"
-    new ""
+    new "¡Snap! {w=0.2}¡Snap!"
 
     # game/script-snap.rpy:535
     old "Snap!{w=0.2} Snap!{w=0.2} Snap!"
-    new ""
+    new "¡Snap! {w=0.2}¡Snap! {w=0.2}¡Snap!"
 
     # game/script-snap.rpy:535
     old "Yes!{w=0.2} SNAP!"
-    new ""
+    new "¡Sí! {w=0.2}¡SNAP!"
 
     # game/script-snap.rpy:535
     old "Yeah!{w=0.2} SNAP!"
-    new ""
+    new "¡Sí! {w=0.2}¡SNAP!"
 
     # game/script-snap.rpy:535
     old "Yeah!{w=0.2} Snap!{w=0.2} Snap!"
-    new ""
+    new "¡Sí! {w=0.2}¡Snap! {w=0.2}¡Snap!"
 
     # game/script-snap.rpy:535
     old "Snap snap freaking snap!"
-    new ""
+    new "¡Snap snap maldito snap!"
 
     # game/script-snap.rpy:535
     old "SNAAAP!{w=0.2} Ehehe."
-    new ""
+    new "¡SNAAAP! {w=0.2}Jejeje."
 
     # game/script-snap.rpy:535
     old "Bam!{w=0.2} Snap!"
-    new ""
+    new "¡Bam! {w=0.2}¡Snap!"
 
     # game/script-snap.rpy:564
     old "Sn-...{w=0.3} oh."
-    new ""
+    new "Sna-... {w=0.3}oh."
 
     # game/script-snap.rpy:564
     old "Snap!{w=0.2} Wait..."
-    new ""
+    new "¡Snap! {w=0.2}Espera..."
 
     # game/script-snap.rpy:564
     old "SNAP!{w=0.2} Huh...?{w=0.2} O-{w=0.2}oh."
-    new ""
+    new "¡SNAP! {w=0.2}¿Eh...? {w=0.2}O-{w=0.2}Oh."
 
     # game/script-snap.rpy:564
     old "Snap sna-...{w=0.3} grrr."
-    new ""
+    new "Snap sna-... {w=0.3}grrr."
 
     # game/script-snap.rpy:824
     old "Cards down: {0}"
-    new ""
+    new "Cartas abajo: {0}"
 
     # game/script-snap.rpy:825
     old "Your hand: {0}"
-    new ""
+    new "Tu mano:"
 
     # game/script-snap.rpy:826
     old "[n_name]'s hand: {0}"
-    new ""
+    new "Mano de [n_name]: {0}"
 
     # game/script-snap.rpy:827
     old "Turn: {0}"
-    new ""
+    new "Turno: {0}"
 
