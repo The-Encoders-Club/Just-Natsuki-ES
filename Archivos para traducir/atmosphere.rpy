@@ -175,45 +175,45 @@ translate spanish strings:
 
     # game/atmosphere.rpy:260
     old "Ugh... raining again. [angry_emote]"
-    new ""
+    new "Uff... Lluvia otra vez. [angry_emote]"
 
     # game/atmosphere.rpy:260
     old "Ew. Rain. [angry_emote]"
-    new ""
+    new "Ew. Lluvia. [angry_emote]"
 
     # game/atmosphere.rpy:260
     old "Man... why does it have to rain so much?"
-    new ""
+    new "Dios... ¿Por qué tiene que llover tanto?"
 
     # game/atmosphere.rpy:260
     old "Huh? It's raining? Gross... [angry_emote]"
-    new ""
+    new "¿Eh? ¿Está lloviendo? Asco... [angry_emote]"
 
     # game/atmosphere.rpy:278
     old "Those clouds look really dark, huh? :<"
-    new ""
+    new "Estas nubes se ven muy oscuras ¿Eh? :<"
 
     # game/atmosphere.rpy:278
     old "It was a dark and stormy night..."
-    new ""
+    new "Fue una noche oscura y tormentosa..."
 
     # game/atmosphere.rpy:278
     old "Ugh... I hate storms... [angry_emote]"
-    new ""
+    new "Uhs... Odio las tormentas... [angry_emote]"
 
     # game/atmosphere.rpy:278
     old "Hey... is it stormy over there too? :/"
-    new ""
+    new "Hey... ¿Está lloviendo por allá también? :/"
 
     # game/atmosphere.rpy:296
     old "[player]! [player]! It's snowing! [happy_emote]"
-    new ""
+    new "¡[player], [player]! ¡ESTÁ NEVANDOO! [happy_emote]"
 
     # game/atmosphere.rpy:296
     old "It's snowing! It's snowing! [happy_emote]"
-    new ""
+    new "¡Está nevando! ¡Está nevando! [happy_emote]"
 
     # game/atmosphere.rpy:296
     old "[player]! Is it snowing for you too?! [happy_emote]"
-    new ""
+    new "¡[player]! ¡¿Está nevando por allá también?! [happy_emote]"
 
