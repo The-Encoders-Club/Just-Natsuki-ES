@@ -1,40 +1,42 @@
 ﻿# TODO: Translation updated at 2025-04-20 21:13
 
+#Notas: Línea 430
+
 # game/script-snap.rpy:243
 translate spanish snap_intro_e2a4dba5:
 
     # n 1nchbs "Alriiiight!{w=0.75}{nw}"
-    n 1nchbs "¡Biennnn! {w=0.75}{nw}"
+    n 1nchbs "¡Bieeeeen! {w=0.75}{nw}"
 
 # game/script-snap.rpy:244
 translate spanish snap_intro_dcdd8be3:
 
     # extend 1fcsbg " Let's play some Snap!"
-    extend 1fcsbg "¡Juguemos a Snap!"
+    extend 1fcsbg "¡Juguemos un poco de Snap!"
 
 # game/script-snap.rpy:247
 translate spanish snap_intro_1ccd259a:
 
     # n 1nnmaj "Oh -{w=0.3} before we start,{w=0.2} did you want an explanation?{w=0.5}{nw}"
-    n 1nnmaj "Oh—{w=0.3} antes de empezar,{w=0.2} ¿quieres una explicación?{w=0.5}{nw}"
+    n 1nnmaj "Oh—{w=0.3} antes de empezar,{w=0.2} ¿Quieres una explicación?{w=0.5}{nw}"
 
 # game/script-snap.rpy:248
 translate spanish snap_intro_f6c20aa5:
 
     # extend 4tllca " You know,{w=0.2} on how it works?"
-    extend 4tllca " Ya sabes,{w=0.2} ¿de cómo funciona?"
+    extend 4tllca "Ya sabes,{w=0.2} ¿De cómo se juega?"
 
 # game/script-snap.rpy:249
 translate spanish snap_intro_a1db18ed:
 
     # n 4nchsm "It's a super simple game,{w=0.2} but I thought I'd better ask."
-    n 4nchsm "Es un juego súper simple,{w=0.2} pero pensé que mejor preguntaba."
+    n 4nchsm "Es un juego súper simple,{w=0.2} pero pensé que sería mejor preguntarte."
 
 # game/script-snap.rpy:250
 translate spanish snap_intro_a530333c:
 
     # n 2fcsbg "I don't wanna win just because you didn't know what you were doing!"
-    n 2fcsbg "¡No quiero ganar solo porque no sabías lo que hacías!"
+    n 2fcsbg "¡No quiero ganar sólo porque no sabes lo que estás haciendo!"
 
 # game/script-snap.rpy:251
 translate spanish snap_intro_ddd5b8b7:
@@ -46,13 +48,13 @@ translate spanish snap_intro_ddd5b8b7:
 translate spanish snap_intro_11b46ee4:
 
     # extend 4fchss " how about it?"
-    extend 4fchss " ¿qué dices?"
+    extend 4fchss "¿Qué dices?"
 
 # game/script-snap.rpy:256
 translate spanish snap_intro_0e74df63:
 
     # n "Need me to run through the rules real quick?" nointeract
-    n "¿Necesitas que te explique las reglas rápido?" nointeract
+    n "¿Necesitas que te explique las reglas, rápidito?" nointeract
 
 # game/script-snap.rpy:262
 translate spanish snap_intro_7d1b7532:
@@ -64,13 +66,13 @@ translate spanish snap_intro_7d1b7532:
 translate spanish snap_intro_86101dfb:
 
     # extend 4flrbg " You're ready,{w=0.5}{nw}"
-    extend 4flrbg " Estás listo,{w=0.5}{nw}"
+    extend 4flrbg "Estás listo,{w=0.5}{nw}"
 
 # game/script-snap.rpy:264
 translate spanish snap_intro_6ee579e6:
 
     # extend 4fsqbg " huh?"
-    extend 4fsqbg " ¿eh?"
+    extend 4fsqbg "¿Eh?"
 
 # game/script-snap.rpy:265
 translate spanish snap_intro_ad03a624:
@@ -94,7 +96,7 @@ translate spanish snap_explanation_b2f21e65:
 translate spanish snap_explanation_b9c70373:
 
     # extend 4nslsm " like I was saying before."
-    extend 4nslsm " como decía antes."
+    extend 4nslsm "Como decía antes."
 
 # game/script-snap.rpy:274
 translate spanish snap_explanation_a211f634:
@@ -106,36 +108,36 @@ translate spanish snap_explanation_a211f634:
 translate spanish snap_explanation_b89284a3:
 
     # n 2nchss "Then,{w=0.2} we take it in turns placing a card face up on the table -{w=0.5}{nw}"
-    n 2nchss "Luego,{w=0.2} nos turnamos para colocar una carta boca arriba sobre la mesa—{w=0.5}{nw}"
+    n 2nchss "Luego,{w=0.2} nos turnamos para colocar una carta boca arriba sobre la mesa.{w=0.5}{nw}"
 
 # game/script-snap.rpy:276
 translate spanish snap_explanation_739000bc:
 
     # extend 2fsrdv " we don't get to {i}pick or see{/i} the card before,{w=0.2} though!"
-    extend 2fsrdv " ¡pero no podemos {i}elegir ni ver{/i} la carta antes,{w=0.2} claro!"
+    extend 2fsrdv " ¡Pero {i}no podemos elegir ni ver{/i} la carta antes,{w=0.2} claro!"
 
 # game/script-snap.rpy:277
 translate spanish snap_explanation_d37be86a:
 
     # n 4fsgbg "Following me so far,{w=0.2} [player]?{w=0.2} Ehehe."
-    n 4fsgbg "¿Me sigues hasta ahora,{w=0.2} [player]?{w=0.2} Jejeje."
+    n 4fsgbg "¿Me entiendes hasta ahora,{w=0.2} [player]?{w=0.2} Jejeje."
 
 # game/script-snap.rpy:278
 translate spanish snap_explanation_ee0bab86:
 
     # n 1nnmbg "If the card just placed down on the table matches either the {i}value or suit{/i} of the card that was there before..."
-    n 1nnmbg "Si la carta recién colocada sobre la mesa coincide con el {i}valor o el palo{/i} de la carta que estaba antes..."
+    n 1nnmbg "Si la carta recién colocada sobre la mesa coincide con el {i}valor o el palo (o traje / tipo){/i} de la carta que estaba antes..."
 
 # game/script-snap.rpy:279
 translate spanish snap_explanation_97e3109a:
 
     # n 4usqsm "Then we gotta call{w=0.5}{nw}"
-    n 4usqsm "Entonces tenemos que decir{w=0.5}{nw}"
+    n 4usqsm "Entonces tenemos que gritar{w=0.5}{nw}"
 
 # game/script-snap.rpy:280
 translate spanish snap_explanation_b545f890:
 
-    # extend 4fchbs " Snap!"
+    # extend 4fchbs "Snap!"
     extend 4fchbs " ¡Snap!"
 
 # game/script-snap.rpy:281
@@ -154,7 +156,7 @@ translate spanish snap_explanation_40add427:
 translate spanish snap_explanation_64d9be6f:
 
     # extend 2tsqss " but you gotta be careful,{w=0.2} [player]."
-    extend 2tsqss " pero tienes que tener cuidado,{w=0.2} [player]."
+    extend 2tsqss "Pero tienes que tener cuidado,{w=0.2} [player]."
 
 # game/script-snap.rpy:284
 translate spanish snap_explanation_154f2465:
@@ -172,7 +174,7 @@ translate spanish snap_explanation_1b424af5:
 translate spanish snap_explanation_8996c7c3:
 
     # extend 2nchgn " 'kay?"
-    extend 2nchgn " ¿vale?"
+    extend 2nchgn "¿Vale?"
 
 # game/script-snap.rpy:287
 translate spanish snap_explanation_7e148389:
@@ -190,7 +192,7 @@ translate spanish snap_explanation_a9818d31:
 translate spanish snap_explanation_90d88620:
 
     # extend 2fsldv " obviously."
-    extend 2fsldv " obviamente."
+    extend 2fsldv "Obviamente."
 
 # game/script-snap.rpy:290
 translate spanish snap_explanation_bfc2ddeb:
@@ -202,19 +204,19 @@ translate spanish snap_explanation_bfc2ddeb:
 translate spanish snap_explanation_4442541f:
 
     # extend 1nnmsm " you also lose if you run out of cards to play,{w=0.2} so you should keep that in mind too."
-    extend 1nnmsm " también pierdes si te quedas sin cartas para jugar,{w=0.2} así que también deberías tener eso en cuenta."
+    extend 1nnmsm "También pierdes si te quedas sin cartas para jugar,{w=0.2} así que también deberías tener eso en cuenta."
 
 # game/script-snap.rpy:292
 translate spanish snap_explanation_eecbbd07:
 
     # n 4tsqss "So...{w=0.3} how about it,{w=0.2} [player]?{w=0.2} You got all that?"
-    n 4tsqss "Entonces...{w=0.3} ¿qué te parece,{w=0.2} [player]?{w=0.2} ¿Lo entendiste todo?"
+    n 4tsqss "Entonces...{w=0.3} ¿Qué te parece,{w=0.2} [player]?{w=0.2} ¿Lo entendiste todo?"
 
 # game/script-snap.rpy:296
 translate spanish snap_explanation_6584a27e:
 
     # n "Did that all make sense to you?" nointeract
-    n "¿Te pareció que todo eso tenía sentido?" nointeract
+    n "¿Todo tuvo sentido para ti?" nointeract
 
 # game/script-snap.rpy:299
 translate spanish snap_explanation_156a8cce:
@@ -226,13 +228,13 @@ translate spanish snap_explanation_156a8cce:
 translate spanish snap_explanation_00343b17:
 
     # extend 1tllca " Well,{w=0.2} okay..."
-    extend 1tllca " Bueno,{w=0.2} está bien..."
+    extend 1tllca "Bueno,{w=0.2} está bien..."
 
 # game/script-snap.rpy:305
 translate spanish snap_explanation_f38a9d96:
 
     # n 1fcsbg "Now {i}that's{/i} what I'm talking about.{w=0.75}{nw}"
-    n 1fcsbg "Ahora {i}de eso{/i} hablo.{w=0.75}{nw}"
+    n 1fcsbg "Ahora {i}¡Así me gusta!{/i}.{w=0.75}{nw}"
 
 # game/script-snap.rpy:306
 translate spanish snap_explanation_9f242a7d:
@@ -286,7 +288,7 @@ translate spanish snap_explanation_25e91a48:
 translate spanish snap_explanation_8b72b028:
 
     # extend 4nslca " fine."
-    extend 4nslca " está bien."
+    extend 4nslca "Está bien."
 
 # game/script-snap.rpy:320
 translate spanish snap_explanation_f83764eb:
@@ -328,13 +330,13 @@ translate spanish snap_start_593696d9:
 translate spanish snap_start_42d5d5e2:
 
     # extend 1fcsbg " Bad luck,{w=0.2} [player].{w=0.75}{nw}"
-    extend 1fcsbg " Mala suerte,{w=0.2} [player].{w=0.75}{nw}"
+    extend 1fcsbg "Mala suerte,{w=0.2} [player].{w=0.75}{nw}"
 
 # game/script-snap.rpy:356
 translate spanish snap_start_97d3e49a:
 
     # extend 1fchgn " Looks like you're up first!"
-    extend 1fchgn " ¡Parece que tú vas primero!"
+    extend 1fchgn "¡Parece que tú vas primero!"
 
 # game/script-snap.rpy:359
 translate spanish snap_start_c1ef5e0a:
@@ -352,13 +354,13 @@ translate spanish snap_start_9879e915:
 translate spanish snap_start_ca273644:
 
     # extend 2fcsaj " You just got lucky this time.{w=0.75}{nw}"
-    extend 2fcsaj " Solo tuviste suerte esta vez.{w=0.75}{nw}"
+    extend 2fcsaj "Sólo tuviste suerte esta vez.{w=0.75}{nw}"
 
 # game/script-snap.rpy:362
 translate spanish snap_start_9826237f:
 
     # extend 2fcsca " I guess I'll go first then,{w=0.2} [player]."
-    extend 2fcsca " Supongo que iré yo primero entonces,{w=0.2} [player]."
+    extend 2fcsca "Supongo que iré yo primero entonces,{w=0.2} [player]."
 
 # game/script-snap.rpy:475
 translate spanish snap_quip_8c6fdb0e:
@@ -370,7 +372,7 @@ translate spanish snap_quip_8c6fdb0e:
 translate spanish snap_quip_e55634de:
 
     # extend 2fnmsf " You're just calling Snap whenever it's your turn!{w=0.5}{nw}"
-    extend 2fnmsf " ¡Estás diciendo Snap cada vez que es tu turno!{w=0.5}{nw}"
+    extend 2fnmsf "¡Estás diciendo Snap cada vez que es tu turno!{w=0.5}{nw}"
 
 # game/script-snap.rpy:477
 translate spanish snap_quip_795bab2c:
@@ -388,7 +390,7 @@ translate spanish snap_quip_2509440e:
 translate spanish snap_quip_293018cf:
 
     # extend 2fsqsl " I can't stand playing with cheaters."
-    extend 2fsqsl " No soporto jugar con tramposos."
+    extend 2fsqsl "No soporto jugar con tramposos."
 
 # game/script-snap.rpy:484
 translate spanish snap_quip_98e338bd:
@@ -400,7 +402,7 @@ translate spanish snap_quip_98e338bd:
 translate spanish snap_quip_30409a80:
 
     # extend 2fcsfl " look,{w=0.2} [player]."
-    extend 2fcsfl " mira,{w=0.2} [player]."
+    extend 2fcsfl "Mira,{w=0.2} [player]."
 
 # game/script-snap.rpy:486
 translate spanish snap_quip_6c485bcf:
@@ -412,19 +414,20 @@ translate spanish snap_quip_6c485bcf:
 translate spanish snap_quip_91565425:
 
     # extend 2flrem " then why should I bother playing at all?"
-    extend 2flrem " entonces, ¿para qué me molesto en jugar?"
+    extend 2flrem "Entonces, ¿Para qué me molesto en jugar?"
 
 # game/script-snap.rpy:488
 translate spanish snap_quip_995e80d2:
 
     # n 4fllfl "I even {i}warned{/i} you before,{w=0.5}{nw}"
-    n 4fllfl "Incluso te {i}advertí{/i} antes,{w=0.5}{nw}"
+    n 4fllfl "Incluso {i}te advertí antes{/i},{w=0.5}{nw}"
 
 # game/script-snap.rpy:489
 translate spanish snap_quip_e11e5289:
 
     # extend 4fnmfl " too!"
-    extend 4fnmfl " ¡también!"
+    extend 4fnmfl "¡También!"
+##No entendí esta línea
 
 # game/script-snap.rpy:490
 translate spanish snap_quip_b0b863a8:
@@ -442,7 +445,7 @@ translate spanish snap_quip_64446c15:
 translate spanish snap_quip_8fb9fbd0:
 
     # extend 2fcsfl " Fine."
-    extend 2fcsfl " Bien."
+    extend 2fcsfl "Bien."
 
 # game/script-snap.rpy:493
 translate spanish snap_quip_12790921:
@@ -466,7 +469,7 @@ translate spanish snap_end_ef0731b6:
 translate spanish snap_end_3d29ce76:
 
     # extend 2cslpo " You won again."
-    extend 2cslpo " Ganaste de nuevo."
+    extend 2cslpo "Ganaste de nuevo."
 
 # game/script-snap.rpy:601
 translate spanish snap_end_303110c6:
@@ -484,13 +487,13 @@ translate spanish snap_end_65a207c3:
 translate spanish snap_end_914b1fb8:
 
     # extend 2fcsan " come{w=0.75}{nw}"
-    extend 2fcsan " ¡vamos,{w=0.75}{nw}"
+    extend 2fcsan "¡Vamos,{w=0.75}{nw}"
 
 # game/script-snap.rpy:606
 translate spanish snap_end_516b8eae:
 
     # extend 2fbkwrl " {b}on{/b}!"
-    extend 2fbkwrl " {b}ya{/b}!"
+    extend 2fbkwrl "{b}ya{/b}!"
 
 # game/script-snap.rpy:607
 translate spanish snap_end_b5c6e2d9:
@@ -502,13 +505,13 @@ translate spanish snap_end_b5c6e2d9:
 translate spanish snap_end_bf0dd0ad:
 
     # extend 4fnmgs " Ten in a row?!{w=0.75}{nw}"
-    extend 4fnmgs " ¡¿Diez seguidas?!{w=0.75}{nw}"
+    extend 4fnmgs "¡¿Diez seguidas?!{w=0.75}{nw}"
 
 # game/script-snap.rpy:609
 translate spanish snap_end_8d83c34a:
 
     # extend 2clremsbl " Man..."
-    extend 2clremsbl " Hombre..."
+    extend 2clremsbl "Uhhhh..."
 
 # game/script-snap.rpy:610
 translate spanish snap_end_80bb9600:
@@ -520,43 +523,43 @@ translate spanish snap_end_80bb9600:
 translate spanish snap_end_0362c261:
 
     # extend 2csqpo " okay?{w=1}{nw}"
-    extend 2csqpo " ¿de acuerdo?{w=1}{nw}"
+    extend 2csqpo "¿De acuerdo?{w=1}{nw}"
 
 # game/script-snap.rpy:612
 translate spanish snap_end_e21d6713:
 
     # extend 2cslcasbr " Jeez..."
-    extend 2cslcasbr " Caramba..."
+    extend 2cslcasbr "Dios..."
 
 # game/script-snap.rpy:615
 translate spanish snap_end_cfa459e2:
 
     # n 4fcsem "J-{w=0.2}jeez!{w=0.5}{nw}"
-    n 4fcsem "¡C-{w=0.2}caramba!{w=0.5}{nw}"
+    n 4fcsem "¡R-{w=0.2}rayos!{w=0.5}{nw}"
 
 # game/script-snap.rpy:616
 translate spanish snap_end_55c7a754:
 
     # extend 4flrgs " Five {i}already{/i}?!{w=0.75}{nw}"
-    extend 4flrgs " ¡¿Cinco {i}ya{/i}?!{w=0.75}{nw}"
+    extend 4flrgs "¡¿{i}Cinco ya{/i}?!{w=0.75}{nw}"
 
 # game/script-snap.rpy:617
 translate spanish snap_end_49ab9ddc:
 
     # extend 2cslca " Come on."
-    extend 2cslca " Vamos."
+    extend 2cslca "Vamos."
 
 # game/script-snap.rpy:618
 translate spanish snap_end_65942558:
 
     # n 2fcsajsbl "I never {i}said{/i} I was a professional,{w=0.5}{nw}"
-    n 2fcsajsbl "Nunca {i}dije{/i} que fuera profesional,{w=0.5}{nw}"
+    n 2fcsajsbl "Nunca {i}dije{/i} que fuera una profesional,{w=0.5}{nw}"
 
 # game/script-snap.rpy:619
 translate spanish snap_end_f69f4b4c:
 
     # extend 2fcsposbl " you know."
-    extend 2fcsposbl " sabes."
+    extend 2fcsposbl "Sabes."
 
 # game/script-snap.rpy:622
 translate spanish snap_end_ce6ca222:
@@ -568,7 +571,7 @@ translate spanish snap_end_ce6ca222:
 translate spanish snap_end_385d0e27:
 
     # extend 1fllsssbr " Better gloat while you can,{w=0.2} [player]."
-    extend 1fllsssbr " Más vale que te regodees mientras puedas,{w=0.2} [player]."
+    extend 1fllsssbr "Mejor que lo disfrutes mientras puedas,{w=0.2} [player]."
 
 # game/script-snap.rpy:624
 translate spanish snap_end_7c9c8a6e:
@@ -580,13 +583,13 @@ translate spanish snap_end_7c9c8a6e:
 translate spanish snap_end_e9440d53:
 
     # n 2nllpo "Well,{w=0.2} heck.{w=0.5}{nw}"
-    n 2nllpo "Bueno,{w=0.2} caramba.{w=0.5}{nw}"
+    n 2nllpo "Bueno,{w=0.2} rayos.{w=0.5}{nw}"
 
 # game/script-snap.rpy:628
 translate spanish snap_end_6085e53d:
 
     # extend 2nslsssbr " I guess that's it,{w=0.2} huh?"
-    extend 2nslsssbr " Supongo que eso es todo,{w=0.2} ¿eh?"
+    extend 2nslsssbr "Supongo que eso es todo,{w=0.2} ¿Eh?"
 
 # game/script-snap.rpy:629
 translate spanish snap_end_34b4257a:
@@ -598,43 +601,43 @@ translate spanish snap_end_34b4257a:
 translate spanish snap_end_4bf6fefe:
 
     # extend 2csrposbr " I guess."
-    extend 2csrposbr " Supongo."
+    extend 2csrposbr "Supongo."
 
 # game/script-snap.rpy:636
 translate spanish snap_end_f0b0ff10:
 
     # n 1fcsss "Man,{w=0.5}{nw}"
-    n 1fcsss "Hombre,{w=0.5}{nw}"
+    n 1fcsss "Vaya,{w=0.5}{nw}"
 
 # game/script-snap.rpy:637
 translate spanish snap_end_97ef2e45:
 
     # extend 4fcsbg " this is just too{w=0.25}{nw}"
-    extend 4fcsbg " esto es demasiado{w=0.25}{nw}"
+    extend 4fcsbg "Esto es algo demasiado...{w=0.25}{nw}"
 
 # game/script-snap.rpy:638
 translate spanish snap_end_a0191000:
 
     # extend 4fchgn " {i}easy{/i}!{w=0.75}{nw}"
-    extend 4fchgn " ¡{i}fácil{/i}!{w=0.75}{nw}"
+    extend 4fchgn "{i}¡Fácil!{/i}{w=0.75}{nw}"
 
 # game/script-snap.rpy:639
 translate spanish snap_end_2dc88eae:
 
     # extend 4fcsbg " I {i}almost{/i} feel bad."
-    extend 4fcsbg " {i}Casi{/i} me siento mal."
+    extend 4fcsbg "{i}Casi{/i} me siento mal."
 
 # game/script-snap.rpy:640
 translate spanish snap_end_f07c6e57:
 
     # n 2fsqsm "...Almost.{w=0.75}{nw}"
-    n 2fsqsm "...Casi.{w=0.75}{nw}"
+    n 2fsqsm "...Casi dije.{w=0.75}{nw}"
 
 # game/script-snap.rpy:641
 translate spanish snap_end_df30bfa0:
 
     # extend 2fchsmeme " Ehehe."
-    extend 2fchsmeme " Jejeje."
+    extend 2fchsmeme "Jejeje."
 
 # game/script-snap.rpy:644
 translate spanish snap_end_eb0168fc:
@@ -646,7 +649,7 @@ translate spanish snap_end_eb0168fc:
 translate spanish snap_end_d1c257e0:
 
     # extend 2fchgn " is {i}someone{/i} having a bad day or what?"
-    extend 2fchgn " ¿{i}alguien{/i} está teniendo un mal día o qué?"
+    extend 2fchgn "¿{i}Alguien{/i} está teniendo un mal día o qué?"
 
 # game/script-snap.rpy:646
 translate spanish snap_end_0f1f07f6:
@@ -658,7 +661,7 @@ translate spanish snap_end_0f1f07f6:
 translate spanish snap_end_73bcdfd4:
 
     # extend 2fsqsmeme " Ehehe."
-    extend 2fsqsmeme " Jejeje."
+    extend 2fsqsmeme "Jejeje."
 
 # game/script-snap.rpy:650
 translate spanish snap_end_481aed82:
@@ -670,13 +673,13 @@ translate spanish snap_end_481aed82:
 translate spanish snap_end_37c688e1:
 
     # extend 2fsqbg " What's that?"
-    extend 2fsqbg " ¿Qué es eso?"
+    extend 2fsqbg "¿Qué es eso?"
 
 # game/script-snap.rpy:652
 translate spanish snap_end_9ab566b0:
 
     # n 4fchgn "The sound of five in a row {i}already{/i}?{w=0.75}{nw}"
-    n 4fchgn "¿El sonido de cinco seguidas {i}ya{/i}?{w=0.75}{nw}"
+    n 4fchgn "¿El sonido de {i} una racha de cinco seguidas{/i} ya?{w=0.75}{nw}"
 
 # game/script-snap.rpy:653
 translate spanish snap_end_c8e414bd:
@@ -694,7 +697,7 @@ translate spanish snap_end_5697d900:
 translate spanish snap_end_47d26df3:
 
     # extend 2fcsbgeme " There's plenty more where {i}that{/i} came from!"
-    extend 2fcsbgeme " ¡Hay mucho más de donde {i}eso{/i} vino!"
+    extend 2fcsbgeme " ¡Hay mucho más de donde {i}vino eso{/i}!"
 
 # game/script-snap.rpy:658
 translate spanish snap_end_6a33fa86:
@@ -706,13 +709,13 @@ translate spanish snap_end_6a33fa86:
 translate spanish snap_end_0b491749:
 
     # extend 2fchbg " Yep!{w=0.75}{nw}"
-    extend 2fchbg " ¡Sí!{w=0.75}{nw}"
+    extend 2fchbg "¡Sí!{w=0.75}{nw}"
 
 # game/script-snap.rpy:660
 translate spanish snap_end_43249efd:
 
     # extend 2fcssmesm " Yet another one for Team [n_name]!"
-    extend 2fcssmesm " ¡Otra victoria más para el Equipo [n_name]!"
+    extend 2fcssmesm "¡Otra victoria más para el Equipo [n_name]!"
 
 # game/script-snap.rpy:663
 translate spanish snap_end_4802df59:
@@ -724,13 +727,13 @@ translate spanish snap_end_4802df59:
 translate spanish snap_end_94d98cbc:
 
     # extend 1uchbg " I win!{w=0.75}{nw}"
-    extend 1uchbg " ¡Gané!{w=0.75}{nw}"
+    extend 1uchbg "¡Gané!{w=0.75}{nw}"
 
 # game/script-snap.rpy:665
 translate spanish snap_end_2d911d89:
 
     # extend 1fcsbgsbl " A-{w=0.2}as if it was gonna go any other way."
-    extend 1fcsbgsbl " C-{w=0.2}como si fuera a ser de otra manera."
+    extend 1fcsbgsbl "C-{w=0.2}como si fuera a ser de otra manera."
 
 # game/script-snap.rpy:666
 translate spanish snap_end_f38e1319:
@@ -748,7 +751,7 @@ translate spanish snap_end_ff0ef55d:
 translate spanish snap_end_e3edd2eb:
 
     # extend 1tnmfl " We {i}actually{/i} tied?"
-    extend 1tnmfl " ¿{i}Realmente{/i} empatamos?"
+    extend 1tnmfl "¿{i}Realmente{/i} empatamos?"
 
 # game/script-snap.rpy:672
 translate spanish snap_end_37dda0b4:
@@ -766,13 +769,13 @@ translate spanish snap_end_9129bceb:
 translate spanish snap_end_283d957f:
 
     # extend 4tllsl " almost impressive,{w=0.2} actually.{w=1}{nw}"
-    extend 4tllsl " casi impresionante,{w=0.2} en realidad.{w=1}{nw}"
+    extend 4tllsl "Es algo impresionante,{w=0.2} en realidad.{w=1}{nw}"
 
 # game/script-snap.rpy:675
 translate spanish snap_end_6025404a:
 
     # extend 2cllsssbr " Weird."
-    extend 2cllsssbr " Raro."
+    extend 2cllsssbr "Raro."
 
 # game/script-snap.rpy:676
 translate spanish snap_end_22be1775:
@@ -790,7 +793,7 @@ translate spanish snap_end_c7682a1d:
 translate spanish snap_end_4c2c2222:
 
     # extend 4tnmbo " You're giving up?"
-    extend 4tnmbo " ¿Te rindes?"
+    extend 4tnmbo "¿Te estás rindiendo?"
 
 # game/script-snap.rpy:682
 translate spanish snap_end_b23aa6b1:
@@ -820,7 +823,7 @@ translate spanish snap_end_6c307de4:
 translate spanish snap_end_9823663a:
 
     # extend 2fcspol " I'm not going down like this!"
-    extend 2fcspol " ¡No me voy a rendir así!"
+    extend 2fcspol "¡No me voy a rendir así!"
 
 # game/script-snap.rpy:698
 translate spanish snap_end_0988b2d5:
@@ -832,7 +835,7 @@ translate spanish snap_end_0988b2d5:
 translate spanish snap_end_1a53bcf9:
 
     # extend 2fcsbs " That {i}can't{/i} be all you've got!"
-    extend 2fcsbs " ¡Eso {i}no puede{/i} ser todo lo que tienes!"
+    extend 2fcsbs "¡Eso {i}no puede ser{/i} todo lo que tienes!"
 
 # game/script-snap.rpy:700
 translate spanish snap_end_253d8b89:
@@ -886,13 +889,13 @@ translate spanish snap_end_d6914b3a:
 translate spanish snap_end_b9e34267:
 
     # extend 4nslss " I guess that's fine.{w=0.75}{nw}"
-    extend 4nslss " Supongo que está bien.{w=0.75}{nw}"
+    extend 4nslss "Supongo que está bien.{w=0.75}{nw}"
 
 # game/script-snap.rpy:727
 translate spanish snap_end_bb3cbf54:
 
     # extend 4fchsm " And thanks for playing."
-    extend 4fchsm " Y gracias por jugar."
+    extend 4fchsm "Y gracias por jugar."
 
 # game/script-snap.rpy:728
 translate spanish snap_end_e42a5cee:
@@ -904,7 +907,7 @@ translate spanish snap_end_e42a5cee:
 translate spanish snap_end_bb3cbf54_1:
 
     # extend 4fchsm " And thanks for playing."
-    extend 4fchsm " Y gracias por jugar."
+    extend 4fchsm "Y gracias por jugar."
 
 # game/script-snap.rpy:733
 translate spanish snap_end_7ce25d9f:
@@ -916,13 +919,13 @@ translate spanish snap_end_7ce25d9f:
 translate spanish snap_end_3495165e:
 
     # extend 2fcssm " Ahaha."
-    extend 2fcssm " Ahaha."
+    extend 2fcssm "Jajaja."
 
 # game/script-snap.rpy:738
 translate spanish snap_end_c2eb4b14:
 
     # extend 2fchsm " Thanks for playing~!"
-    extend 2fchsm " ¡Gracias por jugar~!"
+    extend 2fchsm "¡Gracias por jugar~!"
 
 # game/script-snap.rpy:759
 translate spanish snap_forfeit_6d0f7622:
@@ -934,19 +937,19 @@ translate spanish snap_forfeit_6d0f7622:
 translate spanish snap_forfeit_4c9e8130:
 
     # extend 4cnmfl " what?{w=0.75}{nw}"
-    extend 4cnmfl " ¿qué?{w=0.75}{nw}"
+    extend 4cnmfl "¿Qué?{w=0.75}{nw}"
 
 # game/script-snap.rpy:761
 translate spanish snap_forfeit_74500140:
 
     # extend 2knmfl " Come on,{w=0.2} [player]!"
-    extend 2knmfl " ¡Vamos,{w=0.2} [player]!"
+    extend 2knmfl "¡Vamos,{w=0.2} [player]!"
 
 # game/script-snap.rpy:762
 translate spanish snap_forfeit_5bb4f701:
 
     # n 2cslaj "You aren't {i}seriously{/i} giving up already...{w=0.5}{nw}"
-    n 2cslaj "No te estás {i}en serio{/i} rindiendo ya...{w=0.5}{nw}"
+    n 2cslaj "No te estás {i}rindiendo ya{/i}...{w=0.5}{nw}"
 
 # game/script-snap.rpy:766
 translate spanish snap_forfeit_8f14d2c6:
@@ -970,7 +973,7 @@ translate spanish snap_forfeit_a7234a68:
 translate spanish snap_forfeit_154b6d88:
 
     # extend 2fcsbg " But I'm taking that as a win for me!"
-    extend 2fcsbg " ¡Pero lo tomo como una victoria para mí!"
+    extend 2fcsbg "¡Pero lo tomo como una victoria para mí!"
 
 # game/script-snap.rpy:795
 translate spanish snap_forfeit_45647018:
@@ -982,7 +985,7 @@ translate spanish snap_forfeit_45647018:
 translate spanish snap_forfeit_c9c5484d:
 
     # extend 4fcsbg " {b}now{/b} it's on,{w=0.2} [player]!"
-    extend 4fcsbg " ¡{b}Ahora{/b} sí que es personal,{w=0.2} [player]!"
+    extend 4fcsbg "¡{b}Ahora{/b} sí que es personal,{w=0.2} [player]!"
 
 translate spanish strings:
 
@@ -1020,7 +1023,7 @@ translate spanish strings:
 
     # game/script-snap.rpy:440
     old "Y-{w=0.2}You're fast!"
-    new "¡E-{w=0.2}Eres rápido!"
+    new "¡E-{w=0.2}eres rápido!"
 
     # game/script-snap.rpy:440
     old "But I was just about to call ittt!"
