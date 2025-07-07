@@ -10,37 +10,37 @@ translate spanish talk_menu_688f7e27:
 translate spanish try_force_quit_ffc267b7:
 
     # n 2ccsem "W-{w=0.2}wait,{w=0.5}{nw}"
-    n 2ccsem "E-{w=0.2}Espera, {w=0.5}{nw}"
+    n 2ccsem "E-{w=0.2}espera, {w=0.5}{nw}"
 
 # game/script-ch30.rpy:837
 translate spanish try_force_quit_fd623c5c:
 
     # extend 2knmflsbl " what?{w=0.75}{nw}"
-    extend 2knmflsbl "¿que?{w=0.75}{nw}"
+    extend 2knmflsbl "¿Qué?{w=0.75}{nw}"
 
 # game/script-ch30.rpy:838
 translate spanish try_force_quit_1344dfd4:
 
     # extend 5clrunlsbl " Can you at {i}least{/i} say goodbye first,{w=0.2} [player]?"
-    extend 5clrunlsbl "¿P-Podrías al {i}menos{/i} decir adiós primero,{w=0.2}[player]?"
+    extend 5clrunlsbl "¿P-podrías {i}al menos{/i} decir adiós primero,{w=0.2}[player]?"
 
 # game/script-ch30.rpy:841
 translate spanish try_force_quit_3ba847a8:
 
     # n 4kskem "H-{w=0.2}hey!{w=0.75}{nw}"
-    n 4kskem "¡O-{w=0.2}Oye!{w=0.75}{nw}"
+    n 4kskem "¡O-{w=0.2}¡Oye!{w=0.75}{nw}"
 
 # game/script-ch30.rpy:842
 translate spanish try_force_quit_221f8362:
 
     # extend 4kllflsbl " Y-{w=0.2}you aren't just going to leave like that,{w=0.5}{nw}"
-    extend 4kllflsbl "¿N-{w=0.2}No vas a irte así como así, {w=0.5}{nw}"
+    extend 4kllflsbl "¿N-{w=0.2}no vas a irte así como así, {w=0.5}{nw}"
 
 # game/script-ch30.rpy:843
 translate spanish try_force_quit_a59274b2:
 
     # extend 4ksqunsbl " are you?"
-    extend 4ksqunsbl "eres tu?"
+    extend 4ksqunsbl "¿Eres tú?"
 
 # game/script-ch30.rpy:846
 translate spanish try_force_quit_ea5b1917:
@@ -64,13 +64,13 @@ translate spanish try_force_quit_faafa34b:
 translate spanish try_force_quit_5e81eb70:
 
     # n 4kllssl "T-{w=0.2}thanks,{w=0.2} [player].{w=1}{nw}"
-    n 4kllssl "G-{w=0.2}Gracias, {w=0.2}[player].{w=1}{nw}"
+    n 4kllssl "G-{w=0.2}gracias, {w=0.2}[player].{w=1}{nw}"
 
 # game/script-ch30.rpy:857
 translate spanish try_force_quit_bf071b9c:
 
     # n 1tllss "Now,{w=0.2} where was I...?{w=1}{nw}"
-    n 1tllss "Ahora, {w=0.2}¿en qué estaba...?{w=1}{nw}"
+    n 1tllss "Ahora, {w=0.2}¿En qué estaba...?{w=1}{nw}"
 
 # game/script-ch30.rpy:858
 translate spanish try_force_quit_80e1adfd:
@@ -94,7 +94,7 @@ translate spanish try_force_quit_5390bee5:
 translate spanish try_force_quit_a051d3e7:
 
     # n 1tslpu "Now...{w=0.3} what was I saying again?{w=0.5}{nw}"
-    n 1tslpu "Ahora... {w=0.3}¿qué estaba diciendo otra vez? {w=0.5}{nw}"
+    n 1tslpu "Ahora... {w=0.3}¿Qué estaba diciendo otra vez? {w=0.5}{nw}"
 
 # game/script-ch30.rpy:864
 translate spanish try_force_quit_8458cfa3:
@@ -234,7 +234,7 @@ translate spanish strings:
 
     # game/script-ch30.rpy:689
     old "More options..."
-    new ""
+    new "Mas opciones..."
 
 # TODO: Translation updated at 2025-06-18 17:08
 
@@ -242,205 +242,206 @@ translate spanish strings:
 
     # game/script-ch30.rpy:622
     old "What's up,{w=0.1} [player]?"
-    new ""
+    new "¿Qué cuentas,{w=0.1} [player]?"
 
     # game/script-ch30.rpy:622
     old "What's on your mind,{w=0.1} [player]?"
-    new ""
+    new "¿En qué piensas,{w=0.1} [player]?"
 
     # game/script-ch30.rpy:622
     old "Something up,{w=0.1} [player]?"
-    new ""
+    new "¿Pasa algo,{w=0.1} [player]?""
 
     # game/script-ch30.rpy:622
     old "You wanna talk?{w=0.2} Ehehe."
-    new ""
+    new "¿Quieres hablar?{w=0.2} Ehehe."
 
     # game/script-ch30.rpy:622
     old "I'd love to talk!"
-    new ""
+    new "¡Me encantaría conversar!"
 
     # game/script-ch30.rpy:622
     old "I always love talking to you,{w=0.1} [player]!"
-    new ""
+    new "¡Adoro conversar contigo,{w=0.1} [player]!"
 
     # game/script-ch30.rpy:622
     old "[player]!{w=0.2} What's up?"
-    new ""
+    new "¡[player]!{w=0.2} ¿Qué pasa?"
 
     # game/script-ch30.rpy:622
     old "[player]!{w=0.2} What's on your mind?"
-    new ""
+    new "¡[player]!{w=0.2} ¿En qué piensas tanto?"
 
     # game/script-ch30.rpy:622
     old "Ooh!{w=0.2} What did you wanna talk about?"
-    new ""
+    new "¡Ooh!{w=0.2} ¿Sobre qué querías hablar?""
 
     # game/script-ch30.rpy:622
     old "I'm all ears,{w=0.1} [player]!"
-    new ""
+    new "¡Soy todo oídos,{w=0.1} [player]!"
 
     # game/script-ch30.rpy:622
     old "I've always got time for you,{w=0.1} [player]!"
-    new ""
+    new "¡Siempre he tenido tiempo para ti,{w=0.1} [player]!"
 
     # game/script-ch30.rpy:622
     old "Hey!{w=0.2} What's up,{w=0.2} [player]?"
-    new ""
+    new "¡Hey!{w=0.2} ¿Qué hay de nuevo,{w=0.2} [player]?"
 
     # game/script-ch30.rpy:622
     old "What have you got for me?{w=0.2} Ehehe."
-    new ""
+    new "¿Tienes algo para mí??{w=0.2} jejeje."
 
     # game/script-ch30.rpy:622
     old "[player]!{w=0.2} What's new?"
-    new ""
+    new "¡[player]!{w=0.2} ¿Qué tal?"
 
     # game/script-ch30.rpy:622
     old "[player]!{w=0.2} You wanna talk?"
-    new ""
+    new "¡[player]!{w=0.2} ¿Quieres hablar?"
 
     # game/script-ch30.rpy:622
     old "Shoot,{w=0.2} [player]!{w=0.3} Ehehe."
-    new ""
+    new "¡Dilo,{w=0.2} [player]!{w=0.3} jejeje."
+##no sé si agregar "Grítalo"
 
     # game/script-ch30.rpy:622
     old "Shoot,{w=0.2} [player]!"
-    new ""
+    new "¡Dilo,{w=0.2} [player]!"
 
     # game/script-ch30.rpy:622
     old "Oh!{w=0.2} Oh!{w=0.2} You got something for me?"
-    new ""
+    new "¡Oh!{w=0.2} ¡Vaya!{w=0.2} ¿Tienes algo para mí??"
 
     # game/script-ch30.rpy:622
     old "Talk to me,{w=0.2} [player]!{w=0.3} Ehehe."
-    new ""
+    new "¡Diiime,{w=0.2} [player]!{w=0.3} jejeje."
 
     # game/script-ch30.rpy:645
     old "What's up?"
-    new ""
+    new "¿Qué hay?"
 
     # game/script-ch30.rpy:645
     old "What's on your mind?"
-    new ""
+    new "¿En qué piensas?"
 
     # game/script-ch30.rpy:645
     old "What's happening?"
-    new ""
+    new "¿Pasa algo?"
 
     # game/script-ch30.rpy:645
     old "Something on your mind?"
-    new ""
+    new "¿Estás pensando en algo?"
 
     # game/script-ch30.rpy:645
     old "Oh?{w=0.2} You wanna talk?"
-    new ""
+    new "¿Oh?{w=0.2} ¿Quieres hablar?"
 
     # game/script-ch30.rpy:645
     old "Huh?{w=0.2} What's up?"
-    new ""
+    new "¿Eh?{w=0.2} ¿Qué pasa?"
 
     # game/script-ch30.rpy:645
     old "You wanna share something?"
-    new ""
+    new "¿Quieres decirme algo?"
 
     # game/script-ch30.rpy:645
     old "What's new,{w=0.1} [player]?"
-    new ""
+    new "¿Qué hay de nuevo,{w=0.1} [player]?"
 
     # game/script-ch30.rpy:645
     old "'Sup,{w=0.1} [player]?"
-    new ""
+    new "¿Qué hay,{w=0.1} [player]?"
 
     # game/script-ch30.rpy:645
     old "You wanna talk?"
-    new ""
+    new "¿Quieres hablar?"
 
     # game/script-ch30.rpy:645
     old "Hey,{w=0.2} [player]!"
-    new ""
+    new "¡Hey,{w=0.2} [player]!"
 
     # game/script-ch30.rpy:660
     old "What do you want?"
-    new ""
+    new "¿Qué quieres?"
 
     # game/script-ch30.rpy:660
     old "What is it?"
-    new ""
+    new "¿Qué es?"
 
     # game/script-ch30.rpy:660
     old "Make it quick."
-    new ""
+    new "Dilo rápido."
 
     # game/script-ch30.rpy:660
     old "What now?"
-    new ""
+    new "¿Qué pasa ahora?"
 
     # game/script-ch30.rpy:660
     old "What do you want now?"
-    new ""
+    new "¿Qué quieres ahora?"
 
     # game/script-ch30.rpy:660
     old "What is it this time?"
-    new ""
+    new "¿Ahora qué?"
 
     # game/script-ch30.rpy:660
     old "Yeah?{w=0.2} What?"
-    new ""
+    new "¿Sí?{w=0.2} ¿Qué?"
 
     # game/script-ch30.rpy:660
     old "This better be good."
-    new ""
+    new "Más te vale que sea bueno."
 
     # game/script-ch30.rpy:673
     old "...?"
-    new ""
+    new "¿...?"
 
     # game/script-ch30.rpy:673
     old "What?"
-    new ""
+    new "¿Qué?"
 
     # game/script-ch30.rpy:673
     old "Just talk already."
-    new ""
+    new "Ya sólo habla de una buena vez."
 
     # game/script-ch30.rpy:673
     old "Spit it out."
-    new ""
+    new "Dilo."
 
     # game/script-ch30.rpy:673
     old "Start talking."
-    new ""
+    new "Empieza a hablar."
 
     # game/script-ch30.rpy:673
     old "Get it over with."
-    new ""
+    new "Acaba con esto de una vez."
 
     # game/script-ch30.rpy:673
     old "What do {i}you{/i} want?"
-    new ""
+    new "¿Qué {i}quieres{/i}?"
 
     # game/script-ch30.rpy:673
     old "Get on with it."
-    new ""
+    new "Sigue."
 
     # game/script-ch30.rpy:673
     old "Talk."
-    new ""
+    new "Habla."
 
     # game/script-ch30.rpy:805
     old "Can you wear an outfit for me?"
-    new ""
+    new "¿Puedes vestir un outfit por mí?"
 
     # game/script-ch30.rpy:805
     old "Can I suggest a new outfit?"
-    new ""
+    new "¿Puedo sugerirte un outfit?"
 
     # game/script-ch30.rpy:805
     old "Can you forget about an outfit I suggested?"
-    new ""
+    new "¿Podrías olvidarte del outfit que te sugerí?"
 
     # game/script-ch30.rpy:805
     old "Can you search again for new items?"
-    new ""
+    new "¿Podrías buscar otra vez nuevos objetos"
 
