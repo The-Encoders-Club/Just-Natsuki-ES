@@ -10,7 +10,7 @@ translate spanish music_menu_51c77a72:
 translate spanish music_menu_a07ebb68:
 
     # n 4klrflsbr "Hey...{w=0.75}{nw}"
-    n 4klrflsbr "Hey... {w=0.75}{nw}"
+    n 4klrflsbr "Oye... {w=0.75}{nw}"
 
 # game/custom-music.rpy:126
 translate spanish music_menu_e09d83bc:
