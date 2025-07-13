@@ -30,6 +30,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
+          git pull origin main
           git add TRANSLATION_PROGRESS.md README.md
           git commit -m "Actualizar progreso de traducción" || echo "Sin cambios"
           git push origin HEAD
