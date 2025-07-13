@@ -39,4 +39,3 @@ translate spanish strings:
     # game/android_stuff.rpy:132
     old "Ribbon (Bisexual Pride Themed)"
     new "Listón (Decoración del orgullo bisexual)"
-
