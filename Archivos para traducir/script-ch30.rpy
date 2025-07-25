@@ -305,7 +305,7 @@ translate spanish strings:
     new "¡Escupelo, {w=0.2}[player]! {w=0.3}Jejeje."
 
     # game/script-ch30.rpy:622
-    old "¡Escupelo,{w=0.2} [player]!"
+    old "Shoot,{w=0.2} [player]!"
     new "¡Escupelo, {w=0.2}[player]!"
 
     # game/script-ch30.rpy:622
@@ -329,8 +329,8 @@ translate spanish strings:
     new "¿Qué pasa?"
 
     # game/script-ch30.rpy:645
-    old "¿Algo en mente?"
-    new "¿Algo en mente?"
+    old "Something on your mind?"
+    new "¿Estás pensando en algo?"
 
     # game/script-ch30.rpy:645
     old "Oh?{w=0.2} You wanna talk?"
