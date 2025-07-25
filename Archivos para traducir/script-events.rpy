@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2025-04-20 21:13
+# TODO: Translation updated at 2025-04-20 21:13
 
 # game/script-events.rpy:743
 translate spanish event_caught_reading_manga_bb2cf764:

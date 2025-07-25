@@ -10,7 +10,7 @@ translate spanish music_menu_51c77a72:
 translate spanish music_menu_a07ebb68:
 
     # n 4klrflsbr "Hey...{w=0.75}{nw}"
-    n 4klrflsbr "Hey... {w=0.75}{nw}"
+    n 4klrflsbr "Oye... {w=0.75}{nw}"
 
 # game/custom-music.rpy:126
 translate spanish music_menu_e09d83bc:
@@ -232,11 +232,11 @@ translate spanish strings:
 
     # game/custom-music.rpy:300
     old "You pick!"
-    new ""
+    new "¡Elige tú! "
 
     # game/custom-music.rpy:343
     old "No music"
-    new ""
+    new "Sin música"
 
 # TODO: Translation updated at 2025-06-16 19:56
 
@@ -244,29 +244,30 @@ translate spanish strings:
 
     # game/custom-music.rpy:69
     old "Done~!"
-    new ""
+    new "¡Listo~!"
 
     # game/custom-music.rpy:69
     old "All done!"
-    new ""
+    new "¡Todo listo!"
 
     # game/custom-music.rpy:69
     old "All good!"
-    new ""
+    new "¡Todo preparado!"
 
     # game/custom-music.rpy:69
     old "There we go!"
-    new ""
+    new "¡Aquí vamos!"
 
     # game/custom-music.rpy:69
     old "And...{w=0.3} we're good!"
-    new ""
+    new "Y... {w=0.3} ¡lo tenemos!"
 
     # game/custom-music.rpy:69
     old "Okie-dokie!{w=0.2} Ehehe."
-    new ""
+    new "¡Okie-dokie!{w=0.2} Jejeje."
 
     # game/custom-music.rpy:277
     old "Unknown track"
-    new ""
+    new "Pista Desconocida"
+
 
