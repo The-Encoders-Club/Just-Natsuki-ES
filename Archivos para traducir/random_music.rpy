@@ -4,25 +4,25 @@
 translate spanish random_music_change_52070cf2:
 
     # n 3nchbg "[track_quip]{w=2}{nw}"
-    n 3nchbg "[track_quip]{w=2}{nw}"
+    n 3nchbg "[track_quip] {w=2}{nw}"
 
 # game/random_music.rpy:65
 translate spanish random_music_change_cffa2578:
 
     # n 2fcssm "[track_followup]{w=2}{nw}"
-    n 2fcssm "[track_followup]{w=2}{nw}"
+    n 2fcssm "[track_followup] {w=2}{nw}"
 
 # game/random_music.rpy:86
 translate spanish random_music_change_7421a765:
 
     # n 2uchbgeme "[track_complete]{w=2}{nw}"
-    n 2uchbgeme "[track_complete]{w=2}{nw}"
+    n 2uchbgeme "[track_complete] {w=2}{nw}"
 
 # game/random_music.rpy:111
 translate spanish random_music_enable_ca434e0e:
 
     # n 1unmbg "Ooh!{w=0.5}{nw}"
-    n 1unmbg "¡Ooh!{w=0.5}{nw}"
+    n 1unmbg "¡Ooh! {w=0.5}{nw}"
 
 # game/random_music.rpy:112
 translate spanish random_music_enable_09846e1f:
@@ -142,7 +142,7 @@ translate spanish random_music_enable_db8332ca:
 translate spanish random_music_disable_db4f8394:
 
     # n 1unmaj "Huh?{w=0.2} Wow.{w=0.5}{nw}"
-    n 1unmaj "¿Eh? {w=0.2}Wow.{w=0.5}{nw}"
+    n 1unmaj "¿Eh? {w=0.2}Wow. {w=0.5}{nw}"
 
 # game/random_music.rpy:168
 translate spanish random_music_disable_61e07ede:
@@ -172,7 +172,7 @@ translate spanish random_music_disable_57dc059d:
 translate spanish random_music_disable_a7fe8836:
 
     # n 2nwlbg "...And there we go!"
-    n 2nwlbg "... ¡Yyyy listo!"
+    n 2nwlbg "... ¡Y listo!"
 
 # TODO: Translation updated at 2025-06-16 19:56
 
@@ -180,77 +180,77 @@ translate spanish strings:
 
     # game/random_music.rpy:38
     old "Alright!{w=0.2} Time for a different tune!"
-    new ""
+    new "¡Muy bien! {w=0.2}¡Es hora de una melodía diferente!"
 
     # game/random_music.rpy:38
     old "Okaaay!{w=0.2} Time for another song!"
-    new ""
+    new "¡Okeeey! {w=0.2}¡Hora de otra canción!"
 
     # game/random_music.rpy:38
     old "Yeah,{w=0.2} I think I'm about done with this song."
-    new ""
+    new "Sí, {w=0.2}creo que estoy a punto de terminar con esta canción."
 
     # game/random_music.rpy:38
     old "'Kay,{w=0.2} that's enough of that."
-    new ""
+    new "Okey, {w=0.2}ya está bien.."
 
     # game/random_music.rpy:38
     old "New song time!"
-    new ""
+    new "¡Hora de la nueva canción!"
 
     # game/random_music.rpy:38
     old "That's about enough of that number!"
-    new ""
+    new "¡Ya es suficiente con ese número!"
 
     # game/random_music.rpy:38
     old "I wanna listen to something else..."
-    new ""
+    new "Quiero escuchar otra cosa..."
 
     # game/random_music.rpy:38
     old "Time to change things up!"
-    new ""
+    new "¡Es hora de cambiar las cosas!"
 
     # game/random_music.rpy:57
     old "Now,{w=0.2} let's see..."
-    new ""
+    new "Ahora, {w=0.2}veamos..."
 
     # game/random_music.rpy:57
     old "Now,{w=0.2} what have we got..."
-    new ""
+    new "Ahora, {w=0.2}qué tenemos..."
 
     # game/random_music.rpy:57
     old "Let's see here..."
-    new ""
+    new "Vamos a ver..."
 
     # game/random_music.rpy:57
     old "What else have we got..."
-    new ""
+    new "Que más tenemos..."
 
     # game/random_music.rpy:57
     old "Aha!{w=0.5} Let's try this one!"
-    new ""
+    new "¡Ajá! {w=0.5}¡Vamos a probar este"
 
     # game/random_music.rpy:57
     old "Let me see..."
-    new ""
+    new "Déjame ver..."
 
     # game/random_music.rpy:76
     old "Now playing: {0}"
-    new ""
+    new "Reproduciendo: {0}"
 
     # game/random_music.rpy:77
     old "And...{w=1} we're good!"
-    new ""
+    new "Y... {w=1}¡listo!"
 
     # game/random_music.rpy:77
     old "Okie-dokie!{w=0.75} Ehehe."
-    new ""
+    new "Okie-dokie! {w=0.75}Jejeje."
 
     # game/random_music.rpy:96
     old "Can you play random custom music for me?"
-    new ""
+    new "¿Puedes ponerme música personalizada al azar?"
 
     # game/random_music.rpy:154
     old "Can you stop playing random custom music?"
-    new ""
+    new "¿Puedes dejar de reproducir música personalizada aleatoria?"
 
