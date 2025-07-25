@@ -10,7 +10,7 @@ translate spanish headpats_start_ebbc48b3:
 translate spanish headpats_start_32364a90:
 
     # extend 1uwdemlsbl " D-{w=0.1}did you just say...?!"
-    extend 1uwdemlsbl "¡¿H-{w=0.1}Has dicho...?!"
+    extend 1uwdemlsbl "¡¿A-{w=0.1}Acabas de decir...?!"
 
 # game/script-headpats.rpy:57
 translate spanish headpats_start_5b3daf7d:
@@ -82,7 +82,7 @@ translate spanish headpats_inactive_d2d5e00c:
 translate spanish headpats_inactive_c54936f1:
 
     # extend 1kslunl " Jeez..."
-    extend 1kslunl "Jesús..."
+    extend 1kslunl "Caray..."
 
 # game/script-headpats.rpy:154
 translate spanish headpats_inactive_58a5b1ae:
@@ -124,7 +124,7 @@ translate spanish headpats_milestone_5_74db4f44:
 translate spanish headpats_milestone_10_02da9e1b:
 
     # n 4kwmpulsbr "Y-{w=0.2}you're still going?{w=0.5}{nw}"
-    n 4kwmpulsbr "T-{w=0.2}Todavía vas a seguir? {w=0.5}{nw}"
+    n 4kwmpulsbr "¿T-{w=0.2}Todavía vas a seguir? {w=0.5}{nw}"
 
 # game/script-headpats.rpy:179
 translate spanish headpats_milestone_10_226cf9c6:
@@ -154,13 +154,13 @@ translate spanish headpats_milestone_50_ae306f90:
 translate spanish headpats_milestone_50_af916d94:
 
     # n 4fsqcal "...E-{w=0.2}enjoying yourself,{w=0.2} [player]?"
-    n 4fsqcal ""
+    n 4fsqcal "... ¿Lo estas d-{w=0.2}disfrutando, {w=0.2}[player]?"
 
 # game/script-headpats.rpy:194
 translate spanish headpats_milestone_50_f3c05859:
 
     # n 4ksrcaf "..."
-    n 4ksrcaf ""
+    n 4ksrcaf "..."
 
 # game/script-headpats.rpy:200
 translate spanish headpats_milestone_100_3786105f:
@@ -280,7 +280,7 @@ translate spanish headpats_finished_1734c889:
 translate spanish headpats_finished_db9bc8a8:
 
     # n 2fcsemlsbl "W-{w=0.2}well,{w=0.2} that's fine!{w=0.75}{nw}"
-    n 2fcsemlsbl "B-{w=0.2}Bueno, {w=0.2}¡estuvo muy bien!{w=0.75}{nw}"
+    n 2fcsemlsbl "B-{w=0.2}Bueno, {w=0.2}¡estuvo muy bien! {w=0.75}{nw}"
 
 # game/script-headpats.rpy:270
 translate spanish headpats_finished_6d81a7d6:
