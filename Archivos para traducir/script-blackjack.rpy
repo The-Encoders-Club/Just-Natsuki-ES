@@ -1038,21 +1038,21 @@ translate spanish strings:
 
     # game/script-blackjack.rpy:280
     old "It's a draw!"
-    new ""
+    new "¡Es un empate!"
 
     # game/script-blackjack.rpy:288
     old "You win!"
-    new ""
+    new "¡Tú ganas!"
 
     # game/script-blackjack.rpy:296
     old "You lose!"
-    new ""
+    new "¡Tú pierdes!"
 
     # game/script-blackjack.rpy:299
     old "Nobody!"
-    new ""
+    new "¡Nadie!"
 
     # game/script-blackjack.rpy:301
     old "Yours!"
-    new ""
+    new "¡Tuyo!"
 
