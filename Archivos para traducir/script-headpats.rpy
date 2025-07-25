@@ -328,9 +328,9 @@ translate spanish strings:
 
     # game/script-headpats.rpy:43
     old "Headpats"
-    new ""
+    new "Palmaditas en la cabeza"
 
     # game/script-headpats.rpy:431
     old "{0} headpats given"
-    new ""
+    new "{0} palmaditas en la cabeza dadas"
 
