@@ -2448,33 +2448,33 @@ translate spanish strings:
 
     # game/script-compliments.rpy:56
     old "I think you're amazing!"
-    new ""
+    new "¡Pienso que eres increíble!"
 
     # game/script-compliments.rpy:143
     old "I think you're beautiful!"
-    new ""
+    new "¡Pienso que eres preciosa!"
 
     # game/script-compliments.rpy:264
     old "I love how confident you are!"
-    new ""
+    new "¡Me encanta la confianza que tienes!"
 
     # game/script-compliments.rpy:328
     old "I think you're cute!"
-    new ""
+    new "¡Creo que eres muy linda!"
 
     # game/script-compliments.rpy:440
     old "I love your sense of humor!"
-    new ""
+    new "¡Me encanta tu sentido del humor!"
 
     # game/script-compliments.rpy:515
     old "You're an inspiration to me!"
-    new ""
+    new "¡Eres una inspiración para mí!"
 
     # game/script-compliments.rpy:567
     old "I love your sense of style!"
-    new ""
+    new "¡Me encanta tu sentido del estilo!"
 
     # game/script-compliments.rpy:691
     old "I love how thoughtful you are!"
-    new ""
+    new "¡Me encanta lo considerada que eres!"
 
