@@ -1036,7 +1036,7 @@ translate spanish new_wearables_outfits_unlocked_70a832e0:
 translate spanish new_wearables_outfits_unlocked_121f8015:
 
     # extend 2clrbolsbr " Jeez."
-    extend 2clrbolsbr " Dios."
+    extend 2clrbolsbr "Cielos."
 
 # game/outfits.rpy:2871
 translate spanish new_wearables_outfits_unlocked_936fc0aa:
@@ -1054,7 +1054,7 @@ translate spanish new_wearables_outfits_unlocked_6ec9e0db:
 translate spanish new_wearables_outfits_unlocked_8fa8c855:
 
     # extend 2cllslfsbr " Jeez..."
-    extend 2cllslfsbr " Dios..."
+    extend 2cllslfsbr " Cielos..."
 
 # game/outfits.rpy:2878
 translate spanish new_wearables_outfits_unlocked_91b34624:
@@ -1288,7 +1288,7 @@ translate spanish new_wearables_outfits_unlocked_180f3564:
 translate spanish new_wearables_outfits_unlocked_a94c9ed2:
 
     # n 2fcseml "Jeez...{w=0.5}{nw}"
-    n 2fcseml "Dios...{w=0.5}{nw}"
+    n 2fcseml "Cielos...{w=0.5}{nw}"
 
 # game/outfits.rpy:2936
 translate spanish new_wearables_outfits_unlocked_7161c0a1:
@@ -1360,7 +1360,7 @@ translate spanish new_wearables_outfits_unlocked_eee12e63:
 translate spanish new_wearables_outfits_unlocked_a51cd5e3:
 
     # extend 2clreml " Jeez..."
-    extend 2clreml " Dios..."
+    extend 2clreml "Cielos..."
 
 # game/outfits.rpy:2954
 translate spanish new_wearables_outfits_unlocked_c1461288:
@@ -1420,7 +1420,7 @@ translate spanish new_wearables_outfits_unlocked_2a317ad4:
 translate spanish new_wearables_outfits_unlocked_475afdf9:
 
     # extend 2fcsemlsbr " Yeesh!"
-    extend 2fcsemlsbr " ¡Dios!"
+    extend 2fcsemlsbr "¡Cielos!"
 
 # game/outfits.rpy:2971
 translate spanish new_wearables_outfits_unlocked_cb8526d5:
@@ -1672,7 +1672,7 @@ translate spanish new_wearables_outfits_unlocked_6c705e80:
 translate spanish new_wearables_outfits_unlocked_88679bbe:
 
     # n 1kcsemlesi "Jeez...{w=1}{nw}"
-    n 1kcsemlesi "Dios...{w=1}{nw}"
+    n 1kcsemlesi "Cielos...{w=1}{nw}"
 
 # game/outfits.rpy:3050
 translate spanish new_wearables_outfits_unlocked_f0ba5ff9:

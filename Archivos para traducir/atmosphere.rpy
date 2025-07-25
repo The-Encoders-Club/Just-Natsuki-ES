@@ -113,7 +113,7 @@ translate spanish weather_change_4663773e:
 translate spanish weather_change_827ec2a1:
 
     # extend 3nsrupesd " Yeesh...{w=3}{nw}"
-    extend 3nsrupesd "Dios...{w=3}{nw}"
+    extend 3nsrupesd "Cielos...{w=3}{nw}"
 
 # game/atmosphere.rpy:659
 translate spanish weather_change_04c58e74:

@@ -3303,7 +3303,7 @@ translate spanish joke_butterfly_2cae1efd:
 translate spanish joke_crampons_98ec4511:
 
     # n 1fdrfl "Sheesh...{w=1}{nw}"
-    n 1fdrfl "Dios...{w=1}{nw}"
+    n 1fdrfl "Cielos...{w=1}{nw}"
 
 # game/script-jokes.rpy:1553
 translate spanish joke_crampons_496ac653:

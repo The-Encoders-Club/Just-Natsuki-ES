@@ -18,7 +18,7 @@ translate spanish snap_intro_dcdd8be3:
 translate spanish snap_intro_1ccd259a:
 
     # n 1nnmaj "Oh -{w=0.3} before we start,{w=0.2} did you want an explanation?{w=0.5}{nw}"
-    n 1nnmaj "Oh—{w=0.3} antes de empezar,{w=0.2} ¿Quieres una explicación?{w=0.5}{nw}"
+    n 1nnmaj "Oh… {w=0.3}antes de empezar,{w=0.2} ¿Quieres una explicación?{w=0.5}{nw}"
 
 # game/script-snap.rpy:248
 translate spanish snap_intro_f6c20aa5:
@@ -108,13 +108,13 @@ translate spanish snap_explanation_a211f634:
 translate spanish snap_explanation_b89284a3:
 
     # n 2nchss "Then,{w=0.2} we take it in turns placing a card face up on the table -{w=0.5}{nw}"
-    n 2nchss "Luego,{w=0.2} nos turnamos para colocar una carta boca arriba sobre la mesa.{w=0.5}{nw}"
+    n 2nchss "Luego,{w=0.2} nos turnamos para colocar una carta boca arriba sobre la mesa… {w=0.5}{nw}"
 
 # game/script-snap.rpy:276
 translate spanish snap_explanation_739000bc:
 
     # extend 2fsrdv " we don't get to {i}pick or see{/i} the card before,{w=0.2} though!"
-    extend 2fsrdv " ¡Pero {i}no podemos elegir ni ver{/i} la carta antes,{w=0.2} claro!"
+    extend 2fsrdv "¡pero {i}no podemos elegir ni ver{/i} la carta antes,{w=0.2} claro!"
 
 # game/script-snap.rpy:277
 translate spanish snap_explanation_d37be86a:
@@ -150,13 +150,13 @@ translate spanish snap_explanation_e5f4c0ff:
 translate spanish snap_explanation_40add427:
 
     # n 1unmaj "Oh -{w=0.5}{nw}"
-    n 1unmaj "Ah—{w=0.5}{nw}"
+    n 1unmaj "Oh… {w=0.5}{nw}"
 
 # game/script-snap.rpy:283
 translate spanish snap_explanation_64d9be6f:
 
     # extend 2tsqss " but you gotta be careful,{w=0.2} [player]."
-    extend 2tsqss "Pero tienes que tener cuidado,{w=0.2} [player]."
+    extend 2tsqss "pero tienes que tener cuidado,{w=0.2} [player]."
 
 # game/script-snap.rpy:284
 translate spanish snap_explanation_154f2465:
@@ -198,7 +198,7 @@ translate spanish snap_explanation_90d88620:
 translate spanish snap_explanation_bfc2ddeb:
 
     # n 4uwdaj "Oh,{w=0.2} right -{w=0.5}{nw}"
-    n 4uwdaj "Ah,{w=0.2} claro—{w=0.5}{nw}"
+    n 4uwdaj "Ah,{w=0.2} claro… {w=0.5}{nw}"
 
 # game/script-snap.rpy:291
 translate spanish snap_explanation_4442541f:
@@ -529,7 +529,7 @@ translate spanish snap_end_0362c261:
 translate spanish snap_end_e21d6713:
 
     # extend 2cslcasbr " Jeez..."
-    extend 2cslcasbr "Dios..."
+    extend 2cslcasbr "Cielos..."
 
 # game/script-snap.rpy:615
 translate spanish snap_end_cfa459e2:
@@ -1067,15 +1067,15 @@ translate spanish strings:
 
     # game/script-snap.rpy:440
     old "Jeez! Whatever..."
-    new "¡Dios! Como sea..."
+    new "¡Cielos! Como sea..."
 
     # game/script-snap.rpy:440
     old "Jeez!"
-    new "¡Dios!"
+    new "¡Caray!"
 
     # game/script-snap.rpy:440
     old "Jeeeeeez!"
-    new "¡Dioooos!"
+    new "¡Caraaaaay!"
 
     # game/script-snap.rpy:440
     old "Oh come on,{w=0.2} [player]!"
@@ -1107,7 +1107,7 @@ translate spanish strings:
 
     # game/script-snap.rpy:520
     old "Hey,{w=0.2} [player] -{w=0.2} you're meant to read the cards!{w=0.2} Ehehe."
-    new "Oye, {w=0.2}[player] - {w=0.2}¡se supone que debes leer las cartas! {w=0.2}Jejeje."
+    new "Oye, {w=0.2}[player]… {w=0.2}¡se supone que debes leer las cartas! {w=0.2}Jejeje."
 
     # game/script-snap.rpy:520
     old "Great play,{w=0.2} dummy!{w=0.2} Ahaha!"
@@ -1179,7 +1179,7 @@ translate spanish strings:
 
     # game/script-snap.rpy:564
     old "Sn-...{w=0.3} oh."
-    new "Sna-... {w=0.3}oh."
+    new "Sna... {w=0.3}oh."
 
     # game/script-snap.rpy:564
     old "Snap!{w=0.2} Wait..."
@@ -1191,7 +1191,7 @@ translate spanish strings:
 
     # game/script-snap.rpy:564
     old "Snap sna-...{w=0.3} grrr."
-    new "Snap sna-... {w=0.3}grrr."
+    new "Snap sna... {w=0.3}grrr."
 
     # game/script-snap.rpy:824
     old "Cards down: {0}"
