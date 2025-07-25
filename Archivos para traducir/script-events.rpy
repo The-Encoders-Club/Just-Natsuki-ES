@@ -16520,5 +16520,5 @@ translate spanish holiday_valentines_day_3c8bbc7b:
 translate spanish holiday_natsuki_birthday_d2e00ee8:
 
     # n 1kslsll "..."
-    n 1kslsll "..."
+    n 1kslsll ".."
 
