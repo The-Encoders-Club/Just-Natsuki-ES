@@ -34,13 +34,13 @@ translate spanish music_menu_314046ab:
 translate spanish music_menu_0540d399:
 
     # n 2tlraj "As a reminder -{w=0.5}{nw}"
-    n 2tlraj "Y como recordatorio -{w=0.5}{nw}"
+    n 2tlraj "Y como recordatorio… {w=0.5}{nw}"
 
 # game/custom-music.rpy:130
 translate spanish music_menu_690cd915:
 
     # extend 2tnmsl " anything you want me to play needs to be in the {i}custom_music{/i} folder."
-    extend 2tnmsl "Todo lo que quieras que yo reproduzca necesita estar en la carpeta de {i}custom_music{/i}."
+    extend 2tnmsl "Todo lo que quieras que yo reproduzca necesita estar en la carpeta {i}custom_music{/i}."
 
 # game/custom-music.rpy:131
 translate spanish music_menu_09d13c59:
@@ -154,7 +154,7 @@ translate spanish music_menu_ba0e77c2:
 translate spanish music_menu_9eeb4ca2:
 
     # n 1unmaj "Oh{w=0.2} -{w=0.50}{nw}"
-    n 1unmaj "Oh-{w=0.2} {w=0.50}{nw}"
+    n 1unmaj "Oh…{w=0.2} {w=0.50}{nw}"
 
 # game/custom-music.rpy:216
 translate spanish music_menu_27d48d15:
@@ -214,19 +214,19 @@ translate spanish strings:
 translate spanish music_menu_7ee9619a:
 
     # n 2knmsm "[music_quip]"
-    n 2knmsm ""
+    n 2knmsm "[music_quip]"
 
 # game/custom-music.rpy:523
 translate spanish music_menu_7ee9619a_1:
 
     # n 2knmsm "[music_quip]"
-    n 2knmsm ""
+    n 2knmsm "[music_quip]"
 
 # game/custom-music.rpy:568
 translate spanish music_menu_e98a6771_1:
 
     # n 2uchbgeme "[chosen_done_quip]{w=2}{nw}"
-    n 2uchbgeme ""
+    n 2uchbgeme "[chosen_done_quip] {w=2}{nw}"
 
 translate spanish strings:
 
@@ -260,14 +260,14 @@ translate spanish strings:
 
     # game/custom-music.rpy:69
     old "And...{w=0.3} we're good!"
-    new "Y... {w=0.3} ¡lo tenemos!"
+    new "Y... {w=0.3}¡lo tenemos!"
 
     # game/custom-music.rpy:69
     old "Okie-dokie!{w=0.2} Ehehe."
-    new "¡Okie-dokie!{w=0.2} Jejeje."
+    new "¡Okie-dokie! {w=0.2}Jejeje."
 
     # game/custom-music.rpy:277
     old "Unknown track"
-    new "Pista Desconocida"
+    new "Tema desconocida"
 
 
