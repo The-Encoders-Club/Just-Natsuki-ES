@@ -42558,7 +42558,7 @@ translate spanish talk_staying_active_9a5e4a02:
 translate spanish talk_staying_active_e9dcc7a5:
 
     # n 2fcsgs "Whatever it is -{w=0.5}{nw}"
-    n 2fcsgs "Sea lo que sea... {w=0.5}{nw}"
+    n 2fcsgs "Sea lo que sea… {w=0.5}{nw}"
 
 # game/script-topics.rpy:1425
 translate spanish talk_staying_active_4676dab0:
