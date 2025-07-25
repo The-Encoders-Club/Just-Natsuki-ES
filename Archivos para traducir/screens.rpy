@@ -260,9 +260,9 @@ translate spanish strings:
 
     # game/screens.rpy:1268
     old "Unseen text"
-    new ""
+    new "Texto invisible"
 
     # game/screens.rpy:1269
     old "After choices"
-    new ""
+    new "Después de elegir"
 
