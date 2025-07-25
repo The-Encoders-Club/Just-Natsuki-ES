@@ -748,745 +748,745 @@ translate spanish farewell_option_going_out_537cf41d:
 translate spanish farewell_option_going_out_1005bcb4:
 
     # n 3fsqsm "Just don't forget..."
-    n 3fsqsm ""
+    n 3fsqsm "Solo no olvides..."
 
 # game/script-farewells.rpy:312
 translate spanish farewell_option_going_out_3526c92c:
 
     # n 2fsqbg "I want my share of treats too!"
-    n 2fsqbg ""
+    n 2fsqbg "¡Yo también quiero mi parte de golosinas!"
 
 # game/script-farewells.rpy:313
 translate spanish farewell_option_going_out_3a16f632:
 
     # n 2fchgn "Ehehe.{w=0.5}{nw}"
-    n 2fchgn ""
+    n 2fchgn "Jejeje. {w=0.5}{nw}"
 
 # game/script-farewells.rpy:314
 translate spanish farewell_option_going_out_88fb87d4:
 
     # extend 1fchbg " Have fun~!"
-    extend 1fchbg ""
+    extend 1fchbg "¡Diviértete~!"
 
 # game/script-farewells.rpy:317
 translate spanish farewell_option_going_out_05efac13:
 
     # n 1unmbo "Oh?{w=0.2} You're heading out for Christmas Eve?"
-    n 1unmbo ""
+    n 1unmbo "¿Oh? {w=0.2}¿Sales en Nochebuena?"
 
 # game/script-farewells.rpy:318
 translate spanish farewell_option_going_out_9364655b:
 
     # n 1kllsl "Well...{w=0.3} okay."
-    n 1kllsl ""
+    n 1kllsl "Bueno... {w=0.3}okey."
 
 # game/script-farewells.rpy:319
 translate spanish farewell_option_going_out_9b3b5e04:
 
     # n 4kllajl "...You will be back in time for Christmas though...{w=0.5}{nw}"
-    n 4kllajl ""
+    n 4kllajl "... Pero volverás a tiempo para Navidad... {w=0.5}{nw}"
 
 # game/script-farewells.rpy:320
 translate spanish farewell_option_going_out_a66aaf49:
 
     # extend 4knmsll " right?"
-    extend 4knmsll ""
+    extend 4knmsll "¿cierto?"
 
 # game/script-farewells.rpy:321
 translate spanish farewell_option_going_out_a5c69999:
 
     # n 2nsrssl "...Ahaha.{w=0.3}"
-    n 2nsrssl ""
+    n 2nsrssl "..Jajaja. {w=0.3}"
 
 # game/script-farewells.rpy:322
 translate spanish farewell_option_going_out_a80c6630:
 
     # extend 1nchbgsbl " See you later,{w=0.1} [player]!"
-    extend 1nchbgsbl ""
+    extend 1nchbgsbl "¡Nos vemos luego, {w=0.1}[player]!"
 
 # game/script-farewells.rpy:323
 translate spanish farewell_option_going_out_d06fb127:
 
     # n 1kslslsbl "..."
-    n 1kslslsbl ""
+    n 1kslslsbl "..."
 
 # game/script-farewells.rpy:326
 translate spanish farewell_option_going_out_27e0bb47:
 
     # n 1unmbo "Huh?{w=0.2} You're heading off now?"
-    n 1unmbo ""
+    n 1unmbo "¿Eh? {w=0.2}¿Te vas ahora?"
 
 # game/script-farewells.rpy:327
 translate spanish farewell_option_going_out_0c90f1ea:
 
     # n 2kllsl "Well...{w=0.3} alright."
-    n 2kllsl ""
+    n 2kllsl "Bueno... {w=0.3}está bien."
 
 # game/script-farewells.rpy:328
 translate spanish farewell_option_going_out_bf906d28:
 
     # n 2kllss "Thanks for dropping by today though,{w=0.1} [player]."
-    n 2kllss ""
+    n 2kllss "Pero gracias por pasar hoy, {w=0.1}[player]."
 
 # game/script-farewells.rpy:329
 translate spanish farewell_option_going_out_e6044ddd:
 
     # n 4kcsssl "It...{w=0.3} really meant a lot to me."
-    n 4kcsssl ""
+    n 4kcsssl "Realmente... {w=0.3}significó mucho para mí."
 
 # game/script-farewells.rpy:330
 translate spanish farewell_option_going_out_f826dd55:
 
     # n 4kchss "See you later,{w=0.1} [player]!{w=0.5}{nw}"
-    n 4kchss ""
+    n 4kchss "¡Nos vemos luego, {w=0.1}[player]! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:331
 translate spanish farewell_option_going_out_c33d40db:
 
     # extend 1kchbg " And Merry Christmas!"
-    extend 1kchbg ""
+    extend 1kchbg "¡Y feliz Navidad!"
 
 # game/script-farewells.rpy:334
 translate spanish farewell_option_going_out_c26a99fa:
 
     # n 2unmaj "Oh?{w=0.2} You're heading out,{w=0.1} [player]?"
-    n 2unmaj ""
+    n 2unmaj "¿Oh? {w=0.2}¿Te vas, {w=0.1}[player]?"
 
 # game/script-farewells.rpy:335
 translate spanish farewell_option_going_out_fad45ffa:
 
     # n 2fchbg "No worries!{w=0.2} I'll catch you later!"
-    n 2fchbg ""
+    n 2fchbg "¡No te preocupes! {w=0.2}¡Te veré después!"
 
 # game/script-farewells.rpy:336
 translate spanish farewell_option_going_out_d116d1cc:
 
     # n 2nchbg "Toodles~!"
-    n 2nchbg ""
+    n 2nchbg "¡Adiós~!"
 
 # game/script-farewells.rpy:339
 translate spanish farewell_option_going_out_271c0f6c:
 
     # n 4uchbgf "Love you~!"
-    n 4uchbgf ""
+    n 4uchbgf "¡Te amo~!"
 
 # game/script-farewells.rpy:345
 translate spanish farewell_option_work_77e0b631:
 
     # n 1knmaj "H-{w=0.1}huh?{w=0.2} You're going to work now?"
-    n 1knmaj ""
+    n 1knmaj "¿E-{w=0.1}Eh? {w=0.2}¿Vas a trabajar ahora?"
 
 # game/script-farewells.rpy:347
 translate spanish farewell_option_work_393c9eee:
 
     # n 4kllajsbr "But...{w=0.5}{nw}"
-    n 4kllajsbr ""
+    n 4kllajsbr "Pero... {w=0.5}{nw}"
 
 # game/script-farewells.rpy:348
 translate spanish farewell_option_work_1bd9d5fe:
 
     # extend 4knmgssbr " it's super [time_concern] though,{w=0.1} [player]..."
-    extend 4knmgssbr ""
+    extend 4knmgssbr "es súper [time_concern], {w=0.1}[player]..."
 
 # game/script-farewells.rpy:349
 translate spanish farewell_option_work_3b1a7e6d:
 
     # n 1kllsll "..."
-    n 1kllsll ""
+    n 1kllsll "..."
 
 # game/script-farewells.rpy:350
 translate spanish farewell_option_work_d1fb2825:
 
     # n 1kllajl "Are you..."
-    n 1kllajl ""
+    n 1kllajl "Vas a..."
 
 # game/script-farewells.rpy:354
 translate spanish farewell_option_work_430a27cd:
 
     # n "Are you gonna work from home today,{w=0.2} or...?" nointeract
-    n "" nointeract
+    n "¿Vas a trabajar desde casa hoy, {w=0.2}o...?" nointeract
 
 # game/script-farewells.rpy:357
 translate spanish farewell_option_work_de3c6030:
 
     # n 1ncsssl "Heh.{w=0.75}{nw}"
-    n 1ncsssl ""
+    n 1ncsssl "Je. {w=0.75}{nw}"
 
 # game/script-farewells.rpy:358
 translate spanish farewell_option_work_28cc4949:
 
     # extend 2nllpul " I {i}guess{/i} that's something,{w=0.75}{nw}"
-    extend 2nllpul ""
+    extend 2nllpul "Supongo {i}que{/i} es algo, {w=0.75}{nw}"
 
 # game/script-farewells.rpy:359
 translate spanish farewell_option_work_9f438920:
 
     # extend 2nslsll " at least."
-    extend 2nslsll ""
+    extend 2nslsll "al menos."
 
 # game/script-farewells.rpy:360
 translate spanish farewell_option_work_03d4de1e:
 
     # n 4fslpol "Still doesn't mean I gotta like it,{w=0.2} though."
-    n 4fslpol ""
+    n 4fslpol "Aún así no significa que tenga que gustarme."
 
 # game/script-farewells.rpy:361
 translate spanish farewell_option_work_8b8cc257:
 
     # n 4fcspol "Just..."
-    n 4fcspol ""
+    n 4fcspol "Solo..."
 
 # game/script-farewells.rpy:362
 translate spanish farewell_option_work_9617b4a6:
 
     # n 1kllbol "...Keep an eye on the clock.{w=0.75}{nw}"
-    n 1kllbol ""
+    n 1kllbol "... Vigila el reloj. {w=0.75}{nw}"
 
 # game/script-farewells.rpy:363
 translate spanish farewell_option_work_e494ed37:
 
     # extend 1knmbol " Alright?"
-    extend 1knmbol ""
+    extend 1knmbol "¿De acuerdo?"
 
 # game/script-farewells.rpy:364
 translate spanish farewell_option_work_49c6135e:
 
     # n 2fsqcal "I don't wanna hear about you staying back late or anything."
-    n 2fsqcal ""
+    n 2fsqcal "No quiero saber que te quedas hasta tarde ni nada."
 
 # game/script-farewells.rpy:367
 translate spanish farewell_option_work_a8e36edf:
 
     # n 2fchsml "Take it easy,{w=0.2} [player]!{w=0.75}{nw}"
-    n 2fchsml ""
+    n 2fchsml "¡Tómalo con calma, {w=0.2}[player]! {w=0.75}{nw}"
 
 # game/script-farewells.rpy:368
 translate spanish farewell_option_work_d25f80ed:
 
     # extend 2fchssleafsbl " L-{w=0.2}love you!"
-    extend 2fchssleafsbl ""
+    extend 2fchssleafsbl "¡T-{w=0.2}Te amo!"
 
 # game/script-farewells.rpy:371
 translate spanish farewell_option_work_f1a08f28:
 
     # n 2fchssl "Take it easy,{w=0.2} [player]!"
-    n 2fchssl ""
+    n 2fchssl "¡Tómalo con calma, {w=0.2}[player]!"
 
 # game/script-farewells.rpy:372
 translate spanish farewell_option_work_03a304c8:
 
     # n 2kslsll "..."
-    n 2kslsll ""
+    n 2kslsll "..."
 
 # game/script-farewells.rpy:375
 translate spanish farewell_option_work_861404d3:
 
     # n 4kcsemlesi "Man...{w=1}{nw}"
-    n 4kcsemlesi ""
+    n 4kcsemlesi "Vaya... {w=1}{nw}"
 
 # game/script-farewells.rpy:376
 translate spanish farewell_option_work_fbae00fb:
 
     # extend 4ksqbol " {i}really{/i}?"
-    extend 4ksqbol ""
+    extend 4ksqbol "¿{i}en serio{/i}?"
 
 # game/script-farewells.rpy:377
 translate spanish farewell_option_work_c255f55c:
 
     # n 1ksrsllsbr "..."
-    n 1ksrsllsbr ""
+    n 1ksrsllsbr "..."
 
 # game/script-farewells.rpy:378
 translate spanish farewell_option_work_0e48b51b:
 
     # n 1fcspusbr "Just...{w=1}{nw}"
-    n 1fcspusbr ""
+    n 1fcspusbr "Solo... {w=1}{nw}"
 
 # game/script-farewells.rpy:379
 translate spanish farewell_option_work_4df07cfa:
 
     # extend 4kllsl " be careful,{w=0.2} alright?"
-    extend 4kllsl ""
+    extend 4kllsl "ten cuidado, {w=0.2}¿de acuerdo?"
 
 # game/script-farewells.rpy:380
 translate spanish farewell_option_work_0e23550f:
 
     # n 2fsqpol "And you {i}better{/i} come visit when you get back."
-    n 2fsqpol ""
+    n 2fsqpol "Y {i}será mejor{/i} que vengas a verme cuando regres."
 
 # game/script-farewells.rpy:383
 translate spanish farewell_option_work_73e553d5:
 
     # n 2fnmcal "Take care,{w=0.1} [player]!{w=1}{nw}"
-    n 2fnmcal ""
+    n 2fnmcal "¡Cuídate, {w=0.1}[player]! {w=1}{nw}"
 
 # game/script-farewells.rpy:384
 translate spanish farewell_option_work_8de65488:
 
     # extend 4kchsmleaf " I love you!"
-    extend 4kchsmleaf ""
+    extend 4kchsmleaf "¡Te amo!"
 
 # game/script-farewells.rpy:385
 translate spanish farewell_option_work_927cded8:
 
     # n 4kllcalsbr "..."
-    n 4kllcalsbr ""
+    n 4kllcalsbr "..."
 
 # game/script-farewells.rpy:388
 translate spanish farewell_option_work_8146cdf3:
 
     # n 2fnmcal "Take care,{w=0.1} [player]!"
-    n 2fnmcal ""
+    n 2fnmcal "¡Cuídate, {w=0.1}[player]!"
 
 # game/script-farewells.rpy:391
 translate spanish farewell_option_work_e3aae973:
 
     # n 1unmajesu "Oh?{w=0.2} You're working today?"
-    n 1unmajesu ""
+    n 1unmajesu "¿Oh? {w=0.2}¿Trabajas hoy?"
 
 # game/script-farewells.rpy:394
 translate spanish farewell_option_work_11b5a4cc:
 
     # n 1uskgs "...And on Easter,{w=0.1} of all days?{w=0.5}{nw}"
-    n 1uskgs ""
+    n 1uskgs "... ¿Y en Pascua, {w=0.1}de todos los días? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:395
 translate spanish farewell_option_work_b717266e:
 
     # extend 1fslpo " Man..."
-    extend 1fslpo ""
+    extend 1fslpo " Vaya..."
 
 # game/script-farewells.rpy:398
 translate spanish farewell_option_work_20af2f2f:
 
     # n 4fskgsl "...On Christmas Eve?{w=0.5}{nw}"
-    n 4fskgsl ""
+    n 4fskgsl "... ¿En Nochebuena? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:399
 translate spanish farewell_option_work_ecc3a2f9:
 
     # extend 2kcsemledr " You've gotta be kidding me..."
-    extend 2kcsemledr ""
+    extend 2kcsemledr "Tienes que estar bromeando..."
 
 # game/script-farewells.rpy:402
 translate spanish farewell_option_work_f2cfc797:
 
     # n 4fskwrl "...On {i}Christmas{/i}?!{w=0.5}{nw}"
-    n 4fskwrl ""
+    n 4fskwrl "... ¡¿En {i}Navidad{/i}?! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:403
 translate spanish farewell_option_work_73775504:
 
     # extend 1kcsemledr " Ugh..."
-    extend 1kcsemledr ""
+    extend 1kcsemledr " Uf..."
 
 # game/script-farewells.rpy:404
 translate spanish farewell_option_work_14e8ad2f:
 
     # n 2fslpol "..."
-    n 2fslpol ""
+    n 2fslpol "..."
 
 # game/script-farewells.rpy:405
 translate spanish farewell_option_work_4bb5c711:
 
     # n 2fslajl "Well..."
-    n 2fslajl ""
+    n 2fslajl "Bueno..."
 
 # game/script-farewells.rpy:408
 translate spanish farewell_option_work_4485452e:
 
     # n 4fskgsl "...And on New Year's Eve,{w=0.1} too?!{w=0.5}{nw}"
-    n 4fskgsl ""
+    n 4fskgsl "... ¿Y en Nochevieja también?! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:409
 translate spanish farewell_option_work_35e7bee3:
 
     # extend 1kcsemledr " Jeez..."
-    extend 1kcsemledr ""
+    extend 1kcsemledr "Cielos..."
 
 # game/script-farewells.rpy:412
 translate spanish farewell_option_work_6f94609f:
 
     # n 1kwdgsl "...And on your {i}birthday{/i} too?!{w=1}{nw}"
-    n 1kwdgsl ""
+    n 1kwdgsl "... ¿Y en tu {i}cumpleaños{/i} también?! {w=1}{nw}"
 
 # game/script-farewells.rpy:413
 translate spanish farewell_option_work_626d7779:
 
     # extend 1kslanl " Yikes,{w=0.75}{nw}"
-    extend 1kslanl ""
+    extend 1kslanl "Vaya, {w=0.75}{nw}"
 
 # game/script-farewells.rpy:414
 translate spanish farewell_option_work_f9e23ad2:
 
     # extend 1kslsll " [player]..."
-    extend 1kslsll ""
+    extend 1kslsll "[player]..."
 
 # game/script-farewells.rpy:417
 translate spanish farewell_option_work_00202e1d:
 
     # n 1uwdaj "A-{w=0.1}and on a weekend,{w=0.1} too?{w=0.5}{nw}"
-    n 1uwdaj ""
+    n 1uwdaj "¿Y-{w=0.1}Y en fin de semana también? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:418
 translate spanish farewell_option_work_ac93e44c:
 
     # extend 2kslpu " Man..."
-    extend 2kslpu ""
+    extend 2kslpu "Caray..."
 
 # game/script-farewells.rpy:420
 translate spanish farewell_option_work_48c65c06:
 
     # n 2nlrpo "It sucks that you've gotta work,{w=0.1} but I get it.{w=0.5}{nw}"
-    n 2nlrpo ""
+    n 2nlrpo "Apesta que tengas que trabajar, {w=0.1}pero lo entiendo. {w=0.5}{nw}"
 
 # game/script-farewells.rpy:421
 translate spanish farewell_option_work_338f1cc8:
 
     # extend 2nsrpo " I guess."
-    extend 2nsrpo ""
+    extend 2nsrpo "Supongo."
 
 # game/script-farewells.rpy:422
 translate spanish farewell_option_work_29d6e5e5:
 
     # n 4fnmpo "...You better come visit when you finish though."
-    n 4fnmpo ""
+    n 4fnmpo "... Pero será mejor que vengas cuando termines."
 
 # game/script-farewells.rpy:423
 translate spanish farewell_option_work_bf2e8c05:
 
     # n 4fsqsm "Ehehe."
-    n 4fsqsm ""
+    n 4fsqsm "Jejeje."
 
 # game/script-farewells.rpy:424
 translate spanish farewell_option_work_131a6043:
 
     # n 3fchbg "Take it easy,{w=0.1} [player]!{w=0.2} Don't let anyone push you around!"
-    n 3fchbg ""
+    n 3fchbg "¡Tómalo con calma, {w=0.1}[player]! {w=0.2}¡No dejes que nadie te pisotee!"
 
 # game/script-farewells.rpy:428
 translate spanish farewell_option_work_baa6d584:
 
     # n 3uchbgf "You got this,{w=0.1} [chosen_endearment]!{w=0.2} Love you~!"
-    n 3uchbgf ""
+    n 3uchbgf "¡Tú puedes, {w=0.1}[chosen_endearment]! {w=0.2}¡Te amo~!"
 
 # game/script-farewells.rpy:432
 translate spanish farewell_option_work_6cfc485f:
 
     # n 3uchbgl "I believe in you,{w=0.1} [chosen_tease]!"
-    n 3uchbgl ""
+    n 3uchbgl "¡Creo en ti, {w=0.1}[chosen_tease]!"
 
 # game/script-farewells.rpy:438
 translate spanish farewell_option_school_aa16a110:
 
     # n 1tnmem "...School?{w=1}{nw}"
-    n 1tnmem ""
+    n 1tnmem "... ¿Escuela? {w=1}{nw}"
 
 # game/script-farewells.rpy:439
 translate spanish farewell_option_school_3ec4d239:
 
     # extend 4fskgsesh " A-{w=0.1}At this hour?"
-    extend 4fskgsesh ""
+    extend 4fskgsesh "¿A-{w=0.1}A esta hora?"
 
 # game/script-farewells.rpy:442
 translate spanish farewell_option_school_8792a6cc:
 
     # n 1kwdgs "...And on {i}Easter{/i},{w=0.1} of all days?}"
-    n 1kwdgs ""
+    n 1kwdgs "... ¿Y en {i}Pascua{/i}, {w=0.1}de todos los días?"
 
 # game/script-farewells.rpy:445
 translate spanish farewell_option_school_4ef2be71:
 
     # n 1fskgsl "...And on {i}Christmas Eve{/i}?"
-    n 1fskgsl ""
+    n 1fskgsl "... ¿Y en {i}Nochebuena{/i}?"
 
 # game/script-farewells.rpy:448
 translate spanish farewell_option_school_f4009f4f:
 
     # n 1fskwrl "...And on {i}Christmas{/i}?!"
-    n 1fskwrl ""
+    n 1fskwrl "... ¿Y en {i}Navidad{/i}?!"
 
 # game/script-farewells.rpy:451
 translate spanish farewell_option_school_a61b5599:
 
     # n 1fskgsl "...And on New Year's Eve,{w=0.1} too?!"
-    n 1fskgsl ""
+    n 1fskgsl "... ¿Y en Nochevieja también?!"
 
 # game/script-farewells.rpy:454
 translate spanish farewell_option_school_9a2e0e34:
 
     # extend 1uskwr " A-{w=0.1}and on a {i}weekend{/i} too?!"
-    extend 1uskwr ""
+    extend 1uskwr "¡¿Y-{w=0.1}Y en el {i}fin de semana{/i} también?!"
 
 # game/script-farewells.rpy:456
 translate spanish farewell_option_school_5d08b711:
 
     # n 4fbkwrean "What the hell kind of school is thaaaat?!"
-    n 4fbkwrean ""
+    n 4fbkwrean "¿¡Qué diablos de escuela es éeeesa?!"
 
 # game/script-farewells.rpy:457
 translate spanish farewell_option_school_d13e522e:
 
     # n 2kllpo "Jeez.{w=0.5}{nw}"
-    n 2kllpo ""
+    n 2kllpo "Cielos. {w=0.5}{nw}"
 
 # game/script-farewells.rpy:458
 translate spanish farewell_option_school_3a3c1c7c:
 
     # extend 2fslsr " And I thought my school experience was bad enough."
-    extend 2fslsr ""
+    extend 2fslsr "Y yo que pensaba que mi experiencia escolar era mala."
 
 # game/script-farewells.rpy:459
 translate spanish farewell_option_school_970b237b:
 
     # n 2kcspu "Just...{w=0.5}{nw}"
-    n 2kcspu ""
+    n 2kcspu "Solo... {w=0.5}{nw}"
 
 # game/script-farewells.rpy:460
 translate spanish farewell_option_school_3da52fbd:
 
     # extend 4knmpu " take care getting there,{w=0.1} alright?"
-    extend 4knmpu ""
+    extend 4knmpu "ten cuidado al llegar, {w=0.1}¿de acuerdo?"
 
 # game/script-farewells.rpy:462
 translate spanish farewell_option_school_7dfe2e50:
 
     # extend 1fllsrsbl " It's really [time_concern],{w=0.1} after all."
-    extend 1fllsrsbl ""
+    extend 1fllsrsbl "Es muy [time_concern], {w=0.1}después de todo."
 
 # game/script-farewells.rpy:463
 translate spanish farewell_option_school_e7394131:
 
     # n 4kllss "Study hard,{w=0.1} [player]!"
-    n 4kllss ""
+    n 4kllss "¡Estudia mucho, {w=0.1}[player]!"
 
 # game/script-farewells.rpy:467
 translate spanish farewell_option_school_5fa0f597:
 
     # n 4uskgs "...And on Easter,{w=0.1} of all days?{w=0.5}{nw}"
-    n 4uskgs ""
+    n 4uskgs "... ¿Y en Pascua, {w=0.1}de todos los días? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:468
 translate spanish farewell_option_school_36b06b22:
 
     # extend 2fslpo " Man..."
-    extend 2fslpo ""
+    extend 2fslpo "Vaya..."
 
 # game/script-farewells.rpy:471
 translate spanish farewell_option_school_20af2f2f:
 
     # n 4fskgsl "...On Christmas Eve?{w=0.5}{nw}"
-    n 4fskgsl ""
+    n 4fskgsl "... ¿En Nochebuena? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:472
 translate spanish farewell_option_school_c8d65bc7:
 
     # extend 2fcseml " You've gotta be kidding me..."
-    extend 2fcseml ""
+    extend 2fcseml "Tienes que estar bromeando..."
 
 # game/script-farewells.rpy:475
 translate spanish farewell_option_school_f2cfc797:
 
     # n 4fskwrl "...On {i}Christmas{/i}?!{w=0.5}{nw}"
-    n 4fskwrl ""
+    n 4fskwrl "... ¡¿En {i}Navidad{/i}?! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:476
 translate spanish farewell_option_school_4d69cf92:
 
     # extend 2fcseml " Ugh..."
-    extend 2fcseml ""
+    extend 2fcseml "Ugh..."
 
 # game/script-farewells.rpy:477
 translate spanish farewell_option_school_14e8ad2f:
 
     # n 2fslpol "..."
-    n 2fslpol ""
+    n 2fslpol "..."
 
 # game/script-farewells.rpy:478
 translate spanish farewell_option_school_4bb5c711:
 
     # n 2fslajl "Well..."
-    n 2fslajl ""
+    n 2fslajl "Bueno..."
 
 # game/script-farewells.rpy:481
 translate spanish farewell_option_school_4485452e:
 
     # n 4fskgsl "...And on New Year's Eve,{w=0.1} too?!{w=0.5}{nw}"
-    n 4fskgsl ""
+    n 4fskgsl "... ¡¿Y en Nochevieja también?! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:482
 translate spanish farewell_option_school_0a1060e8:
 
     # extend 2fcseml " Jeez..."
-    extend 2fcseml ""
+    extend 2fcseml "Cielos..."
 
 # game/script-farewells.rpy:485
 translate spanish farewell_option_school_0228d0fe:
 
     # n 2unmaj "Off to school,{w=0.1} [player]?{w=0.5}{nw}"
-    n 2unmaj ""
+    n 2unmaj "¿De camino a la escuela, {w=0.1}[player]? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:486
 translate spanish farewell_option_school_747fa3ac:
 
     # extend 2nchsm " No worries!"
-    extend 2nchsm ""
+    extend 2nchsm "¡No te preocupes!"
 
 # game/script-farewells.rpy:489
 translate spanish farewell_option_school_c291a045:
 
     # n 1tnmpu "Huh?{w=0.2} You're at school today?{w=0.5}{nw}"
-    n 1tnmpu ""
+    n 1tnmpu "¿Eh? {w=0.2}¿Estás en la escuela hoy? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:490
 translate spanish farewell_option_school_fdbed76c:
 
     # extend 2nsqpu " ...On a {i}weekend{/i}?"
-    extend 2nsqpu ""
+    extend 2nsqpu "... ¿En {i}fin de semana{/i}?"
 
 # game/script-farewells.rpy:491
 translate spanish farewell_option_school_d1140f43:
 
     # n 2fslpu "..."
-    n 2fslpu ""
+    n 2fslpu "..."
 
 # game/script-farewells.rpy:492
 translate spanish farewell_option_school_19785e2e:
 
     # n 2fsqpo "Gross..."
-    n 2fsqpo ""
+    n 2fsqpo "Qué asco..."
 
 # game/script-farewells.rpy:494
 translate spanish farewell_option_school_fc6fd3b8:
 
     # n 2tsqsm "Sucks to be you though,{w=0.1} huh?{w=0.5}{nw}"
-    n 2tsqsm ""
+    n 2tsqsm "Pero apesta ser tú, {w=0.1}¿eh? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:495
 translate spanish farewell_option_school_e8c38b7a:
 
     # extend 2fchsm " Ehehe."
-    extend 2fchsm ""
+    extend 2fchsm "Jejeje."
 
 # game/script-farewells.rpy:496
 translate spanish farewell_option_school_eefaac24:
 
     # n 3fchbg "No slacking off,{w=0.1} [player]!{w=0.2} I'll see you later!"
-    n 3fchbg ""
+    n 3fchbg "¡No flojees, {w=0.1}[player]! {w=0.2}¡Te veré luego!"
 
 # game/script-farewells.rpy:500
 translate spanish farewell_option_school_ccd33ae3:
 
     # n 4uchbgf "Love you!"
-    n 4uchbgf ""
+    n 4uchbgf "¡Te amo!"
 
 # game/script-farewells.rpy:505
 translate spanish farewell_option_misc_activity_fa086af2:
 
     # n 1knmpu "H-{w=0.1}huh?{w=0.5}{nw}"
-    n 1knmpu ""
+    n 1knmpu "¿E-{w=0.1}Eh? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:506
 translate spanish farewell_option_misc_activity_2c98224d:
 
     # extend 1kllaj " And you gotta leave to do that too?"
-    extend 1kllaj ""
+    extend 1kllaj "¿Y tienes que irte para hacer eso también?"
 
 # game/script-farewells.rpy:507
 translate spanish farewell_option_misc_activity_59982334:
 
     # n 4fcsun "Nnnnnn...{w=0.5}{nw}"
-    n 4fcsun ""
+    n 4fcsun "Mmmmm... {w=0.5}{nw}"
 
 # game/script-farewells.rpy:508
 translate spanish farewell_option_misc_activity_ff08f05d:
 
     # extend 1kcsaj " okay."
-    extend 1kcsaj ""
+    extend 1kcsaj "okey."
 
 # game/script-farewells.rpy:509
 translate spanish farewell_option_misc_activity_86d56667:
 
     # n 2fnmpol "...But you better come visit once you're done.{w=1}{nw}"
-    n 2fnmpol ""
+    n 2fnmpol "... Pero será mejor que vengas cuando termines. {w=1}{nw}"
 
 # game/script-farewells.rpy:510
 translate spanish farewell_option_misc_activity_140401fc:
 
     # extend 2klrpo " Got it?"
-    extend 2klrpo ""
+    extend 2klrpo "¿Entendido?"
 
 # game/script-farewells.rpy:511
 translate spanish farewell_option_misc_activity_bf03ea57:
 
     # n 2kllpo "See you soon,{w=0.1} [player]!"
-    n 2kllpo ""
+    n 2kllpo "¡Nos vemos pronto, {w=0.1}[player]!"
 
 # game/script-farewells.rpy:514
 translate spanish farewell_option_misc_activity_9f948e0c:
 
     # n 4kllssf "Love you!"
-    n 4kllssf ""
+    n 4kllssf "¡Te amo!"
 
 # game/script-farewells.rpy:519
 translate spanish farewell_option_play_499cc16e:
 
     # n 1fsqaj "...Really,{w=0.5} [player]?"
-    n 1fsqaj ""
+    n 1fsqaj "... ¿En serio, {w=0.5}[player]?"
 
 # game/script-farewells.rpy:520
 translate spanish farewell_option_play_514d32ce:
 
     # n 4nslpu "You'd seriously rather play some {i}game{/i}...{w=0.5}{nw}"
-    n 4nslpu ""
+    n 4nslpu "¿En serio prefieres jugar algún {i}juego{/i}... {w=0.5}{nw}"
 
 # game/script-farewells.rpy:521
 translate spanish farewell_option_play_a016aeb7:
 
     # extend 2fsqsf " than hang out with {i}me{/i}?"
-    extend 2fsqsf ""
+    extend 2fsqsf "que pasar tiempo {i}conmigo{/i}?"
 
 # game/script-farewells.rpy:522
 translate spanish farewell_option_play_6a52cb88:
 
     # n 2fcssl "..."
-    n 2fcssl ""
+    n 2fcssl "..."
 
 # game/script-farewells.rpy:523
 translate spanish farewell_option_play_d9686e91:
 
     # n 2uchgneme "Well,{w=0.1} your loss!{w=0.5}{nw}"
-    n 2uchgneme ""
+    n 2uchgneme "Bueno, {w=0.1}¡tu te lo pierdes! {w=0.5}{nw}"
 
 # game/script-farewells.rpy:524
 translate spanish farewell_option_play_341d6950:
 
     # extend 2fchbgelg " Ahaha!"
-    extend 2fchbgelg ""
+    extend 2fchbgelg "¡Jajaja!"
 
 # game/script-farewells.rpy:525
 translate spanish farewell_option_play_3ed39deb:
 
     # n 1nllbg "No,{w=0.1} no.{w=0.2} It's fine.{w=0.2} You go do that,{w=0.1} [player].{w=0.5}{nw}"
-    n 1nllbg ""
+    n 1nllbg "No, {w=0.1}no. {w=0.2}Está bien. {w=0.2}Ve a hacer eso, {w=0.1}[player]. {w=0.5}{nw}"
 
 # game/script-farewells.rpy:526
 translate spanish farewell_option_play_94de910c:
 
     # extend 4nsqbg " Besides..."
-    extend 4nsqbg ""
+    extend 4nsqbg "Además..."
 
 # game/script-farewells.rpy:527
 translate spanish farewell_option_play_571622f0:
 
     # n 2usqct "You sure could use the practice,{w=0.1} huh?{w=0.5}{nw}"
-    n 2usqct ""
+    n 2usqct "Seguro que te vendría bien la práctica, {w=0.1}¿eh? {w=0.5}{nw}"
 
 # game/script-farewells.rpy:528
 translate spanish farewell_option_play_e8c38b7a:
 
     # extend 2fchsm " Ehehe."
-    extend 2fchsm ""
+    extend 2fchsm "Jejeje."
 
 # game/script-farewells.rpy:530
 translate spanish farewell_option_play_cc3fa0f6:
