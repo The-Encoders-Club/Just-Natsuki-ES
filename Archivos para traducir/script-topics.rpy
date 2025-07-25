@@ -2092,7 +2092,7 @@ translate spanish talk_did_you_have_pets_7c75f26e:
 translate spanish talk_did_you_have_pets_2fc29e46:
 
     # n 2clremsbr "Jeez...{w=1}{nw}"
-    n 2clremsbr "Dios... {w=1}{nw}"
+    n 2clremsbr "Cielos... {w=1}{nw}"
 
 # game/script-topics.rpy:621
 translate spanish talk_did_you_have_pets_fec92d24:
@@ -2332,7 +2332,7 @@ translate spanish talk_did_you_have_pets_7e2af9a5:
 translate spanish talk_did_you_have_pets_9f074875:
 
     # extend 3kllbg " Jeez..."
-    extend 3kllbg "Dios..."
+    extend 3kllbg "Cielos..."
 
 # game/script-topics.rpy:676
 translate spanish talk_did_you_have_pets_e1ab6e8b:
@@ -6958,7 +6958,7 @@ translate spanish talk_weather_setup_manual_coords_dd22ff4e:
 translate spanish talk_weather_setup_manual_coords_bf0ce0d4:
 
     # n 3fllpo "Jeez...{w=1}{nw}"
-    n 3fllpo "Dios... {w=1}{nw}"
+    n 3fllpo "Cielos... {w=1}{nw}"
 
 # game/script-topics.rpy:1984
 translate spanish talk_weather_setup_manual_coords_d3a2c394:
@@ -7414,7 +7414,7 @@ translate spanish talk_favourite_season_f75358a0:
 translate spanish talk_favourite_season_0baff6ab:
 
     # n 3fsqan "But the rain!{w=0.2} Jeez!{w=0.5}{nw}"
-    n 3fsqan "¡Pero la lluvia! {w=0.2}¡Dios! {w=0.5}{nw}"
+    n 3fsqan "¡Pero la lluvia! {w=0.2}¡Cielos! {w=0.5}{nw}"
 
 # game/script-topics.rpy:2113
 translate spanish talk_favourite_season_13b0c304:
@@ -10264,7 +10264,7 @@ translate spanish talk_give_nickname_f6c57e0b:
 translate spanish talk_give_nickname_c54cd961:
 
     # n 1fchbg "Relax,{w=0.1} [player]!{w=0.2} Jeez!{w=0.2} I'm just kidding!"
-    n 1fchbg "¡Relájate, {w=0.1}[player]! {w=0.2}¡Dios! {w=0.2}¡Solo estoy bromeando!"
+    n 1fchbg "¡Relájate, {w=0.1}[player]! {w=0.2}¡Cielos! {w=0.2}¡Solo estoy bromeando!"
 
 # game/script-topics.rpy:3123
 translate spanish talk_give_nickname_cdca8253:
@@ -12526,7 +12526,7 @@ translate spanish talk_natsukis_fang_975a0e3b:
 translate spanish talk_i_love_you_24a27943:
 
     # n 1uscemf "O-{w=0.1}o-{w=0.1}oh my gosh..."
-    n 1uscemf "D-{w=0.1}Dios mío..."
+    n 1uscemf "O-{w=0.1}O-{w=0.1}Oh dios mío..."
 
 # game/script-topics.rpy:3881
 translate spanish talk_i_love_you_6c0437e3:
@@ -12652,7 +12652,7 @@ translate spanish talk_i_love_you_4d550ed5:
 translate spanish talk_i_love_you_31a3128c:
 
     # n 2kbkemf "J-{w=0.1}jeez!{w=0.2} Stop looking at me like that already!"
-    n 2kbkemf "¡D-{w=0.1}Dios! {w=0.2}¡Ya deja de mirarme así!"
+    n 2kbkemf "¡C-{w=0.1}Cielos! {w=0.2}¡Ya deja de mirarme así!"
 
 # game/script-topics.rpy:3912
 translate spanish talk_i_love_you_4debaf25:
@@ -12886,7 +12886,7 @@ translate spanish talk_i_love_you_eb8ce7a0:
 translate spanish talk_i_love_you_cf06caae:
 
     # n 1fcsgsf "J-{w=0.1}jeez!{w=0.2} Enough of this!"
-    n 1fcsgsf "¡D-{w=0.1}Dios! {w=0.2}¡Basta ya!"
+    n 1fcsgsf "¡C-{w=0.1}Cielos! {w=0.2}¡Basta ya!"
 
 # game/script-topics.rpy:3973
 translate spanish talk_i_love_you_d2ad76cb:
@@ -13678,7 +13678,7 @@ translate spanish talk_i_love_you_aca597c8:
 translate spanish talk_i_love_you_9bf3e665:
 
     # n 1fcsemf "Jeez..."
-    n 1fcsemf "Dios..."
+    n 1fcsemf "Cielos..."
 
 # game/script-topics.rpy:4233
 translate spanish talk_i_love_you_fd25f524:
@@ -13708,7 +13708,7 @@ translate spanish talk_i_love_you_c997d21b:
 translate spanish talk_i_love_you_b448724b:
 
     # n 2fllemf "Jeez..."
-    n 2fllemf "Dios..."
+    n 2fllemf "Cielos..."
 
 # game/script-topics.rpy:4242
 translate spanish talk_i_love_you_fc65e26d:
@@ -13744,7 +13744,7 @@ translate spanish talk_i_love_you_beb14e61:
 translate spanish talk_i_love_you_17ee3612:
 
     # n 2fcsanl "Jeez..."
-    n 2fcsanl "Dios..."
+    n 2fcsanl "Cielos..."
 
 # game/script-topics.rpy:4251
 translate spanish talk_i_love_you_5c41bc24:
@@ -14710,7 +14710,7 @@ translate spanish talk_favourite_drink_87185f54:
 translate spanish talk_favourite_drink_535fe5ac:
 
     # n 3fllpo "Jeez...{w=0.3} all this talk about drinks is making me kinda thirsty,{w=0.1} actually.{w=0.2} So on that note..."
-    n 3fllpo "Dios... {w=0.3}toda esta charla sobre bebidas me está dando sed, {w=0.1}en realidad. {w=0.2}Así que en esa nota..."
+    n 3fllpo "Caray... {w=0.3}toda esta charla sobre bebidas me está dando sed, {w=0.1}en realidad. {w=0.2}Así que en esa nota..."
 
 # game/script-topics.rpy:4586
 translate spanish talk_favourite_drink_cffd4158:
@@ -24832,7 +24832,7 @@ translate spanish talk_feelings_about_monika_3588d670:
 translate spanish talk_feelings_about_yuri_8f168517:
 
     # n 1kllpul "...Oh man,{w=1} Yuri..."
-    n 1kllpul "... Ay dios, {w=1}Yuri..."
+    n 1kllpul "... Oh cielos, {w=1}Yuri..."
 
 # game/script-topics.rpy:7636
 translate spanish talk_feelings_about_yuri_91e1b1af:
@@ -39292,7 +39292,7 @@ translate spanish talk_windup_playing_things_out_loud_17ca2239:
 translate spanish talk_windup_playing_things_out_loud_db35269c:
 
     # extend 2csqfl " My.{w=0.75}{nw}"
-    extend 2csqfl "Dios. {w=0.75}{nw}"
+    extend 2csqfl "Cielos. {w=0.75}{nw}"
 
 # game/script-topics.rpy:11812
 translate spanish talk_windup_playing_things_out_loud_d443f998:

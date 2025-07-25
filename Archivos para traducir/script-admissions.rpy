@@ -238,13 +238,13 @@ translate spanish admission_angry_7e0fa934:
 translate spanish admission_angry_1641d20e:
 
     # extend 2nlrfl " Now,{w=0.2} what would {i}I{/i} do if something -{w=0.5}{nw}"
-    extend 2nlrfl "Ahora, ¿qué haría {i}yo{/i} si algo -{w=0.5}{nw}"
+    extend 2nlrfl "Ahora, ¿qué haría {i}yo{/i} si algo… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:124
 translate spanish admission_angry_0472d7d0:
 
     # extend 2fsrca " or someone -{w=0.5}{nw}"
-    extend 2fsrca " o alguien -{w=0.5}{nw}"
+    extend 2fsrca "o alguien… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:125
 translate spanish admission_angry_e13c2c2a:
@@ -268,13 +268,13 @@ translate spanish admission_angry_cc22010b:
 translate spanish admission_angry_bf412e10:
 
     # extend 3unmaj " You know -{w=0.5}{nw}"
-    extend 3unmaj "Sabes -{w=0.5}{nw}"
+    extend 3unmaj "Sabes… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:129
 translate spanish admission_angry_295b9e63:
 
     # extend 3nlrbo " distance myself from the problem."
-    extend 3nlrbo " distanciarme del problema."
+    extend 3nlrbo "distanciarme del problema."
 
 # game/script-admissions.rpy:130
 translate spanish admission_angry_d4689ec5:
@@ -412,13 +412,13 @@ translate spanish admission_anxious_226dab1e:
 translate spanish admission_anxious_d63108e7:
 
     # extend 4unmaj " But don't feel like you have to do whatever I find helps -{w=0.5}{nw}"
-    extend 4unmaj "Pero no sientas que tienes que hacer lo que a mí me ayuda -{w=0.5}{nw}"
+    extend 4unmaj "Pero no sientas que tienes que hacer lo que a mí me ayuda… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:171
 translate spanish admission_anxious_63319e89:
 
     # extend 3fchbgsbr " you should totally do whatever {i}you{/i} usually find comforting!"
-    extend 3fchbgsbr " ¡deberías hacer lo que {i}tú{/i} normalmente encuentras reconfortante!"
+    extend 3fchbgsbr "¡deberías hacer lo que {i}tú{/i} normalmente encuentras reconfortante!"
 
 # game/script-admissions.rpy:172
 translate spanish admission_anxious_97e226bc:
@@ -478,13 +478,13 @@ translate spanish admission_anxious_05498f4b:
 translate spanish admission_anxious_993c9154:
 
     # n 3fcsbs "Don't worry -{w=0.5}{nw}"
-    n 3fcsbs "No te preocupes -{w=0.5}{nw}"
+    n 3fcsbs "No te preocupes… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:183
 translate spanish admission_anxious_ad45e8a2:
 
     # extend 3uchgnl " you got this,{w=0.2} [chosen_descriptor]!"
-    extend 3uchgnl " ¡tú puedes con esto, {w=0.2}[chosen_descriptor]!"
+    extend 3uchgnl "¡tú puedes con esto, {w=0.2}[chosen_descriptor]!"
 
 # game/script-admissions.rpy:186
 translate spanish admission_anxious_e6b712b9:
@@ -622,7 +622,7 @@ translate spanish admission_anxious_78363ff0:
 translate spanish admission_anxious_bce75905:
 
     # n 1fcsbol "I-{w=0.2}I know it's tough...{w=0.75}{nw}"
-    n 1fcsbol "Y—{w=0.2}Yo sé que es difícil... {w=0.75}{nw}"
+    n 1fcsbol "Y-{w=0.2}Yo sé que es difícil... {w=0.75}{nw}"
 
 # game/script-admissions.rpy:214
 translate spanish admission_anxious_505c0676:
@@ -640,7 +640,7 @@ translate spanish admission_anxious_8eca04fe:
 translate spanish admission_anxious_8ae655a7:
 
     # n 4klrssl "A-{w=0.2}and besides."
-    n 4klrssl "Y—{w=0.2}Y además."
+    n 4klrssl "Y-{w=0.2}Y además."
 
 # game/script-admissions.rpy:220
 translate spanish admission_anxious_37a2f185:
@@ -736,13 +736,13 @@ translate spanish admission_ashamed_f0883ca4:
 translate spanish admission_ashamed_e229972c:
 
     # extend 1fcsgs " sorry [player] -{w=0.5}{nw}"
-    extend 1fcsgs "lo siento [player] -{w=0.5}{nw}"
+    extend 1fcsgs "lo siento [player]… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:261
 translate spanish admission_ashamed_c837c139:
 
     # extend 4fchgn " but I'm not giving up on you {i}that{/i} easily!"
-    extend 4fchgn " ¡pero no me voy a rendir contigo {i}tan{/i} fácilmente!"
+    extend 4fchgn "¡pero no me voy a rendir contigo {i}tan{/i} fácilmente!"
 
 # game/script-admissions.rpy:262
 translate spanish admission_ashamed_b8a75295:
@@ -1720,7 +1720,7 @@ translate spanish admission_confident_ebd877d8:
 translate spanish admission_confident_c31865b9:
 
     # n 3unmaj "Don't get me wrong though -{w=0.5}{nw}"
-    n 3unmaj "No me malinterpretes, pero - {w=0.5}{nw}"
+    n 3unmaj "No me malinterpretes, pero… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:543
 translate spanish admission_confident_2ad15d87:
@@ -2632,7 +2632,7 @@ translate spanish admission_insecure_d4c40b07:
 translate spanish admission_insecure_00ce2467:
 
     # n 2fnmbol "But you better listen here,{w=0.2} [player] -{w=0.75}{nw}"
-    n 2fnmbol "Pero mejor escucha aquí, {w=0.2}[player] - {w=0.75}{nw}"
+    n 2fnmbol "Pero mejor escucha aquí, {w=0.2}[player]… {w=0.75}{nw}"
 
 # game/script-admissions.rpy:832
 translate spanish admission_insecure_e71a6b14:
@@ -2824,7 +2824,7 @@ translate spanish admission_proud_74d532ef:
 translate spanish admission_proud_211afa27:
 
     # n 1nnmca "Just remember,{w=0.2} [player] -{w=0.5}{nw}"
-    n 1nnmca "Solo recuerda, {w=0.2}[player] - {w=0.5}{nw}"
+    n 1nnmca "Solo recuerda, {w=0.2}[player]… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:892
 translate spanish admission_proud_3354744d:
@@ -3526,13 +3526,13 @@ translate spanish admission_sad_911daee8:
 translate spanish admission_sad_1d8c2940:
 
     # n 3fcsaj "Now hop to it,{w=0.2} [chosen_descriptor] -{w=0.5}{nw}"
-    n 3fcsaj "Ahora, ¡ponte en marcha, {w=0.2}[chosen_descriptor] - {w=0.5}{nw}"
+    n 3fcsaj "Ahora, ¡ponte en marcha, {w=0.2}[chosen_descriptor]… {w=0.5}{nw}"
 
 # game/script-admissions.rpy:1088
 translate spanish admission_sad_c35ea0e9:
 
     # extend 3fsqbgsbr " I wanna see you smiling again A.S.A.P!{w=0.75}{nw}"
-    extend 3fsqbgsbr "¡Quiero verte sonreír de nuevo lo antes posible! {w=0.75}{nw}"
+    extend 3fsqbgsbr "¡quiero verte sonreír de nuevo lo antes posible! {w=0.75}{nw}"
 
 # game/script-admissions.rpy:1089
 translate spanish admission_sad_6a6e3f07:
@@ -3868,13 +3868,13 @@ translate spanish admission_sick_c32b3698:
 translate spanish admission_sick_a46d50a5:
 
     # n 2ncsfl "If you really can't -{w=0.75}{nw}"
-    n 2ncsfl "Si realmente no puedes - {w=0.75}{nw}"
+    n 2ncsfl "Si realmente no puedes… {w=0.75}{nw}"
 
 # game/script-admissions.rpy:1184
 translate spanish admission_sick_ff326a82:
 
     # extend 2nslfl " or don't want to -{w=0.75}{nw}"
-    extend 2nslfl "o no quieres - {w=0.75}{nw}"
+    extend 2nslfl "o no quieres… {w=0.75}{nw}"
 
 # game/script-admissions.rpy:1185
 translate spanish admission_sick_ae63f5b1:
@@ -4186,7 +4186,7 @@ translate spanish admission_sick_209acdbc:
 translate spanish admission_sick_5a113823:
 
     # n 4fcspulsbr "Your health has to come first,{w=0.2} a-{w=0.2}after all."
-    n 4fcspulsbr "Tu salud tiene que ser lo primero, {w=0.2}después de todo."
+    n 4fcspulsbr "Tu salud tiene que ser lo primero, {w=0.2}d-{w=0.2}después de todo."
 
 # game/script-admissions.rpy:1266
 translate spanish admission_sick_f147791f:
@@ -4516,13 +4516,13 @@ translate spanish admission_tired_c4fdec6e:
 translate spanish admission_tired_3fcb4519:
 
     # n 2tlraj "Feeling tired,{w=0.75}{nw}"
-    n 2tlraj " ¿Te sientes cansado, {w=0.75}{nw}"
+    n 2tlraj "Te sientes cansado, {w=0.75}{nw}"
 
 # game/script-admissions.rpy:1395
 translate spanish admission_tired_4f0badfb:
 
     # extend 2tnmss " huh?"
-    extend 2tnmss "eh?"
+    extend 2tnmss "¿eh?"
 
 # game/script-admissions.rpy:1396
 translate spanish admission_tired_3cb3c969:
@@ -4693,7 +4693,7 @@ translate spanish strings:
 translate spanish admission_anxious_34923c22:
 
     # n 4fchbgl "Do your best,{w=0.2} [chosen_tease]."
-    n 4fchbgl ""
+    n 4fchbgl "Da lo mejor de ti, {w=0.2}[chosen_tease]."
 
 # TODO: Translation updated at 2025-06-16 19:56
 
@@ -4701,57 +4701,57 @@ translate spanish strings:
 
     # game/script-admissions.rpy:53
     old "Go back"
-    new ""
+    new "Regresar"
 
     # game/script-admissions.rpy:62
     old "Angry"
-    new ""
+    new "Enfado"
 
     # game/script-admissions.rpy:142
     old "Anxious"
-    new ""
+    new "Ansioso"
 
     # game/script-admissions.rpy:242
     old "Ashamed"
-    new ""
+    new "Avergonzado"
 
     # game/script-admissions.rpy:330
     old "Bored"
-    new ""
+    new "Aburrido"
 
     # game/script-admissions.rpy:478
     old "Confident"
-    new ""
+    new "Seguro"
 
     # game/script-admissions.rpy:555
     old "Excited"
-    new ""
+    new "Emocionado"
 
     # game/script-admissions.rpy:596
     old "Happy"
-    new ""
+    new "Feliz"
 
     # game/script-admissions.rpy:677
     old "Hungry"
-    new ""
+    new "Hambriento"
 
     # game/script-admissions.rpy:780
     old "Insecure"
-    new ""
+    new "Inseguro"
 
     # game/script-admissions.rpy:873
     old "Proud"
-    new ""
+    new "Orgulloso"
 
     # game/script-admissions.rpy:922
     old "Sad"
-    new ""
+    new "Triste"
 
     # game/script-admissions.rpy:1095
     old "Sick"
-    new ""
+    new "Enfermo"
 
     # game/script-admissions.rpy:1282
     old "Tired"
-    new ""
+    new "Cansado"
 
