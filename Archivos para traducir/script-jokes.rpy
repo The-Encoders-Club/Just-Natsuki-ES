@@ -3705,7 +3705,7 @@ translate spanish joke_sailor_shipshape_22680f35:
 translate spanish joke_sailor_shipshape_629c01ea:
 
     # n 1fsqfl "...{i}Ship{/i}-{w=0.75}{nw}"
-    n 1fsqfl "...{i}Ya{/i}-{w=0.75}{nw}""
+    n 1fsqfl "...{i}Ya{/i}-{w=0.75}{nw}"
 
 # game/script-jokes.rpy:1643
 translate spanish joke_sailor_shipshape_fea756c5:
