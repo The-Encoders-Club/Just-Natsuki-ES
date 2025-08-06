@@ -386,7 +386,7 @@ translate spanish strings:
 
     # game/script-ch30.rpy:660
     old "Yeah?{w=0.2} What?"
-    new "¿Si?{w=0.2} ¿Qué?"
+    new "¿Si? {w=0.2}¿Qué?"
 
     # game/script-ch30.rpy:660
     old "Será mejor que sea algo bueno"
