@@ -1630,7 +1630,7 @@ translate spanish new_wearables_outfits_unlocked_b8cd2542:
 translate spanish new_wearables_outfits_unlocked_2f02444e:
 
     # n 1unmbo "[unlock.display_name},{w=0.1} huh?"
-    n 1unmbo "[unlock.display_name}, {w=0.1}¿eh?"
+    n 1unmbo "[unlock.display_name], {w=0.1}¿eh?"
 
 # game/outfits.rpy:3033
 translate spanish new_wearables_outfits_unlocked_7cd3cdfb:
