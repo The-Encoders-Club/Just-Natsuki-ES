@@ -606,13 +606,13 @@ translate spanish snap_end_4bf6fefe:
 translate spanish snap_end_f0b0ff10:
 
     # n 1fcsss "Man,{w=0.5}{nw}"
-    n 1fcsss "Vaya,{ w=0.5}{nw}"
+    n 1fcsss "Vaya, {w=0.5}{nw}"
 
 # game/script-snap.rpy:637
 translate spanish snap_end_97ef2e45:
 
     # extend 4fcsbg " this is just too{w=0.25}{nw}"
-    extend 4fcsbg "Esto es algo demasiado... {w=0.25}{nw}"
+    extend 4fcsbg "esto es algo demasiado... {w=0.25}{nw}"
 
 # game/script-snap.rpy:638
 translate spanish snap_end_a0191000:
@@ -768,7 +768,7 @@ translate spanish snap_end_9129bceb:
 translate spanish snap_end_283d957f:
 
     # extend 4tllsl " almost impressive,{w=0.2} actually.{w=1}{nw}"
-    extend 4tllsl "Es algo impresionante, {w=0.2}en realidad. {w=1}{nw}"
+    extend 4tllsl "es algo impresionante, {w=0.2}en realidad. {w=1}{nw}"
 
 # game/script-snap.rpy:675
 translate spanish snap_end_6025404a:
@@ -900,7 +900,7 @@ translate spanish snap_end_bb3cbf54:
 translate spanish snap_end_e42a5cee:
 
     # n 2csrpo "...Even if you did kick my butt."
-    n 2csrpo "... Aunque me pateaste el trasero."
+    n 2csrpo "... Aunque me pateaste el trasero. "
 
 # game/script-snap.rpy:732
 translate spanish snap_end_bb3cbf54_1:
@@ -918,7 +918,7 @@ translate spanish snap_end_7ce25d9f:
 translate spanish snap_end_3495165e:
 
     # extend 2fcssm " Ahaha."
-    extend 2fcssm "Jajaja."
+    extend 2fcssm "Jajaja. "
 
 # game/script-snap.rpy:738
 translate spanish snap_end_c2eb4b14:
