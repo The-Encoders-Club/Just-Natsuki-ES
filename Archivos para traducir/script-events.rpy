@@ -3358,7 +3358,7 @@ translate spanish event_warm_package_6ae31a33:
 translate spanish event_warm_package_35759540:
 
     # n "Aha!{w=0.75} There we go.{w=1} Come to mama..."
-    n "¡Ajá! {w=0.75}Aquí está. {w=1 Ven con mamá..."
+    n "¡Ajá! {w=0.75}Aquí está. {w=1} Ven con mamá..."
 
 # game/script-events.rpy:1977
 translate spanish event_warm_package_bb2cf764_7:
