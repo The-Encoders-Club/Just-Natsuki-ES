@@ -1,5 +1,5 @@
 # Progreso de traducción
 
-**0 de 0 líneas traducidas**
+**2919 de 2920 líneas traducidas**
 
-**Progreso:** 0.00%
+**Progreso:** 99.97%
