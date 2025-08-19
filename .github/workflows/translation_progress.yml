@@ -3,7 +3,7 @@ name: Actualizar progreso de traducción
 on:
   push:
     paths:
-      - 'Archivos para traducir/*.rpy'
+      - 'files/*.rpy'
       - 'translation_progress.py'
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout repo manual
         run: |
-          git clone https://github.com/Just3090/EMRDemo-TL-ES.git .
+          git clone https://github.com/The-Encoders-Club/Just-Natsuki-ES.git .
       - name: Instalar Python manual
         run: |
           sudo apt-get update
@@ -23,14 +23,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Pull latest changes
-        run: git pull origin main
       - name: Push
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
-          git pull --rebase origin main
           git add TRANSLATION_PROGRESS.md README.md
-          git commit -m "Actualizar progreso de traducción" || echo "Sin cambios"
+          git commit -m "Actualiza progreso de traducción" || echo "Sin cambios"
           git push origin HEAD
