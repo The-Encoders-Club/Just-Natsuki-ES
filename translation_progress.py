@@ -4,7 +4,7 @@ import re
 def contar_traduccion():
     total = 0
     traducidas = 0
-    for archivo in glob.glob("files/*.rpy"):
+    for archivo in glob.glob("Archivos para traducir/*.rpy"):
         with open(archivo, encoding="utf-8") as f:
             lines = f.readlines()
             for i in range(len(lines)):
