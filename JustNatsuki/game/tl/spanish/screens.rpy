@@ -40,7 +40,7 @@ translate spanish strings:
 
     # game/screens.rpy:53
     old "Hide UI"
-    new "Ocultar IU"
+    new ""
 
     # game/screens.rpy:54
     old "H"
