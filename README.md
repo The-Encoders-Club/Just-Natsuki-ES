@@ -1,18 +1,3 @@
-# JustNatsuki-ES
-Proyecto de traducción de Just Natsuki
-
-## Progreso
-<!-- PROGRESO_TRADUCCION_START -->
-**2919 de 2920 líneas traducidas**
-
-**Progreso:** 99.97%
-
-y como que el 99.97% si faltaban como el 5% cuando traduci yo //player 
-<!-- PROGRESO_TRADUCCION_END -->
-
-
-
-
 # Just Natsuki – Traducción al Español
 Este es un proyecto de traducción al español del mod Just Natsuki, un mod estilo After Story para Doki Doki Literature Club (DDLC) que se centra en construir una relación post-juego entre Natsuki y el jugador (¡tú!).
 
