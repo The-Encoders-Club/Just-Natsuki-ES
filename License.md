@@ -35,7 +35,7 @@ Consulta siempre la página oficial de Team Salvato
 - Distribuir fan games en plataformas comerciales.
 - Incluir métodos de pago o donaciones dentro del juego.
 
-##🌸 Directrices de Just Natsuki
+## 🌸 Directrices de Just Natsuki
 
 Además de las reglas de Team Salvato, aplican las siguientes restricciones:
 
