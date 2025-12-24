@@ -1,3 +1,5 @@
+#Jueves, 11 de Diciembre - 2025, traducción finalizado por иeo — (venom snake)
+
 default persistent.jn_custom_music_unlocked = False
 default persistent.jn_custom_music_explanation_given = False
 
@@ -49,12 +51,12 @@ init python in jn_custom_music:
     CUSTOM_MUSIC_DIRECTORY = os.path.join(renpy.config.basedir, CUSTOM_MUSIC_FOLDER).replace("\\", "/")
 
     _NATSUKI_PICK_MUSIC_DONE_QUIPS = [
-        "Done~!",
-        "All done!",
-        "All good!",
-        "There we go!",
-        "And...{w=0.3} we're good!",
-        "Okie-dokie!{w=0.2} Ehehe."
+        "¡Listo~!",
+        "¡Todo listo!",
+        "¡Todo bien!",
+        "¡Ahí vamos!",
+        "Y...{w=0.3} ¡Todo en orden!",
+        "¡Oki-doki!{w=0.2} ~Jejeje."
     ]
 
 
@@ -110,7 +112,7 @@ init python in jn_custom_music:
 
 label music_menu:
     $ Natsuki.setInConversation(True)
-    $ music_title = "Unknown track"
+    $ music_title = "Pista desconocida"
 
 
     python:
@@ -131,7 +133,7 @@ label music_menu:
             
             if len(custom_music_options) > 1:
                 custom_music_options.insert(0, jn_custom_music.JNCustomMusicSelectionOption(
-                    display_prompt="You pick!",
+                    display_prompt="¡Tú selecciona!",
                     option_type=jn_custom_music.JNMusicOptionTypes.random,
                     file_name=None
                 ))
@@ -173,12 +175,12 @@ label music_menu:
                 ))
             
             custom_music_options.append(jn_custom_music.JNCustomMusicSelectionOption(
-                display_prompt="Default",
+                display_prompt="Predeterminada",
                 option_type=jn_custom_music.JNMusicOptionTypes.location,
                 file_name=None
             ))
             custom_music_options.append(jn_custom_music.JNCustomMusicSelectionOption(
-                display_prompt="No music",
+                display_prompt="Sin música",
                 option_type=jn_custom_music.JNMusicOptionTypes.no_music,
                 file_name=None
             ))
@@ -190,13 +192,13 @@ label music_menu:
         show natsuki at jn_center
 
         n 4kllsssbr "Uhmm..."
-        n 4klrflsbr "Hey...{w=0.75}{nw}"
+        n 4klrflsbr "Oye...{w=0.75}{nw}"
         extend 4knmajsbr " [player]?"
-        n 4kslslsbr "Something {i}kinda{/i} went wrong when I was trying look for your music...{w=1}{nw}"
-        extend 4kslsssbr " can you just check everything out real quick?"
-        n 2tlraj "As a reminder -{w=0.5}{nw}"
-        extend 2tnmsl " anything you want me to play needs to be in the {i}custom_music{/i} folder."
-        n 2fcsbgsbl "Just make sure it's all in {i}.mp3,{w=0.1} .ogg or .wav{/i} format!"
+        n 4kslslsbr "Como que algo salió {i}un poquito{/i} mal cuando estaba intentando buscar tu música... {w=1}{nw}"
+        extend 4kslsssbr "¿podrías revisar todo rápidamente?"
+        n 2tlraj "Y como recordatorio… {w=0.5}{nw}"
+        extend 2tnmsl "Todo lo que quieras que yo reproduzca necesita estar en la carpeta {i}custom_music{/i}."
+        n 2fcsbgsbl "¡Solo asegúrate que todo esté en formato {i}.mp3, {w=0.1}.ogg o .wav{/i}!"
 
         $ Natsuki.resetLastTopicCall()
         $ Natsuki.resetLastIdleCall()
@@ -206,28 +208,28 @@ label music_menu:
         show natsuki at jn_center
         n 1tsqaj "Uh...{w=1}{nw}"
         extend 1tslaj " huh."
-        n 2tsgsg "And {i}how{/i} exactly do you plan to hear any music with the volume at zero?"
-        n 2fchbg "Jeez,{w=0.2} [player].{w=0.75}{nw}"
-        extend 1uchgn " How do you even get dressed in the morning with memory like that?!"
-        n 3ullss "Well,{w=0.2} whatever.{w=0.75}{nw}"
-        extend 3unmaj " So..."
+        n 2tsgsg "¿Y {i}cómo{/i} esperas escuchar cualquier canción con tu volumen en cero exactamente?"
+        n 2fchbg "Cielos, {w=0.2}[player]. {w=0.75}{nw}"
+        extend 1uchgn "¡¿Cómo puedes siquiera vestirte en la mañana con semejante memoria?!"
+        n 3ullss "Bueno, {w=0.2}como sea. {w=0.75}{nw}"
+        extend 3unmaj " Entonces..."
 
         show natsuki option_wait_curious
         menu:
-            n "Did you want me to turn the music back up so you can pick something?"
-            "Yes.":
+            n "¿Querías que volviera a subir el volumen de la música para que pudieras escoger algo?"
+            "Si.":
 
-                n 1nchsm "Okey-{w=0.1}dokey!{w=0.2} Just a second..."
+                n 1nchsm "¡Oki-{w=0.1}doki! {w=0.2}solo dame un segundo..."
                 $ preferences.set_volume("music", 0.75)
-                n 2fcsbg "And there we are!"
-                n 2ullss "So...{w=0.5}{nw}"
-                extend 2unmaj " what did you wanna listen to?"
+                n 2fcsbg "¡Y ya está!"
+                n 2ullss "Entonces... {w=0.5}{nw}"
+                extend 2unmaj "¿qué querías escuchar?"
 
                 show natsuki option_wait_excited at jn_left
             "No.":
 
-                n 3fcsbg "The sound of silence it is,{w=0.1} then!{w=0.5}{nw}"
-                extend 3fchsm " Ehehe."
+                n 3fcsbg "¡El sonido del silencio, {w=0.1}entonces! {w=0.5}{nw}"
+                extend 3fchsm " Jeje."
 
                 $ Natsuki.resetLastTopicCall()
                 $ Natsuki.resetLastIdleCall()
@@ -235,13 +237,15 @@ label music_menu:
     else:
 
         $ chosen_quip = renpy.substitute(random.choice([
-            "You wanna put something else on?{w=0.2} You got it!",
-            "You better play something good,{w=0.2} [player]!",
-            "You wanna play something?{w=0.2} Sure!",
-            "Some different music?{w=0.2} {i}Now{/i} we're talking!",
-            "Another track?{w=0.2} Sure thing!",
-            "You wanna play something else?{w=0.2} Go for it!",
-            "Huh?{w=0.2} What did you have in mind,{w=0.2} [player]?"
+            "¿Quieres poner algo más?{w=0.2} ¡Vale!",
+            "¡Será mejor que reproduzcas algo bueno,{w=0.2} [player]!",
+            
+            #old "¿Quieres reproducir algo?"
+            "¿Quieres poner algo?{w=0.2} ¡Seguro!",
+            "¿Alguna música diferente?{w=0.2}" #old "{i}¡Ahora{/i} estamos hablando!",
+            "¿Otra canción?{w=0.2} ¡Seguro!",
+            "¿Quieres reproducir otra canción? {w=0.2} ¡Vale!",
+            "¿Huh?{w=0.2} ¿Qué tienes en mente, {w=0.2} [player]?"
         ]))
         n 3unmbgl "[chosen_quip]"
         show natsuki option_wait_excited at jn_left
@@ -257,17 +261,17 @@ label music_menu:
 
     if _return.option_type == jn_custom_music.JNMusicOptionTypes.no_music:
         $ music_quip = renpy.substitute(random.choice([
-            "Just quiet for now,{w=0.2} huh?",
-            "Not in the mood,{w=0.2} [player]?{w=0.2} No worries!",
-            "'Kay!{w=0.2} I'll just turn that off...",
-            "Alright!{w=0.2} Let me get that for you real quick...",
-            "Sure thing!{w=0.2} Let me just get that for you...",
-            "No worries!{w=0.2} Just give me a sec...",
+            "Sólo silencio por ahora,{w=0.2} ¿eh?",
+            "¿Sin humor,{w=0.2} [player]?{w=0.2} ¡No te preocupes!",
+            "'¡Bien!{w=0.2} Solo lo voy a apagar...",
+            "¡Muy bien!{w=0.2} Déjame hacer eso por ti...",
+            "¡Dalo por hecho!{w=0.2} Déjame hacer eso por ti...",
+            "¡No te preocupes!{w=0.2} Solo dame un segundo...",
         ]))
         n 2knmsm "[music_quip]"
 
         show natsuki 2fchsm
-        $ music_title = "No music"
+        $ music_title = "Sin música"
 
         $ jn_custom_music.presentMusicPlayer("playing")
         play audio button_tap_c
@@ -275,13 +279,13 @@ label music_menu:
         stop music fadeout 2
         $ jnPause(2)
 
-        n 2uchsm "There you go, [player]!{w=2}{nw}"
+        n 2uchsm "¡Listo, [player]! {w=2}{nw}"
 
         if persistent.jn_random_music_enabled:
 
             $ persistent.jn_random_music_enabled = False
             n 1unmaj "Oh{w=0.2} -{w=0.50}{nw}"
-            extend 3kchbgsbl " and I'll stop switching around the music too.{w=2}{nw}"
+            extend 3kchbgsbl " y dejaré de cambiar la música también.{w=2}{nw}"
 
         $ jn_custom_music.hideMusicPlayer()
 
@@ -294,23 +298,23 @@ label music_menu:
 
 
         $ chosen_question_quip = renpy.substitute(random.choice([
-            "Oho?{w=0.2} You want me to pick?",
-            "Huh?{w=0.2} You want me to choose something?",
-            "Hmm?{w=0.2} You want me to pick?",
-            "Oh?{w=0.2} You want me to choose something to play?",
-            "Eh?{w=0.2} Is it my turn to pick?"
+            "¿Oho?{w=0.2} ¿Quieres que yo escoja?",
+            "¿Huh?{w=0.2} ¿Quieres que elija algo?",
+            "¿Hmm?{w=0.2} ¿Quieres que lo elija?",
+            "¿Oh?{w=0.2} ¿Quieres que elija algo para reproducir?",
+            "¿Eh?{w=0.2} ¿Es mi turno de elegir?"
         ]))
         n 1unmajl "[chosen_question_quip]"
 
         $ chosen_answer_quip = renpy.substitute(random.choice([
-            "Sure!",
-            "Sure,{w=0.2} why not!",
-            "Can do!",
-            "Heh.{w=0.2} Leave it to me,{w=0.2} [player]!",
-            "Ehehe.{w=0.2} About time too,{w=0.2} [player]!",
-            "Okie-dokie,{w=0.2} [player]!",
-            "Finally!{w=0.2} Ahaha.",
-            "{i}Now{/i} we're talking!"
+            "¡Seguro!",
+            "¡Seguro,{w=0.2} porqué no!",
+            "¡Puedo hacerlo!",
+            "Heh.{w=0.2} Déjamelo a mí,{w=0.2} [player]!",
+            "Jejeje.{w=0.2} ¡Ya era hora,{w=0.2} [player]!",
+            "¡Okie-dokie,{w=0.2} [player]!",
+            "¡Finalmente!{w=0.2} Ajaja.",
+            "{i}¡Ahora{/i} estamos hablando!"
         ]))
         n 4uchbgl "[chosen_answer_quip]"
         show natsuki 1fchsmleme
@@ -322,12 +326,12 @@ label music_menu:
         $ jnPause(2)
 
         $ chosen_search_quip = renpy.substitute(random.choice([
-            "Now,{w=0.2} let's see...",
-            "Let me take a look...",
-            "Alright,{w=0.2} what have we got...",
-            "Oh!{w=0.2} How about this?",
-            "Let's see here...",
-            "Let's see..."
+            "Ahora,{w=0.2} veamos...",
+            "Déjame echar un vistazo ...",
+            "Bien,{w=0.2}, ¿qué tenemos por aquí...",
+            "¡Oh!{w=0.2} ¿Qué hay de esto?",
+            "Veamos aquí...",
+            "Veamos..."
         ]))
         n 2ullbgl "[chosen_search_quip]{w=2}{nw}"
         show natsuki 4fcspul
@@ -346,15 +350,15 @@ label music_menu:
 
         $ jn_custom_music.hideMusicPlayer()
         $ jn_custom_music._now_playing = music_title
-        $ renpy.notify("Now playing: {0}".format(jn_custom_music._now_playing.split(".")[0]))
+        $ renpy.notify("Reproduciendo ahora: {0}".format(jn_custom_music._now_playing.split(".")[0]))
 
     elif _return.option_type == jn_custom_music.JNMusicOptionTypes.location:
         $ music_quip = renpy.substitute(random.choice([
-            "Whatever works,{w=0.2} huh?",
-            "You got it!",
-            "Well,{w=0.2} you're the boss!",
-            "Just the usual,{w=0.2} huh?{w=0.2} Sure thing!",
-            "Sure thing!{w=0.2} Just give me a sec...",
+            "¿Parece ser que funciona,{w=0.2} eh?",
+            "¡Lo tienes!",
+            "¡Bien,{w=0.2} tú eres el jefe!",
+            "Solo lo habitual,{w=0.2} huh?{w=0.2} ¡Seguro!",
+            "¡Seguro!{w=0.2} Solo dame un segundo...",
         ]))
         n 2knmsm "[music_quip]"
 
@@ -382,7 +386,7 @@ label music_menu:
         $ jn_custom_music.hideMusicPlayer()
 
     elif _return is not None:
-        n 2fwlbg "You got it!{w=2}{nw}"
+        n 2fwlbg "¡Lo tienes!{w=2}{nw}"
         show natsuki 4fchsmleme
 
         $ jn_custom_music.presentMusicPlayer("playing")
@@ -406,7 +410,7 @@ label music_menu:
 
         $ jn_custom_music.hideMusicPlayer()
         $ jn_custom_music._now_playing = _return.display_prompt
-        $ renpy.notify("Now playing: {0}".format(_return.display_prompt))
+        $ renpy.notify("Reproduciendo ahora: {0}".format(_return.display_prompt))
 
     $ jn_custom_music._last_music_option = _return.display_prompt
     $ Natsuki.resetLastTopicCall()
@@ -428,7 +432,7 @@ screen custom_music_menu(items):
             ypos 0
             yanchor 0
 
-            textbutton "Nevermind":
+            textbutton "No importa":
                 style "categorized_menu_button"
                 xsize option_width
                 action Return(False)

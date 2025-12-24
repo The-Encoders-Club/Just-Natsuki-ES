@@ -44,7 +44,7 @@ label player_compliments_start:
         ]
         compliment_menu_items.sort()
 
-    call screen scrollable_choice_menu(compliment_menu_items, ("Go back", None), 400, "mod_assets/icons/compliments.png")
+    call screen scrollable_choice_menu(compliment_menu_items, ("Volver", None), 400, "mod_assets/icons/compliments.png")
 
     if isinstance(_return, basestring):
         $ push(_return)
@@ -56,7 +56,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I think you're amazing!",
+            prompt="¡Creo que eres asombrosa!",
             label="compliment_amazing",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -70,71 +70,71 @@ label compliment_amazing:
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.amazing:
         if Natsuki.isEnamored(higher=True):
             $ player_initial = jn_utils.getPlayerInitial()
-            n 4uskemfesh "[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
-            extend 1fcsemfsbr " Honestly!{w=0.75}{nw}"
-            extend 4kwmemfsbr " Again?!{w=1}{nw}"
-            extend 4kslpofsbr " Jeez..."
+            n 4uskemfesh "¡[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
+            extend 1fcsemfsbr " ¡Honestamente!{w=0.75}{nw}"
+            extend 4kwmemfsbr " ¡¿Otra vez?!{w=1}{nw}"
+            extend 4kslpofsbr " Cielos..."
             n 2nslsllsbr "..."
-            n 2nslpulsbr "But...{w=0.75}{nw}"
-            extend 1ksqcalsbr " thanks.{w=0.5} It really...{w=0.75}{nw}"
-            extend 4ksrcalsbr " means a lot to me."
-            n 4ksqajlsbr "...And [player]?"
+            n 2nslpulsbr "Pero...{w=0.75}{nw}"
+            extend 1ksqcalsbr " gracias.{w=0.5} Realmente...{w=0.75}{nw}"
+            extend 4ksrcalsbr " significa mucho para mí."
+            n 4ksqajlsbr "...¿Y [player]?"
             n 1kslbolsbr "..."
-            n 2fcstrl "...You're pretty amazing too."
-            n 2fcspol "A-{w=0.2}and you better remember that."
+            n 2fcstrl "...Tú también eres bastante asombroso."
+            n 2fcspol "Y-{w=0.2}y será mejor que recuerdes eso."
 
             if Natsuki.isLove(higher=True):
-                n 2kchssleaf "L-{w=0.2}love you,{w=0.2} [player]!"
+                n 2kchssleaf "¡T-{w=0.2}te amo,{w=0.2} [player]!"
         else:
 
-            n 1nslsslsbr "Jeez,{w=0.2} [player]...{w=0.5}{nw}"
-            extend 1klrbolsbr " you...{w=0.5} really are doling out the compliments today,{w=0.5}{nw}"
-            extend 4ksrsslsbr " huh?"
-            n 2fcsajl "D-{w=0.2}don't get me wrong though!{w=0.5}{nw}"
-            extend 2fcsbglsbl " I'm not complaining!"
-            extend 2fcssmlsbl " I-{w=0.2}it's good to know we {i}both{/i} agree!"
-            extend 4nslsslsbr " Just..."
-            n 1ksqbolsbr "Make sure you don't leave yourself out though,{w=0.2} 'kay?"
-            n 4kllsslsbr "You're {i}almost{/i} as amazing,{w=0.2} a-{w=0.2}after all."
-            n 3fsqdvlsbr "...{i}Almost{/i}."
-            extend 3fchbllsbr " Ehehe."
+            n 1nslsslsbr "Cielos,{w=0.2} [player]...{w=0.5}{nw}"
+            extend 1klrbolsbr " tú...{w=0.5} realmente estás repartiendo cumplidos hoy,{w=0.5}{nw}"
+            extend 4ksrsslsbr " ¿eh?"
+            n 2fcsajl "¡N-{w=0.2}no me malinterpretes!{w=0.5}{nw}"
+            extend 2fcsbglsbl " ¡No me estoy quejando!"
+            extend 2fcssmlsbl " ¡E-{w=0.2}es bueno saber que {i}ambos{/i} estamos de acuerdo!"
+            extend 4nslsslsbr " Solo..."
+            n 1ksqbolsbr "Asegúrate de no dejarte fuera,{w=0.2} ¿vale?"
+            n 4kllsslsbr "Eres {i}casi{/i} tan asombroso,{w=0.2} d-{w=0.2}después de todo."
+            n 3fsqdvlsbr "...{i}Casi{/i}."
+            extend 3fchbllsbr " Jejeje."
     else:
 
         if Natsuki.isEnamored(higher=True):
-            n 1kwmpul "...Y{w=0.2}-you really think so,{w=0.5}{nw}"
-            extend 1kllpul " [player]?"
+            n 1kwmpul "...T{w=0.2}-tú realmente piensas eso,{w=0.5}{nw}"
+            extend 1kllpul " ¿[player]?"
             n 4kllsrl "..."
-            n 1ncsssl "Heh."
-            n 2fslpolsbl "It's always super embarrassing to say it,{w=0.2} you know."
+            n 1ncsssl "Je."
+            n 2fslpolsbl "Siempre es súper vergonzoso decirlo,{w=0.2} sabes."
             n 2kslbol "..."
-            n 2ncspul "But...{w=0.75}{nw}"
-            extend 2kwmbol " thanks."
-            n 4fcsajlsbr "It means...{w=0.75}{nw}"
-            extend 1ksrsllsbr " a lot to me,{w=0.5} [player]."
-            n 1ksqsllsbr "Really.{w=0.75}{nw}"
-            extend 4ksqbol " Thank you.{w=0.75}{nw}"
-            extend 4kcspul " You're honestly...{w=1}{nw}"
+            n 2ncspul "Pero...{w=0.75}{nw}"
+            extend 2kwmbol " gracias."
+            n 4fcsajlsbr "Significa...{w=0.75}{nw}"
+            extend 1ksrsllsbr " mucho para mí,{w=0.5} [player]."
+            n 1ksqsllsbr "En serio.{w=0.75}{nw}"
+            extend 4ksqbol " Gracias.{w=0.75}{nw}"
+            extend 4kcspul " Eres honestamente...{w=1}{nw}"
             $ chosen_descriptor = jn_utils.getRandomDescriptor()
             extend 1ksrcal " [chosen_descriptor],{w=0.3} [player]."
             n 1ksrfsl "..."
 
             if Natsuki.isLove(higher=True):
-                n 4kchssf "L-{w=0.2}love you."
+                n 4kchssf "T-{w=0.2}te amo."
         else:
 
-            n 1uskgslesh "O-{w=0.2}oh!{w=0.5}{nw}"
-            extend 4fllbglesssbr " A-{w=0.2}aha!{w=0.5}{nw}"
-            extend 2fcsbglsbr " Well,{w=0.2} I knew you'd {i}have{/i} to admit it {i}eventually{/i}!"
-            n 2fcssmlsbl "I'm just glad to hear {i}both{/i} of us agree on that.{w=0.75}{nw}"
-            extend 1fsldvlsbl " Ehehe."
+            n 1uskgslesh "¡O-{w=0.2}oh!{w=0.5}{nw}"
+            extend 4fllbglesssbr " ¡A-{w=0.2}aja!{w=0.5}{nw}"
+            extend 2fcsbglsbr " Bueno,{w=0.2} ¡sabía que tendrías que admitirlo {i}eventualmente{/i}!"
+            n 2fcssmlsbl "Solo me alegra escuchar que {i}ambos{/i} estamos de acuerdo en eso.{w=0.75}{nw}"
+            extend 1fsldvlsbl " Jejeje."
 
             if Natsuki.isAffectionate(higher=True):
-                n 3fcsssl "J-{w=0.2}just remember though,{w=0.2} [player]..."
-                n 3fchbll "You're at {i}least{/i} second best!"
+                n 3fcsssl "S-{w=0.2}solo recuerda,{w=0.2} [player]..."
+                n 3fchbll "¡Eres al {i}menos{/i} el segundo mejor!"
             else:
 
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 3fchgnlsbr "Thanks,{w=0.2} [chosen_tease]!"
+                n 3fchgnlsbr "¡Gracias,{w=0.2} [chosen_tease]!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.amazing
     return
@@ -143,7 +143,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I think you're beautiful!",
+            prompt="¡Creo que eres hermosa!",
             label="compliment_beautiful",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -157,104 +157,104 @@ label compliment_beautiful:
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.beautiful:
         if Natsuki.isEnamored(higher=True):
             $ player_initial = jn_utils.getPlayerInitial()
-            n 1fcsanlesssbl "Uuuuuu-!"
-            n 4kwdgslesssbl "[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
-            extend 1kbkwrless " You already told me thaaaaat!"
-            n 4ksqemlsbr "You really gotta do it {i}again{/i}?!"
+            n 1fcsanlesssbl "¡Uuuuuu-!"
+            n 4kwdgslesssbl "¡[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
+            extend 1kbkwrless " ¡Ya me dijiste eso!"
+            n 4ksqemlsbr "¡¿Realmente tienes que hacerlo {i}de nuevo{/i}?!"
             n 2ksrbolsbr "..."
             n 2ncsemlesisbr "..."
-            n 1ncsbolsbr "...Fine.{w=0.75}{nw}"
-            extend 4kslbolsbl " I'll take it."
-            n 2fcscalsbl "The compliment,{w=0.2} I mean.{w=0.75}{nw}"
-            extend 2fcstrlsbl " Just..."
+            n 1ncsbolsbr "...Bien.{w=0.75}{nw}"
+            extend 4kslbolsbl " Lo tomaré."
+            n 2fcscalsbl "El cumplido,{w=0.2} quiero decir.{w=0.75}{nw}"
+            extend 2fcstrlsbl " Solo..."
             $ chosen_tease = jn_utils.getRandomTease()
             n 1ksrcal "..."
-            n 4ncsssl "...Heh.{w=1}{nw}"
-            extend 4nslfsl " Nevermind."
+            n 4ncsssl "...Je.{w=1}{nw}"
+            extend 4nslfsl " Olvídalo."
 
             if Natsuki.isLove(higher=True):
-                n 2kslbol "T-{w=0.2}thanks again,{w=0.2} [chosen_tease]."
-                n 1kslfsfeaf "...Y-{w=0.2}you always make me feel prettier."
+                n 2kslbol "G-{w=0.2}gracias de nuevo,{w=0.2} [chosen_tease]."
+                n 1kslfsfeaf "...S-{w=0.2}siempre me haces sentir más bonita."
             else:
 
-                n 2kslbol "T-{w=0.2}thanks again,{w=0.2} [chosen_tease]."
+                n 2kslbol "G-{w=0.2}gracias de nuevo,{w=0.2} [chosen_tease]."
                 n 1kslcaf "..."
         else:
 
-            n 4fskgslesh "E-{w=0.2}excuse me?!"
-            n 1fwmgslsbl "[player]!{w=0.5}{nw}"
-            extend 4fbkwrlsbl " What did {i}literally{/i} just I tell you?!"
+            n 4fskgslesh "¡¿D-{w=0.2}disculpa?!"
+            n 1fwmgslsbl "¡[player]!{w=0.5}{nw}"
+            extend 4fbkwrlsbl " ¡¿Qué es lo que {i}literalmente{/i} te acabo de decir?!"
             $ chosen_tease = jn_utils.getRandomTease()
-            n 1fcsgsl "Are you {i}trying{/i} to give me a heart attack or something?!{w=0.75}{nw}"
-            extend 2fsleml " Sheesh..."
+            n 1fcsgsl " ¡¿Estás {i}intentando{/i} darme un infarto o algo así?!{w=0.75}{nw}"
+            extend 2fsleml " Cielos..."
             n 2fslpol "..."
-            n 4fcsajl "I-{w=0.2}I mean,{w=0.75}{nw}"
-            extend 3fcspol " I know I already look great!{w=1}{nw}"
-            extend 3fsrdvlsbl " I {i}always{/i} look top-{w=0.2}notch, o-{w=0.2}of course."
-            n 2fcsemlsbl "But you {i}really{/i} don't have to..."
-            n 2fslunlsbl "T-{w=0.2}to keep...!"
+            n 4fcsajl "Q-{w=0.2}quiero decir,{w=0.75}{nw}"
+            extend 3fcspol " ¡sé que ya me veo genial!{w=1}{nw}"
+            extend 3fsrdvlsbl " {i}Siempre{/i} me veo de primera,{w=0.2} p-{w=0.2}por supuesto."
+            n 2fcsemlsbl "Pero {i}realmente{/i} no tienes que... "
+            n 2fslunlsbl "¡S-{w=0.2}seguir...!"
             n 1fcsunlsbl "..."
-            n 4fcsemlsbr "Oh,{w=0.5}{nw}"
-            extend 2flrbolsbr " forget it!"
+            n 4fcsemlsbr "¡Oh,{w=0.5}{nw}"
+            extend 2flrbolsbr " olvídalo!"
 
             if Natsuki.isAffectionate(higher=True):
-                n 2fcscalsbr "You know what I mean,{w=0.2} a-{w=0.2}anyway..."
+                n 2fcscalsbr "Sabes a lo que me refiero,{w=0.2} d-{w=0.2}de todas formas..."
 
             n 2ksrbolsbr "..."
     else:
 
         if Natsuki.isEnamored(higher=True):
-            n 4uskemlesh "H-{w=0.2}huh?!"
-            n 1fcseml "Wait..."
-            n 1kllemlsbl "Y-{w=0.2}you really think I'm..."
-            n 1fslunfsbl "I-{w=0.3}I'm..."
+            n 4uskemlesh "¡¿E-{w=0.2}eh?!"
+            n 1fcseml "Espera..."
+            n 1kllemlsbl "T-{w=0.2}tu realmente piensas que soy..."
+            n 1fslunfsbl "Q-{w=0.3}que soy..."
             n 4fcsunfesssbr "..."
             n 2kcsbolsbr "..."
             n 2ksqbolsbr "[player]..."
-            n 1kllbolsbr "You {w=0.2}{i}do{/i}{w=0.2} know you're not meant to just say things like that..."
-            n 4kwmslfsbl "Unless you really mean them?"
+            n 1kllbolsbr "Sabes {w=0.2}{i}bien{/i}{w=0.2} que no deberías decir cosas así... "
+            n 4kwmslfsbl "¿A menos que las digas en serio?"
 
             if Natsuki.isLove(higher=True):
-                n 1knmajlsbl "I-{w=0.2}it's not that I don't believe you!{w=1}{nw}"
-                extend 2klrsslsbl " O-{w=0.2}of course not!"
-                n 4ksrbolsbl "...You should know that by now."
-                n 2ksrpulsbl "But..."
+                n 1knmajlsbl "¡N-{w=0.2}no es que no te crea!{w=1}{nw}"
+                extend 2klrsslsbl " ¡P-{w=0.2}por supuesto que no!"
+                n 4ksrbolsbl "...Deberías saberlo a estas alturas."
+                n 2ksrpulsbl "Pero..."
                 n 4ksrsll "..."
-                n 1ksrfsl "...Thanks,{w=0.2} [player].{w=1}{nw}"
-                extend 1ksrssl " Really{w=0.2}, heh."
-                n 4ksqfsl "Thank you."
-                n 3fcssmless "...Just don't forget {i}who{/i} helps me feel that way.{w=0.75}{nw}"
-                extend 3fsqbll " You goof."
-                n 4fchsmleaf "Ehehe."
+                n 1ksrfsl "...Gracias,{w=0.2} [player].{w=1}{nw}"
+                extend 1ksrssl " En serio{w=0.2}, je."
+                n 4ksqfsl "Gracias."
+                n 3fcssmless "...Solo no olvides {i}quién{/i} me ayuda a sentirme así.{w=0.75}{nw}"
+                extend 3fsqbll " Tonto."
+                n 4fchsmleaf "Jejeje."
             else:
 
                 n 1kslcafsbl "..."
-                n 2fcstrlesssbr "I-{w=0.2}I mean...!"
+                n 2fcstrlesssbr "¡Q-{w=0.2}quiero decir...!"
                 n 2nsrsllsbr "...{w=0.75}{nw}"
-                extend 2ksrbolsbr "Really."
-                n 2ksrfslsbr "T-{w=0.2}thanks, [player]."
+                extend 2ksrbolsbr "En serio."
+                n 2ksrfslsbr "G-{w=0.2}gracias, [player]."
         else:
 
-            n 1uskemlesh "W{w=0.2}-w{w=0.2}-what?"
-            n 1fskeml "W-{w=0.2}what did you say?!"
-            n 4fcsanfsbr "Nnnnnnnnnn-!"
-            n 4fbkwrfsbr "Y-{w=0.2}you can't just {i}say{/i} things like that so suddenly!"
-            n 2fllemlsbl "Sheesh...{w=0.75}{nw}"
-            extend 2fslpolsbl " come on,{w=0.2} [player]..."
+            n 1uskemlesh "¿Q{w=0.2}-q{w=0.2}-qué?"
+            n 1fskeml "¡¿Q-{w=0.2}qué dijiste?!"
+            n 4fcsanfsbr "¡Nnnnnnnnnn-!"
+            n 4fbkwrfsbr "¡N-{w=0.2}no puedes simplemente {i}decir{/i} cosas así tan de repente!"
+            n 2fllemlsbl "Cielos...{w=0.75}{nw}"
+            extend 2fslpolsbl " vamos,{w=0.2} [player]..."
             n 1fcsbolsbr "..."
-            n 1fcsemlsbr "I-{w=0.2}I mean,{w=0.75}{nw}"
-            extend 3fsrbglsbr " I'm glad we both agree,{w=0.75}{nw}"
-            extend 4fsrunlsbr " but..."
-            n 1fcsunlesssbl "Uuuuuu...!"
-            n 1fcsemlsbl "Just..."
+            n 1fcsemlsbr "Q-{w=0.2}quiero decir,{w=0.75}{nw}"
+            extend 3fsrbglsbr " Me alegra que ambos estemos de acuerdo,{w=0.75}{nw}"
+            extend 4fsrunlsbr " pero..."
+            n 1fcsunlesssbl "¡Uuuuuu...!"
+            n 1fcsemlsbl "Solo..."
             n 1kslcal "..."
-            n 2ksqsllsbr "...Think a little before you just blurt stuff out like that.{w=0.75}{nw}"
-            extend 2fsrsllsbr " I-{w=0.2}it just makes everything all awkward."
-            n 1fsrsslsbr "...Heh.{w=0.75}{nw}"
-            extend 4fcsajlsbr " A-{w=0.2}and besides,{w=0.75}{nw}"
-            n 3fcsbglsbl " I {i}always{/i} look stunning anyway!{w=0.75}{nw}"
-            extend 3nslsslsbl " So...{w=0.5}{nw}"
-            extend 3nslbol " yeah."
+            n 2ksqsllsbr "...Piensa un poco antes de soltar cosas así.{w=0.75}{nw}"
+            extend 2fsrsllsbr " S-{w=0.2}solo hace que todo sea muy incómodo."
+            n 1fsrsslsbr "...Je.{w=0.75}{nw}"
+            extend 4fcsajlsbr " Y-{w=0.2}y además,{w=0.75}{nw}"
+            n 3fcsbglsbl " ¡{i}Siempre{/i} me veo deslumbrante de todos modos!{w=0.75}{nw}"
+            extend 3nslsslsbl " Así que...{w=0.5}{nw}"
+            extend 3nslbol " sí."
             n 3kslsllsbr "..."
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.beautiful
@@ -264,7 +264,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I love how confident you are!",
+            prompt="¡Me encanta lo segura que eres!",
             label="compliment_confident",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -276,50 +276,50 @@ label compliment_confident:
     $ Natsuki.calculatedAffinityGain(bypass=get_topic("compliment_confident").shown_count == 0)
 
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.confident:
-        n 1fcssmleme "Ehehe.{w=0.5}{nw}"
-        extend 2fcsbg " Well,{w=0.2} I'm glad you still agree,{w=0.2} [player]!"
-        n 2fllsm "Besides,{w=0.5}{nw}"
-        extend 2fcssm " it's only natural."
+        n 1fcssmleme "Jejeje.{w=0.5}{nw}"
+        extend 2fcsbg " Bueno,{w=0.2} ¡me alegra que sigas de acuerdo,{w=0.2} [player]!"
+        n 2fllsm "Además,{w=0.5}{nw}"
+        extend 2fcssm " es solo natural."
 
         if Natsuki.isEnamored(higher=True):
-            n 4nslssl "E-{w=0.2}especially with you around,"
+            n 4nslssl "E-{w=0.2}especialmente contigo cerca,"
             $ chosen_tease = jn_utils.getRandomTease()
             extend 3fchbll " [chosen_tease]."
         else:
 
-            n 2fcsbgedz "Brimming with confidence,{w=0.5}{nw}"
-            extend 2flrbs " always unfazed..."
-            n 3uchgnl "...That's just what it means to be a pro,{w=0.2} right?"
+            n 2fcsbgedz "Rebosante de confianza,{w=0.5}{nw}"
+            extend 2flrbs " siempre imperturbable..."
+            n 3uchgnl "...Eso es justo lo que significa ser una pro,{w=0.2} ¿verdad?"
     else:
 
-        n 4fsqct "Oho?{w=1}{nw}"
-        extend 3fsqcs " You do,{w=0.2} do you?"
-        n 3fchgn "Now that's {i}just{/i} what I like to hear!"
-        n 4fcsbg "After all,{w=0.5}{nw}"
-        extend 2fcssmeme " don't I just {i}radiate{/i} confidence?"
-        n 4tsqbg "Come on,{w=0.2} [player]!{w=0.75}{nw}"
-        extend 4fchgn " No need to be shy!{w=0.5}{nw}"
-        extend 4fsqbg " You {i}gotta{/i} tell me!"
-        n 3fllct "Is it the eyes?"
-        n 3fcsbg "The smile?"
-        n 3usqsm "The {i}killer{/i} personality?"
-        n 4fchsmedz "Ehehe."
-        n 2fcsss "Well,{w=0.2} whatever it is..."
+        n 4fsqct "¿Ojo?{w=1}{nw}"
+        extend 3fsqcs " Lo haces,{w=0.2} ¿verdad?"
+        n 3fchgn "¡Ahora eso es {i}justo{/i} lo que me gusta escuchar!"
+        n 4fcsbg "Después de todo,{w=0.5}{nw}"
+        extend 2fcssmeme " ¿a que simplemente {i}irradio{/i} confianza?"
+        n 4tsqbg "¡Vamos,{w=0.2} [player]!{w=0.75}{nw}"
+        extend 4fchgn " ¡No hay necesidad de ser tímido!{w=0.5}{nw}"
+        extend 4fsqbg " ¡{i}Tienes{/i} que decírmelo!"
+        n 3fllct "¿Son los ojos?"
+        n 3fcsbg "¿La sonrisa?"
+        n 3usqsm "¿La personalidad {i}asesina{/i}?"
+        n 4fchsmedz "Jejeje."
+        n 2fcsss "Bueno,{w=0.2} sea lo que sea..."
 
         if Natsuki.isLove(higher=True):
             n 4nsrsmsbl "..."
-            n 4fcssmlsbl "I-{w=0.2}I hope I inspire you just as much as you inspire me.{w=0.75}{nw}"
-            extend 4fchdvlsbl " Ehehe."
-            n 1fchbgleafsbr "L-{w=0.2}love you,{w=0.2} [player]!"
+            n 4fcssmlsbl "E-{w=0.2}espero inspirarte tanto como tú me inspiras a mí.{w=0.75}{nw}"
+            extend 4fchdvlsbl " Jejeje."
+            n 1fchbgleafsbr "¡T-{w=0.2}te amo,{w=0.2} [player]!"
 
         elif Natsuki.isEnamored(higher=True):
-            n 2fcsbg "I hope I inspire some confidence in you too!"
-            n 2fslbglsbr "N-{w=0.2}not that you need it {i}too{/i} much,{w=0.2} a-{w=0.2}anyway."
-            n 2fchbglsbr "Y-{w=0.2}you're welcome,{w=0.2} [player]!"
+            n 2fcsbg "¡Espero inspirarte algo de confianza a ti también!"
+            n 2fslbglsbr "N-{w=0.2}no es que la necesites {i}demasiado{/i},{w=0.2} d-{w=0.2}de todas formas."
+            n 2fchbglsbr "¡D-{w=0.2}de nada,{w=0.2} [player]!"
         else:
 
-            n 2fchgnl "I better inspire some confidence in you too!"
-            n 2fwlsm "You're welcome,{w=0.2} [player]!"
+            n 2fchgnl "¡Será mejor que inspire algo de confianza en ti también!"
+            n 2fwlsm "¡De nada,{w=0.2} [player]!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.confident
     return
@@ -328,7 +328,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I think you're cute!",
+            prompt="¡Creo que eres linda!",
             label="compliment_cute",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -344,93 +344,93 @@ label compliment_cute:
             n 1fskwrleshsbr "..."
             n 4fcsanlsbr "..."
             n 4fcsfulsbl "..."
-            n 1fcsfufsbl "Urgh!"
-            n 4fcsgsf "Alright,{w=0.5}{nw}"
-            extend 1fcsemfsbl " fine!{w=0.5}{nw}"
-            extend 2fcswrfsbl " Fine!{w=0.5}{nw}"
-            extend 2fbkwrfsbl " You win,{w=0.2} okay?!"
+            n 1fcsfufsbl "¡Urgh!"
+            n 4fcsgsf "¡Está bien,{w=0.5}{nw}"
+            extend 1fcsemfsbl " bien!{w=0.5}{nw}"
+            extend 2fcswrfsbl " ¡Bien!{w=0.5}{nw}"
+            extend 2fbkwrfsbl " ¡Tú ganas,{w=0.2} ¿vale?!"
             n 2fcsunfesi "..."
-            n 2fcsemf "I'm kinda...{w=0.5} maybe...{w=0.75}{nw}"
-            extend 1fslemf " sorta..."
-            n 1fcsgsf "Somehow..."
-            n 4fsqemf "In some {i}abstract{/i} way..."
+            n 2fcsemf "Soy un poco...{w=0.5} tal vez...{w=0.75}{nw}"
+            extend 1fslemf " algo así..."
+            n 1fcsgsf "De alguna manera..."
+            n 4fsqemf "En alguna forma {i}abstracta{/i}..."
             n 1fsrsrf "..."
-            n 1fsqpuf "...{w=0.3}'cute.'"
+            n 1fsqpuf "...{w=0.3}'linda'."
             n 2fsqslf "..."
-            n 2fcsemf "There.{w=0.75}{nw}"
-            extend 2fcsgsf " I said it,{w=0.2} [player].{w=0.75}{nw}"
-            extend 2fcspof " I said it.{w=0.75}{nw}"
-            extend 2fllpof " {i}Hooray{/i} for you."
-            n 1fsqpof "Are we done?{w=0.75}{nw}"
-            extend 4fnmpof " Are you happy?{w=0.75}{nw}"
-            extend 2fcsgsf " Are you {i}pleased{/i} with yourself now?"
-            n 1flrpof "Jeez..."
-            n 2fsqpof "I swear,{w=0.2} you're such a goofball sometimes..."
+            n 2fcsemf "Ahí.{w=0.75}{nw}"
+            extend 2fcsgsf " Lo dije,{w=0.2} [player].{w=0.75}{nw}"
+            extend 2fcspof " Lo dije.{w=0.75}{nw}"
+            extend 2fllpof " {i}Hurra{/i} por ti."
+            n 1fsqpof "¿Terminamos?{w=0.75}{nw}"
+            extend 4fnmpof " ¿Estás feliz?{w=0.75}{nw}"
+            extend 2fcsgsf " ¿Estás {i}satisfecho{/i} contigo mismo ahora?"
+            n 1flrpof "Cielos..."
+            n 2fsqpof "Juro,{w=0.2} que eres tan tonto a veces..."
 
             if Natsuki.isLove(higher=True):
-                n 1fcspol "A-{w=0.2}and besides,{w=0.2} [player]."
-                n 3fcsajl "All this talk about {i}cuteness{/i}?{w=0.75}{nw}"
-                extend 3flrcal " Being {i}adorable{/i}?"
-                n 1fsqssl "...Heh."
-                n 2fcssslsbl "S-{w=0.2}sounds like some pretty bad projection,{w=0.5}{nw}"
-                extend 4fcsbglsbl " i-{w=0.2}if you ask me."
+                n 1fcspol "Y-{w=0.2}y además,{w=0.2} [player]."
+                n 3fcsajl "¿Toda esta charla sobre {i}lindura{/i}?{w=0.75}{nw}"
+                extend 3flrcal " ¿Ser {i}adorable{/i}?"
+                n 1fsqssl "...Je."
+                n 2fcssslsbl "S-{w=0.2}suena como una proyección bastante mala,{w=0.5}{nw}"
+                extend 4fcsbglsbl " s-{w=0.2}si me preguntas."
                 n 3fsqcsl "..."
-                n 3fsqbgl "...Am I right,{w=0.5} {i}[player]{/i}?"
-                n 3fsqsmlsbr "Ehehe."
+                n 3fsqbgl "...¿Tengo razón,{w=0.5} {i}[player]{/i}?"
+                n 3fsqsmlsbr "Jejeje."
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 3fchbllsbr "L-{w=0.2}love you too,{w=0.2} [chosen_tease]~!"
+                n 3fchbllsbr "¡T-{w=0.2}te amo también,{w=0.2} [chosen_tease]~!"
             else:
 
-                n 1fcsajl "Just...{w=1}{nw}"
-                extend 2fsrcal " don't let this get to your head."
-                n 2fsqajlsbl "...Or you're gonna find out exactly how {w=0.4}{i}not{/i}{w=0.4} cute{w=0.4} I can be too."
-                n 4fsqfsl "Ehehe."
+                n 1fcsajl "Solo...{w=1}{nw}"
+                extend 2fsrcal " no dejes que esto se te suba a la cabeza."
+                n 2fsqajlsbl "...O vas a descubrir exactamente qué tan {w=0.4}{i}no{/i}{w=0.4} linda{w=0.4} puedo ser también."
+                n 4fsqfsl "Jejeje."
         else:
 
-            n 1fcsanfsbl "Nnnnnnn-!"
-            n 4fcsgsf "H-{w=0.2}how many times do I have to explain this?!"
-            extend 4fllemf " Do I really have to spell it out for you too,{w=0.2} [player]?!"
-            n 4fcsanf "For the {i}last time{/i}..."
-            n 1fbkwrfsbl "{i}I'M{w=0.3} NOT{w=0.3} CUTE!!{/i}"
-            n 1flremf "Jeez..."
+            n 1fcsanfsbl "¡Nnnnnnn-!"
+            n 4fcsgsf "¡¿C-{w=0.2}cuántas veces tengo que explicar esto?!"
+            extend 4fllemf " ¿Realmente tengo que deletreártelo también,{w=0.2} [player]?!"
+            n 4fcsanf "Por {i}última vez{/i}..."
+            n 1fbkwrfsbl "¡¡{i}NO{w=0.3} SOY{w=0.3} LINDA!!{/i}"
+            n 1flremf "Cielos..."
             n 2fsrpol "..."
-            n 2fsqeml "...You just {i}wanted{/i} me to say that,{w=0.2} didn't you?"
-            n 4fcspolesi "Honestly...{w=0.75}{nw}"
-            extend 3fsqcal " you can be such a jerk sometimes,{w=0.2} [player]."
+            n 2fsqeml "...Solo {i}querías{/i} que dijera eso,{w=0.2} ¿verdad?"
+            n 4fcspolesi "Honestamente...{w=0.75}{nw}"
+            extend 3fsqcal " puedes ser tan idiota a veces,{w=0.2} [player]."
 
             if Natsuki.isAffectionate(higher=True):
                 n 3nslcal "..."
-                n 1nllajl "Well..."
-                n 2fcspol "Just count yourself lucky you're in my good books."
-                n 2fsqsslsbl "O-{w=0.2}or I wouldn't be {i}nearly{/i} this patient.{w=0.75}{nw}"
-                extend 2fsqsmlsbl " Ehehe."
+                n 1nllajl "Bueno..."
+                n 2fcspol "Solo considérate afortunado de que estés en mi lista buena."
+                n 2fsqsslsbl "O-{w=0.2}o no sería {i}ni de cerca{/i} tan paciente.{w=0.75}{nw}"
+                extend 2fsqsmlsbl " Jejeje."
             else:
 
                 n 3nslcal "..."
-                n 1nllajl "Well...{w=0.75}{nw}"
-                extend 1nslpol " whatever."
-                n 2fcscal "Just be grateful that I'll hold back on the whole lecture for you."
-                n 2fsqssl "...This time."
+                n 1nllajl "Bueno...{w=0.75}{nw}"
+                extend 1nslpol " lo que sea."
+                n 2fcscal "Solo agradece que me guardaré todo el sermón para ti."
+                n 2fsqssl "...Esta vez."
     else:
 
         if Natsuki.isEnamored(higher=True):
-            n 1fcsbslsbr "A-{w=0.2}Aha!{w=0.5}{nw}"
-            extend 2fchbglsbr " Nope!"
+            n 1fcsbslsbr "¡A-{w=0.2}Aja!{w=0.5}{nw}"
+            extend 2fchbglsbr " ¡Nop!"
             n 2fsqfslsbr "..."
-            n 4fsqsmlsbr "Nice try,{w=0.2} [player]..."
-            n 3fcsbgl "But you're not gonna get me to say it {i}that{/i} easily!{w=0.5}{nw}"
-            extend 3fcssmlsbl " Ehehe."
+            n 4fsqsmlsbr "Buen intento,{w=0.2} [player]..."
+            n 3fcsbgl "¡Pero no conseguirás que lo diga {i}tan{/i} fácilmente!{w=0.5}{nw}"
+            extend 3fcssmlsbl " Jejeje."
         else:
 
-            n 4uskemfesh "W-{w=0.2}what?"
-            n 4fnmemfsbl "{i}What{/i} did you just say?!"
+            n 4uskemfesh "¿Q{w=0.2}-q{w=0.2}-qué?"
+            n 4fnmemfsbl "¡¿{i}Qué{/i} acabas de decir?!"
             n 1fllunfsbl "..."
             n 1nsrsrfsbr "..."
-            n 2fsrssfsbr "I...{w=0.75}{nw}"
-            extend 2fsqunfsbr " must have misheard you."
-            n 4fcsbgl "Y-{w=0.2}yeah.{w=0.5}{nw}"
-            extend 3fchbgl " Yeah!{w=0.75}{nw}"
-            extend 3fcssslsbl " I {i}totally{/i} misheard you!{w=0.5} O-{w=0.2}one hundred percent."
+            n 2fsrssfsbr "Yo...{w=0.75}{nw}"
+            extend 2fsqunfsbr " debo haberte escuchado mal."
+            n 4fcsbgl "S-{w=0.2}sí.{w=0.5}{nw}"
+            extend 3fchbgl " ¡Sí!{w=0.75}{nw}"
+            extend 3fcssslsbl " ¡Te escuché {i}totalmente{/i} mal!{w=0.5} C-{w=0.2}cien por ciento."
             n 3fslunlsbl "..."
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.cute
@@ -440,7 +440,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I love your sense of humor!",
+            prompt="¡Me encanta tu sentido del humor!",
             label="compliment_hilarious",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -452,61 +452,61 @@ label compliment_hilarious:
     $ Natsuki.calculatedAffinityGain(bypass=get_topic("compliment_hilarious").shown_count == 0)
 
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.hilarious:
-        n 4usqss "Oh...?"
-        n 3tsqcs "What is this?{w=0.75}{nw}"
-        extend 3fcsbg " An encore or something?"
-        n 4uchgnl "Well,{w=0.3} I'm taking it!"
-        n 2fsqfs "Don't you worry,{w=0.2} [player]..."
+        n 4usqss "¿Oh...?"
+        n 3tsqcs "¿Qué es esto?{w=0.75}{nw}"
+        extend 3fcsbg " ¿Un bis o algo así?"
+        n 4uchgnl "Bueno,{w=0.3} ¡lo tomo!"
+        n 2fsqfs "No te preocupes,{w=0.2} [player]..."
 
         if Natsuki.isEnamored(higher=True):
-            n 2fchbgleme "You aren't escaping {i}our{/i} routine any time soon!{w=0.5}{nw}"
-            extend 4fchsml " Ehehe."
+            n 2fchbgleme "¡No escaparás de {i}nuestra{/i} rutina pronto!{w=0.5}{nw}"
+            extend 4fchsml " Jejeje."
 
             if Natsuki.isLove(higher=True):
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 3fchbll "Love you too,{w=0.2} [chosen_tease]~!"
+                n 3fchbll "¡Te amo también,{w=0.2} [chosen_tease]~!"
         else:
 
-            n 2fchsmeme "You aren't escaping {i}my{/i} routine any time soon!{w=0.5}{nw}"
-            extend 2nchgnl " Ahaha."
+            n 2fchsmeme "¡No escaparás de {i}mi{/i} rutina pronto!{w=0.5}{nw}"
+            extend 2nchgnl " Jajaja."
     else:
 
         if Natsuki.isEnamored(higher=True):
-            n 4fcscs "Oho?{w=0.75}{nw}"
-            extend 3fcsbg " What's that,{w=0.2} [player]?"
-            n 3fchgnlelg "So you {w=0.2}{i}do{/i}{w=0.2} recognize talent when you see it!{w=0.75}{nw}"
-            extend 4fcssml " Ehehe..."
+            n 4fcscs "¿Ojo?{w=0.75}{nw}"
+            extend 3fcsbg " ¿Qué es eso,{w=0.2} [player]?"
+            n 3fchgnlelg "¡Así que {i}sí{/i} reconoces el talento cuando lo ves!{w=0.75}{nw}"
+            extend 4fcssml " Jejeje..."
             n 2nslfsl "..."
-            n 2nslbol "But...{w=0.75}{nw}"
-            extend 2tsqcal " seriously,{w=0.2} [player]?"
+            n 2nslbol "Pero...{w=0.75}{nw}"
+            extend 2tsqcal " ¿en serio,{w=0.2} [player]?"
             n 1ksrcal "..."
-            n 1klrss "I'm honestly...{w=0.75}{nw}"
-            extend 4nsrss " kinda glad to hear that."
-            n 1fcsajlsbr "I-{w=0.2}I know it's dumb.{w=0.75}{nw}"
-            extend 4nslbolsbr " But I always kinda worry about how much fun you're having here."
-            n 4nlrcalsbr "With me,{w=0.2} I mean."
-            n 4ksqbolsbl "I...{w=0.3} don't want you to get all bored..."
-            n 2fcsajlsbl "T-{w=0.2}that'd just be super lame."
-            n 1kllbol "So...{w=0.5}{nw}"
-            extend 1knmbol " thanks,{w=0.2} [player].{w=0.5}{nw}"
-            extend 2klrfsl " Really."
-            n 2nsrsslsbl "It means a lot."
+            n 1klrss "Honestamente...{w=0.75}{nw}"
+            extend 4nsrss " me alegra un poco escuchar eso."
+            n 1fcsajlsbr "S-{w=0.2}sé que es tonto.{w=0.75}{nw}"
+            extend 4nslbolsbr " Pero siempre me preocupa un poco cuánto te diviertes aquí."
+            n 4nlrcalsbr "Conmigo,{w=0.2} quiero decir."
+            n 4ksqbolsbl "Yo...{w=0.3} no quiero que te aburras..."
+            n 2fcsajlsbl "E-{w=0.2}eso sería súper patético."
+            n 1kllbol "Así que...{w=0.5}{nw}"
+            extend 1knmbol " gracias,{w=0.2} [player].{w=0.5}{nw}"
+            extend 2klrfsl " En serio."
+            n 2nsrsslsbl "Significa mucho."
 
             if Natsuki.isLove(higher=True):
-                n 4fchsmleaf "Y-{w=0.2}you always know just what to say."
+                n 4fchsmleaf "S-{w=0.2}siempre sabes justo qué decir."
         else:
 
-            n 1fcssm "Ehehe.{w=0.75}{nw}"
-            extend 2fchgneme " Oh,{w=0.2} you {i}bet{/i} I got an amazing sense of humor!"
-            n 4ullss "But...{w=0.5}{nw}"
-            extend 3fcsbsl " I'm just glad we both recognize that."
+            n 1fcssm "Jejeje.{w=0.75}{nw}"
+            extend 2fchgneme " Oh,{w=0.2} ¡{i}apuesta{/i} a que tengo un sentido del humor asombroso!"
+            n 4ullss "Pero...{w=0.5}{nw}"
+            extend 3fcsbsl " solo me alegra que ambos reconozcamos eso."
 
             if Natsuki.isAffectionate(higher=True):
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 3fchbll "Much obliged,{w=0.2} [chosen_tease]!"
+                n 3fchbll "¡Muy agradecida,{w=0.2} [chosen_tease]!"
             else:
 
-                n 3fchbgl "Much obliged,{w=0.2} [player]!"
+                n 3fchbgl "¡Muy agradecida,{w=0.2} [player]!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.hilarious
     return
@@ -515,7 +515,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="You're an inspiration to me!",
+            prompt="¡Eres una inspiración para mí!",
             label="compliment_inspirational",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -527,38 +527,38 @@ label compliment_inspirational:
     $ Natsuki.calculatedAffinityGain(bypass=get_topic("compliment_inspirational").shown_count == 0)
 
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.inspirational:
-        n 1nchgn "Ahaha.{w=0.75}{nw}"
-        extend 2fcsbg " Well,{w=0.2} what can I say?{w=0.75}{nw}"
-        extend 2fchsmedz " I guess it must be natural~."
-        n 1nchsm "But thanks,{w=0.2} [player]!"
-        n 4fsqsm "Don't worry."
-        extend 3fwlbg " You can always count on yours truly for {i}all{/i} your inspiration needs!"
+        n 1nchgn "Jajaja.{w=0.75}{nw}"
+        extend 2fcsbg " Bueno,{w=0.2} ¿qué puedo decir?{w=0.75}{nw}"
+        extend 2fchsmedz " Supongo que debe ser natural~."
+        n 1nchsm "¡Pero gracias,{w=0.2} [player]!"
+        n 4fsqsm "No te preocupes."
+        extend 3fwlbg " ¡Siempre puedes contar con su servidora para {i}todas{/i} tus necesidades de inspiración!"
 
         if Natsuki.isEnamored(higher=True):
-            n 3fsrssl "J-{w=0.2}just like I know I can count on you.{w=0.75}{nw}"
-            extend 1fchsml " Ehehe."
+            n 3fsrssl "S-{w=0.2}solo como sé que puedo contar contigo.{w=0.75}{nw}"
+            extend 1fchsml " Jejeje."
     else:
 
-        n 4unmemleex "H-{w=0.2}huh?{w=0.75}{nw}"
-        extend 2flrbglsbr " W-{w=0.2}well,{w=0.2} yeah!{w=0.75}{nw}"
-        extend 2fcsbglsbr " Duh!"
-        n 2fchgnsbr "Of course I am,{w=0.2} you dope!{w=1}{nw}"
-        extend 4fllct " In fact..."
-        n 1fcsct "I daresay you'd be hard pressed to find a {i}better{/i} role model than me."
-        n 3fsqsmeme "Ehehe."
+        n 4unmemleex "¿E-{w=0.2}eh?{w=0.75}{nw}"
+        extend 2flrbglsbr " B-{w=0.2}bueno,{w=0.2} ¡sí!{w=0.75}{nw}"
+        extend 2fcsbglsbr " ¡Obvio!"
+        n 2fchgnsbr "¡Por supuesto que lo soy,{w=0.2} tonto!{w=1}{nw}"
+        extend 4fllct " De hecho..."
+        n 1fcsct "Me atrevería a decir que te costaría encontrar un {i}mejor{/i} modelo a seguir que yo."
+        n 3fsqsmeme "Jejeje."
 
         if Natsuki.isEnamored(higher=True):
-            n 3ullaj "Well,{w=0.2} anyway.{w=0.75}{nw}"
-            extend 4fwlbg " You're welcome,{w=0.2} [player]!"
-            n 2fchbgl "I'll {i}always{/i} be around to inspire you."
+            n 3ullaj "Bueno,{w=0.2} como sea.{w=0.75}{nw}"
+            extend 4fwlbg " ¡De nada,{w=0.2} [player]!"
+            n 2fchbgl "{i}Siempre{/i} estaré cerca para inspirarte."
 
             if Natsuki.isLove(higher=True):
-                n 2nsrsmlsbl "...You do the same for me,{w=0.2} a-{w=0.2}after all."
+                n 2nsrsmlsbl "...Tú haces lo mismo por mí,{w=0.2} d-{w=0.2}después de todo."
         else:
 
-            n 3fcsbgedz "Well,{w=0.2} feel free to be inspired by me anytime,{w=0.2} [player].{w=1}{nw}"
-            extend 4fsqss " After all..."
-            n 2fwlbg "That's just what the pros are for,{w=0.2} right?"
+            n 3fcsbgedz "Bueno,{w=0.2} siéntete libre de inspirarte en mí en cualquier momento,{w=0.2} [player].{w=1}{nw}"
+            extend 4fsqss " Después de todo..."
+            n 2fwlbg "Eso es para lo que están los profesionales,{w=0.2} ¿verdad?"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.inspirational
     return
@@ -567,7 +567,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I love your sense of style!",
+            prompt="¡Me encanta tu estilo!",
             label="compliment_style",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -583,52 +583,52 @@ label compliment_style:
 
 
             if Natsuki.isEnamored(higher=True):
-                n 1fcssm "Ehehe.{w=0.5}{nw}"
-                extend 3fcsbgeme " Still awestruck by my sense of fashion,{w=0.2} [player]?"
-                n 3ullss "Well,{w=0.5}{nw}"
-                extend 4tllsm " if nothing else -{w=0.5}{nw}"
-                extend 2fcssm " you can't deny I'm a snappy dresser."
+                n 1fcssm "Jejeje.{w=0.5}{nw}"
+                extend 3fcsbgeme " ¿Aún asombrado por mi sentido de la moda,{w=0.2} [player]?"
+                n 3ullss "Bueno,{w=0.5}{nw}"
+                extend 4tllsm " si no es otra cosa -{w=0.5}{nw}"
+                extend 2fcssm " no puedes negar que me visto con estilo."
 
                 if Natsuki.isLove(higher=True):
-                    n 2fsqsml "Don't you worry.{w=0.75}{nw}"
-                    extend 2uchgnledz " I'll keep looking fabulous juuuust for you~!"
+                    n 2fsqsml "No te preocupes.{w=0.75}{nw}"
+                    extend 2uchgnledz " ¡Seguiré luciendo fabulosa sooooolo para ti~!"
                 else:
 
-                    n 2fchsml "Thanks a bunch,{w=0.2} [player]!{w=0.75}{nw}"
-                    extend 2fchgnledz " 'Preciated!"
+                    n 2fchsml "¡Muchas gracias,{w=0.2} [player]!{w=0.75}{nw}"
+                    extend 2fchgnledz " ¡Se aprecia!"
             else:
 
-                n 4tnmaj "Oh?{w=0.5}{nw}"
-                extend 2tsqss " Sounds like {i}someone{/i} is just itching to take a few points,{w=0.2} huh?"
-                n 2fsqsm "Ehehe."
-                n 1fchbg "Relax,{w=0.2} relax!{w=0.5}{nw}"
-                extend 1uchsm " I'm kidding,{w=0.2} [player].{w=0.3} Don't worry."
-                n 4fsqsm "...Mostly."
-                n 3fwlbl "But thanks again!"
+                n 4tnmaj "¿Oh?{w=0.5}{nw}"
+                extend 2tsqss " Suena a que {i}alguien{/i} se muere por ganar unos puntos,{w=0.2} ¿eh?"
+                n 2fsqsm "Jejeje."
+                n 1fchbg "¡Relájate,{w=0.2} relájate!{w=0.5}{nw}"
+                extend 1uchsm " Estoy bromeando,{w=0.2} [player].{w=0.3} No te preocupes."
+                n 4fsqsm "...Mayormente."
+                n 3fwlbl "¡Pero gracias de nuevo!"
         else:
 
 
             if Natsuki.isEnamored(higher=True):
-                n 4usqct "Oh?{w=0.75}{nw}"
-                extend 4fsqctl " You never told me you had a thing for uniforms,{w=0.2} [player]."
-                n 2fsqbglsbl "I-{w=0.2}is there something you wanna tell me?{w=0.75}{nw}"
-                extend 2fnmsglsbl " Huh?"
+                n 4usqct "¿Oh?{w=0.75}{nw}"
+                extend 4fsqctl " Nunca me dijiste que tenías algo por los uniformes,{w=0.2} [player]."
+                n 2fsqbglsbl "¿H-{w=0.2}hay algo que quieras decirme?{w=0.75}{nw}"
+                extend 2fnmsglsbl " ¿Eh?"
                 n 1flldvlsbl "..."
-                n 4fchdvlesisbr "Pfffft-!"
+                n 4fchdvlesisbr "¡Pfffft-!"
                 n 4fcsajl "Oh,{w=0.5}{nw}"
-                extend 1fchbgl " relax,{w=0.2} [player]!{w=0.75}{nw}"
-                extend 2fllbgl " Jeez..."
-                n 2fchsmlsbr "Y-{w=0.2}you should know when I'm pulling your leg by now,{w=0.2} you dork.{w=1}{nw}"
-                extend 1fcsssl " And besides..."
-                n 2flldvl "I {i}know{/i} I totally rock the school look."
-                n 2fchbll "But thanks anyway!"
+                extend 1fchbgl " ¡relájate,{w=0.2} [player]!{w=0.75}{nw}"
+                extend 2fllbgl " Cielos..."
+                n 2fchsmlsbr "Y-{w=0.2}ya deberías saber cuándo te estoy tomando el pelo,{w=0.2} tonto.{w=1}{nw}"
+                extend 1fcsssl " Y además..."
+                n 2flldvl "{i}Sé{/i} que luzco totalmente el look escolar."
+                n 2fchbll "¡Pero gracias de todos modos!"
             else:
 
-                n 2fsqsmlsbl "Still head-over-heels for the educated look,{w=0.5}{nw}"
-                extend 2fcssslsbl " huh?"
-                n 2fcsbglesssbl "W-{w=0.2}well,{w=0.75}{nw}"
-                extend 2fllbglesssbr " I guess that just means I can make {i}anything{/i} look good!"
-                n 1fslsslesssbr "Ahaha..."
+                n 2fsqsmlsbl "¿Todavía perdidamente enamorado del look educado,{w=0.5}{nw}"
+                extend 2fcssslsbl " eh?"
+                n 2fcsbglesssbl "B-{w=0.2}bueno,{w=0.75}{nw}"
+                extend 2fllbglesssbr " ¡supongo que eso solo significa que puedo hacer que {i}cualquier cosa{/i} se vea bien!"
+                n 1fslsslesssbr "Jajaja..."
     else:
 
 
@@ -636,53 +636,53 @@ label compliment_style:
 
 
             if Natsuki.isEnamored(higher=True):
-                n 1fchsmleme "Ehehe.{w=0.75}{nw}"
-                extend 1nchsml " I'm just happy you like this outfit,{w=0.2} [player]!"
-                n 1ulrbol "But then...{w=0.75}{nw}"
-                extend 4tlrbol " now that I think about it..."
-                n 2tsqssl "Should I {i}really{/i} be surprised?"
-                n 3fcsbgl "I-{w=0.2}I {i}am{/i} the one wearing it,{w=0.5}{nw}"
-                extend 3uchgnl " after all!"
+                n 1fchsmleme "Jejeje.{w=0.75}{nw}"
+                extend 1nchsml " ¡Solo estoy feliz de que te guste este atuendo,{w=0.2} [player]!"
+                n 1ulrbol "Pero entonces...{w=0.75}{nw}"
+                extend 4tlrbol " ahora que lo pienso..."
+                n 2tsqssl "¿Debería {i}realmente{/i} sorprenderme?"
+                n 3fcsbgl "¡Y-{w=0.2}yo {i}soy{/i} la que lo lleva puesto,{w=0.5}{nw}"
+                extend 3uchgnl " después de todo!"
 
                 if Natsuki.isLove(higher=True):
-                    n 3fchblleaf "Love you too,{w=0.2} [player]~!"
+                    n 3fchblleaf "¡Te amo también,{w=0.2} [player]~!"
             else:
 
-                n 1fcsbglsbl "H-{w=0.2}ha!{w=0.5}{nw}"
-                extend 2flrbglsbl " I'm glad you agree!"
-                n 4fcssml "It's only natural though,{w=0.2} right?{w=0.5}{nw}"
-                extend 2fcsbgledz " I like to pride myself on my {i}superb{/i} sense of style!"
-                n 2fwlbll "Good job noticing,{w=0.2} [player]!"
-                extend 2fchgnl " Ehehe."
+                n 1fcsbglsbl "¡J-{w=0.2}ja!{w=0.5}{nw}"
+                extend 2flrbglsbl " ¡Me alegra que estés de acuerdo!"
+                n 4fcssml "Es solo natural,{w=0.2} ¿verdad?{w=0.5}{nw}"
+                extend 2fcsbgledz " ¡Me gusta enorgullecerme de mi {i}soberbio{/i} sentido del estilo!"
+                n 2fwlbll "¡Buen trabajo notándolo,{w=0.2} [player]!"
+                extend 2fchgnl " Jejeje."
         else:
 
 
             if Natsuki.isEnamored(higher=True):
-                n 1tnmpul "M-{w=0.2}my sense of style?"
+                n 1tnmpul "¿M-{w=0.2}mi sentido del estilo?"
                 n 1tslpu "..."
-                n 4tslaj "You...{w=0.75}{nw}"
-                extend 2fsldv " {i}do{/i} see what I'm wearing,{w=0.75}{nw}"
-                extend 2fchgn " right?"
-                n 1nlrss "Man...{w=0.75}{nw}"
-                extend 2fsqsm " you're such a dork sometimes,{w=0.2} [player].{w=0.75}{nw}"
-                extend 2fcsbg " But it's the thought that counts!"
-                n 4fchsm "Ehehe."
+                n 4tslaj "Tú...{w=0.75}{nw}"
+                extend 2fsldv " {i}sí{/i} ves lo que llevo puesto,{w=0.75}{nw}"
+                extend 2fchgn " ¿verdad?"
+                n 1nlrss "Viejo...{w=0.75}{nw}"
+                extend 2fsqsm " eres tan tonto a veces,{w=0.2} [player].{w=0.75}{nw}"
+                extend 2fcsbg " ¡Pero la intención es lo que cuenta!"
+                n 4fchsm "Jejeje."
                 $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else jn_utils.getRandomTease()
-                n 2fchgnl "'Preciated as always,{w=0.2} [chosen_descriptor]!"
+                n 2fchgnl "¡Se aprecia como siempre,{w=0.2} [chosen_descriptor]!"
             else:
 
-                n 1tnmpuleqm "M-{w=0.2}my sense of style..."
-                n 4tsqpu "...What?{w=0.75}{nw}"
-                extend 2tnmdv " You mean my school uniform?"
-                n 4fchdvesi "Pfffft-!"
-                n 1fchbselg "What kind of compliment is {i}that{/i}?!"
-                n 2tlrsslsbl "You really {w=0.2}{i}aren't{/i}{w=0.2} good at this sort of thing are you,{w=0.5}{nw}"
-                extend 2tnmsmlsbl " [player]?{w=0.5}{nw}"
-                extend 2fsqsmlsbl " Ehehe."
-                n 1fcsbgl "Well,{w=0.75}{nw}"
-                extend 1fllbgl " I-{w=0.2}I guess you tried!{w=0.75}{nw}"
-                extend 4fcssmeme " And isn't that always what matters?"
-                n 3fchgn "Thanks anyway,{w=0.2} you goof!"
+                n 1tnmpuleqm "M-{w=0.2}mi sentido del estilo..."
+                n 4tsqpu "...¿Qué?{w=0.75}{nw}"
+                extend 2tnmdv " ¿Te refieres a mi uniforme escolar?"
+                n 4fchdvesi "¡Pfffft-!"
+                n 1fchbselg "¡¿Qué clase de cumplido es {i}ese{/i}?!"
+                n 2tlrsslsbl "Realmente {w=0.2}{i}no{/i}{w=0.2} eres bueno en este tipo de cosas,{w=0.5}{nw}"
+                extend 2tnmsmlsbl " ¿verdad, [player]?{w=0.5}{nw}"
+                extend 2fsqsmlsbl " Jejeje."
+                n 1fcsbgl "Bueno,{w=0.75}{nw}"
+                extend 1fllbgl " ¡s-{w=0.2}supongo que lo intentaste!{w=0.75}{nw}"
+                extend 4fcssmeme " ¿Y no es eso lo que siempre importa?"
+                n 3fchgn "¡Gracias de todos modos,{w=0.2} tonto!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.style
     return
@@ -691,7 +691,7 @@ init python:
     registerTopic(
         Topic(
             persistent._compliment_database,
-            prompt="I love how thoughtful you are!",
+            prompt="¡Me encanta lo atenta que eres!",
             label="compliment_thoughtful",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -704,65 +704,65 @@ label compliment_thoughtful:
 
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.thoughtful:
         if Natsuki.isEnamored(higher=True):
-            n 1unmaj "...Wow.{w=0.75}{nw}"
-            extend 1ulrbo " You...{w=0.75}{nw}"
-            extend 4tnmssl " really are still hung up over that, huh?"
-            n 1ncsajl "But seriously,{w=0.2} [player] -{w=0.5}{nw}"
-            extend 3fchbglsbl " don't worry about it!{w=0.75}{nw}"
-            extend 3fcssmlesisbl " It's totally fine."
-            n 1fllbol "Besides,{w=0.75}{nw}"
-            $ friend_type = "girlfriend" if Natsuki.isLove(higher=True) else "friend"
-            extend 2fcseml " what kind of [friend_type] would I be if I {i}wasn't{/i} at least trying to be thoughtful?"
-            n 2fsrbglsbr "P-{w=0.2}plus it looks like you're trying just as much anyway!"
+            n 1unmaj "...Guau.{w=0.75}{nw}"
+            extend 1ulrbo " Tú...{w=0.75}{nw}"
+            extend 4tnmssl " realmente sigues obsesionado con eso, ¿eh?"
+            n 1ncsajl "Pero en serio,{w=0.2} [player] -{w=0.5}{nw}"
+            extend 3fchbglsbl " ¡no te preocupes por eso!{w=0.75}{nw}"
+            extend 3fcssmlesisbl " Está totalmente bien."
+            n 1fllbol "Además,{w=0.75}{nw}"
+            $ friend_type = "novia" if Natsuki.isLove(higher=True) else "amiga"
+            extend 2fcseml " ¿qué clase de [friend_type] sería si {i}no{/i} estuviera al menos intentando ser atenta?"
+            n 2fsrbglsbr "¡A-{w=0.2}además parece que lo estás intentando igual de todos modos!"
             n 4tsrbolsbr "..."
-            n 1tsrpu "Well,{w=0.5}{nw}"
-            extend 1fsrsssbl " if it puts your mind at ease...{w=1}{nw}"
+            n 1tsrpu "Bueno,{w=0.5}{nw}"
+            extend 1fsrsssbl " si tranquiliza tu mente...{w=1}{nw}"
             $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else jn_utils.getRandomTease()
-            extend 3fcssml " no worries,{w=0.2} [chosen_descriptor]!"
-            n 3fchgnledz "You don't have to ask me to keep it up!"
+            extend 3fcssml " ¡no hay problema,{w=0.2} [chosen_descriptor]!"
+            n 3fchgnledz "¡No tienes que pedirme que siga así!"
         else:
 
-            n 1unmpul "H-{w=0.2}huh?{w=0.75}{nw}"
-            extend 1fllbgl " Oh,{w=0.2} right.{w=0.5}{nw}"
-            extend 4fsldvl " Ahaha."
-            n 2unmaj "Well,{w=0.5}{nw}"
-            extend 2ulraj " just like I was saying before -{w=0.5}{nw}"
-            extend 2fcsaj " it's really {i}not{/i} much to ask at all."
-            n 3fchgn "...So don't worry about it,{w=0.2} you goof!"
-            n 3fwlsm "It's no sweat off my back!"
+            n 1unmpul "¿E-{w=0.2}eh?{w=0.75}{nw}"
+            extend 1fllbgl " Oh,{w=0.2} cierto.{w=0.5}{nw}"
+            extend 4fsldvl " Jajaja."
+            n 2unmaj "Bueno,{w=0.5}{nw}"
+            extend 2ulraj " justo como decía antes -{w=0.5}{nw}"
+            extend 2fcsaj " realmente {i}no{/i} es mucho pedir en absoluto."
+            n 3fchgn "...¡Así que no te preocupes por eso,{w=0.2} tonto!"
+            n 3fwlsm "¡No me cuesta nada!"
     else:
 
         if Natsuki.isEnamored(higher=True):
-            n 2nslss "Man...{w=0.75}{nw}"
-            extend 2fchgnl " you make it sound like I had to put effort in or something!"
-            n 1fcssmlsbl "Ahaha."
+            n 2nslss "Viejo...{w=0.75}{nw}"
+            extend 2fchgnl " ¡haces que suene como si tuviera que esforzarme o algo así!"
+            n 1fcssmlsbl "Jajaja."
             n 4ullss "Nah,{w=0.75}{nw}"
-            extend 3fcsss " it's nothing."
-            n 1unmbo "Being a little thoughtful is what {i}most{/i} people deserve,{w=0.2} at least.{w=1}{nw}"
-            extend 2flrca " I kinda just consider that being a decent person."
-            n 2ulraj "That being said though,{w=0.2} [player]."
-            n 1fcscal "I don't mind putting in a bit more for you..."
-            n 4fsqssl "...But only a {i}bit{/i}.{w=0.75}{nw}"
-            extend 4fchsml " Ehehe."
+            extend 3fcsss " no es nada."
+            n 1unmbo "Ser un poco atenta es lo que {i}la mayoría{/i} de la gente merece,{w=0.2} al menos.{w=1}{nw}"
+            extend 2flrca " Yo medio considero eso ser una persona decente."
+            n 2ulraj "Dicho esto,{w=0.2} [player]."
+            n 1fcscal "No me importa esforzarme un poco más por ti..."
+            n 4fsqssl "...Pero solo un {i}poco{/i}.{w=0.75}{nw}"
+            extend 4fchsml " Jejeje."
 
             if Natsuki.isLove(higher=True):
-                n 1fchgnl "Love you too,{w=0.2} [player]~!"
+                n 1fchgnl "¡Te amo también,{w=0.2} [player]~!"
             else:
 
-                n 1fchbgl "Any time,{w=0.2} [player]!"
+                n 1fchbgl "¡Cuando quieras,{w=0.2} [player]!"
         else:
 
-            n 2tnmpuleqm "Eh?{w=0.75}{nw}"
-            extend 2tnmajl " Thoughtful?"
-            n 1fllbglesssbl "W-{w=0.2}well...{w=0.75}{nw}"
-            extend 4fchbglsbl " yeah!{w=0.75}{nw}"
-            extend 4fsrdvlsbl " At least I {i}like{/i} to think so, anyway."
-            n 3unmbo "It's not like it's much to ask though.{w=1}{nw}"
-            extend 3nllsssbr " Being thoughtful,{w=0.2} I mean."
-            n 1ulrbosbr "Honestly,{w=0.5}{nw}"
-            extend 2tlrcasbr " it's really the {i}least{/i} anyone can expect."
-            n 2uchgn "But hey,{w=0.2} I'll take it!"
-            n 2fchsm "You're welcome,{w=0.2} [player]!"
+            n 2tnmpuleqm "¿Eh?{w=0.75}{nw}"
+            extend 2tnmajl " ¿Atenta?"
+            n 1fllbglesssbl "B-{w=0.2}bueno...{w=0.75}{nw}"
+            extend 4fchbglsbl " ¡sí!{w=0.75}{nw}"
+            extend 4fsrdvlsbl " Al menos {i}me gusta{/i} pensar eso,{w=0.2} de todas formas."
+            n 3unmbo "Aunque no es mucho pedir.{w=1}{nw}"
+            extend 3nllsssbr " Ser atenta,{w=0.2} quiero decir."
+            n 1ulrbosbr "Honestamente,{w=0.5}{nw}"
+            extend 2tlrcasbr " es realmente lo {i}menos{/i} que cualquiera puede esperar."
+            n 2uchgn "¡Pero oye,{w=0.2} lo tomaré!"
+            n 2fchsm "¡De nada,{w=0.2} [player]!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.thoughtful
     return

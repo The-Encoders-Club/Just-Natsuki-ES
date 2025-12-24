@@ -1,3 +1,5 @@
+#Jueves, 11 de Diciembre - 2025, traducción en curso por иeo — (venom snake)
+
 label ch30_autoload:
 
     scene black
@@ -341,38 +343,38 @@ label call_next_topic(show_natsuki=True):
                     store.confused_emote = jn_utils.getRandomConfusedEmoticon()
 
                     ENAMORED_NOTIFY_MESSAGES = [
-                            "[player]! [player]! Wanna talk? [happy_emote]",
-                            "Hey! You got a sec? [happy_emote]",
-                            "Wanna talk? [happy_emote]",
-                            "[player]! I got something! [happy_emote]",
-                            "Heeey! Wanna talk?",
-                            "Talk to meeee! [angry_emote]",
-                            "I'm talking to you, dummy! [tease_emote]"
+                            "¡¡[player]! ¡[player]! ¿Quieres hablar? [happy_emote]",
+                            "¡Hola! ¿Tienes un segundo? [happy_emote]",
+                            "¿Quieres hablar? [happy_emote]",
+                            "¡¡[player]! ¡Tengo algo! [happy_emote]",
+                            "¡Heeey! ¿Quieres hablar?",
+                            "¡Habla conmigooo! [angry_emote]",
+                            "¡Te estoy hablando, muñeco! [tease_emote]"
                         ]
                     AFFECTIONATE_NOTIFY_MESSAGES = [
-                            "Wanna talk?",
-                            "[player]! You wanna talk?",
-                            "Hey! Hey! Talk to me! [angry_emote]",
-                            "Hey dummy! I'm talking to you!",
-                            "[player]! I just thought of something! [confused_emote]",
-                            "[player]! I wanna talk to you!",
-                            "I just thought of something, [player]!"
+                            "¿Quieres hablar?",
+                            "¡¡[player]! ¿Podemos hablar?",
+                            "Hey! Hey! ¡Habla conmigo! [angry_emote]",
+                            "¡Hey muñeco! ¡Te estoy hablando!",
+                            "¡[player]! ¡Solo pensé en algo! [confused_emote]",
+                            "¡[player]! ¡Quiero hablar contigo!",
+                            "¡Solo pensé en algo, [player]!"
                         ]
                     HAPPY_NOTIFY_MESSAGES = [
-                            "[player]! Did you have a sec?",
-                            "[player]? Can I borrow you?",
-                            "Hey! Come here a sec?",
-                            "Hey! I wanna talk!",
-                            "You there, [player]?"
+                            "¡[player]! ¿Tienes un segundo?",
+                            "¿[player]? ¿Puedo robarte un momento?",
+                            "¡Hey! ¿Vienes un segundo?",
+                            "¡Hey! ¡Quiero hablar!",
+                            "¿Estás ahí, [player]?"
                         ]
                     NORMAL_NOTIFY_MESSAGES = [
-                            "You wanna talk?",
-                            "Hey... are you busy?",
-                            "[player]? Did you have a sec?",
-                            "Can I borrow you for a sec?",
-                            "You there, [player]?",
-                            "Hey... you still there?",
-                            "[player]? Are you there?"
+                            "¿Podemos hablar?",
+                            "Oye... ¿estás ocupado?",
+                            "¿[player]? Ven aquí un segundo.",
+                            "¿Puedes venir un momento, [player]?",
+                            "¿Estás ahí, [player]?",
+                            "Oye... ¿sigues ahí?",
+                            "¿[player]? ¿Estás ahí?"
                         ]
 
                     if Natsuki.isNormal(higher=True):
@@ -620,67 +622,67 @@ label talk_menu:
 
         if Natsuki.isEnamored(higher=True):
             _talk_flavor_text = renpy.substitute(random.choice([
-                "What's up,{w=0.1} [player]?",
-                "What's on your mind,{w=0.1} [player]?",
-                "Something up,{w=0.1} [player]?",
-                "You wanna talk?{w=0.2} Ehehe.",
-                "I'd love to talk!",
-                "I always love talking to you,{w=0.1} [player]!",
-                "[player]!{w=0.2} What's up?",
-                "[player]!{w=0.2} What's on your mind?",
-                "Ooh!{w=0.2} What did you wanna talk about?",
-                "I'm all ears,{w=0.1} [player]!",
-                "I've always got time for you,{w=0.1} [player]!",
-                "Hey!{w=0.2} What's up,{w=0.2} [player]?",
-                "What have you got for me?{w=0.2} Ehehe.",
-                "[player]!{w=0.2} What's new?",
-                "[player]!{w=0.2} You wanna talk?",
-                "Shoot,{w=0.2} [player]!{w=0.3} Ehehe.",
-                "Shoot,{w=0.2} [player]!",
-                "Oh!{w=0.2} Oh!{w=0.2} You got something for me?",
-                "Talk to me,{w=0.2} [player]!{w=0.3} Ehehe."
+                "¿Que pasa,{w=0.1} [player]?",
+                "¿Qué tienes en mente,{w=0.1} [player]?",
+                "¿Algo tienes en mente, {w=0.1} [player]?",
+                "¿Quieres hablar?{w=0.2} ~Jejeje.",
+                "¡Me encantaría hablar!",
+                "¡Siempre me encanta hablar contigo,{w=0.1} [player]!",
+                "¡[player]!{w=0.2} ¿Qué sucede?",
+                "¡[player]!{w=0.2} ¿Qué tienes en mente?",
+                "~¡Ooh!{w=0.2} ¿De qué quieres hablar?",
+                "¡Soy toda oídos,{w=0.1} [player]!",
+                "¡Siempre tengo tiempo para ti,{w=0.1} [player]!",
+                "¡Hey!{w=0.2} ¿Qué sucede,{w=0.2} [player]?",
+                "¿Qué tienes para mí?{w=0.2} Jejeje.",
+                "¡[player]!{w=0.2} ¿Qué hay de nuevo?",
+                "¡[player]!{w=0.2} ¿Quieres hablar?",
+                "¡Escupelo,{w=0.2} [player]!{w=0.3} Jejeje.",
+                "¡Escupelo,{w=0.2} [player]!",
+                "¡Oh!{w=0.2} Oh!{w=0.2} ¿Tienes algo para mí?",
+                "¡Habla conmigo,{w=0.2} [player]!{w=0.3} Jejeje."
             ]))
 
         elif Natsuki.isNormal(higher=True):
             _talk_flavor_text = renpy.substitute(random.choice([
-                "What's up?",
-                "What's on your mind?",
-                "What's happening?",
-                "Something on your mind?",
-                "Oh?{w=0.2} You wanna talk?",
-                "Huh?{w=0.2} What's up?",
-                "You wanna share something?",
-                "What's new,{w=0.1} [player]?",
-                "'Sup,{w=0.1} [player]?",
-                "You wanna talk?",
-                "Hey,{w=0.2} [player]!"
+                "¿Qué pasa?",
+                "¿Qué tienes en mente?",
+                "¿Qué está pasando?",
+                "¿Algo en mente?",
+                "~¿Oh?{w=0.2} ¿Quieres hablar?",
+                "~¿Huh?{w=0.2} ¿Qué pasa?",
+                "¿Quieres compartir algo conmigo?",
+                "¿Qué hay de nuevo,{w=0.1} [player]?",
+                "'~¿Sip,{w=0.1} [player]?",
+                "¿Quieres hablar?",
+                "¡Oye,{w=0.2} [player]!"
             ]))
 
         elif Natsuki.isDistressed(higher=True):
             _talk_flavor_text = renpy.substitute(random.choice([
-                "What do you want?",
-                "What is it?",
-                "Make it quick.",
-                "What now?",
-                "What do you want now?",
-                "What is it this time?",
-                "Yeah?{w=0.2} What?",
-                "What now?",
-                "This better be good."
+                "¿Qué quieres?",
+                "¿Qué es?",
+                "Hazlo rápido.",
+                "¿Ahora qué?",
+                "¿Qué quieres ahora?",
+                "¿Qué es esto esta vez?",
+                "¿Si?{w=0.2} ¿Qué?",
+                "¿Qué quieres ahora, eh?",
+                "Más vale que sea algo bueno."
             ]))
 
         else:
             _talk_flavor_text = renpy.substitute(random.choice([
                 "...",
                 "...?",
-                "What?",
-                "Just talk already.",
-                "Spit it out.",
-                "Start talking.",
-                "Get it over with.",
-                "What do {i}you{/i} want?",
-                "Get on with it.",
-                "Talk."
+                "¿Qué?",
+                "Sólo habla ya.",
+                "Sólo escupelo ya.",
+                "Empieza a hablar.",
+                "No sigas con eso.",
+                "¿Qué es lo {i}tú{/i} quieres ahora?",
+                "Sigue adelante con eso.",
+                "Habla."
             ]))
 
         jnShowNatsukiTalkMenu()
@@ -688,35 +690,35 @@ label talk_menu:
 
     menu:
         n "[_talk_flavor_text]"
-        "Let's talk about...":
+        "Vamos a hablar de...":
 
             call player_select_topic
-        "Tell me again about...":
+        "Háblame de nuevo sobre...":
 
             call player_select_topic (is_repeat_topics=True)
 
-        "I love you, [n_name]!" if Natsuki.isLove(higher=True) and persistent.jn_player_love_you_count > 0:
+        "Te amo, [n_name]!" if Natsuki.isLove(higher=True) and persistent.jn_player_love_you_count > 0:
             $ push("talk_i_love_you")
             jump call_next_topic
 
-        "I feel..." if Natsuki.isHappy(higher=True):
+        "Yo siento..." if Natsuki.isHappy(higher=True):
             jump player_admissions_start
 
-        "I want to tell you..." if Natsuki.isHappy(higher=True):
+        "Quiero decirte..." if Natsuki.isHappy(higher=True):
             jump player_compliments_start
-        "I want to say sorry...":
+        "Quiero decir lo siento...":
 
             jump player_apologies_start
 
-        "About your outfit..." if Natsuki.isHappy(higher=True) and persistent.jn_custom_outfits_unlocked:
+        "Sobre tu atuendo..." if Natsuki.isHappy(higher=True) and persistent.jn_custom_outfits_unlocked:
             jump outfits_menu
 
-        "Goodbye..." if Natsuki.isAffectionate(higher=True):
+        "Adiós..." if Natsuki.isAffectionate(higher=True):
             jump farewell_menu
 
-        "Goodbye." if Natsuki.isHappy(lower=True):
+        "Adiós." if Natsuki.isHappy(lower=True):
             jump farewell_start
-        "Nevermind.":
+        "No importa.":
 
             $ Natsuki.resetLastIdleCall()
             $ Natsuki.resetLastMenuCall()
@@ -782,9 +784,9 @@ label farewell_menu:
 
         available_farewell_options = jn_farewells.getFarewellOptions()
         available_farewell_options.sort(key = lambda option: option[0])
-        available_farewell_options.append(("Goodbye.", "farewell_start"))
+        available_farewell_options.append(("Adiós.", "farewell_start"))
 
-    call screen scrollable_choice_menu(available_farewell_options, ("Go back", None))
+    call screen scrollable_choice_menu(available_farewell_options, ("Volver", None))
     $ Natsuki.setForceQuitAttempt(False)
 
     if isinstance(_return, basestring):
@@ -796,11 +798,11 @@ label farewell_menu:
 
 label outfits_menu:
     call screen scrollable_choice_menu([
-        ("Can you wear an outfit for me?", "outfits_wear_outfit"),
-        ("Can I suggest a new outfit?", "outfits_suggest_outfit"),
-        ("Can you forget about an outfit I suggested?", "outfits_remove_outfit"),
-        ("Can you search again for new items?", "outfits_reload")],
-        ("Go back", None),
+        ("¿Puedes usar un atuendo para mí?, "outfits_wear_outfit"),
+        ("¿Puedo sugerir un nuevo atuendo?", "outfits_suggest_outfit"),
+        ("¿Puedes olvidarte de un atuendo que sugerí?", "outfits_remove_outfit"),
+        ("¿Puedes buscar nuevamente nuevos artículos?", "outfits_reload")],
+        ("Volver", None),
         400,
         "mod_assets/icons/outfits.png")
 
@@ -824,7 +826,7 @@ label extras_menu:
 
         avaliable_extras_options.sort(key = lambda option: option[0])
 
-    call screen scrollable_choice_menu(avaliable_extras_options, ("Nevermind.", None))
+    call screen scrollable_choice_menu(avaliable_extras_options, ("No importa.", None))
 
     if isinstance(_return, basestring):
         $ renpy.jump(_return)
@@ -860,43 +862,43 @@ label try_force_quit:
 
 
         if Natsuki.isAffectionate(higher=True):
-            n 2ccsem "W-{w=0.2}wait,{w=0.5}{nw}"
-            extend 2knmflsbl " what?{w=0.75}{nw}"
-            extend 5clrunlsbl " Can you at {i}least{/i} say goodbye first,{w=0.2} [player]?"
+            n 2ccsem "E-{w=0.2}espera,{w=0.5}{nw}"
+            extend 2knmflsbl " qué?{w=0.75}{nw}"
+            extend 5clrunlsbl " ¿Puedes {i}al menos decir{/i} adiós primero,{w=0.2} [player]?"
 
         elif Natsuki.isNormal(higher=True):
-            n 4kskem "H-{w=0.2}hey!{w=0.75}{nw}"
-            extend 4kllflsbl " Y-{w=0.2}you aren't just going to leave like that,{w=0.5}{nw}"
-            extend 4ksqunsbl " are you?"
+            n 4kskem "¡O-{w=0.2}oye!{w=0.75}{nw}"
+            extend 4kllflsbl " T-{w=0.2}tú, no solo vas a irte así,{w=0.5}{nw}"
+            extend 4ksqunsbl " ¿verdad?"
 
         elif Natsuki.isDistressed(higher=True):
-            n 2fsqpu "...Really?{w=0.75}{nw}"
-            extend 2fcsupsbr " I don't even get a 'goodbye' now?"
+            n 2fsqpu "...De verdad?{w=0.75}{nw}"
+            extend 2fcsupsbr " ¿Ni siquiera un 'adiós' ahora?"
         else:
 
             n 2fsqsftsb "..."
 
         menu:
-            "Nevermind.":
+            "No importa.":
 
                 if Natsuki.isAffectionate(higher=True):
-                    n 4kllssl "T-{w=0.2}thanks,{w=0.2} [player].{w=1}{nw}"
-                    n 1tllss "Now,{w=0.2} where was I...?{w=1}{nw}"
-                    extend 1unmbo " Oh,{w=0.2} right.{w=1}{nw}"
+                    n 4kllssl "G-{w=0.2}gracias,{w=0.2} [player].{w=1}{nw}"
+                    n 1tllss "Ahora,{w=0.2} ¿Donde estaba yo?{w=1}{nw}"
+                    extend 1unmbo " ~Ah,{w=0.2} cierto.{w=1}{nw}"
 
                 elif Natsuki.isNormal(higher=True):
-                    n 2flleml "G-{w=0.2}good!{w=1}{nw}"
-                    extend 2kllpol " Good...{w=1}{nw}"
-                    n 1tslpu "Now...{w=0.3} what was I saying again?{w=0.5}{nw}"
-                    extend 1nnmbo " Oh,{w=0.2} right.{w=1}{nw}"
+                    n 2flleml "¡B-{w=0.2}bueno!{w=1}{nw}"
+                    extend 2kllpol " Bueno...{w=1}{nw}"
+                    n 1tslpu "Ahora...{w=0.3} ¿Qué fue lo que dije de nuevo?{w=0.5}{nw}"
+                    extend 1nnmbo " ~Ah,{w=0.2} cierto.{w=1}{nw}"
 
                 elif Natsuki.isDistressed(higher=True):
-                    n 1fsqfr "...Thank you.{w=1}{nw}"
-                    n 1fslpu "As I was {i}saying{/i}...{w=1}{nw}"
+                    n 1fsqfr "...gracias.{w=1}{nw}"
+                    n 1fslpu "Cómo estaba yo {i}diciendo{/i}...{w=1}{nw}"
                 else:
 
-                    n 1fcsfr "Whatever.{w=1}{nw}"
-                    n 2fsqsl "{cps=7.5}As I was saying.{/cps}{w=1}{nw}"
+                    n 1fcsfr "Tal vez.{w=1}{nw}"
+                    n 2fsqsl "{cps=7.5}Como estaba diciendo.{/cps}{w=1}{nw}"
 
                 $ Natsuki.setForceQuitAttempt(False)
                 $ Natsuki.removeApology(jn_apologies.ApologyTypes.sudden_leave)
@@ -908,27 +910,27 @@ label try_force_quit:
 
                 hide screen hkb_overlay
                 if Natsuki.isAffectionate(higher=True):
-                    n 4kwmem "Come on,{w=0.2} [player]...{w=1}{nw}"
+                    n 4kwmem "Vamos,{w=0.2} [player]...{w=1}{nw}"
                     play audio glitch_c
                     stop music
                     n 2kcsup "...!{nw}"
 
                 elif Natsuki.isNormal(higher=True):
-                    n 4fwmun "...Really,{w=0.2} [player]?{w=1}{nw}"
+                    n 4fwmun "...De verdad,{w=0.2} [player]?{w=1}{nw}"
                     play audio glitch_c
                     stop music
-                    n 2kcsfu "Hnnng-!{nw}"
+                    n 2kcsfu "¡Hnnng-!{nw}"
 
                 elif Natsuki.isDistressed(higher=True):
-                    n 2fslun "Don't let the door hit you on the way out.{w=1}{nw}"
-                    extend 2fsqem " Jerk.{w=1}{nw}"
+                    n 2fslun "No dejes que la puerta te golpee al salir.{w=1}{nw}"
+                    extend 2fsqem " Imbécil.{w=1}{nw}"
                     play audio glitch_c
                     stop music
-                    n 2fcsan "Nnngg-!{nw}"
+                    n 2fcsan "¡Nnngg-!{nw}"
                 else:
 
                     n 1fslun "Heh.{w=1}{nw}"
-                    extend 1fsqfr "...Maybe you {i}shouldn't{/i} come back.{w=1}{nw}"
+                    extend 1fsqfr "...Tal vez {i}tú no deberías{/i} volver.{w=1}{nw}"
                     play audio glitch_c
                     stop music
                     n 1fcsfr "...{nw}"
@@ -948,4 +950,7 @@ label try_force_quit:
                 show glitch_garbled_b zorder JN_GLITCH_ZORDER with hpunch
                 hide glitch_garbled_b
                 $ renpy.jump("quit")
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+                
+#Bueno, ahora que estamos aquí solos, dejaré un par de canciones listadas, sólo porque si y por que puedo, xD.
+#Metal Gear Solid V: The Phantom Pain Licensed Soundtrack: Spandau Ballet - True, Girls on Film (2010 Remaster) - Duran Duran, I Was Made for Lovin' You - KISS, Separate Ways - Journey, Friday I'm In Love - The Cure, INVISIBLE - Duran Duran, "Gloria" -1982- Metal Gear Solid V: The Phantom Pain Soundtrack, Sins of the Father - Donna Burke, Metal Gear Solid V - Soundtrack - Here's To You, A Phantom Pain - Ludvig Forssell.
+#Una playlist al estilo y vibras de Metal Gear Solid V: The Phantom Pain. See you soon! 

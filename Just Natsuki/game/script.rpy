@@ -11,4 +11,5 @@ label endgame(pause_length=4.0):
     pause pause_length
     $ quick_menu = True
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

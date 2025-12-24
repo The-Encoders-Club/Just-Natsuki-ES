@@ -6,4 +6,5 @@ python early:
         return
 
     renpy.execution.check_infinite_loop = dummy
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

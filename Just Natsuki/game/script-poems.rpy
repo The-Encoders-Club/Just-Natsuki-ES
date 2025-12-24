@@ -232,56 +232,56 @@ init python in jn_poems:
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_birthday_cakes_candles",
-        display_name="Cakes and Candles",
+        display_name="Pasteles y Velas",
         holiday_type=jn_events.JNHolidayTypes.player_birthday,
         affinity_range=(jn_affinity.HAPPY, None),
         poem=(
-            "Another cake, another candle\n"
-            "Another year that you've just handled\n"
-            "Some people dread this special day\n"
-            "And push the thought so far away\n"
-            "But I don't think it's bad!\n"
+            "Otro pastel, otra vela\n"
+            "Otro año que has superado\n"
+            "Algunos temen este día especial\n"
+            "Y empujan el pensamiento lejos\n"
+            "¡Pero no creo que sea malo!\n"
             "\n"
-            "Another gift, another guest\n"
-            "Another year you've tried your best\n"
-            "Some people cherish this special day\n"
-            "Talk, dance, party and play\n"
-            "How could you think that's sad?\n"
+            "Otro regalo, otro invitado\n"
+            "Otro año que diste lo mejor de ti\n"
+            "Algunos atesoran este día especial\n"
+            "Hablan, bailan, festejan y juegan\n"
+            "¿Cómo podrías pensar que es triste?\n"
             "\n"
-            "No more doubts, no more fears\n"
-            "Ignore the numbers, forget the years\n"
-            "This poem is your birthday cheers\n"
+            "No más dudas, no más miedos\n"
+            "Ignora los números, olvida los años\n"
+            "Este poema es tu felicitación\n"
             "\n"
-            "Now grab yourself a plate!\n"
+            "¡Ahora sírvete un plato!\n"
         ),
         paper="pink_floral"
     ))
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_christmas_evergreen",
-        display_name="Evergreen",
+        display_name="Siempre verde",
         holiday_type=jn_events.JNHolidayTypes.christmas_day,
         affinity_range=(jn_affinity.ENAMORED, None),
         poem=(
-            "It's\n" 
-            "Chilly and\n" 
-            "Cold outside\n" 
-            "But warm inside\n" 
-            "With you by my side.\n" 
-            "Listening to the cozy fire\n" 
-            "Sitting side by side together.\n" 
-            "Talking to one another, making\n" 
-            "New memories that shine brightly.\n" 
-            "Illuminating even the darkest of nights\n" 
-            "To allow weary travelers a guiding light\n" 
-            "A star guided path ahead in a stressful life.\n" 
-            "Previous troubles melt away in the hot cocoa\n" 
-            "That I hold tight as I tease you to find your own.\n" 
-            "Was always my favorite, but now, so more than ever\n" 
-            "As it tastes more sweet with new and fresh ingredients.\n" 
-            "The warmth I feel inside will outlast any amount of winter\n" 
-            "Because with you by my side\n" 
-            "I'm always ready for another.\n" 
+            "Hace\n" 
+            "Frío y\n" 
+            "Hiela afuera\n" 
+            "Pero cálido adentro\n" 
+            "Contigo a mi lado.\n" 
+            "Escuchando el fuego acogedor\n" 
+            "Sentados uno junto al otro.\n" 
+            "Hablando entre nosotros, creando\n" 
+            "Nuevos recuerdos que brillan intensamente.\n" 
+            "Iluminando incluso la noche más oscura\n" 
+            "Para dar al viajero cansado una luz guía\n" 
+            "Un camino guiado por estrellas en una vida estresante.\n" 
+            "Los problemas pasados se derriten en el chocolate caliente\n" 
+            "Que sostengo fuerte mientras te molesto para que encuentres el tuyo.\n" 
+            "Siempre fue mi favorito, pero ahora, más que nunca\n" 
+            "Pues sabe más dulce con ingredientes frescos y nuevos.\n" 
+            "El calor que siento por dentro durará más que cualquier invierno\n" 
+            "Porque contigo a mi lado\n" 
+            "Siempre estoy lista para otro.\n" 
         ),
         paper="festive",
         font_size=18,
@@ -290,32 +290,32 @@ init python in jn_poems:
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_christmas_gingerbread_house",
-        display_name="Gingerbread House",
+        display_name="Casa de pan de jengibre",
         holiday_type=jn_events.JNHolidayTypes.christmas_day,
         affinity_range=(jn_affinity.HAPPY, None),
         poem=(
-            "From a brittle gingerbread household Amy came\n"
-            "Disguised by colorful icing and confectionaries\n" 
-            "One that hid the shouts and all the arguments\n"
-            "One that hid in plain sight, opposed to spotlight\n"
+            "De un hogar de jengibre frágil Amy vino\n"
+            "Disfrazado por glaseado colorido y dulces\n" 
+            "Uno que escondía los gritos y todas las discusiones\n"
+            "Uno que se escondía a plena vista, opuesto a los reflectores\n"
             "\n"
-            "But where we come from doesn't define\n"
-            "Who we truly are deep on the inside\n"
-            "And sometimes all it takes is someone.\n"
-            "Someone new to remind you of more.\n"
+            "Pero de dónde venimos no define\n"
+            "Quiénes somos realmente en el interior\n"
+            "Y a veces todo lo que se necesita es alguien.\n"
+            "Alguien nuevo para recordarte que hay más.\n"
             "\n"
-            "A new friend to help decorate a tree.\n"
-            "An evergreen free for decoration\n"
-            "Eagerly awaiting two people\n"
-            "To coat it with ornaments and lights.\n"
+            "Un nuevo amigo para ayudar a decorar un árbol.\n"
+            "Un árbol siempreverde libre para decoración\n"
+            "Esperando ansiosamente a dos personas\n"
+            "Para cubrirlo con adornos y luces.\n"
             "\n"
-            "That tree a template of what's to come\n"
-            "A place where new memories can form\n"
-            "Where gingerbread can appear brittle\n"
-            "Without needing to lie, with honesty.\n"
+            "Ese árbol una plantilla de lo que vendrá\n"
+            "Un lugar donde nuevos recuerdos pueden formarse\n"
+            "Donde el jengibre puede parecer frágil\n"
+            "Sin necesidad de mentir, con honestidad.\n"
             "\n"
-            "Being welcomed without all the bells and whistles\n"
-            "As acceptance provides warmth in the coldest of winters\n"
+            "Siendo bienvenida sin campanas ni silbatos\n"
+            "Mientras la aceptación provee calor en el más frío de los inviernos\n"
         ),
         paper="festive",
         font_size=20
@@ -323,29 +323,29 @@ init python in jn_poems:
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_easter_sakura_in_bloom",
-        display_name="Sakura in Bloom",
+        display_name="Sakura en flor",
         holiday_type=jn_events.JNHolidayTypes.easter,
         affinity_range=(jn_affinity.HAPPY, None),
         poem=(
-            "Vibrant trees spring back anew\n"
-            "As fluorescent hues illuminate\n"
-            "The path for crowds to gather\n"
-            "Came to recognize life's splendor\n"
+            "Árboles vibrantes brotan de nuevo\n"
+            "Mientras matices fluorescentes iluminan\n"
+            "El camino para que las multitudes se reúnan\n"
+            "Vinieron a reconocer el esplendor de la vida\n"
             "\n"
-            "Before long the petals branch out\n"
-            "As they gently fly in the breeze\n"
-            "Until they reach the hand of another\n"
-            "And gently touch the lives of others\n"
+            "En poco tiempo los pétalos se ramifican\n"
+            "Mientras vuelan suavemente en la brisa\n"
+            "Hasta alcanzar la mano de otro\n"
+            "Y tocar suavemente las vidas de los demás\n"
             "\n"
-            "Some may think that their job is done\n"
-            "And while that may indeed be true\n"
-            "Their beauty continues to live on\n"
-            "Through the people who were touched\n"
+            "Algunos pueden pensar que su trabajo ha terminado\n"
+            "Y aunque eso pueda ser cierto\n"
+            "Su belleza continúa viviendo\n"
+            "A través de las personas que fueron tocadas\n"
             "\n"
-            "They take up the mantle to create anew\n"
-            "They sow the seeds and supply the water\n"
-            "To help usher in other forms of beauty\n"
-            "As a rainbow of flora emerge to shine\n"
+            "Toman el manto para crear de nuevo\n"
+            "Siembran las semillas y suministran el agua\n"
+            "Para ayudar a guiar otras formas de belleza\n"
+            "Mientras un arcoíris de flora emerge para brillar\n"
         ),
         paper="pink_floral",
         font_size=18,
@@ -354,32 +354,32 @@ init python in jn_poems:
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_natsuki_birthday_flight",
-        display_name="Flight",
+        display_name="Vuelo",
         holiday_type=jn_events.JNHolidayTypes.natsuki_birthday,
         affinity_range=(jn_affinity.ENAMORED, None),
         poem=(
-            "Climbing on top of a mountain doesn't make a hiker tall\n"
-            "But accomplishment of reaching that height says it all\n"
-            "Climbing up a ladder though is another thing altogether\n"
-            "But try as one reaches, clouds stay high dispersing weather\n"
+            "Subir a la cima de una montaña no hace alto a un excursionista\n"
+            "Pero el logro de alcanzar esa altura lo dice todo\n"
+            "Subir una escalera sin embargo es otra cosa completamente\n"
+            "Pero por más que uno se estire, las nubes siguen altas dispersando el clima\n"
             "\n"
-            "People who once dreamed of flight were looked upon with gall\n"
-            "Told that they should know their place and keep to being small\n"
-            "The two brothers looked upon birds flapping feather after feather\n"
-            "Until one day what was thought impossible was born together\n"
+            "A la gente que una vez soñó con volar se le miró con descaro\n"
+            "Se les dijo que conocieran su lugar y se mantuvieran pequeños\n"
+            "Los dos hermanos miraron a los pájaros batiendo pluma tras pluma\n"
+            "Hasta que un día lo que se pensaba imposible nació juntos\n"
             "\n"
-            "Those are both extraordinary feats, but both are measured differently\n"
-            "Be it stick, ruler, measuring tape, but how do we measure ability?\n"
-            "Growth comes in many forms and that's rather tough to truly gauge\n"
-            "So as calendars wizz on by, what is changed besides someone's age?\n"
+            "Esas son dos hazañas extraordinarias, pero ambas se miden diferente\n"
+            "Sea palo, regla, cinta métrica, ¿pero cómo medimos la habilidad?\n"
+            "El crecimiento viene en muchas formas y eso es difícil de medir\n"
+            "Así que mientras los calendarios pasan zumbando, ¿qué cambia además de la edad?\n"
             "\n"
-            "Kids are always told to expect a growth spurt, and they accept willingly\n"
-            "But nobody ever talks about how growth can hurt often without sympathy\n"
-            "People are simply much more than just in what they choose to engage\n"
-            "But others like to make assumptions and usher in unnecessary rage\n"
+            "A los niños siempre se les dice que esperen un estirón, y aceptan gustosos\n"
+            "Pero nadie habla nunca de cómo crecer puede doler a menudo sin simpatía\n"
+            "Las personas son mucho más que solo en lo que eligen participar\n"
+            "Pero a otros les gusta hacer suposiciones y traer rabia innecesaria\n"
             "\n"
-            "People are so much more than what their appearance may present\n"
-            "Stature can only say so much as opposed to what lies beneath pleasant\n"
+            "Las personas son mucho más de lo que su apariencia puede presentar\n"
+            "La estatura solo puede decir tanto opuesto a lo que yace agradable debajo\n"
         ),
         paper="notepad",
         font_size=16
@@ -387,32 +387,32 @@ init python in jn_poems:
 
     _m1_script0x2dpoems__registerPoem(JNPoem(
         reference_name="jn_natsuki_hallows_end",
-        display_name="Hallow's End",
+        display_name="Fin de Todos los Santos",
         holiday_type=jn_events.JNHolidayTypes.halloween,
         affinity_range=(jn_affinity.LOVE, None),
         poem=(
-            "When the month ends, the costumes come out\n"
-            "Children dress up and run door to door with glee\n"
-            "Or be it the haunted houses ready to cause a shout\n"
-            "This holiday holds something for everyone to see\n"
+            "Cuando el mes termina, los disfraces salen\n"
+            "Los niños se visten y corren de puerta en puerta con alegría\n"
+            "O sean las casas embrujadas listas para causar un grito\n"
+            "Esta festividad tiene algo para que todos vean\n"
             "\n"
-            "In her case, not so much as she will commonly pout\n"
-            "As common festivities aren't always simple and carefree\n"
-            "So when she sees everyone at play she can only doubt\n"
-            "And wish that things could be different, that is her plea\n"
+            "En su caso, no tanto, ya que comúnmente hará pucheros\n"
+            "Pues las festividades comunes no siempre son simples y despreocupadas\n"
+            "Así que cuando ve a todos jugando solo puede dudar\n"
+            "Y desear que las cosas pudieran ser diferentes, esa es su súplica\n"
             "\n"
-            "Through the lamenting, she's ready to let down her guard\n"
-            "She's ready to laugh, yell, jump in horror and scream.\n"
-            "All things that previously once left her afraid and scarred.\n"
-            "But experiencing all of that in a much safer space? A dream.\n"
+            "A través del lamento, está lista para bajar la guardia\n"
+            "Está lista para reír, gritar, saltar de horror y chillar.\n"
+            "Todas cosas que antes la dejaban asustada y marcada.\n"
+            "¿Pero experimentar todo eso en un espacio mucho más seguro? Un sueño.\n"
             "\n"
-            "So take her on that journey, be her accompanying bodyguard\n"
-            "And let her experience what she always desired her eyes agleam\n"
-            "She'll let you in and together she'll be free with sadness to discard\n"
-            "Her face shining through the darkness, the holiday now redeemed\n"
+            "Así que llévala en ese viaje, sé su guardaespaldas acompañante\n"
+            "Y déjala experimentar lo que siempre deseó con los ojos brillantes\n"
+            "Ella te dejará entrar y juntos será libre para descartar la tristeza\n"
+            "Su rostro brillando a través de la oscuridad, la festividad ahora redimida\n"
             "\n"
-            "So applying some effort and being patient with her is no trick.\n"
-            "Because a smile from her is worth more than any received treat!\n"
+            "Así que aplicar un poco de esfuerzo y ser paciente con ella no es truco.\n"
+            "¡Porque una sonrisa de ella vale más que cualquier trato recibido!\n"
         ),
         paper="spooky",
         font_size=18
@@ -453,14 +453,14 @@ screen poem_view(poem, pre_click_afm):
             null height 60
             text "[poem.poem]" style "poem_text" size poem.font_size text_align poem.text_align
             null height 50
-
-    vbar value YScrollValue(viewport="poem_viewport") style "poem_vbar"
-
-
-    vbox:
-        xpos 1056
-        ypos 10
-        textbutton _("Done"):
+ 
+     vbar value YScrollValue(viewport="poem_viewport") style "poem_vbar"
+ 
+ 
+     vbox:
+         xpos 1056
+         ypos 10
+         textbutton _("Listo"):
             style "hkbd_button"
             action [
                 Hide(

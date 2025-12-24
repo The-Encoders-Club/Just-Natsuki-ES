@@ -254,14 +254,14 @@ label idle_twitch_playing:
 
     n 1tnmpueqm "...?{w=1}{nw}"
     show prop wintendo_twitch_held free
-    n 1unmflesu "Oh!{w=1}{nw}"
-    extend 1fchbgsbr " What's up,{w=0.2} [player]?"
+    n 1unmflesu "¡Oh!{w=1}{nw}"
+    extend 1fchbgsbr " ¿Qué pasa,{w=0.2} [player]?"
 
     if random.choice([True, False]):
-        n 1fllsssbr "Just gotta save real quick..."
+        n 1fllsssbr "Solo tengo que guardar rápido..."
     else:
 
-        n 1fsrsssbr "Just give me a second here..."
+        n 1fsrsssbr "Solo dame un segundo..."
 
     show natsuki gaming
     $ jnPause(0.1)
@@ -290,14 +290,14 @@ label idle_reading_parfait_girls:
 
     n 1tlrbo "...{w=1}{nw}"
     n 1tnmboeqm "...?{w=1}{nw}"
-    n 1unmflesu "Oh!{w=0.75}{nw}"
-    extend 1fchbgsbl " Hey!"
+    n 1unmflesu "¡Oh!{w=0.75}{nw}"
+    extend 1fchbgsbl " ¡Hola!"
 
     if random.choice([True, False]):
-        n 1fslsssbl "Let me just bookmark this real quick..."
+        n 1fslsssbl "Déjame marcar esto muy rápido..."
     else:
 
-        n 1fcssssbl "Just gotta find a good stopping point here..."
+        n 1fcssssbl "Solo tengo que encontrar un buen punto para parar..."
 
     show natsuki reading
     $ jnPause(0.1)
@@ -334,17 +334,17 @@ label idle_reading_renpy_for_dummies:
 
     n 1fdwbo "...{w=1}{nw}"
     n 1tnmboeqm "...?{w=1}{nw}"
-    n 1unmflesu "Oh!{w=0.75}{nw}"
-    extend 1nlrsssbr " Hey.{w=1}{nw}"
-    extend 1nsrsssbr " Just let me finish up here real quick."
+    n 1unmflesu "¡Oh!{w=0.75}{nw}"
+    extend 1nlrsssbr " Hola.{w=1}{nw}"
+    extend 1nsrsssbr " Solo déjame terminar aquí rápido."
 
     if random.choice([True, False]):
         n 1nsrbosbr "..."
-        n 1nnmaj "...And no.{w=1}{nw}"
-        extend 1fslpo " The book still sucks."
+        n 1nnmaj "...Y no.{w=1}{nw}"
+        extend 1fslpo " El libro todavía apesta."
     else:
 
-        n 1fcsflsbr "None of this crap was making any sense,{w=0.2} a-{w=0.2}anyway."
+        n 1fcsflsbr "Nada de esta basura tenía sentido,{w=0.2} d-{w=0.2}de todos modos."
 
     show natsuki 1fcspo
     $ jnPause(0.1)
@@ -377,21 +377,21 @@ label idle_reading_a_la_mode:
     $ jnClickToContinue(silent=False)
 
     if random.choice([True, False]):
-        n 1unmaj "Ah!{w=1}{nw}"
-        extend 1unmbg " [player]!{w=1}{nw}"
-        extend 1fcsbg " Perfect timing."
-        n 1fsqsm "I {i}juuuust{/i} finished that chapter~.{w=1.25}{nw}"
-        extend 1fchsm " Ehehe."
+        n 1unmaj "¡Ah!{w=1}{nw}"
+        extend 1unmbg " ¡[player]!{w=1}{nw}"
+        extend 1fcsbg " Justo a tiempo."
+        n 1fsqsm "{i}Juuuusto{/i} terminé ese capítulo~.{w=1.25}{nw}"
+        extend 1fchsm " Jejeje."
     else:
 
-        n 1tnmpu "Huh?{w=1}{nw}"
-        extend 1unmajl " Oh!{w=0.75}{nw}"
-        extend 1nlrsslsbl " Heh."
-        n 1nsrsssbl "I...{w=1}{nw}"
-        extend 1nslsssbl " kinda got distracted.{w=0.75}{nw}"
-        extend 1fspgs " But man,{w=0.2} this is a good read!"
-        n 1fcsbg "You have no {w=0.3}{i}idea{/i}{w=0.3} what you're missing out on,{w=0.2} [player].{w=0.75}{nw}"
-        extend 1fsqsm " Ehehe."
+        n 1tnmpu "¿Eh?{w=1}{nw}"
+        extend 1unmajl " ¡Oh!{w=0.75}{nw}"
+        extend 1nlrsslsbl " Je."
+        n 1nsrsssbl "Yo...{w=1}{nw}"
+        extend 1nslsssbl " me distraje un poco.{w=0.75}{nw}"
+        extend 1fspgs " Pero hombre,{w=0.2} ¡esta es una buena lectura!"
+        n 1fcsbg "No tienes {w=0.3}{i}idea{/i}{w=0.3} de lo que te estás perdiendo,{w=0.2} [player].{w=0.75}{nw}"
+        extend 1fsqsm " Jejeje."
 
     show natsuki 1fcssm
     $ jnPause(0.1)
@@ -415,20 +415,20 @@ label idle_reading_step_by_step:
     $ Natsuki.setIsReadingToRight(False)
     $ jnClickToContinue(silent=False)
 
-    n 1tnmpu "Eh?{w=1.25}{nw}"
-    extend 1unmfllesu " Oh!{w=0.75}{nw}"
-    extend 1ullfllsbl " [player]!"
+    n 1tnmpu "¿Eh?{w=1.25}{nw}"
+    extend 1unmfllesu " ¡Oh!{w=0.75}{nw}"
+    extend 1ullfllsbl " ¡[player]!"
 
     if random.choice([True, False]):
         n 1nslbolsbl "..."
-        n 1nslajl "Just...{w=1}{nw}"
-        extend 1nslssl " give me a sec.{w=1}{nw}"
-        extend 1nsrcal " I was only just getting into that..."
+        n 1nslajl "Solo...{w=1}{nw}"
+        extend 1nslssl " dame un segundo.{w=1}{nw}"
+        extend 1nsrcal " Recién me estaba metiendo en eso..."
     else:
 
-        n 1fcsbglsbr "W-{w=0.2}what's up?{w=1}{nw}"
-        extend 1nsrsslsbr " I'll just...{w=1}{nw}"
-        extend 1nsrcal " bookmark this real quick."
+        n 1fcsbglsbr "¿Q-{w=0.2}qué pasa?{w=1}{nw}"
+        extend 1nsrsslsbr " Solo voy a...{w=1}{nw}"
+        extend 1nsrcal " marcar esto muy rápido."
 
     $ jnPause(0.1)
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -449,14 +449,14 @@ label idle_naptime:
     $ jnClickToContinue(silent=False)
 
     n 3kcsslesl "...Mmmnnn...{w=2}{nw}"
-    n 3kwlpuesl "...Nnnn?{w=1}{nw}"
-    extend 3ksqpul " Wha...?{w=2}{nw}"
-    n 3unmpulesu "...!{w=0.75}{nw}"
+    n 3kwlpuesl "...¿Nnnn?{w=1}{nw}"
+    extend 3ksqpul " ¿Qué...?{w=2}{nw}"
+    n 3unmpulesu "¡...!{w=0.75}{nw}"
     $ player_initial = jn_utils.getPlayerInitial()
     $ jn_globals.force_quit_enabled = True
-    n 4unmfllsbr "[player_initial]-[player]!{w=1}{nw}"
-    extend 4nsrunlsbr " Jeez..."
-    n 2nsrpol "What's up?"
+    n 4unmfllsbr "¡[player_initial]-[player]!{w=1}{nw}"
+    extend 4nsrunlsbr " Cielos..."
+    n 2nsrpol "¿Qué pasa?"
 
     $ jn_idles._concludeIdle()
 
@@ -467,20 +467,20 @@ label idle_daydreaming:
     if random.choice([True, False]):
         n 3flrpu "...{w=1.5}{nw}"
         n 3tnmpueqm "...?{w=1}{nw}"
-        n 4unmfleex "Oh!{w=0.75}{nw}"
-        extend 4fllsslsbr " H-{w=0.2}hey."
-        n 2fcsajlsbr "I-{w=0.2}I {i}totally{/i} wasn't spacing out or anything like that.{w=1}{nw}"
-        extend 2fsrposbr " In case you were wondering."
-        n 1fcsajsbr "A-{w=0.2}anyway."
+        n 4unmfleex "¡Oh!{w=0.75}{nw}"
+        extend 4fllsslsbr " H-{w=0.2}hola."
+        n 2fcsajlsbr "Y-{w=0.2}yo {i}totalmente{/i} no estaba distraída ni nada por el estilo.{w=1}{nw}"
+        extend 2fsrposbr " En caso de que te lo estuvieras preguntando."
+        n 1fcsajsbr "C-{w=0.2}como sea."
     else:
 
         n 3tlrca "...{w=1.5}{nw}"
-        n 3tnmpueqm "Huh?{w=1}{nw}"
-        extend 4unmemeex " Oh!{w=1}{nw}"
+        n 3tnmpueqm "¿Eh?{w=1}{nw}"
+        extend 4unmemeex " ¡Oh!{w=1}{nw}"
         extend 4nllfllsbr " [player]."
-        n 2fcspolsbr "Y-{w=0.2}you should {i}really{/i} know better than to interrupt someone thinking,{w=0.75}{nw}"
-        extend 2flrposbr " you know."
-        n 2fcsajsbr "Anyhow..."
+        n 2fcspolsbr "D-{w=0.2}deberías saber {i}realmente{/i} que no debes interrumpir a alguien pensando,{w=0.75}{nw}"
+        extend 2flrposbr " sabes."
+        n 2fcsajsbr "De todos modos..."
 
     $ jn_idles._concludeIdle()
 
@@ -493,25 +493,25 @@ label idle_poetry_attempts:
 
     if random.choice([True, False]):
         n 1tnmboeqm "...?{w=1.25}{nw}"
-        n 1unmajesu "Oh!{w=0.75}{nw}"
-        extend 1fchbgsbl " Hey,{w=0.2} [player]."
+        n 1unmajesu "¡Oh!{w=0.75}{nw}"
+        extend 1fchbgsbl " Hola,{w=0.2} [player]."
         n 1tnmsm "..."
-        n 1tnmpu "...What?{w=0.75}{nw}"
-        extend 1klrflsbl " What's that look for,{w=0.5}{nw}"
-        extend 1knmbosbl " all of a sudden?"
+        n 1tnmpu "¿...Qué?{w=0.75}{nw}"
+        extend 1klrflsbl " ¿A qué viene esa mirada,{w=0.5}{nw}"
+        extend 1knmbosbl " tan de repente?"
         n 1udwfll "..."
-        n 1udwemleex "A-{w=0.2}ah!{w=0.75}{nw}"
-        extend 1flremlsbl " T-{w=0.2}this?{w=0.75}{nw}"
-        extend 1fcsemlsbl " It's nothing!{w=1}{nw}"
-        extend 1fcscalsbl " N-{w=0.2}nothing at all."
+        n 1udwemleex "¡A-{w=0.2}ah!{w=0.75}{nw}"
+        extend 1flremlsbl " ¿E-{w=0.2}esto?{w=0.75}{nw}"
+        extend 1fcsemlsbl " ¡No es nada!{w=1}{nw}"
+        extend 1fcscalsbl " N-{w=0.2}nada en absoluto."
     else:
 
         n 1tlrca "...{w=1.25}{nw}"
         n 1tnmcaeqm "...?{w=0.75}{nw}"
-        n 1unmeml "A-{w=0.2}ah!{w=0.75}{nw}"
-        extend 1ulreml " [player]!"
-        n 1fcsajlsbr "J-{w=0.2}just a second!{w=1}{nw}"
-        extend 1fsrcalsbr " Jeez..."
+        n 1unmeml "¡A-{w=0.2}ah!{w=0.75}{nw}"
+        extend 1ulreml " ¡[player]!"
+        n 1fcsajlsbr "¡S-{w=0.2}solo un segundo!{w=1}{nw}"
+        extend 1fsrcalsbr " Cielos..."
 
     $ jnPause(0.1)
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -551,20 +551,20 @@ label idle_vibing_headphones:
         n 4tslboeqm "...{w=1}{nw}"
         n 4tnmboeqm "...?{w=0.75}{nw}"
         hide prop
-        n 1unmfllesh "O-{w=0.2}oh!{w=0.75}{nw}"
-        extend 1flrsslsbl " [player]!{w=0.75}{nw}"
-        extend 2fsrdvlsbl " Heh."
-        n 2fcsfllsbl "J-{w=0.2}just give me a second here."
+        n 1unmfllesh "¡O-{w=0.2}oh!{w=0.75}{nw}"
+        extend 1flrsslsbl " ¡[player]!{w=0.75}{nw}"
+        extend 2fsrdvlsbl " Je."
+        n 2fcsfllsbl "S-{w=0.2}solo dame un segundo aquí."
     else:
 
         n 1tsqcaeqm "...?{w=1}{nw}"
-        n 1uskemlesh "...!{w=0.75}{nw}"
+        n 1uskemlesh "¡...!{w=0.75}{nw}"
         hide prop
         $ player_initial = jn_utils.getPlayerInitial()
-        n 4fbkwrl "[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
-        extend 4fnmemlsbr " How long have you just been {i}sitting there{/i}?!{w=1.25}{nw}"
-        extend 2fslfllsbr " Jeez..."
-        n 2fcsposbr "At {i}least{/i} let me put these on charge first..."
+        n 4fbkwrl "¡[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
+        extend 4fnmemlsbr " ¡¿Cuánto tiempo has estado {i}sentado ahí{/i}?!{w=1.25}{nw}"
+        extend 2fslfllsbr " Cielos..."
+        n 2fcsposbr "Al {i}menos{/i} déjame poner esto a cargar primero..."
 
     $ jnPause(0.1)
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -584,17 +584,17 @@ label idle_whistling:
 
     if random.choice([True, False]):
         n 1tnmboeqm "...?{w=0.75}{nw}"
-        n 4unmfllesh "O-{w=0.2}oh!{w=0.75}{nw}"
-        extend 4cllssl " H-{w=0.2}hey [player]."
-        n 4tnmbo "What's up?"
+        n 4unmfllesh "¡O-{w=0.2}oh!{w=0.75}{nw}"
+        extend 4cllssl " H-{w=0.2}hola [player]."
+        n 4tnmbo "¿Qué pasa?"
     else:
 
         n 4tllbo "...{w=0.75}{nw}"
         n 4tnmboeqm "...?{w=0.75}{nw}"
-        n 4unmfllesh "A-{w=0.2}ah!{w=0.75}{nw}"
-        extend 2nlrsslsbl " Heh.{w=0.75}{nw}"
-        extend 2nllbolsbl " Hey."
-        n 2tnmbo "What's happening,{w=0.2} [player]?"
+        n 4unmfllesh "¡A-{w=0.2}ah!{w=0.75}{nw}"
+        extend 2nlrsslsbl " Je.{w=0.75}{nw}"
+        extend 2nllbolsbl " Hola."
+        n 2tnmbo "¿Qué sucede,{w=0.2} [player]?"
 
     $ jn_idles._concludeIdle()
 
@@ -614,22 +614,22 @@ label idle_laptop:
 
     if random.choice([True, False]):
         n 4tdwbo "...{w=0.75}{nw}"
-        n 4tnmfleqm "Eh?{w=0.75}{nw}"
+        n 4tnmfleqm "¿Eh?{w=0.75}{nw}"
         n 4unmaj "Oh.{w=0.75}{nw}"
-        extend 4ulraj " Hey [player].{w=0.75}{nw}"
-        extend 4cllsssbl " Let me just finish up here real quick..."
+        extend 4ulraj " Hola [player].{w=0.75}{nw}"
+        extend 4cllsssbl " Déjame terminar aquí rápido..."
         show natsuki gaming
     else:
 
         n 4cdwpu "...{w=0.75}{nw}"
         n 4cnmpueqm "...?{w=0.75}{nw}"
-        n 4unmfllesh "Huh?{w=0.75}{nw}"
-        extend 4unmgslesh " O-{w=0.2}oh!{w=0.75}{nw}"
-        extend 4fllbglsbr " [player]!"
-        n 4cslsssbr "Heh."
-        n 4ccsajsbr "I...{w=1}{nw}"
-        extend 4clrcasbr " kinda got distracted.{w=0.75}{nw}"
-        extend 4ccstrsbr " J-{w=0.2}just give me a sec to power down,{w=0.2} alright?"
+        n 4unmfllesh "¿Eh?{w=0.75}{nw}"
+        extend 4unmgslesh " ¡O-{w=0.2}oh!{w=0.75}{nw}"
+        extend 4fllbglsbr " ¡[player]!"
+        n 4cslsssbr "Je."
+        n 4ccsajsbr "Yo...{w=1}{nw}"
+        extend 4clrcasbr " me distraje un poco.{w=0.75}{nw}"
+        extend 4ccstrsbr " S-{w=0.2}solo dame un segundo para apagar,{w=0.2} ¿de acuerdo?"
         show natsuki 4ccscasbr
 
     $ jnPause(0.1)
@@ -655,21 +655,21 @@ label idle_math_attempts:
 
     if random.choice([True, False]):
         n 1tnmboeqm "...?{w=1.25}{nw}"
-        n 1uwdajesu "Oh!{w=0.75}{nw}"
-        extend 1fchbgsbl " H-{w=0.2}hey [player]."
-        n 2fslsssbl "I-{w=0.2}I was just..."
+        n 1uwdajesu "¡Oh!{w=0.75}{nw}"
+        extend 1fchbgsbl " H-{w=0.2}hola [player]."
+        n 2fslsssbl "Y-{w=0.2}yo solo estaba..."
         n 2fslunsbl "..."
-        n 2ccsfl "Ugh.{w=0.5} Nevermind.{w=0.75}{nw}"
-        extend 2fcsposbr " Math is such a dumb subject anyway."
+        n 2ccsfl "Ugh.{w=0.5} No importa.{w=0.75}{nw}"
+        extend 2fcsposbr " Matemáticas es una materia tonta de todos modos."
     else:
 
         n 1tlrca "...{w=1.25}{nw}"
         n 1tnmcaeqm "...?{w=0.75}{nw}"
-        n 1uwdwrlesh "A-{w=0.2}ah!{w=0.75}{nw}"
-        extend 1cdrbol " [player]!"
-        n 2fcsajlsbr "Y-{w=0.2}you {i}seriously{/i} need to learn how to speak up!{w=0.75}{nw}"
-        extend 2fcsfllsbr " Yeesh..."
-        n 2cslbosbr "At least let me clean up this mess..."
+        n 1uwdwrlesh "¡A-{w=0.2}ah!{w=0.75}{nw}"
+        extend 1cdrbol " ¡[player]!"
+        n 2fcsajlsbr "¡Tú {i}seriamente{/i} necesitas aprender hablar más fuerte!{w=0.75}{nw}"
+        extend 2fcsfllsbr " Cielos..."
+        n 2cslbosbr "Al menos déjame limpiar este desastre..."
 
     $ jnPause(0.1)
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -697,33 +697,33 @@ label idle_plantcare:
     if dialogue_choice == 1:
         n 1cdwbo "...{w=0.75}{nw}"
         n 1tnmboeqm "...?{w=0.75}{nw}"
-        n 1uwdflesu "Oh!{w=0.75}{nw}"
-        extend 1fllbgsbr " H-{w=0.2}hey,{w=0.2} [player].{w=0.75}{nw}"
-        extend 1fchbgsbr " What's happening?"
-        n 1unmaj "Let me just finish up here real quick.{w=0.75}{nw}"
-        extend 1ccsss " Besides."
-        n 1cdltr "I gotta do right by Sanjo after all,{w=0.5}{nw}"
-        extend 1fcscaesi " you know."
+        n 1uwdflesu "¡Oh!{w=0.75}{nw}"
+        extend 1fllbgsbr " H-{w=0.2}hola,{w=0.2} [player].{w=0.75}{nw}"
+        extend 1fchbgsbr " ¿Qué sucede?"
+        n 1unmaj "Déjame terminar aquí rápido.{w=0.75}{nw}"
+        extend 1ccsss " Además."
+        n 1cdltr "Tengo que cuidar bien a Sanjo después de todo,{w=0.5}{nw}"
+        extend 1fcscaesi " sabes."
         show natsuki 1fcsca
 
     elif dialogue_choice == 2:
         n 1clrpu "...{w=0.75}{nw}"
-        n 1tnmpu "...Huh?{w=0.75}{nw}"
-        n 1unmpuesu "Oh!{w=0.75}{nw}"
-        extend 1cllsssbr " Heh.{w=0.75}{nw}"
-        extend 1ccssssbr " What's up,{w=0.2} [player]?"
-        n 1clraj "Just give me a minute.{w=0.75}{nw}"
-        extend 1nsrpo " I was getting tired of all the plant mumbo-jumbo anyway."
+        n 1tnmpu "...¿Eh?{w=0.75}{nw}"
+        n 1unmpuesu "¡Oh!{w=0.75}{nw}"
+        extend 1cllsssbr " Je.{w=0.75}{nw}"
+        extend 1ccssssbr " ¿Qué pasa,{w=0.2} [player]?"
+        n 1clraj "Solo dame un minuto.{w=0.75}{nw}"
+        extend 1nsrpo " Me estaba cansando de todo este parloteo de plantas de todos modos."
         show natsuki 1ccspo
     else:
 
         n 1cdwpu "...{w=0.75}{nw}"
-        n 1cnmpueqm "Eh?{w=0.75}{nw}"
+        n 1cnmpueqm "¿Eh?{w=0.75}{nw}"
         extend 1unmaj " Oh.{w=0.75}{nw}"
-        extend 1ullbo " Hey,{w=0.2} [player]."
-        n 1clrss "Don't mind me.{w=0.75}{nw}"
-        extend 1fcsss " Don't mind me at all."
-        n 1fcssmesm "Juuuust making sure I'm keeping Sanjo here in tip-top shape!"
+        extend 1ullbo " Hola,{w=0.2} [player]."
+        n 1clrss "No me hagas caso.{w=0.75}{nw}"
+        extend 1fcsss " No me hagas caso para nada."
+        n 1fcssmesm "¡Soooooolo me aseguro de mantener a Sanjo aquí en plena forma!"
         show natsuki 1fchsmeme
 
     $ jnPause(0.1)

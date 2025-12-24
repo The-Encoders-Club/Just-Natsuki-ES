@@ -24,39 +24,39 @@ screen hotkeys():
     $ config.mouse = None
     tag menu
 
-    use game_menu(("Hotkeys")):
+    use game_menu(("Teclas de acceso rápido")):
         viewport id "hotkeys":
             yoffset 0
             xoffset 50
             hbox:
                 vbox:
                     box_wrap True
-                    label _("All hotkeys") style "check_label"
+                    label _("Todas las teclas de acceso rápido") style "check_label"
                     null height 20
                     style_prefix "hotkeys"
                     grid 2 8:
                         xoffset 20
                         spacing 10
 
-                        text _("Talk")
+                        text _("Hablar")
                         text _("T")
 
-                        text _("Music")
+                        text _("Música")
                         text _("M")
 
                         text _("Extras")
                         text _("E")
 
-                        text _("Fullscreen")
+                        text _("Pantalla completa")
                         text _("F")
 
-                        text _("Hide UI")
+                        text _("Ocultar la interfaz de usuario")
                         text _("H")
 
-                        text _("Screenshot")
+                        text _("Captura de pantalla")
                         text _("S")
 
-                        text _("Settings")
+                        text _("Ajustes")
                         text _("Esc")
 
                         null width 175 height 30
@@ -67,17 +67,17 @@ screen hotkeys():
                     xoffset 300
                     vbox:
                         box_wrap True
-                        label _("Snap hotkeys") style "check_label"
+                        label _("Teclas de acceso rápido del Snap") style "check_label"
                         null height 20
                         style_prefix "hotkeys"
                         grid 2 3:
                             xoffset 20
                             spacing 10
 
-                            text _("Place")
+                            text _("Lugar")
                             text _("1")
 
-                            text _("Snap!")
+                            text _("¡Snap!")
                             text _("2")
 
                             null width 175 height 30
@@ -88,17 +88,17 @@ screen hotkeys():
                     xoffset 550
                     vbox:
                         box_wrap True
-                        label _("Blackjack hotkeys") style "check_label"
+                        label _("Teclas de acceso rápido del Blackjack") style "check_label"
                         null height 20
                         style_prefix "hotkeys"
                         grid 2 3:
                             xoffset 20
                             spacing 10
 
-                            text _("Hit!")
+                            text _("¡Golpea!")
                             text _("1")
 
-                            text _("Stay")
+                            text _("Quedarse")
                             text _("2")
 
                             null width 175 height 30
@@ -176,7 +176,7 @@ screen categorized_menu(menu_items, category_pane_space, option_list_space, cate
                 arrowkeys True
                 has vbox
                 if category_length == 0:
-                    textbutton _("Nevermind."):
+                    textbutton _("No importa."):
                         action [
                                 Return(False),
                                 Function(prev_adjustment.change, 0),
@@ -189,9 +189,9 @@ screen categorized_menu(menu_items, category_pane_space, option_list_space, cate
                     python:
                         import random
 
-                        go_back_text = "Go back"
+                        go_back_text = "Volver"
                         if random.randint(0, 999) == 1:
-                            go_back_text = "Go baka"
+                            go_back_text = "Vamos baka"
 
                     textbutton _(go_back_text):
                         style "categorized_menu_button"
@@ -239,7 +239,7 @@ screen categorized_menu(menu_items, category_pane_space, option_list_space, cate
                     arrowkeys True
 
                     has vbox
-                    textbutton _("Nevermind."):
+                    textbutton _("No importa."):
                         action [
                                 Return(False),
                                 Function(prev_adjustment.change, 0),
@@ -806,7 +806,7 @@ screen quick_menu():
             xalign 0.5
             yalign 0.995
 
-            textbutton _("History"):
+            textbutton _("Historial"):
                 text_style "quickmenu_text"
                 action ShowMenu('history')
                 hover_sound gui.hover_sound
@@ -818,7 +818,7 @@ screen quick_menu():
                 hover_sound gui.hover_sound
                 activate_sound gui.activate_sound
 
-            textbutton _("Settings"):
+            textbutton _("Ajustes"):
                 text_style "quickmenu_text"
                 action ShowMenu('preferences')
                 hover_sound gui.hover_sound
@@ -867,34 +867,34 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if not jn_data_migrations.current_version_latest:
-            textbutton _("Update now!") action OpenURL(jn_globals.LINK_JN_LATEST)
+            textbutton _("¡Actualiza ahora!") action OpenURL(jn_globals.LINK_JN_LATEST)
             null height 16
 
         else:
-            textbutton _("Check version") action Function(jn_utils.fireAndForgetFunction, jn_data_migrations.checkCurrentVersionIsLatestFromMenu)
+            textbutton _("Comprobar versión") action Function(jn_utils.fireAndForgetFunction, jn_data_migrations.checkCurrentVersionIsLatestFromMenu)
 
         if main_menu:
-            textbutton _("New Game"):
+            textbutton _("Nuevo juego"):
                 action If(
                     persistent.playername,
                     true=Start(),
                     false=Show(
                         screen="name_input",
-                        message="Please enter your name",
+                        message="Por favor, introduzca su nombre",
                         ok_action=Function(FinishEnterName)
                     )
                 )
 
         else:
-            textbutton _("History") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
+            textbutton _("Historial") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
 
-        textbutton _("Hotkeys") action [ShowMenu("hotkeys"), SensitiveIf(renpy.get_screen("hotkeys") == None)]
+        textbutton _("Teclas") action [ShowMenu("hotkeys"), SensitiveIf(renpy.get_screen("hotkeys") == None)]
 
-        textbutton _("Settings") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
+        textbutton _("Ajustes") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
 
         if renpy.variant("pc"):
 
-            textbutton _("Help") action Help("README.md")
+            textbutton _("Ayuda") action Help("README.md")
 
         textbutton _("GitHub") action OpenURL(jn_globals.LINK_JN_GITHUB)
 
@@ -1064,7 +1064,7 @@ screen game_menu(title, scroll=None):
     if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
         on "show" action Show("game_menu_m")
 
-    textbutton _("Return"):
+    textbutton _("Regresar"):
         style "return_button"
 
         action Return()
@@ -1143,20 +1143,20 @@ screen about():
 
 
 
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("Acerca de:"), scroll="viewport"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            text _("Versión [config.version!t]\n")
 
 
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 
@@ -1173,10 +1173,10 @@ style about_label_text:
 init python:
     def FileActionMod(name, page=None, **kwargs):
         if persistent.playthrough == 1 and not persistent.deleted_saves and renpy.current_screen().screen_name[0] == "load" and FileLoadable(name):
-            return Show(screen="dialog", message="File error: \"characters/sayori.chr\"\n\nThe file is missing or corrupt.",
-                ok_action=Show(screen="dialog", message="The save file is corrupt. Starting a new game.", ok_action=Function(renpy.full_restart, label="start")))
+            return Show(screen="dialog", message="Error de archivo: \"characters/sayori.chr\"\n\nEl archivo falta o está corrupto.",
+                ok_action=Show(screen="dialog", message="El archivo de guardado está corrupto. Iniciando un nuevo juego.", ok_action=Function(renpy.full_restart, label="start")))
         elif persistent.playthrough == 3 and renpy.current_screen().screen_name[0] == "save":
-            return Show(screen="dialog", message="You wont be needing to save anymore,\nBesides it doesn't work when we're sitting doing nothing like this...", ok_action=Hide("dialog"))
+            return Show(screen="dialog", message="Ya no necesitarás guardar más,\nAdemás no funciona cuando estamos sentadas sin hacer nada así...", ok_action=Hide("dialog"))
         else:
             return FileAction(name)
 
@@ -1236,7 +1236,7 @@ screen preferences():
     else:
         $ cols = 4
 
-    use game_menu(_("Settings")):
+    use game_menu(_("Ajustes")):
 
         viewport id "preferences":
             ysize 650
@@ -1256,10 +1256,10 @@ screen preferences():
 
                     vbox:
                         style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
-                        textbutton _("Menu icons") action [
+                        label _("Mostrar")
+                        textbutton _("Ventana") action Preference("display", "window")
+                        textbutton _("Pantalla completa") action Preference("display", "fullscreen")
+                        textbutton _("Iconos del menú") action [
                             ToggleField(
                                 object=persistent,
                                 field="_jn_display_option_icons",
@@ -1269,29 +1269,29 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen text") action Preference("skip", "toggle")
-                    textbutton _("After choices") action Preference("after choices", "toggle")
+                    label _("Saltar")
+                    textbutton _("Texto no visto") action Preference("skip", "toggle")
+                    textbutton _("Después de las elecciones") action Preference("after choices", "toggle")
 
                 vbox:
 
                     style_prefix "radio"
-                    label _("Weather")
+                    label _("Clima")
 
-                    textbutton _("Disabled") action SetField(
+                    textbutton _("Desactivado") action SetField(
                             object=persistent,
                             field="_jn_weather_setting",
                             value=int(jn_preferences.weather.JNWeatherSettings.disabled)
                         )
 
-                    textbutton _("Random") action SetField(
+                    textbutton _("Aleatorio") action SetField(
                             object=persistent,
                             field="_jn_weather_setting",
                             value=int(jn_preferences.weather.JNWeatherSettings.random)
                         )
 
                     if persistent._jn_weather_api_configured:
-                        textbutton _("Real-time") action [
+                        textbutton _("Tiempo real") action [
                                 SetField(
                                     object=persistent,
                                     field="_jn_weather_setting",
@@ -1303,14 +1303,14 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("Natsuki")
-                    textbutton _("Auto outfits") action [
+                    textbutton _("Conjuntos automáticos") action [
                             ToggleField(
                                 object=persistent,
                                 field="jn_natsuki_auto_outfit_change_enabled",
                                 true_value=True,
                                 false_value=False)
                         ]
-                    textbutton _("Repeat topics") action [
+                    textbutton _("Repetir temas") action [
                             ToggleField(
                                 object=persistent,
                                 field="jn_natsuki_repeat_topics",
@@ -1327,8 +1327,8 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("Notifications")
-                    textbutton _("Conversations") action [
+                    label _("Notificaciones")
+                    textbutton _("Conversaciones") action [
                             ToggleField(
                                 object=persistent,
                                 field="_jn_notify_conversations",
@@ -1336,7 +1336,7 @@ screen preferences():
                                 false_value=False)
                         ]
 
-                    textbutton _("Activity") action [
+                    textbutton _("Actividad") action [
                             ToggleField(
                                 object=persistent,
                                 field="_jn_notify_activity",
@@ -1348,7 +1348,7 @@ screen preferences():
                     if persistent._jn_blackjack_unlocked:
                         style_prefix "check"
                         label _("Blackjack")
-                        textbutton _("Hand total") action [
+                        textbutton _("Manos totales") action [
                                 ToggleField(
                                     object=persistent,
                                     field="_jn_blackjack_show_hand_value",
@@ -1365,7 +1365,7 @@ screen preferences():
 
                 vbox:
 
-                    label _("Random chatter: {0}".format(jn_preferences.random_topic_frequency.getRandomTopicFrequencyDescription()))
+                    label _("Charla aleatoria: {0}".format(jn_preferences.random_topic_frequency.getRandomTopicFrequencyDescription()))
 
                     bar value FieldValue(
                             object=persistent,
@@ -1375,50 +1375,50 @@ screen preferences():
                             step=1
                         )
 
-                    label _("Text Speed")
+                    label _("Velocidad del texto")
 
                     bar value FieldValue(_preferences, "text_cps", range=180, max_is_zero=False, style="slider", offset=20)
 
-                    label _("Auto-Forward Time")
+                    label _("Avance automático del tiempo")
 
                     bar value Preference("auto-forward time")
 
-                    label _("Sunrise: {0}AM".format(jn_locations.getHourFromSunriseSunsetValue(persistent._jn_sunrise_setting)))
+                    label _("Amanecer: {0}AM".format(jn_locations.getHourFromSunriseSunsetValue(persistent._jn_sunrise_setting)))
                     bar value FieldValue(persistent, "_jn_sunrise_setting", range=6, max_is_zero=False, style="slider")
 
-                    label _("Sunset: {0}PM".format(jn_locations.getHourFromSunriseSunsetValue(persistent._jn_sunset_setting)))
+                    label _("Atardecer: {0}PM".format(jn_locations.getHourFromSunriseSunsetValue(persistent._jn_sunset_setting)))
                     bar value FieldValue(persistent, "_jn_sunset_setting", range=6, max_is_zero=False, style="slider")
 
                 vbox:
                     if config.has_music:
-                        label _("Music Volume: {0}%".format(int(preferences.get_volume("music") * 100)))
+                        label _("Volumen de la música: {0}%".format(int(preferences.get_volume("music") * 100)))
 
                         hbox:
                             bar value Preference("music volume")
 
                     if config.has_sound:
 
-                        label _("Sound Volume: {0}%".format(int(preferences.get_volume("sfx") * 100)))
+                        label _("Volumen del sonido: {0}%".format(int(preferences.get_volume("sfx") * 100)))
 
                         hbox:
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                                textbutton _("Probar") action Play("sound", config.sample_sound)
 
                     if config.has_voice:
-                        label _("Voice Volume")
+                        label _("Volumen de voz")
 
                         hbox:
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                                textbutton _("Probar") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
+                        textbutton _("Silenciar todo"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
@@ -1526,7 +1526,7 @@ screen history():
 
     predict False tag menu
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
+    use game_menu(_("Historial"), scroll=("vpgrid" if gui.history_height else "viewport")):
 
         style_prefix "history"
 
@@ -1551,7 +1551,7 @@ screen history():
                 text h.what
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("El historial de diálogo está vacío.")
 
 style history_window is empty
 
@@ -1728,7 +1728,7 @@ screen credits(message, ok_action):
             xalign 0.5
             spacing 100
 
-            textbutton _("Done") action ok_action
+            textbutton _("Hecho") action ok_action
 
 init python:
     def check_ingame_state_add_apology():
@@ -1789,7 +1789,7 @@ screen confirm_editable_closable(message, yes_text, no_text, yes_action, no_acti
             label _(message):
                 style "confirm_prompt"
                 xalign 0.5
-            textbutton _("Close") action Hide("confirm_editable_closable"):
+            textbutton _("Cerrar") action Hide("confirm_editable_closable"):
                 xalign 0.5
 
         hbox:

@@ -263,10 +263,10 @@ init python in jn_atmosphere:
         day_sky_image="sky day rain",
         night_sky_image="sky night rain",
         notify_text=[
-            "Ugh... raining again. [angry_emote]",
-            "Ew. Rain. [angry_emote]",
-            "Man... why does it have to rain so much?",
-            "Huh? It's raining? Gross... [angry_emote]",
+            "Ugh... lloviendo otra vez. [angry_emote]",
+            "Iugh. Lluvia. [angry_emote]",
+            "Hombre... ¿por qué tiene que llover tanto?",
+            "¿Eh? ¿Está lloviendo? Que asco... [angry_emote]",
         ],
         dim_image="dim medium",
         day_clouds_image="clouds day heavy",
@@ -281,10 +281,10 @@ init python in jn_atmosphere:
         day_sky_image="sky day thunder",
         night_sky_image="sky night thunder",
         notify_text=[
-            "Those clouds look really dark, huh? :<",
-            "It was a dark and stormy night...",
-            "Ugh... I hate storms... [angry_emote]",
-            "Hey... is it stormy over there too? :/",
+            "Esas nubes se ven muy oscuras, ¿eh? :<",
+            "Era una noche oscura y tormentosa...",
+            "Ugh... Odio las tormentas... [angry_emote]",
+            "Oye... ¿está tormentoso por allá también? :/",
         ],
         dim_image="dim heavy",
         day_clouds_image="clouds day thunder",
@@ -299,9 +299,9 @@ init python in jn_atmosphere:
         day_sky_image="sky day snow",
         night_sky_image="sky night overcast",
         notify_text=[
-            "[player]! [player]! It's snowing! [happy_emote]",
-            "It's snowing! It's snowing! [happy_emote]",
-            "[player]! Is it snowing for you too?! [happy_emote]",
+            "¡[player]! ¡[player]! ¡Está nevando! [happy_emote]",
+            "¡Está nevando! ¡Está nevando! [happy_emote]",
+            "¡[player]! ¡¿Está nevando para ti también?! [happy_emote]",
         ],
         dim_image="dim light",
         day_clouds_image="clouds day light",
@@ -360,8 +360,8 @@ init python in jn_atmosphere:
             
             api_weather_result = getWeatherFromApi()
             if not api_weather_result:
-                jn_utils.log("Unable to retrieve weather from API; defaulting to Sunny.")
-                renpy.notify("Failed to update weather; please check log for more information.")
+                jn_utils.log("No se pudo obtener el clima de la API; por defecto será Soleado.")
+                renpy.notify("Error al actualizar el clima; revise el registro para más información.")
                 showSky(WEATHER_SUNNY, with_transition=with_transition)
             
             else:
@@ -544,12 +544,12 @@ init python in jn_atmosphere:
         
         except Exception as exception:
             
-            jn_utils.log("Unable to fetch weather from OpenWeatherMap as an exception occurred; {0}".format(exception.message))
+            jn_utils.log("No se pudo obtener el clima de OpenWeatherMap debido a una excepción; {0}".format(exception.message))
             return None
         
         if weather_response.status_code != 200:
             
-            jn_utils.log("Unable to fetch weather from OpenWeatherMap; API response was: {0}".format(weather_response.status_code))
+            jn_utils.log("No se pudo obtener el clima de OpenWeatherMap; la respuesta de la API fue: {0}".format(weather_response.status_code))
             return None
         
         
@@ -561,7 +561,7 @@ init python in jn_atmosphere:
                     return weather
         
         except Exception as exception:
-            jn_utils.log("Unable to fetch weather from OpenWeatherMap as an exception occurred; {0}".format(exception.message))
+            jn_utils.log("No se pudo obtener el clima de OpenWeatherMap debido a una excepción; {0}".format(exception.message))
         
         
         return None
@@ -583,7 +583,7 @@ init python in jn_atmosphere:
             return (response.json()["loc"].split(','))
         
         except Exception as exception:
-            jn_utils.log("Failed to retrieve user latitude, longitude via IP address: {0}".format(exception))
+            jn_utils.log("Error al obtener latitud y longitud del usuario vía dirección IP: {0}".format(exception))
             return None
 
     def isCurrentWeatherOvercast():
@@ -684,58 +684,58 @@ label weather_change:
             $ alt_dialogue = random.choice([True, False])
             if jn_atmosphere.isCurrentWeatherSunny():
                 if previous_weather.weather_type == jn_atmosphere.JNWeatherTypes.rain:
-                    n 1fcsaj "Well,{w=1}{nw}"
-                    extend 2fllgs " about time all that rain buzzed off!{w=1}{nw}"
-                    n 2nchgn "Much better.{w=3}{nw}"
+                    n 1fcsaj "¡Bueno,{w=1}{nw}"
+                    extend 2fllgs " ¡parece ser que está lloviendo!{w=1}{nw}"
+                    n 2nchgn "Mucho mejor.{w=3}{nw}"
 
                 elif previous_weather.weather_type == jn_atmosphere.JNWeatherTypes.thunder:
-                    n 3tllpu "Huh?{w=1.25}{nw}"
-                    extend 4ullajeex "Oh,{w=0.2} the storm passed.{w=1}{nw}"
-                    n 2fcsajsbl "Good riddance.{w=3}{nw}"
+                    n 3tllpu "¿Eh?{w=1.25}{nw}"
+                    extend 4ullajeex "Oh,{w=0.2} parece que la tormenta ya pasó.{w=1}{nw}"
+                    n 2fcsajsbl "Buena suerte.{w=3}{nw}"
 
                 elif previous_weather.weather_type == jn_atmosphere.JNWeatherTypes.snow:
                     n 4kllpu "Aww...{w=1.5}{nw}"
-                    extend 1kllpol " it stopped snowing...{w=3}{nw}"
+                    extend 1kllpol "dejó de nevar...{w=3}{nw}"
                 else:
 
                     n 1ulraj "Oh,{w=0.2} hey.{w=1}{nw}"
-                    extend 2ulrbo " It just cleared up outside.{w=3}{nw}"
+                    extend 2ulrbo " Simplemente se aclaró afuera.{w=3}{nw}"
 
             if jn_atmosphere.isCurrentWeatherRain():
 
                 if alt_dialogue:
-                    n 1kcsemesi "Man...{w=1.25}{nw}"
-                    extend 4kllsl " rain {i}again{/i}?{w=1}{nw}"
-                    extend 3fsrbo " Lame...{w=3}{nw}"
+                    n 1kcsemesi "Hombre...{w=1.25}{nw}"
+                    extend 4kllsl " lluvia… ¿{i}de nuevo{/i}?{w=1}{nw}"
+                    extend 3fsrbo " No puede ser...{w=3}{nw}"
                 else:
 
                     n 3fcsem "Ugh...{w=1.5}{nw}"
-                    extend 3fslpol " I'll never {i}not{/i} find rain gross.{w=3}{nw}"
-
+                    extend 3fslpol "Nunca dejará de parecerme un asco la lluvia."
+                    #extend 3fslpol " I'll never {i}not{/i} find rain gross.{w=3}{nw}"
             elif jn_atmosphere.isCurrentWeatherThunder():
 
                 if alt_dialogue:
                     n 4unmboesu "...{w=1}{nw}"
-                    n 2nllem "I gotta say,{w=0.75}{nw}"
-                    extend 2ksqsr " I am {i}not{/i} liking the look of those clouds.{w=1}{nw}"
-                    extend 3nsrupesd " Yeesh...{w=3}{nw}"
+                    n 2nllem "Tengo que decir que,{w=0.75}{nw}"
+                    extend 2ksqsr " {i}No{/i} me gusta cómo se ven esas nubes.{w=1}{nw}"
+                    extend 3nsrupesd " Seeee...{w=3}{nw}"
                 else:
 
                     n 1ulremesu "Woah...{w=1}{nw}"
-                    extend 2ullpu " now those are some clouds,{w=0.5}{nw}"
-                    extend 2tnmbo " huh?{w=3}{nw}"
+                    extend 2ullpu " Ahora esas son nubes,{w=0.5}{nw}"
+                    extend 2tnmbo " ¿Eh?{w=3}{nw}"
 
             elif jn_atmosphere.isCurrentWeatherSnow():
 
                 if alt_dialogue:
                     n 4uwdajeex "Woah!{w=1}{nw}"
-                    n 1ullgs "[player],{w=0.2} look!{w=0.5}{nw}"
-                    extend 4uchbgledz " It's snowing!{w=3}{nw}"
+                    n 1ullgs "¡[player],{w=0.2} mira!{w=0.5}{nw}"
+                    extend 4uchbgledz " ¡Está nevando!{w=3}{nw}"
                 else:
 
                     n 1uwdajeex "...!{w=1}{nw}"
-                    n 4ullbg "Heeey!{w=0.75}{nw}"
-                    extend 4uchgnledz " It's snowing!{w=3}{nw}"
+                    n 4ullbg "¡Heeey!{w=0.75}{nw}"
+                    extend 4uchgnledz " ¡Está nevando!{w=3}{nw}"
 
             return
 

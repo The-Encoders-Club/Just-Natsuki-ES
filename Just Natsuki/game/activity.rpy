@@ -25,7 +25,7 @@ init python in jn_activity:
         
         
         if (os.environ.get('DISPLAY') is None) or (os.environ.get('DISPLAY') == ''):
-            store.jn_utils.log("DISPLAY is not set. Cannot use Xlib.")
+            store.jn_utils.log("DISPLAY no está configurado. No se puede usar Xlib.")
             
             ACTIVITY_SYSTEM_ENABLED = False
         
@@ -199,140 +199,141 @@ init python in jn_activity:
         activity_type=JNActivities.coding,
         window_name_regex="(- visual studio|- notepad/+/+|- atom|- brackets|vim|eclipse|^github desktop$|^sourcetree$|- scratch)",
         notify_text=[
-            "You're seriously such a nerd, [player].",
-            "You forgot a semicolon! [tease_emote]",
-            "How do you even read all that stuff?!",
-            "Well? Does it work? [tease_emote]",
-            "What even IS that mumbo-jumbo...",
-            "I don't even know where I'd start with coding stuff...",
-            "More programming stuff?",
-            "I see, I see. You're on nerd duty today! [tease_emote]",
+            "En serio que eres un nerd, [player].",
+            "¡Olvidaste un punto y coma! [tease_emote]",
+            "¡¿Cómo sueles leer todas esas cosas?!",
+            "Y bien... ¿Funciona? [tease_emote]",
+            "Qué ES ese mumbo-jumbo...",
+            "Ni siquiera sé dónde empezaría con las cosas codificantes...",
+            "¿Más cosas de programación?",
+            "Ya veo, ya veo. ¡Estás en el deber de nerd hoy! [tease_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.discord,
         window_name_regex="(- discord)",
         notify_text=[
-            "Someone's a social butterfly, huh?",
-            "Yeah, yeah. Chat it up, [player]~",
-            "Man... I wish I had some emotes... [sad_emote]",
-            "Maybe I should start a server...",
-            "Huh? Did someone message you?",
-            "Eh? Did someone just ping you? [confused_emote]",
-            "Don't just spend all day yapping away on there! [angry_emote]",
-            "I'm not THAT boring to talk to, am I? [sad_emote]",
+            "Alguien es una mariposa social, ¿eh?",
+            "Sí, sí. Chateando, [player]~",
+            "Hombre... Ojalá tuviera algunos emotes...[sad_emote]",
+            "Tal vez debería comenzar un servidor...",
+            "¿Eh? ¿Alguien te envió un mensaje?",
+            "Eh? ¿Alguien te hizo ping? [confused_emote]",
+            "¡No solo pases todo el día apartado allí! [angry_emote]",
+            "No soy tan aburrida para hablar, ¿lo soy? [sad_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.music_applications,
         window_name_regex="(^spotify$|^spotify premium$|^groove$|^zune$|^itunes$|^musicbee$|^aimp$|^winamp$)",
         notify_text=[
-            "You better play something good!",
-            "New playlist, [player]?",
-            "Play some tunes, [player]!",
-            "When do I get to pick something, huh? [angry_emote]",
-            "Hit it, [player]! [tease_emote]",
+            "¡Será mejor que reproduzcas algo bueno!",
+            "¿Nueva lista de reproducción, [player]?",
+            "¡Reproduzce unas melodías, [player]!",
+            "¿Cuándo puedo elegir algo, eh? [angry_emote]",
+            "¡Dale, [player]! [tease_emote]",
+            "Invisible... A ver si captas la referencia, todo un sólido. Jejeje [happy_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.gaming,
         window_name_regex="(^steam$|^origin$|^battle.net$|- itch.io)",
         notify_text=[
-            "You better not be spending all day on that! [angry_emote]",
-            "Just... remember to take breaks, alright? [sad_emote]",
-            "Gonna play something?",
-            "You could have just said if you were bored... [sad_emote]",
-            "You better not play anything weird...",
-            "Game time, huh?",
+            "¡Será mejor que no pases todo el día en eso! [angry_emote]",
+            "Solo... ¿Recuerda tomar descansos, está bien? [sad_emote]",
+            "¿Vas a jugar algo?",
+            "Podrías haber dicho que estabas aburrido ... [sad_emote]",
+            "Será mejor que no juegues nada raro...",
+            "Tiempo de jugar, ¿eh?",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.youtube,
         window_name_regex="(- youtube)",
         notify_text=[
-            "YouTube, huh? I think Sayori uploaded something once...",
-            "Oh! Oh! Let me watch! [happy_emote]",
-            "What's on, [player]?",
-            "You better not be watching anything weird...",
-            "Just... no reaction videos. Please. [angry_emote]",
+            "YouTube, ¿eh? Creo que Sayori subió algo una vez...",
+            "Oh! Oh! ¡Déjame mirar! [happy_emote]",
+            "¿Que es [player]?",
+            "Será mejor que no estés viendo nada raro...",
+            "Solo... No videos de reacción. Por favor...[angry_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.github_jn,
         window_name_regex="(just-natsuki-team/natsukimoddev)",
         notify_text=[
-            "Hey! I know this place!",
-            "I knew you'd help me out! Ehehe.",
-            "Oh! Oh! It's my website!",
-            "I heard only complete nerds come here... [tease_emote]",
-            "Ehehe. Thanks for stopping by!",
-            "Hey! It's geek-hub! [tease_emote]",
+            "¡Hey! ¡Conozco este lugar!",
+            "¡Sabía que me ayudarías! Jejeje",
+            "Oh! Oh! ¡Es mi sitio web!",
+            "Escuché que solo los auténticos nerds venían aquí ... [tease_emote]",
+            "Jejeje ¡Gracias por pasar por aquí!",
+            "¡Hey! ¡Es Geek-Hub! [tease_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.artwork,
         window_name_regex="(clip studio paint|photoshop|krita|gimp|paint.net|paint tool sai|medibang|- paint)",
         notify_text=[
-            "Draw for me, [player]! Ehehe.",
-            "I was never any good at artwork... [sad_emote]",
-            "You're drawing? [confused_emote]",
-            "Oh! Oh! What're you drawing?",
-            "Eh? What're you drawing? [confused_emote]",
-            "Draw me! Draw me!!",
+            "¡Dibuja para mi, [player]! Jejeje.",
+            "Nunca fui buena en el dibujo... [sad_emote]",
+            "¿Qué estás dibujando? [confused_emote]",
+            "¡Oh! Oh! ¿Qué estás dibujando?",
+            "¿Eh? ¿Qué estás dibujando? [confused_emote]",
+            "¡Dibujame! Dibújameeee!!",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.anime_streaming,
         window_name_regex="(^crunchyroll$)",
         notify_text=[
-            "What's the flavor of the month?",
-            "So many options...",
-            "I still don't see Parfait Girls anywhere...",
-            "Infinite choices! Ehehe.",
-            "I could waste DAYS here... [confused_emote]",
+            "¿Cuál es el sabor del mes?",
+            "Tantas opciones ...",
+            "Todavía no veo a las chicas parfait en ninguna parte...",
+            "¡Opciones infinitas! Ehejey",
+            "Podría perder días aquí ... [confused_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.work_applications,
         window_name_regex="(- word| - excel| - powerpoint|openoffice|libreoffice)",
         notify_text=[
-            "Ew... work...",
-            "You're sure you gotta do this now, [player]? [confused_emote]",
-            "Ugh... reminds me of my school assignments...",
-            "Great... now I'm getting flashbacks of my group projects.",
-            "Booo-ring! Ehehe.",
-            "Reminds me of schoolwork... [angry_emote]",
+            "Ew... trabajo...",
+            "Estás seguro de que tienes que hacer esto ahora, [player]? [confused_emote]",
+            "Ugh... Me recuerda mis tareas escolares...",
+            "Genial... Ahora estoy recibiendo flashbacks de mis proyectos de grupo.",
+            "Booo-ring! Jejeje.",
+            "Me recuerda el trabajo escolar... [angry_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.twitter,
         window_name_regex="(/ twitter)",
         notify_text=[
-            "There's so much cool art here!",
-            "I swear I could waste hours just scrolling here...",
-            "Oh! Oh! Am I trending?",
-            "I should probably check my Twitter, huh?",
-            "Oh man! I gotta check on my feed! [confused_emote]",
+            "¡Hay tanto arte genial aquí!",
+            "Te juro que podría perder horas solo bajando por aquí...",
+            "¡Oh! ¡Oh! ¿Soy tendencia?",
+            "Debería revisar mi Twitter, ¿eh?",
+            "¡Rayos! ¡Tengo que checar mi feed! [confused_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.deviantart,
         window_name_regex="(deviantart - |\| deviantart)",
         notify_text=[
-            "So. Much. Art.",
-            "Oh! Do you post here, [player]?",
-            "Just... don't search up anything weird...",
-            "I... know this place.",
+            "Tanto. Arte.",
+            "¡Oh! ¿Publicas cosas aquí, [player]?",
+            "Solo... no busques nada raro...",
+            "Yo... conozco este lugar.",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.manga,
         window_name_regex="(- mangadex|- mangasee|- mangakot)",
         notify_text=[
-            "What's the flavor of the month?",
-            "No Parfait Girls here... [sad_emote]",
-            "Oh! What're you reading? [happy_emote]",
-            "Looking for an EXPERT opinion? Ehehe.",
+            "¿Cuál es el sabor del mes?",
+            "No hay Parfait Girls aquí... [sad_emote]",
+            "¡Oh! ¿Qué estás leyendo? [happy_emote]",
+            "¿Buscas una opinión EXPERTA? Jejeje.",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -340,8 +341,8 @@ init python in jn_activity:
         window_name_regex="(doki doki literature club! -)",
         notify_text=[
             "...",
-            "I... don't like this website.",
-            "Uuuuuu... do you HAVE to visit this place?",
+            "No... me gusta este sitio web.",
+            "Uuuuuu... ¿TIENES que visitar este lugar?",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -351,42 +352,42 @@ init python in jn_activity:
             "|(\| domino's pizza)|(\| pizza hut)|(\| grubhub)|(doordash food delivery & takeout -))"
         ),
         notify_text=[
-            "H-hey! Less of the junk! [angry_emote]",
-            "Cooking isn't THAT hard, you know... [angry_emote]",
-            "You better not be making a habit of that...",
-            "[player]! Think of your wallet! Jeez... [confused_emote]",
-            "[player]... come on... [sad_emote]",
-            "Just... don't make a habit of this. [angry_emote] Please?",
-            "Ew... junk food...",
+            "¡O-oye! ¡Menos comida chatarra! [angry_emote]",
+            "Cocinar no es TAN difícil, ¿sabes?... [angry_emote]",
+            "Será mejor que no te hagas el hábito...",
+            "¡[player]! ¡Piensa en tu billetera! Cielos... [confused_emote]",
+            "[player]... vamos... [sad_emote]",
+            "Solo... no te acostumbres a esto. [angry_emote] ¿Por favor?",
+            "Iugh... comida chatarra...",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.instagram,
         window_name_regex="(• instagram photos and videos)",
         notify_text=[
-            "So who are YOU stalking, huh? [tease_emote]",
-            "Huh? Do you post here, [player]?",
-            "You post here much, [player]?",
+            "Así que, ¿a quién estás stalkeando, eh? [tease_emote]",
+            "¿Eh? ¿Publicas aquí, [player]?",
+            "¿Publicas mucho aquí, [player]?",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.music_creation,
         window_name_regex="(cubase|fl studio|reaper|mixcraft|studio one|logic pro|garageband|cakewalk|pro tools)",
         notify_text=[
-            "Ooooh! You're making beats?",
-            "Making some tunes? [confused_emote]",
-            "...Should I start taking NOTES? Ehehe.",
-            "Oh! Oh! I GOTTA listen to this!",
+            "¡Ooooh! ¿Estás creando ritmos?",
+            "¿Haciendo algunas tonadas? [confused_emote]",
+            "...¿Debería empezar a tomar NOTAS? Jejeje.",
+            "¡Oh! ¡Oh! ¡TENGO que escuchar esto!",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.reddit,
         window_name_regex="(reddit - dive into anything)",
         notify_text=[
-            "I hope you don't believe everything you read...",
-            "Eh? What's in the news?",
-            "Huh? Did something happen?",
-            "You making a post, [player]? [confused_emote]",
+            "Espero que no creas todo lo que lees...",
+            "¿Eh? ¿Qué hay en las noticias?",
+            "¿Eh? ¿Pasó algo?",
+            "¿Haciendo un post, [player]? [confused_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -409,31 +410,31 @@ init python in jn_activity:
         activity_type=JNActivities.video_applications,
         window_name_regex="(- vlc media player)",
         notify_text=[
-            "What're you watching, [player]? [confused_emote]",
-            "You watching something, [player]? [confused_emote]",
-            "Oh hey! Any funny video clips? [tease_emote]",
+            "¿Qué estás viendo, [player]? [confused_emote]",
+            "¿Viendo algo, [player]? [confused_emote]",
+            "¡Oh hey! ¿Algún video gracioso? [tease_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.e_commerce,
         window_name_regex="(^amazon.[A-Za-z]{2,6}|\| ebay)",
         notify_text=[
-            "Just... don't go overboard. [angry_emote]",
-            "Shopping, huh? [tease_emote]",
-            "Run out of something again? Ehehe.",
-            "Oh? You gotta grab something? [confused_emote]",
-            "Money to burn, huh?"
+            "Solo... no te pases de la raya. [angry_emote]",
+            "De compras, ¿eh? [tease_emote]",
+            "¿Se te acabó algo de nuevo? Jejeje.",
+            "¿Oh? ¿Tienes que comprar algo? [confused_emote]",
+            "Dinero para quemar, ¿eh?"
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.recording_software,
         window_name_regex="(^obs [0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,2}|^bandicam [0-9]{4}|^fraps|^xsplit broadcaster$|- lightstream studio$)",
         notify_text=[
-            "W-wait... what kind of app is that, [player]? [confused_emote]",
-            "Wait a second... is that some kind of recorder?",
-            "I-I hope you aren't recording me, [player]. [angry_emote]",
-            "Huh? What kind of program is that, [player]? [confused_emote]",
-            "What are you recording, [player]...? [confused_emote]"
+            "E-espera... ¿qué tipo de aplicación es esa, [player]? [confused_emote]",
+            "Espera un segundo... ¿es algún tipo de grabadora?",
+            "E-espero que no me estés grabando, [player]. [angry_emote]",
+            "¿Eh? ¿Qué tipo de programa es ese, [player]? [confused_emote]",
+            "¿Qué estás grabando, [player]...? [confused_emote]"
         ]
     ))
 
@@ -513,12 +514,12 @@ init python in jn_activity:
             
             except AttributeError as exception:
                 ACTIVITY_SYSTEM_ENABLED = False
-                jn_utils.log("Failed to identify activity: {0}; only x11 sessions are supported. Disabling activity system for session.".format(repr(exception)))
+                jn_utils.log("Error al identificar la actividad: {0}; solo se soportan sesiones x11. Desactivando el sistema de actividad para esta sesión.".format(repr(exception)))
                 return ""
             
             except Exception as exception:
                 ACTIVITY_SYSTEM_ENABLED = False
-                jn_utils.log("Failed to identify activity: {0}. Disabling activity system for session.".format(repr(exception)))
+                jn_utils.log("Error al identificar la actividad: {0}. Desactivando el sistema de actividad para esta sesión.".format(repr(exception)))
                 return ""
         
         return ""

@@ -70,7 +70,7 @@ define gui.name_font = "mod_assets/fonts/natsuki.ttf"
 define gui.interface_font = "mod_assets/fonts/natsuki.ttf"
 
 
-define gui.text_size = 22
+define gui.text_size = 21
 
 
 define gui.say_text_size = 23
@@ -474,4 +474,5 @@ init python:
         
         
         gui.quick_button_text_size = 20
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

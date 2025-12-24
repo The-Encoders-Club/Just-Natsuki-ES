@@ -237,7 +237,7 @@ init -3 python:
                     return eval(self.conditional, globals=store.__dict__)
                 
                 except Exception as e:
-                    store.jn_utils.log("Error evaluating conditional on topic '{0}'. {1}".format(self.label, e.message), jn_utils.SEVERITY_ERR)
+                    store.jn_utils.log("Error al evaluar el condicional en el tema '{0}'. {1}".format(self.label, e.message), jn_utils.SEVERITY_ERR)
                     return False
             
             return True
@@ -828,18 +828,18 @@ init -3 python:
             - month - int month
         """
         month_map = {
-            1: "January",
-            2: "February",
-            3: "March",
-            4: "April",
-            5: "May",
-            6: "June",
-            7: "July",
-            8: "August",
-            9: "September",
-            10: "October",
-            11: "November",
-            12: "December"
+            1: "Enero",
+            2: "Febrero",
+            3: "Marzo",
+            4: "Abril",
+            5: "Mayo",
+            6: "Junio",
+            7: "Julio",
+            8: "Agosto",
+            9: "Septiembre",
+            10: "Octubre",
+            11: "Noviembre",
+            12: "Diciembre"
         }
         return month_map.get(month)
 
@@ -1183,7 +1183,7 @@ init -999 python in jn_utils:
                 return True
             
             except Exception as exception:
-                log("Failed to delete file on path {0}; {1}".format(path, exception.message))
+                log("Error al eliminar archivo en la ruta {0}; {1}".format(path, exception.message))
                 return False
         
         return False
@@ -1204,7 +1204,7 @@ init -999 python in jn_utils:
                 return True
             
             except Exception as exception:
-                log("Failed to delete directory at path {0}; {1}".format(path, exception.message))
+                log("Error al eliminar directorio en la ruta ({0}; {1}".format(path, exception.message))
                 return False
         
         return False
@@ -1252,11 +1252,11 @@ init -999 python in jn_utils:
         """
         
         if not callable(function):
-            jn_utils.log("Failed to launch thread; function is not callable.")
+            jn_utils.log("Error al iniciar hilo; la función no es invocable (callable).")
             return
         
         if not isinstance(args, tuple) and not isinstance(args, list):
-            jn_utils.log("Failed to launch thread; args must be of types list or tuple.")
+            jn_utils.log("Error al iniciar hilo; los argumentos deben ser de tipo lista o tupla.")
             return
         
         if isinstance(args, list):
@@ -1407,28 +1407,28 @@ init -100 python in jn_utils:
         minutes_in_session = get_current_session_length().total_seconds() / 60
         
         if minutes_in_session <= 1:
-            return "like a minute"
+            return "como un minuto"
         
         elif minutes_in_session <= 3:
-            return "a couple of minutes"
+            return "un par de minutos"
         
         elif minutes_in_session > 3 and minutes_in_session <= 5:
-            return "like five minutes"
+            return "como cinco minutos"
         
         elif minutes_in_session > 5 and minutes_in_session <= 10:
-            return "around ten minutes"
+            return "unos diez minutos"
         
         elif minutes_in_session > 10 and minutes_in_session <= 15:
-            return "around fifteen minutes"
+            return "unos quince minutos"
         
         elif minutes_in_session > 15 and minutes_in_session <= 20:
-            return "around twenty minutes"
+            return "unos veinte minutos"
         
         elif minutes_in_session <= 30:
-            return "about half an hour"
+            return "alrededor de media hora"
         
         else:
-            return "a while"
+            return "un buen rato"
 
     def getMinutesSinceLastVisit():
         """
@@ -1804,20 +1804,20 @@ init -100 python in jn_utils:
         Natsuki may use these at higher levels of affinity to tease her player with.
         """
         return random.choice([
-            "dummy",
-            "you big dummy",
-            "silly",
-            "stupid",
-            "you dork",
-            "you big dork",
-            "you goof",
-            "you goofball",
-            "you numpty",
-            "you donut",
-            "you dope",
-            "you big dork",
-            "you big goof",
-            "you big dope"
+            "tonto",
+            "gran tonto",
+            "tontito",
+            "estúpido",
+            "bicho raro",
+            "gran bicho raro",
+            "bobo",
+            "payasito",
+            "torpe",
+            "neno",
+            "bobo",
+            "gran idiota",
+            "gran tonto",
+            "gran bobo"
         ])
 
     def getRandomTeaseName():
@@ -1826,11 +1826,11 @@ init -100 python in jn_utils:
         Natsuki may use these at higher levels of affinity to tease her player with.
         """
         return random.choice([
-            "dummy",
-            "dork",
-            "goof",
-            "donut",
-            "dope"
+            "tonto",
+            "idiota",
+            "estúpido",
+            "rosquilla",
+            "bobo"
         ])
 
     def getRandomEndearment():
@@ -1839,13 +1839,13 @@ init -100 python in jn_utils:
         Natsuki may use these at the highest levels of affinity to refer to her player - she isn't that lovey-dovey, so use sparingly!
         """
         return random.choice([
-            "babe",
-            "darling",
-            "dummy",
-            "hun",
-            "my love",
-            "sweetheart",
-            "sweetie"
+            "cielo", #babe
+            "cariño", #darling
+            "tonto", #dummy
+            "amor", #hun
+            "mi amor", #my love
+            "corazón", #sweetheart
+            "cariño" #sweetie
         ])
 
     def getRandomDescriptor():
@@ -1854,12 +1854,12 @@ init -100 python in jn_utils:
         Natsuki may use these at the highest levels of affinity to describe her player when she is being sentimental.
         """
         return random.choice([
-            "amazing",
-            "awesome",
-            "really awesome",
-            "really great",
-            "so sweet",
-            "the best"
+            "increíble",
+            "genial",
+            "realmente genial",
+            "genial",
+            "tan dulce",
+            "el mejor"
         ])
 
     def getRandomInsult():
@@ -1868,12 +1868,12 @@ init -100 python in jn_utils:
         Natsuki may use these at the lowest levels of affinity to insult her player with.
         """
         return random.choice([
-            "jerk",
-            "idiot",
-            "moron",
-            "stupid",
-            "loser",
-            "you ass"
+            "basura",
+            "idiota",
+            "imbécil",
+            "tonto",
+            "perdedor",
+            "estúpido"
         ])
 
     def getRandomHappyEmoticon():

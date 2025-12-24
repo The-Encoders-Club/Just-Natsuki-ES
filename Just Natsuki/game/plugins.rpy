@@ -85,4 +85,5 @@ init -1 python in jn_plugins:
             visible_if,
             jump_label
         ))
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

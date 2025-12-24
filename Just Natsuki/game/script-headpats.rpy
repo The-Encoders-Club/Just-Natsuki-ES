@@ -52,32 +52,32 @@ label headpats_start:
     $ jn_headpats._more_pats_requested = False
 
     if persistent._jn_headpats_total_given == 0:
-        n 1uskemlesh "H-{w=0.2}huh?!{w=0.75}{nw}"
-        extend 1uwdemlsbl " D-{w=0.1}did you just say...?!"
-        n 2kbkwrlsbl "[player]!{w=0.5} W-{w=0.2}wait...!"
+        n 1uskemlesh "¡¿E-{w=0.2}eh?!{w=0.75}{nw}"
+        extend 1uwdemlsbl " ¡¿A-{w=0.1}acabas de decir...?!{w=0.75}{nw}"
+        n 2kbkwrlsbl "¡[player]!{w=0.5} ¡E-{w=0.2}espera...!"
         show natsuki headpats waiting min
 
     elif persistent._jn_headpats_total_given < 10:
-        n 1knmemlsbl "T-{w=0.2}this again?!"
+        n 1knmemlsbl "¡¿E-{w=0.2}esto otra vez?!"
         n 2kslunlsbr "[player]..."
         show natsuki headpats waiting min
 
     elif persistent._jn_headpats_total_given < 25:
-        n 1ksqsllsbr "...Again,{w=0.2} [player]?"
+        n 1ksqsllsbr "...¿De nuevo,{w=0.2} [player]?"
         n 2ksrcalsbl "..."
         show natsuki headpats waiting low
 
     elif persistent._jn_headpats_total_given < 50:
         n 1kcspulesisbl "..."
-        n 2kslcaf "Fine..."
+        n 2kslcaf "Bien..."
         show natsuki headpats waiting medium
 
     elif persistent._jn_headpats_total_given < 250:
-        n 2kcscaf "...Fine."
+        n 2kcscaf "...Bien."
         show natsuki headpats waiting high
     else:
 
-        n 4nsrssf "...Okay."
+        n 4nsrssf "...Está bien."
         show natsuki headpats waiting high
 
     show screen headpats_ui
@@ -142,25 +142,25 @@ label headpats_loop:
 
 label headpats_inactive:
     if persistent._jn_headpats_total_given == 0:
-        n 2fwmeml "A-{w=0.2}are you teasing me or something?"
+        n 2fwmeml "¿M-{w=0.2}me estás tomando el pelo o qué?"
         show natsuki 2fcspol
 
     elif persistent._jn_headpats_total_given <= 10:
-        n 2fcspolsbr "...Are you gonna do something or what?{w=0.75}{nw}"
-        extend 1kslunl " Jeez..."
+        n 2fcspolsbr "...¿Vas a hacer algo o qué?{w=0.75}{nw}"
+        extend 1kslunl " Cielos..."
         show natsuki 1kslsll
 
     elif persistent._jn_headpats_total_given <= 25:
-        n 1kslpul "...Did..."
-        n 4knmpulsbr "...D-{w=0.2}did you change your mind or something already?"
+        n 1kslpul "...¿Acaso..."
+        n 4knmpulsbr "...Y-{w=0.2}ya cambiaste de opinión o algo?"
         show natsuki 1knmbolsbr
 
     elif persistent._jn_headpats_total_given <= 50:
-        n 4kwmpulsbr "...D-{w=0.2}did you not feel like it anymore or something?"
+        n 4kwmpulsbr "...¿Y-{w=0.2}ya no tenías ganas o algo así?"
         show natsuki 4kwmbolsbr
     else:
 
-        n 3kllbolsbr "...Were you done already,{w=0.2} or...?"
+        n 3kllbolsbr "...¿Ya terminaste,{w=0.2} o...?"
         show natsuki 4kwmbolsbr
 
     jump headpats_loop
@@ -168,52 +168,52 @@ label headpats_inactive:
 
 
 label headpats_milestone_5:
-    n 2fcsunlsbl "Nnnnnn..."
+    n 2fcsunlsbl "Mmmmmm..."
     n 1ksrunlsbr "..."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_10:
-    n 4kwmpulsbr "Y-{w=0.2}you're still going?{w=0.5}{nw}"
-    extend 2ksrunfsbl " Jeez..."
+    n 4kwmpulsbr "¿T-{w=0.2}todavía sigues?{w=0.5}{nw}"
+    extend 2ksrunfsbl " Cielos..."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_25:
     n 1kslunl "Uuuuuuu..."
-    n 3kcsemlesi "My hair is gonna be {i}so{/i} tangled later..."
+    n 3kcsemlesi "Mi cabello estará {i}tan{/i} enredado luego..."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_50:
     n 1ncsemlesi "..."
-    n 4fsqcal "...E-{w=0.2}enjoying yourself,{w=0.2} [player]?"
+    n 4fsqcal "...¿D-{w=0.2}divirtiéndote,{w=0.2} [player]?"
     n 4ksrcaf "..."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_100:
-    n 4ksqtrfsbr "...You really are enjoying this,{w=0.2} huh?"
+    n 4ksqtrfsbr "...Realmente estás disfrutando esto,{w=0.2} ¿eh?"
     n 1kslcaf "..."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_250:
-    n 1ksqcal "...Still going strong,{w=0.2} huh [player]?{w=0.75}{nw}"
-    extend 4ksrfsl " Heh."
+    n 1ksqcal "...Aun sigues con fuerza,{w=0.2} ¿eh [player]?{w=0.75}{nw}"
+    extend 4ksrfsl " Je."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
 
 label headpats_milestone_500:
-    n 1ucspul "This...{w=0.75}{nw}"
-    extend 1nslsml " isn't actually so bad."
-    n 3fcscafsbr "O-{w=0.2}once you get used to it."
+    n 1ucspul "Esto...{w=0.75}{nw}"
+    extend 1nslsml " no es tan malo en realidad."
+    n 3fcscafsbr "U-{w=0.2}una vez que te acostumbras."
 
     $ Natsuki.calculatedAffinityGain(bypass=True)
     jump headpats_loop
@@ -249,42 +249,42 @@ label headpats_finished:
         n 2kslbol "..."
         n 2kslsll "Uhmm...{w=0.75}{nw}"
         extend 4knmsll " [player]?"
-        n 1klrpulsbl "Could you...{w=0.75}{nw}"
-        extend 2ksrbolsbl " you know..."
-        n 4knmbolsbr "Keep doing that just a little longer?"
+        n 1klrpulsbl "¿Podrías...{w=0.75}{nw}"
+        extend 2ksrbolsbl " ya sabes..."
+        n 4knmbolsbr "¿Seguir haciendo eso solo un poco más?"
 
         show natsuki 1fcscalesssbr at jn_center
         menu:
-            n "J-{w=0.2}just a little."
-            "Of course.":
+            n "S-{w=0.2}solo un poco."
+            "Por supuesto.":
 
-                n 1ksrssf "...{w=0.3}Thanks,{w=0.2} [player]."
+                n 1ksrssf "...{w=0.3}Gracias,{w=0.2} [player]."
                 $ jn_headpats._more_pats_requested = True
                 $ jn_headpats._pats_finished = False
                 $ jn_headpats._is_idle = False
                 jump headpats_loop
-            "That's it for now.":
+            "Es todo por ahora.":
 
                 n 2nslbol "...Oh."
-                n 2fcsemlsbl "W-{w=0.2}well,{w=0.2} that's fine!{w=0.75}{nw}"
-                extend 2fcspolsbl " I wasn't really {i}that{/i} into it anyway."
+                n 2fcsemlsbl "B-{w=0.2}bueno,{w=0.2} ¡está bien!{w=0.75}{nw}"
+                extend 2fcspolsbl " Realmente no me {i}gusta{/i} tanto de todos modos."
                 n 1kslpol "..."
     else:
         $ finished_start_quip = renpy.substitute(random.choice([
-            "...Satisfied?",
-            "Happy now,{w=0.2} [player]?",
-            "...Y-{w=0.3}you're done now?",
-            "A-{w=0.2}all done,{w=0.2} [player]?",
-            "I-{w=0.2}is that all,{w=0.2} [player]?"
+            "...¿Satisfecho?",
+            "¿Feliz ahora,{w=0.2} [player]?",
+            "...¿T-{w=0.3}terminaste ya?",
+            "¿T-{w=0.2}odo listo,{w=0.2} [player]?",
+            "¿E-{w=0.2}eso es todo,{w=0.2} [player]?"
         ]))
         n 1kwmpul "[finished_start_quip]"
 
         $ finished_end_quip = renpy.substitute(random.choice([
-            "...Good.",
-            "...A-{w=0.2}about time.",
-            "Finally...{w=0.5} jeez...",
-            "T-{w=0.2}took you long enough.",
-            "Finally..."
+            "...Bien.",
+            "...Y-{w=0.2}ya era hora.",
+            "Finalmente...{w=0.5} cielos...",
+            "T-{w=0.2}tardaste bastante.",
+            "Finalmente..."
         ]))
         n 1kllpul "[finished_end_quip]"
 
@@ -428,7 +428,7 @@ screen headpats_ui():
     zorder jn_headpats._PATS_UI_Z_INDEX
 
 
-    text "{0} headpats given".format(persistent._jn_headpats_total_given) size 30 xalign 0.5 ypos 40 text_align 0.5 xysize (None, None) outlines [(3, "#000000aa", 0, 0)] style "categorized_menu_button_text"
+    text "{0} caricias dadas".format(persistent._jn_headpats_total_given) size 30 xalign 0.5 ypos 40 text_align 0.5 xysize (None, None) outlines [(3, "#000000aa", 0, 0)] style "categorized_menu_button_text"
 
     mousearea:
         area (506, 109, 265, 155)
@@ -442,7 +442,7 @@ screen headpats_ui():
         xpos 1000
         ypos 450
 
-        textbutton _("Finished"):
+        textbutton _("Terminado"):
             style "hkbd_option"
             action [
                 Function(renpy.jump, "headpats_finished"),

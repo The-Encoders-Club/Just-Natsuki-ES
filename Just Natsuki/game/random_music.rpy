@@ -36,14 +36,14 @@ label random_music_change:
         return
 
     $ track_quip = random.choice([
-        "Alright!{w=0.2} Time for a different tune!",
-        "Okaaay!{w=0.2} Time for another song!",
-        "Yeah,{w=0.2} I think I'm about done with this song.",
-        "'Kay,{w=0.2} that's enough of that.",
-        "New song time!",
-        "That's about enough of that number!",
-        "I wanna listen to something else...",
-        "Time to change things up!"
+        "¡Está bien!{w=0.2} ¡Es hora de una melodía diferente!",
+        "¡¡¡Está bien!!!{w=0.2} ¡Es hora de otra canción!",
+        "Sí,{w=0.2} Creo que ya está bien con esta canción.",
+        "'Bueno,{w=0.2}ya es suficiente.",
+        "¡Es hora de una nueva canción!",
+        "¡Ya es suficiente con ese número!",
+        "Quiero escuchar algo más...",
+        "¡Es hora de cambiar las cosas!"
     ])
     n 3nchbg "[track_quip]{w=2}{nw}"
     show natsuki 4nchsmeme
@@ -55,12 +55,12 @@ label random_music_change:
     $ jnPause(2)
 
     $ track_followup = random.choice([
-        "Now,{w=0.2} let's see...",
-        "Now,{w=0.2} what have we got...",
-        "Let's see here...",
-        "What else have we got...",
-        "Aha!{w=0.5} Let's try this one!",
-        "Let me see..."
+        "Ahora,{w=0.2} vamos a ver...",
+        "Ahora,{w=0.2} ¿Qué tenemos?",
+        "Veamos aquí...",
+        "¿Qué más tenemos?",
+        "¡Ajá!{w=0.5} ¡Vamos a probar esto!",
+        "Déjame ver..."
     ])
     n 2fcssm "[track_followup]{w=2}{nw}"
     show natsuki 4fcssm
@@ -73,14 +73,14 @@ label random_music_change:
     $ jnPause(2)
     $ renpy.play(filename=jn_custom_music.getMusicFileRelativePath(file_name=music_title, is_custom=True), channel="music", fadein=2)
     $ jn_custom_music._now_playing = music_title
-    $ renpy.notify("Now playing: {0}".format(jn_custom_music._now_playing.split(".")[0]))
+    $ renpy.notify("Reproduciendo ahora: {0}".format(jn_custom_music._now_playing.split(".")[0]))
     $ track_complete = random.choice([
-        "Done~!",
-        "All done!",
-        "All good!",
-        "There we go!",
-        "And...{w=1} we're good!",
-        "Okie-dokie!{w=0.75} Ehehe."
+        "¡Hecho~!",
+        "¡Todo listo!",
+        "¡Todo está bien!",
+        "¡Allá vamos!",
+        "Y...{w=1} ¡estamos bien!",
+        "¡Okie-dokie!{w=0.75} Jejeje."
     ])
 
     n 2uchbgeme "[track_complete]{w=2}{nw}"
@@ -98,9 +98,9 @@ init 5 python:
             persistent._topic_database,
             label="random_music_enable",
             unlocked=True,
-            prompt="Can you play random custom music for me?",
+            prompt="¿Puedes reproducir música personalizada aleatoria para mí?",
             conditional="persistent.jn_custom_music_unlocked and not persistent.jn_random_music_enabled",
-            category=["Music"],
+            category=["Música"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -109,11 +109,11 @@ init 5 python:
     )
 
 label random_music_enable:
-    n 1unmbg "Ooh!{w=0.5}{nw}"
-    extend 3fchbg " Yeah,{w=0.1} I can do that!"
-    n 3unmss "I'll change it about every fifteen minutes or so then,{w=0.1} 'kay?"
-    n 4uwdaj "Oh!{w=0.5}{nw}"
-    extend 1fllbg " I almost forgot {w=0.1}-{w=0.1} let me just check there's actually any music for me to play first."
+    n 1unmbg "¡Oh!{w=0.5}{nw}"
+    extend 3fchbg " Sí,{w=0.1} ¡Puedo hacerlo!"
+    n 3unmss "Lo cambiaré cada quince minutos aproximadamente, entonces,{w=0.1} ¿de acuerdo?"
+    n 4uwdaj "¡Oh!{w=0.5}{nw}"
+    extend 1fllbg " Casi lo olvido {w=0.1}-{w=0.1} déjame verificar si realmente hay música para reproducir primero."
     n 4ncsbo "..."
 
     if len(jn_utils.getAllDirectoryFiles(
@@ -121,29 +121,29 @@ label random_music_enable:
             extension_list=jn_utils.getSupportedMusicFileExtensions()
         )) >= 2:
 
-        n 1uchgn "Okaaay!{w=0.2} I think I've got enough to work with here!{w=0.5}{nw}"
-        extend 4nchsm " Ehehe."
-        n 2nsqsm "Don't worry,{w=0.1} [player].{w=0.5}{nw}"
-        extend 2fcsbg " I'll pick good ones!"
+        n 1uchgn "¡Está bien! {w=0.2} ¡Creo que tengo suficiente con qué trabajar aquí!{w=0.5}{nw}"
+        extend 4nchsm " Jejeje."
+        n 2nsqsm "No te preocupes,{w=0.1} [player].{w=0.5}{nw}"
+        extend 2fcsbg " ¡Elegiré los buenos!"
 
         $ persistent.jn_random_music_enabled = True
 
     elif preferences.get_volume("music") == 0:
 
-        n 1nsqem "Uh...{w=0.5} huh."
-        n 2tsqca "And how {i}exactly{/i} do you plan to hear it with music turned off?"
-        n 2uchbg "Geez...{w=0.3} you're such a dork sometimes,{w=0.1} [player].{w=0.5}{nw}"
-        extend 4nchsm " Ehehe."
-        n 3fwlsm "Turn it back up,{w=0.1} and then we'll talk.{w=0.2} 'Kay?"
+        n 1nsqem "Oh...{w=0.5} eh."
+        n 2tsqca "¿Y cómo {i}exactamente{/i} planeas escucharlo con la música apagada?"
+        n 2uchbg "Dios mío...{w=0.3} a veces eres un tonto,{w=0.1} [player].{w=0.5}{nw}"
+        extend 4nchsm " Jejeje."
+        n 3fwlsm "Vuelve a subirlo,{w=0.1} y luego hablaremo,.{w=0.2} ¿de acuerdo?"
     else:
 
 
-        n 1tllaj "Uhmm...{w=0.3} [player]?{w=0.5}{nw}"
-        extend 4tnmca " You haven't exactly given me a lot to work with here."
-        n 2unmaj "Can you give me at least a couple of tracks?{w=0.5}{nw}"
-        extend 2tnmpo " You {i}do{/i} remember how do to that,{w=0.1} right?"
+        n 1tllaj "Mmm...{w=0.3} ¿[player]?{w=0.5}{nw}"
+        extend 4tnmca " No me has dado exactamente mucho con qué trabajar aquí."
+        n 2unmaj "¿Podrías darme al menos un par de pistas?{w=0.5}{nw}"
+        extend 2tnmpo " ¿Recuerdas cómo hacer eso, w=0.1} verdad?"
         $ chosen_tease = jn_utils.getRandomTease()
-        n 3uchbg "Just add them to the custom music folder,{w=0.1} [chosen_tease]!"
+        n 3uchbg "Simplemente agrégalos a la carpeta de música personalizada,{w=0.1} [chosen_tease]!"
 
     $ jn_custom_music._last_music_option = jn_custom_music.JNMusicOptionTypes.random
 
@@ -156,9 +156,9 @@ init 5 python:
             persistent._topic_database,
             label="random_music_disable",
             unlocked=True,
-            prompt="Can you stop playing random custom music?",
+            prompt="¿Puedes dejar de reproducir música personalizada aleatoria?",
             conditional="persistent.jn_custom_music_unlocked and persistent.jn_random_music_enabled",
-            category=["Music"],
+            category=["Música"], #category=["Music"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -167,11 +167,11 @@ init 5 python:
     )
 
 label random_music_disable:
-    n 1unmaj "Huh?{w=0.2} Wow.{w=0.5}{nw}"
-    extend 2nsqsf " Are my music choices {i}really{/i} that bad,{w=0.1} [player]?"
-    n 4fsrsm "...Ehehe."
-    n 1uchbg "I'm just messing with you.{w=0.2} Sure thing!{w=0.5}{nw}"
-    extend 2nchsm " I'll just put it back to the regular music."
+    n 1unmaj "¿Eh?{w=0.2} Vaya.{w=0.5}{nw}"
+    extend 2nsqsf " ¿Son mis elecciones musicales realmente tan malas,{w=0.1} [player]?"
+    n 4fsrsm "...Jejeje."
+    n 1uchbg "Sólo estoy jugando contigo.{w=0.2} ¡Por supuesto!{w=0.5}{nw}"
+    extend 2nchsm " Simplemente lo pondré de nuevo en la música normal."
 
     $ jn_custom_music.presentMusicPlayer("playing")
     play audio button_tap_c
@@ -189,11 +189,12 @@ label random_music_disable:
         fadein=2)
     $ jnPause(2)
 
-    n 2nwlbg "...And there we go!"
+    n 2nwlbg "...Y allá vamos!"
 
     $ jn_custom_music.hideMusicPlayer()
     $ jn_custom_music._last_music_option = jn_custom_music.JNMusicOptionTypes.location
     $ persistent.jn_random_music_enabled = False
 
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

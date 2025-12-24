@@ -12,7 +12,7 @@ init -50 python:
         NOTE: labels are always called in new context to formally interrupt flow without issues
         """
         if not renpy.has_label(keymap_label):
-            jn_utils.log("[ERROR]: Attempted to register label keymap for label that doesn't exist", jn_utils.SEVERITY_WARN)
+            jn_utils.log("[ERROR]: Se intentó registrar el mapa de teclas para una etiqueta que no existe", jn_utils.SEVERITY_WARN)
         
         jn_register_keymap(
             keymap_name,
@@ -34,15 +34,16 @@ init -50 python:
         """
         
         if keymap_name in config.keymap:
-            jn_utils.log("ERROR: Attempted to register a new keymap under an existing name. Ignoring.", jn_utils.SEVERITY_WARN);
+            jn_utils.log("ERROR: Se intentó registrar un nuevo mapa de teclas con un nombre existente. Se ignora..", jn_utils.SEVERITY_WARN);
             return
         
         
         if not callable(keymap_action):
-            jn_utils.log("ERROR: keymap action provided is not callable. Ignoring.", jn_utils.SEVERITY_WARN)
+            jn_utils.log("ERROR: La acción del mapa de teclas proporcionada no se puede ejecutar. Se ignora.", jn_utils.SEVERITY_WARN)
             return
         
         
         config.keymap[keymap_name] = keys
         config.underlay.append(renpy.Keymap(**{keymap_name: keymap_action}))
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

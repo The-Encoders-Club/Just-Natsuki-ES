@@ -123,7 +123,7 @@ init -55 python in jn_desk_items:
             - desk_item - the JNDeskItem to register.
         """
         if desk_item.reference_name in _m1_desk0x2ditems__ALL_DESK_ITEMS:
-            jn_utils.log("Cannot register desk item name: {0}, as a desk item with that name already exists.".format(desk_item.reference_name))
+            jn_utils.log("No se puede registrar el nombre del objeto de escritorio: {0}, ya que existe un objeto con ese nombre.".format(desk_item.reference_name))
         
         else:
             _m1_desk0x2ditems__ALL_DESK_ITEMS[desk_item.reference_name] = desk_item
@@ -283,4 +283,5 @@ init -55 python in jn_desk_items:
         unlocked=False,
         image_path="mod_assets/props/glasses_case.png"
     ))
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

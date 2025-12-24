@@ -125,7 +125,7 @@ init python:
                 Natsuki._desk_right = [image, reference_name]
             
             else:
-                jn_utils.log("Cannot assign item to desk slot {0} as the slot does not exist.".format(desk_slot))
+                jn_utils.log("No se puede asignar el objeto a la ranura del escritorio {0} ya que la ranura no existe.".format(desk_slot))
         
         @staticmethod
         def getDeskItemReferenceName(desk_slot):
@@ -149,7 +149,7 @@ init python:
                 return Natsuki._desk_right[1]
             
             else:
-                jn_utils.log("Cannot get reference name for desk slot {0} as the slot does not exist.".format(desk_slot))
+                jn_utils.log("No se puede obtener el nombre de referencia para la ranura del escritorio {0} ya que la ranura no existe.".format(desk_slot))
         
         @staticmethod
         def getDeskItemDisplayable(st, at, desk_slot):
@@ -170,7 +170,7 @@ init python:
                 return Natsuki._desk_right[0], None
             
             else:
-                jn_utils.log("Cannot get displayable for desk slot {0} as the slot does not exist.".format(desk_slot))
+                jn_utils.log("No se puede obtener el visualizable para la ranura del escritorio {0} ya que la ranura no existe.".format(desk_slot))
         
         @staticmethod
         def clearDeskItem(desk_slot):
@@ -190,7 +190,7 @@ init python:
                 Natsuki._desk_right = [Null(), None]
             
             else:
-                jn_utils.log("Cannot clear desk slot {0} as the slot does not exist.".format(desk_slot))
+                jn_utils.log("No se puede limpiar la ranura del escritorio {0} ya que la ranura no existe.".format(desk_slot))
         
         @staticmethod 
         def clearDesk():
@@ -766,7 +766,7 @@ init python:
             
             else:
                 store.jn_utils.log(
-                    message="Unable to get tier name for affinity {0}; affinity_state was {1}".format(
+                    message="No se puede obtener el nombre del nivel para la afinidad {0}; el estado de afinidad era {1}".format(
                         store.persistent.affinity,
                         Natsuki._getAffinityState()
                     ),
@@ -994,4 +994,5 @@ init python:
                 - is_reading_from_right - bool reading from right value to set
             """
             Natsuki._is_reading_to_right = is_reading_from_right
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

@@ -101,11 +101,11 @@ init -20 python:
             """
             
             if id in store.jn_locations.LOCATION_MAP:
-                raise Exception("[ERROR]: A Location with id '{0}' already exists.".format(id))
+                raise Exception("[ERROR]: Ya existe una ubicación con id '{0}'.".format(id))
             
             if not os.path.isdir(renpy.config.gamedir + "/mod_assets/backgrounds/{0}".format(image_dir)):
                 raise Exception(
-                    "[ERROR]: Image dir '{0}' is not a directory.".format(
+                    "[ERROR]: El directorio de imagen '{0}' no es un directorio.".format(
                         os.path.join(renpy.config.gamedir, "mod_assets", "backgrounds", image_dir)
                     )
                 )
@@ -116,11 +116,11 @@ init -20 python:
             
             
             if not renpy.loadable(day_image_fp):
-                raise Exception("[ERROR]: Day image ('{0}') is not loadable.".format(day_image_fp))
+                raise Exception("[ERROR]: La imagen del día ('{0}') no se puede cargar.".format(day_image_fp))
             
             
             if not renpy.loadable(night_image_fp):
-                raise Exception("[ERROR]: Night image ('{0}') is not loadable.".format(night_image_fp))
+                raise Exception("[ERROR]: La imagen de la noche ('{0}') no se puede cargar.".format(night_image_fp))
             
             
             self.id = id
@@ -240,7 +240,7 @@ init -20 python:
                 renpy.show(room, tag="main_bg", zorder=store.JN_LOCATION_ZORDER)
             
             else:
-                jn_utils.log("Unable to draw room: no room image was found.")
+                jn_utils.log("No se puede dibujar la sala: no se encontró ninguna imagen de sala.")
             
             
             if dissolve_all or full_redraw:
@@ -257,7 +257,7 @@ init -20 python:
                 renpy.show(room, tag="main_bg", zorder=store.JN_LOCATION_ZORDER)
             
             else:
-                jn_utils.log("Unable to show room: no room image was found.")
+                jn_utils.log("No se puede mostrar la sala: no se encontró ninguna imagen de sala.")
             
             return
         
@@ -360,4 +360,5 @@ init 5 python:
 
     main_background.day_to_night_event += _m1_locations__change_to_time_of_day_theme
     main_background.night_to_day_event += _m1_locations__change_to_time_of_day_theme
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

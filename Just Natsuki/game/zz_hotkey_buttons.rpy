@@ -268,7 +268,7 @@ screen hkb_overlay():
         xalign 0.09
         yalign 0.97
 
-        textbutton _("Talk"):
+        textbutton _("Hablar"):
             action [
                 Jump("talk_menu"),
                 SensitiveIf(not Natsuki.isInConversation() and not Natsuki.isInGame())
@@ -279,7 +279,7 @@ screen hkb_overlay():
             style "hkbd_button"
 
         if persistent.jn_custom_music_explanation_given and Natsuki.isHappy(higher=True):
-            textbutton _("Music"):
+            textbutton _("Música"):
                 action [
                     Jump("music_menu"),
                     SensitiveIf(not Natsuki.isInConversation() and not Natsuki.isInGame())

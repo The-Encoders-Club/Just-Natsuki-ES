@@ -277,7 +277,7 @@ init python in jn_blackjack:
             - Nobody if it is nobody's turn; otherwise the player or Natsuki's current nickname
         """
         if _game_state == JNBlackjackStates.draw:
-            return "It's a draw!"
+            return "¡Es un empate!"
         
         if (
             _game_state == JNBlackjackStates.natsuki_bust
@@ -285,7 +285,7 @@ init python in jn_blackjack:
             or _game_state == JNBlackjackStates.player_closest
             or _game_state == JNBlackjackStates.player_exact
         ):
-            return "You win!"
+            return "¡Ganaste!"
         
         if (
             _game_state == JNBlackjackStates.player_bust
@@ -293,12 +293,12 @@ init python in jn_blackjack:
             or _game_state == JNBlackjackStates.natsuki_closest
             or _game_state == JNBlackjackStates.natsuki_exact
         ):
-            return "You lose!"
+            return "¡Perdiste!"
         
         if _is_player_turn is None:
-            return "Nobody!"
+            return "¡Nadie!"
         
-        return "Yours!" if _is_player_turn else "[n_name]"
+        return "¡Tuyo!" if _is_player_turn else "[n_name]"
 
     def _m1_script0x2dblackjack__getQuitOrForfeitLabel():
         """
@@ -307,7 +307,7 @@ init python in jn_blackjack:
         OUT:
             - str "Forfeit" if the player has made any move, otherwise "Quit"
         """
-        return "Forfeit" if _is_player_committed else "Quit"
+        return "Rendirse" if _is_player_committed else "Salir"
 
     def _getNatsukiHandSumLabel():
         """
@@ -359,43 +359,43 @@ init python in jn_blackjack:
         )
 
 label blackjack_intro:
-    n 2fnmbg "Alright!{w=0.75}{nw}"
-    extend 4fchgn " Let's play some blackjack!"
+    n 2fnmbg "¡Muy bien!{w=0.75}{nw}"
+    extend 4fchgn " ¡Juguemos un poco de blackjack!"
 
     if not persistent._jn_blackjack_explanation_given:
-        n 4unmajeex "Oh,{w=0.2} right.{w=0.75}{nw}"
-        extend 4flrsssbl " I almost forgot."
-        n 2nsrsssbl "So before I get {i}too{/i} ahead of myself here..."
+        n 4unmajeex "Oh,{w=0.2} cierto.{w=0.75}{nw}"
+        extend 4flrsssbl " Casi lo olvido."
+        n 2nsrsssbl "Así que antes de adelantarme {i}demasiado{/i} aquí..."
 
         show natsuki option_wait_curious
         menu:
-            n "Did you need an explanation on how it all works,{w=0.2} or...?"
-            "Yes please!":
+            n "¿Necesitabas una explicación de cómo funciona todo,{w=0.2} o...?"
+            "¡Sí, por favor!":
 
                 jump blackjack_explanation
-            "No, I'm ready.":
+            "No, estoy listo.":
 
                 $ dialogue_choice = random.randint(1, 3)
                 if dialogue_choice == 1:
-                    n 2fcssm "Heh."
-                    n 2fnmss "You're ready,{w=0.5}{nw}"
-                    extend 4fsqbg " are you?"
-                    n 6fchgn "Ready to get a grade A butt kicking!{w=0.75}{nw}"
-                    extend 4fnmbgedz " Let's go,{w=0.2} [player]!"
+                    n 2fcssm "Je."
+                    n 2fnmss "Estás listo,{w=0.5}{nw}"
+                    extend 4fsqbg " ¿verdad?"
+                    n 6fchgn "¡Listo para recibir una paliza de grado A!{w=0.75}{nw}"
+                    extend 4fnmbgedz " ¡Vamos,{w=0.2} [player]!"
 
                 elif dialogue_choice == 2:
                     n 7ttrbo "Hmm..."
-                    n 7ulraj "Yeah,{w=0.5}{nw}"
-                    extend 3unmbo " I'd say you're about ready too."
-                    n 4fcsbg "...Ready for the bitter taste of defeat!{w=0.75}{nw}"
-                    extend 4fchbgedz " Now let's go already!"
+                    n 7ulraj "Sí,{w=0.5}{nw}"
+                    extend 3unmbo " diría que también estás listo."
+                    n 4fcsbg "...¡Listo para el amargo sabor de la derrota!{w=0.75}{nw}"
+                    extend 4fchbgedz " ¡Ahora vamos de una vez!"
                 else:
 
                     n 1fcssm "Ehehe.{w=0.75}{nw}"
-                    extend 2tsqss " Oh?{w=0.75}{nw}"
-                    extend 2fsqbg " You're ready,{w=0.2} huh?"
-                    n 4fnmbg "...Ready for a total thrashing!{w=0.75}{nw}"
-                    extend 4nchgnedz " Bring it,{w=0.2} [player]!"
+                    extend 2tsqss " ¿Oh?{w=0.75}{nw}"
+                    extend 2fsqbg " Estás listo,{w=0.2} ¿eh?"
+                    n 4fnmbg "...¡Listo para una paliza total!{w=0.75}{nw}"
+                    extend 4nchgnedz " ¡Venga,{w=0.2} [player]!"
 
                 $ persistent._jn_blackjack_explanation_given = True
 
@@ -403,120 +403,120 @@ label blackjack_intro:
 
 label blackjack_explanation:
     if persistent._jn_blackjack_explanation_given:
-        n 7ulraj "So like I was saying before,{w=0.5}{nw}"
-        extend 7unmbo " Blackjack is pretty simple once you've got your head around the rules."
+        n 7ulraj "Así que como decía antes,{w=0.5}{nw}"
+        extend 7unmbo " el Blackjack es bastante simple una vez que entiendes las reglas."
     else:
 
-        n 4fcsbg "So!{w=0.75}{nw}"
-        extend 7ullss " Blackjack is actually pretty simple,{w=0.5}{nw}"
-        extend 3unmaj " once you've got your head around the rules."
+        n 4fcsbg "¡Así que!{w=0.75}{nw}"
+        extend 7ullss " El Blackjack es en realidad bastante simple,{w=0.5}{nw}"
+        extend 3unmaj " una vez que entiendes las reglas."
 
-    n 5nsrsssbl "There's a bunch of different ways people play it,{w=0.5}{nw}"
-    extend 4ulraj " so...{w=1}{nw}"
-    extend 6ccssm " we'll just go with something that works with only the two of us here."
-    n 3ullaj "To start off,{w=0.2} we both get a couple random cards each from the deck."
-
-    if not persistent._jn_blackjack_explanation_given:
-        n 4fcsss "Yeah,{w=0.2} yeah.{w=0.75}{nw}"
-        extend 2fsqsm " Don't worry,{w=0.2} [player].{w=0.75}{nw}"
-        extend 2fcsbgeme " I {i}always{/i} shuffle."
-
-    n 3unmaj "Next,{w=0.2} we both take it in turns to either {i}hit{/i} -{w=0.5}{nw}"
-    extend 3clrss " draw another card,{w=0.5}{nw}"
-    extend 6unmbo " or {i}stay{/i} -{w=0.5}{nw}"
-    extend 3cllsm " which is just skipping our turn."
-    n 4tnmss "What's the goal,{w=0.2} you ask?"
-    n 7tlrss "Well...{w=1}{nw}"
-    extend 3fnmsm " we're basically trying to get the total value of our cards as close to twenty one as we can.{w=0.75}{nw}"
-    extend 3fcsbg " If you get it with just two cards,{w=0.2} that's called a {i}blackjack{/i}!"
+    n 5nsrsssbl "Hay un montón de formas diferentes en que la gente lo juega,{w=0.5}{nw}"
+    extend 4ulraj " así que...{w=1}{nw}"
+    extend 6ccssm " solo iremos con algo que funcione con solo nosotros dos aquí."
+    n 3ullaj "Para empezar,{w=0.2} ambos recibimos un par de cartas aleatorias de la baraja."
 
     if not persistent._jn_blackjack_explanation_given:
-        n 7cllss "As for how the cards are gonna work..."
+        n 4fcsss "Sí,{w=0.2} sí.{w=0.75}{nw}"
+        extend 2fsqsm " No te preocupes,{w=0.2} [player].{w=0.75}{nw}"
+        extend 2fcsbgeme " Yo {i}siempre{/i} barajo."
+
+    n 3unmaj "A continuación,{w=0.2} ambos tomamos turnos para ya sea {i}pedir{/i} -{w=0.5}{nw}"
+    extend 3clrss " sacar otra carta,{w=0.5}{nw}"
+    extend 6unmbo " o {i}plantarse{/i} -{w=0.5}{nw}"
+    extend 3cllsm " que es simplemente saltar nuestro turno."
+    n 4tnmss "¿Cuál es el objetivo,{w=0.2} preguntas?"
+    n 7tlrss "Bueno...{w=1}{nw}"
+    extend 3fnmsm " básicamente estamos tratando de que el valor total de nuestras cartas sea lo más cercano a veintiuno como podamos.{w=0.75}{nw}"
+    extend 3fcsbg " Si lo consigues con solo dos cartas,{w=0.2} ¡eso se llama un {i}blackjack{/i}!"
+
+    if not persistent._jn_blackjack_explanation_given:
+        n 7cllss "En cuanto a cómo van a funcionar las cartas..."
 
         if persistent.jn_snap_explanation_given:
-            n 7tnmbo "You remember Snap,{w=0.2} right?"
+            n 7tnmbo "Recuerdas el Snap,{w=0.2} ¿verdad?"
         else:
 
-            n 3tnmbo "You've at least seen playing cards before,{w=0.2} right?"
+            n 3tnmbo "Al menos has visto cartas de juego antes,{w=0.2} ¿verdad?"
 
-        n 6ullaj "Well each card has a value -{w=0.5}{nw}"
-        extend 3ccssm " obviously -{w=0.5}{nw}"
-        extend 4nnmfl " but don't worry about the actual {i}suit{/i}:{w=0.75}{nw}"
-        extend 1tlrbo " diamonds or spades or whatever.{w=0.75}{nw}"
-        extend 2fcssmesm " We only care about the {i}numbers{/i}!"
+        n 6ullaj "Bueno, cada carta tiene un valor -{w=0.5}{nw}"
+        extend 3ccssm " obviamente -{w=0.5}{nw}"
+        extend 4nnmfl " pero no te preocupes por el {i}palo{/i} real:{w=0.75}{nw}"
+        extend 1tlrbo " diamantes o espadas o lo que sea.{w=0.75}{nw}"
+        extend 2fcssmesm " ¡Solo nos importan los {i}números{/i}!"
     else:
 
-        n 3clrss "Like I said last time:{w=0.5}{nw}"
-        extend 4tlraj " the suits of the cards don't matter here,{w=0.5}{nw}"
-        extend 2fnmsm " so it's just the numbers you gotta keep an eye on."
+        n 3clrss "Como dije la última vez:{w=0.5}{nw}"
+        extend 4tlraj " los palos de las cartas no importan aquí,{w=0.5}{nw}"
+        extend 2fnmsm " así que son solo los números a los que tienes que echarles un ojo."
 
-    n 4clrss "The {i}face cards{/i} work kinda differently to the normal ones."
-    n 6tnmaj "If you get a {i}king,{w=0.2} queen,{w=0.2} or jack{/i},{w=0.5}{nw}"
-    extend 3ccssm " then those just count as being worth {i}ten{/i}."
-    n 7tllfl "As for aces...{w=1}{nw}"
-    extend 3nchgn " depends when you draw them!{w=0.75}{nw}"
-    n 3ulrss "We'll say aces are worth {i}eleven{/i},{w=0.2} {i}unless{/i} you got one to start with that would make you bust instantly.{w=0.75}{nw}"
-    extend 3fcssm " I'm not {i}that{/i} mean."
-    n 4cllbg "But yeah -{w=0.5}{nw}"
-    extend 2ullpu " if the ace would make you {i}lose on your first turn{/i},{w=0.5}{nw}"
-    extend 2nnmbo " then it's just worth {i}one{/i} instead."
-    n 7ulraj "We keep taking it in turns until one of us hits twenty one,{w=0.2} we both decide to {i}stay{/i} -{w=0.5}{nw}"
-    extend 7unmbo " or one of us ends up with a hand that goes over twenty one."
-    n 6fchbl "...That means you bust!"
-    n 1cllss "Otherwise if neither of us end up busting,{w=0.5}{nw}"
-    extend 2ccssm " then whoever got {i}closest{/i} to twenty one wins the round.{w=0.75}{nw}"
-    extend 2fchbg " Easy peasy!"
-    n 4unmaj "Oh,{w=0.2} yeah -{w=0.5}{nw}"
-    extend 7clrss " and don't worry about keeping tabs on the score or anything.\n{w=0.75}{nw}"
-    extend 6fcsbg " I've got it all covered!"
-    n 3fchsm "Ehehe."
-    n 4fnmsm "But yeah!{w=0.75}{nw}"
-    extend 4ullss " I think that's pretty much everything I had."
-    n 3ullaj "So...{w=1}{nw}"
-    extend 7unmbo " how about it,{w=0.2} [player]?"
+    n 4clrss "Las {i}cartas de figuras{/i} funcionan un poco diferente a las normales."
+    n 6tnmaj "Si obtienes un {i}rey,{w=0.2} reina,{w=0.2} o jota{/i},{w=0.5}{nw}"
+    extend 3ccssm " entonces esas solo cuentan como si valieran {i}diez{/i}."
+    n 7tllfl "En cuanto a los ases...{w=1}{nw}"
+    extend 3nchgn " ¡depende de cuándo los saques!{w=0.75}{nw}"
+    n 3ulrss "Diremos que los ases valen {i}once{/i},{w=0.2} {i}a menos{/i} que obtengas uno al principio que te haría pasarte al instante.{w=0.75}{nw}"
+    extend 3fcssm " No soy {i}tan{/i} mala."
+    n 4cllbg "Pero sí -{w=0.5}{nw}"
+    extend 2ullpu " si el as te hiciera {i}perder en tu primer turno{/i},{w=0.5}{nw}"
+    extend 2nnmbo " entonces solo vale {i}uno{/i} en su lugar."
+    n 7ulraj "Seguimos tomando turnos hasta que uno de nosotros llegue a veintiuno,{w=0.2} ambos decidamos {i}plantarnos{/i} -{w=0.5}{nw}"
+    extend 7unmbo " o uno de nosotros termine con una mano que pase de veintiuno."
+    n 6fchbl "...¡Eso significa que te pasaste!"
+    n 1cllss "De lo contrario, si ninguno de nosotros termina pasándose,{w=0.5}{nw}"
+    extend 2ccssm " entonces quien se haya acercado {i}más{/i} a veintiuno gana la ronda.{w=0.75}{nw}"
+    extend 2fchbg " ¡Pan comido!"
+    n 4unmaj "Oh,{w=0.2} sí -{w=0.5}{nw}"
+    extend 7clrss " y no te preocupes por llevar la cuenta de la puntuación ni nada.\n{w=0.75}{nw}"
+    extend 6fcsbg " ¡Lo tengo todo cubierto!"
+    n 3fchsm "Jejeje."
+    n 4fnmsm "¡Pero sí!{w=0.75}{nw}"
+    extend 4ullss " Creo que eso es prácticamente todo lo que tenía."
+    n 3ullaj "Así que...{w=1}{nw}"
+    extend 7unmbo " ¿qué te parece,{w=0.2} [player]?"
 
     $ persistent._jn_blackjack_explanation_given = True
     show natsuki option_wait_curious
     menu:
-        n "Did you catch all that,{w=0.2} or...?"
-        "Can you go over the rules again?":
+        n "¿Entendiste todo eso,{w=0.2} o...?"
+        "¿Puedes repasar las reglas de nuevo?":
 
-            n 7tsqpueqm "Huh?{w=0.75}{nw}"
-            extend 7tsqfl " You need me to go over that stuff again?"
-            n 7cllfl "Well...{w=1}{nw}"
-            extend 3nslbo " fine."
-            n 3ccspoesi "But you better be listening this time,{w=0.2} [player]."
+            n 7tsqpueqm "¿Huh?{w=0.75}{nw}"
+            extend 7tsqfl " ¿Necesitas que repase esas cosas de nuevo?"
+            n 7cllfl "Bueno...{w=1}{nw}"
+            extend 3nslbo " bien."
+            n 3ccspoesi "Pero será mejor que estés escuchando esta vez,{w=0.2} [player]."
 
             jump blackjack_explanation
-        "Got it. Let's play!":
+        "Entendido. ¡Juguemos!":
 
-            n 7tnmaj "Oh?{w=0.75}{nw}"
-            extend 7tnmfl " You got all that?{w=0.75}{nw}"
-            extend 3tsqsm " You sure,{w=0.2} [player]?"
-            n 1fcssm "Ehehe."
-            n 2fcsbg "Well then."
-            n 2fnmbg "...Guess it's about time we put that to the test!{w=0.75}{nw}"
-            extend 4fchgn " Let's do this,{w=0.2} [player]!"
+            n 7tnmaj "¿Oh?{w=0.75}{nw}"
+            extend 7tnmfl " ¿Entendiste todo eso?{w=0.75}{nw}"
+            extend 3tsqsm " ¿Seguro,{w=0.2} [player]?"
+            n 1fcssm "Jejeje."
+            n 2fcsbg "Bueno entonces."
+            n 2fnmbg "...¡Supongo que es hora de poner eso a prueba!{w=0.75}{nw}"
+            extend 4fchgn " ¡Hagámoslo,{w=0.2} [player]!"
 
             jump blackjack_start
-        "Thanks, [n_name]. I'll play later.":
+        "Gracias, [n_name]. Jugaré luego.":
 
             n 1ccsemesi "..."
-            n 2ccsfl "...Really,{w=0.5}{nw}"
+            n 2ccsfl "...¿En serio,{w=0.5}{nw}"
             extend 2csqfl " [player]?"
-            n 4fcsgs "I went through all that just for you to say you're gonna play{w=0.5}{nw}"
-            extend 4ftlem " {i}later{/i}?"
+            n 4fcsgs "Pasé por todo eso solo para que digas que vas a jugar{w=0.5}{nw}"
+            extend 4ftlem " {i}luego{/i}?"
             n 1fsqca "..."
-            n 3fchgn "Well,{w=0.75} your loss!{w=0.75}{nw}"
-            extend 6fcssmesm " Just a word of warning though,{w=0.2} [player]..."
+            n 3fchgn "Bueno,{w=0.75} ¡tú te lo pierdes!{w=0.75}{nw}"
+            extend 6fcssmesm " Solo una advertencia sin embargo,{w=0.2} [player]..."
 
             if Natsuki.isLove(higher=True):
-                n 3fcsbg "Don't think I'm gonna go any easier on you later either!"
-                n 3fchbllsbr "You aren't gonna sweet-talk your way out of losing!"
+                n 3fcsbg "¡No creas que voy a ser más suave contigo luego tampoco!"
+                n 3fchbllsbr "¡No vas a salirte con la tuya con palabras dulces!"
             else:
 
-                n 3fcsbg "Don't think I'm gonna go any easier on you later either!{w=0.75}{nw}"
-                extend 3nchgnl " Ahaha."
+                n 3fcsbg "¡No creas que voy a ser más suave contigo luego tampoco!{w=0.75}{nw}"
+                extend 3nchgnl " Jajaja."
 
             if not Natsuki.getDeskSlotClear(jn_desk_items.JNDeskSlots.right):
                 show natsuki 2ccspo
@@ -615,25 +615,25 @@ label blackjack_end:
     if persistent._jn_blackjack_natsuki_streak in [3, 5, 10] and jn_blackjack._game_state in [jn_blackjack.JNBlackjackStates.natsuki_blackjack, jn_blackjack.JNBlackjackStates.natsuki_closest, jn_blackjack.JNBlackjackStates.natsuki_exact]:
         $ natsuki_streak_milestone_map = {
             3: [
-                "Oh?{w=0.75} Three wins now?{w=0.75} Looks like {i}someone's{/i} got the makings of a streak going!",
-                "Yes!{w=0.75} That makes three in a row!{w=0.75} Ehehe.",
-                "Three wins and counting,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "What's that?{w=0.75} Three wins now?{w=0.75} Sounds like a streak to me!",
-                "Oh yeah!{w=0.75} Three in a row!"
+                "¿Oh?{w=0.75} ¿Tres victorias ahora?{w=0.75} ¡Parece que {i}alguien{/i} tiene los ingredientes de una racha!",
+                "¡Sí!{w=0.75} ¡Eso hace tres seguidas!{w=0.75} Jejeje.",
+                "¡Tres victorias y contando,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "¿Qué es eso?{w=0.75} ¿Tres victorias ahora?{w=0.75} ¡Suena a una racha para mí!",
+                "¡Oh sí!{w=0.75} ¡Tres seguidas!"
             ],
             5: [
-                "Ha!{w=0.75} That makes five in a row now,{w=0.2} [player]!",
-                "Yes!{w=0.75} Five in a row!{w=1} Top that,{w=0.2} {i}[player]{/i}.",
-                "Aaaand that makes five!{w=0.75} Didn't I {i}say{/i} I was good?",
-                "Yes!{w=0.75} That's five wins and counting!",
-                "Yeah!{w=0.75} Five in a row!{w=0.75} Ehehe."
+                "¡Ja!{w=0.75} ¡Eso hace cinco seguidas ahora,{w=0.2} [player]!",
+                "¡Sí!{w=0.75} ¡Cinco seguidas!{w=1} Supera eso,{w=0.2} {i}[player]{/i}.",
+                "¡Y eso hace cinco!{w=0.75} ¿No {i}dije{/i} que era buena?",
+                "¡Sí!{w=0.75} ¡Esas son cinco victorias y contando!",
+                "¡Sí!{w=0.75} ¡Cinco seguidas!{w=0.75} Jejeje."
             ],
             10: [
-                "Oh yeah!{w=0.75} Ten!{w=0.75} Now {i}that's{/i} what it means to be a pro,{w=0.2} [player]!",
-                "Man...{w=1} ten in a row?{w=0.75} I am on {i}fire{/i} today!{w=0.75} Ehehe.",
-                "Ha!{w=0.75} The big ten!{w=0.75} What have you got to say to that,{w=0.2} [player]?",
-                "Yes!{w=0.75} Ten in a row!{w=0.75} Man...{w=1} I'm unstoppable!",
-                "Jeez...{w=1} what is that now?{w=0.75} Ten?{w=0.75} At least {i}try{/i} to keep up,{w=0.2} [player]!"
+                "¡Oh sí!{w=0.75} ¡Diez!{w=0.75} ¡Ahora {i}eso{/i} es lo que significa ser una pro,{w=0.2} [player]!",
+                "Viejo...{w=1} ¿diez seguidas?{w=0.75} ¡Estoy en {i}racha{/i} hoy!{w=0.75} Jejeje.",
+                "¡Ja!{w=0.75} ¡La gran diez!{w=0.75} ¿Qué tienes que decir a eso,{w=0.2} [player]?",
+                "¡Sí!{w=0.75} ¡Diez seguidas!{w=0.75} Viejo...{w=1} ¡Soy imparable!",
+                "Cielos...{w=1} ¿cuánto es ahora?{w=0.75} ¿Diez?{w=0.75} ¡Al menos {i}intenta{/i} seguir el ritmo,{w=0.2} [player]!"
             ]
         }
         $ chosen_response = renpy.substitute(random.choice(natsuki_streak_milestone_map[persistent._jn_blackjack_natsuki_streak]))
@@ -641,25 +641,25 @@ label blackjack_end:
     elif persistent._jn_blackjack_player_streak in [3, 5, 10] and jn_blackjack._game_state in [jn_blackjack.JNBlackjackStates.player_blackjack, jn_blackjack.JNBlackjackStates.player_closest, jn_blackjack.JNBlackjackStates.player_exact]:
         $ player_streak_milestone_map = {
             3: [
-                "L-{w=0.2}lucky break,{w=0.2} [player].{w=0.75} Anyone can luck out three times in a row!",
-                "Yeah,{w=0.2} yeah.{w=0.75} T-{w=0.2}three in a row is nothing anyway!",
-                "B-{w=0.2}bet you can't make that four in a row,{w=0.2} [player]!",
-                "Y-{w=0.2}you better not be getting cocky.{w=0.75} Three in a row is nothing,{w=0.2} [player]!",
-                "T-{w=0.2}three losses in a row is nothing!{w=0.75} I'm seriously just getting started!"
+                "G-{w=0.2}golpe de suerte,{w=0.2} [player].{w=0.75} ¡Cualquiera puede tener suerte tres veces seguidas!",
+                "Sí,{w=0.2} sí.{w=0.75} ¡T-{w=0.2}tres seguidas no es nada de todos modos!",
+                "¡A-{w=0.2}apuesto a que no puedes hacer que sean cuatro seguidas,{w=0.2} [player]!",
+                "M-{w=0.2}mejor no te pongas arrogante.{w=0.75} Tres seguidas no es nada,{w=0.2} [player]!",
+                "¡T-{w=0.2}tres derrotas seguidas no es nada!{w=0.75} ¡Seriamente solo estoy empezando!"
             ],
             5: [
-                "Uuuuuu...!{w=0.75} Y-{w=0.2}you can stop getting so lucky now,{w=0.2} [player]!{w=0.75} Jeez...",
-                "F-{w=0.2}five in a row now?{w=0.75} Are you kidding me?!",
-                "Seriously?{w=0.75} That's five times in a row?!{w=0.75} Ugh...",
-                "Nnnnnn-!{w=0.75} T-{w=0.2}there's no way you just got five in a row!{w=0.75} Cut me a break...",
-                "Y-{w=0.2}you've got to be kidding me!{w=0.75} Five times?!{w=0.75} T-{w=0.2}there's no way this is anything but luck!"
+                "¡Uuuuuu...!{w=0.75} ¡P-{w=0.2}puedes dejar de tener tanta suerte ahora,{w=0.2} [player]!{w=0.75} Cielos...",
+                "¿C-{w=0.2}cinco seguidas ahora?{w=0.75} ¡¿Me estás tomando el pelo?!",
+                "¿En serio?{w=0.75} ¡¿Son cinco veces seguidas?!{w=0.75} Ugh...",
+                "¡Nnnnnn-!{w=0.75} ¡N-{w=0.2}no hay manera de que acabes de ganar cinco seguidas!{w=0.75} Dame un respiro...",
+                "¡T-{w=0.2}tienes que estar bromeando!{w=0.75} ¡¿Cinco veces?!{w=0.75} ¡N-{w=0.2}no hay manera de que esto sea otra cosa que suerte!"
             ],
             10: [
-                "A-{w=0.2}are you reading my cards or what?!{w=0.75} {i}Ten{/i}?!{w=0.75} Jeez...",
-                "Oh{w=0.2},{w=0.75} come {b}on{/b}!{w=0.75} There's no {i}way{/i} you just got ten in a row!{w=0.75} Ugh...",
-                "T-{w=0.2}this is just getting ridiculous!{w=0.75} Ten in a row?!{w=0.75} I {i}swear{/i} these cards are rigged...",
-                "Okay!{w=0.75} Okay!{w=0.75} You've made your point...{w=1} now can you go back to losing already? Yeesh...",
-                "Nnnnnnnn-!{w=0.75} J-{w=0.2}just lose already,{w=0.2} [player]!{w=0.75} It's my turn to win something!"
+                "¿A-{w=0.2}acaso estás leyendo mis cartas o qué?{w=0.75} ¡¿{i}Diez{/i}?!{w=0.75} Cielos...",
+                "¡Oh{w=0.2},{w=0.75} vamos!{w=0.75} ¡No hay {i}manera{/i} de que acabes de ganar diez seguidas!{w=0.75} Ugh...",
+                "¡E-{w=0.2}esto se está volviendo ridículo!{w=0.75} ¡¿Diez seguidas?!{w=0.75} {i}Juro{/i} que estas cartas están amañadas...",
+                "¡Bien!{w=0.75} ¡Bien!{w=0.75} Ya dejaste tu punto claro...{w=1} ¿ahora puedes volver a perder de una vez? Cielos...",
+                "¡Nnnnnnnn-!{w=0.75} ¡S-{w=0.2}solo pierde ya,{w=0.2} [player]!{w=0.75} ¡Es mi turno de ganar algo!"
             ]
         }
         $ chosen_response = renpy.substitute(random.choice(player_streak_milestone_map[persistent._jn_blackjack_player_streak]))
@@ -667,86 +667,86 @@ label blackjack_end:
 
         $ response_map = {
             jn_blackjack.JNBlackjackStates.draw: [
-                "We drew?{w=0.75} Huh.",
-                "Huh.{w=0.75} We drew?{w=0.75} Weird.",
-                "Wait,{w=0.2} we tied?{w=0.75} Huh.",
-                "A tie?{w=0.75} Weird.",
-                "Come on,{w=0.2} [player]...{w=1} you gotta lose some time!",
-                "Huh.{w=0.75} Another tie.",
-                "Another draw,{w=0.2} huh?{w=0.75} Weird."
+                "¿Empatamos?{w=0.75} Huh.",
+                "Huh.{w=0.75} ¿Empatamos?{w=0.75} Que raro.",
+                "Espera,{w=0.2} ¿empatamos?{w=0.75} Huh.",
+                "¿Un empate?{w=0.75} Raro.",
+                "Vamos,{w=0.2} [player]...{w=1} ¡tienes que perder alguna vez!",
+                "Huh.{w=0.75} Otro empate.",
+                "Otro empate,{w=0.2} ¿eh?{w=0.75} Raro."
             ],
             jn_blackjack.JNBlackjackStates.natsuki_bust: [
-                "I bust?{w=0.75} Are you kidding me?!{w=0.75} Ugh...",
-                "Oh,{w=0.2} come on!{w=0.75} I bust {i}again{/i}?!{w=0.75} Yeesh...",
-                "Oh,{w=0.2} for-!{w=0.75} {i}Another{/i} bust?!{w=0.75} Seriously...",
-                "A-{w=0.2}as {i}if{/i} I bust!{w=0.75} Man...",
-                "Are you joking?!{w=0.75} I bust again?!",
-                "You have {i}got{/i} to be joking.{w=0.75} Again?!",
-                "Come on,{w=0.5} [n_name]...{w=1} get it together!",
-                "Uuuuuuu...!{w=0.75} I {i}knew{/i} that was a crappy move!{w=0.75} Ugh..."
+                "¿Me pasé?{w=0.75} ¡¿Me estás tomando el pelo?!{w=0.75} Ugh...",
+                "¡Oh,{w=0.2} vamos!{w=0.75} ¡¿Me pasé {i}de nuevo{/i}?!{w=0.75} Cielos...",
+                "¡Oh,{w=0.2} por-!{w=0.75} ¡¿{i}Otra{/i} vez me pasé?!{w=0.75} En serio...",
+                "¡C-{w=0.2}como {i}si{/i} me hubiera pasado!{w=0.75} Viejo...",
+                "¡¿Estás bromeando?!{w=0.75} ¡¿Me pasé de nuevo?!",
+                "Tines {i}que{/i} estar bromeando.{w=0.75} ¡¿De nuevo?!",
+                "Vamos,{w=0.5} [n_name]...{w=1} ¡compórtate!",
+                "¡Uuuuuuu...!{w=0.75} ¡{i}Sabía{/i} que ese era un movimiento de mierda!{w=0.75} Ugh..."
             ],
             jn_blackjack.JNBlackjackStates.natsuki_blackjack: [
-                "Yes!{w=0.5} Yes!{w=0.5} Blackjack!{w=0.75} Ehehe.",
-                "Blackjack!{w=0.5} Blackjack!{w=0.5} Ehehe.",
-                "Blackjack!{w=0.5} Yes!{w=0.5} Now {i}that's{/i} how it's done!",
-                "Yes!{w=0.5} Now {i}that's{/i} more like it!{w=0.75} Ahaha.",
-                "Better be taking notes,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "Oh yeah!{w=0.75} Blackjack!",
-                "Blackjack!{w=0.75} Blackjack!{w=0.75} Yes!"
+                "¡Sí!{w=0.5} ¡Sí!{w=0.5} ¡Blackjack!{w=0.75} Jejeje.",
+                "¡Blackjack!{w=0.5} ¡Blackjack!{w=0.5} Jejeje.",
+                "¡Blackjack!{w=0.5} ¡Sí!{w=0.5} ¡Ahora {i}así{/i} es como se hace!",
+                "¡Sí!{w=0.5} ¡Ahora {i}eso{/i} es más como lo que quería!{w=0.75} Jajaja.",
+                "¡Mejor toma notas,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "¡Oh sí!{w=0.75} ¡Blackjack!",
+                "¡Blackjack!{w=0.75} ¡Blackjack!{w=0.75} ¡Sí!"
             ],
             jn_blackjack.JNBlackjackStates.natsuki_closest: [
-                "Yes!{w=0.5} I win!{w=0.3} I win!{w=0.75} Ehehe.",
-                "Yes!{w=0.5} I win again!",
-                "Look!{w=0.5} I was closer!{w=0.3} I win!{w=0.3} I win!",
-                "Yes!{w=0.5} Take that,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "Oh yeah!{w=0.75} Now {i}that's{/i} more like it!",
-                "Yes!{w=0.75} Tough luck,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "Ehehe.{w=0.75} Now {i}that's{/i} how it's played,{w=0.2} [player]!"
+                "¡Sí!{w=0.5} ¡Gané!{w=0.3} ¡Gané!{w=0.75} Jejeje.",
+                "¡Sí!{w=0.5} ¡Gané de nuevo!",
+                "¡Mira!{w=0.5} ¡Estuve más cerca!{w=0.3} ¡Gané!{w=0.3} ¡Gané!",
+                "¡Sí!{w=0.5} ¡Toma esa,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "¡Oh sí!{w=0.75} ¡Ahora {i}eso{/i} es más como lo que quería!",
+                "¡Sí!{w=0.75} Mala suerte,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "Jejeje.{w=0.75} ¡Ahora {i}así{/i} es como se juega,{w=0.2} [player]!"
             ],
             jn_blackjack.JNBlackjackStates.natsuki_exact: [
-                "Well...{w=0.75} it's not a {i}blackjack{/i}...{w=0.75} but I'll take it!",
-                "Ehehe.{w=0.75} A win's a win,{w=0.2} [player]!",
-                "Just you watch,{w=0.2} [player]!{w=0.75} Next win's a blackjack!",
-                "Heh.{w=0.75} Doesn't matter,{w=0.2} [player] -{w=0.2} still a win!",
-                "W-{w=0.2}who says you need to blackjack to be a pro?{w=0.75} Ehehe.",
-                "H-{w=0.2}hey!{w=0.75} It's still twenty one,{w=0.2} whether you like it or not!",
-                "Ehehe.{w=0.75} Still twenty one,{w=0.2} [player]!"
+                "Bueno...{w=0.75} no es un {i}blackjack{/i}...{w=0.75} ¡pero lo tomaré!",
+                "Jejeje.{w=0.75} Una victoria es una victoria,{w=0.2} [player]!",
+                "¡Solo mira,{w=0.2} [player]!{w=0.75} ¡La próxima victoria es un blackjack!",
+                "Je.{w=0.75} No importa,{w=0.2} [player] -{w=0.2} ¡sigue siendo una victoria!",
+                "¿Q-{w=0.2}quién dice que necesitas blackjack para ser una profesional?{w=0.75} Jejeje.",
+                "¡H-{w=0.2}hey!{w=0.75} ¡Todavía es veintiuno,{w=0.2} te guste o no!",
+                "Jejeje.{w=0.75} ¡Todavía veintiuno,{w=0.2} [player]!"
             ],
             jn_blackjack.JNBlackjackStates.player_bust: [
-                "Pfft-!{w=0.75} Nice bust there,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "Yep.{w=0.5} Total misplay,{w=0.2} [player]!",
-                "Now that's what I call a bust!{w=0.75} Ehehe.",
-                "Ahaha.{w=0.75} Sucks to be you,{w=0.2} [player]!",
-                "Pffft!{w=0.75} You {i}sure{/i} you know how to play,{w=0.2} [player]?",
-                "{i}Real{/i} smooth there,{w=0.2} [player]!{w=0.75} Ehehe.",
-                "Hey,{w=0.2} [player] -{w=0.5} you're meant to count up the cards!{w=0.75} Ehehe."
+                "¡Pfft-!{w=0.75} ¡Bonita pasada ahí,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "Sip.{w=0.5} Jugada totalmente equivocada,{w=0.2} [player]!",
+                "¡Ahora a eso le llamo pasarse!{w=0.75} Jejeje.",
+                "Jajaja.{w=0.75} Apesta ser tú,{w=0.2} [player]!",
+                "¡Pffft!{w=0.75} ¿Seguro que {i}sabes{/i} jugar,{w=0.2} [player]?",
+                "¡{i}Muy{/i} suave ahí,{w=0.2} [player]!{w=0.75} Jejeje.",
+                "Oye,{w=0.2} [player] -{w=0.5} ¡se supone que tienes que contar las cartas!{w=0.75} Jejeje."
             ],
             jn_blackjack.JNBlackjackStates.player_blackjack: [
-                "Seriously?{w=0.75} You got a blackjack?!{w=0.75} Ugh...",
-                "Yeah,{w=0.2} yeah.{w=0.75} Enjoy your luck while it lasts,{w=0.2} [player].",
-                "Hmph.{w=0.75} You just lucked out this time.",
-                "Oh,{w=0.2} come {i}on{/i}!{w=0.75} Again?{w=0.75} Seriously...",
-                "N-{w=0.2}now that one was just pure luck!{w=0.75} Ugh...",
-                "T-{w=0.2}that one was just pure chance!{w=0.75} Come on...",
-                "Ugh...{w=1} for real?{w=0.75} You got another blackjack?"
+                "¿En serio?{w=0.75} ¡¿Conseguiste un blackjack?!{w=0.75} Ugh...",
+                "Sí,{w=0.2} sí.{w=0.75} Disfruta tu suerte mientras dure,{w=0.2} [player].",
+                "Hmph.{w=0.75} Solo tuviste suerte esta vez.",
+                "¡Oh,{w=0.2} vamos!{w=0.75} ¿De nuevo?{w=0.75} En serio...",
+                "¡A-{w=0.2}ahora esa fue pura suerte!{w=0.75} Ugh...",
+                "¡E-{w=0.2}esa fue pura casualidad!{w=0.75} Vamos...",
+                "Ugh...{w=1} ¿de verdad?{w=0.75} ¿Obtuviste otro blackjack?"
             ],
             jn_blackjack.JNBlackjackStates.player_closest: [
-                "Heh.{w=0.75} Enjoy the luck while it lasts,{w=0.2} [player].",
-                "{i}Seriously{/i}?{w=0.75} Ugh...",
-                "Come on!{w=0.75} Really?{w=0.75} Man...",
-                "Yeah,{w=0.2} yeah.{w=0.75} Laugh it up,{w=0.2} [player].{w=0.75} Just you wait...",
-                "Hmph.{w=1} Lucky break,{w=0.2} [player].{w=0.75} That's all I'm saying.",
-                "Uuuuuu-!{w=0.75} You totally just got the better hand!{w=0.75} Ugh...",
-                "Y-{w=0.2}you totally just got lucky this time,{w=0.2} [player].{w=0.75} That's all this is."
+                "Je.{w=0.75} Disfruta la suerte mientras dure,{w=0.2} [player].",
+                "¿{i}En serio{/i}?{w=0.75} Ugh...",
+                "¡Vamos!{w=0.75} ¿De verdad?{w=0.75} Viejo...",
+                "Sí,{w=0.2} sí.{w=0.75} Ríete,{w=0.2} [player].{w=0.75} Solo espera...",
+                "Hmph.{w=1} Golpe de suerte,{w=0.2} [player].{w=0.75} Eso es todo lo que digo.",
+                "¡Uuuuuu-!{w=0.75} ¡Totalmente acabas de tener la mejor mano!{w=0.75} Ugh...",
+                "T-{w=0.2}totalmente tuviste suerte esta vez,{w=0.2} [player].{w=0.75} Eso es todo lo que es."
             ],
             jn_blackjack.JNBlackjackStates.player_exact: [
-                "Heh.{w=0.75} Too bad it wasn't a blackjack,{w=0.2} [player]!",
-                "Nnnnn-!{w=0.75} A-{w=0.2}at least you didn't blackjack.",
-                "Yeah,{w=0.2} yeah,{w=0.2} whatever.{w=0.75} Lucky hand,{w=0.2} [player].",
-                "L-{w=0.2}lucky break!{w=0.75} Now try {i}actually{/i} blackjacking...",
-                "A-{w=0.2}as if {i}that{/i} hand won!{w=0.75} Ugh...",
-                "Are you kidding me?!{w=0.75} You won with that?!{w=0.75} Man...",
-                "Ugh...{w=0.75} and it wasn't even a {i}blackjack{/i}..."
+                "Je.{w=0.75} ¡Lástima que no fuera un blackjack,{w=0.2} [player]!",
+                "¡Nnnnn-!{w=0.75} A-{w=0.2}al menos no hiciste blackjack.",
+                "Sí,{w=0.2} sí,{w=0.2} lo que sea.{w=0.75} Mano de suerte,{w=0.2} [player].",
+                "¡G-{w=0.2}golpe de suerte!{w=0.75} Ahora intenta hacer {i}realmente{/i} blackjack...",
+                "¡C-{w=0.2}como si {i}esa{/i} mano ganara!{w=0.75} Ugh...",
+                "¡¿Me estás tomando el pelo?!{w=0.75} ¡¿Ganaste con eso?!{w=0.75} Viejo...",
+                "Ugh...{w=0.75} y ni siquiera fue un {i}blackjack{/i}..."
             ]
         }
         $ chosen_response = renpy.substitute(random.choice(response_map[jn_blackjack._game_state]))
@@ -760,90 +760,90 @@ label blackjack_quit_forfeit:
     $ natsuki_prompt = ""
 
     if jn_blackjack._is_player_committed:
-        n 1tnmpueqm "Eh?{w=0.75}{nw}"
-        extend 2tnmsleqm " You're done playing,{w=0.2} [player]?"
+        n 1tnmpueqm "¿Eh?{w=0.75}{nw}"
+        extend 2tnmsleqm " ¿Terminaste de jugar,{w=0.2} [player]?"
 
         if jn_blackjack._rounds == 0:
-            n 4ccsflsbr "...W-{w=0.2}wait.{w=0.75}{nw}"
-            extend 3fcsgssbr " Hang on just a second here,{w=0.2} [player]!{w=0.75}{nw}"
-            extend 3fnmgs " What do you mean?"
-            n 4fcswr "We literally only just started {i}playing{/i}!{w=0.75}{nw}"
-            extend 2flrem " Jeez..."
-            n 2csqcasbl "You better not be pulling my leg again,{w=0.2} [player]."
+            n 4ccsflsbr "...E-{w=0.2}espera.{w=0.75}{nw}"
+            extend 3fcsgssbr " ¡Aguanta un segundo,{w=0.2} [player]!{w=0.75}{nw}"
+            extend 3fnmgs " ¿Qué quieres decir?"
+            n 4fcswr "¡Literalmente acabamos de empezar a {i}jugar{/i}!{w=0.75}{nw}"
+            extend 2flrem " Cielos..."
+            n 2csqcasbl "Será mejor que no me estés tomando el pelo de nuevo,{w=0.2} [player]."
 
-            $ natsuki_prompt = "Do you actually {i}want{/i} to play blackjack or not?"
+            $ natsuki_prompt = "¿Realmente {i}quieres{/i} jugar blackjack o no?"
             show natsuki option_wait_sulky
 
         elif jn_blackjack._rounds < 6:
-            n 1kslfl "Man...{w=1}{nw}"
-            extend 4cnmem " really?{w=0.75}{nw}"
-            extend 4ccsgssbl " Come on,{w=0.2} [player]!{w=0.75}{nw}"
-            extend 3ccsposbl " You can't be done this soon {i}already{/i}."
-            n 3flrflsbr "Seriously -{w=0.5}{nw}"
-            extend 3tnmfl " it's only been like [jn_blackjack._rounds] rounds!{w=0.75}{nw}"
-            extend 4cnmaj " We've barely even started!"
+            n 1kslfl "Viejo...{w=1}{nw}"
+            extend 4cnmem " ¿en serio?{w=0.75}{nw}"
+            extend 4ccsgssbl " ¡Vamos,{w=0.2} [player]!{w=0.75}{nw}"
+            extend 3ccsposbl " No puedes haber terminado tan pronto {i}ya{/i}."
+            n 3flrflsbr "Seriamente -{w=0.5}{nw}"
+            extend 3tnmfl " ¡solo han pasado como [jn_blackjack._rounds] rondas!{w=0.75}{nw}"
+            extend 4cnmaj " ¡Apenas hemos empezado!"
 
-            $ natsuki_prompt = "You can {i}easily{/i} play at least a couple more games...{w=0.5} right?"
+            $ natsuki_prompt = "Podrías {i}fácilmente{/i} jugar al menos un par de juegos más...{w=0.5} ¿verdad?"
             show natsuki option_wait_sulky
         else:
 
             n 2tdrsl "..."
-            n 2tdrfl "Well...{w=1}{nw}"
-            extend 2tlrbo " you have been playing a while.{w=0.75}{nw}"
-            extend 4csrpo " I {i}guess{/i}."
-            n 2nsqca "...Even if you {i}are{/i} calling it quits right in the middle of a game."
-            n 2nllaj "So..."
+            n 2tdrfl "Bueno...{w=1}{nw}"
+            extend 2tlrbo " has estado jugando un tiempo.{w=0.75}{nw}"
+            extend 4csrpo " {i}Supongo{/i}."
+            n 2nsqca "...Incluso si {i}estás{/i} renunciando justo en medio de un juego."
+            n 2nllaj "Así que..."
 
-            $ natsuki_prompt = "You're sure you don't wanna keep playing,{w=0.2} [player]?"
+            $ natsuki_prompt = "¿Estás seguro de que no quieres seguir jugando,{w=0.2} [player]?"
             show natsuki option_wait_curious
     else:
 
-        n 4ccsss "Oh?{w=0.75}{nw}"
-        extend 4fllss " What's this,{w=0.2} [player]?{w=0.75}{nw}"
-        extend 3fsqbg " Why the cold feet all of a sudden?"
-        n 1fsqsm "Ehehe."
-        n 2fnmbg "Come on!{w=0.75}{nw}"
-        extend 2fcsbs " Don't tell me you're giving up {i}that{/i} easily!"
+        n 4ccsss "¿Oh?{w=0.75}{nw}"
+        extend 4fllss " ¿Qué es esto,{w=0.2} [player]?{w=0.75}{nw}"
+        extend 3fsqbg " ¿Por qué las dudas de repente?"
+        n 1fsqsm "Jejeje."
+        n 2fnmbg "¡Vamos!{w=0.75}{nw}"
+        extend 2fcsbs " ¡No me digas que te rindes {i}así{/i} de fácil!"
 
-        $ natsuki_prompt = "You can at {i}least{/i} stick it out to the end of this one,{w=0.2} right?"
+        $ natsuki_prompt = "Puedes al {i}menos{/i} aguantar hasta el final de esta,{w=0.2} ¿verdad?"
         show natsuki option_wait_smug
 
     $ natsuki_prompt = renpy.substitute(natsuki_prompt)
     menu:
         n "[natsuki_prompt]"
-        "No, I'm done playing for now.":
+        "No, terminé de jugar por ahora.":
 
             if jn_blackjack._is_player_committed:
-                n 1kcsflesi "...Man.{w=0.75}{nw}"
-                extend 4ksqfl " For real,{w=0.2} [player]?"
+                n 1kcsflesi "...Viejo.{w=0.75}{nw}"
+                extend 4ksqfl " ¿De verdad,{w=0.2} [player]?"
                 n 2cslbo "..."
-                n 2nslaj "Well...{w=1}{nw}"
-                extend 5cdrca " I can't say I'm not at least a little disappointed.{w=0.75}{nw}"
-                extend 5nlraj " But I guess that's fine."
-                n 4ccsss "After all..."
+                n 2nslaj "Bueno...{w=1}{nw}"
+                extend 5cdrca " No puedo decir que no esté al menos un poco decepcionada.{w=0.75}{nw}"
+                extend 5nlraj " Pero supongo que está bien."
+                n 4ccsss "Después de todo..."
 
                 $ dialogue_choice = random.randint(1, 3)
                 if dialogue_choice == 1:
-                    n 3fcsbg "Just means another win for me!{w=0.75}{nw}"
+                    n 3fcsbg "¡Solo significa otra victoria para mí!{w=0.75}{nw}"
 
                 elif dialogue_choice == 2:
-                    n 3fcssmesm "As if I'm turning down an easy win!{w=0.75}{nw}"
+                    n 3fcssmesm "¡Como si fuera a rechazar una victoria fácil!{w=0.75}{nw}"
                 else:
 
-                    n 3nchgn "That's still a win for me!{w=0.75}{nw}"
+                    n 3nchgn "¡Eso sigue siendo una victoria para mí!{w=0.75}{nw}"
 
-                extend 3fcssmeme " Ehehe."
+                extend 3fcssmeme " Jejeje."
             else:
 
                 n 1nsqpu "...Wow.{w=0.75}{nw}"
-                extend 4tnmfl " And you didn't even end up making a single move that round!{w=0.75}{nw}"
+                extend 4tnmfl " ¡Y ni siquiera terminaste haciendo un solo movimiento en esa ronda!{w=0.75}{nw}"
                 extend 4tlrbo " Huh."
                 n 2tlrsl "..."
-                n 2ulrfl "Well.{w=0.75}{nw}"
-                extend 2fcsss " Looks like {i}you{/i} know what they say at least,{w=0.5}{nw}"
+                n 2ulrfl "Bueno.{w=0.75}{nw}"
+                extend 2fcsss " Parece que {i}tú{/i} sabes lo que dicen al menos,{w=0.5}{nw}"
                 extend 2fsqbg " [player]."
-                n 6fcsbs "Guess the only winning move for you was not to play!{w=0.75}{nw}"
-                extend 7fchsmeme " Ehehe."
+                n 6fcsbs "¡Supongo que el único movimiento ganador para ti era no jugar!{w=0.75}{nw}"
+                extend 7fchsmeme " Jejeje."
 
             if random.choice([True, False]):
                 show natsuki 4fcssm
@@ -864,30 +864,30 @@ label blackjack_quit_forfeit:
             $ HKBShowButtons()
 
             jump ch30_loop
-        "You're on!":
+        "¡Acepto!":
 
             if not jn_blackjack._is_player_committed:
-                n 4fcsbgsbr "Y-{w=0.2}yeah!{w=0.75}{nw}"
-                extend 2fcsbssbr " Now that's more like it!{w=0.75}{nw}"
-                extend 2fsqbg " Some fighting spirit!"
-                n 4fnmgsedz "Bring it on already,{w=0.2} [player]!"
+                n 4fcsbgsbr "¡S-{w=0.2}sí!{w=0.75}{nw}"
+                extend 2fcsbssbr " ¡Ahora eso es más como lo que quería!{w=0.75}{nw}"
+                extend 2fsqbg " ¡Un poco de espíritu de lucha!"
+                n 4fnmgsedz "¡Venga ya,{w=0.2} [player]!"
 
             elif jn_blackjack._rounds == 0:
-                n 1fspgs "Yeah!{w=0.75}{nw}"
-                extend 3fcsbg " See?{w=0.75}{nw}"
-                extend 3fchgn " I knew you had some kind of fight left in you!"
-                n 1ccsbg "Besides..."
-                n 2fsqbg "Only a real sore loser would just chicken out before they've even {i}lost{/i}.{w=0.75}{nw}"
-                extend 2fsqsm " Ehehe."
-                n 4fnmbs "Prove me wrong,{w=0.2} [player]!"
+                n 1fspgs "¡Sí!{w=0.75}{nw}"
+                extend 3fcsbg " ¿Ves?{w=0.75}{nw}"
+                extend 3fchgn " ¡Sabía que te quedaba algo de lucha!"
+                n 1ccsbg "Además..."
+                n 2fsqbg "Solo un verdadero mal perdedor se acobardaría antes de haber siquiera {i}perdido{/i}.{w=0.75}{nw}"
+                extend 2fsqsm " Jejeje."
+                n 4fnmbs "¡Demuéstrame que me equivoco,{w=0.2} [player]!"
             else:
 
-                n 1fsqsm "Ehehe.{w=0.75}{nw}"
-                extend 3fcsbs " Now {i}that's{/i} what I'm talking about!"
+                n 1fsqsm "Jejeje.{w=0.75}{nw}"
+                extend 3fcsbs " ¡Ahora de {i}eso{/i} estoy hablando!"
                 n 3fnmsm "..."
-                n 3fsqbg "Well?{w=0.75}{nw}"
-                extend 4fcsbg " What're you waiting for?"
-                n 4fchgn "Make your move already,{w=0.2} [player]!"
+                n 3fsqbg "¿Y bien?{w=0.75}{nw}"
+                extend 4fcsbg " ¿Qué estás esperando?"
+                n 4fchgn "¡Haz tu movimiento ya,{w=0.2} [player]!"
 
             show screen blackjack_ui
             show natsuki option_wait_smug
@@ -977,7 +977,7 @@ screen blackjack_ui():
         key "1" action [
             If(jn_blackjack._is_player_turn and jn_blackjack._controls_enabled and len(jn_blackjack._player_hand) < 5, Function(jn_blackjack._stayOrHit, True, True)) 
         ]
-        textbutton _("Hit!"):
+        textbutton _("¡Pedir!"):
             style "hkbd_option"
             action [
                 Function(jn_blackjack._stayOrHit, True, True),
@@ -988,7 +988,7 @@ screen blackjack_ui():
             
             If(jn_blackjack._is_player_turn and jn_blackjack._controls_enabled, Function(jn_blackjack._stayOrHit, True, False))
         ]
-        textbutton _("Stay"):
+        textbutton _("Plantarse"):
             style "hkbd_option"
             action [
                 Function(jn_blackjack._stayOrHit, True, False),

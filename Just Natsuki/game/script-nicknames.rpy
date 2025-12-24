@@ -81,7 +81,21 @@ init python in jn_nicknames:
         "^summer$",
         "^(sunny|sunshine)$",
         "^(sweetcakes|sweetpea|sweetheart|sweetness|sweety)$",
-        "^thebest$"
+        "^thebest$",
+        # Spanish additions
+        "^asombrosa$",
+        "^(ángel|angel|miángel|miangel)$",
+        "^(bebé|bebe|bebita|nena|cariño|cariñito|amor|amorcito|cielo|cielito|tesoro|vida)$",
+        "^(mibebé|mibebe|minena|micariño|miamor|miamorcito|micielo|micielito|mitesoro|mivida)$",
+        "^hermosa$",
+        "^preciosa$",
+        "^(princesa|miprincesa|princesita)$",
+        "^(reina|mireina|reinita)$",
+        "^gatita$",
+        "^pastelito$",
+        "^(dulzura|midulzura)$",
+        "^linda$",
+        "^bombón$"
     }), re.IGNORECASE)
 
 
@@ -98,6 +112,12 @@ init python in jn_nicknames:
         "^yuri$",
         "^weeb$",
         "(playboy|playgirl)",
+        # Spanish additions
+        "^(papá|papa|padre|papi)$",
+        "^(madre|mamá|mama)$", 
+        "^(moni|monika)$",
+        "^(sayo|sayori)$",
+        "^(yuri)$"
     }), re.IGNORECASE)
 
 
@@ -112,6 +132,12 @@ init python in jn_nicknames:
         "^sexy$",
         "^smol$",
         "^snack$",
+        # Spanish additions
+        "^gata$",
+        "^(mami|mamita|mamacita)$",
+        "^(sexy|sensual)$",
+        "^(guapa|lindura)$",
+        "^bocadillo$"
     }), re.IGNORECASE)
 
 
@@ -122,6 +148,8 @@ init python in jn_nicknames:
         "^dummy$",
         "^(q[eaoui]b|q[eaoui][eaoui]b|q[eaoui]b[wq][eaoui]b)$",
         "^(w[eaoui]b|w[eaoui][eaoui]b|w[eaoui]b[wq][eaoui]b)$",
+        # Spanish additions
+        "^(tonta|idiota|estúpida|boba)$"
     }), re.IGNORECASE)
 
 
@@ -135,6 +163,10 @@ init python in jn_nicknames:
         "^nerd$",
         "^trash$",
         "^junk$",
+        # Spanish additions
+        "^(papá|papa|padre)$",
+        "^(nerd)$",
+        "^(basura|chatarra)$"
     }), re.IGNORECASE)
 
 
@@ -151,7 +183,13 @@ init python in jn_nicknames:
         "^geek$",
         "^girl$",
         "^boy$",
-        "thiccsuki"
+        "thiccsuki",
+        # Spanish additions
+        "^(guapo|hermoso)$",
+        "^(ardiente|candente)$",
+        "^(mamá|mama|madre|mami)$",
+        "^chica$",
+        "^chico$"
     }), re.IGNORECASE)
 
     def getNatsukiNicknameType(nickname):

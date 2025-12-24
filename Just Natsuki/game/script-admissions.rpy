@@ -50,7 +50,7 @@ label player_admissions_start:
         ]
         admission_menu_items.sort()
 
-    call screen scrollable_choice_menu(admission_menu_items, ("Go back", None), 400, "mod_assets/icons/admissions.png")
+    call screen scrollable_choice_menu(admission_menu_items, ("Volver", None), 400, "mod_assets/icons/admissions.png")
 
     if isinstance(_return, basestring):
         $ push(_return)
@@ -62,7 +62,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Angry",
+            prompt="Enojado",
             label="admission_angry",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -72,68 +72,68 @@ init python:
 
 label admission_angry:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_ANGRY:
-        n 1kcsemesi "Jeez,{w=0.2} [player]...{w=1}{nw}"
-        extend 2ksqposbl " you're really still all worked up?"
-        n 2fnmpo "...Did you actually {i}go{/i} spend some time outside,{w=0.2} like I said?"
+        n 1kcsemesi "Por dios,{w=0.2} [player]...{w=1}{nw}"
+        extend 2ksqposbl " ¿De verdad sigues tan alterado?"
+        n 2fnmpo "...¿En realidad fuiste a pasar algún tiempo afuera,{w=0.2} como dije?"
         n 2klrsl "..."
-        n 4klrsssbl "I honestly don't know what else I can suggest,{w=0.75}{nw}"
-        extend 4knmbosbl " really."
-        n 1fcsflsbl "Just...{w=1}{nw}"
-        extend 1fnmajsbl " try and stay calm,{w=0.75}{nw}"
-        extend 2fcscasbl " and think things through {i}properly{/i}."
-        n 2knmca "Alright?"
-        n 1kllsl "The last thing anyone needs is you storming off and getting hurt,{w=0.75}{nw}"
-        extend 4kllfl " or doing something..."
-        n 4kslsr "...that you can't easily take back."
-        n 2ncsaj "Trust me.{w=0.75}{nw}"
-        extend 2tnmfl " Doing stuff in anger,{w=0.2} because you let it all get to you?{w=0.75}{nw}"
-        extend 2fcssl " It {i}never{/i} turns out better that way."
-        n 2kslsl "I should know."
-        n 1ncsaj "So give yourself some time,{w=0.2} [player].{w=1}{nw}"
-        extend 1ullbo " Space too,{w=0.2} if you need it."
-        n 4fcsca "{i}Then{/i} just take it as it comes."
-        n 4nlrpu "You can at least manage that...{w=0.75}{nw}"
+        n 4klrsssbl "Sinceramente no sé qué más puedo sugerir,{w=0.75}{nw}"
+        extend 4knmbosbl " en realidad."
+        n 1fcsflsbl "Sólo...{w=1}{nw}"
+        extend 1fnmajsbl " Intenta mantener la calma,{w=0.75}{nw}"
+        extend 2fcscasbl " y pensar las cosas {i}adecuadamente{/i}."
+        n 2knmca "¿Está bien?"
+        n 1kllsl "Lo último que alguien necesita es que te vayas furioso y te lastimes,{w=0.75}{nw}"
+        extend 4kllfl " o haciendo algo..."
+        n 4kslsr "...que no podrás recuperar fácilmente."
+        n 2ncsaj "Confía en mí.{w=0.75}{nw}"
+        extend 2tnmfl " ¿Hacer cosas con enojo,{w=0.2} porque dejaste que todo te afectara?{w=0.75}{nw}"
+        extend 2fcssl " De esa manera nunca sale mejor."
+        n 2kslsl "Debería saberlo."
+        n 1ncsaj "Así que date algo de tiempo,{w=0.2} [player].{w=1}{nw}"
+        extend 1ullbo " Espacio también,{w=0.2} si lo necesitas."
+        n 4fcsca "{i}Entonces{/i} tómalo como viene."
+        n 4nlrpu "Al menos puedes lograrlo...{w=0.75}{nw}"
 
         if Natsuki.isEnamored(higher=True):
-            extend 4knmpu " right?{w=1}{nw}"
-            extend 4knmsslsbl " F-{w=0.2}for me?"
-            n 3knmsllsbl "And for yourself,{w=0.75}{nw}"
-            extend 3klrbolsbl " if nothing else."
+            extend 4knmpu " ¿verdad?{w=1}{nw}"
+            extend 4knmsslsbl " ¿P-{w=0.2}por mí?"
+            n 3knmsllsbl "Y para ti,{w=0.75}{nw}"
+            extend 3klrbolsbl " Si no hay nada más."
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
-                n 4fchsmlsbl "You got this,{w=0.2} [chosen_endearment]!{w=0.5}{nw}"
-                extend 4fchbgleafsbl " Just like always!"
+                n 4fchsmlsbl "Tú puedes con esto,{w=0.2} [chosen_endearment]!{w=0.5}{nw}"
+                extend 4fchbgleafsbl " ¡Como siempre!"
         else:
 
-            extend 4knmpu " right?"
-            n 2fcsbolsbl "You owe yourself that much,{w=0.2} at least."
+            extend 4knmpu " ¿verdad?"
+            n 2fcsbolsbl "Te debes mucho a ti mismo,{w=0.2} al menos."
     else:
 
-        n 4tnmpu "Huh?{w=0.75}{nw}"
-        extend 4knmfl " You're {i}angry{/i}?"
-        n 1kllan "Yeesh...{w=0.75}{nw}"
-        extend 2knmaj " what's got you so worked up?{w=0.75}{nw}"
-        extend 2fcsgs " That's no good at all,{w=0.2} [player]!"
-        n 2fcsflsbl "I-{w=0.2}I know it's probably ironic coming from me,{w=0.75}{nw}"
-        extend 4fcstr " but let's just cool things down a little.{w=0.5}{nw}"
-        extend 4knmca " 'Kay?"
-        n 1fcsaj "Just being mad never solved anything,{w=0.2} so let's focus."
-        n 2ncsfl "Alright.{w=0.75}{nw}"
-        extend 2nlrfl " Now,{w=0.2} what would {i}I{/i} do if something -{w=0.5}{nw}"
-        extend 2fsrca " or someone -{w=0.5}{nw}"
-        extend 4tnmsl " {i}really{/i} got on my nerves?"
-        n 1tllaj "Personally if I get all hot-headed,{w=0.75}{nw}"
-        extend 3fcsss " I like to take a walk.{w=0.75}{nw}"
-        extend 3unmaj " You know -{w=0.5}{nw}"
-        extend 3nlrbo " distance myself from the problem."
-        n 4fcscs "It worked for me back in the club,{w=0.2} after all."
-        n 3fcsbg "It's actually pretty amazing what some fresh air and a little power-walk can do!"
-        n 3ulraj "So...{w=1}{nw}"
-        extend 1tnmbo " why not give that a try first,{w=0.2} [player]?"
-        n 4nsrsssbr "Even if it {i}isn't{/i} a super massive help with how you're feeling..."
-        n 2fcsbgsbr "A little exercise never hurt anyone either!{w=0.75}{nw}"
-        extend 4fchsmsbr " Ehehe."
+        n 4tnmpu "¿Eh?{w=0.75}{nw}"
+        extend 4knmfl " ¿Estás enojado?"
+        n 1kllan "¡Rayos!{w=0.75}{nw}"
+        extend 2knmaj " ¿Qué te tiene tan alterado?{w=0.75}{nw}"
+        extend 2fcsgs " ¡Eso no sirve de nada,{w=0.2} [player]!"
+        n 2fcsflsbl "S-{w=0.2}sé que probablemente sea irónico que lo diga yo,{w=0.75}{nw}"
+        extend 4fcstr " Pero vamos a enfriar las cosas un poco.{w=0.5}{nw}"
+        extend 4knmca " ¿de acuerdo?"
+        n 1fcsaj "El simple hecho de estar enojado nunca ha resuelto nada,{w=0.2} así que centrémonos."
+        n 2ncsfl "Esta bien.{w=0.75}{nw}"
+        extend 2nlrfl " Ahora, {w=0.2} ¿qué haría {i}I{/i} si algo -{w=0.5}{nw}"
+        extend 2fsrca " o alguien -{w=0.5}{nw}"
+        extend 4tnmsl " ¿De verdad me puse nerviosa?"
+        n 1tllaj "Personalmente, si me pongo muy furioso,{w=0.75}{nw}"
+        extend 3fcsss " Me gusta pasear.{w=0.75}{nw}"
+        extend 3unmaj " Sabes -{w=0.5}{nw}"
+        extend 3nlrbo " distanciarme del problema."
+        n 4fcscs "A mí me funcionó cuando estaba en el club,{w=0.2} después de todo."
+        n 3fcsbg "¡Es realmente sorprendente lo que un poco de aire fresco y una caminata rápida pueden hacer!"
+        n 3ulraj "Entonces...{w=1}{nw}"
+        extend 1tnmbo " ¿Por qué no intentarlo primero, {w=0.2} [player]?"
+        n 4nsrsssbr "Incluso si no es una gran ayuda para saber cómo te sientes..."
+        n 2fcsbgsbr "¡Un poco de ejercicio nunca le hizo daño a nadie!{w=0.75}{nw}"
+        extend 4fchsmsbr " Jejeje."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_ANGRY
     return
@@ -142,7 +142,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Anxious",
+            prompt="Ansioso",
             label="admission_anxious",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -152,88 +152,88 @@ init python:
 
 label admission_anxious:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_ANXIOUS:
-        n 4knmpu "You're still feeling anxious,{w=0.2} [player]?"
+        n 4knmpu "¿Aún te sientes ansioso,{w=0.2} [player]?"
         n 1nsrun "Uuuuuuuu..."
-        n 2ksrflsbr "I'm really {w=0.3}{i}not{/i}{w=0.3} the best person for this sort of thing..."
-        n 2knmbosbr "But perhaps you could try some distractions to keep your mind off whatever it is?"
-        n 4kllsssbr "You could pick up a series you haven't finished,{w=0.75}{nw}"
-        extend 4tllbosbr " or continue a hobby or something."
+        n 2ksrflsbr "Realmente {w=0.3}{i}no{/i}{w=0.3} soy la mejor persona para este tipo de cosas..."
+        n 2knmbosbr "¿Pero quizás podrías intentar algunas distracciones para mantener tu mente alejada de lo que sea que esté sucediendo?"
+        n 4kllsssbr "Podrías retomar una serie que no hayas terminado,{w=0.75}{nw}"
+        extend 4tllbosbr " o continuar con un hobby o algo."
         n 1fslunsbl "Nnnnnn...{w=0.75}{nw}"
-        extend 4kslemsbl " what else..."
-        n 1unmajesu "Oh!{w=0.5}{nw}"
-        extend 3fcspo " Try to avoid soda,{w=0.2} coffee and things like that too."
-        n 3flrca "I mean,{w=0.75}{nw}"
-        extend 1fsrss " they aren't great for you anyway.{w=1}{nw}"
-        extend 4nsrslsbl " But I think loading up on caffeine and sugar is the {i}last{/i} thing you need right now."
-        n 4tnmbo "Besides that,{w=0.5}{nw}"
-        extend 1kllss " I usually find listening to music works for me.{w=0.75}{nw}"
-        extend 4unmaj " But don't feel like you have to do whatever I find helps -{w=0.5}{nw}"
-        extend 3fchbgsbr " you should totally do whatever {i}you{/i} usually find comforting!"
-        n 3unmbo "You don't have to push the boat out or anything:{w=0.5}{nw}"
-        extend 4ullfl " a favorite game,{w=0.5}{nw}"
-        extend 2nsrsm " some dumb old manga series...{w=1}{nw}"
-        extend 2fchbg " whatever keeps that noggin of yours busy!"
-        n 4fsqcs "...And if nothing else comes to mind?"
-        n 4fchgn "You could always get stuck into some good old busywork!"
-        n 2uslss "There's {i}always{/i} some kind of chore that needs doing anyway,{w=0.75}{nw}"
-        extend 2usqcs " right?"
-        n 1fsqsm "Ehehe."
-        n 3fcsbs "Don't worry -{w=0.5}{nw}"
+        extend 4kslemsbl " Qué otra cosa..."
+        n 1unmajesu "¡Oh!{w=0.5}{nw}"
+        extend 3fcspo " Intentá evitar los refrescos, el café y cosas así también."
+        n 3flrca "Quiero decir,{w=0.75}{nw}"
+        extend 1fsrss " De todos modos, no son buenos para ti.{w=1}{nw}"
+        extend 4nsrslsbl " Pero creo que cargarte de cafeína y azúcar es lo {i}último{/i} que necesitas ahora mismo."
+        n 4tnmbo "Además de eso,{w=0.5}{nw}"
+        extend 1kllss " Generalmente encuentro que escuchar música funciona para mí.{w=0.75}{nw}"
+        extend 4unmaj " Pero no te sientas obligado a hacer cualquier cosa que a mí me ayude.{w=0.5}{nw}"
+        extend 3fchbgsbr " ¡Deberías hacer aquello que habitualmente te resulta reconfortante!"
+        n 3unmbo "No es necesario forzar el barco ni nada:{w=0.5}{nw}"
+        extend 4ullfl " un juego favorito,{w=0.5}{nw}"
+        extend 2nsrsm " alguna vieja y tonta serie de manga...{w=1}{nw}"
+        extend 2fchbg " ¡Lo que sea que mantenga esa cabeza tuya ocupada!"
+        n 4fsqcs "...¿Y si no se te ocurre nada más?"
+        n 4fchgn "¡Siempre puedes meterte de lleno en algún buen trabajo rutinario!"
+        n 2uslss "Siempre hay algún tipo de tarea que debe hacerse de todos modos,{w=0.75}{nw}"
+        extend 2usqcs " ¿bien?"
+        n 1fsqsm "Jejeje."
+        n 3fcsbs "¡No te preocupes -{w=0.5}{nw}"
         $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else jn_utils.getRandomTease()
-        extend 3uchgnl " you got this,{w=0.2} [chosen_descriptor]!"
+        extend 3uchgnl " tú puedes con esto{w=0.2} [chosen_descriptor]!"
     else:
 
-        n 4tnmpu "Huh?{w=0.75}{nw}"
-        extend 4knmfl " You're feeling anxious,{w=0.5}{nw}"
+        n 4tnmpu "¿Eh?{w=0.75}{nw}"
+        extend 4knmfl " ¿Te sientes ansioso,{w=0.5}{nw}"
         extend 4knmbo " [player]?"
-        n 1kllsssbl "...What brought this on,{w=0.5}{nw}"
-        extend 1knmsssbl " all of a sudden?{w=0.75}{nw}"
-        extend 2knmcasbl " You don't have some kind of big thing coming up soon,{w=0.2} do you?"
+        n 1kllsssbl "...¿Qué provocó esto,{w=0.5}{nw}"
+        extend 1knmsssbl " tan de repente?{w=0.75}{nw}"
+        extend 2knmcasbl " No tendrás ningún gran acontecimiento próximamente, ¿verdad?"
         n 2ksrslsbl "..."
-        n 2ksrsssbr "W-{w=0.2}well,{w=0.75}{nw}"
-        extend 4ksrpusbr " I gotta admit.{w=1}{nw}"
-        extend 1knmslsbr " I don't really know what kind of advice I can give you this time,{w=0.2} [player]..."
-        n 3fcssllsbr "But what I do know is this."
-        n 3fcsbol "Everything is gonna be fine."
-        n 4fcsssl "Everything {i}will{/i} work out,{w=0.2} eventually.{w=0.75}{nw}"
-        extend 4fchbgl " It always does!"
-        n 1fllss "I mean,{w=0.5}{nw}"
-        extend 2fslss " it might not always be in the way you {i}expect{/i},{w=0.75}{nw}"
-        extend 2tslbo " or even necessarily the way you {i}want{/i}..."
-        n 4fnmbo "But getting all stressed out about something won't make it any easier,{w=0.2} [player]."
+        n 2ksrsssbr "B-{w=0.2}bueno,{w=0.75}{nw}"
+        extend 4ksrpusbr " Tengo que admitirlo.{w=1}{nw}"
+        extend 1knmslsbr " Realmente no sé qué tipo de consejo puedo darte esta vez,{w=0.2} [player]..."
+        n 3fcssllsbr "Pero lo que sí sé es esto."
+        n 3fcsbol "Todo va a estar bien."
+        n 4fcsssl "Todo {i}saldrá{/i} bien,{w=0.2} eventualmente.{w=0.75}{nw}"
+        extend 4fchbgl " ¡Siempre lo hace!"
+        n 1fllss "Quiero decir,{w=0.5}{nw}"
+        extend 2fslss " Puede que no siempre sea como esperas,{w=0.75}{nw}"
+        extend 2tslbo " o incluso necesariamente de la manera que {i}quieres{/i}..."
+        n 4fnmbo "Pero estresarse por algo no lo hará más fácil,{w=0.2} [player]."
 
         if Natsuki.isEnamored(higher=True):
-            n 1fchsml "And you know I'll always be here to listen."
+            n 1fchsml "Y sabes que siempre estaré aquí para escucharte."
         else:
 
-            n 1fcscal "Plus if nothing else,{w=0.2} I'll always be here to listen."
+            n 1fcscal "Además, si no pasa nada más,{w=0.2} siempre estaré aquí para escuchar."
 
-        n 2nlrbo "So...{w=0.75}{nw}"
-        extend 2knmbosbr " try and put your mind at rest,{w=0.2} okay?"
-        n 1fcsbol "I-{w=0.2}I know it's tough...{w=0.75}{nw}"
-        extend 1kllsll " but just try,{w=0.75}{nw}"
-        extend 4knmsll " alright?"
+        n 2nlrbo "Entonces...{w=0.75}{nw}"
+        extend 2knmbosbr " Intenta quedarte tranquilo,{w=0.2} ¿de acuerdo?"
+        n 1fcsbol "S-{w=0.2}sé que es difícil...{w=0.75}{nw}"
+        extend 1kllsll " pero solo inténtalo,{w=0.75}{nw}"
+        extend 4knmsll " ¿está bien?"
 
         if Natsuki.isEnamored(higher=True):
-            n 4klrssl "A-{w=0.2}and besides."
+            n 4klrssl "Y-{w=0.2}y además."
             $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else jn_utils.getRandomTease()
-            n 1fchsml "You should know I've {i}always{/i} got your back by now,{w=0.75}{nw}"
+            n 1fchsml "Deberías saber que {i}siempre{/i} te respaldaré a estas alturas,{w=0.75}{nw}"
             extend 1fchbll " [chosen_descriptor]."
 
             if Natsuki.isLove(higher=True):
-                n 4fchsmleaf "Love you,{w=0.2} [player]~!"
+                n 4fchsmleaf "¡Te amo,{w=0.2} [player]~!"
             else:
 
-                n 4fchsml "Ehehe."
+                n 4fchsml "Jejeje."
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 4fchbgl "Do your best,{w=0.2} [chosen_tease]."
+                n 4fchbgl "Haz lo mejor que puedas,{w=0.2} [chosen_tease]."
         else:
 
-            n 4fcssslsbl "B-{w=0.2}besides..."
-            n 2fsqbglsbl "With someone like {i}me{/i} backing you up?{w=0.75}{nw}"
-            extend 2fsrdvlsbl " Well..."
-            n 3fchbgl "I daresay you've got nothing to worry about,{w=0.2} [player]!{w=0.75}{nw}"
-            extend 3fchsmleme " Ehehe."
+            n 4fcssslsbl "A-{w=0.2}además..."
+            n 2fsqbglsbl "¿Con alguien como {i}yo{/i} apoyándote?{w=0.75}{nw}"
+            extend 2fsrdvlsbl " Bien..."
+            n 3fchbgl "¡Me atrevo a decir que no tienes nada de qué preocuparte,{w=0.2} [player]!{w=0.75}{nw}"
+            extend 3fchsmleme " Jejeje."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_ANXIOUS
     return
@@ -242,7 +242,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Ashamed",
+            prompt="Avergonzado",
             label="admission_ashamed",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -253,15 +253,15 @@ init python:
 label admission_ashamed:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_ASHAMED:
         n 1knmbo "[player]...{w=0.75}{nw}"
-        extend 4ksrslsbl " you aren't {i}seriously{/i} still feeling ashamed of yourself,{w=0.5}{nw}"
-        extend 4ksqsrsbl " are you?"
+        extend 4ksrslsbl " No estarás {i}en serio{/i} sintiéndote todavía avergonzado de ti mismo,{w=0.5}{nw}"
+        extend 4ksqsrsbl " ¿verdad?"
         n 2fcsbo "..."
-        n 2fcsfl "Well,{w=0.5}{nw}"
-        extend 1fcsgs " sorry [player] -{w=0.5}{nw}"
-        extend 4fchgn " but I'm not giving up on you {i}that{/i} easily!"
-        n 3flrss "And hey,{w=0.5}{nw}"
-        extend 3fnmbg " newsflash:{w=0.75}{nw}"
-        extend 3fsqbg " you're not giving up that easily either!"
+        n 2fcsfl "Bueno,{w=0.5}{nw}"
+        extend 1fcsgs " lo siento [player] -{w=0.5}{nw}"
+        extend 4fchgn " ¡Pero no voy a renunciar a ti tan fácilmente!"
+        n 3flrss "Y oye,{w=0.5}{nw}"
+        extend 3fnmbg " Noticia de última hora:{w=0.75}{nw}"
+        extend 3fsqbg " ¡Tampoco te rendirás tan fácilmente!"
 
         if Natsuki.isEnamored(higher=True):
             $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else jn_utils.getRandomTease()
@@ -269,59 +269,59 @@ label admission_ashamed:
 
             $ chosen_descriptor = player
 
-        n 4fcsbs "Now go put things right,{w=0.2} [chosen_descriptor]!"
+        n 4fcsbs "Ahora ve y arregla las cosas.{w=0.2} [chosen_descriptor]!"
 
         if Natsuki.isEnamored(higher=True):
-            n 4fchsml "I believe in you!"
+            n 4fchsml "¡Creo en ti!"
         else:
 
-            n 4fwlsm "You better not let me down!"
+            n 4fwlsm "¡Será mejor que no me decepciones!"
     else:
 
-        n 1unmem "Huh?{w=1}{nw}"
-        extend 4kcsfl " Wait,{w=0.75}{nw}"
-        extend 4knmfl " what?"
-        n 4kllbo "You're feeling...{w=0.75}{nw}"
-        extend 2knmbo " ashamed?{w=0.75}{nw}"
-        extend 2knmflsbr " Of yourself?"
-        n 2ksrpu "...Why,{w=0.5} [player]?{w=0.75}{nw}"
-        extend 2fnmpol " You didn't go out and do something {w=0.2}{i}really{/i}{w=0.2} dumb,{w=0.2} did you?"
+        n 1unmem "¿Eh?{w=1}{nw}"
+        extend 4kcsfl " ¿Espera,{w=0.75}{nw}"
+        extend 4knmfl " qué?"
+        n 4kllbo "¿Te sientes...{w=0.75}{nw}"
+        extend 2knmbo " avergonzado?{w=0.75}{nw}"
+        extend 2knmflsbr " ¿De ti mismo?"
+        n 2ksrpu "...¿Por qué,{w=0.5} [player]?{w=0.75}{nw}"
+        extend 2fnmpol " No saliste e hiciste algo {w=0.2}{i}realmente{/i}{w=0.2} tonto,{w=0.2} ¿verdad?"
         n 2fcscal "..."
-        n 4fcstrl "Well...{w=0.3} whatever you did,{w=0.5}{nw}"
-        extend 2fcsgsl " I-{w=0.2}I'm sure you didn't mean it!"
-        n 3fnmfl "And more importantly,{w=0.5}{nw}"
-        extend 3fcsss " you're going to work your butt off to put things right.{w=0.75}{nw}"
-        extend 3fcssmedz " I just know it!"
-        n 4fcsbg "You're gonna step up to the plate,{w=0.2} and that's all there is to it."
-        n 2nllaj "So...{w=0.75}{nw}"
-        extend 2fnmca " don't let me down,{w=0.2} got it?"
-        n 2fnmaj "And you aren't going to let yourself down either."
+        n 4fcstrl "Bueno...{w=0.3} lo que sea que hayas hecho,{w=0.5}{nw}"
+        extend 2fcsgsl " ¡E-{w=0.2}estoy segura que no lo decías en serio!"
+        n 3fnmfl "Y lo más importante,{w=0.5}{nw}"
+        extend 3fcsss " Vas a trabajar muy duro para arreglar las cosas.{w=0.75}{nw}"
+        extend 3fcssmedz " ¡Lo sé!"
+        n 4fcsbg "Vas a dar un paso al frente,{w=0.2} y eso es todo lo que hay que hacer."
+        n 2nllaj "Entonces...{w=0.75}{nw}"
+        extend 2fnmca " No me decepciones,{w=0.2} ¿entiendes?"
+        n 2fnmaj "Y tú tampoco te vas a decepcionar."
 
         show natsuki 2fnmca
         menu:
-            "Right?"
-            "Right!":
+            "¿Bien?"
+            "¡Bien!":
 
-                n 1fchbs "Exactly!{w=0.5}{nw}"
-                extend 4fsqcs " See?{w=0.75}{nw}"
-                extend 4fcssmeme " Just like I told you!"
+                n 1fchbs "¡Exactamente!{w=0.5}{nw}"
+                extend 4fsqcs " ¿Ves?{w=0.75}{nw}"
+                extend 4fcssmeme " ¡Tal como te lo dije!"
             "...":
 
                 n 1nsqbo "..."
-                n 2fcssr "I don't think you get it,{w=0.2} [player]."
-                n 2uchgn "...So I guess we gotta do things the hard way!"
-                n 4fcsbg "Now,{w=0.5}{nw}"
-                extend 1fnmss " repeat after me:{w=0.5}{nw}"
-                extend 2fcsss " 'I'm not gonna let myself down!'"
+                n 2fcssr "No creo que lo entiendas,w=0.2} [player]."
+                n 2uchgn "... ¡Así que supongo que tendremos que hacer las cosas de la manera difícil!"
+                n 4fcsbg "Ahora,{w=0.5}{nw}"
+                extend 1fnmss " repite después de mí:{w=0.5}{nw}"
+                extend 2fcsss " '¡No me voy a defraudar!'"
 
                 show natsuki 2fcscs
                 menu:
-                    "I'm not gonna let myself down!":
-                        n 2usqcsesm "See?{w=1}{nw}"
-                        extend 2fchbg " I {i}knew{/i} you had it in you!{w=0.5}{nw}"
-                        extend 2fsqcs " Ehehe."
+                    "¡No me voy a defraudar!":
+                        n 2usqcsesm "¿Ves?{w=1}{nw}"
+                        extend 2fchbg " ¡Sabía que lo tenías dentro!{w=0.5}{nw}"
+                        extend 2fsqcs " Jejeje."
 
-        n 4fchbg "Now go get 'em,{w=0.2} [player]!"
+        n 4fchbg "¡Ahora ve a por ello,{w=0.2} [player]!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_ASHAMED
     return
@@ -330,7 +330,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Bored",
+            prompt="Aburrido",
             label="admission_bored",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -340,63 +340,63 @@ init python:
 
 label admission_bored:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_BORED:
-        n 4nslsssbl "Wow...{w=1}{nw}"
-        extend 4nslflsbl " I guess you really weren't exaggerating then,{w=0.5}{nw}"
-        extend 4tnmbosbl " huh?"
-        n 2fsqfl "Did you actually {i}try{/i} doing what I suggested?{w=0.75}{nw}"
-        extend 2fcsca " Sheesh..."
+        n 4nslsssbl "Guau...{w=1}{nw}"
+        extend 4nslflsbl " Supongo que realmente no estabas exagerando entonces.{w=0.5}{nw}"
+        extend 4tnmbosbl " ¿eh?"
+        n 2fsqfl "¿Realmente intentaste hacer lo que te sugerí?{w=0.75}{nw}"
+        extend 2fcsca " ¡Caramba!"
         n 1nlrsl "..."
-        n 4ulraj "Well,{w=0.75}{nw}"
-        extend 3tlraj " if there's really {i}nothing{/i} to for you to do {i}here{/i}..."
-        n 3fcsbg "Then why not check out what everyone else is doing for a change?"
-        n 4ullbo "Friends,{w=0.5}{nw}"
-        extend 4ulraj " family...{w=0.75}{nw}"
-        extend 3fsqcs " that colleague you always plan to hang out with...{w=1}{nw}"
-        extend 3fcsgs " {i}someone{/i}'s gotta have {i}something{/i} going on,{w=0.2} [player]!"
-        n 4fchgn "...So get up off your butt already and find out!{w=0.75}{nw}"
-        extend 4ullss " Phone around or something!"
-        n 2tnmsl "Or,{w=0.2} you know..."
-        n 2tsqsmesm "Pick up that game or book you were {i}totally{/i} gonna check out at some point...?"
+        n 4ulraj "Bien,{w=0.75}{nw}"
+        extend 3tlraj " Si realmente no hay nada que hacer aquí..."
+        n 3fcsbg "Entonces, ¿por qué no echar un vistazo a lo que están haciendo los demás para variar?"
+        n 4ullbo "Amigos,{w=0.5}{nw}"
+        extend 4ulraj " familia...{w=0.75}{nw}"
+        extend 3fsqcs " Ese colega con el que siempre planeas pasar el rato...{w=1}{nw}"
+        extend 3fcsgs " ¡Alguien tiene que tener algo que ver,{w=0.2} [player]!"
+        n 4fchgn "... ¡Así que levántate ya y descúbrelo!{w=0.75}{nw}"
+        extend 4ullss " ¡Llama por teléfono o algo así!"
+        n 2tnmsl "O, {w=0.2} ya sabes..."
+        n 2tsqsmesm "¿Retomas ese juego o libro que {i}totalmente{/i} ibas a revisar en algún momento...?"
         n 2usqcs "..."
-        n 2fnmss "What?{w=0.75}{nw}"
-        extend 4fcsbg " Called you out yet again,{w=0.2} [player]?{w=0.75}{nw}"
-        extend 1fsqcs " Ehehe."
-        n 2fnmfl "Now come on!{w=0.75}{nw}"
-        extend 2fcsbg " There's never a shortage of stuff to do to pass the time.{w=1}{nw}"
-        extend 2uchgn " Time for you to get up and go find it!"
+        n 2fnmss "¿Qué?{w=0.75}{nw}"
+        extend 4fcsbg " ¿Te llamé una vez más, {w=0.2} [player]?{w=0.75}{nw}"
+        extend 1fsqcs " Jejeje."
+        n 2fnmfl "¡Ahora vamos!{w=0.75}{nw}"
+        extend 2fcsbg " Nunca faltan cosas que hacer para pasar el tiempo.{w=1}{nw}"
+        extend 2uchgn " ¡Es hora de que te levantes y vayas a buscarlo!"
 
         if Natsuki.isAffectionate(higher=True):
             $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-            n 4fwlsm "Off you go,{w=0.2} [chosen_descriptor]!"
+            n 4fwlsm "Allá vamos,{w=0.2} [chosen_descriptor]!"
 
             if Natsuki.isLove(higher=True):
-                n 1fchsml "Love you~!"
+                n 1fchsml "¡Te amo~!"
 
 
     elif not persistent.jn_snap_unlocked:
         $ persistent.jn_snap_unlocked = True
-        n 4fcsfl "Wait...{w=0.75}{nw}"
-        extend 4tnmpu " you're bored?{w=0.75}{nw}"
-        n 1fcsflsbr "H-{w=0.2}hang on for just a second."
-        n 2fnmeml "A-{w=0.2}and what are you trying to say,{w=0.2} exactly?!{w=1}{nw}"
-        extend 2fnmgsl " Huh?"
-        n 2fcsgslsbr "How could you possibly be bored with someone as awesome as me around?"
-        n 2fslposbr "Jeez,{w=0.2} [player]..."
-        n 4fcsposbl "You make it sound like I'm {i}not{/i} trying to liven things up around here or something."
+        n 4fcsfl "Espera...{w=0.75}{nw}"
+        extend 4tnmpu " ¿Estás aburrido?{w=0.75}{nw}"
+        n 1fcsflsbr "E-{w=0.2}espera un momento."
+        n 2fnmeml "Y-{w=0.2}¡¿Y qué estás tratando de decir, {w=0.2}exactamente?!{w=1}{nw}"
+        extend 2fnmgsl " ¿Eh?"
+        n 2fcsgslsbr "¿Cómo es posible que te aburras con alguien tan genial como yo cerca?"
+        n 2fslposbr "Cielos,{w=0.2} [player]..."
+        n 4fcsposbl "Haces que parezca que no {i}estoy{/i} tratando de animar las cosas por aquí o algo así."
         n 1nsrposbl "..."
-        n 4tsrfl "Though..."
-        n 3nlrss "Well,{w=0.2} even I gotta admit.{w=1}{nw}"
-        extend 3tnmfl " there isn't {i}exactly{/i} a whole lot going on here.{w=0.75}{nw}"
-        extend 3fcscal " Besides me,{w=0.2} I mean."
-        n 1fslsl "There's gotta be something else around here."
-        n 1nslss "It is...{w=0.75}{nw}"
-        extend 2tslpu " was...?{w=0.75}{nw}"
-        extend 2tnmbo " A classroom,{w=0.2} right?"
-        n 4tlrca "There has to be {i}something{/i} someone left in a desk,{w=0.2} or..."
-        n 4unmfleex "...!{w=0.75}{nw}"
-        n 4fnmbg "Aha!{w=0.5}{nw}"
-        extend 1fchbg " I just remembered!{w=0.75}{nw}"
-        extend 1fcssm " Just give me a second here..."
+        n 4tsrfl "Aunque..."
+        n 3nlrss "Bueno,{w=0.2} incluso yo admito.{w=1}{nw}"
+        extend 3tnmfl " que no hay {i}exactamente{/i} muchas cosas que hacer aquí.{w=0.75}{nw}"
+        extend 3fcscal " Además de mí,{w=0.2} quiero decir."
+        n 1fslsl "Tiene que haber algo más por aquí."
+        n 1nslss "Esto es...{w=0.75}{nw}"
+        extend 2tslpu " ¿era...?{w=0.75}{nw}"
+        extend 2tnmbo " Un salón de clases,{w=0.2} ¿verdad?"
+        n 4tlrca "Tiene que haber {i}algo{/i} que alguien dejó en un escritorio,{w=0.2} o..."
+        n 4unmfleex "¡...!{w=0.75}{nw}"
+        n 4fnmbg "¡Ajá!{w=0.5}{nw}"
+        extend 1fchbg " ¡Acabo de acordarme!{w=0.75}{nw}"
+        extend 1fcssm " Solo dame un segundo..."
 
         show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
         $ jnPause(2)
@@ -406,35 +406,35 @@ label admission_bored:
         $ jnPause(4)
         hide black with Dissolve(1)
 
-        n 4uchgn "Yes!{w=0.75}{nw}"
-        extend 4fchsmeme " I knew it was still here!"
-        n 2fsqcs "Betcha' didn't know I had playing cards stashed away,{w=0.2} huh?"
-        n 2fchbl "Turns out these desk drawers {i}are{/i} handy,{w=0.2} after all!{w=1}{nw}"
-        extend 2fcssm " And you {i}always{/i} gotta have something prepared for a rainy day at school."
-        n 4nllss "I...{w=0.75}{nw}"
-        extend 1nsrca " don't exactly know a whole lot of card games...{w=0.75}{nw}"
-        extend 1fsrpo " yet."
-        n 3fsqss "But I'll tell you one thing,{w=0.2} [player]."
-        n 3fchbs "I've got a mean hand at Snap!{w=0.75}{nw}"
-        extend 4fsqbs " And I am just {i}itching{/i} to prove it right now."
-        n 2fsqss "So..."
-        n 2tnmsm "What about it then,{w=0.2} [player]?{w=0.75}{nw}"
-        extend 2tsqsm " Care to test your mettle?"
+        n 4uchgn "¡Sí!{w=0.75}{nw}"
+        extend 4fchsmeme " ¡Sabía que todavía estaban aquí!"
+        n 2fsqcs "Apuesto a que no sabías que tenía cartas de juego escondidas,{w=0.2} ¿eh?"
+        n 2fchbl "Resulta que estos cajones de escritorio {i}son{/i} útiles,{w=0.2} ¡después de todo!{w=1}{nw}"
+        extend 2fcssm " Y {i}siempre{/i} hay que tener algo preparado para un día lluvioso en la escuela."
+        n 4nllss "Yo...{w=0.75}{nw}"
+        extend 1nsrca " no conozco exactamente muchos juegos de cartas...{w=0.75}{nw}"
+        extend 1fsrpo " todavía."
+        n 3fsqss "Pero te diré una cosa,{w=0.2} [player]."
+        n 3fchbs "¡Tengo una mano increíble en el Snap!{w=0.75}{nw}"
+        extend 4fsqbs " Y me {i}muero{/i} por demostrarlo ahora mismo."
+        n 2fsqss "Entonces..."
+        n 2tnmsm "¿Qué dices entonces,{w=0.2} [player]?{w=0.75}{nw}"
+        extend 2tsqsm " ¿Quieres probar tu valía?"
 
         show natsuki 2fsqcs
         menu:
-            n "Not like you have any excuse not to,{w=0.2} right?"
-            "Sure,{w=0.2} why not?":
+            n "No es como si tuvieras alguna excusa para no hacerlo,{w=0.2} ¿verdad?"
+            "¡Claro,{w=0.2} por qué no!":
 
                 jump snap_intro
-            "Not right now.":
+            "Ahora no.":
 
-                n 4usqct "Oh?{w=0.75}{nw}"
-                extend 4tsqsm " Not right now,{w=0.2} you say?"
-                n 3ullss "Fine,{w=0.2} fine.{w=0.75}{nw}"
-                extend 3fcsbg " That's cool with me."
-                n 3uchgn "Just means I get to look forward to kicking your butt later instead!{w=0.75}{nw}"
-                extend 4nchgn " Ehehe."
+                n 4usqct "¿Oh?{w=0.75}{nw}"
+                extend 4tsqsm " ¿Ahora no,{w=0.2} dices?"
+                n 3ullss "Bien,{w=0.2} bien.{w=0.75}{nw}"
+                extend 3fcsbg " Me parece bien."
+                n 3uchgn "¡Solo significa que puedo esperar patear tu trasero más tarde!{w=0.75}{nw}"
+                extend 4nchgn " Jejeje."
 
                 show natsuki 1fchsmeme
                 show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -445,31 +445,31 @@ label admission_bored:
                 hide black with Dissolve(1.25)
     else:
 
-        n 1tnmfl "Huh?{w=0.75}{nw}"
-        extend 4tnmpu " You're bored?"
-        n 2fnmgsl "A-{w=0.2}and just what is {i}that{/i} supposed to mean,{w=0.2} [player]?!"
-        n 2flreml "Am I boring?{w=0.75}{nw}"
-        extend 4fcsgsl " Huh?{w=1}{nw}"
-        extend 4fnmfll " Am I not fun enough to be with?"
-        n 4fbkwrl "Are you not entertained?!"
+        n 1tnmfl "¿Eh?{w=0.75}{nw}"
+        extend 4tnmpu " ¿Estás aburrido?"
+        n 2fnmgsl "Y-{w=0.2}¡¿y qué se supone que significa {i}eso{/i},{w=0.2} [player]?!"
+        n 2flreml "¿Soy aburrida?{w=0.75}{nw}"
+        extend 4fcsgsl " ¿Eh?{w=1}{nw}"
+        extend 4fnmfll " ¿No soy lo suficientemente divertida para estar conmigo?"
+        n 4fbkwrl "¡¿No estás entretenido?!"
         n 2fsqpol "..."
         n 2fsqdvl "..."
         n 1fcsajl "Oh,{w=0.5}{nw}"
-        extend 4uchgnl " lighten up a little,{w=0.2} [player]!{w=0.75}{nw}"
-        extend 4flrss " Man..."
-        n 3fcsbg "But really,{w=0.2} come on!{w=0.75}{nw}"
-        extend 3tnmfl " If you're seriously bored enough to tell me about it..."
-        n 4fchbg "Then get up off your butt and do something,{w=0.2} you dork!{w=0.75}{nw}"
-        extend 2tsqss " You {i}do{/i} have a world beyond this screen,{w=0.2} you know!{w=0.75}{nw}"
-        extend 2fcspolsbl " T-{w=0.2}that's a lot more than {i}I've{/i} got!"
-        n 2tllss "And if {i}that{/i} isn't enough,{w=0.75}{nw}"
-        extend 4fchbgedz " there's an even {i}bigger{/i} one right at your fingertips!"
-        n 3fcsbg "Now if {i}those{/i} aren't some prime opportunities to beat the boredom right there..."
-        n 3fchbg "Then I don't know what is!{w=0.75}{nw}"
-        extend 1fchsm " Ehehe."
+        extend 4uchgnl " ¡anímate un poco,{w=0.2} [player]!{w=0.75}{nw}"
+        extend 4flrss " Hombre..."
+        n 3fcsbg "Pero en serio,{w=0.2} ¡vamos!{w=0.75}{nw}"
+        extend 3tnmfl " Si estás lo suficientemente aburrido como para decírmelo..."
+        n 4fchbg "¡Entonces levanta el trasero y haz algo,{w=0.2} tonto!{w=0.75}{nw}"
+        extend 2tsqss " ¡{i}Tienes{/i} un mundo más allá de esta pantalla,{w=0.2} sabes!{w=0.75}{nw}"
+        extend 2fcspolsbl " ¡E-{w=0.2}eso es mucho más de lo que {i}yo{/i} tengo!"
+        n 2tllss "Y si {i}eso{/i} no es suficiente,{w=0.75}{nw}"
+        extend 4fchbgedz " ¡hay uno aún {i}más grande{/i} justo al alcance de tus dedos!"
+        n 3fcsbg "Ahora bien, si {i}esas{/i} no son grandes oportunidades para vencer el aburrimiento..."
+        n 3fchbg "¡Entonces no sé qué lo es!{w=0.75}{nw}"
+        extend 1fchsm " Jejeje."
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-        n 1fnmbg "Now stop complaining and get a move on,{w=0.2} [chosen_descriptor]!"
-        n 2fsqbl "Time's wasting!"
+        n 1fnmbg "¡Ahora deja de quejarte y muévete,{w=0.2} [chosen_descriptor]!"
+        n 2fsqbl "¡El tiempo se acaba!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_BORED
     return
@@ -488,65 +488,65 @@ init python:
 
 label admission_confident:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_CONFIDENT:
-        n 2nchsm "Ahaha.{w=0.75}{nw}"
-        extend 4tsqcs " Still full of confidence,{w=0.2} I see!"
+        n 2nchsm "Jajaja.{w=0.75}{nw}"
+        extend 4tsqcs " ¡Todavía llena de confianza,{w=0.2} ya veo!"
 
         if Natsuki.isEnamored(higher=True):
-            n 4ullaj "Not like it's any big surprise or anything like that,{w=0.2} though.{w=0.75}{nw}"
-            extend 1ullbo " I mean..."
-            n 2fchbgl "I like to think you've got a bunch to be confident about!"
+            n 4ullaj "Aunque no es ninguna gran sorpresa ni nada de eso,{w=0.2} sin embargo.{w=0.75}{nw}"
+            extend 1ullbo " Digo..."
+            n 2fchbgl "¡Me gusta pensar que tienes un montón de cosas por las que tener confianza!"
         else:
 
-            n 4fsqcs "...And I wonder who you have to thank for that?"
+            n 4fsqcs "...Y me pregunto a quién tienes que agradecerle por eso?"
 
-        n 2fcssm "Ehehe."
+        n 2fcssm "Jejeje."
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-        n 2fchbl "You're welcome,{w=0.2} [chosen_descriptor]!"
+        n 2fchbl "¡De nada,{w=0.2} [chosen_descriptor]!"
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_INSECURE:
-        n 2fcssmeme "Ehehe.{w=0.75}{nw}"
-        extend 2tnmbg " See,{w=0.2} [player]?{w=0.75}{nw}"
-        extend 3fchbgsbr " I {i}knew{/i} you'd snap out of it eventually!"
+        n 2fcssmeme "Jejeje.{w=0.75}{nw}"
+        extend 2tnmbg " ¿Ves,{w=0.2} [player]?{w=0.75}{nw}"
+        extend 3fchbgsbr " ¡{i}Sabía{/i} que saldrías de eso eventualmente!"
 
         if Natsuki.isEnamored(higher=True):
-            n 3nllpu "But...{w=0.75}{nw}"
-            extend 3tnmsl " in all seriousness?"
-            n 4nlrpul "I'm just...{w=0.75}{nw}"
-            extend 1ksrsll " really glad to know you're better now,{w=0.2} [player]."
-            n 2fcssml "That's all that matters."
+            n 3nllpu "Pero...{w=0.75}{nw}"
+            extend 3tnmsl " ¿hablando en serio?"
+            n 4nlrpul "Estoy simplemente...{w=0.75}{nw}"
+            extend 1ksrsll " muy contenta de saber que estás mejor ahora,{w=0.2} [player]."
+            n 2fcssml "Eso es todo lo que importa."
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
-                n 4kchsmleafsbl "L-{w=0.2}love you,{w=0.2} [chosen_endearment]."
+                n 4kchsmleafsbl "T-{w=0.2}te amo,{w=0.2} [chosen_endearment]."
 
         elif Natsuki.isAffectionate(higher=True):
-            n 2fcsfllsbr "N-{w=0.2}not that I care {i}that{/i} much, o-{w=0.2}of course!"
-            n 2nlrbolsbr "But...{w=0.75}{nw}"
-            extend 4ncsajl " I'm glad to know you're okay now,{w=0.2} [player]."
-            n 2fcscaesi "That's what matters."
+            n 2fcsfllsbr "N-{w=0.2}no es que me importe {i}tanto{/i}, ¡p-{w=0.2}por supuesto!"
+            n 2nlrbolsbr "Pero...{w=0.75}{nw}"
+            extend 4ncsajl " Me alegra saber que estás bien ahora,{w=0.2} [player]."
+            n 2fcscaesi "Eso es lo que importa."
             n 2kslca "..."
         else:
 
-            n 2tsqcs "No guessing who you have to thank,{w=0.2} huh?{w=0.75}{nw}"
-            extend 1fsqsm " Ehehe."
-            n 4fcsbgedz "You're welcome!"
+            n 2tsqcs "No hay que adivinar a quién tienes que agradecer,{w=0.2} ¿eh?{w=0.75}{nw}"
+            extend 1fsqsm " Jejeje."
+            n 4fcsbgedz "¡De nada!"
     else:
 
-        n 2tsqct "Oh?{w=0.75}{nw}"
-        extend 2tsqbg " Feeling confident today,{w=0.75}{nw}"
-        extend 2tsqcs " huh?"
-        n 4fchbg "Well,{w=0.2} more power to you!"
-        n 1fcssmesm "It's never a bad thing to have more confidence in yourself.{w=0.75}{nw}"
-        extend 1ullss " I mean...{w=1}{nw}"
-        extend 3fchgn " look at me!"
-        n 3unmaj "Don't get me wrong though -{w=0.5}{nw}"
-        extend 4nlrss " I'm not saying it's always {i}easy{/i},{w=0.75}{nw}"
-        extend 4nlrsl " obviously."
-        n 1tnmsl "Especially if you messed up or something,{w=0.75}{nw}"
-        extend 1tslss " or if you aren't feeling great."
-        n 4tnmss "But hey!{w=0.75}{nw}"
-        extend 2tsqsm " If that's how you're feeling?{w=0.75}{nw}"
-        extend 2fchbg " Well,{w=0.2} I'm not gonna rob it from you!"
+        n 2tsqct "¿Oh?{w=0.75}{nw}"
+        extend 2tsqbg " Te sientes con confianza hoy,{w=0.75}{nw}"
+        extend 2tsqcs " ¿eh?"
+        n 4fchbg "Bueno,{w=0.2} ¡más poder para ti!"
+        n 1fcssmesm "Nunca es malo tener más confianza en uno mismo.{w=0.75}{nw}"
+        extend 1ullss " Quiero decir...{w=1}{nw}"
+        extend 3fchgn " ¡mírame!"
+        n 3unmaj "Sin embargo, no me malinterpretes -{w=0.5}{nw}"
+        extend 4nlrss " No digo que siempre sea {i}fácil{/i},{w=0.75}{nw}"
+        extend 4nlrsl " obviamente."
+        n 1tnmsl "Especialmente si te equivocaste o algo así,{w=0.75}{nw}"
+        extend 1tslss " o si no te sientes muy genial."
+        n 4tnmss "¡Pero oye!{w=0.75}{nw}"
+        extend 2tsqsm " ¿Si así es como te sientes?{w=0.75}{nw}"
+        extend 2fchbg " ¡Bueno,{w=0.2} no te lo voy a robar!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_CONFIDENT
     return
@@ -565,29 +565,29 @@ init python:
 
 label admission_excited:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_EXCITED:
-        n 2fllss "Man...{w=0.75}{nw}"
-        extend 2tsqss " you must {i}really{/i} be pumped if you're still going on about it,{w=0.5}{nw}"
-        extend 2tsqcs " huh?"
-        n 4fchsm "Ehehe."
-        n 3fchbg "Good on you,{w=0.2} [player]!"
+        n 2fllss "Viejo...{w=0.75}{nw}"
+        extend 2tsqss " {i}realmente{/i} debes estar entusiasmado si sigues hablando de ello,{w=0.5}{nw}"
+        extend 2tsqcs " ¿eh?"
+        n 4fchsm "Jejeje."
+        n 3fchbg "¡Bien por ti,{w=0.2} [player]!"
     else:
 
-        n 4fspgs "Oh!{w=0.5} Oh!{w=0.75}{nw}"
-        extend 4unmbg " Did something happen?{w=0.75}{nw}"
-        extend 4fnmtr " Is something gonna happen?"
+        n 4fspgs "¡Oh!{w=0.5} ¡Oh!{w=0.75}{nw}"
+        extend 4unmbg " ¿Pasó algo?{w=0.75}{nw}"
+        extend 4fnmtr " ¿Va a pasar algo?"
         n 4fnmca "..."
-        n 2tnmaj "Well?"
-        n 3fnmgs "Come on,{w=0.2} [player]!{w=0.75}{nw}"
-        extend 3fnmfl " Spill the beans!{w=0.75}{nw}"
-        extend 4fbkwr " You gotta tell me!"
-        n 2fsqpo "Don't tell me you're just gonna hog all the news to yourself..."
+        n 2tnmaj "¿Y bien?"
+        n 3fnmgs "¡Vamos,{w=0.2} [player]!{w=0.75}{nw}"
+        extend 3fnmfl " ¡Suéltalo!{w=0.75}{nw}"
+        extend 4fbkwr " ¡Tienes que decirme!"
+        n 2fsqpo "No me digas que vas a acaparar todas las noticias para ti..."
         n 2fsqcs "..."
-        n 2fchsm "Ehehe.{w=0.5}{nw}"
-        extend 4fllss " Nah,{w=0.2} it's fine.{w=0.75}{nw}"
-        extend 2fcsbg " Glad to hear you've got stuff to look forward to!{w=0.75}{nw}"
-        extend 2flrss " Well..."
-        n 2fcsssedz "Besides seeing yours truly,{w=0.2} {i}obviously{/i}.{w=0.75}{nw}"
-        extend 1fchsmeme " Ehehe."
+        n 2fchsm "Jejeje.{w=0.5}{nw}"
+        extend 4fllss " Nah,{w=0.2} está bien.{w=0.75}{nw}"
+        extend 2fcsbg " ¡Me alegra saber que tienes cosas que te emocionan!{w=0.75}{nw}"
+        extend 2flrss " Bueno..."
+        n 2fcsssedz "Además de ver a su servidora,{w=0.2} {i}obviamente{/i}.{w=0.75}{nw}"
+        extend 1fchsmeme " Jejeje."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_EXCITED
     return
@@ -606,69 +606,69 @@ init python:
 
 label admission_happy:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_HAPPY:
-        n 3nlraj "Wow...{w=0.75}{nw}"
-        extend 3unmaj " it's all just sunshine and rainbows with you today,{w=0.2} isn't it?"
-        n 4fsqsm "Ehehe."
+        n 3nlraj "Guau...{w=0.75}{nw}"
+        extend 3unmaj " todo es sol y arcoíris contigo hoy,{w=0.2} ¿no es así?"
+        n 4fsqsm "Jejeje."
 
         if Natsuki.isEnamored(higher=True):
-            n 2uchgn "Keep up the smiles,{w=0.2} [player]!"
+            n 2uchgn "¡Sigue con esas sonrisas,{w=0.2} [player]!"
         else:
 
-            n 2fchbg "Good on you,{w=0.2} [player]!"
+            n 2fchbg "¡Bien por ti,{w=0.2} [player]!"
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_ANGRY or jn_admissions.last_admission_type == jn_admissions.TYPE_SAD:
-        n 2tnmsl "...Feeling better now,{w=0.2} [player]?"
+        n 2tnmsl "...¿Te sientes mejor ahora,{w=0.2} [player]?"
         n 2kllbo "..."
-        n 4kllpu "I'll admit.{w=1}{nw}"
-        extend 4nslsll " I was getting kinda worried.{w=1}{nw}"
-        extend 2kslcal " I hate seeing my friends getting all upset."
-        n 2ncscal "Life is just way too short for all that."
+        n 4kllpu "Lo admitiré.{w=1}{nw}"
+        extend 4nslsll " Me estaba empezando a preocupar.{w=1}{nw}"
+        extend 2kslcal " Odio ver a mis amigos molestarse."
+        n 2ncscal "La vida es demasiado corta para todo eso."
 
         if Natsuki.isEnamored(higher=True):
-            n 2knmbolsbl "And you deserve to be happy too,{w=0.2} you know."
-            n 2ncssll "Remember that."
+            n 2knmbolsbl "Y mereces ser feliz también,{w=0.2} sabes."
+            n 2ncssll "Recuerda eso."
             n 2ksrbol "..."
-            n 2nsrajl "S-{w=0.2}so...{w=0.75}{nw}"
-            extend 4tnmsllsbl " where were we?"
+            n 2nsrajl "E-{w=0.2}entonces...{w=0.75}{nw}"
+            extend 4tnmsllsbl " ¿dónde estábamos?"
         else:
 
-            n 2nslsll "Everyone deserves to at least be happy,{w=0.2} after all."
-            n 2flrbolsbl "N-{w=0.2}now let's just get back to it already."
+            n 2nslsll "Todo el mundo merece al menos ser feliz,{w=0.2} después de todo."
+            n 2flrbolsbl "A-{w=0.2}ahora volvamos a ello."
             n 2ksrbolsbl "..."
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_HUNGRY:
-        n 4tnmsl "Feeling better,{w=0.2} [player]?{w=0.75}{nw}"
-        extend 4fnmfl " I'm not surprised!"
-        n 2fcstr "You just aren't yourself when you're hungry."
-        n 2nslss "Trust me...{w=0.75}{nw}"
-        extend 1nslslsbr " I would know."
-        n 2fcsaj "Just don't let it get {i}that{/i} bad next time!"
-        n 2fsqfl "...Or I really will give you a mouthful.{w=1}{nw}"
-        extend 1fsqsm " Ehehe."
+        n 4tnmsl "¿Te sientes mejor,{w=0.2} [player]?{w=0.75}{nw}"
+        extend 4fnmfl " ¡No me sorprende!"
+        n 2fcstr "Simplemente no eres tú mismo cuando tienes hambre."
+        n 2nslss "Créeme...{w=0.75}{nw}"
+        extend 1nslslsbr " Yo lo sabría."
+        n 2fcsaj "¡Solo no dejes que se ponga {i}tan{/i} mal la próxima vez!"
+        n 2fsqfl "...O realmente te daré una palmada.{w=1}{nw}"
+        extend 1fsqsm " Jejeje."
 
         if Natsuki.isLove(higher=True):
             $ chosen_tease = jn_utils.getRandomTease()
-            n 3nchgnl "Love you,{w=0.2} [chosen_tease]~!"
+            n 3nchgnl "¡Te amo,{w=0.2} [chosen_tease]~!"
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_SICK:
-        n 1fcssm "Ehehe.{w=0.75}{nw}"
-        extend 2fwlbg " Glad to see you're back in action, [player]!"
-        n 2ullaj "It's kinda funny,{w=0.2} actually."
-        n 2tnmfl "Nothing makes you appreciate feeling normal more than being sick,{w=0.2} huh?"
-        n 4fchgn "I guess you'd know that a whole lot better now!"
+        n 1fcssm "Jejeje.{w=0.75}{nw}"
+        extend 2fwlbg "¡Me alegra ver que estás de vuelta en acción, [player]!"
+        n 2ullaj "Es un poco gracioso,{w=0.2} en realidad."
+        n 2tnmfl "Nada te hace apreciar sentirte normal más que estar enfermo,{w=0.2} ¿eh?"
+        n 4fchgn "¡Supongo que ahora lo sabrías mucho mejor!"
 
         if Natsuki.isLove(higher=True):
-            n 4fchblleaf "Love you too,{w=0.2} [player]!"
+            n 4fchblleaf "¡También te amo,{w=0.2} [player]!"
     else:
 
-        n 4tnmss "Oh?{w=0.75}{nw}"
-        extend 4usqsm " Someone's in a good mood today!"
-        n 3fcsbgedz "Is a certain {i}someone{/i} being around helping,{w=0.2} I wonder?"
-        n 3fsqsmeme "Ehehe."
-        n 4fchbg "Good for you,{w=0.2} [player]!"
+        n 4tnmss "¿Oh?{w=0.75}{nw}"
+        extend 4usqsm " ¡Alguien está de buen humor hoy!"
+        n 3fcsbgedz "¿Estará ayudando que cierto {i}alguien{/i} esté cerca,{w=0.2} me pregunto?"
+        n 3fsqsmeme "Jejeje."
+        n 4fchbg "¡Bien por ti,{w=0.2} [player]!"
 
         if Natsuki.isEnamored(higher=True):
-            n 2fcssmesm "If you're happy,{w=0.2} I'm happy!"
+            n 2fcssmesm "Si tú eres feliz,{w=0.2} ¡yo soy feliz!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_HAPPY
     return
@@ -687,91 +687,91 @@ init python:
 
 label admission_hungry:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_HUNGRY:
-        n 4fcsfl "...Wait.{w=1}{nw}"
-        extend 4tsqpu " What?{w=0.75}{nw}"
-        extend 2tnmfl " You're {i}still{/i} hungry?"
-        n 2fsqfl "...Or did you seriously not get something when I told you to earlier?"
-        n 1fcsfl "Either way,{w=0.75}{nw}"
+        n 4fcsfl "...Espera.{w=1}{nw}"
+        extend 4tsqpu " ¿Qué?{w=0.75}{nw}"
+        extend 2tnmfl " ¿{i}Todavía{/i} tienes hambre?"
+        n 2fsqfl "...¿O en serio no conseguiste nada cuando te lo dije antes?"
+        n 1fcsfl "De cualquier manera,{w=0.75}{nw}"
 
         if Natsuki.isEnamored(higher=True):
-            extend 2fchgn " I'm not your babysitter!{w=0.75}{nw}"
-            extend 2fsrdvlsbl " E-{w=0.2}even if you {i}wish{/i} I was!"
+            extend 2fchgn " ¡No soy tu niñera!{w=0.75}{nw}"
+            extend 2fsrdvlsbl " ¡A-{w=0.2}aunque desearías que fuera!"
         else:
 
-            extend 2fchgn " I'm not your babysitter!"
+            extend 2fchgn " ¡No soy tu niñera!"
 
-        n 2fcsaj "Now get off that butt of yours and sort something out already!{w=1}{nw}"
+        n 2fcsaj "¡Ahora levanta el trasero y resuelve algo de una vez!{w=1}{nw}"
         extend 2flrss " Yeesh..."
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-        n 4fcsbg "Just keep it healthy,{w=0.2} [chosen_descriptor]!"
+        n 4fcsbg "¡Solo mantenlo saludable,{w=0.2} [chosen_descriptor]!"
 
         if Natsuki.isAffectionate(higher=True):
-            n 4fsqbg "Someone's gotta make sure you're staying in tip-top shape,{w=0.2} after all.{w=0.5}"
-            extend 2fchsmleme " Ehehe."
+            n 4fsqbg "Alguien tiene que asegurarse de que te mantengas en plena forma,{w=0.2} después de todo.{w=0.5}"
+            extend 2fchsmleme " Jejeje."
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_SAD:
         n 2knmbo "...[player]."
-        n 2ncssl "I...{w=1}{nw}"
-        extend 4knmca " get if you're hungry,{w=0.2} okay?{w=0.75}{nw}"
-        extend 4knmaj " Really.{w=1}{nw}"
-        extend 1fcssl " Everybody's gotta eat."
-        n 1kllfl "Just..."
+        n 2ncssl "Yo...{w=1}{nw}"
+        extend 4knmca " entiendo si tienes habre,{w=0.2} ¿bueno?{w=0.75}{nw}"
+        extend 4knmaj " De verdad.{w=1}{nw}"
+        extend 1fcssl " Todo el mundo tiene que comer."
+        n 1kllfl "Solo..."
         n 1kslbo "..."
-        n 4ncsbo "Don't use food or snacks as a way to feel better if you're feeling down.{w=1}{nw}"
-        extend 4ksqbol " Alright?"
-        n 2unmeml "I-{w=0.2}I'm not trying to parent you or anything!{w=0.5}{nw}"
-        extend 2fcspol " Of course not.{w=0.75}{nw}"
-        extend 2ksrsll " But I'd be a pretty crappy friend if I didn't at least say {i}something{/i} about it."
-        n 1ncspu "So please.{w=0.75}{nw}"
-        extend 4ksqca " Just don't overdo it."
-        n 3nlrsl "A treat is fine,{w=0.2} and it might help you feel better."
-        extend 3nsrpu " I can get that."
-        n 3ksqbo "But it's not gonna fix what made you feel that way in the first place."
+        n 4ncsbo "No uses la comida o los bocadillos como una forma de sentirte mejor si te sientes deprimido.{w=1}{nw}"
+        extend 4ksqbol " ¿Está bien?"
+        n 2unmeml "¡N-{w=0.2}no estoy tratando de ser tu madre ni nada!{w=0.5}{nw}"
+        extend 2fcspol " Por supuesto que no.{w=0.75}{nw}"
+        extend 2ksrsll " Pero sería una pésima amiga si no dijera al menos {i}algo{/i} al respecto."
+        n 1ncspu "Así que por favor.{w=0.75}{nw}"
+        extend 4ksqca " Simplemente no exageres."
+        n 3nlrsl "Un capricho está bien,{w=0.2} y podría ayudarte a sentirte mejor."
+        extend 3nsrpu " Puedo entender eso."
+        n 3ksqbo "Pero no va a arreglar lo que te hizo sentir así en primer lugar."
 
         if Natsuki.isEnamored(higher=True):
-            n 4klrbol "And you know you can come talk to me if you really need to...{w=1}{nw}"
-            extend 4knmbol " right?"
+            n 4klrbol "Y sabes que puedes venir a hablar conmigo si realmente lo necesitas...{w=1}{nw}"
+            extend 4knmbol " ¿verdad?"
 
         elif Natsuki.isAffectionate(higher=True):
-            n 4fcsbol "A-{w=0.2}and you can always come talk to me,{w=0.2} you know."
+            n 4fcsbol "Y-{w=0.2}y siempre puedes venir a hablar conmigo,{w=0.2} ya sabes."
             n 4ksrcal "..."
         else:
 
-            n 4ksrbo "...Enjoy your meal,{w=0.2} [player]."
+            n 4ksrbo "...Disfruta tu comida,{w=0.2} [player]."
     else:
 
-        n 4tnmpu "Huh?{w=0.75}{nw}"
-        extend 4tsqem " You're {i}hungry{/i}?"
+        n 4tnmpu "¿Eh?{w=0.75}{nw}"
+        extend 4tsqem " ¿Tienes {i}hambre{/i}?"
         $ chosen_tease = jn_utils.getRandomTease()
-        n 2tnmfl "...Then what're you telling {i}me{/i} for?{w=0.75}{nw}"
-        extend 2fchgn " Go get something to eat,{w=0.2} you big dope!"
+        n 2tnmfl "...¿Entonces para qué me lo dices a {i}mí{/i}?{w=0.75}{nw}"
+        extend 2fchgn " ¡Ve a buscar algo de comer,{w=0.2} gran tonto!"
 
         if Natsuki.isEnamored(higher=True):
-            n 1fcsaj "Honestly...{w=0.75}{nw}"
-            extend 2tsqss " what am I gonna do with you,{w=0.2} huh?"
+            n 1fcsaj "Honestamente...{w=0.75}{nw}"
+            extend 2tsqss " ¿qué voy a hacer contigo,{w=0.2} eh?"
         else:
 
-            n 1fcsaj "Honestly...{w=0.75}{nw}"
-            extend 2fllfl " what am I,{w=0.5}{nw}"
-            extend 2fsqpo " your mom or something?"
-            n 2nsrfl "Jeez..."
+            n 1fcsaj "Honestamente...{w=0.75}{nw}"
+            extend 2fllfl " ¿qué soy,{w=0.5}{nw}"
+            extend 2fsqpo " tu mamá o algo así?"
+            n 2nsrfl "Cielos..."
 
-        n 1fcsaj "Now go make something already!"
-        n 4nsrslsbr "...And no,{w=0.2} [player],{w=0.75}{nw}"
-        extend 4nsqsl " before you ask."
-        n 3fcsbg "Junk food doesn't count!"
+        n 1fcsaj "¡Ahora ve a hacer algo de una vez!"
+        n 4nsrslsbr "...Y no,{w=0.2} [player],{w=0.75}{nw}"
+        extend 4nsqsl " antes de que preguntes."
+        n 3fcsbg "¡La comida basura no cuenta!"
 
         if (
             (jnIsNatsukiBirthday() and jn_events.getHoliday("holiday_natsuki_birthday").isCompleted())
             or (jnIsPlayerBirthday() and jn_events.getHoliday("holiday_player_birthday").isCompleted())
         ):
             n 3ullaj "Oh,{w=0.5}{nw}"
-            extend 3csqss " and you're not getting any of that cake from earlier either.{w=1.25}{nw}"
-            extend 3fchgnelg " Sorry~!"
+            extend 3csqss " y no vas a recibir nada de ese pastel de antes tampoco.{w=1.25}{nw}"
+            extend 3fchgnelg " ¡Lo siento~!"
 
         elif Natsuki.isAffectionate(higher=True):
-            n 3fsqsm "You weren't a trash can last time I checked.{w=0.75}{nw}"
-            extend 3fchgnelg " So no garbage for you~!"
+            n 3fsqsm "No eras un bote de basura la última vez que revisé.{w=0.75}{nw}"
+            extend 3fchgnelg " ¡Así que nada de basura para ti~!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_HUNGRY
     return
@@ -790,81 +790,81 @@ init python:
 
 label admission_insecure:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_INSECURE:
-        n 2knmbosbr "You're {i}still{/i} feeling all beat up about that,{w=0.2} [player]?"
+        n 2knmbosbr "¿{i}Todavía{/i} te sientes abatido por eso,{w=0.2} [player]?"
         n 2klrbosbr "..."
-        n 2nlrfl "You...{w=0.75}{nw}"
-        extend 2fnmbol " do remember what I said though,{w=0.2} right?"
-        n 1fcsfl "Everybody has their own pace.{w=0.75}{nw}"
-        extend 4fcsca " You are no exception.{w=0.75}{nw}"
-        extend 2tnmaj " And honestly?"
-        n 2fcsbo "I don't really care what it is.{w=1}{nw}"
+        n 2nlrfl "Tú...{w=0.75}{nw}"
+        extend 2fnmbol " recuerdas lo que dije,{w=0.2} ¿verdad?"
+        n 1fcsfl "Todo el mundo tiene su propio ritmo.{w=0.75}{nw}"
+        extend 4fcsca " Tú no eres la excepción.{w=0.75}{nw}"
+        extend 2tnmaj " ¿Y honestamente?"
+        n 2fcsbo "Realmente no me importa lo que sea.{w=1}{nw}"
 
         if Natsuki.isEnamored(higher=True):
-            extend 2tnmbol " So long as we're together?"
+            extend 2tnmbol " ¿Mientras estemos juntos?"
         else:
 
-            extend 2tnmfl " So long as we're friends?"
+            extend 2tnmfl " ¿Mientras seamos amigos?"
 
-        n 2fcstrl "We'll just have to find it together."
+        n 2fcstrl "Tendremos que encontrarlo juntos."
         n 1nllcal "..."
-        n 4nsleml "...Man,{w=0.75}{nw}"
-        extend 4fslsslsbr " that was corny.{w=0.75}{nw}"
-        extend 1fnmpu " But seriously,{w=0.2} [player]."
-        n 3fchbgsbr "Don't sweat it!"
-        n 3fcsbgsbr "Besides..."
-        n 3fsrcs "When someone like {i}me{/i} has your back?"
-        n 4fcsbgledz "I daresay you've got nothing to worry about!{w=0.75}"
-        extend 1nchgnl " Ehehe."
+        n 4nsleml "...Viejo,{w=0.75}{nw}"
+        extend 4fslsslsbr " eso fue cursi.{w=0.75}{nw}"
+        extend 1fnmpu " Pero en serio,{w=0.2} [player]."
+        n 3fchbgsbr "¡No te preocupes!"
+        n 3fcsbgsbr "Además..."
+        n 3fsrcs "¿Cuando alguien como {i}yo{/i} te cubre las espaldas?"
+        n 4fcsbgledz "¡Me atrevo a decir que no tienes nada de qué preocuparte!{w=0.75}"
+        extend 1nchgnl " Jejeje."
 
         if Natsuki.isLove(higher=True):
-            n 1fchsmleaf "Love you,{w=0.2} [player]~!"
+            n 1fchsmleaf "¡Te amo,{w=0.2} [player]~!"
     else:
 
-        n 1fcsfl "...Wait,{w=0.5}{nw}"
-        extend 2knmpu " what?"
-        n 2tnmbo "You're feeling insecure?"
-        n 1knmslsbr "...What brought this on all of a sudden,{w=0.2} [player]?"
+        n 1fcsfl "...Espera,{w=0.5}{nw}"
+        extend 2knmpu " ¿qué?"
+        n 2tnmbo "¿Te sientes inseguro?"
+        n 1knmslsbr "...¿Qué provocó esto tan de repente,{w=0.2} [player]?"
         n 4ncspu "..."
-        n 4ncsaj "I...{w=0.75}{nw}"
-        extend 4klrsl " can't really comment on what made you feel that way.{w=1}{nw}"
-        extend 1ksrbo " And I'm not gonna pretend I can."
-        n 2fnmbol "But you better listen here,{w=0.2} [player] -{w=0.75}{nw}"
-        extend 2fsqbol " and listen good."
-        n 2fcseml "I don't care if you think people don't like you.{w=0.75}{nw}"
-        extend 2fnmbolsbr " {i}I{/i} like you."
-        n 4flrfll "I don't care if people think you have no talents.{w=0.75}{nw}"
-        extend 1fcscalesi " {i}I{/i} know you do."
-        n 1fcstrl "I don't care if people think you're falling behind.{w=0.75}{nw}"
-        extend 2fnmsll " {i}I{/i} know you'll catch up."
-        n 2fcsajl "Just..."
+        n 4ncsaj "Yo...{w=0.75}{nw}"
+        extend 4klrsl " realmente no puedo comentar sobre lo que te hizo sentir de esa manera.{w=1}{nw}"
+        extend 1ksrbo " Y no voy a fingir que puedo."
+        n 2fnmbol "Pero será mejor que escuches aquí,{w=0.2} [player] -{w=0.75}{nw}"
+        extend 2fsqbol " y escucha bien."
+        n 2fcseml "No me importa si piensas que no le agradas a la gente.{w=0.75}{nw}"
+        extend 2fnmbolsbr " A {i}mí{/i} me agradas."
+        n 4flrfll "No me importa si la gente piensa que no tienes talento.{w=0.75}{nw}"
+        extend 1fcscalesi " {i}Yo{/i} sé que lo tienes."
+        n 1fcstrl "No me importa si la gente piensa que te estás quedando atrás.{w=0.75}{nw}"
+        extend 2fnmsll " {i}Yo{/i} sé que te pondrás al día."
+        n 2fcsajl "Solo..."
         n 2kslbol "..."
-        n 4kcsfll "Give yourself time and space,{w=0.2} [player].{w=0.75}{nw}"
-        extend 4knmbol " Alright?"
+        n 4kcsfll "Date tiempo y espacio,{w=0.2} [player].{w=0.75}{nw}"
+        extend 4knmbol " ¿Está bien?"
 
         if Natsuki.isEnamored(higher=True):
-            n 1knmbol "I get how you're feeling.{w=0.75}{nw}"
-            extend 2knmpul " I really do.{w=1}{nw}"
-            extend 2ksqsfl " I've {i}been{/i} there."
+            n 1knmbol "Entiendo cómo te sientes.{w=0.75}{nw}"
+            extend 2knmpul " Realmente lo hago.{w=1}{nw}"
+            extend 2ksqsfl " He {i}estado{/i} ahí."
         else:
 
-            n 2fcsbol "I get how crappy you're probably feeling right now."
+            n 2fcsbol "Entiendo lo mal que probablemente te sientas en este momento."
 
-        n 2fcstrl "And I'm not gonna let a friend keep feeling that way without a fight.{w=0.75}{nw}"
-        extend 2fnmtrl " But you need to put in some effort too."
-        n 4fllfll "You can do that...{w=0.75}{nw}"
+        n 2fcstrl "Y no voy a dejar que un amigo se siga sintiendo así sin luchar.{w=0.75}{nw}"
+        extend 2fnmtrl " Pero tú también necesitas poner un poco de esfuerzo."
+        n 4fllfll "Puedes hacer eso...{w=0.75}{nw}"
 
         show natsuki 4knmbol
         menu:
-            extend " right?"
-            "Right.":
+            extend " ¿verdad?"
+            "Verdad.":
 
-                n 1fcsbo "...Good.{w=0.75}{nw}"
-                extend 4flrfl " Or you'll have me to deal with too.{w=0.75}{nw}"
-                extend 4fnmfl " And trust me."
-                n 2fsqpo "...You {i}really{/i} don't want that.{w=1}{nw}"
-                extend 2flrss " Ahaha."
-                n 4klrbo "So..."
-                n 2knmsssbr "Did you wanna talk about something else?"
+                n 1fcsbo "...Bien.{w=0.75}{nw}"
+                extend 4flrfl " O tendrás que tratar conmigo también.{w=0.75}{nw}"
+                extend 4fnmfl " Y créeme."
+                n 2fsqpo "...{i}Realmente{/i} no quieres eso.{w=1}{nw}"
+                extend 2flrss " Jajaja."
+                n 4klrbo "Entonces..."
+                n 2knmsssbr "¿Querías hablar de otra cosa?"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_INSECURE
     return
@@ -883,37 +883,37 @@ init python:
 
 label admission_proud:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_PROUD:
-        n 2nslaj "Wow...{w=1}{nw}"
-        extend 2tnmpo " {i}still{/i} in the mood for gloating,{w=0.2} are you?"
-        n 4ucsfl "That's fine.{w=0.75}{nw}"
-        extend 4ncsfl " That's fine.{w=1}{nw}"
-        extend 4nlrfl " So long as you aren't getting too carried away."
-        n 1nnmca "Just remember,{w=0.2} [player] -{w=0.5}{nw}"
-        extend 3fnmss " if there's one thing I'm good at..."
-        n 3fcsbg "...It's knocking people down a peg or two!"
-        n 4ullfl "Well...{w=0.5}{nw}"
-        extend 2fchgn " when they need it,{w=0.2} anyway.{w=1}{nw}"
-        extend 1nchgneme " Ehehe."
+        n 2nslaj "Guau...{w=1}{nw}"
+        extend 2tnmpo " {i}todavía{/i} tienes humor para regodearte,{w=0.2} ¿verdad?"
+        n 4ucsfl "Está bien.{w=0.75}{nw}"
+        extend 4ncsfl " Está bien.{w=1}{nw}"
+        extend 4nlrfl " Siempre y cuando no te estés dejando llevar demasiado."
+        n 1nnmca "Solo recuerda,{w=0.2} [player] -{w=0.5}{nw}"
+        extend 3fnmss " si hay algo en lo que soy buena..."
+        n 3fcsbg "...¡Es en bajarle los humos a la gente!"
+        n 4ullfl "Bueno...{w=0.5}{nw}"
+        extend 2fchgn " cuando lo necesitan,{w=0.2} de todos modos.{w=1}{nw}"
+        extend 1nchgneme " Jejeje."
 
         if Natsuki.isLove(higher=True):
             $ chosen_tease = jn_utils.getRandomTease()
-            n 1fchblleme "Love you too,{w=0.2} [chosen_tease]~!"
+            n 1fchblleme "¡También te amo,{w=0.2} [chosen_tease]~!"
     else:
 
-        n 2tnmct "Oh?{w=0.75}{nw}"
-        extend 2fsqbg " And what are {i}you{/i} so proud about?{w=1}{nw}"
-        extend 2fnmbg " Huh?"
-        n 4fsqsm "Well?"
-        n 4fsqbg "Spit it out,{w=0.2} [player]!{w=1}{nw}"
-        extend 3fcsbg " It must be pretty amazing,{w=0.2} after all.{w=1}{nw}"
-        extend 4fsqss " Right?"
+        n 2tnmct "¿Oh?{w=0.75}{nw}"
+        extend 2fsqbg " ¿Y de qué estás tan orgulloso {i}tú{/i}?{w=1}{nw}"
+        extend 2fnmbg " ¿Eh?"
+        n 4fsqsm "¿Y bien?"
+        n 4fsqbg "¡Suéltalo,{w=0.2} [player]!{w=1}{nw}"
+        extend 3fcsbg " Debe ser bastante increíble,{w=0.2} después de todo.{w=1}{nw}"
+        extend 4fsqss " ¿Verdad?"
         n 2tsqcs "..."
-        n 2fchcs "Ehehe."
-        n 4ullaj "Well,{w=0.75}{nw}"
-        extend 4tnmbo " whatever it is.{w=0.75}{nw}"
-        extend 3fcsbg " You'd have to be pretty smug about it to share it with me!"
+        n 2fchcs "Jejeje."
+        n 4ullaj "Bueno,{w=0.75}{nw}"
+        extend 4tnmbo " lo que sea que sea.{w=0.75}{nw}"
+        extend 3fcsbg " ¡Debes estar bastante presumido al respecto para compartirlo conmigo!"
         $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else player
-        n 3fchbg "Good job,{w=0.2} [chosen_descriptor]!"
+        n 3fchbg "¡Buen trabajo,{w=0.2} [chosen_descriptor]!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_PROUD
     return
@@ -933,60 +933,60 @@ init python:
 label admission_sad:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_SAD:
         if Natsuki.isEnamored(higher=True):
-            n 2kllbo "...Still feeling the blues,{w=0.5}{nw}"
+            n 2kllbo "...¿Sigues sintiéndote triste,{w=0.5}{nw}"
             extend 2knmbo " [player]?"
         else:
 
-            n 1ksrpusbl "Man...{w=0.75}{nw}"
-            extend 4knmflsbl " you're still feeling down,{w=0.2} [player]?"
+            n 1ksrpusbl "Viejo...{w=0.75}{nw}"
+            extend 4knmflsbl " ¿todavía te sientes deprimido,{w=0.2} [player]?"
 
         n 2kslbosbr "..."
-        n 2kslajsbr "I...{w=1}{nw}"
-        extend 4kslsssbr " can't believe I never mentioned it before,{w=0.2} but...{w=0.75}{nw}"
-        extend 4knmbosbr " have you spoken to anyone about this?"
-        n 1fcsajlsbr "B-{w=0.2}besides me,{w=0.75}{nw}"
-        extend 1nllsllsbr " I mean.{w=1.25}{nw}"
-        extend 4knmsllsbr " I'm being serious."
-        n 4knmbolsbr "...Do you have anyone else you can share this with?"
+        n 2kslajsbr "Yo...{w=1}{nw}"
+        extend 4kslsssbr " no puedo creer que no lo haya mencionado antes,{w=0.2} pero...{w=0.75}{nw}"
+        extend 4knmbosbr " ¿has hablado con alguien sobre esto?"
+        n 1fcsajlsbr "A-{w=0.2}además de mí,{w=0.75}{nw}"
+        extend 1nllsllsbr " quiero decir.{w=1.25}{nw}"
+        extend 4knmsllsbr " Hablo en serio."
+        n 4knmbolsbr "...¿Tienes a alguien más con quien puedas compartir esto?"
 
         show natsuki 4klrbolsbr
         menu:
-            n "Like any friends or family,{w=0.2} or...?"
-            "I do.":
+            n "¿Como amigos, familia,{w=0.2} o...?"
+            "Sí,{w=0.2} tengo.":
 
-                n 1knmbo "...Then maybe you should share how you feel,{w=0.2} [player].{w=1}{nw}"
-                extend 2nsrss " Even if it's embarrassing."
-                n 2tlrsssbl "You do know what they say,{w=0.75}{nw}"
-                extend 2tnmsssbl " right?{w=1}{nw}"
-                extend 2fcsbgsbl " A problem shared is a problem halved!"
-                n 4ksqcasbr "But really,{w=0.2} [player].{w=0.75}{nw}"
-                extend 1ksrcasbr " Don't be afraid to ask for help,{w=0.2} alright?"
-                n 1fcscalsbr "It's never something to be ashamed of.{w=0.5}{nw}"
-                extend 4fcsbolsbl " Trust me."
-                n 2kslbol "...And it took me a long time to learn that,{w=0.2} too."
-            "I don't.":
+                n 1knmbo "...Entonces tal vez deberías compartir cómo te sientes,{w=0.2} [player].{w=1}{nw}"
+                extend 2nsrss " Incluso si es vergonzoso."
+                n 2tlrsssbl "Sabes lo que dicen,{w=0.75}{nw}"
+                extend 2tnmsssbl " ¿verdad?{w=1}{nw}"
+                extend 2fcsbgsbl " ¡Un problema compartido es un problema dividido!"
+                n 4ksqcasbr "Pero en serio,{w=0.2} [player].{w=0.75}{nw}"
+                extend 1ksrcasbr " No tengas miedo de pedir ayuda,{w=0.2} ¿de acuerdo?"
+                n 1fcscalsbr "Nunca es algo de lo que avergonzarse.{w=0.5}{nw}"
+                extend 4fcsbolsbl " Créeme."
+                n 2kslbol "...Y a mí también me tomó mucho tiempo aprender eso."
+            "No tengo.":
 
-                n 4nlrsslsbr "That's...{w=0.75}{nw}"
-                extend 4ksrsllsbr " really {i}not{/i} what I was hoping to hear,{w=0.75}{nw}"
-                extend 1ksqbolsbr " honestly."
-                n 1ncsflsbr "I'm...{w=1}{nw}"
-                extend 1knmbosbr " sorry to hear that,{w=0.2} [player].{w=0.75}{nw}"
-                extend 2kllbosbr " Truly."
+                n 4nlrsslsbr "Eso es...{w=0.75}{nw}"
+                extend 4ksrsllsbr " realmente {i}no{/i} es lo que esperaba escuchar,{w=0.75}{nw}"
+                extend 1ksqbolsbr " honestamente."
+                n 1ncsflsbr "Yo...{w=1}{nw}"
+                extend 1knmbosbr " lamento escuchar eso,{w=0.2} [player].{w=0.75}{nw}"
+                extend 2kllbosbr " De verdad."
 
                 if Natsuki.isEnamored(higher=True):
-                    n 2kslcalsbl "...And I'm sorry I asked."
+                    n 2kslcalsbl "...Y lamento haber preguntado."
 
-                n 4knmbosbr "Just let me know if I can help in some way.{w=1.25}{nw}"
-                extend 4klrbosbr " Alright?"
-            "They already know.":
+                n 4knmbosbr "Solo avísame si puedo ayudar de alguna manera.{w=1.25}{nw}"
+                extend 4klrbosbr " ¿De acuerdo?"
+            "Ya lo saben.":
 
-                n 2fcsfllsbr "Good!{w=0.75}{nw}"
-                extend 2fcscalsbr " Good..."
-                n 3fllbol "I just hope they were supportive of you,{w=0.2} [player]."
-                n 3kllbolsbl "You at least deserve that much."
+                n 2fcsfllsbr "¡Bien!{w=0.75}{nw}"
+                extend 2fcscalsbr " Bien..."
+                n 3fllbol "Solo espero que te hayan apoyado,{w=0.2} [player]."
+                n 3kllbolsbl "Al menos mereces eso."
 
         if Natsuki.isEnamored(higher=True):
-            n 4knmbol "...And [player]?"
+            n 4knmbol "...¿Y [player]?"
             n 1kslbol "..."
 
             show natsuki 4kcscal at jn_center
@@ -1002,91 +1002,91 @@ label admission_sad:
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
-                n 1klrcal "Y-{w=0.2}you know I love you.{w=1}{nw}"
-                extend 4knmsll " Right?{w=0.75}{nw}"
-                extend 4knmssl " Regardless of how you feel right now."
+                n 1klrcal "S-{w=0.2}sabes que te amo.{w=1}{nw}"
+                extend 4knmsll " ¿Verdad?{w=0.75}{nw}"
+                extend 4knmssl " Independientemente de cómo te sientas en este momento."
 
-            n 4klrsslsbl "I hope you start to feel better soon,{w=0.2} [player]."
+            n 4klrsslsbl "Espero que empieces a sentirte mejor pronto,{w=0.2} [player]."
         else:
 
-            n 4klrsslsbl "I hope you start to feel better soon."
+            n 4klrsslsbl "Espero que empieces a sentirte mejor pronto."
             n 4ksrbolsbl "..."
     else:
 
         if Natsuki.isEnamored(higher=True):
             n 2kllbo "Oh...{w=0.75}{nw}"
-            extend 2knmsl " really?{w=1.25}{nw}"
-            extend 2klrflsbl " Jeez..."
-            n 4ksrpusbl "Did...{w=1}{nw}"
-            extend 4knmpusbl " something happen,{w=0.2} or...?{w=0.75}{nw}"
-            extend 2fcsfllsbr " Y-{w=0.2}you don't have to tell me if you don't want to,{w=0.2} of course."
-            n 2flrsllsbr "I won't judge.{w=0.75}{nw}"
-            extend 2klrsllsbr " So..."
+            extend 2knmsl " ¿en serio?{w=1.25}{nw}"
+            extend 2klrflsbl " Cielos..."
+            n 4ksrpusbl "Fue...{w=1}{nw}"
+            extend 4knmpusbl " ¿pasó algo,{w=0.2} o...?{w=0.75}{nw}"
+            extend 2fcsfllsbr " N-{w=0.2}no tienes que decirme si no quieres,{w=0.2} por supuesto."
+            n 2flrsllsbr "No juzgaré.{w=0.75}{nw}"
+            extend 2klrsllsbr " Así que..."
         else:
 
-            n 1uskfl "H-{w=0.2}huh?{w=0.75}{nw}"
-            extend 4knmboeqm " You're feeling sad now?"
-            n 2klrflsbr "...Where did that come from all of a sudden?"
-            n 2ksrflsbr "Man...{w=0.75}{nw}"
-            extend 2fcsfllsbl " you really just {i}had{/i} to pick the worst person for handling this kind of stuff,{w=0.75}{nw}"
-            extend 2ksrsllsbl " didn't you?"
+            n 1uskfl "H-{w=0.2}he?{w=0.75}{nw}"
+            extend 4knmboeqm " ¿Te sientes triste ahora?"
+            n 2klrflsbr "...¿De dónde vino eso de repente?"
+            n 2ksrflsbr "Hombre...{w=0.75}{nw}"
+            extend 2fcsfllsbl " realmente {i}tenías{/i} que elegir a la peor persona para manejar este tipo de cosas,{w=0.75}{nw}"
+            extend 2ksrsllsbl " ¿no es así?"
 
         n 1kcsbolesi "..."
-        n 4ncsfl "Alright.{w=1}{nw}"
-        extend 4nnmfl " Okay,{w=0.2} [player].{w=1.25}{nw}"
-        extend 4nnmca " Listen to me."
-        n 4ncstrl "A-{w=0.2}and focus on your breathing.{w=0.75}{nw}"
-        extend 1ncsfl " In,{w=1.5}{nw}"
-        extend 1ncspu " and out."
-        n 1nnmbo "Just like that."
-        n 1ncspu "And again."
+        n 4ncsfl "Bien.{w=1}{nw}"
+        extend 4nnmfl " Okey,{w=0.2} [player].{w=1.25}{nw}"
+        extend 4nnmca " Escúchame."
+        n 4ncstrl "Y-{w=0.2}y concéntrate en tu respiración.{w=0.75}{nw}"
+        extend 1ncsfl " Inhala,{w=1.5}{nw}"
+        extend 1ncspu " y exhala."
+        n 1nnmbo "Justo así."
+        n 1ncspu "Y otra vez."
         n 4ncssl "..."
-        n 2ncsfl "...Alright.{w=1.25}{nw}"
+        n 2ncsfl "...Bien.{w=1.25}{nw}"
         extend 2nnmsl " [player]."
-        n 2nllaj "Whatever happened,{w=0.2} you gotta understand one thing."
-        n 4kllbo "How you're feeling...{w=0.75}{nw}"
-        extend 4knmca " it's only gonna be temporary.{w=1}{nw}"
-        extend 1fcscal " It's {i}always{/i} temporary.{w=1}{nw}"
-        extend 1flrpul " No matter what you're thinking now...{w=1.5}{nw}"
-        extend 4knmcal " that's how it is."
+        n 2nllaj "Lo que sea que haya pasado,{w=0.2} tienes que entender una cosa."
+        n 4kllbo "Cómo te sientes...{w=0.75}{nw}"
+        extend 4knmca " solo va a ser temporal.{w=1}{nw}"
+        extend 1fcscal " {i}Siempre{/i} es temporal.{w=1}{nw}"
+        extend 1flrpul " No importa lo que estés pensando ahora...{w=1.5}{nw}"
+        extend 4knmcal " así es como es."
         n 2fcsfllsbr "I-{w=0.2}I know it sucks!{w=0.75}{nw}"
         extend 2nslsll " Believe me.{w=0.75}{nw}"
         extend 4kslbol " And it must have been bad if you had to open up to me about it."
 
         if Natsuki.isAffectionate(higher=True):
-            n 4fcsajlsbr "N-{w=0.2}not that it's a problem or anything."
+            n 4fcsajlsbr "N-{w=0.2}no es que sea un problema ni nada."
 
-        n 3klrss "But even if you can't fix whatever made you upset right now..."
-        n 3knmbo "You can at least begin trying to fix how you feel about it."
+        n 3klrss "Pero incluso si no puedes arreglar lo que sea que te molestó en este momento..."
+        n 3knmbo "Al menos puedes empezar a tratar de arreglar cómo te sientes al respecto."
 
         show natsuki 4knmsssbr
         menu:
-            n "...Right?"
-            "Right.":
+            n "...¿Verdad?"
+            "Verdad.":
 
                 pass
 
-        n 4fcssssbr "Ehehe.{w=0.75}{nw}"
-        extend 4fchbgsbl " S-{w=0.2}see?{w=1}{nw}"
-        extend 2fcssmsbl " That's the spirit!"
-        n 1ullaj "So just...{w=0.75}{nw}"
-        extend 1tnmbo " take your time with it.{w=1}{nw}"
-        extend 2tlrss " You don't have to feel better {i}instantly{/i}."
-        n 2nsrpo "...I'd actually be jealous if you could."
-        n 4fcsss "Throw on some comfy clothes,{w=0.75}{nw}"
-        extend 4fllss " fire up some dumb old anime..."
-        n 4fcssm "Whatever you think helps best!"
+        n 4fcssssbr "Jejeje.{w=0.75}{nw}"
+        extend 4fchbgsbl " ¿V-{w=0.2}ves?{w=1}{nw}"
+        extend 2fcssmsbl " ¡Ese es el espíritu!"
+        n 1ullaj "Así que solo...{w=0.75}{nw}"
+        extend 1tnmbo " tómate tu tiempo con ello.{w=1}{nw}"
+        extend 2tlrss " No tienes que sentirte mejor {i}al instante{/i}."
+        n 2nsrpo "...De hecho, estaría celosa si pudieras."
+        n 4fcsss "Ponte ropa cómoda,{w=0.75}{nw}"
+        extend 4fllss " pon algún viejo y tonto anime..."
+        n 4fcssm "¡Lo que sea que creas que ayude mejor!"
 
         if Natsuki.isEnamored(higher=True):
-            n 1fsrdvl "...Like spending more time with yours truly,{w=0.2} f-{w=0.2}for example."
+            n 1fsrdvl "...Como pasar más tiempo con tu servidora,{w=0.2} p-{w=0.2}por ejemplo."
 
-        n 2ullfl "It won't be an instant fix,{w=0.75}{nw}"
-        extend 4fnmsl " but that's not the point.{w=1}{nw}"
-        extend 3fchbg " We're just kickstarting your recovery,{w=0.2} that's all!"
+        n 2ullfl "No será una solución instantánea,{w=0.75}{nw}"
+        extend 4fnmsl " pero ese no es el punto.{w=1}{nw}"
+        extend 3fchbg " ¡Solo estamos impulsando tu recuperación,{w=0.2} eso es todo!"
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-        n 3fcsaj "Now hop to it,{w=0.2} [chosen_descriptor] -{w=0.5}{nw}"
-        extend 3fsqbgsbr " I wanna see you smiling again A.S.A.P!{w=0.75}{nw}"
-        extend 4fchsmlsbr " Ehehe."
+        n 3fcsaj "Ahora salta a ello,{w=0.2} [chosen_descriptor] -{w=0.5}{nw}"
+        extend 3fsqbgsbr " ¡Quiero verte sonreír de nuevo lo antes posible!{w=0.75}{nw}"
+        extend 4fchsmlsbr " Jejeje."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_SAD
     return
@@ -1105,174 +1105,174 @@ init python:
 
 label admission_sick:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_SICK:
-        n 1kcsem "Man...{w=1}{nw}"
-        extend 4knmflsbr " you're really {i}still{/i} feeling sick?{w=0.75}{nw}"
-        extend 4ksrbosbr " Jeez,{w=0.2} [player]..."
+        n 1kcsem "Hombre...{w=1}{nw}"
+        extend 4knmflsbr " ¿realmente {i}todavía{/i} te sientes enfermo?{w=0.75}{nw}"
+        extend 4ksrbosbr " Cielos,{w=0.2} [player]..."
 
         show natsuki 2knmbosbr
         menu:
-            n "How long have you actually felt like this now?"
-            "A few hours.":
+            n "¿Cuánto tiempo te has sentido así realmente?"
+            "Unas pocas horas.":
 
-                n 2tslfl "...Huh."
-                n 2fcsajsbl "W-{w=0.2}well,{w=0.75}{nw}"
-                extend 2flrsssbl " at least that's not so long."
-                n 4fsqpol "But that doesn't mean you should be neglecting yourself either."
-                n 1ullbo "So...{w=1}{nw}"
-                extend 4tnmbo " just make sure you take it easy,{w=0.2} alright?"
-                n 4fcsbgsbr "Sorry,{w=0.2} [player].{w=0.75}{nw}"
-                extend 2fchgn " Looks like it's no adventuring for you today!{w=0.75}{nw}"
-                extend 2fchsm " Ehehe."
-            "A few days.":
+                n 2tslfl "...Eh."
+                n 2fcsajsbl "B-{w=0.2}bueno,{w=0.75}{nw}"
+                extend 2flrsssbl " al menos no es tanto tiempo."
+                n 4fsqpol "Pero eso no significa que debas descuidarte tampoco."
+                n 1ullbo "Así que...{w=1}{nw}"
+                extend 4tnmbo " solo asegúrate de tomártelo con calma,{w=0.2} ¿de acuerdo?"
+                n 4fcsbgsbr "Lo siento,{w=0.2} [player].{w=0.75}{nw}"
+                extend 2fchgn " ¡Parece que no habrá aventuras para ti hoy!{w=0.75}{nw}"
+                extend 2fchsm " Jejeje."
+            "Unos pocos días.":
 
-                n 4tnmfl "...You're kidding,{w=0.2} right?{w=0.75}{nw}"
-                extend 4knmflsbl " It's already been days?"
+                n 4tnmfl "...Estás bromeando,{w=0.2} ¿verdad?{w=0.75}{nw}"
+                extend 4knmflsbl " ¿Ya han pasado días?"
                 n 1ncsbo "..."
-                n 2nlrfl "Okay,{w=0.2} look.{w=0.75}{nw}"
-                extend 2fnmca " I get that you know your limits.{w=0.75}{nw}"
-                extend 2fcspu " Just..."
-                n 1fsrpol "...Don't be a dummy about it.{w=1}{nw}"
-                extend 4fnmajlsbl " Seriously.{w=0.75}{nw}"
-                extend 2fnmbolsbl " I don't wanna hear about you getting even worse because you tried toughing it out like some kind of macho."
-                n 2tnmbolsbl "Capiche?"
+                n 2nlrfl "Okey,{w=0.2} mira.{w=0.75}{nw}"
+                extend 2fnmca " Entiendo que conoces tus límites.{w=0.75}{nw}"
+                extend 2fcspu " Solo..."
+                n 1fsrpol "...No seas tonto al respecto.{w=1}{nw}"
+                extend 4fnmajlsbl " En serio.{w=0.75}{nw}"
+                extend 2fnmbolsbl " No quiero escuchar que empeoraste porque trataste de resistirlo como una especie de macho."
+                n 2tnmbolsbl "¿Capiche?"
 
                 if Natsuki.isEnamored(higher=True):
-                    n 4kllsllsbr "...And try to get some more rest too.{w=0.75}{nw}"
-                    extend 4kllsslsbr " F-{w=0.2}for me?"
-                    n 1ksqbol "You sound like you need it."
+                    n 4kllsllsbr "...Y trata de descansar un poco más también.{w=0.75}{nw}"
+                    extend 4kllsslsbr " ¿P-{w=0.2}por mí?"
+                    n 1ksqbol "Suenas como si lo necesitaras."
                 else:
 
-                    n 4kllbolsbr "...And at least try to get some more rest too."
+                    n 4kllbolsbr "...Y al menos trata de descansar un poco más también."
 
-                n 2knmbo "Get well soon,{w=0.2} alright?"
-            "A week or so.":
+                n 2knmbo "Mejórate pronto,{w=0.2} ¿de acuerdo?"
+            "Una semana o algo así.":
 
                 n 2flrbo "[player]..."
-                n 2fnmbol "You should know by now that I hate nagging.{w=1}{nw}"
-                extend 2ksqsllsbl " Nobody likes a nagger.{w=1}{nw}"
-                extend 2fcssllsbl " But I'd be a lousy friend if I didn't at least {i}ask{/i}."
-                n 4klrbol "So...{w=1}{nw}"
-                extend 4klraj " this...{w=0.75}{nw}"
-                extend 4knmbo " illness of yours."
-                n 4tsrpu "...You {i}have{/i} seen someone about this..."
+                n 2fnmbol "Ya deberías saber que odio regañar.{w=1}{nw}"
+                extend 2ksqsllsbl " A nadie le gusta un regañón.{w=1}{nw}"
+                extend 2fcssllsbl " Pero sería una pésima amiga si al menos no {i}preguntara{/i}."
+                n 4klrbol "Entonces...{w=1}{nw}"
+                extend 4klraj " esta...{w=0.75}{nw}"
+                extend 4knmbo " enfermedad tuya."
+                n 4tsrpu "...{i}Has{/i} visto a alguien por esto..."
 
                 show natsuki 4ksqpul
                 menu:
-                    n "Right?"
-                    "Yes,{w=0.2} I have.":
+                    n "¿Verdad?"
+                    "Sí,{w=0.2} lo he hecho.":
 
-                        n 2fsrpol "Well...{w=1.25}{nw}"
-                        extend 2nsrpol " fine."
-                        n 2nsraj "I...{w=1}{nw}"
-                        extend 1ksqbo " just hope they were able to help you,{w=0.2} [player]."
-                        n 4ksqsl "Make sure you get some extra rest,{w=0.2} alright?"
-                    "No,{w=0.2} I haven't.":
+                        n 2fsrpol "Bueno...{w=1.25}{nw}"
+                        extend 2nsrpol " está bien."
+                        n 2nsraj "Yo...{w=1}{nw}"
+                        extend 1ksqbo " solo espero que hayan podido ayudarte,{w=0.2} [player]."
+                        n 4ksqsl "Asegúrate de descansar un poco más,{w=0.2} ¿de acuerdo?"
+                    "No,{w=0.2} no lo he hecho.":
 
-                        n 3tnmem "...Seriously?{w=0.75}{nw}"
-                        extend 3ksqgs " Come on,{w=0.2} [player]!{w=1}{nw}"
-                        extend 3fcswrlsbr " How're you meant to get better if you don't even know what's wrong with you?"
+                        n 3tnmem "...¿En serio?{w=0.75}{nw}"
+                        extend 3ksqgs " ¡Vamos,{w=0.2} [player]!{w=1}{nw}"
+                        extend 3fcswrlsbr " ¿Cómo se supone que vas a mejorar si ni siquiera sabes qué te pasa?"
                         n 2ncsbolsbl "..."
-                        n 2nslemlsbl "Yeah...{w=0.3} I know.{w=0.75}{nw}"
-                        extend 4nslpol " I'm not naive.{w=1}{nw}"
-                        extend 4kslsll " I get if you have to pay to see a doctor,{w=0.2} or whatever."
-                        n 1knmsl "...Or if there just isn't any help nearby."
-                        n 1fcssl "Just..."
+                        n 2nslemlsbl "Sí...{w=0.3} ya lo sé.{w=0.75}{nw}"
+                        extend 4nslpol " No soy ingenua.{w=1}{nw}"
+                        extend 4kslsll " Entiendo si tienes que pagar para ver a un médico,{w=0.2} o lo que sea."
+                        n 1knmsl "...O si simplemente no hay ayuda cerca."
+                        n 1fcssl "Solo..."
                         n 4ksrsl "..."
-                        n 2ksqpusbr "Take things easy.{w=0.75}{nw}"
-                        extend 2knmpusbr " Please?"
-                        n 2ncsfl "If you really can't -{w=0.75}{nw}"
-                        extend 2nslfl " or don't want to -{w=0.75}{nw}"
-                        extend 2nslsl " see anyone..."
-                        n 4fnmsll "Then the least you can do is try to recover the best you can."
+                        n 2ksqpusbr "Tómatelo con calma.{w=0.75}{nw}"
+                        extend 2knmpusbr " ¿Por favor?"
+                        n 2ncsfl "Si realmente no puedes -{w=0.75}{nw}"
+                        extend 2nslfl " o no quieres -{w=0.75}{nw}"
+                        extend 2nslsl " ver a alguien..."
+                        n 4fnmsll "Entonces lo menos que puedes hacer es tratar de recuperarte lo mejor que puedas."
 
                         if Natsuki.isEnamored(higher=True):
-                            n 2knmbol "You can at least manage that.{w=0.75}{nw}"
-                            extend 2kllbol " I know you can.{w=0.75}{nw}"
-                            extend 2kllajl " And besides."
-                            n 4kslsllsbl "...You know your health really matters to me.{w=1.25}{nw}"
-                            extend 4ksqcalsbl " Right?"
+                            n 2knmbol "Al menos puedes lograr eso.{w=0.75}{nw}"
+                            extend 2kllbol " Sé que puedes.{w=0.75}{nw}"
+                            extend 2kllajl " Y además."
+                            n 4kslsllsbl "...Sabes que tu salud realmente me importa.{w=1.25}{nw}"
+                            extend 4ksqcalsbl " ¿Verdad?"
                         else:
 
-                            n 2flrcal "You can at least do that much...{w=1.25}{nw}"
-                            extend 2knmbol " right?"
+                            n 2flrcal "Al menos puedes hacer eso...{w=1.25}{nw}"
+                            extend 2knmbol " ¿verdad?"
 
 
                         $ Natsuki.addApology(jn_apologies.ApologyTypes.unhealthy)
 
                 $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else player
-                n 4knmslsbl "I-{w=0.2}I hope you feel better soon,{w=0.2} [chosen_descriptor]."
+                n 4knmslsbl "E-{w=0.2}espero que te sientas mejor pronto,{w=0.2} [chosen_descriptor]."
                 n 1ksrbolsbl "..."
-            "Longer.":
+            "Más tiempo.":
 
                 n 2knmbosbl "..."
-                n 2klrajsbl "I...{w=1.25}{nw}"
-                extend 2ksrbosbr " honestly don't really know what to say to you,{w=0.2} [player]."
-                n 4ksqbolsbr "I just hope you feel better soon."
-                n 4knmbosbr "Take it easy,{w=0.2} alright?"
+                n 2klrajsbl "Yo...{w=1.25}{nw}"
+                extend 2ksrbosbr " honestamente no sé realmente qué decirte,{w=0.2} [player]."
+                n 4ksqbolsbr "Solo espero que te sientas mejor pronto."
+                n 4knmbosbr "Tómatelo con calma,{w=0.2} ¿de acuerdo?"
 
                 if Natsuki.isEnamored(higher=True):
-                    n 1knmsslsbr "For me?"
+                    n 1knmsslsbr "¿Por mí?"
                     n 1ksrbolsbl "..."
 
 
                 $ Natsuki.addApology(jn_apologies.ApologyTypes.unhealthy)
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_HUNGRY:
-        n 4fcsfl "...Wait.{w=1}{nw}"
-        extend 2tnmfl " Didn't you say you were hungry earlier,{w=0.2} [player]?"
-        n 2fsqsl "You {i}do{/i} know not eating can make you feel just as crappy as being sick,{w=0.75}{nw}"
-        extend 2tsqsl " don't you?"
+        n 4fcsfl "...Espera.{w=1}{nw}"
+        extend 2tnmfl " ¿No dijiste que tenías hambre antes,{w=0.2} [player]?"
+        n 2fsqsl "Tú {i}sabes{/i} que no comer puede hacerte sentir tan mal como estar enfermo,{w=0.75}{nw}"
+        extend 2tsqsl " ¿verdad?"
 
         show natsuki 1fcsflsbl
         menu:
-            n "Don't tell me you skipped out on your meals today or something."
-            "I've eaten.":
+            n "No me digas que te saltaste tus comidas hoy o algo así."
+            "He comido.":
 
-                n 4tsqpu "...Huh.{w=1}{nw}"
-                extend 2tllpueqm " Then maybe it was something you ate?{w=0.75}{nw}"
-                extend 2tnmbo " Like some undercooked food or something?"
+                n 4tsqpu "...Eh.{w=1}{nw}"
+                extend 2tllpueqm " ¿Entonces tal vez fue algo que comiste?{w=0.75}{nw}"
+                extend 2tnmbo " ¿Como algo mal cocinado o algo así?"
                 n 1tsrbo "..."
-                n 4nlraj "Well,{w=0.75}{nw}"
-                extend 4nlrbo " I guess it doesn't {i}really{/i} matter.{w=0.75}{nw}"
-                extend 2tllsll " Just make sure you rest up if you need to."
-                n 2knmbol "Got it?"
-            "No,{w=0.2} I haven't eaten.":
+                n 4nlraj "Bueno,{w=0.75}{nw}"
+                extend 4nlrbo " supongo que no importa {i}realmente{/i}.{w=0.75}{nw}"
+                extend 2tllsll " Solo asegúrate de descansar si lo necesitas."
+                n 2knmbol "¿Entendido?"
+            "No,{w=0.2} no he comido.":
 
-                n 4fcsbglsbl "H-{w=0.2}ha!{w=1}{nw}"
-                extend 4fnmgs " I knew it!{w=0.75}{nw}"
-                extend 2fbkwrsbr " What did you seriously {i}expect{/i},{w=0.2} [player]?"
-                n 2fllflsbr "Of {i}course{/i} you're gonna feel miserable if you're running on fumes!{w=0.75}{nw}"
-                extend 2fcsposbr " Anyone would!"
-                n 1nsqposbr "...And trust me.{w=1}{nw}"
-                extend 4kslbolsbr " I would know."
-                n 3fcsfllsbr "Now go sort something out already,{w=0.2} you goof!"
-                extend 3fchsm " Ehehe."
+                n 4fcsbglsbl "¡J-{w=0.2}jah!{w=1}{nw}"
+                extend 4fnmgs " ¡Lo sabía!{w=0.75}{nw}"
+                extend 2fbkwrsbr " ¿Qué {i}esperabas{/i} en serio,{w=0.2} [player]?"
+                n 2fllflsbr "¡Por {i}supuesto{/i} que te vas a sentir miserable si estás funcionando con los humos!{w=0.75}{nw}"
+                extend 2fcsposbr " ¡Cualquiera lo haría!"
+                n 1nsqposbr "...Y créeme.{w=1}{nw}"
+                extend 4kslbolsbr " Yo lo sabría."
+                n 3fcsfllsbr "¡Ahora ve a resolver algo de una vez,{w=0.2} tonto!"
+                extend 3fchsm " Jejeje."
     else:
 
-        n 2tnmbosbr "Feeling under the weather,{w=0.2} [player]?"
-        n 2fsqbolsbr "You better not be straining yourself by being here.{w=1}{nw}"
-        extend 2fnmfllsbr " I mean it."
-        n 4fcsfllsbr "I-{w=0.2}it's not that I don't appreciate the company!{w=0.75}{nw}"
-        extend 4knmbolsbl " I do!{w=1}{nw}"
-        extend 4ksrslsbl " It's just..."
-        n 1fcssll "I really don't wanna get in the way of you feeling better.{w=0.75}{nw}"
-        extend 2kllbol " I'm not selfish like that."
-        n 1ncsajl "Just...{w=0.75}{nw}"
-        extend 4nlrsll " let me know if you gotta go rest.{w=0.75}{nw}"
-        extend 4knmbol " Alright?"
+        n 2tnmbosbr "¿Sintiéndote mal,{w=0.2} [player]?"
+        n 2fsqbolsbr "Será mejor que no te estés esforzando por estar aquí.{w=1}{nw}"
+        extend 2fnmfllsbr " Lo digo en serio."
+        n 4fcsfllsbr "¡N-{w=0.2}no es que no aprecie la compañía!{w=0.75}{nw}"
+        extend 4knmbolsbl " ¡Lo hago!{w=1}{nw}"
+        extend 4ksrslsbl " Es solo..."
+        n 1fcssll "Realmente no quiero interponerme en el camino de que te sientas mejor.{w=0.75}{nw}"
+        extend 2kllbol " No soy egoísta de esa manera."
+        n 1ncsajl "Solo...{w=0.75}{nw}"
+        extend 4nlrsll " avísame si tienes que ir a descansar.{w=0.75}{nw}"
+        extend 4knmbol " ¿De acuerdo?"
 
         if Natsuki.isEnamored(higher=True):
-            n 4fcspulsbr "Your health has to come first,{w=0.2} a-{w=0.2}after all."
+            n 4fcspulsbr "Tu salud tiene que ser lo primero,{w=0.2} d-{w=0.2}después de todo."
             n 1ksrbolsbr "..."
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
-                n 1ksrsslsbr "...Even if I do really want you here,{w=0.2} [chosen_endearment]."
-                n 4knmboleaf "I really hope you get well soon."
+                n 1ksrsslsbr "...Incluso si realmente te quiero aquí,{w=0.2} [chosen_endearment]."
+                n 4knmboleaf "Realmente espero que te recuperes pronto."
         else:
 
-            n 4fllajlsbr "I won't be upset or anything,{w=0.75}{nw}"
-            extend 4fllbolsbr " so..."
+            n 4fllajlsbr "No me voy a molestar ni nada,{w=0.75}{nw}"
+            extend 4fllbolsbr " así que..."
             n 1kllbolsbr "..."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_SICK
@@ -1295,22 +1295,22 @@ label admission_tired:
     $ total_hours_in_session = jn_utils.get_current_session_length().total_seconds() / 3600
 
     if jn_admissions.last_admission_type == jn_admissions.TYPE_TIRED:
-        n 1tnmpu "Huh?{w=0.75}{nw}"
-        extend 2tsqem " You're {i}still{/i} tired?"
-        n 2fnmfl "...Then what're you doing hanging around here?{w=0.5}{nw}"
-        extend 2fllem " Sheesh."
-        n 2fcspo "Sounds like somebody needs another round of shut-eye,{w=0.2} if you ask me.{w=0.75}{nw}"
-        extend 4fsqsm " Ehehe."
-        n 4tsqfl "Well?{w=0.75}{nw}"
+        n 1tnmpu "¿Eh?{w=0.75}{nw}"
+        extend 2tsqem " ¿{i}Todavía{/i} estás cansado?"
+        n 2fnmfl "...¿Entonces qué haces dando vueltas por aquí?{w=0.5}{nw}"
+        extend 2fllem " Cielos."
+        n 2fcspo "Suena a que alguien necesita otra ronda de sueño,{w=0.2} si me preguntas.{w=0.75}{nw}"
+        extend 4fsqsm " Jejeje."
+        n 4tsqfl "¿Y bien?{w=0.75}{nw}"
         $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else player
-        extend 4fcsbg " Off you go,{w=0.2} [chosen_descriptor]!{w=0.75}{nw}"
-        extend 1fchbg " Sleep well!"
+        extend 4fcsbg " ¡Vete,{w=0.2} [chosen_descriptor]!{w=0.75}{nw}"
+        extend 1fchbg " ¡Duerme bien!"
 
         if Natsuki.isLove(higher=True):
-            n 1fchsmleaf "Love you!"
+            n 1fchsmleaf "¡Te amo!"
 
         elif Natsuki.isAffectionate(higher=True):
-            n 1fchbleme "Don't let the bed bugs bite~!"
+            n 1fchbleme "¡No dejes que las chinches piquen~!"
 
         $ persistent.jn_player_admission_type_on_quit = jn_admissions.TYPE_TIRED
         $ persistent._jn_player_admission_forced_leave_date = datetime.datetime.now()
@@ -1319,18 +1319,18 @@ label admission_tired:
         return { "quit": None }
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_SICK:
-        n 4nllsl "...Yeah.{w=0.75}{nw}"
-        extend 4tnmfl " You know what?{w=1}{nw}"
-        extend 2tnmbo " That'd probably be for the best."
-        n 2klraj "If you're feeling sick and all,{w=0.75}{nw}"
-        extend 2klrbo " like you said."
-        n 1fcsajlsbr "Don't worry,{w=0.2} I'll be fine.{w=1}{nw}"
-        extend 4fcsbglsbr " I always am.{w=1}{nw}"
-        extend 2fcssm " Ehehe."
-        n 2fchbglsbr "Take it easy,{w=0.2} [player]!"
+        n 4nllsl "...Sí.{w=0.75}{nw}"
+        extend 4tnmfl " ¿Sabes qué?{w=1}{nw}"
+        extend 2tnmbo " Probablemente sea lo mejor."
+        n 2klraj "Si te sientes enfermo y todo eso,{w=0.75}{nw}"
+        extend 2klrbo " como dijiste."
+        n 1fcsajlsbr "No te preocupes,{w=0.2} estaré bien.{w=1}{nw}"
+        extend 4fcsbglsbr " Siempre lo estoy.{w=1}{nw}"
+        extend 2fcssm " Jejeje."
+        n 2fchbglsbr "¡Tómatelo con calma,{w=0.2} [player]!"
 
         if Natsuki.isLove(higher=True):
-            n 4fchsmleafsbr "L-{w=0.2}love you!"
+            n 4fchsmleafsbr "¡T-{w=0.2}te amo!"
             n 4klrbolsbr "..."
 
         elif Natsuki.isEnamored(higher=True):
@@ -1348,42 +1348,42 @@ label admission_tired:
         return { "quit": None }
 
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_HUNGRY:
-        n 4fcsfl "Well,{w=0.75}{nw}"
-        extend 4fcsgs " duh!{w=1}{nw}"
-        extend 2fchgn " Of course you're gonna feel tired if you're hungry!"
-        n 2tsqflsbr "Did you really {i}not{/i} know that?{w=1}{nw}"
-        extend 2fcsslsbr " Jeez."
-        n 4fcsaj "Now quit being lazy,{w=0.2} get off your butt and go get something already!"
-        n 4fcsfl "Sorry [player],{w=0.75}{nw}"
-        extend 3fchgn " but I'm not making it for you!"
+        n 4fcsfl "Bueno,{w=0.75}{nw}"
+        extend 4fcsgs " ¡obvio!{w=1}{nw}"
+        extend 2fchgn " ¡Por supuesto que te vas a sentir cansado si tienes hambre!"
+        n 2tsqflsbr "¿De verdad {i}no{/i} sabías eso?{w=1}{nw}"
+        extend 2fcsslsbr " Cielos."
+        n 4fcsaj "¡Ahora deja de ser perezoso,{w=0.2} levanta el trasero y ve a buscar algo de una vez!"
+        n 4fcsfl "Lo siento [player],{w=0.75}{nw}"
+        extend 3fchgn " ¡pero no te lo voy a preparar yo!"
 
     elif total_hours_in_session >= 18:
-        n 2fnmgsl "A-{w=0.2}and just who do you have to thank for that?!"
-        n 4fbkwrl "You've been here {i}ages{/i} now,{w=0.2} [player]!{w=1}{nw}"
-        extend 4fnmpol " Did you {i}seriously{/i} not notice the time?"
-        n 1fcsfl "Man...{w=0.75}{nw}"
-        extend 2fsrpo " you {i}really{/i} need to get going."
-        n 2unmfll "Don't get me wrong!{w=0.75}{nw}"
-        extend 4fcsfllsbl " I-{w=0.2}it's not that I don't want you here or anything!{w=1}{nw}"
+        n 2fnmgsl "¡Y-{w=0.2}y a quién tienes que agradecerle por eso?!"
+        n 4fbkwrl "¡Has estado aquí por {i}siglos{/i},{w=0.2} [player]!{w=1}{nw}"
+        extend 4fnmpol " ¿{i}En serio{/i} no te diste cuenta de la hora?"
+        n 1fcsfl "Hombre...{w=0.75}{nw}"
+        extend 2fsrpo " {i}realmente{/i} necesitas irte."
+        n 2unmfll "¡No me malinterpretes!{w=0.75}{nw}"
+        extend 4fcsfllsbl " ¡N-{w=0.2}no es que no te quiera aquí ni nada!{w=1}{nw}"
 
         if Natsuki.isEnamored(higher=True):
-            extend 4ksrpolsbl " O-{w=0.2}of course I do!{w=1}{nw}"
+            extend 4ksrpolsbl " ¡P-{w=0.2}por supuesto que sí!{w=1}{nw}"
         else:
 
-            extend 4fcscalsbl " Obviously."
+            extend 4fcscalsbl " Obviamente."
 
-        n 4fcsajl "But clearly {i}someone{/i} has to set some boundaries around here."
-        n 3fcspol "...So I guess that 'someone' is gonna have to be me.{w=0.75}{nw}"
-        extend 3fsqsm " Ehehe."
+        n 4fcsajl "Pero claramente {i}alguien{/i} tiene que poner algunos límites por aquí."
+        n 3fcspol "...Así que supongo que ese 'alguien' tendré que ser yo.{w=0.75}{nw}"
+        extend 3fsqsm " Jejeje."
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isAffectionate(higher=True) else player
-        n 3fcsbg "Now get going already,{w=0.2} [chosen_descriptor]!{w=0.75}{nw}"
-        extend 4fchbg " See you later!"
+        n 3fcsbg "¡Ahora vete de una vez,{w=0.2} [chosen_descriptor]!{w=0.75}{nw}"
+        extend 4fchbg " ¡Nos vemos luego!"
 
         if Natsuki.isLove(higher=True):
-            n 4fchsml "Love you~!"
+            n 4fchsml "¡Te amo~!"
 
         elif Natsuki.isEnamored(higher=True):
-            n 4fchsmlsbl "S-{w=0.2}sweet dreams!"
+            n 4fchsmlsbl "¡D-{w=0.2}dulces sueños!"
 
 
         $ Natsuki.addApology(jn_apologies.ApologyTypes.unhealthy)
@@ -1394,25 +1394,25 @@ label admission_tired:
         return { "quit": None }
     else:
 
-        n 2tlraj "Feeling tired,{w=0.75}{nw}"
-        extend 2tnmss " huh?"
-        n 1tllss "Well...{w=1}{nw}"
-        extend 4fcsbg " why not grab something to pep yourself up?{w=0.75}{nw}"
-        extend 4fchbg " Duh!"
-        n 3ulraj "I mean...{w=0.75}{nw}"
-        extend 3nsrsssbr " I'm not super into stuff like coffee myself.{w=1}{nw}"
-        extend 4fchgn " But I'd be lying if I said Monika didn't look refreshed after a swig of that stuff!"
-        n 4ullbo "Or...{w=0.75}{nw}"
-        extend 4fllsm " you know.{w=0.75}{nw}"
-        extend 4fsqbg " Just go splash some cold water in your face or something."
-        n 2fsqsm "Ehehe.{w=0.75}{nw}"
-        extend 1nlrss " Nah,{w=0.2} in all seriousness?{w=0.75}{nw}"
-        extend 2tnmbo " Don't feel like you have to stick around or anything."
-        n 2fchgnelg "...Just let me know if you're going {i}before{/i} you faceplant the desk!{w=0.75}{nw}"
-        extend 2fchsm " Ehehe."
+        n 2tlraj "¿Sintiéndote cansado,{w=0.75}{nw}"
+        extend 2tnmss " ¿eh?"
+        n 1tllss "Bueno...{w=1}{nw}"
+        extend 4fcsbg " ¿por qué no tomas algo para animarte?{w=0.75}{nw}"
+        extend 4fchbg " ¡Duh!"
+        n 3ulraj "Digo...{w=0.75}{nw}"
+        extend 3nsrsssbr " No me gustan mucho cosas como el café.{w=1}{nw}"
+        extend 4fchgn " ¡Pero mentiría si dijera que Monika no se veía renovada después de un trago de esa cosa!"
+        n 4ullbo "O...{w=0.75}{nw}"
+        extend 4fllsm " ya sabes.{w=0.75}{nw}"
+        extend 4fsqbg " Solo ve y échate un poco de agua fría en la cara o algo así."
+        n 2fsqsm "Jejeje.{w=0.75}{nw}"
+        extend 1nlrss " Nah,{w=0.2} ¿hablando en serio?{w=0.75}{nw}"
+        extend 2tnmbo " No sientas que tienes que quedarte ni nada."
+        n 2fchgnelg "...¡Solo avísame si te vas {i}antes{/i} de que te golpees la cara contra el escritorio!{w=0.75}{nw}"
+        extend 2fchsm " Jejeje."
 
         if Natsuki.isLove(higher=True):
-            n 1fwrsml "Love you too,{w=0.2} [player]~!"
+            n 1fwrsml "¡También te amo,{w=0.2} [player]~!"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_TIRED
     return

@@ -75,4 +75,5 @@ default persistent._jn_display_option_icons = True
 
 
 default persistent._jn_blackjack_show_hand_value = False
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
+
+#⚠: —Pass

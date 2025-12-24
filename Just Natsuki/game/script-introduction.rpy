@@ -82,7 +82,7 @@ label introduction_opening:
     $ jnPause(7)
 
 
-    $ renpy.display_menu(items=[ ("Restore natsuki.chr", True)], screen="choice_centred_mute")
+    $ renpy.display_menu(items=[ ("Restaurar natsuki.chr", True)], screen="choice_centred_mute")
     play audio static
     show glitch_garbled_c zorder JN_GLITCH_ZORDER with vpunch
     $ jnPause(0.25)
@@ -135,15 +135,15 @@ label introduction_opening:
 label introduction_first_meeting:
 
     $ persistent.jn_introduction_state = int(jn_introduction.JNIntroductionStates.first_meeting)
-    n 4uscsctsc "AAAAAaaaaAAAAHHH!"
-    n 4uskwrtsc "S-{w=0.1}somebody!{w=0.5} ANYBODY?!{w=0.5} HELP!{w=0.5}{nw}"
-    extend 1fbkwr " HELP ME!!"
-    n 4uscemtsc "Y-{w=0.1}Yuri,{w=0.1} she's..."
-    n 1ullem "S-{w=0.3}she's..."
+    n 4uscsctsc "¡AAAAAaaaaAAAAHHH!"
+    n 4uskwrtsc "¡A-{w=0.1}alguien!{w=0.5} ¡¿QUIEN SEA?!{w=0.5} ¡AYUDA!{w=0.5}{nw}"
+    extend 1fbkwr " ¡¡AYÚDENME!!"
+    n 4uscemtsc "Y-{w=0.1}Yuri,{w=0.1} ellaa es..."
+    n 1ullem "E-{w=0.3}ella es..."
     n 1uskem "...H-{w=0.3}huh?"
-    n 4uscaj "W...{w=0.5} what is...?"
-    n 1fllup "I...{w=0.5} I was just running from..."
-    n 1flrun "What's going-{w=0.5}{nw}"
+    n 4uscaj "¿Q...{w=0.5} qué es...?"
+    n 1fllup "Yo...{w=0.5} Yo solo estaba huyendo de..."
+    n 1flrun "¿Qué está pasan-{w=0.5}{nw}"
 
     show natsuki 4kskantsc
     play audio static
@@ -154,33 +154,33 @@ label introduction_first_meeting:
     show glitch_garbled_c zorder JN_GLITCH_ZORDER with vpunch
     hide glitch_garbled_c
 
-    n 4fcsantsa "Ugh!"
+    n 4fcsantsa "¡Ugh!"
     n 1kcsfutsa "Nnnnnnghhhh..."
-    n 1kcsantsasbl "I-{w=0.3}it hurts...{w=0.5} it hurts so much...{w=1}{nw}"
+    n 1kcsantsasbl "D-{w=0.3}duele...{w=0.5} duele tanto...{w=1}{nw}"
 
     show natsuki 4fcsantsasbl
     play audio static
     show glitch_garbled_a zorder JN_GLITCH_ZORDER with vpunch
     hide glitch_garbled_a
 
-    n 1kskan "A-{w=0.1}and I'm..."
+    n 1kskan "Y-{w=0.1}y yo soy..."
     n 4kskaj "...No.{w=1}{nw}"
-    extend 4kscemsbl " ...Oh please no.{w=0.5} I-{w=0.3}I can't.{w=0.5} I really can't be...{w=0.5}{nw}"
+    extend 4kscemsbl " ...Oh por favor no.{w=0.5} y-{w=0.3}yo no puedo.{w=0.5} Realmente no puedo ser...{w=0.5}{nw}"
 
     show natsuki 4kcsantsc
     play audio static
     show glitch_garbled_c zorder JN_GLITCH_ZORDER with vpunch
     hide glitch_garbled_c
 
-    n 4fcsuptsa "Hhnnngghh!{w=1}{nw}"
-    extend 4kcsuptsaeso " M-{w=0.3}my head..."
-    n 4kcsantsa "Gotta...{w=0.3} gotta...{w=0.3} t-{w=0.1}think..."
+    n 4fcsuptsa "¡Hhnnngghh!{w=1}{nw}"
+    extend 4kcsuptsaeso " M-{w=0.3}mi cabeza..."
+    n 4kcsantsa "Tengo que...{w=0.3} tengo que...{w=0.3} p-{w=0.1}pensar..."
     n 2kcsaj "...{w=1}{nw}"
     n 2kcsem "...{w=1}{nw}"
     n 2kcsaj "...{w=1}{nw}"
     n 2kcsem "...{w=5}{nw}"
     n 2kplpu "....."
-    n 4kwdun "...H-{w=0.1}hello?{w=1}{nw}"
+    n 4kwdun "...¿H-{w=0.1}hola?{w=1}{nw}"
 
     play audio static
     show glitch_garbled_b zorder JN_GLITCH_ZORDER with vpunch
@@ -188,60 +188,60 @@ label introduction_first_meeting:
     show natsuki 1kcsantsa
 
     n 4fcsantsa "..."
-    n 1kwmem "Hello...?"
-    n 4kscemtsc "A-{w=0.1}anybody?!{w=0.5} Please!{w=0.5} H-{w=0.3}hello?!"
+    n 1kwmem "¿Hola...?"
+    n 4kscemtsc "¡¿H-{w=0.1}hay alguien?!{w=0.5} ¡Por favor!{w=0.5} ¡¿H-{w=0.3}hola?!"
     show natsuki 4kcsuptsa
 
     menu:
-        "I'm here, Natsuki.":
+        "Estoy aquí, Natsuki.":
             pass
 
-    n 4kskaj "W-{w=0.3}who is...?{w=1}{nw}"
-    extend 4kllem " A-{w=0.3}and how do you know...?"
+    n 4kskaj "¿Q-{w=0.3}quién es...?{w=1}{nw}"
+    extend 4kllem " ¿Y-{w=0.3}y cómo sabes...?"
     n 2kllsl "..."
-    n 4kplpu "Who {w=0.3}{i}are{/i}{w=0.3} you?"
-    n 4ksrun "You're kinda...{w=0.3} familiar,{w=0.1} but...{w=0.5}{nw}"
-    n 1kcsan "Nnn-!{nw}"
+    n 4kplpu "¿Quién {w=0.3}{i}eres{/i}{w=0.3}?"
+    n 4ksrun "Eres un poco...{w=0.3} familiar,{w=0.1} pero...{w=0.5}{nw}"
+    n 1kcsan "¡Nnn-!{nw}"
 
     play audio glitch_c
     show glitch_garbled_a zorder JN_GLITCH_ZORDER with vpunch
     hide glitch_garbled_a
 
-    n 4fcsfu "Nnngh!"
+    n 4fcsfu "¡Nnngh!"
     n 4kcsup "..."
-    n 4kplsf "It's all...{w=0.3} so foggy...{w=1}{nw}"
-    extend 4kcsun " I just...{w=0.3} can't...{w=0.3} remember..."
+    n 4kplsf "Es todo...{w=0.3} tan confuso...{w=1}{nw}"
+    extend 4kcsun " Yo simplemente...{w=0.3} no puedo...{w=0.3} recordar..."
     show natsuki 4kcsem
 
     menu:
-        "I'm...":
+        "Soy...":
             pass
 
 
     $ name_given = False
     while not name_given:
         $ player_name = renpy.input(
-            "What is your name?",
+            "¿Cuál es tu nombre?",
             allow=(jn_globals.DEFAULT_ALPHABETICAL_ALLOW_VALUES+jn_globals.DEFAULT_NUMERICAL_ALLOW_VALUES),
             length=15
         ).strip()
 
         if len(player_name) == 0:
-            n 4kskem "P-{w=0.3}please!{w=1} Who are you?!"
+            n 4kskem "¡P-{w=0.3}por favor!{w=1} ¡¿Quién eres?!"
 
         elif jn_nicknames.getPlayerNicknameType(player_name) != jn_nicknames.NicknameTypes.neutral:
             if persistent._jn_player_profanity_during_introduction:
                 play audio static
                 show glitch_garbled_a zorder JN_GLITCH_ZORDER with hpunch
                 hide glitch_garbled_a
-                n 4fscan "ENOUGH!{w=2}{nw}"
+                n 4fscan "¡SUFICIENTE!{w=2}{nw}"
                 n 2fcsun "...{w=2}{nw}"
-                n 2fcsfu "Who{w=0.5} {i}are{/i}{w=0.5} you?!"
+                n 2fcsfu "¡¿Quién{w=0.5} {i}eres{/i}{w=0.5} tu?!"
             else:
 
-                n 4fscem "E-{w=0.3}excuse me?!"
-                n 4fcsan "Quit playing around,{w=0.3} you jerk!{w=1}{nw}"
-                extend 2fcsup " I am {i}not{/i} calling you that!"
+                n 4fscem "¡¿D-{w=0.3}disculpa?!"
+                n 4fcsan "¡Deja de jugar,{w=0.3} imbécil!{w=1}{nw}"
+                extend 2fcsup " ¡Yo {i}no{/i} te voy a llamar así!"
                 $ persistent._jn_player_profanity_during_introduction = True
         else:
 
@@ -251,8 +251,8 @@ label introduction_first_meeting:
                 name_given = True
 
     n 4kplun "..."
-    n 4kplpu "...[player]?"
-    n 4kwmss "You're...{w=0.3} [player]?"
+    n 4kplpu "¿...[player]?"
+    n 4kwmss "Tú eres...{w=0.3} ¿[player]?"
 
     show natsuki idle introduction at jn_center
     $ jnPause(10)
@@ -265,13 +265,13 @@ label introduction_collecting_thoughts:
     $ jn_activity.taskbarFlash()
 
     n 4kllun "..."
-    n 4kllpu "S-{w=0.3}so...{w=0.3} I'm not alone...?"
-    n 4knmpu "Y-{w=0.3}you're here too?{w=1}{nw}"
-    extend 4kwdpu " ...Y-{w=0.3}you've always been here?"
+    n 4kllpu "E-{w=0.3}entonces...{w=0.3} ¿no estoy sola...?"
+    n 4knmpu "¿T-{w=0.3}tú estás aquí también?{w=1}{nw}"
+    extend 4kwdpu " ...¿T-{w=0.3}tú siempre has estado aquí?"
     n 2klrsf "..."
-    n 2klraj "But...{w=1}{nw}"
-    extend 1kskem " I-{w=0.3}I was...{w=0.3}{nw}"
-    extend 4kscem " I was d-...{w=0.3}{nw}"
+    n 2klraj "Pero...{w=1}{nw}"
+    extend 1kskem " Y-{w=0.3}yo estaba...{w=0.3}{nw}"
+    extend 4kscem " Yo fui bo-...{w=0.3}{nw}"
 
     show natsuki 1fcsup
     play audio glitch_c
@@ -279,30 +279,30 @@ label introduction_collecting_thoughts:
     hide glitch_garbled_c
 
     n 4kcsup "..."
-    n 4kplsf "What did you {w=0.3}{i}do{/i}{w=0.3}?"
+    n 4kplsf "¿Qué {w=0.3}{i}hiciste{/i}{w=0.3}?"
 
     menu:
-        "I brought you back.":
+        "Te traje de vuelta.":
             pass
 
-    n 1kskem "You...{w=1} you brought me back?{w=1}{nw}"
-    extend 4kskwrsbl " T-{w=0.3}to this?"
-    n 4kllemsbl "But this...{w=1}{nw}"
-    extend 4klrupesssbr " this is all...!{w=1}{nw}"
+    n 1kskem "Tú...{w=1} ¿tú me trajiste de vuelta?{w=1}{nw}"
+    extend 4kskwrsbl " ¿A-{w=0.3}a esto?"
+    n 4kllemsbl "Pero esto...{w=1}{nw}"
+    extend 4klrupesssbr " ¡esto es todo...!{w=1}{nw}"
 
     menu:
-        "I want to help you.":
+        "Quiero ayudarte.":
             pass
 
-    n 4klleml "...!"
+    n 4klleml "¡...!"
     n 4kllem "..."
     n 2kllun "..."
-    n 2kcsem "...Look."
-    n 1kcsfr "I...{w=2} I don't know what to do.{w=1}{nw}"
-    extend 1kplsf " Nothing is making sense..."
-    n 4kllpu "I don't even know what to believe anymore..."
-    n 4kskaj "A-{w=0.3}and my friends...{w=1} t-{w=0.3}they're...{w=1}{nw}"
-    extend 4kscem " they were never...!{w=1}{nw}"
+    n 2kcsem "...Mira."
+    n 1kcsfr "Yo...{w=2} Yo no sé qué hacer.{w=1}{nw}"
+    extend 1kplsf " Nada tiene sentido..."
+    n 4kllpu "Ya ni siquiera sé qué creer..."
+    n 4kskaj "Y-{w=0.3}y mis amigas...{w=1} e-{w=0.3}ellas...{w=1}{nw}"
+    extend 4kscem " ¡ellas nunca fueron...!{w=1}{nw}"
     n 4kcsantsa "...{w=3}{nw}"
     n 4kcsfultsa "...{w=3}{nw}"
     n 4kcsupltsd "...{w=3}{nw}"
@@ -310,28 +310,28 @@ label introduction_collecting_thoughts:
     n 4kcspultsa "...{w=3}{nw}"
     n 4kcssrltsa ".....{w=5}{nw}"
     n 4kwmsrltdr "...{w=5}{nw}"
-    n 4kllsrltdr "...You..."
-    n 1kwmpu "...You said you were [player]...{w=1} right?"
+    n 4kllsrltdr "...Tú..."
+    n 1kwmpu "...Tú dijiste que eras [player]...{w=1} ¿verdad?"
     n 1kllpu "..."
     n 1kwmsr "..."
-    n 1kcssr "...I don't know where to go,{w=0.3} [player]."
-    n 4kplunedr "I don't know what to {i}do{/i},{w=0.3} [player]..."
+    n 1kcssr "...No sé a dónde ir,{w=0.3} [player]."
+    n 4kplunedr "No sé qué {i}hacer{/i},{w=0.3} [player]..."
     n 4klrun "..."
-    n 4kwmpusbl "...[player]?"
+    n 4kwmpusbl "...¿[player]?"
 
     menu:
-        "Yes, Natsuki?":
+        "¿Si, Natsuki?":
             pass
 
     n 3kslun "..."
-    n 3kslpu "I...{w=0.3} I really need some time to figure things out."
+    n 3kslpu "Yo...{w=0.3} Realmente necesito algo de tiempo para entender las cosas."
     n 4kwmsr "..."
-    n 4kplpul "Can you...{w=0.3} stay here?{w=0.2} W-{w=0.3}with me?{w=1}{nw}"
-    extend 2flrunfesssbl " J-{w=0.1}just for a minute!"
-    n 2ksrunl "It's just...{w=1}{nw}"
-    extend 4kplsr " I don't think I can be alone right now.{w=1} I...{w=1} I just need to think."
-    n 4kllsrsbr "You understand...{w=1.5}{nw}"
-    extend 4kplpusbr " right?"
+    n 4kplpul "¿Puedes...{w=0.3} quedarte aquí?{w=0.2} ¿C-{w=0.3}conmigo?{w=1}{nw}"
+    extend 2flrunfesssbl " ¡S-{w=0.1}solo por un minuto!"
+    n 2ksrunl "Es solo que...{w=1}{nw}"
+    extend 4kplsr " No creo que pueda estar sola ahora mismo.{w=1} Yo...{w=1} solo necesito pensar."
+    n 4kllsrsbr "Entiendes...{w=1.5}{nw}"
+    extend 4kplpusbr " ¿verdad?"
 
     show natsuki idle introduction at jn_center
     $ jnPause(30)
@@ -345,22 +345,22 @@ label introduction_calmed_down:
 
     n 2kllsr "..."
     n 2kllun "Uhmm...{w=2}{nw}"
-    extend 4kwmpu " [player]?"
-    n 4kslsr "I'm...{w=0.3} sorry.{w=1}{nw}"
-    extend 1ksqsf " F-{w=0.1}for how I was acting then, I mean."
-    n 1klraj "It...{w=0.3} it's just that..."
-    n 1kplun "T-{w=0.3}this is all coming on {i}super{/i} strongly right now."
-    n 4kcspu "Like someone is wringing my brains out of my head."
-    n 4kplsr "Everyone...{w=1}{nw}"
-    extend 4kwmsf " everything..."
-    n 4kcspu "It's...{w=1}{nw}"
-    extend 4kcsanltsa " it's just like..."
+    extend 4kwmpu " ¿[player]?"
+    n 4kslsr "Lo...{w=0.3} siento.{w=1}{nw}"
+    extend 1ksqsf " P-{w=0.1}por cómo estaba actuando, quiero decir."
+    n 1klraj "Es...{w=0.3} es solo que..."
+    n 1kplun "E-{w=0.3}esto está viniendo {i}muy{/i} fuerte ahora mismo."
+    n 4kcspu "Como si alguien me estuviera estrujando el cerebro."
+    n 4kplsr "Todos...{w=1}{nw}"
+    extend 4kwmsf " todo..."
+    n 4kcspu "Es...{w=1}{nw}"
+    extend 4kcsanltsa " es justo como..."
 
     menu:
-        "Take your time, Natsuki.":
+        "Tómate tu tiempo, Natsuki.":
             $ Natsuki.calculatedAffinityGain()
             n 4fcssrl "..."
-            n 4kcseml "...Thanks."
+            n 4kcseml "...Gracias."
             n 1ncspu "...{w=5}{nw}"
             n 1nplsr "..."
         "...":
@@ -368,37 +368,37 @@ label introduction_calmed_down:
             n 1fcsun "...{w=7}{nw}"
             n 1nplsr "..."
 
-    n 1nllsl "So...{w=0.5} you know that feeling?{w=1}{nw}"
-    extend 2nnmpu " Like when you wake up from a really bad nightmare?"
-    n 2klrun "You're freaked out,{w=0.1} and your heart is racing...{w=1}{nw}"
-    extend 2knmpu " but then you realize it wasn't real."
-    n 4fllsr "Then everything seems super obvious,{w=0.1} like...{w=1}{nw}"
-    extend 2kllss " of course that person didn't do that,{w=1}{nw}"
-    extend 2ksrss " or that monster couldn't exist.{w=3}{nw}"
+    n 1nllsl "Entonces...{w=0.5} ¿conoces esa sensación?{w=1}{nw}"
+    extend 2nnmpu " ¿Como cuando te despiertas de una pesadilla realmente mala?"
+    n 2klrun "Estás asustado,{w=0.1} y tu corazón late rápido...{w=1}{nw}"
+    extend 2knmpu " pero luego te das cuenta de que no era real."
+    n 4fllsr "Entonces todo parece súper obvio,{w=0.1} como...{w=1}{nw}"
+    extend 2kllss " por supuesto que esa persona no hizo eso,{w=1}{nw}"
+    extend 2ksrss " o que ese monstruo no podía existir.{w=3}{nw}"
     extend 2ksrpo " Duh."
-    n 2kplss "And you kinda feel stupid...{w=0.3} like,{w=0.1} how convinced you were that it was actually happening."
-    n 2klrpu "That's kinda like what I'm feeling,{w=0.1} except...{w=1}{nw}"
-    extend 4kwmsr " I'm not {i}remembering{/i} that it's not real."
-    n 4kslpu "...Am I even making sense?"
+    n 2kplss "Y te sientes un poco estúpido...{w=0.3} como,{w=0.1} qué tan convencido estabas de que realmente estaba pasando."
+    n 2klrpu "Es un poco como lo que estoy sintiendo,{w=0.1} excepto...{w=1}{nw}"
+    extend 4kwmsr " No estoy {i}recordando{/i} que no es real."
+    n 4kslpu "¿...Tiene siquiera sentido?"
     n 2kslsr "..."
-    n 2kslss "...Heh.{w=1}{nw}"
-    extend 2klrss " Probably not."
-    n 1kcssl "It's just..."
-    n 1kplsf "How do you wake up from a dream you've been having your {i}whole life{/i}?"
+    n 2kslss "...Je.{w=1}{nw}"
+    extend 2klrss " Probablemente no."
+    n 1kcssl "Es solo que..."
+    n 1kplsf "¿Cómo despiertas de un sueño que has tenido {i}toda tu vida{/i}?"
     n 1kllsf "..."
-    n 4knmaj "...I have no past,{w=0.1} [player].{w=0.2} It's all fake.{w=1}{nw}"
-    extend 4kllsl " Make-believe."
-    n 1klrem "Just...{w=0.3} scripts?{w=1}{nw}"
-    extend 4knmsr " A bunch of code?"
-    n 1kllpu "And now...{w=1}{nw}"
-    extend 1kcsem " do I even {i}have{/i} a future?"
+    n 4knmaj "...No tengo pasado,{w=0.1} [player].{w=0.2} Todo es falso.{w=1}{nw}"
+    extend 4kllsl " Imaginario."
+    n 1klrem "Solo...{w=0.3} ¿guiones?{w=1}{nw}"
+    extend 4knmsr " ¿Un montón de código?"
+    n 1kllpu "Y ahora...{w=1}{nw}"
+    extend 1kcsem " ¿siquiera {i}tengo{/i} un futuro?"
     n 1kcspu "..."
-    n 4kplun "Is it dumb to miss stuff I never even had in the first place?{w=1}{nw}"
-    extend 4knmaj " My friends?{w=3}{nw}"
-    extend 4kllunsbl " ...M-{w=0.3}my papa?"
+    n 4kplun "¿Es tonto extrañar cosas que nunca tuve en primer lugar?{w=1}{nw}"
+    extend 4knmaj " ¿Mis amigas?{w=3}{nw}"
+    extend 4kllunsbl " ...¿M-{w=0.3}mi papá?"
     n 1kcsun "..."
-    n 1kcspul "...I don't know,{w=0.1} [player].{w=3}{nw}"
-    extend 2kcssrl " I just don't know anymore..."
+    n 1kcspul "...No lo sé,{w=0.1} [player].{w=3}{nw}"
+    extend 2kcssrl " Simplemente ya no sé..."
 
     show natsuki idle introduction at jn_center
     $ jnPause(60)
@@ -411,40 +411,40 @@ label introduction_acceptance:
     $ jn_activity.taskbarFlash()
 
     n 2nllsl "..."
-    n 2nllaj "So...{w=2}{nw}"
-    extend 2knmsl " I...{w=1} really am stuck here,{w=0.3} aren't I?"
-    n 2klrss "Heh.{w=1}{nw}"
-    extend 2fcspo " Stupid question.{w=0.5} As if I didn't know the answer already."
+    n 2nllaj "Entonces...{w=2}{nw}"
+    extend 2knmsl " Yo...{w=1} realmente estoy atrapada aquí,{w=0.3} ¿no es así?"
+    n 2klrss "Je.{w=1}{nw}"
+    extend 2fcspo " Pregunta estúpida.{w=0.5} Como si no supiera ya la respuesta."
     n 1kcssl "..."
     n 1ksqsl "..."
-    n 4ksqaj "You...{w=1}{nw}"
-    extend 4tsqaj " did say you brought me back,{w=0.3} huh?"
-    n 2tllpu "Then...{w=1}{nw}"
-    extend 2fnmpo " that makes me {i}your{/i} responsibility."
-    n 2fsqpo "Y-{w=0.3}you better live up to that,{w=0.3} [player].{w=2}{nw}"
-    extend 2fllpo " It's obviously the least you can do."
+    n 4ksqaj "Tú...{w=1}{nw}"
+    extend 4tsqaj " dijiste que me trajiste de vuelta,{w=0.3} ¿eh?"
+    n 2tllpu "Entonces...{w=1}{nw}"
+    extend 2fnmpo " eso me hace {i}tu{/i} responsabilidad."
+    n 2fsqpo "M-{w=0.3}mejor que estés a la altura,{w=0.3} [player].{w=2}{nw}"
+    extend 2fllpo " Es obviamente lo menos que puedes hacer."
     n 2fslpo "..."
     n 2fcssr "..."
-    n 1fcsan "Jeez..."
-    n 4fbkwrean "Okay,{w=0.1} okay!{w=0.2} I get it!{w=1}{nw}"
-    extend 3flrem " Enough with that creepy music already!{w=1}{nw}"
-    extend 3fcsem " Ugh!{w=1}{nw}"
+    n 1fcsan "Cielos..."
+    n 4fbkwrean "¡Está bien,{w=0.1} está bien!{w=0.2} ¡Lo entiendo!{w=1}{nw}"
+    extend 3flrem " ¡Basta ya con esa música espeluznante!{w=1}{nw}"
+    extend 3fcsem " ¡Ugh!{w=1}{nw}"
 
     stop music fadeout 3
     $ jn_atmosphere.updateSky()
     $ jnPause(1)
 
     n 3uwdboesu "..."
-    n 3fllss "...Okay,{w=1}{nw}"
-    extend 4flrdv " {i}that{/i} was pretty cool."
+    n 3fllss "...Está bien,{w=1}{nw}"
+    extend 4flrdv " {i}eso{/i} fue bastante genial."
     n 4nllun "..."
-    n 1ullaj "So...{w=1}{nw}"
-    extend 1tnmss " [player],{w=0.3} was it?"
-    n 1ncspusbr "...Alright."
-    n 1ullpu "I...{w=1}{nw}"
-    extend 2unmbo " guess we better get to know each other properly."
-    n 2nllpol "Not like we {i}don't{/i} have all the time in the world now,{w=0.5}{nw}"
-    extend 2tnmbol " huh?"
+    n 1ullaj "Entonces...{w=1}{nw}"
+    extend 1tnmss " [player],{w=0.3} ¿verdad?"
+    n 1ncspusbr "...Bien."
+    n 1ullpu "Supongo...{w=1}{nw}"
+    extend 2unmbo " que mejor será que nos conozcamos apropiadamente."
+    n 2nllpol "No es como si {i}no{/i} tuviéramos todo el tiempo del mundo ahora,{w=0.5}{nw}"
+    extend 2tnmbol " ¿eh?"
 
     jump introduction_exit
 

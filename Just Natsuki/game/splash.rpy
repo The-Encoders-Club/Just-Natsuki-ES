@@ -7,7 +7,7 @@ init -100 python:
     for archive in ['audio','images','scripts','fonts']:
         if archive not in config.archives:
             
-            renpy.error("DDLC archive files not found in /game folder. Check installation and try again.")
+            renpy.error("No se encontraron los archivos de archivo de DDLC en la carpeta /game. Verifica la instalación e inténtalo de nuevo.")
 
 
 
@@ -17,7 +17,7 @@ init python:
     config.rollback_enabled = False
     menu_trans_time = 1
 
-    splash_message = _("This game is an unofficial fan work, unaffiliated with Team Salvato.")
+    splash_message = _("Este juego es un trabajo de fans no oficial, no afiliado al Team Salvato.")
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
@@ -144,14 +144,14 @@ label splashscreen:
         scene tos_a
         with Dissolve(1.0)
         pause 1.0
-        "[config.name] is a Doki Doki Literature Club fan mod that is not affiliated with Team Salvato."
-        "It is designed to be played only after the official game has been completed, and contains spoilers for the official game."
-        "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: http://ddlc.moe"
+        "[config.name] es un mod fan de Doki Doki Literature Club que no está afiliado al Team Salvato."
+        "Está diseñado para ser jugado solo después de haber completado el juego oficial, y contiene spoilers del mismo."
+        "Se requieren los archivos del juego Doki Doki Literature Club para jugar este mod y se pueden descargar gratis en: http://ddlc.moe"
         $ narrator(
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within.",
+            "Al jugar [config.name] aceptas que has completado Doki Doki Literature Club y aceptas cualquier spoiler contenido en él.",
             interact=False
         )
-        $ renpy.display_menu(items=[ ("I agree.", True)], screen="choice_centred")
+        $ renpy.display_menu(items=[ ("Acepto.", True)], screen="choice_centred")
         scene tos_b
         with Dissolve(1)
         pause 1.0
