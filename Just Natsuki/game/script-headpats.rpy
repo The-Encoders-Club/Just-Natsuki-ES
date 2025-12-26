@@ -256,14 +256,14 @@ label headpats_finished:
         show natsuki 1fcscalesssbr at jn_center
         menu:
             n "S-{w=0.2}solo un poco."
-            "Por supuesto.":
+            "Por supuesto":
 
                 n 1ksrssf "...{w=0.3}Gracias,{w=0.2} [player]."
                 $ jn_headpats._more_pats_requested = True
                 $ jn_headpats._pats_finished = False
                 $ jn_headpats._is_idle = False
                 jump headpats_loop
-            "Es todo por ahora.":
+            "Es todo por ahora":
 
                 n 2nslbol "...Oh."
                 n 2fcsemlsbl "B-{w=0.2}bueno,{w=0.2} ¡está bien!{w=0.75}{nw}"

@@ -454,13 +454,13 @@ screen poem_view(poem, pre_click_afm):
             text "[poem.poem]" style "poem_text" size poem.font_size text_align poem.text_align
             null height 50
  
-     vbar value YScrollValue(viewport="poem_viewport") style "poem_vbar"
+    vbar value YScrollValue(viewport="poem_viewport") style "poem_vbar"
  
  
-     vbox:
-         xpos 1056
-         ypos 10
-         textbutton _("Listo"):
+    vbox:
+        xpos 1056
+        ypos 10
+        textbutton _("Listo"):
             style "hkbd_button"
             action [
                 Hide(

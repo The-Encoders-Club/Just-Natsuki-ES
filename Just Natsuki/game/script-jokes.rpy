@@ -1337,7 +1337,7 @@ label joke_ravioli_pasta_way:
     return
 
 label joke_spices:
-    n 1csqbg "'Kay.{w=0.75}{nw}"
+    n 1csqbg "OKay.{w=0.75}{nw}"
     extend 1fcsbs " ¡Entonces!"
     n 1unmss "¿Cuándo empezaría un chef a añadir pimentón y chile en polvo extra a un plato que pediste?"
     n 1cnmsm "..."

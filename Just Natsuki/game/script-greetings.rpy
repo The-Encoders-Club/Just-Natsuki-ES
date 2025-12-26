@@ -59,7 +59,7 @@ init python:
             persistent._greeting_database,
             label="greeting_first_time",
             unlocked=True,
-            category=["Special"],
+            category=["Especial"],
             additional_properties={
                 "expression": "5ksrbo"
             }
@@ -126,7 +126,7 @@ init python:
             persistent._greeting_database,
             label="greeting_first_force_quit",
             unlocked=True,
-            category=["Special"],
+            category=["Especial"],
             additional_properties={
                 "expression": "2kslunedr"
             }
@@ -186,7 +186,7 @@ init python:
             persistent._greeting_database,
             label="greeting_leave_return",
             unlocked=True,
-            category=["Special"],
+            category=["Especial"],
             additional_properties={
                 "expression": "5ksrbo"
             }
@@ -2083,7 +2083,7 @@ init python:
             persistent._greeting_database,
             label="greeting_feeling_better_sick",
             unlocked=True,
-            category=["Admission"],
+            category=["Admisión"],
             affinity_range=(jn_affinity.HAPPY, None),
             additional_properties={
                 "admission_type": jn_admissions.TYPE_SICK,
@@ -2309,7 +2309,7 @@ init python:
             persistent._greeting_database,
             label="greeting_feeling_better_tired",
             unlocked=True,
-            category=["Admission"],
+            category=["Admisión"],
             affinity_range=(jn_affinity.HAPPY, None),
             additional_properties={
                 "admission_type": jn_admissions.TYPE_TIRED,
@@ -2365,7 +2365,7 @@ init python:
             persistent._greeting_database,
             label="greeting_sudden_leave",
             unlocked=True,
-            category=["Apology"],
+            category=["Disculpa"],
             additional_properties={
                 "apology_type": jn_apologies.ApologyTypes.sudden_leave,
                 "expression": "4fslbol"
@@ -2419,7 +2419,7 @@ init python:
             persistent._greeting_database,
             label="greeting_prolonged_leave",
             unlocked=True,
-            category=["Apology"],
+            category=["Disculpa"],
             additional_properties={
                 "apology_type": jn_apologies.ApologyTypes.prolonged_leave,
             }

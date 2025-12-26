@@ -69,7 +69,7 @@ init python:
     registerTopic(
         Topic(
             persistent._apology_database,
-            prompt="Por decirte un nombre hiriente.",
+            prompt="Por darte un nombre hiriente.",
             label="apology_bad_nickname",
             unlocked=True,
         ),

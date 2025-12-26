@@ -2207,8 +2207,8 @@ label outfits_wear_outfit:
 
     if not jn_outfits.getAllOutfits():
 
-        n 4tnmbo "¿Eh?{w=0.5}{nw}"
-            extend 1fchbg " ¡No tengo más conjuntos,{w=0.2} tonto!"
+        n 4tnmbo "¿Eh? {w=0.5}{nw}"
+        extend 1fchbg "¡No tengo más conjuntos, {w=0.2}tonto!"
 
         jump ch30_loop
 
@@ -2512,7 +2512,7 @@ label outfits_remove_outfit:
         show natsuki option_wait_curious
         menu:
             n "¿Estás seguro que quieres que me olvide de ello?"
-            "Sí, olvídate de [outfit_name].":
+            "Sí, olvídate de [outfit_name]":
 
                 if Natsuki.isWearingOutfit(_return.reference_name):
 
@@ -2538,7 +2538,7 @@ label outfits_remove_outfit:
                     n 2kdrfl "Yo...{w=1}{nw}"
                     extend 2kdrsssbr " No puedo olvidarme de ese atuendo por alguna razón.{w=0.75}{nw}"
                     extend 5ksrcasbr "Lo siento."
-            "Nevermind.":
+            "No importa":
 
                 n 1nnmbo "Oh."
                 n 1ullaj "Bien...{w=1}{nw}"
@@ -2563,7 +2563,7 @@ label outfits_create_select_headgear:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin casco", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a headgear item...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un casco...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNHeadgear):
         play audio clothing_ruffle
@@ -2582,7 +2582,7 @@ label outfits_create_select_hairstyle:
         wearable_options = [(jn_utils.escapeRenpySubstitutionString(wearable.display_name), wearable) for wearable in unlocked_wearables]
         wearable_options.sort(key = lambda option: (option[1].is_jn_wearable, option[1].display_name))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a hairstyle...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un estilo de cabello...")
 
     if isinstance(_return, jn_outfits.JNHairstyle):
         play audio hair_brush
@@ -2601,7 +2601,7 @@ label outfits_create_select_eyewear:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin gafas", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose an eyewear item...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige una gafa...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNEyewear):
         python:
@@ -2620,7 +2620,7 @@ label outfits_create_select_accessory:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin accesorios", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose an accessory...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un accesorio...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNAccessory):
         play audio hair_clip
@@ -2640,7 +2640,7 @@ label outfits_create_select_necklace:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin collar", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a necklace...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un collar...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNNecklace):
         play audio necklace_clip
@@ -2659,7 +2659,7 @@ label outfits_create_select_clothes:
         wearable_options = [(jn_utils.escapeRenpySubstitutionString(wearable.display_name), wearable) for wearable in unlocked_wearables]
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a clothing item...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige una prenda de ropa...")
 
     if isinstance(_return, jn_outfits.JNClothes):
         if (random.choice([True, False])):
@@ -2682,7 +2682,7 @@ label outfits_create_select_facewear:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin accesorio facial", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a facewear item...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un accesorio para la cara...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNFacewear):
         play audio hair_clip
@@ -2702,7 +2702,7 @@ label outfits_create_select_back:
         wearable_options.sort(key = lambda option: (not option[1].is_jn_wearable, option[1].display_name))
         wearable_options.insert(0, ("Sin accesorio trasero", "none"))
 
-    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Choose a back item...")
+    call screen scrollable_choice_menu(items=wearable_options, last_item=("No importa.", None), menu_caption="Elige un artículo de la parte trasera...")
 
     if isinstance(_return, basestring) or isinstance(_return, jn_outfits.JNBack):
         if (random.choice([True, False])):
@@ -2732,7 +2732,7 @@ label outfits_create_copy:
         for outfit in available_outfits:
             options.append((jn_utils.escapeRenpySubstitutionString(outfit.display_name), outfit))
 
-    call screen scrollable_choice_menu(items=options, last_item=("No importa.", None), menu_caption="Copy which outfit?")
+    call screen scrollable_choice_menu(items=options, last_item=("No importa.", None), menu_caption="¿Qué conjunto quieres copiar?")
 
     if isinstance(_return, jn_outfits.JNOutfit):
         play audio clothing_ruffle
@@ -2755,14 +2755,14 @@ label outfits_create_quit:
         show natsuki option_wait_curious
         menu:
             n "¿Estás seguro de que no quieres que pruebe más cosas?"
-            "Sí, todavía no he terminado.":
+            "Sí, todavía no he terminado":
 
 
                 n 7fcsbg "Gotcha!{w=0.75}{nw}"
                 extend 7tsqsm " ¿Qué más tienes?"
 
                 jump outfits_create_menu
-            "No, hemos terminado aquí.":
+            "No, hemos terminado aquí":
 
 
                 n 1nnmbo "Oh.{w=1.5}{nw}"
@@ -2794,7 +2794,7 @@ label outfits_create_save:
     show natsuki option_wait_curious
     menu:
         n "Todo terminado,{w=0.2} [player]?"
-        "Sí, me gustaría guardar este atuendo.":
+        "Sí, me gustaría guardar este atuendo":
 
             n 1fchbg "Gotcha!{w=1.5}{nw}"
             extend 1unmsm " ¿Cómo querías llamarlo?"
@@ -2869,7 +2869,7 @@ label outfits_create_save:
                         show natsuki option_wait_sulky
                     else:
 
-                        n 3csqcasbr "...No."
+                        n 3csqcasbr "... No."
 
                         show natsuki option_wait_sulky
 
@@ -2994,7 +2994,7 @@ label outfits_create_save:
                 extend 5ksrcasbr "¡Lo siento!."
 
                 jump outfits_create_menu
-        "Sí, pero no te preocupes por salvar este atuendo.":
+        "Sí, pero no te preocupes por salvar este atuendo":
 
             n 4tnmpueqm "¿Eh?{w=0.75}{nw}"
             extend 1tnmaj " ¿No {i}quieres{/i} que me acuerde de esto?"
@@ -3005,7 +3005,7 @@ label outfits_create_save:
             $ jn_outfits._changes_made = False
             $ jn_outfits.saveTemporaryOutfit(jn_outfits._PREVIEW_OUTFIT)
             jump ch30_loop
-        "No, aún no he terminado.":
+        "No, aún no he terminado":
 
             n 3nslpo "Yo {i}sabía{/i}, debería haber traído un libro.{w=0.75}{nw}"
             extend 1fsqsm " Jejeje."

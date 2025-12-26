@@ -1271,7 +1271,7 @@ screen preferences():
                     style_prefix "check"
                     label _("Saltar")
                     textbutton _("Texto no visto") action Preference("skip", "toggle")
-                    textbutton _("Después de las elecciones") action Preference("after choices", "toggle")
+                    textbutton _("Tras las opciones") action Preference("after choices", "toggle")
 
                 vbox:
 
@@ -1303,7 +1303,7 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("Natsuki")
-                    textbutton _("Conjuntos automáticos") action [
+                    textbutton _("Ropa automática") action [
                             ToggleField(
                                 object=persistent,
                                 field="jn_natsuki_auto_outfit_change_enabled",

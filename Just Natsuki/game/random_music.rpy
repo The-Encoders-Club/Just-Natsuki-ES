@@ -158,7 +158,7 @@ init 5 python:
             unlocked=True,
             prompt="¿Puedes dejar de reproducir música personalizada aleatoria?",
             conditional="persistent.jn_custom_music_unlocked and persistent.jn_random_music_enabled",
-            category=["Música"], #category=["Music"],
+            category=["Música"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"

@@ -257,7 +257,7 @@ label snap_intro:
             "¡Sí, por favor!":
 
                 jump snap_explanation
-            "No, estoy listo.":
+            "No, estoy listo":
 
                 n 4tsqss "¿Oh?{w=0.75}{nw}"
                 extend 4flrbg " Estás listo,{w=0.5}{nw}"
@@ -310,7 +310,7 @@ label snap_explanation:
 
             $ persistent.jn_snap_explanation_given = True
             jump snap_start
-        "Gracias, [n_name]. Jugaré luego.":
+        "Gracias, [n_name]. Jugaré luego":
 
             n 1tsqpueqm "¿Huh?{w=0.75}{nw}"
             extend 2nsqflsbl " ¿En serio?"
@@ -715,7 +715,7 @@ label snap_end:
 
             $ jn_snap._natsuki_skill_level += 1
             jump snap_start
-        "Paso.":
+        "Paso":
 
             n 1cllsl "Awww..."
             n 2fsqss "...Aguafiestas.{w=0.75}{nw}"
@@ -764,7 +764,7 @@ label snap_forfeit:
     show natsuki 2csqca
     menu:
         n "¿Verdad?"
-        "Sí, me rindo.":
+        "Sí, me rindo":
 
             n 2ccscaesm "..."
             n 2nllsl "Bueno,{w=0.2} supongo que está bien.{w=0.75}{nw}"

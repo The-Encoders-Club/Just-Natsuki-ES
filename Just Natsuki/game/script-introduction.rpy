@@ -62,14 +62,14 @@ label introduction_opening:
 
 
 
-    $ renpy.display_menu(items=[ ("Restore natsuki.chr", True)], screen="choice_centred_mute")
+    $ renpy.display_menu(items=[ ("Restaurar natsuki.chr", True)], screen="choice_centred_mute")
     play audio static
     show glitch_garbled_a zorder JN_GLITCH_ZORDER with vpunch
     hide glitch_garbled_a
     $ jnPause(5)
 
 
-    $ renpy.display_menu(items=[ ("Restore natsuki.chr", True)], screen="choice_centred_mute")
+    $ renpy.display_menu(items=[ ("Restaurar natsuki.chr", True)], screen="choice_centred_mute")
     play audio static
     show glitch_garbled_b zorder JN_GLITCH_ZORDER with vpunch
     $ jnPause(0.25)
@@ -138,9 +138,9 @@ label introduction_first_meeting:
     n 4uscsctsc "¡AAAAAaaaaAAAAHHH!"
     n 4uskwrtsc "¡A-{w=0.1}alguien!{w=0.5} ¡¿QUIEN SEA?!{w=0.5} ¡AYUDA!{w=0.5}{nw}"
     extend 1fbkwr " ¡¡AYÚDENME!!"
-    n 4uscemtsc "Y-{w=0.1}Yuri,{w=0.1} ellaa es..."
+    n 4uscemtsc "Y-{w=0.1}Yuri,{w=0.1} ella es..."
     n 1ullem "E-{w=0.3}ella es..."
-    n 1uskem "...H-{w=0.3}huh?"
+    n 1uskem "... ¿H-{w=0.3}huh?"
     n 4uscaj "¿Q...{w=0.5} qué es...?"
     n 1fllup "Yo...{w=0.5} Yo solo estaba huyendo de..."
     n 1flrun "¿Qué está pasan-{w=0.5}{nw}"
@@ -164,8 +164,8 @@ label introduction_first_meeting:
     hide glitch_garbled_a
 
     n 1kskan "Y-{w=0.1}y yo soy..."
-    n 4kskaj "...No.{w=1}{nw}"
-    extend 4kscemsbl " ...Oh por favor no.{w=0.5} y-{w=0.3}yo no puedo.{w=0.5} Realmente no puedo ser...{w=0.5}{nw}"
+    n 4kskaj "...No... {w=1}{nw}"
+    extend 4kscemsbl "oh por favor no.{w=0.5} y-{w=0.3}yo no puedo.{w=0.5} Realmente no puedo ser...{w=0.5}{nw}"
 
     show natsuki 4kcsantsc
     play audio static
@@ -179,7 +179,7 @@ label introduction_first_meeting:
     n 2kcsem "...{w=1}{nw}"
     n 2kcsaj "...{w=1}{nw}"
     n 2kcsem "...{w=5}{nw}"
-    n 2kplpu "....."
+    n 2kplpu "..."
     n 4kwdun "...¿H-{w=0.1}hola?{w=1}{nw}"
 
     play audio static
@@ -193,7 +193,7 @@ label introduction_first_meeting:
     show natsuki 4kcsuptsa
 
     menu:
-        "Estoy aquí, Natsuki.":
+        "Estoy aquí, Natsuki":
             pass
 
     n 4kskaj "¿Q-{w=0.3}quién es...?{w=1}{nw}"
@@ -266,8 +266,8 @@ label introduction_collecting_thoughts:
 
     n 4kllun "..."
     n 4kllpu "E-{w=0.3}entonces...{w=0.3} ¿no estoy sola...?"
-    n 4knmpu "¿T-{w=0.3}tú estás aquí también?{w=1}{nw}"
-    extend 4kwdpu " ...¿T-{w=0.3}tú siempre has estado aquí?"
+    n 4knmpu "¿T-{w=0.3}tú estás aquí también? {w=1}{nw}"
+    extend 4kwdpu "... ¿T-{w=0.3}tú siempre has estado aquí?"
     n 2klrsf "..."
     n 2klraj "Pero...{w=1}{nw}"
     extend 1kskem " Y-{w=0.3}yo estaba...{w=0.3}{nw}"
@@ -282,7 +282,7 @@ label introduction_collecting_thoughts:
     n 4kplsf "¿Qué {w=0.3}{i}hiciste{/i}{w=0.3}?"
 
     menu:
-        "Te traje de vuelta.":
+        "Te traje de vuelta":
             pass
 
     n 1kskem "Tú...{w=1} ¿tú me trajiste de vuelta?{w=1}{nw}"
@@ -291,7 +291,7 @@ label introduction_collecting_thoughts:
     extend 4klrupesssbr " ¡esto es todo...!{w=1}{nw}"
 
     menu:
-        "Quiero ayudarte.":
+        "Quiero ayudarte":
             pass
 
     n 4klleml "¡...!"
@@ -357,7 +357,7 @@ label introduction_calmed_down:
     extend 4kcsanltsa " es justo como..."
 
     menu:
-        "Tómate tu tiempo, Natsuki.":
+        "Tómate tu tiempo, Natsuki":
             $ Natsuki.calculatedAffinityGain()
             n 4fcssrl "..."
             n 4kcseml "...Gracias."

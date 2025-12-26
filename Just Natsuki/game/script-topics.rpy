@@ -55,13 +55,13 @@ label talk_out_of_topics:
         show natsuki 2nsrsssbl
         menu:
             n "¿Te importa si repito algunas cosas,{w=0.2} o...?"
-            "Claro, no me importa escuchar.":
+            "Claro, no me importa escuchar":
 
                 $ persistent.jn_natsuki_repeat_topics = True
 
                 n 4uchgn "¡Okaaay!{w=0.5}{nw}"
                 extend 1tcsaj " Ahora,{w=0.2} déjame pensar..."
-            "No me importa escuchar, pero no me recuerdes la próxima vez.":
+            "No me importa escuchar, pero no me recuerdes la próxima vez":
 
                 $ persistent.jn_natsuki_repeat_topics = True
                 $ persistent._jn_natsuki_out_of_topics_remind = False
@@ -70,7 +70,7 @@ label talk_out_of_topics:
                 extend 2unmfl " Oh.{w=0.75}{nw}"
                 extend 2nslsssbl " Cierto.{w=0.5} Claro."
                 n 2cslsl "Ahora,{w=0.2} déjame pensar..."
-            "Prefiero esperar.":
+            "Prefiero esperar":
 
                 n 2tllaj "Bueno...{w=0.5}{nw}"
                 extend 2tnmbo " si estás seguro."
@@ -81,7 +81,7 @@ label talk_out_of_topics:
                 else:
 
                     n 1flrpol "S-{w=0.2}¡solo no hagas que el silencio se ponga incómodo,{w=0.2} entendiste?!"
-            "Prefiero esperar, pero no me recuerdes la próxima vez.":
+            "Prefiero esperar, pero no me recuerdes la próxima vez":
 
                 $ persistent._jn_natsuki_out_of_topics_remind = False
 
@@ -123,7 +123,7 @@ init python:
             label="talk_did_you_have_pets",
             unlocked=True,
             prompt="¿Alguna vez tuviste mascotas?",
-            category=["Animals", "Family"],
+            category=["Animales", "Familia"],
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -181,11 +181,11 @@ label talk_did_you_have_pets:
 
             if Natsuki.isEnamored(higher=True):
                 n 7ksrslsbr "..."
-                n 7kcsflsbr "No lo sé,{w=0.2} [player].{w=0.75}{nw}"
+                n 7kcsflsbr "No lo sé, {w=0.2}[player].{w=0.75}{nw}"
                 n 4kllflsbr "Simplemente..."
                 n 4kslcasbr "..."
                 n 2ccsfll "Simplemente no me sienta bien.{w=0.75}{nw}"
-                extend 2csrsll " A-{w=0.2}al menos justo {i}ahora{/i}."
+                extend 2csrsll " A-{w=0.2}Al menos justo {i}ahora{/i}."
                 n 2nsrbol "..."
             else:
 
@@ -267,8 +267,8 @@ label talk_did_you_have_pets:
         n "[prompt]"
         "[response_yes]":
 
-            n 1uspgs "¡Oh!{w=0.5}{nw}"
-            extend 4fchbs " ¡Oh{w=0.2} oh{w=0.2} oh!"
+            n 1uspgs "¡Oh! {w=0.5}{nw}"
+            extend 4fchbs "¡Oh{w=0.2} oh{w=0.2} oh!"
             n 4unmbs "¡Vamos!{w=0.75}{nw}"
             extend 3unmbg " ¡Tienes que decirme,{w=0.2} [player]!{w=0.75}{nw}"
 
@@ -302,16 +302,6 @@ label talk_did_you_have_pets:
                 ("Algo más", "something_else")
             ]
             $ pet_options.sort()
-            # Move "Algo más" to the end if present (it should be first due to sort)
-            $ algo_mas = None
-            python:
-                for i, (name, id) in enumerate(pet_options):
-                    if id == "something_else":
-                        algo_mas = pet_options.pop(i)
-                        break
-            if algo_mas:
-                $ pet_options.append(algo_mas)
-
             call screen scrollable_choice_menu(items=pet_options)
             $ persistent._jn_player_pet = _return
             show natsuki at jn_center
@@ -325,23 +315,12 @@ label talk_did_you_have_pets:
             extend 3nsrfl " Estaría mintiendo si dijera que no estoy al menos {i}algo{/i} decepcionada."
 
             if player_has_pet:
-                # Define translation map for display
-                $ pet_names_es = {
-                    "birds": "pájaros", "cats": "gatos", "chameleons": "camaleones",
-                    "dogs": "perros", "ferrets": "hurones", "fish": "peces",
-                    "frogs": "ranas", "geckos": "geckos", "gerbils": "gerbos",
-                    "guinea_pigs": "cuyos", "hamsters": "hámsteres", "horses": "caballos",
-                    "insects": "insectos", "lizards": "lagartijas", "mice": "ratones",
-                    "rats": "ratas", "rabbits": "conejos", "snakes": "serpientes",
-                    "something_else": "algo más"
-                }
-                $ player_pet_es = pet_names_es.get(persistent._jn_player_pet, persistent._jn_player_pet)
                 n 3cslss "Incluso si {i}sí{/i} dijiste que tenías [player_pet_es] ya."
                 n 3cslbosbr "..."
 
             if Natsuki.isAffectionate(higher=True):
-                n 3ullaj "Bueno,{w=0.2} como sea.{w=0.75}{nw}"
-                extend 1ccsss " No es como si la gente consiguiera mascotas regularmente o algo así,{w=0.2} despues de todo."
+                n 3ullaj "Bueno, {w=0.2} como sea. {w=0.75}{nw}"
+                extend 1ccsss "No es como si la gente consiguiera mascotas regularmente o algo así,{w=0.2} despues de todo."
                 n 4fsqss "Pero no empieces a pensar que eso significa que te salvaste,{w=0.2} [player].{w=0.75}{nw}"
                 extend 4fsqsm " Ehehe."
                 n 3fchbg "¡Nop!{w=0.75}{nw}"
@@ -414,11 +393,11 @@ label talk_did_you_have_pets:
                         hide black with Dissolve(1.25)
                     else:
 
-                        n 5ksrbol "...Lo entiendo.{w=0.75}{nw}"
-                        extend 1ccsfllsbl " Solo quería que supieras eso también.{w=1.25}{nw}"
-                        extend 1cllpulsbl " Pero..."
+                        n 5ksrbol "...Lo entiendo. {w=0.75}{nw}"
+                        extend 1ccsfllsbl "Solo quería que supieras eso también. {w=1.25}{nw}"
+                        extend 1cllpulsbl "Pero..."
                         n 4cslbolsbl "..."
-                        n 4kslbolsbl "...Sí."
+                        n 4kslbolsbl "... Sí."
 
                 n 5kslcal "..."
                 n 4nslajl "Así que..."
@@ -842,7 +821,7 @@ init python:
             label="talk_service_animals",
             unlocked=True,
             prompt="Animales de servicio",
-            category=["Animals"],
+            category=["Animales"],
             nat_says=True,
             affinity_range=(jn_affinity.DISTRESSED, None),
             location="classroom"
@@ -1057,7 +1036,7 @@ init python:
             unlocked=True,
             prompt="Usar computadoras saludablemente",
             conditional="store.jn_utils.get_current_session_length().total_seconds() / 3600 >= 8",
-            category=["Health", "Technology"],
+            category=["Salud", "Tecnología"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1321,7 +1300,7 @@ init python:
             unlocked=True,
             prompt="Mantenerse activo",
             conditional="persistent.jn_total_visit_count >= 5",
-            category=["Life", "You", "Health"],
+            category=["Vida", "Tú", "Salud"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1491,7 +1470,7 @@ init python:
             label="talk_relieving_stress",
             unlocked=True,
             prompt="Aliviar el estrés",
-            category=["Life", "You", "Health"],
+            category=["Vida", "Tú", "Salud"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1532,7 +1511,7 @@ init python:
             label="talk_careful_spending",
             unlocked=True,
             prompt="Gasto cuidadoso",
-            category=["Life", "You", "Health", "Society"],
+            category=["Vida", "Tú", "Salud", "Sociedad"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1582,7 +1561,7 @@ init python:
             label="talk_eating_well",
             unlocked=True,
             prompt="Comer bien",
-            category=["Life", "You", "Health", "Food"],
+            category=["Vida", "Tú", "Salud", "Comida"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1642,7 +1621,7 @@ init python:
             label="talk_weather_setup_main",
             unlocked=True,
             prompt="Configurando el clima",
-            category=["Setup", "Weather"],
+            category=["Configuración", "Clima"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -1663,12 +1642,12 @@ label talk_weather_setup_main:
 
         menu:
             n "¿Desde dónde querías empezar,{w=0.1} [player]?"
-            "Quiero darte una clave API.":
+            "Quiero darte una clave API":
 
 
                 n 4unmaj "¿Quieres darme una clave API?{w=1}{nw}"
                 extend 1fchbg " ¡Seguro!"
-                n 3nchbg "Solo te guiaré a través de ello por si acaso,{w=0.1} ¿'kay?"
+                n 3nchbg "Solo te guiaré a través de ello por si acaso,{w=0.1} ¿okay?"
 
 
                 $ persistent._jn_weather_api_configured = False
@@ -1676,11 +1655,11 @@ label talk_weather_setup_main:
 
                 jump talk_weather_setup_api_key
 
-            "Quiero darte mi ubicación." if persistent._jn_weather_api_key:
+            "Quiero darte mi ubicación" if persistent._jn_weather_api_key:
 
                 n 4unmaj "¿Quieres ir a través de tu ubicación?{w=1}{nw}"
                 extend 1fchbg " ¡Seguro!"
-                n 3nchbg "Solo te guiaré a través de ello por si acaso,{w=0.1} ¿'kay?"
+                n 3nchbg "Solo te guiaré a través de ello por si acaso,{w=0.1} ¿okay?"
 
 
                 $ persistent._jn_weather_api_configured = False
@@ -1698,7 +1677,7 @@ label talk_weather_setup_main:
                 $ persistent._jn_weather_setting = int(jn_preferences.weather.JNWeatherSettings.disabled)
 
                 jump talk_weather_setup_verify
-            "Olvídalo.":
+            "Olvídalo":
 
 
                 n 1tsqpu "Uh...{w=0.5}{nw}"
@@ -1773,16 +1752,16 @@ label talk_weather_setup_main:
 
         menu:
             n "¿Estás bien si empezamos ahora,{w=0.1} [player]?"
-            "Seguro.":
+            "Seguro":
 
                 n 1uchbg "¡Muy bien!"
                 $ persistent._jn_weather_setup_started = True
                 jump talk_weather_setup_api_key
-            "No puedo justo ahora.":
+            "No puedo justo ahora":
 
                 n 1nnmbo "Oh.{w=1.5}{nw}"
                 extend 4nllsssbl " Bueno..."
-                n 1nsldv "Solo déjame saber cuando tengas tiempo,{w=0.1} ¿'kay?"
+                n 1nsldv "Solo déjame saber cuando tengas tiempo,{w=0.1} ¿okay?"
                 n 3fcsbg "¡Valdrá {i}súper{/i} la pena!"
                 return
 
@@ -1797,11 +1776,11 @@ label talk_weather_setup_api_key:
 
     menu:
         n "¿Tienes el sitio web abierto,{w=0.1} [player]?"
-        "Sí, tengo el sitio web abierto.":
+        "Sí, tengo el sitio web abierto":
 
             n 1nchbs "¡Asombroso!{w=0.5}{nw}"
             extend 4nwlbg " ¡Paso uno completo!"
-        "No, no pude ir al sitio web.":
+        "No, no pude ir al sitio web":
 
             n 4tnmaj "¿Eh?{w=1} ¿Por qué no?{w=1}{nw}"
             extend 1tnmsr " ¿Se cayó o algo?"
@@ -1812,7 +1791,7 @@ label talk_weather_setup_api_key:
             jump ch30_loop
 
 
-    n 1nchbg "¡'Kay!{w=0.5}{nw}"
+    n 1nchbg "¡OKay!{w=0.5}{nw}"
     extend 3fcssm " ¡Ahora el paso dos!"
     n 1nllaj "Básicamente necesito algo llamado clave API,{w=1}{nw}"
     extend 1nnmbo " lo cual me dejará usar ese sitio para averiguar cómo es el clima por allá."
@@ -1825,20 +1804,20 @@ label talk_weather_setup_api_key:
     n 3fcsaj "Solo asegúrate de ir a través de todas las opciones cuidadosamente{w=0.1} -{w=0.5}{nw}"
     extend 3nsqpo " ¡no solo corras a través de ello!"
     n 1unmaj "Oh{w=0.1} -{w=0.5}{nw}"
-    extend 1flrss " y asegúrate de confirmar tu correo electrónico una vez la hayas creado,{w=0.1} ¿'kay?"
+    extend 1flrss " y asegúrate de confirmar tu correo electrónico una vez la hayas creado,{w=0.1} ¿okay?"
     n 4nchbg "¡{a=[store.jn_globals.LINK_OPEN_WEATHER_MAP_SIGN_UP]}Aquí está{/a} ese enlace una vez más,{w=0.1} solo por si acaso!"
     n 1fnmsm "Ahora..."
 
     menu:
         n "¿Conseguiste tener una cuenta,{w=0.1} [player]?"
-        "Sí, tengo una cuenta configurada.":
+        "Sí, tengo una cuenta configurada":
 
             n 1fchsm "¡Asombroso!"
             n 3tllss "Probablemente querrás asegurarte de guardar tus detalles de inicio de sesión en algún lugar seguro,{w=0.5}{nw}"
             extend 4fchsm " sooolo por si acaso."
             n 1fchts "¡No olvides confirmar tu dirección de correo también!"
             n 1fsqsm "Ahora,{w=0.1} aquí viene la parte retadora..."
-        "Ya tenía una cuenta configurada.":
+        "Ya tenía una cuenta configurada":
 
             n 1fchsm "¡Asombroso!{w=0.5}{nw}"
             extend 3fwlbg " ¡El resto de esto debería ser pan comido!"
@@ -1869,7 +1848,7 @@ label talk_weather_setup_api_key:
 
             n 4tnmaj "¿Eh?{w=0.2} ¿No quieres continuar?"
             n 1tllbo "Está bien,{w=0.1} supongo."
-            n 1fcsbg "Solo déjame saber cuando estés listo,{w=0.1} ¿'kay?"
+            n 1fcsbg "Solo déjame saber cuando estés listo,{w=0.1} ¿okay?"
 
             jump ch30_loop
         else:
@@ -1890,7 +1869,7 @@ label talk_weather_setup_location:
 
     menu:
         n "¿Cómo te gustaría decirme, [player]?"
-        "¿Puedes intentar localizarme a través del Internet?":
+        "¿Puedes intentar localizarme a través del internet?":
 
             n 1fchsm "Seguro, ¡puedo darle un intento!{w=1}{nw}"
             extend 1fcssm " Solo dame un segundo aquí...{w=1}{nw}"
@@ -1930,14 +1909,14 @@ label talk_weather_setup_location:
                     n 3tsqsm "¿Y bien?{w=1}{nw}"
                     extend 3tsqss " ¿Estoy en lo correcto o qué, [player]?"
                     menu:
-                        "Sí, me encontraste.":
+                        "Sí, me encontraste":
                             n 4fcsbg "¡Como una pro!"
                             extend 1fcssm " Ehehe."
                             n 1fllss "Solo notaré eso muy rápido..."
 
                             $ persistent._jn_player_latitude_longitude = ip_latitude_longitude
                             jump talk_weather_setup_verify
-                        "No, eso no está bien.":
+                        "No, eso no está bien":
 
                             n 2fnmgs "¿Qué?{w=0.2} ¡¿Estás bromeando?!"
                             n 2flrsl "Ugh..."
@@ -1958,30 +1937,30 @@ label talk_weather_setup_location:
                     n 4tnmss "Bueno,{w=0.3} ¿[player]?"
                     menu:
                         n "¿Cómo nos vemos?"
-                        "Sí, eso se ve bien para mí.":
+                        "Sí, eso se ve bien para mí":
 
                             n 1kchbg "¡Uff!"
                             extend 2nsldv " Estaba medio preocupada de que tendría que ponerme un poco más creativa..."
 
                             $ persistent._jn_player_latitude_longitude = ip_latitude_longitude
                             jump talk_weather_setup_verify
-                        "No, eso no está bien.":
+                        "No, eso no está bien":
 
                             n 4fcsan "Uuuuuuu..."
                             n 2nslpo "Bien.{w=1}{nw}"
                             extend 2usqpo " Parece que vamos a tener que hacer las cosas a la antigua."
 
                             jump talk_weather_setup_manual_coords
-        "Quiero decirte dónde estoy yo mismo.":
+        "Quiero decirte dónde estoy yo mismo":
 
             n 1uchgn "¡Bueno, tú eres el jefe!"
 
             jump talk_weather_setup_manual_coords
-        "Olvídalo.":
+        "Olvídalo":
 
             n 2fllpo "Bueno...{w=1}{nw}"
             extend 4nslpo " bien."
-            n 1fchbg "Solo déjame saber cuando quieras pasar por todo esto de nuevo,{w=0.1} ¿'kay?"
+            n 1fchbg "Solo déjame saber cuando quieras pasar por todo esto de nuevo,{w=0.1} ¿okay?"
 
             jump ch30_loop
 
@@ -1989,37 +1968,37 @@ label talk_weather_setup_manual_coords:
     n 1ulraj "Entonces,{w=0.3}{nw}"
     extend 1nnmbo " voy a necesitar saber unas cuantas cosas para averiguar dónde estás."
     n 1flrss "Empecemos con lo básico{w=0.1} -{w=0.5}{nw}"
-    extend 4fchsm " ¡Hemisferios!"
-    n 1unmaj "¿Vives en el Hemisferio {b}Norte{/b} o {b}Sur{/b}?"
-    n 3nllss "Solo en caso de que no supieras,{w=0.1} básicamente solo significa si vives al {b}Norte{/b} o {b}Sur{/b} del {b}ecuador{/b}."
+    extend 4fchsm "¡hemisferios!"
+    n 1unmaj "¿Vives en el hemisferio {b}norte{/b} o {b}sur{/b}?"
+    n 3nllss "Solo en caso de que no supieras,{w=0.1} básicamente solo significa si vives al {b}norte{/b} o {b}Sur{/b} del {b}ecuador{/b}."
     n 1nllaj "Así que..."
     show natsuki 1tsqsm at jn_center
     menu:
         n "¿En cuál vives,{w=0.1} [player]?"
-        "El Hemisferio Norte.":
+        "El hemisferio norte":
 
             $ player_in_southern_hemisphere = False
             $ persistent.hemisphere_north_south = "North"
 
-            n 1unmaj "¿El Hemisferio Norte?{w=1}{nw}"
+            n 1unmaj "¿El hemisferio norte?{w=1}{nw}"
             extend 1flrbg " ¡Bueno hey!{w=1}{nw}"
             extend 4fchbg " ¡Justo como yo!"
-        "El Hemisferio Sur.":
+        "El hemisferio sur":
 
             $ player_in_southern_hemisphere = True
             $ persistent.hemisphere_north_south = "South"
 
-            n 1unmaj "¿El Hemisferio Sur?{w=1}{nw}"
+            n 1unmaj "¿El hemisferio sur?{w=1}{nw}"
             extend 4fchbg " ¡Entendido!"
 
-    n 1uchbg "¡Okay,{w=0.1} ahora hora de los otros dos!"
-    n 1tnmss "¿Vives en el Hemisferio {b}Este{/b} u {b}Oeste{/b}?"
+    n 1uchbg "¡Okey,{w=0.1} ahora hora de los otros dos!"
+    n 1tnmss "¿Vives en el hemisferio {b}este{/b} u {b}oeste{/b}?"
     n 1ulraj "Esta es un poco más engañosa,{w=0.1} pero encuentro que ayuda pensar en ello de esta manera:"
     n 4nnmbo "Si tomamos un mapa mundial y lo cortamos a la mitad {b}verticalmente{/b} por el medio..."
     show natsuki 1unmaj at jn_center
     menu:
-        n "¿Vivirías en la {b}mitad Este{/b},{w=0.1} o la {b}mitad Oeste{/b}?"
-        "La mitad Este.":
+        n "¿Vivirías en la {b}mitad este{/b},{w=0.1} o la {b}mitad oeste{/b}?"
+        "La mitad este":
 
             $ player_in_western_hemisphere = False
             $ persistent._jn_hemisphere_east_west = "East"
@@ -2031,12 +2010,12 @@ label talk_weather_setup_manual_coords:
             else:
 
                 n 1fchbg "¡Bueno hey!{w=0.5} ¡Justo como yo!"
-        "La mitad Oeste.":
+        "La mitad oeste":
 
             $ player_in_western_hemisphere = True
             $ persistent._jn_hemisphere_east_west = "West"
 
-            n 1fchbg "La mitad Oeste.{w=0.5} ¡Entendido!"
+            n 1fchbg "La mitad oeste.{w=0.5} ¡Entendido!"
 
 
     n 4fllss "Ahora con eso fuera del camino,{w=0.1} ¡solo necesito tus coordenadas!"
@@ -2068,7 +2047,7 @@ label talk_weather_setup_manual_coords:
         player_latitude = float(player_latitude)
         player_longitude = float(player_longitude)
 
-    n 3fcssm "¡'Kay!"
+    n 3fcssm "¡OKay!"
     extend 1fchsm " ¡Creo que casi estamos ahí,{w=0.1} [player]!"
     extend 1fcsbg " Déjame abrir un mapa muy rápido...{w=1}{nw}"
 
@@ -2088,14 +2067,14 @@ label talk_weather_setup_manual_coords:
 
         menu:
             n "Suficientemente cerca,{w=0.1} ¿verdad?"
-            "Sí, eso es suficientemente cerca.":
+            "Sí, eso es suficientemente cerca":
 
                 n 1fchbg "¡Finalmente!{w=1}{nw}"
                 extend 4nchsm " Solo notaré todo eso muy rápido..."
 
                 $ persistent._jn_player_latitude_longitude = (player_latitude, player_longitude)
                 jump talk_weather_setup_verify
-            "No, eso no está para nada bien.":
+            "No, eso no está para nada bien":
 
                 n 1tnmem "¿Qué?{w=0.2} ¡¿En serio?!"
                 n 3fcsem "Ugh..."
@@ -2111,14 +2090,14 @@ label talk_weather_setup_manual_coords:
         n 4nnmaj "Tu latitud general sería [player_latitude],{w=0.1} y tu longitud general sería [player_longitude]."
         menu:
             n "¿Es [player_latitude], [player_longitude] correcto?"
-            "Sí, eso es correcto.":
+            "Sí, eso es correcto":
 
                 n 3fcsem "¡Finalmente!{w=1}{nw}"
                 extend 3kslpo " Cielos..."
 
                 $ persistent._jn_player_latitude_longitude = (player_latitude, player_longitude)
                 jump talk_weather_setup_verify
-            "No, eso todavía no está bien.":
+            "No, eso todavía no está bien":
 
                 n 3tnmem "¿Qué?{w=0.2} ¡¿En serio?!"
                 n 3fcsem "Ugh..."
@@ -2126,7 +2105,7 @@ label talk_weather_setup_manual_coords:
                 extend 4fnmpo " ¡Realmente quiero hacer que esto funcione!"
 
                 jump talk_weather_setup_manual_coords
-            "Olvídalo.":
+            "Olvídalo":
 
                 n 3fllpo "Cielos...{w=1}{nw}"
                 extend 1tlrss " qué lío,{w=0.1} ¿eh?"
@@ -2175,13 +2154,13 @@ label talk_weather_setup_verify:
 
         menu:
             n "¿Recuerdas?{w=0.3} Como,{w=0.2} ¿del todo?"
-            "Creé una nueva cuenta.":
+            "Creé una nueva cuenta":
 
                 $ new_account_or_key = True
-            "Creé una nueva clave API.":
+            "Creé una nueva clave API":
 
                 $ new_account_or_key = True
-            "Ya tenía una cuenta, y usé una clave API existente.":
+            "Ya tenía una cuenta, y usé una clave API existente":
 
                 $ new_account_or_key = False
                 n 2tslpusbr "...Huh."
@@ -2192,7 +2171,7 @@ label talk_weather_setup_verify:
                 extend 1fchbgsbl " ¿O tu internet no lo siente hoy?"
                 n 1nslsssbl "No lo sé."
                 n 1fllsssbl "Solo...{w=0.5}{nw}"
-                extend 4knmsssbr " déjame saber si quieres intentar de nuevo,{w=0.2} ¿'kay?"
+                extend 4knmsssbr " déjame saber si quieres intentar de nuevo,{w=0.2} ¿okay?"
                 n 1knmcaesssbr "¡Será asombroso!{w=0.5}{nw}"
                 extend 2knmpolesssbr " ¡L-{w=0.3}lo prometo!"
 
@@ -2206,7 +2185,7 @@ label talk_weather_setup_verify:
             n 1kchsssbr "Ehehe.{w=0.5}{nw}"
             extend 1fchblsbl " ¡Ups!"
             n 1fllsssbl "Solo...{w=0.5}{nw}"
-            extend 4knmsssbr " déjame saber cuando quieras intentar de nuevo,{w=0.2} ¿'kay?"
+            extend 4knmsssbr " déjame saber cuando quieras intentar de nuevo,{w=0.2} ¿okay?"
             n 4fnmcasbr "¡Realmente quiero hacer que todo esto funcione!"
             n 1fcstr "Porque cuando lo haga,{w=0.2} puedes apostar que va a ser{w=0.3}{nw}"
             extend 4fspgsledz " ¡{i}asombroso{/i}!"
@@ -2220,8 +2199,8 @@ init python:
             persistent._topic_database,
             label="talk_favourite_season",
             unlocked=True,
-            prompt="What's your favorite season?",
-            category=["Weather", "Nature"],
+            prompt="¿Cuál es tu estación favorita?",
+            category=["Clima", "Naturaleza"],
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -2229,157 +2208,156 @@ init python:
         topic_group=TOPIC_TYPE_NORMAL
     )
 label talk_favourite_season:
-    n 1unmbo "Huh?{w=0.2} My favorite season?"
+    n 1unmbo "¿Huh?{w=0.2} My favorite season?"
 
 
     if not persistent.jn_player_favourite_season:
-        n 4tllss "That's a little random,{w=0.1} isn't it?"
-        n 1tnmss "Well...{w=0.3} anyway.{w=0.3}{nw}"
-        extend 4fnmaw " Tough question, [player]!"
-        n 3fsrsl "I think if I had to pick..."
-        n 1fchts "It'd be summer!{w=0.2} Duh!"
-        n 3fsqss "Why?{w=0.5}{nw}"
-        extend 1fchgn " Just think about it,{w=0.1} [player]!"
-        n 4ullbg "Long trips to the beach...{w=0.5}{nw}"
-        extend 4ncssm " ice cream in the shade...{w=0.5}{nw}"
-        extend 4ksrss " lazy evening walks to the shops..."
-        n 1flleml "I-{w=0.1}I mean,{w=0.3}{nw}"
-        extend 1fllbgl " what's not to love?"
-        n 1fchbg "I can just enjoy life out there without having to worry about the weather!"
-        n 1usqsg "I don't think I need to make my case any more clear,{w=0.1} do I?{w=0.5}{nw}"
-        extend 4uchsm " Ahaha."
-        n 1unmaj "Although...{w=0.3} what about you,{w=0.1} [player]?"
+        n 4tllss "Eso es un poco repentino,{w=0.1} ¿no crees?"
+        n 1tnmss "Bueno...{w=0.3} como sea.{w=0.3}{nw}"
+        extend 4fnmaw " ¡Qué pregunta difícil, [player]!"
+        n 3fsrsl "Creo que si tuviera que elegir..."
+        n 1fchts "¡Sería el verano!{w=0.2} ¡Obvio!"
+        n 3fsqss "¿Por qué?{w=0.5}{nw}"
+        extend 1fchgn " ¡Solo piénsalo,{w=0.1} [player]!"
+        n 4ullbg "Largos viajes a la playa...{w=0.5}{nw}"
+        extend 4ncssm " helado en la sombra...{w=0.5}{nw}"
+        extend 4ksrss " paseos tranquilos al atardecer hacia las tiendas..."
+        n 1flleml "Q-{w=0.1}Quiero decir,{w=0.3}{nw}"
+        extend 1fllbgl " ¿qué podría no gustarme?"
+        n 1fchbg "¡Simplemente puedo disfrutar la vida allá afuera sin tener que preocuparme por el clima!"
+        n 1usqsg "No creo que tenga que explicarlo más,{w=0.1} ¿verdad?{w=0.5}{nw}"
+        extend 4uchsm " Jajaja."
+        n 1unmaj "Aunque... {w=0.3}¿qué hay de ti, {w=0.1}[player]?"
         menu:
-            n "What's your favorite season?"
-            "Spring":
+            n "¿Cuál es tu estación favorita?"
+            "Primavera":
 
-                n 1fnmss "Oh?{w=0.2} Spring,{w=0.1} huh?"
-                n 3tllsr "Hmmm..."
-                n 1unmss "I mean,{w=0.1} I kinda get it.{w=0.2} It's the sign winter finally got lost,{w=0.1} right?"
-                n 1ulrss "And I suppose the flowers blooming again is kinda cool to see."
-                n 3fsqan "But the rain!{w=0.2} Jeez!{w=0.5}{nw}"
-                extend 1fcspu " It just never stops!"
-                n 3fllpo "Roll on summer,{w=0.1} I say."
+                n 1fnmss "¿Oh?{w=0.2} Primavera,{w=0.1} ¿eh?"
+                n 3tllsr "Mmm..."
+                n 1unmss "Digo,{w=0.1} medio lo entiendo.{w=0.2} Es la señal de que el invierno por fin se largó,{w=0.1} ¿no?"
+                n 1ulrss "Y supongo que ver las flores brotar de nuevo es algo lindo."
+                n 3fsqan "¡Pero la lluvia!{w=0.2} ¡Por Dios!{w=0.5}{nw}"
+                extend 1fcspu " ¡Simplemente nunca para!"
+                n 3fllpo "Que llegue ya el verano,{w=0.1} digo yo."
 
                 $ persistent.jn_player_favourite_season = "Spring"
-            "Summer":
+            "Verano":
 
-                n 1fsgbg "Aha!{w=0.2} I knew it!"
-                n 4fsqbg "Nobody can resist some fun in the sun,{w=0.1} am I right?"
-                n 1fnmbg "I'm glad we both agree,{w=0.1} [player].{w=0.5}{nw}"
-                extend 3fchsm " Ehehe."
+                n 1fsgbg "¡Aha!{w=0.2} ¡Lo sabía!"
+                n 4fsqbg "Nadie puede resistirse a un poco de diversión bajo el sol, {w=0.1}¿no es cierto?"
+                n 1fnmbg "Me alegra que ambos estemos de acuerdo, {w=0.1}[player].{w=0.5}{nw}"
+                extend 3fchsm "¡Jejeje!"
 
                 $ persistent.jn_player_favourite_season = "Summer"
-            "Autumn":
+            "Otoño":
 
-                n 1unmaj "Autumn?{w=0.5}{nw}"
-                extend 4nllaj " Not a bad choice,{w=0.1} actually!"
-                n 1ullsm "I like when it's still warm enough in the day to go out and do things..."
-                n 4ucsss "But you also get that crisp,{w=0.1} fresh morning air to wake you up."
-                n 1ullaj "The falling leaves are super pretty too."
-                n 2fcsan "It's just...{w=0.5}{nw}"
-                extend 4fsrsr " it's all ruined when the rain comes,{w=0.1} you know?"
-                n 2fsqsr "Trudging through all those sloppy leaves is just gross.{w=0.5}{nw}"
-                extend 1fcssf " No thanks!"
+                n 1unmaj "¿Otoño? {w=0.5}{nw}"
+                extend 4nllaj "¡No es mala elección, {w=0.1}de hecho!"
+                n 1ullsm "Me gusta cuando todavía hace suficiente calor durante el día para salir y hacer cosas..."
+                n 4ucsss "Pero también tienes ese aire fresco de la mañana que te despierta."
+                n 1ullaj "Las hojas al caer también son súper lindas."
+                n 2fcsan "Es solo que...{w=0.5}{nw}"
+                extend 4fsrsr " todo se arruina cuando llega la lluvia,{w=0.1} ¿sabes?"
+                n 2fsqsr "Caminar entre todas esas hojas pastosas es simplemente asqueroso. {w=0.5}{nw}"
+                extend 1fcssf "¡No, gracias!"
 
                 $ persistent.jn_player_favourite_season = "Autumn"
-            "Winter":
+            "Invierno":
 
-                n 1tnmsf "Huh?{w=0.2} Really?"
-                n 1tnmaj "Winter is the last thing I expected you to say,{w=0.1} [player]!"
-                n 4tlrbo "Though...{w=0.3} I get it, kinda."
-                n 1fcsbg "It's the perfect time of year to get super snug and spend some quality reading time!"
-                n 2fslss "Especially since there's not much you can do outside,{w=0.1} anyway."
+                n 1tnmsf "¿Eh?{w=0.2} ¿En serio?"
+                n 1tnmaj "¡El invierno es lo último que esperaba que dijeras,{w=0.1} [player]!"
+                n 4tlrbo "Aunque...{w=0.3} lo entiendo, un poco."
+                n 1fcsbg "¡Es la época perfecta del año para acurrucarse y pasar un buen rato leyendo!"
+                n 2fslss "Especialmente porque no hay mucho que puedas hacer afuera,{w=0.1} de todas formas."
 
                 $ persistent.jn_player_favourite_season = "Winter"
     else:
 
 
-        n 1tllbo "Hang on...{w=0.5}{nw}"
-        extend 4tnmss " didn't we talk about this before,{w=0.1} [player]?"
-label talk_favourite_season_continued:
-    n 1nlrpu "Bueno,{w=0.1} como sea..."
-    n 1ucsbg "Todavía amo el verano,{w=0.1} como sabes{w=0.1} -{w=0.3}{nw}"
-    extend 3fcsbg " ¡y nada va a cambiar eso pronto!"
-    n 4tsqsg "¿Qué hay de ti,{w=0.1} [player]?"
-    menu:
-        n "¿Sigues firme con el [persistent.jn_player_favourite_season]?"
-        "Sí.":
-            n 1fcsbg "Ehehe.{w=0.2} Eso pensé,{w=0.1} [player]."
+        n 1tllbo "Espera... {w=0.5}{nw}"
+        extend 4tnmss "¿no habíamos hablado de esto antes, {w=0.1}[player]?"
+        n 1nlrpu "Bueno,{w=0.1} como sea..."
+        n 1ucsbg "Todavía amo el verano,{w=0.1} como sabes{w=0.1} -{w=0.3}{nw}"
+        extend 3fcsbg " ¡y nada va a cambiar eso pronto!"
+        n 4tsqsg "¿Qué hay de ti,{w=0.1} [player]?"
+        menu:
+            n "¿Sigues firme con el [persistent.jn_player_favourite_season]?"
+            "Sí":
+                n 1fcsbg "Ehehe.{w=0.2} Eso pensé,{w=0.1} [player]."
 
-            if persistent.jn_player_favourite_season == "Summer":
-                n 1uchbg "¡Ya escogiste la mejor estación,{w=0.1} después de todo!"
-            else:
-
-                n 4fllss "Bueno...{w=0.3} ¡me temo que no vas a persuadirme!{w=0.5}{nw}"
-                extend 1uchbg " ¡Ahaha!"
-        "No.":
-
-            n 3tsgbg "¿Oh?{w=0.2} Cambiamos de opinión,{w=0.1} ¿eh?"
-            n 3tsqss "¿Y bien?{w=0.5}{nw}"
-            extend 1fchbg " ¡Dime entonces,{w=0.1} [player]!"
-            menu:
-                n "¿Cuál es tu estación favorita?"
-                "Primavera":
-
-                    $ new_favourite_season = "Spring"
-                "Verano":
-
-                    $ new_favourite_season = "Summer"
-                "Otoño":
-
-                    $ new_favourite_season = "Autumn"
-                "Invierno":
-
-                    $ new_favourite_season = "Winter"
-
-            $ season_preference_changed = False
-            if persistent.jn_player_favourite_season == new_favourite_season:
-                n 1fnmgs "¡Oye!{w=0.2} ¡[player]!"
-                n 3fsqpo "¿Creí que dijiste que habías cambiado de opinión?"
-                n 3fllem "¡No has cambiado de opinión para nada!{w=0.2} ¡Dijiste [persistent.jn_player_favourite_season] la última vez,{w=0.1} también!"
-                $ chosen_tease = jn_utils.getRandomTease()
-                n 1fcsem "Cielos...{w=0.5}{nw}"
-                extend 2fnmpo " ¡eres tan bromista a veces,{w=0.1} [chosen_tease]!"
-
-                if Natsuki.isAffectionate(higher=True):
-                    n 2flrpol "N-{w=0.1}no es que me {i}desagrade{/i} ese lado tuyo,{w=0.1} o-{w=0.1}o algo así."
+                if persistent.jn_player_favourite_season == "Summer":
+                    n 1uchbg "¡Ya escogiste la mejor estación,{w=0.1} después de todo!"
                 else:
 
-                    n 1fsqsm "Pero...{w=0.3} creo que puedo {i}capear{/i} el temporal."
-                    n 4fsrss "Por ahora."
-            else:
+                    n 4fllss "Bueno...{w=0.3} ¡me temo que no vas a persuadirme!{w=0.5}{nw}"
+                    extend 1uchbg " ¡Ahaha!"
+            "No":
 
-                $ persistent.jn_player_favourite_season = new_favourite_season
-                $ season_preference_changed = True
+                n 3tsgbg "¿Oh?{w=0.2} Cambiamos de opinión,{w=0.1} ¿eh?"
+                n 3tsqss "¿Y bien?{w=0.5}{nw}"
+                extend 1fchbg "¡Dime entonces,{w=0.1} [player]!"
+                menu:
+                    n "¿Cuál es tu estación favorita?"
+                    "Primavera":
 
-            if season_preference_changed and persistent.jn_player_favourite_season == "Spring":
-                n 1usqss "¿Ooh?{w=0.2} ¿Favoreciendo la Primavera ahora,{w=0.1} [player]?"
-                n 1nlrbo "Podría vivir sin tanta lluvia,{w=0.1} pero lo entiendo."
-                n 3flrpu "Hmm...{w=0.3} Primavera..."
-                n 1tlrbo "Me pregunto...{w=0.5}{nw}"
-                extend 4tnmss " ¿cultivas algo,{w=0.1} [player]?"
-                n 1fchsm "Ahaha."
+                        $ new_favourite_season = "Spring"
+                    "Verano":
 
-            elif season_preference_changed and persistent.jn_player_favourite_season == "Summer":
-                n 1fchbs "¡Ajá!{w=0.2} ¿Ves?"
-                n 4fsqbs "Sabías que yo tenía razón todo el tiempo,{w=0.1} ¿no?"
-                n 3usqsg "Ni siquiera intentes negarlo,{w=0.1} [player].{w=0.5}{nw}"
-                extend 1fchbg " ¡El Verano es lo mejor!"
-                n 1uchsm "Solo me alegra que hayas entrado en razón.{w=0.2} ¡Esa es la cosa importante!"
+                        $ new_favourite_season = "Summer"
+                    "Otoño":
 
-            elif season_preference_changed and persistent.jn_player_favourite_season == "Autumn":
-                n 4usqsm "¿Oh?{w=0.2} Has {i}caído{/i} por el Otoño,{w=0.1} ¿eh?"
-                n 1fchsm "Ehehe."
-                n 1ullss "Admitiré,{w=0.1} es una estación linda,{w=0.1} con todas las hojas doradas y esas cosas..."
-                n 2nslss "Siempre y cuando el clima se mantenga cálido,{w=0.1} de todos modos."
+                        $ new_favourite_season = "Autumn"
+                    "Invierno":
 
-            elif season_preference_changed and persistent.jn_player_favourite_season == "Winter":
-                n 1tllss "Invierno,{w=0.1} ¿eh?{w=0.2} No estaba esperando eso."
-                n 3tnmbo "¿Prefieres estar adentro ahora o algo así,{w=0.1} [player]?"
-                n 4flrss "Bueno,{w=0.1} si prefieres estar todo acogedor adentro..."
-                n 1fsqsm "¡Entonces más te vale no estar flojeando con tu lectura,{w=0.1} [player]!{w=0.5}{nw}"
-                extend 1fchsm " Ehehe."
+                        $ new_favourite_season = "Winter"
+
+                $ season_preference_changed = False
+                if persistent.jn_player_favourite_season == new_favourite_season:
+                    n 1fnmgs "¡Oye!{w=0.2} ¡[player]!"
+                    n 3fsqpo "¿Creí que dijiste que habías cambiado de opinión?"
+                    n 3fllem "¡No has cambiado de opinión para nada!{w=0.2} ¡Dijiste [persistent.jn_player_favourite_season] la última vez,{w=0.1} también!"
+                    $ chosen_tease = jn_utils.getRandomTease()
+                    n 1fcsem "Cielos...{w=0.5}{nw}"
+                    extend 2fnmpo " ¡eres tan bromista a veces,{w=0.1} [chosen_tease]!"
+
+                    if Natsuki.isAffectionate(higher=True):
+                        n 2flrpol "N-{w=0.1}no es que me {i}desagrade{/i} ese lado tuyo,{w=0.1} o-{w=0.1}o algo así."
+                    else:
+
+                        n 1fsqsm "Pero...{w=0.3} creo que puedo {i}capear{/i} el temporal."
+                        n 4fsrss "Por ahora."
+                else:
+
+                    $ persistent.jn_player_favourite_season = new_favourite_season
+                    $ season_preference_changed = True
+
+                if season_preference_changed and persistent.jn_player_favourite_season == "Spring":
+                    n 1usqss "¿Ooh?{w=0.2} ¿Favoreciendo la Primavera ahora,{w=0.1} [player]?"
+                    n 1nlrbo "Podría vivir sin tanta lluvia,{w=0.1} pero lo entiendo."
+                    n 3flrpu "Hmm...{w=0.3} Primavera..."
+                    n 1tlrbo "Me pregunto...{w=0.5}{nw}"
+                    extend 4tnmss " ¿cultivas algo,{w=0.1} [player]?"
+                    n 1fchsm "Ahaha."
+
+                elif season_preference_changed and persistent.jn_player_favourite_season == "Summer":
+                    n 1fchbs "¡Ajá!{w=0.2} ¿Ves?"
+                    n 4fsqbs "Sabías que yo tenía razón todo el tiempo,{w=0.1} ¿no?"
+                    n 3usqsg "Ni siquiera intentes negarlo,{w=0.1} [player].{w=0.5}{nw}"
+                    extend 1fchbg " ¡El Verano es lo mejor!"
+                    n 1uchsm "Solo me alegra que hayas entrado en razón.{w=0.2} ¡Esa es la cosa importante!"
+
+                elif season_preference_changed and persistent.jn_player_favourite_season == "Autumn":
+                    n 4usqsm "¿Oh?{w=0.2} Has {i}caído{/i} por el Otoño,{w=0.1} ¿eh?"
+                    n 1fchsm "Ehehe."
+                    n 1ullss "Admitiré,{w=0.1} es una estación linda,{w=0.1} con todas las hojas doradas y esas cosas..."
+                    n 2nslss "Siempre y cuando el clima se mantenga cálido,{w=0.1} de todos modos."
+
+                elif season_preference_changed and persistent.jn_player_favourite_season == "Winter":
+                    n 1tllss "Invierno,{w=0.1} ¿eh?{w=0.2} No estaba esperando eso."
+                    n 3tnmbo "¿Prefieres estar adentro ahora o algo así,{w=0.1} [player]?"
+                    n 4flrss "Bueno,{w=0.1} si prefieres estar todo acogedor adentro..."
+                    n 1fsqsm "¡Entonces más te vale no estar flojeando con tu lectura,{w=0.1} [player]!{w=0.5}{nw}"
+                    extend 1fchsm " Ehehe."
 
 
 
@@ -2458,7 +2436,7 @@ init python:
             label="talk_time_management",
             unlocked=True,
             prompt="Gestión del tiempo",
-            category=["Life"],
+            category=["Vida"],
             nat_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -2505,7 +2483,7 @@ init python:
             label="talk_sweet_tooth",
             unlocked=True,
             prompt="¿Te gusta lo dulce?",
-            category=["Health", "Food"],
+            category=["Salud", "Comida"],
             player_says=True,
             affinity_range=(jn_affinity.DISTRESSED, None),
             location="classroom"
@@ -2575,7 +2553,7 @@ init python:
             label="talk_player_appearance",
             unlocked=True,
             prompt="Mi apariencia",
-            category=["You"],
+            category=["Tú"],
             player_says=True,
             affinity_range=(jn_affinity.ENAMORED, None),
             location="classroom"
@@ -2592,11 +2570,11 @@ label talk_player_appearance:
         n 1tlrbo "Huh. Bueno..."
         menu:
             n "¿Cambiaste de opinión,{w=0.1} [player]?"
-            "Sí, quiero compartir mi apariencia.":
+            "Sí, quiero compartir mi apariencia":
 
                 n 3fcsbg "¡A-{w=0.1}aha!{w=0.2} Sabía que entrarías en razón eventualmente,{w=0.1} [player].{nw}"
                 extend 3fchgn "{w=0.2} ¡No perdamos tiempo!"
-            "No, todavía no quiero compartir mi apariencia.":
+            "No, todavía no quiero compartir mi apariencia":
 
                 n 1nllsl "Oh..."
                 n 4unmaj "Bueno,{w=0.1} es tu decisión,{w=0.1} [player]."
@@ -2614,15 +2592,15 @@ label talk_player_appearance:
         extend 1unmbg " como sea."
         menu:
             n "¿Querías compartir tu apariencia de nuevo,{w=0.1} [player]?"
-            "Sí, mi apariencia ha cambiado.":
+            "Sí, mi apariencia ha cambiado":
 
                 n 1fcssm "¡Aha!{w=0.2} ¡Eso pensé!"
                 n 2fchgn "¡No puedo esperar a averiguar cómo!"
-            "No, mi apariencia no ha cambiado.":
+            "No, mi apariencia no ha cambiado":
 
                 n 1tnmsr "H-{w=0.1}huh?{w=0.2} ¿Solo tomándome el pelo,{w=0.1} verdad?"
                 n 2tsrsf "Okaaay..."
-                n 1tnmss "Solo déjame saber si de hecho {i}sí{/i} cambias algo entonces,{w=0.2} ¿'kay?"
+                n 1tnmss "Solo déjame saber si de hecho {i}sí{/i} cambias algo entonces,{w=0.2} ¿okay?"
                 return
     else:
 
@@ -2645,11 +2623,11 @@ label talk_player_appearance:
                 n 1uchbsl "¡Sí!{w=0.5}{nw}"
                 extend 2fcsbgl " Q-{w=0.1}quiero decir ¡bien!{w=0.5}{nw}"
                 n 1fchbg "Empecemos entonces,{w=0.1} ¿deberíamos?"
-            "No me siento cómodo compartiendo eso.":
+            "No me siento cómodo compartiendo eso":
 
                 n 1unmsl "Oh..."
                 n 1ullaj "Eso es un poco decepcionante de escuchar,{w=0.1} si estoy siendo honesta."
-                n 2nchss "Pero lo entiendo totalmente,{w=0.1} [player].{w=0.2} Así que no te preocupes,{w=0.1} ¿'kay?"
+                n 2nchss "Pero lo entiendo totalmente,{w=0.1} [player].{w=0.2} Así que no te preocupes,{w=0.1} ¿okay?"
                 n 2fsqss "¡Más te vale dejarme saber si tienes ganas de decirme luego sin embargo!"
                 $ persistent.jn_player_appearance_declined_share = True
                 return
@@ -2719,7 +2697,7 @@ label talk_player_appearance:
 
     menu:
         n "¿Cómo describirías el largo de tu cabello,{w=0.1} [player]?"
-        "Corto.":
+        "Corto":
 
             n 4ncsss "Ah,{w=0.1} el enfoque de bajo mantenimiento{w=0.1} -{w=0.1} ya veo,{w=0.1} ya veo.{w=0.5}{nw}"
             extend 1fchbg " ¡De moda!"
@@ -2727,7 +2705,7 @@ label talk_player_appearance:
             n 3fslpo "No tengo idea de cómo siquiera mantienes el cabello largo viéndose bien..."
             n 3nslpo "Solo parece como demasiado esfuerzo para mí."
             $ persistent.jn_player_appearance_hair_length = "Short"
-        "Largo medio.":
+        "Largo medio":
 
             n 4fcsbg "¡Ajá!{w=0.2} El balance perfecto,{w=0.1} ¿estoy en lo cierto?"
             n 1fllss "Solo lo suficientemente largo para prácticamente cualquier estilo..."
@@ -2735,14 +2713,14 @@ label talk_player_appearance:
             extend 1nchsm " Ehehe."
             n 3flrbgl "¡Me alegra que pensemos de la misma manera,{w=0.1} [player]!"
             $ persistent.jn_player_appearance_hair_length = "Mid-length"
-        "Largo.":
+        "Largo":
 
             n 4unmbg "¡Ooh!{w=0.2} Dejándolo correr libremente,{w=0.1} ¿estamos?"
             n 1fcssm "Apuesto a que cuidas súper bien del tuyo."
             n 3fsqsm "Podría incluso tener que pedir prestados tus productos,{w=0.1} [player].{w=0.5}{nw}"
             extend 1nchsm " ¡Ehehe!"
             $ persistent.jn_player_appearance_hair_length = "Long"
-        "No tengo cabello.":
+        "No tengo cabello":
 
             n 4fnmaj "Oye{w=0.1} -{w=0.1} ¡no hay nada malo con eso!{nw}"
             extend 1fsqbg "{w=0.2} ¿Quieres saber por qué?"
@@ -2938,7 +2916,7 @@ init python:
             label="talk_drinking_alcohol",
             unlocked=True,
             prompt="¿Bebes alcohol?",
-            category=["Food", "Health"],
+            category=["Comida", "Salud"],
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -3017,7 +2995,7 @@ init python:
             label="talk_driving",
             unlocked=True,
             prompt="¿Sabes manejar?",
-            category=["Transport"],
+            category=["Transporte"],
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -3056,7 +3034,7 @@ label talk_driving:
     if persistent.jn_player_can_drive is None:
         menu:
             n "¿Sabes manejar?"
-            "Sí, y lo hago actualmente.":
+            "Sí, y lo hago actualmente":
 
                 n 1uwdaj "Wow..."
                 extend 3fsraj " ...{w=0.3}presumido."
@@ -3076,7 +3054,7 @@ label talk_driving:
 
                 $ persistent.jn_player_can_drive = True
                 return
-            "Sí, pero no manejo ahora mismo.":
+            "Sí, pero no manejo ahora mismo":
 
                 n 4unmaj "¿Oh?{w=0.2} ¿Algo anda mal con tu auto,{w=0.1} [player]?"
                 n 2tllbo "¿O tal vez...{w=0.3} simplemente no tienes uno en el momento?"
@@ -3089,7 +3067,7 @@ label talk_driving:
 
                 $ persistent.jn_player_can_drive = True
                 return
-            "No, no sé manejar.":
+            "No, no sé manejar":
 
                 n 2klrsl "Oh..."
                 n 1flrss "Bueno,{w=0.3}{nw}"
@@ -3114,21 +3092,21 @@ label talk_driving:
     elif persistent.jn_player_can_drive:
         menu:
             n "¿Estás manejando mucho?"
-            "Sí, manejo frecuentemente.":
+            "Sí, manejo frecuentemente":
 
                 n 1fnmbg "Ah,{w=0.1} así que estás como en casa en las carreteras,{w=0.1} ¿verdad?"
                 n 4ullss "Me parece justo supongo -{w=0.1} ¡solo recuerda manejar seguro,{w=0.1} [player]!"
-            "Solo manejo a veces.":
+            "Solo manejo a veces":
 
                 n 4ullss "Bueno oye,{w=0.1} al menos estás ahorrando en combustible,{w=0.1} ¿verdad?{w=0.5}{nw}"
                 extend 1ullsm " Eso no suena como algo malo para mí."
                 n 1fchsm "¡Además,{w=0.1} solo significa que puedes ahorrar el kilometraje para los que disfrutes!"
-            "No, no estoy manejando mucho.":
+            "No, no estoy manejando mucho":
 
                 n 4unmaj "¿Oh?{w=0.5}{nw}"
                 extend 1tllbg " ¡Eso suena como un bono para mí,{w=0.1} honestamente!"
-                n 1tnmbg "Solo asegúrate de que todavía sales si no estás manejando mucho sin embargo,{w=0.1} ¿kay?"
-            "No, ya no puedo manejar.":
+                n 1tnmbg "Solo asegúrate de que todavía sales si no estás manejando mucho sin embargo,{w=0.1} ¿okay?"
+            "No, ya no puedo manejar":
 
                 n 4tnmsl "Oh...{w=0.3} ¿pasó algo?"
                 n 3kllsl "Lamento...{w=0.3} escuchar eso,{w=0.1} [player]."
@@ -3166,7 +3144,7 @@ label talk_driving:
                 n 3uchbgedz "¡Oye!{w=0.2} ¡Bien ahí,{w=0.1} [player]!"
                 n 1fchbl "¡Maneja seguro!"
                 $ persistent.jn_player_can_drive = True
-            "Nop, nada nuevo.":
+            "Nop, nada nuevo":
 
                 n 4unmaj "¿Oh?{w=0.5}{nw}"
                 extend 1nlrss " ¡Bueno,{w=0.1} me parece justo!"
@@ -3184,7 +3162,7 @@ init python:
             label="talk_sustainable_fashion",
             unlocked=True,
             prompt="Moda sostenible",
-            category=["Environment", "Fashion"],
+            category=["Medio ambiente", "Moda"],
             nat_says=True,
             affinity_range=(jn_affinity.UPSET, None),
             location="classroom"
@@ -3287,7 +3265,7 @@ label talk_give_nickname:
         elif persistent._jn_nicknames_natsuki_bad_given_total == 2:
             n 1nnmsl "¿Otro apodo,{w=0.1} [player]?{w=0.5}{nw}"
             extend 1nllsl " Bien."
-            n 2ncsaj "Solo...{w=0.3} piensa un poco en lo que elijes,{w=0.1} ¿kay?"
+            n 2ncsaj "Solo...{w=0.3} piensa un poco en lo que elijes,{w=0.1} ¿okay?"
 
         elif persistent._jn_nicknames_natsuki_bad_given_total == 3:
             n 1nnmsl "Está bien,{w=0.1} [player]."
@@ -3300,7 +3278,7 @@ label talk_give_nickname:
     if nickname.lower() == "nevermind" or nickname.lower() == "olvídalo" or nickname.lower() == "olvidalo":
         n 4tnmpu "¿Huh?{w=0.2} ¿Cambiaste de opinión?"
         n 4tllpu "Bueno...{w=0.3} está bien entonces."
-        n 1nnmaj "Solo déjame saber si de hecho quieres llamarme algo más entonces,{w=0.1} ¿kay?"
+        n 1nnmaj "Solo déjame saber si de hecho quieres llamarme algo más entonces,{w=0.1} ¿okay?"
         return
     else:
 
@@ -3388,7 +3366,7 @@ label talk_give_nickname:
         elif nickname.lower() == persistent.playername.lower():
             n 4fsldv "Yo...{w=0.3} no creo que hayas pensado bien esto,{w=0.1} [player]."
             n 1tnmbg "¿Siquiera sabes cuán confuso sería eso?"
-            n 1tlrss "Creo...{w=0.3} que me quedaré con lo que funciona,{w=0.1} ¿kay?{w=0.5}{nw}"
+            n 1tlrss "Creo...{w=0.3} que me quedaré con lo que funciona,{w=0.1} ¿okay?{w=0.5}{nw}"
             extend 4fsqsm " Ehehe."
             n 1uchbg "¡Buen intento sin embargo!"
         else:
@@ -3440,7 +3418,7 @@ label talk_give_nickname:
         n 2fsqpu "No más advertencias,{w=0.1} [player]."
         menu:
             n "¿Entiendes?"
-            "Entiendo.":
+            "Entiendo":
 
                 n 1fsqsr "Entiendes,{w=0.1} ¿verdad?"
                 n 2fsqan "...Entonces empieza a actuar como tal,{w=0.1} [player]."
@@ -3489,7 +3467,7 @@ init python:
             unlocked=True,
             prompt="Dormir bien",
             conditional="persistent.jn_total_visit_count >= 5",
-            category=["Health", "You"],
+            category=["Salud", "Tú"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -3500,7 +3478,7 @@ init python:
 label talk_sleeping_well:
     n 1fllpu "Huh..."
     n 4uwdaj "Oye,{w=0.1} [player].{w=0.5}{nw}"
-    extend 1nnmaj " Déjame hacerte una pregunta,{w=0.1} ¿kay?"
+    extend 1nnmaj " Déjame hacerte una pregunta,{w=0.1} ¿okay?"
     n 2fsqsr "¿Cómo duermes de noche?"
     n 1fsqpu "Sé honesto.{w=0.2} ¿Cómo lo haces?"
     n 1ksqsm "..."
@@ -3565,7 +3543,7 @@ init python:
             label="talk_aging",
             unlocked=True,
             prompt="Envejecer",
-            category=["Life"],
+            category=["Vida"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -3609,7 +3587,7 @@ label talk_aging:
     if Natsuki.isLove(higher=True):
         $ chosen_tease = jn_utils.getRandomTease()
         n 3klrpol "M-{w=0.1}mejor que sepas que te amo igual,{w=0.1} [chosen_tease]."
-        n 3knmpol "No olvides eso,{w=0.1} ¿kay?"
+        n 3knmpol "No olvides eso,{w=0.1} ¿okay?"
         n 4flrpol "Me enojaré si lo haces.{w=0.5}{nw}"
         extend 1klrbgl " Ahaha..."
 
@@ -3634,7 +3612,7 @@ init python:
             label="talk_work_life_balance",
             unlocked=True,
             prompt="Equilibrio vida-trabajo",
-            category=["Life", "Society"],
+            category=["Vida", "Sociedad"],
             nat_says=True,
             location="classroom"
         ),
@@ -3712,7 +3690,7 @@ init python:
             label="talk_using_headphones_carefully",
             unlocked=True,
             prompt="Usar audífonos con cuidado",
-            category=["Health", "Music", "Technology"],
+            category=["Salud", "Música", "Tecnología"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -3761,7 +3739,7 @@ init python:
             label="talk_thoughts_on_horror",
             unlocked=True,
             prompt="Pensamientos sobre el horror",
-            category=["Media", "Literature"],
+            category=["Media", "Literatura"],
             nat_says=True,
             location="classroom"
         ),
@@ -3836,7 +3814,7 @@ init python:
             label="talk_gaming",
             unlocked=True,
             prompt="¿Te gustan los videojuegos?",
-            category=["Games", "Media"],
+            category=["Juegos", "Media"],
             player_says=True,
             location="classroom"
         ),
@@ -3861,12 +3839,12 @@ label talk_gaming:
                 n 4uchbselg "¡Ahaha!"
                 n 1uchsm "¡Relájate,{w=0.1} [player]!"
                 n 3fllssl "No soy mucho mejor,{w=0.1} después de todo."
-            "Juego ocasionalmente.":
+            "Juego ocasionalmente":
 
                 $ persistent.jn_player_gaming_frequency = "Medium"
                 n 1fsqsm "Sí,{w=0.1} sí.{w=0.2} Cree lo que quieras creer,{w=0.1} [player]."
                 n 3usqbg "No estoy segura de tragármelo,{w=0.1} sin embargo."
-            "No juego para nada.":
+            "No juego para nada":
 
                 $ persistent.jn_player_gaming_frequency = "Low"
                 n 4tnmaj "¿Huh?{w=0.2} ¿En serio?"
@@ -3875,7 +3853,7 @@ label talk_gaming:
                 if jn_activity.ACTIVITY_MANAGER.hasPlayerDoneActivity(jn_activity.JNActivities.gaming):
                     n 4fsqts "Mentiroso.{nw}"
 
-                n 1ncsaj "...Bueno entonces."
+                n 1ncsaj "... Bueno entonces."
                 n 3fnmbg "¡Parece que tengo mucho que enseñarte,{w=0.1} [player]!"
 
     elif Natsuki.isDistressed(higher=True):
@@ -4183,9 +4161,6 @@ label talk_i_love_you:
 
 
         $ persistent.jn_player_love_you_count += 1
-    else:
-
-        $ persistent.jn_player_love_you_count += 1
         if Natsuki.isLove(higher=True):
 
 
@@ -4216,7 +4191,7 @@ label talk_i_love_you:
                 n 1ksqbgf "¿Oh?{w=0.2} Alguien está todo necesitado hoy,{w=0.1} ¿eh?"
                 n 4fsqsmf "Bueno,{w=0.1} ¡estaría feliz de complacerte!"
                 n 1uchsmf "¡Yo también te amo,{w=0.1} [chosen_endearment]!"
-                n 3fchbgf "Sigue sonriendo para mí,{w=0.1} ¿kay?"
+                n 3fchbgf "Sigue sonriendo para mí,{w=0.1} ¿okay?"
                 $ Natsuki.calculatedAffinityGain()
                 return
 
@@ -4232,7 +4207,7 @@ label talk_i_love_you:
                 n 1fllbgf "Bueno,{w=0.1} p-{w=0.1}por supuesto que sí.{w=0.2} ¡Ahaha!"
                 n 4fchbgf "Pero...{w=0.3} ambos sabemos que yo te amo más,{w=0.1} [player]."
                 menu:
-                    "No, yo te amo más.":
+                    "No, yo te amo más":
                         n 1fnmbgf "No,{w=0.1} Yo-"
                         n 1tllajl "..."
                         n 4fnmawl "¡O-{w=0.1}oye...{w=0.3} espera un minuto...!"
@@ -4243,7 +4218,7 @@ label talk_i_love_you:
                                 n 1uchgnf "Ehehe.{w=0.2} ¿Ves?"
                                 n 3fwmsmf "Eso no fue tan difícil,{w=0.1} ¿o sí?"
                                 n 1nchbgf "¡Te aaaamo,{w=0.1} [player]~!"
-                    "Está bien.":
+                    "Está bien":
 
                         n 1uchgnlesm "¡Pffffft!{w=0.2} ¡Ahaha!"
                         n 3fwltsf "¡Vamos,{w=0.1} [player]!{w=0.2} ¿Dónde está tu espíritu de lucha?"
@@ -4351,7 +4326,7 @@ label talk_i_love_you:
                                 n 1fchbgf "[chosen_random_response]"
 
                             $ wrong_response_count += 1
-                        "Está bien, bien. Tú me amas más.":
+                        "Está bien, bien. Tú me amas más":
 
                             $ player_is_wrong = False
                             n 3tsqbgl "¿Ves?{w=0.2} ¿Fue eso realmente tan difícil?"
@@ -4435,7 +4410,7 @@ init python:
             label="talk_natsukis_hairstyle",
             unlocked=True,
             prompt="¿Por qué te peinas así?",
-            category=["Fashion"],
+            category=["Moda"],
             player_says=True,
             location="classroom"
         ),
@@ -4559,7 +4534,7 @@ init python:
             label="talk_integrity",
             unlocked=True,
             prompt="Tener integridad",
-            category=["Society", "You"],
+            category=["Sociedad", "Tú"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -4578,7 +4553,7 @@ label talk_integrity:
     n 4ullaj "Lo cual...{w=0.3} es de hecho algo de lo que realmente quería hablar contigo,{w=0.1} [player]."
     n 1fllpu "No estoy diciendo que debas solo ignorar a todos los demás,{w=0.1} o nunca considerar otros puntos de vista."
     n 3fnmpo "Eso es solo ser ignorante."
-    n 1knmaj "Pero...{w=0.3} no dejes que las opiniones o concepciones de otras personas sobrescriban completamente las tuyas,{w=0.1} ¿kay?"
+    n 1knmaj "Pero...{w=0.3} no dejes que las opiniones o concepciones de otras personas sobrescriban completamente las tuyas,{w=0.1} ¿okay?"
     n 4fnmbo "Al menos no sin una pelea."
     n 1fnmpu "{i}Tú{/i} eres tu propio maestro,{w=0.1} [player] -{w=0.1} tienes tus propias opiniones,{w=0.1} tus propios valores:{w=0.1} ¡y eso es súper importante!"
     n 1fcsbg "Digo,{w=0.1} ¡mírame a mí!"
@@ -4618,7 +4593,7 @@ init python:
             label="talk_favourite_animal",
             unlocked=True,
             prompt="¿Cuál es tu animal favorito?",
-            category=["Animals", "Nature"],
+            category=["Animales", "Naturaleza"],
             player_says=True,
             location="classroom"
         ),
@@ -4679,7 +4654,7 @@ init python:
             label="talk_favourite_drink",
             unlocked=True,
             prompt="¿Cuál es tu bebida favorita?",
-            category=["Food"],
+            category=["Comida"],
             player_says=True,
             location="classroom"
         ),
@@ -4757,7 +4732,7 @@ init python:
             label="talk_school_uniform",
             unlocked=True,
             prompt="¿Qué piensas de tu uniforme escolar?",
-            category=["Fashion"],
+            category=["Moda"],
             player_says=True,
             location="classroom"
         ),
@@ -4825,18 +4800,18 @@ label talk_school_uniform:
 
     menu:
         n "¿Tuviste que usar algún uniforme en la escuela?"
-        "Sí, tuve que usar uniforme.":
+        "Sí, tuve que usar uniforme":
 
             n 3fcsbg "¡Ajá!{w=0.2} Así que conoces la lucha también,{w=0.1} ¿eh?"
-        "No, no tuve que usar uniforme.":
+        "No, no tuve que usar uniforme":
 
             n 1fslsr "..."
             n 3fsqsr "...Suertudo."
-        "Tengo que usar uniforme ahora.":
+        "Tengo que usar uniforme ahora":
 
             n 1fchgn "¡Entonces tienes mis condolencias,{w=0.1} [player]!{w=0.2} Ahaha."
             n 4fcsbg "Bueno saber que estamos en la misma página,{w=0.1} sin embargo."
-        "No tengo que usar uniforme ahora.":
+        "No tengo que usar uniforme ahora":
 
             n 1fslsr "..."
             n 3fsqsr "...Suertudo."
@@ -4866,7 +4841,7 @@ init python:
             label="talk_flying",
             unlocked=True,
             prompt="¿Alguna vez has volado a algún lugar?",
-            category=["Transport"],
+            category=["Transporte"],
             player_says=True,
             location="classroom"
         ),
@@ -4917,7 +4892,7 @@ label talk_flying:
     n 4unmaj "¿Qué hay de ti,{w=0.1} [player]?"
     menu:
         n "¿Eres un viajero frecuente?"
-        "Sí, vuelo regularmente.":
+        "Sí, vuelo regularmente":
 
             n 1fcsbg "¿Oh?{w=0.2} ¡Bueno mírate,{w=0.1} [player]!"
             n 3fslpo "Supongo que está {i}claro{/i} como el cielo lo bien que te está yendo para ti mismo."
@@ -4932,7 +4907,7 @@ label talk_flying:
                 n 1fchgn "¡Sin excusas,{w=0.1} [player]! Ehehe."
 
             $ persistent._jn_player_has_flown = True
-        "Vuelo a veces.":
+        "Vuelo a veces":
 
             n 1unmss "¡Ooh,{w=0.1} okay!{w=0.2} ¿Así que la vacación ocasional o vuelo familiar entonces?"
             n 2fslsm "Ya veo,{w=0.1} ya veo..."
@@ -4949,15 +4924,15 @@ label talk_flying:
 
             $ persistent._jn_player_has_flown = True
             $ persistent._jn_player_has_flown = True
-        "He volado antes.":
+        "He volado antes":
 
             n 4fsqct "¿Oh?{w=0.2} Así que ya te ganaste tus alas,{w=0.1} ¿eh?"
             n 1tllaj "Hmm...{w=0.3} ¿Me pregunto a dónde fuiste?"
-            n 1fnmaj "Tienes que prometer contarme si vuelas de nuevo,{w=0.1} ¿kay?"
+            n 1fnmaj "Tienes que prometer contarme si vuelas de nuevo,{w=0.1} ¿okay?"
             n 3fchgn "¡Quiero escuchar todo sobre ello!"
 
             $ persistent._jn_player_has_flown = True
-        "Nunca he volado.":
+        "Nunca he volado":
 
             n 1fcsbg "¡Entonces eso es solo otra cosa que tenemos en común,{w=0.1} [player]!"
             n 1fsqss "Supongo que podrías decir..."
@@ -4976,7 +4951,7 @@ init python:
             label="talk_are_you_into_cars",
             unlocked=True,
             prompt="¿Te gustan los autos?",
-            category=["Transport"],
+            category=["Transporte"],
             player_says=True,
             location="classroom"
         ),
@@ -5036,7 +5011,7 @@ label talk_are_you_into_cars:
         n 2fsqsm "¿Qué hay de ti sin embargo, [player]?{w=0.2} Tú {i}sí{/i} sacaste el tema,{w=0.1} pero pensé en preguntar de todos modos..."
         menu:
             n "¿Te gustan los autos?"
-            "¡Sí! Me gustan mis autos.":
+            "¡Sí! Me gustan mis autos":
 
 
 
@@ -5057,11 +5032,11 @@ label talk_are_you_into_cars:
                     n 1unmaj "Eso es...{w=0.3} de hecho bastante sorprendente de escuchar de ti,{w=0.1} [player]."
                     n 1nllaj "Sabes,{w=0.1} ya que dijiste que no puedes conducir y todo eso..."
                     n 3fchbg "Pero supongo que es como cualquier cosa -{w=0.1} no tienes que estar haciéndolo para ser un fan,{w=0.1} ¡y eso está bien conmigo!"
-            "No me importan mucho.":
+            "No me importan mucho":
 
                 n 1ullss "Supongo que eso es justo -{w=0.1} y no te preocupes,{w=0.1} lo entiendo completamente."
                 n 4nnmsm "Pero si a alguien le gusta ese tipo de cosas,{w=0.1} ¿quiénes somos para juzgar,{w=0.1} después de todo?"
-            "No, no me gustan.":
+            "No, no me gustan":
 
                 n 1ulraj "...Huh.{w=0.2} Eso es un poco raro -{w=0.1} entonces ¿por qué sacaste el tema,{w=0.1} [player]?"
 
@@ -5088,8 +5063,8 @@ init python:
             persistent._topic_database,
             label="talk_how_do_you_feel_about_me",
             unlocked=True,
-            prompt="How do you feel about me?",
-            category=["Natsuki", "Romance", "You"],
+            prompt="¿Cómo te sientes sobre mí?",
+            category=["Natsuki", "Romance", "Tú"],
             player_says=True,
             location="classroom"
         ),
@@ -5103,7 +5078,7 @@ label talk_how_do_you_feel_about_me:
             n 3kwmpof "[player]...{w=0.3} ¿no es obvio? Sabes que ya te amo,{w=0.1} ¿verdad?"
             n 3fllpol "Caray...{w=0.3} realmente eres un tonto a veces,{w=0.1} sabes."
             n 1kllssl "Pero...{w=0.3} me gusta un poco esa parte tonta de ti,{w=0.1} [player]."
-            n 1nwmbgl "Nunca cambies,{w=0.1} ¿kay? Ehehe."
+            n 1nwmbgl "Nunca cambies,{w=0.1} ¿okay? Ehehe."
             n 4nchbgl "¡Te amo,{w=0.1} [player]~!"
         else:
 
@@ -5206,7 +5181,7 @@ init python:
             label="talk_are_you_into_cosplay",
             unlocked=True,
             prompt="¿Te gusta el cosplay?",
-            category=["Fashion", "Media", "Society"],
+            category=["Moda", "Media", "Sociedad"],
             player_says=True,
             location="classroom"
         ),
@@ -5512,7 +5487,7 @@ init python:
             label="talk_why_do_you_like_me",
             unlocked=True,
             prompt="¿Por qué te gusto?",
-            category=["Natsuki", "Romance", "You"],
+            category=["Natsuki", "Romance", "Tú"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -5633,7 +5608,7 @@ label talk_why_do_you_like_me:
             n 4knmpo "¿Sobre sentirte inseguro y todo eso?"
             n 1klrsl "..."
             n 4nnmsl "[player]."
-            n 3fnmpuf "Escucha,{w=0.1} ¿'kay?{w=0.2} Yo...{w=0.3} realmente no quiero tener que repetir esto."
+            n 3fnmpuf "Escucha,{w=0.1} ¿okay?{w=0.2} Yo...{w=0.3} realmente no quiero tener que repetir esto."
         else:
 
             n 4uscemf "¡Urk-!"
@@ -5665,7 +5640,7 @@ init python:
             label="talk_fried_squid",
             unlocked=True,
             prompt="Calamar frito",
-            category=["DDLC", "Food"],
+            category=["DDLC", "Comida"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -5728,7 +5703,7 @@ init python:
             persistent._topic_database,
             label="talk_collectibles",
             unlocked=True,
-            prompt="Do you have any collectibles?",
+            prompt="¿Tienes algún objeto de colección?",
             category=["Media"],
             player_says=True,
             location="classroom"
@@ -5798,14 +5773,14 @@ label talk_collectibles:
                     extend 3fsqss " una mejor...{w=0.3} {i}física{/i}."
                     n 1fsqsm "¿Verdad,{w=0.5}{nw}"
                     extend 4fsqbg " [player]?"
-        "No,{w=0.1} yo no lo haría.":
+        "No,{w=0.1} yo no lo haría":
 
             n 3flrpo "Huh...{w=0.3} tienes un punto."
             n 3tnmpo "Supongo que lo llamarías una biblioteca,{w=0.1} ¿o algo así?"
             n 1nnmsm "Bueno,{w=0.1} como sea."
             n 4nsqsm "Supongo que será mejor que {i}lea{/i} sobre mis definiciones,{w=0.1} ¿verdad?"
             n 1nchsm "Ehehe."
-        "Bueno,{w=0.1} definitivamente no es literatura.":
+        "Bueno,{w=0.1} definitivamente no es literatura":
 
             n 1nsqsr "Ja.{w=0.2} Ja.{w=0.2} Ja.{w=0.2} Ja.{w=0.2} ...Ja."
             n 2flrpo "{i}Hilarante{/i},{w=0.1} [player]."
@@ -5823,7 +5798,7 @@ init python:
             unlocked=True,
             prompt="¿Quieres jugar Snap?",
             conditional="persistent.jn_snap_unlocked",
-            category=["Games"],
+            category=["Juegos"],
             player_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -5891,7 +5866,7 @@ init python:
             unlocked=True,
             prompt="¿Puedes repasar las reglas de Snap otra vez?",
             conditional="persistent.jn_snap_unlocked and persistent.jn_snap_explanation_given",
-            category=["Games"],
+            category=["Juegos"],
             player_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -5933,7 +5908,7 @@ init python:
             label="talk_windup_chewing_gum",
             unlocked=True,
             prompt="Chicle",
-            category=["Wind-ups"],
+            category=["Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -5954,7 +5929,7 @@ label talk_windup_chewing_gum:
     n 1nnmsl "Realmente no me importa si tú masticas chicle,{w=0.1} [player]."
 
     if Natsuki.isLove(higher=True):
-        n 2kllca "Solo asegúrate de desecharlo apropiadamente,{w=0.1} ¿'kay?"
+        n 2kllca "Solo asegúrate de desecharlo apropiadamente,{w=0.1} ¿okay?"
         n 1kllss "Estoy segura de que lo haces de todos modos,{w=0.1} pero...{w=0.3} solo por si acaso."
         n 4kchsml "¡Te amo,{w=0.1} [player]~!"
 
@@ -5976,7 +5951,7 @@ init python:
             label="talk_windup_smoking_vaping_indoors",
             unlocked=True,
             prompt="Fumar en interiores",
-            category=["Wind-ups"],
+            category=["Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -6009,7 +5984,7 @@ label talk_windup_smoking_vaping_indoors:
 
     elif Natsuki.isAffectionate(higher=True):
         n 3kllpo "Dudo que seas un imbécil así incluso si fumas,{w=0.1} [player]."
-        n 3fsqpo "Pero...{w=0.3} trata de no probarme lo contrario,{w=0.1} ¿'kay?{w=0.2} Me gustas más no siendo un imbécil."
+        n 3fsqpo "Pero...{w=0.3} trata de no probarme lo contrario,{w=0.1} ¿okay?{w=0.2} Me gustas más no siendo un imbécil."
         n 1uchsm "¡Gracias!"
     else:
 
@@ -6027,7 +6002,7 @@ init python:
             label="talk_windup_unwashed_hands",
             unlocked=True,
             prompt="Lavado de manos",
-            category=["Wind-ups"],
+            category=["Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -6070,7 +6045,7 @@ init python:
             label="talk_windup_litter",
             unlocked=True,
             prompt="Tirar basura",
-            category=["Wind-ups"],
+            category=["Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -6225,7 +6200,7 @@ label talk_custom_music_introduction:
     n 1fcssslsbl "B-{w=0.2}bueno,{w=0.2} como sea.{w=0.75}{nw}"
     extend 4fchbgsbl " ¡El punto es que podemos poner la música que queramos ahora!"
     n 1fchsmeme "Creo que descubrí una manera de dejarte enviarme lo que sea que quieras que ponga,{w=0.75}{nw}"
-    extend 2fwlbg " así que escucha bien,{w=0.2} ¿'kay?"
+    extend 2fwlbg " así que escucha bien,{w=0.2} ¿okay?"
 
     $ get_topic("talk_custom_music_introduction").lock()
     jump talk_custom_music_explanation
@@ -6239,7 +6214,7 @@ init python:
             label="talk_custom_music_explanation",
             unlocked=True,
             prompt="¿Puedes explicarme la música personalizada otra vez?",
-            category=["Music"],
+            category=["Música"],
             conditional="persistent.jn_custom_music_unlocked and persistent.jn_custom_music_explanation_given",
             player_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
@@ -6317,7 +6292,7 @@ init python:
             label="talk_vtubers",
             unlocked=True,
             prompt="¿Sigues a algún VTuber?",
-            category=["Games", "Media", "Society"],
+            category=["Juegos", "Media", "Sociedad"],
             player_says=True,
             location="classroom"
         ),
@@ -6381,7 +6356,7 @@ init python:
             label="talk_skateboarding",
             unlocked=True,
             prompt="¿Te gusta el skateboarding?",
-            category=["Transport"],
+            category=["Transporte"],
             player_says=True,
             location="classroom"
         ),
@@ -6501,7 +6476,7 @@ init python:
             label="talk_sports",
             unlocked=True,
             prompt="¿Practicas muchos deportes?",
-            category=["Health"],
+            category=["Salud"],
             player_says=True,
             location="classroom"
         ),
@@ -6585,7 +6560,7 @@ init python:
             label="talk_online_shopping",
             unlocked=True,
             prompt="Compras en línea",
-            category=["Society"],
+            category=["Sociedad"],
             nat_says=True,
             location="classroom"
         ),
@@ -6663,7 +6638,7 @@ init python:
             label="talk_windup_subscriptions",
             unlocked=True,
             prompt="Suscripciones",
-            category=["Wind-ups"],
+            category=["Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -6805,7 +6780,7 @@ init python:
             unlocked=True,
             prompt="Memorias de DDLC",
             conditional="jn_utils.get_total_gameplay_length().total_seconds() / 60 >= 30",
-            category=["DDLC", "Natsuki", "You"],
+            category=["DDLC", "Natsuki", "Tú"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -7018,7 +6993,7 @@ init python:
                 "and get_topic('talk_realizations_player_ddlc_actions').shown_count > 0 "
                 "and get_topic('talk_realizations_other_girls').shown_count > 0"
             ),
-            category=["DDLC", "Natsuki", "You"],
+            category=["DDLC", "Natsuki", "Tú"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -7064,8 +7039,8 @@ init python:
             persistent._topic_database,
             label="talk_fear_of_lightning",
             unlocked=True,
-            prompt="Are you afraid of lightning?",
-            category=["Fears", "Weather"],
+            prompt="¿Tienes miedo de los rayos?",
+            category=["Miedos", "Clima"],
             player_says=True,
             location="classroom"
         ),
@@ -7187,9 +7162,9 @@ init python:
             persistent._topic_database,
             label="talk_fighting_drowsiness",
             unlocked=True,
-            prompt="Drowsiness",
+            prompt="Somnolencia",
             conditional="jn_utils.get_total_gameplay_length().total_seconds() / 3600 >= 12",
-            category=["Health"],
+            category=["Salud"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -7292,7 +7267,7 @@ init python:
             unlocked=True,
             prompt="¿Le tienes miedo a las arañas?",
             conditional="jn_utils.get_total_gameplay_length().total_seconds() / 3600 >= 24",
-            category=["Animals", "Fears"],
+            category=["Animales", "Miedos"],
             player_says=True,
             location="classroom"
         ),
@@ -7554,7 +7529,7 @@ init python:
             label="talk_maintaining_proper_hygiene",
             unlocked=True,
             prompt="Higiene adecuada",
-            category=["Health", "You"],
+            category=["Salud", "Tú"],
             nat_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -7661,7 +7636,7 @@ label talk_maintaining_proper_hygiene:
 
     menu:
         n "¿Entendido?"
-        "Sí, merezco sentirme y verme bien también.":
+        "Sí, merezco sentirme y verme bien también":
 
             n 1fchbg "¡Ahora {i}eso{/i} es lo que me gusta escuchar!"
             $ Natsuki.calculatedAffinityGain()
@@ -7673,7 +7648,7 @@ label talk_maintaining_proper_hygiene:
             extend 1fcsbg " 'Merezco sentirme y verme bien también.'."
 
             menu:
-                "Merezco sentirme y verme bien también.":
+                "Merezco sentirme y verme bien también":
                     n 3uchbg "¿Ves?{w=0.5}{nw}"
                     extend 3ksqsg " ¿Fue {i}tan{/i} difícil?"
                     n 1fcssm "Ehehe."
@@ -7779,7 +7754,7 @@ init python:
             persistent._topic_database,
             label="talk_feelings_about_yuri",
             unlocked=True,
-            prompt="How do you feel about Yuri?",
+            prompt="¿Qué opinas de Yuri?",
             category=["DDLC"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
@@ -7789,14 +7764,14 @@ init python:
     )
 
 label talk_feelings_about_yuri:
-    n 1kllpul "...Oh man,{w=1} Yuri..."
+    n 1kllpul "... Oh, {w=1}Yuri...."
     n 2kcsuntsb "..."
-    n 1ncspu "...I won't lie,{w=0.3} [player].{w=1.5}{nw}"
-    extend 4ksqfr " I really,{w=0.5} {i}really{/i} didn't want to think about...{w=1} {i}that{/i} again."
+    n 1ncspu "... No te mentiré,{w=0.3} [player].{w=1.5}{nw}"
+    extend 4ksqfr " Yo realmente, {w=0.5}{i}realmente{/i} no quería pensar en... {w=1}{i}eso{/i} otra vez.."
     n 1kcssl "..."
-    n 1ksrpu "How do I even {i}explain{/i} this..."
-    n 3ncsem "Yuri and I were...{w=0.3} complicated.{w=1}{nw}"
-    extend 3kllss " Even {i}before{/i} you joined the club."
+    n 1ksrpu "¿Cómo puedo {i}explicar{/i} esto...?"
+    n 3ncsem "Yuri y yo éramos... {w=0.3}complicadas. {w=1}{nw}"
+    extend 3kllss "Incluso {i}antes{/i} de que te unieras al club."
     n 1nnmbo "Nunca coincidimos completamente,{w=0.1} [player].{w=1.5}{nw}"
     extend 2nslca " Probablemente ya adivinaste eso de todas formas."
     n 1kwmpu "Pero teníamos un {i}entendimiento{/i},{w=0.1} ¿sabes?"
@@ -7913,7 +7888,7 @@ init python:
             unlocked=True,
             prompt="¿Bebes mucho té?",
             conditional="jn_utils.get_total_gameplay_length().total_seconds() / 3600 >= 36",
-            category=["Food"],
+            category=["Comida"],
             player_says=True,
             location="classroom"
         ),
@@ -7996,11 +7971,11 @@ label talk_thoughts_on_tea:
     extend 4nslss " He hablado suficiente."
     n 1unmbo "¿Qué hay de ti,{w=0.2} [player]?"
     show natsuki 4tsqss
-    $ menu_opening = "Drinking something else now?" if player_tea_coffee_preference_known else "What's your pick?"
+    $ menu_opening = "¿Ahora estás bebiendo otra cosa?" if player_tea_coffee_preference_known else "¿Cuál es tu elección?"
 
     menu:
         n "[menu_opening]"
-        "Prefiero el té.":
+        "Prefiero el té":
 
             if player_tea_coffee_preference_known:
                 if persistent.jn_player_tea_coffee_preference == "tea":
@@ -8025,7 +8000,7 @@ label talk_thoughts_on_tea:
                 extend 4uslsr " no es como si tuvieras mucha opción en ello en ese entonces,{w=0.2} ¿verdad?"
 
             $ persistent.jn_player_tea_coffee_preference = "tea"
-        "Prefiero el café.":
+        "Prefiero el café":
 
             if player_tea_coffee_preference_known:
                 if persistent.jn_player_tea_coffee_preference == "coffee":
@@ -8077,7 +8052,7 @@ label talk_thoughts_on_tea:
                 n 4fsqsg "¿Estás {i}seguro{/i} de que no eres solo un adicto a la cafeína,{w=0.2} [player]?"
 
             $ persistent.jn_player_tea_coffee_preference = "both"
-        "No me gusta el té ni el café.":
+        "No me gusta el té ni el café":
 
             if player_tea_coffee_preference_known:
                 if persistent.jn_player_tea_coffee_preference == "neither":
@@ -8123,7 +8098,7 @@ init python:
             label="talk_how_to_make_friends",
             unlocked=True,
             prompt="¿Cómo hago amigos?",
-            category=["Life", "Society", "You"],
+            category=["Vida", "Sociedad", "Tú"],
             player_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -8355,7 +8330,7 @@ init python:
             label="talk_newspapers_and_bias",
             unlocked=True,
             prompt="Periódicos y sesgo",
-            category=["Literature", "Media", "Society"],
+            category=["Literatura", "Media", "Sociedad"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -8424,7 +8399,7 @@ init python:
             unlocked=True,
             prompt="¿Le tienes miedo a volar?",
             conditional="jn_utils.get_total_gameplay_days() >= 7",
-            category=["Fears", "Transport"],
+            category=["Miedos", "Transporte"],
             player_says=True,
             location="classroom"
         ),
@@ -8524,7 +8499,7 @@ init python:
             unlocked=True,
             prompt="¿Qué piensas sobre el fanart?",
             conditional="jn_utils.get_total_gameplay_days() >= 3",
-            category=["Art", "Media"],
+            category=["Arte", "Media"],
             player_says=True,
             location="classroom"
         ),
@@ -8629,7 +8604,7 @@ init python:
             unlocked=True,
             prompt="Cómo hacer una buena entrevista",
             conditional="jn_utils.get_total_gameplay_days() >= 5",
-            category=["Life", "Society"],
+            category=["Vida", "Sociedad"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -8762,7 +8737,7 @@ init python:
             label="talk_windup_bullying",
             unlocked=True,
             prompt="Acoso",
-            category=["Society", "Wind-ups"],
+            category=["Sociedad", "Cierres"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -8855,7 +8830,7 @@ init python:
             unlocked=True,
             prompt="¿Puedes llamarme de otra forma?",
             conditional="persistent._jn_nicknames_player_allowed",
-            category=["You"],
+            category=["Tú"],
             player_says=True,
             affinity_range=(jn_affinity.ENAMORED, None),
             location="classroom"
@@ -8935,7 +8910,7 @@ label talk_player_change_name:
         return
 
     elif nickname_type == jn_nicknames.NicknameTypes.disliked:
-        n 1fsqemsbl "...¿En serio,{w=0.1} [player]?{w=0.75}{nw}"
+        n 1fsqemsbl "... ¿En serio,{w=0.1} [player]?{w=0.75}{nw}"
         extend 2fnmwrsbl " ¿Por qué siquiera {i}sugerirías{/i} eso?"
         n 2flleml "¡Debes haber {i}sabido{/i} que no me gustaría!"
         n 1fcsslesi "..."
@@ -8947,17 +8922,17 @@ label talk_player_change_name:
         return
 
     elif nickname_type == jn_nicknames.NicknameTypes.hated:
-        n 2fskwrlesh "...¡¿D-{w=0.2}disculpa?!"
+        n 2fskwrlesh "... ¡¿D-{w=0.2}disculpa?!"
         $ player_initial = jn_utils.getPlayerInitial()
         n 1fnmwr "[player_initial]-{w=0.2}[player]!{w=0.75}{nw}"
         extend 1fnmfu " ¡Ese es un nombre {b}horrible{/b}!"
-        n 2fcsan "...¡Y sería aún {i}más{/i} horrible usarlo!"
+        n 2fcsan "... ¡Y sería aún {i}más{/i} horrible usarlo!"
         n 2fsqfu "¡{i}No{/i} va a pasar,{w=0.1} [player]!"
         $ persistent._jn_nicknames_player_bad_given_total += 1
 
     elif nickname_type == jn_nicknames.NicknameTypes.profanity:
-        n 1fscwresh "¡¿D-{w=0.2}dijiste {i}qué{/i} ahora?!{w=1}{nw}"
-        extend 2fsqfuean " ¡¿E-{w=0.1}es algún tipo de broma?!".
+        n 1fscwresh "¡¿D-{w=0.2}Dijiste {i}qué{/i} ahora?! {w=1}{nw}"
+        extend 2fsqfuean "¡¿E-{w=0.1}Es algún tipo de broma?!."
         n 1fcssc "¡No me voy a involucrar con porquerías así!"
         n 2fcsan "Y a menos que quieras una barra de jabón exprés a tu {b}boca{/b}..."
         n 2fsqfu "Sugiero que {i}tú{/i} tampoco lo hagas."
@@ -9066,7 +9041,7 @@ label talk_player_change_name:
 
         menu:
             n "¿Entiendes?"
-            "Entiendo.":
+            "Entiendo":
 
                 n 2fsqsr "Je.{w=0.75}{nw}"
                 extend 1fnmfr " {i}Ahora{/i} entiendes,{w=0.1} ¿verdad?"
@@ -9112,7 +9087,7 @@ init python:
             label="talk_players_birthday_intro",
             unlocked=True,
             prompt="Mi cumpleaños",
-            category=["You"],
+            category=["Tú"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -9170,7 +9145,7 @@ label talk_players_birthday_intro:
                 n 1ullbo "Así que...{w=1}{nw}"
                 extend 3nsqpo " sin tonterías,{w=0.2} ¿de acuerdo?{w=1}{nw}"
                 extend 3nchgn " ¡Se agradece!"
-            "Aún no me siento cómodo compartiendo eso.":
+            "Aún no me siento cómodo compartiendo eso":
 
 
                 n 2kwmsr "[player]...{w=1.5}{nw}"
@@ -9228,7 +9203,7 @@ label talk_players_birthday_intro:
                 n 1ullbo "Así que...{w=1}{nw}"
                 extend 3nsqpo " sin tonterías,{w=0.2} ¿de acuerdo?{w=1}{nw}"
                 extend 3nchgn " ¡Apreciado!"
-            "No me siento cómodo compartiendo eso.":
+            "No me siento cómodo compartiendo eso":
 
 
                 n 1nnmbo "...Oh."
@@ -9270,11 +9245,6 @@ label talk_players_birthday_input:
         $ player_birthday_month = _return
 
     $ response_month = datetime.date(datetime.date.today().year, player_birthday_month, 1).strftime("%B")
-    # Translate the month name back to spanish for the response if needed, although strftime might use locale.
-    # To be safe, we can map it or just rely on the player's input context.
-    # Actually, since we barely use response_month variable in dialogue except for "[response_month], huh?", let's rely on Natsuki's flow.
-    # If the system locale is English, %B will give "January". Let's manually map it if we want to be safe, or just assume the user understands.
-    # PROPER FIX: Check the month index and define a tuple or list for Spanish names.
     $ spanish_months = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
     $ response_month_es = spanish_months[player_birthday_month]
 
@@ -9309,9 +9279,6 @@ label talk_players_birthday_input:
     n 3nchsm "¡Oki-doki!{w=0.5}{nw}"
     extend 3ullaj " Así que solo para verificar..."
     show natsuki 1tnmbo
-
-    # Recalculate formatted string for spanish if possible, or just build it manually.
-    # jnGetMonthNameFromInt likely returns English.
     $ birthday_formatted_es = "{0} de {1}".format(
         spanish_months[persistent._jn_player_birthday_day_month[1]],
         persistent._jn_player_birthday_day_month[0]
@@ -9319,7 +9286,7 @@ label talk_players_birthday_input:
 
     menu:
         n "Tu cumpleaños es el [birthday_formatted_es],{w=0.2} ¿verdad?"
-        "Sí, así es.":
+        "Sí, así es":
 
             if persistent._jn_player_birthday_day_month == (29, 2):
 
@@ -9339,7 +9306,7 @@ label talk_players_birthday_input:
                 n 3fchsm "¡Entendido!"
 
             jump talk_players_birthday_outro
-        "No, no es correcto.":
+        "No, no es correcto":
 
             n 4tsqpueqm "¿Huh?{w=1}{nw}"
             extend 2nsqpo " ¿En serio?"
@@ -9440,7 +9407,7 @@ init python:
                     "unlocked=True"
                 ")) > 0"
             ),
-            category=["Literature"],
+            category=["Literatura"],
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"
@@ -9477,7 +9444,7 @@ label talk_can_i_see_a_poem:
 
         poem_options.sort(key = lambda option: option[0])
 
-    call screen scrollable_choice_menu(poem_options, ("Olvidalo.", None))
+    call screen scrollable_choice_menu(poem_options, ("Olvidalo", None))
 
     if isinstance(_return, jn_poems.JNPoem):
 
@@ -9558,7 +9525,7 @@ init python:
             label="talk_chocolate_preference",
             unlocked=True,
             prompt="¿Qué tipo de chocolate prefieres?",
-            category=["Food"],
+            category=["Comida"],
             player_says=True,
             location="classroom"
         ),
@@ -9774,7 +9741,7 @@ init python:
             label="talk_learning_languages",
             unlocked=True,
             prompt="Aprendiendo idiomas",
-            category=["Society"],
+            category=["Sociedad"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -9881,7 +9848,7 @@ label talk_learning_languages:
 
     menu:
         n "[menu_opening]"
-        "Conozco otro idioma.":
+        "Conozco otro idioma":
 
             if persistent._jn_player_is_multilingual:
                 n 4uskemlesh "¿H-{w=0.3}huh?{w=0.75}{nw}"
@@ -9898,7 +9865,7 @@ label talk_learning_languages:
                 n 1usqsm "No eres el {i}único{/i} multilingüe aquí,{w=0.2} después de todo.{w=0.5}{nw}"
                 extend 4fsqsm " Ehehe."
                 $ persistent._jn_player_is_multilingual = True
-        "Conozco múltiples otros idiomas.":
+        "Conozco múltiples otros idiomas":
 
             if persistent._jn_player_is_multilingual:
                 n 1fllem "Oh,{w=0.5}{nw}"
@@ -9912,7 +9879,7 @@ label talk_learning_languages:
                 n 2fsrpo "...Presu-{w=0.2}mido.{w=0.5}{nw}"
                 extend 4fsqsm " Ehehe."
                 $ persistent._jn_player_is_multilingual = True
-        "Estoy tratando de aprender otro idioma.":
+        "Estoy tratando de aprender otro idioma":
 
             if persistent._jn_player_is_multilingual:
                 n 1unmaj "¿Oh?{w=0.75}{nw}"
@@ -9925,7 +9892,7 @@ label talk_learning_languages:
                 extend 3tsqbg " Así que estás familiarizado con la lucha también,{w=0.2} ¿eh?"
                 n 1fsqsm "Ehehe."
                 $ persistent._jn_player_is_multilingual = False
-        "No conozco otros idiomas.":
+        "No conozco otros idiomas":
 
             if persistent._jn_player_is_multilingual:
                 n 1tsqaj "...¿Huh?"
@@ -9961,7 +9928,7 @@ init python:
             label="talk_rage_rooms",
             unlocked=True,
             prompt="Habitaciones de ira",
-            category=["Entertainment", "Hobbies"],
+            category=["Entretenimiento", "Pasatiempos"],
             nat_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -10046,7 +10013,7 @@ init python:
             unlocked=True,
             prompt="¿Puedes quitar las decoraciones por mí?",
             conditional="len(store.persistent._jn_holiday_deco_list_on_quit) > 0",
-            category=["Holidays"],
+            category=["Días festivos"],
             player_says=True,
             affinity_range=(jn_affinity.HAPPY, None),
             location="classroom"
@@ -10100,7 +10067,7 @@ init python:
             unlocked=True,
             prompt="¿Qué piensas sobre el vegetarianismo?",
             conditional="jn_utils.get_total_gameplay_hours() >= 4",
-            category=["Food", "Society"],
+            category=["Comida", "Sociedad"],
             player_says=True,
             location="classroom"
         ),
@@ -10255,7 +10222,7 @@ init python:
             unlocked=True,
             prompt="Manteniéndose motivado",
             conditional="jn_utils.get_total_gameplay_hours() >= 4",
-            category=["Life"],
+            category=["Vida"],
             affinity_range=(jn_affinity.NORMAL, None),
             nat_says=True,
             location="classroom"
@@ -10840,7 +10807,7 @@ init python:
             label="talk_daily_jokes_start",
             unlocked=True,
             prompt="¿Puedes empezar a contarme chistes diarios?",
-            category=["Jokes"],
+            category=["Bromas"],
             conditional="persistent._jn_daily_jokes_unlocked and not persistent._jn_daily_jokes_enabled",
             affinity_range=(jn_affinity.HAPPY, None),
             player_says=True,
@@ -10875,7 +10842,7 @@ init python:
             label="talk_daily_jokes_stop",
             unlocked=True,
             prompt="¿Puedes dejar de contarme chistes diarios?",
-            category=["Jokes"],
+            category=["Bromas"],
             conditional="persistent._jn_daily_jokes_unlocked and persistent._jn_daily_jokes_enabled",
             affinity_range=(jn_affinity.HAPPY, None),
             player_says=True,
@@ -10927,7 +10894,7 @@ init python:
             label="talk_daily_jokes_seen_before_start",
             unlocked=True,
             prompt="¿Qué chistes me has contado antes?",
-            category=["Jokes"],
+            category=["Bromas"],
             conditional="persistent._jn_daily_jokes_unlocked and jn_jokes.getShownBeforeJokes() is not None",
             affinity_range=(jn_affinity.HAPPY, None),
             player_says=True,
@@ -11003,7 +10970,7 @@ label talk_daily_jokes_seen_before_loop:
     show natsuki option_wait_holding at jn_left
     call screen scrollable_choice_menu(
         joke_options,
-        ("Olvídalo.", None),
+        ("Olvídalo", None),
         400,
         "mod_assets/icons/joke_book.png")
     show natsuki at jn_center
@@ -11106,7 +11073,7 @@ label talk_daily_jokes_seen_before_loop:
 
                 n 1udwaj "¿[joke_choice.display_name]?{w=0.75}{nw}"
                 extend 1unmbo " ¿Ese?"
-                n 1nchbg "¡'Kay!{w=0.75}{nw}"
+                n 1nchbg "¡OKay!{w=0.75}{nw}"
                 extend 1fcsbg " ¡Aquí vamos!"
 
             show natsuki 1cdwsm
@@ -11244,7 +11211,7 @@ label talk_daily_jokes_seen_before_loop:
                     extend 1tnmss " ¿Qué más querías escuchar de nuevo?"
 
                 jump talk_daily_jokes_seen_before_loop
-            "Eso es todo por ahora.":
+            "Eso es todo por ahora":
 
                 if joke_choice.joke_category == jn_jokes.JNJokeCategories.funny:
                     n 1fcsss "¿Oh?{w=0.75}{nw}"
@@ -11316,8 +11283,8 @@ init python:
             persistent._topic_database,
             label="talk_fitting_clothing",
             unlocked=True,
-            prompt="Clothing problems",
-            category=["Fashion"],
+            prompt="Problemas con la ropa",
+            category=["Moda"],
             conditional="persistent.jn_custom_outfits_unlocked",
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             nat_says=True,
@@ -11483,7 +11450,7 @@ init python:
             label="talk_favorite_subject",
             unlocked=True,
             prompt="¿Cuál es tu materia favorita?",
-            category=["Education"],
+            category=["Educación"],
             conditional="jn_utils.get_total_gameplay_hours() >= 2",
             player_says=True,
             location="classroom"
@@ -11691,7 +11658,7 @@ init python:
             label="talk_can_you_draw",
             unlocked=True,
             prompt="¿Sabes dibujar?",
-            category=["Art"],
+            category=["Arte"],
             conditional="jn_utils.get_total_gameplay_hours() >= 6",
             player_says=True,
             location="classroom"
@@ -11824,7 +11791,7 @@ label talk_can_you_draw:
                     n 3fllss "Bueno,{w=0.5}{nw}"
                     extend 3fsqcs " será mejor que te consideres afortunado,{w=0.2} [player].{w=0.75}{nw}"
                     extend 3fcsbgsbr " ¡No todos los días un sujeto tan {i}asombroso{/i} simplemente se planta justo enfrente de ti!"
-                "No, usualmente no dibujo.":
+                "No, usualmente no dibujo":
 
                     n 3tnmsl "¿En serio?{w=0.75}{nw}"
                     extend 3cslca " Aww..."
@@ -11832,7 +11799,7 @@ label talk_can_you_draw:
                     extend 4tllbo " Aunque lo entiendo.{w=0.75}{nw}"
                     extend 2cslsssbr " No es como si {i}yo{/i} fuera alguien para juzgar por eso."
                     extend 4fsqsm " Aún."
-                "Ya no dibujo.":
+                "Ya no dibujo":
 
                     n 3kslpu "Aww..."
                     n 3tslbo "..."
@@ -11924,7 +11891,7 @@ init python:
             label="talk_enable_no_topics_reminder",
             unlocked=True,
             prompt="¿Puedes recordarme la próxima vez que te quedes sin temas?",
-            category=["Natsuki", "Reminders"],
+            category=["Natsuki", "Recordatorios"],
             conditional="not persistent._jn_natsuki_out_of_topics_remind",
             player_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
@@ -12014,7 +11981,7 @@ init python:
             label="talk_windup_playing_things_out_loud",
             unlocked=True,
             prompt="Poner cosas a todo volumen",
-            category=["Wind-ups"],
+            category=["Cierres"],
             conditional="jn_utils.get_total_gameplay_hours() >= 4",
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
@@ -12166,7 +12133,7 @@ init python:
             label="talk_work_experience",
             unlocked=True,
             prompt="¿Alguna vez tuviste alguna experiencia laboral?",
-            category=["Society"],
+            category=["Sociedad"],
             conditional="jn_utils.get_total_gameplay_days() >= 2",
             player_says=True,
             location="classroom"
@@ -12381,7 +12348,7 @@ label talk_work_experience:
             show natsuki option_wait_curious
             menu:
                 n "¿Alguna vez tuviste algún tipo de práctica laboral,{w=0.2} o...?"
-                "Sí, he tenido una práctica laboral.":
+                "Sí, he tenido una práctica laboral":
 
                     $ persistent._jn_player_had_work_placement = True
                     n 4fnmbg "¡Ajá!{w=0.75}{nw}"
@@ -12389,7 +12356,7 @@ label talk_work_experience:
                     extend 6fsqsm " Solo no podías salirte de ello,{w=0.2} ¿eh?"
                     n 7tllss "Bueno...{w=0.3} Realmente no puedo decir que estoy sorprendida.{w=0.75}{nw}"
                     extend 7ccssmesm " No es como si {i}tú{/i} pudieras salirte de eso si yo no pude."
-                "No, no he tenido una práctica laboral.":
+                "No, no he tenido una práctica laboral":
 
                     $ persistent._jn_player_had_work_placement = False
                     n 3nsrsl "...Hmph.{w=0.75}{nw}"
@@ -12400,7 +12367,7 @@ label talk_work_experience:
                     n 3fsqsm "..."
                     n 3fcssm "Ehehe.{w=0.75}{nw}"
                     extend 4csgbg " ¿Te llamé la atención?"
-                "Tengo una práctica laboral ahora.":
+                "Tengo una práctica laboral ahora":
 
                     $ persistent._jn_player_had_work_placement = True
                     n 3ccsss "¿Oh?{w=0.75}{nw}"
@@ -12572,7 +12539,7 @@ init python:
             unlocked=True,
             prompt="¿Quieres jugar Blackjack?",
             conditional="persistent._jn_blackjack_unlocked",
-            category=["Games"],
+            category=["Juegos"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -12637,7 +12604,7 @@ init python:
             unlocked=True,
             prompt="¿Puedes repasar las reglas del Blackjack de nuevo?",
             conditional="persistent._jn_blackjack_unlocked and persistent._jn_blackjack_explanation_given",
-            category=["Games"],
+            category=["Juegos"],
             player_says=True,
             affinity_range=(jn_affinity.AFFECTIONATE, None),
             location="classroom"
@@ -12691,7 +12658,7 @@ init python:
             label="talk_windup_shaving",
             unlocked=True,
             prompt="Afeitarse",
-            category=["Wind-ups", "Fashion"],
+            category=["Cierres", "Moda"],
             nat_says=True,
             affinity_range=(jn_affinity.NORMAL, None),
             location="classroom"

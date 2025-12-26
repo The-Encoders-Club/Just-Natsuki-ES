@@ -559,11 +559,11 @@ label farewell_option_chores:
         extend 3tnmss " Solo apresúrate y ve a dormir,{w=0.1} ¿'kay?"
 
         if Natsuki.isLove(higher=True):
-            n 3uchbg "¡Luego,{w=0.1} [player]!"
+            n 3uchbg "¡Hasta luego,{w=0.1} [player]!"
             extend 4uchbgf " ¡Te amo~!"
         else:
 
-            n 3fchbg "¡Luego,{w=0.1} [player]!"
+            n 3fchbg "¡Hasta luego,{w=0.1} [player]!"
     else:
 
         n 2tnmsg "Atrapado en el deber de limpieza,{w=0.1} ¿eh?"
@@ -571,12 +571,11 @@ label farewell_option_chores:
         extend 2fchgn " ¡Ve y encárgate de tu racha de limpieza!"
 
         if Natsuki.isLove(higher=True):
-            n 3uchbg "¡Luego,{w=0.1} [player]!{w=0.5}{nw}"
+            n 3uchbg "¡Hasta luego,{w=0.1} [player]!{w=0.5}{nw}"
             extend 3uchbgf " ¡Te amo~!"
         else:
 
-            n 3fchbg "Jejeje.{w=0.2} ¡Luego,{w=0.1} [player]!"
-
+            n 3fchbg "Jejeje.{w=0.2} ¡Hasta luego,{w=0.1} [player]!"
     return { "quit": None }
 
 label farewell_option_extended_leave:
@@ -771,7 +770,7 @@ label farewell_love_counting_on_you:
     n 4fsqtrf "Más te vale cuidarte allá afuera,{w=0.1} [chosen_endearment]."
     n 3fchgnl "...¡Porque cuento contigo!"
     $ chosen_tease = jn_utils.getRandomTease()
-    n 3fchblleaf "¡Luego,{w=0.2} [chosen_tease]!"
+    n 3fchblleaf "¡Hasta luego,{w=0.2} [chosen_tease]!"
 
     return { "quit": None }
 
@@ -863,7 +862,7 @@ label farewell_love_wish_you_could_stay_forever:
     n 2fslssfsbl "...Incluso si {i}no{/i} son siempre tan importantes como yo.{w=0.75}{nw}"
     extend 2nchgnl " Jejeje."
     $ chosen_endearment = jn_utils.getRandomEndearment()
-    n 1fchbgf "¡Luego,{w=0.2} [chosen_endearment]!"
+    n 1fchbgf "¡Hasta luego,{w=0.2} [chosen_endearment]!"
 
     return { "quit": None }
 
@@ -1301,7 +1300,7 @@ init python:
     )
 
 label farewell_normal_happy_later:
-    n 2nnmss "¡Luego,{w=0.2} [player]!"
+    n 2nnmss "¡Hasta luego,{w=0.2} [player]!"
 
     return { "quit": None }
 
@@ -1333,7 +1332,7 @@ init python:
     )
 
 label farewell_normal_happy_kay:
-    n 1fcsbg "¡'kay!{w=0.5}{nw}"
+    n 1fcsbg "¡Okay!{w=0.5}{nw}"
     extend 2fchbg " ¡Adiós por ahora!"
 
     return { "quit": None }
@@ -1368,7 +1367,7 @@ init python:
 label farewell_normal_happy_oh_right:
     n 1tnmfleqm "¿Huh?{w=0.75}{nw}"
     extend 1ullbo " Oh,{w=0.2} cierto."
-    n 1cchsm "¡Luego,{w=0.2} [player]!"
+    n 1cchsm "¡Hasta luego,{w=0.2} [player]!"
 
     return { "quit": None }
 
@@ -1441,7 +1440,7 @@ init python:
     )
 
 label farewell_upset_distressed_kay:
-    n 3fllsf "'kay.{w=0.2} Luego."
+    n 3fllsf "Okay.{w=0.2} Luego."
 
     return { "quit": None }
 
@@ -1574,7 +1573,7 @@ init python:
     )
 
 label farewell_broken_ruined_kay:
-    n 3fslsrltsb "'kay."
+    n 3fslsrltsb "Okay."
 
     return { "quit": None }
 
@@ -2088,7 +2087,7 @@ label farewell_morning_heading_off:
             extend 4fchbgfeaf " ¡Te amo,{w=0.1} [player]~!"
         else:
 
-            n 3uchsml "¡Luego!"
+            n 3uchsml "¡Hasta luego!"
     else:
 
         n 3fchsml "¡Nos vemos!"

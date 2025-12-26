@@ -427,7 +427,7 @@ label admission_bored:
             "¡Claro,{w=0.2} por qué no!":
 
                 jump snap_intro
-            "Ahora no.":
+            "Ahora no":
 
                 n 4usqct "¿Oh?{w=0.75}{nw}"
                 extend 4tsqsm " ¿Ahora no,{w=0.2} dices?"
@@ -478,7 +478,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Confident",
+            prompt="Confidente",
             label="admission_confident",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -555,7 +555,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Excited",
+            prompt="Emocionado",
             label="admission_excited",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -596,7 +596,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Happy",
+            prompt="Feliz",
             label="admission_happy",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -677,7 +677,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Hungry",
+            prompt="Hambriento",
             label="admission_hungry",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -780,7 +780,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Insecure",
+            prompt="Inseguro",
             label="admission_insecure",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -856,7 +856,7 @@ label admission_insecure:
         show natsuki 4knmbol
         menu:
             extend " ¿verdad?"
-            "Verdad.":
+            "Verdad":
 
                 n 1fcsbo "...Bien.{w=0.75}{nw}"
                 extend 4flrfl " O tendrás que tratar conmigo también.{w=0.75}{nw}"
@@ -873,7 +873,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Proud",
+            prompt="Orgulloso",
             label="admission_proud",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -922,7 +922,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Sad",
+            prompt="Triste",
             label="admission_sad",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -952,7 +952,7 @@ label admission_sad:
         show natsuki 4klrbolsbr
         menu:
             n "¿Como amigos, familia,{w=0.2} o...?"
-            "Sí,{w=0.2} tengo.":
+            "Sí,{w=0.2} tengo":
 
                 n 1knmbo "...Entonces tal vez deberías compartir cómo te sientes,{w=0.2} [player].{w=1}{nw}"
                 extend 2nsrss " Incluso si es vergonzoso."
@@ -964,7 +964,7 @@ label admission_sad:
                 n 1fcscalsbr "Nunca es algo de lo que avergonzarse.{w=0.5}{nw}"
                 extend 4fcsbolsbl " Créeme."
                 n 2kslbol "...Y a mí también me tomó mucho tiempo aprender eso."
-            "No tengo.":
+            "No tengo":
 
                 n 4nlrsslsbr "Eso es...{w=0.75}{nw}"
                 extend 4ksrsllsbr " realmente {i}no{/i} es lo que esperaba escuchar,{w=0.75}{nw}"
@@ -978,7 +978,7 @@ label admission_sad:
 
                 n 4knmbosbr "Solo avísame si puedo ayudar de alguna manera.{w=1.25}{nw}"
                 extend 4klrbosbr " ¿De acuerdo?"
-            "Ya lo saben.":
+            "Ya lo saben":
 
                 n 2fcsfllsbr "¡Bien!{w=0.75}{nw}"
                 extend 2fcscalsbr " Bien..."
@@ -1062,7 +1062,7 @@ label admission_sad:
         show natsuki 4knmsssbr
         menu:
             n "...¿Verdad?"
-            "Verdad.":
+            "Verdad":
 
                 pass
 
@@ -1095,7 +1095,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Sick",
+            prompt="Enfermo",
             label="admission_sick",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -1112,7 +1112,7 @@ label admission_sick:
         show natsuki 2knmbosbr
         menu:
             n "¿Cuánto tiempo te has sentido así realmente?"
-            "Unas pocas horas.":
+            "Unas pocas horas":
 
                 n 2tslfl "...Eh."
                 n 2fcsajsbl "B-{w=0.2}bueno,{w=0.75}{nw}"
@@ -1123,7 +1123,7 @@ label admission_sick:
                 n 4fcsbgsbr "Lo siento,{w=0.2} [player].{w=0.75}{nw}"
                 extend 2fchgn " ¡Parece que no habrá aventuras para ti hoy!{w=0.75}{nw}"
                 extend 2fchsm " Jejeje."
-            "Unos pocos días.":
+            "Unos pocos días":
 
                 n 4tnmfl "...Estás bromeando,{w=0.2} ¿verdad?{w=0.75}{nw}"
                 extend 4knmflsbl " ¿Ya han pasado días?"
@@ -1145,7 +1145,7 @@ label admission_sick:
                     n 4kllbolsbr "...Y al menos trata de descansar un poco más también."
 
                 n 2knmbo "Mejórate pronto,{w=0.2} ¿de acuerdo?"
-            "Una semana o algo así.":
+            "Una semana o algo así":
 
                 n 2flrbo "[player]..."
                 n 2fnmbol "Ya deberías saber que odio regañar.{w=1}{nw}"
@@ -1159,14 +1159,14 @@ label admission_sick:
                 show natsuki 4ksqpul
                 menu:
                     n "¿Verdad?"
-                    "Sí,{w=0.2} lo he hecho.":
+                    "Sí,{w=0.2} lo he hecho":
 
                         n 2fsrpol "Bueno...{w=1.25}{nw}"
                         extend 2nsrpol " está bien."
                         n 2nsraj "Yo...{w=1}{nw}"
                         extend 1ksqbo " solo espero que hayan podido ayudarte,{w=0.2} [player]."
                         n 4ksqsl "Asegúrate de descansar un poco más,{w=0.2} ¿de acuerdo?"
-                    "No,{w=0.2} no lo he hecho.":
+                    "No,{w=0.2} no lo he hecho":
 
                         n 3tnmem "...¿En serio?{w=0.75}{nw}"
                         extend 3ksqgs " ¡Vamos,{w=0.2} [player]!{w=1}{nw}"
@@ -1202,7 +1202,7 @@ label admission_sick:
                 $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else player
                 n 4knmslsbl "E-{w=0.2}espero que te sientas mejor pronto,{w=0.2} [chosen_descriptor]."
                 n 1ksrbolsbl "..."
-            "Más tiempo.":
+            "Más tiempo":
 
                 n 2knmbosbl "..."
                 n 2klrajsbl "Yo...{w=1.25}{nw}"
@@ -1226,7 +1226,7 @@ label admission_sick:
         show natsuki 1fcsflsbl
         menu:
             n "No me digas que te saltaste tus comidas hoy o algo así."
-            "He comido.":
+            "He comido":
 
                 n 4tsqpu "...Eh.{w=1}{nw}"
                 extend 2tllpueqm " ¿Entonces tal vez fue algo que comiste?{w=0.75}{nw}"
@@ -1236,7 +1236,7 @@ label admission_sick:
                 extend 4nlrbo " supongo que no importa {i}realmente{/i}.{w=0.75}{nw}"
                 extend 2tllsll " Solo asegúrate de descansar si lo necesitas."
                 n 2knmbol "¿Entendido?"
-            "No,{w=0.2} no he comido.":
+            "No,{w=0.2} no he comido":
 
                 n 4fcsbglsbl "¡J-{w=0.2}jah!{w=1}{nw}"
                 extend 4fnmgs " ¡Lo sabía!{w=0.75}{nw}"
@@ -1282,7 +1282,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Tired",
+            prompt="Cansado",
             label="admission_tired",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)

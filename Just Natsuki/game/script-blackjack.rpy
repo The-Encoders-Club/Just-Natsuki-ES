@@ -373,7 +373,7 @@ label blackjack_intro:
             "¡Sí, por favor!":
 
                 jump blackjack_explanation
-            "No, estoy listo.":
+            "No, estoy listo":
 
                 $ dialogue_choice = random.randint(1, 3)
                 if dialogue_choice == 1:
@@ -499,7 +499,7 @@ label blackjack_explanation:
             extend 4fchgn " ¡Hagámoslo,{w=0.2} [player]!"
 
             jump blackjack_start
-        "Gracias, [n_name]. Jugaré luego.":
+        "Gracias, [n_name]. Jugaré luego":
 
             n 1ccsemesi "..."
             n 2ccsfl "...¿En serio,{w=0.5}{nw}"
@@ -811,7 +811,7 @@ label blackjack_quit_forfeit:
     $ natsuki_prompt = renpy.substitute(natsuki_prompt)
     menu:
         n "[natsuki_prompt]"
-        "No, terminé de jugar por ahora.":
+        "No, terminé de jugar por ahora":
 
             if jn_blackjack._is_player_committed:
                 n 1kcsflesi "...Viejo.{w=0.75}{nw}"

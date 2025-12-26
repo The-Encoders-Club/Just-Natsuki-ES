@@ -1,5 +1,3 @@
-#Jueves, 11 de Diciembre - 2025, traducción en curso por иeo — (venom snake)
-
 label ch30_autoload:
 
     scene black
@@ -605,7 +603,7 @@ init python:
         
         if (datetime.datetime.now().year > persistent.jn_last_visited_date.year):
             jn_events.resetHolidays()
-            jn_utils.log("Holiday completion states reset.")
+            jn_utils.log("Restablecimiento de los estados de finalización de vacaciones.")
         
         persistent.jn_last_visited_date = datetime.datetime.now()
         
@@ -649,11 +647,11 @@ label talk_menu:
                 "¿Qué tienes en mente?",
                 "¿Qué está pasando?",
                 "¿Algo en mente?",
-                "~¿Oh?{w=0.2} ¿Quieres hablar?",
-                "~¿Huh?{w=0.2} ¿Qué pasa?",
+                "¿Oh?{w=0.2} ¿Quieres hablar?",
+                "¿Huh?{w=0.2} ¿Qué pasa?",
                 "¿Quieres compartir algo conmigo?",
                 "¿Qué hay de nuevo,{w=0.1} [player]?",
-                "'~¿Sip,{w=0.1} [player]?",
+                "¿Sip,{w=0.1} [player]?",
                 "¿Quieres hablar?",
                 "¡Oye,{w=0.2} [player]!"
             ]))
@@ -716,9 +714,9 @@ label talk_menu:
         "Adiós..." if Natsuki.isAffectionate(higher=True):
             jump farewell_menu
 
-        "Adiós." if Natsuki.isHappy(lower=True):
+        "Adiós" if Natsuki.isHappy(lower=True):
             jump farewell_start
-        "No importa.":
+        "No importa":
 
             $ Natsuki.resetLastIdleCall()
             $ Natsuki.resetLastMenuCall()
@@ -798,10 +796,10 @@ label farewell_menu:
 
 label outfits_menu:
     call screen scrollable_choice_menu([
-        ("¿Puedes usar un atuendo para mí?, "outfits_wear_outfit"),
-        ("¿Puedo sugerir un nuevo atuendo?", "outfits_suggest_outfit"),
+        ("¿Puedes ponerte un atuendo para mí?", "outfits_wear_outfit"),
+        ("¿Puedes sugerirme un nuevo atuendo?", "outfits_suggest_outfit"),
         ("¿Puedes olvidarte de un atuendo que sugerí?", "outfits_remove_outfit"),
-        ("¿Puedes buscar nuevamente nuevos artículos?", "outfits_reload")],
+        ("¿Puedes buscar de nuevo nuevos artículos?", "outfits_reload")],
         ("Volver", None),
         400,
         "mod_assets/icons/outfits.png")
@@ -826,7 +824,7 @@ label extras_menu:
 
         avaliable_extras_options.sort(key = lambda option: option[0])
 
-    call screen scrollable_choice_menu(avaliable_extras_options, ("No importa.", None))
+    call screen scrollable_choice_menu(avaliable_extras_options, ("No importa", None))
 
     if isinstance(_return, basestring):
         $ renpy.jump(_return)
@@ -879,7 +877,7 @@ label try_force_quit:
             n 2fsqsftsb "..."
 
         menu:
-            "No importa.":
+            "No importa":
 
                 if Natsuki.isAffectionate(higher=True):
                     n 4kllssl "G-{w=0.2}gracias,{w=0.2} [player].{w=1}{nw}"
@@ -950,7 +948,4 @@ label try_force_quit:
                 show glitch_garbled_b zorder JN_GLITCH_ZORDER with hpunch
                 hide glitch_garbled_b
                 $ renpy.jump("quit")
-                
-#Bueno, ahora que estamos aquí solos, dejaré un par de canciones listadas, sólo porque si y por que puedo, xD.
-#Metal Gear Solid V: The Phantom Pain Licensed Soundtrack: Spandau Ballet - True, Girls on Film (2010 Remaster) - Duran Duran, I Was Made for Lovin' You - KISS, Separate Ways - Journey, Friday I'm In Love - The Cure, INVISIBLE - Duran Duran, "Gloria" -1982- Metal Gear Solid V: The Phantom Pain Soundtrack, Sins of the Father - Donna Burke, Metal Gear Solid V - Soundtrack - Here's To You, A Phantom Pain - Ludvig Forssell.
-#Una playlist al estilo y vibras de Metal Gear Solid V: The Phantom Pain. See you soon! 
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

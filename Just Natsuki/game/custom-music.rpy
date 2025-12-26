@@ -217,7 +217,7 @@ label music_menu:
         show natsuki option_wait_curious
         menu:
             n "¿Querías que volviera a subir el volumen de la música para que pudieras escoger algo?"
-            "Si.":
+            "Sí":
 
                 n 1nchsm "¡Oki-{w=0.1}doki! {w=0.2}solo dame un segundo..."
                 $ preferences.set_volume("music", 0.75)
@@ -226,7 +226,7 @@ label music_menu:
                 extend 2unmaj "¿qué querías escuchar?"
 
                 show natsuki option_wait_excited at jn_left
-            "No.":
+            "No":
 
                 n 3fcsbg "¡El sonido del silencio, {w=0.1}entonces! {w=0.5}{nw}"
                 extend 3fchsm " Jeje."
@@ -239,10 +239,8 @@ label music_menu:
         $ chosen_quip = renpy.substitute(random.choice([
             "¿Quieres poner algo más?{w=0.2} ¡Vale!",
             "¡Será mejor que reproduzcas algo bueno,{w=0.2} [player]!",
-            
-            #old "¿Quieres reproducir algo?"
             "¿Quieres poner algo?{w=0.2} ¡Seguro!",
-            "¿Alguna música diferente?{w=0.2}" #old "{i}¡Ahora{/i} estamos hablando!",
+            "¿Alguna música diferente?{w=0.2}"
             "¿Otra canción?{w=0.2} ¡Seguro!",
             "¿Quieres reproducir otra canción? {w=0.2} ¡Vale!",
             "¿Huh?{w=0.2} ¿Qué tienes en mente, {w=0.2} [player]?"
