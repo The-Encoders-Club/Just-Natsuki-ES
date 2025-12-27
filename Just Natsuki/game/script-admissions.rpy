@@ -95,10 +95,10 @@ label admission_angry:
         n 4nlrpu "Al menos puedes lograrlo.{w=0.75}.{w=0.75}.{w=0.75}{nw}"
 
         if Natsuki.isEnamored(higher=True):
-            extend 4knmpu " ¿verdad?{w=1}{nw}"
-            extend 4knmsslsbl " ¿P-{w=0.2}por mí?"
-            n 3knmsllsbl "Y para ti,{w=0.75}{nw}"
-            extend 3klrbolsbl " Si no hay nada más."
+            extend 4knmpu " ¿verdad? {w=1}{nw}"
+            extend 4knmsslsbl "¿P-{w=0.2}Por mí?"
+            n 3knmsllsbl "Y para ti, {w=0.75}{nw}"
+            extend 3klrbolsbl "si no hay nada más."
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
