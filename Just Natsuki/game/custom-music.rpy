@@ -355,7 +355,7 @@ label music_menu:
             "¿Parece ser que funciona, {w=0.2} eh?",
             "¡Lo tienes!",
             "¡Bien, {w=0.2}tú eres el jefe!",
-            "Solo lo habitual, {w=0.2} huh? {w=0.2}¡Seguro!",
+            "Solo lo habitual, {w=0.2}huh? {w=0.2}¡Seguro!",
             "¡Seguro! {w=0.2}Solo dame un segundo...",
         ]))
         n 2knmsm "[music_quip]"
