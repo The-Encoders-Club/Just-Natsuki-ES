@@ -261,10 +261,10 @@ label music_menu:
         $ music_quip = renpy.substitute(random.choice([
             "Sólo silencio por ahora,{w=0.2} ¿eh?",
             "¿Sin humor, {w=0.2} [player]?{w=0.2} ¡No te preocupes!",
-            "'¡Bien!{w=0.2} Solo lo voy a apagar...",
-            "¡Muy bien!{w=0.2} Déjame hacer eso por ti...",
-            "¡Dalo por hecho!{w=0.2} Déjame hacer eso por ti...",
-            "¡No te preocupes!{w=0.2} Solo dame un segundo...",
+            "'¡Bien! {w=0.2} Solo lo voy a apagar...",
+            "¡Muy bien! {w=0.2} Déjame hacer eso por ti...",
+            "¡Dalo por hecho! {w=0.2} Déjame hacer eso por ti...",
+            "¡No te preocupes! {w=0.2} Solo dame un segundo...",
         ]))
         n 2knmsm "[music_quip]"
 
