@@ -229,7 +229,7 @@ label music_menu:
             "No":
 
                 n 3fcsbg "¡El sonido del silencio, {w=0.1}entonces! {w=0.5}{nw}"
-                extend 3fchsm " Jeje."
+                extend 3fchsm "Jeje."
 
                 $ Natsuki.resetLastTopicCall()
                 $ Natsuki.resetLastIdleCall()
