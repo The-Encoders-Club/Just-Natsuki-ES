@@ -2461,7 +2461,7 @@ label outfits_remove_outfit:
     if len(jn_outfits.getSafePendingUnlocks()):
 
         n 1nsqpu "...Espera. {w=1.25}{nw}"
-        extend 3fnmpo " ¿Estas intentando ocultar algo?"
+        extend 3fnmpo "¿Estas intentando ocultar algo?"
         n 1fcstrlesi "¡Al menos muéstrame qué es primero!"
         show natsuki 1fcspol
 
