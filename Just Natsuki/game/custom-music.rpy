@@ -192,7 +192,7 @@ label music_menu:
         show natsuki at jn_center
 
         n 4kllsssbr "Uhmm..."
-        n 4klrflsbr "Oye...{w=0.75}{nw}"
+        n 4klrflsbr "Oye... {w=0.75}{nw}"
         extend 4knmajsbr " [player]?"
         n 4kslslsbr "Como que algo salió {i}un poquito{/i} mal cuando estaba intentando buscar tu música... {w=1}{nw}"
         extend 4kslsssbr "¿podrías revisar todo rápidamente?"
@@ -206,7 +206,7 @@ label music_menu:
 
     elif preferences.get_volume("music") == 0:
         show natsuki at jn_center
-        n 1tsqaj "Uh...{w=1}{nw}"
+        n 1tsqaj "Uh... {w=1}{nw}"
         extend 1tslaj " huh."
         n 2tsgsg "¿Y {i}cómo{/i} esperas escuchar cualquier canción con tu volumen en cero exactamente?"
         n 2fchbg "Cielos, {w=0.2}[player]. {w=0.75}{nw}"
@@ -219,7 +219,7 @@ label music_menu:
             n "¿Querías que volviera a subir el volumen de la música para que pudieras escoger algo?"
             "Sí":
 
-                n 1nchsm "¡Oki-{w=0.1}doki! {w=0.2}solo dame un segundo..."
+                n 1nchsm "¡Oki- {w=0.1}doki! {w=0.2}solo dame un segundo..."
                 $ preferences.set_volume("music", 0.75)
                 n 2fcsbg "¡Y ya está!"
                 n 2ullss "Entonces... {w=0.5}{nw}"
@@ -260,7 +260,7 @@ label music_menu:
     if _return.option_type == jn_custom_music.JNMusicOptionTypes.no_music:
         $ music_quip = renpy.substitute(random.choice([
             "Sólo silencio por ahora,{w=0.2} ¿eh?",
-            "¿Sin humor,{w=0.2} [player]?{w=0.2} ¡No te preocupes!",
+            "¿Sin humor, {w=0.2} [player]?{w=0.2} ¡No te preocupes!",
             "'¡Bien!{w=0.2} Solo lo voy a apagar...",
             "¡Muy bien!{w=0.2} Déjame hacer eso por ti...",
             "¡Dalo por hecho!{w=0.2} Déjame hacer eso por ti...",
@@ -306,12 +306,12 @@ label music_menu:
 
         $ chosen_answer_quip = renpy.substitute(random.choice([
             "¡Seguro!",
-            "¡Seguro,{w=0.2} porqué no!",
+            "¡Seguro, {w=0.2} porqué no!",
             "¡Puedo hacerlo!",
-            "Heh.{w=0.2} Déjamelo a mí,{w=0.2} [player]!",
-            "Jejeje.{w=0.2} ¡Ya era hora,{w=0.2} [player]!",
-            "¡Okie-dokie,{w=0.2} [player]!",
-            "¡Finalmente!{w=0.2} Ajaja.",
+            "Heh. {w=0.2} Déjamelo a mí,{w=0.2} [player]!",
+            "Jejeje. {w=0.2} ¡Ya era hora,{w=0.2} [player]!",
+            "¡Okie-dokie, {w=0.2} [player]!",
+            "¡Finalmente! {w=0.2} Ajaja.",
             "{i}¡Ahora{/i} estamos hablando!"
         ]))
         n 4uchbgl "[chosen_answer_quip]"
@@ -324,10 +324,10 @@ label music_menu:
         $ jnPause(2)
 
         $ chosen_search_quip = renpy.substitute(random.choice([
-            "Ahora,{w=0.2} veamos...",
+            "Ahora, {w=0.2} veamos...",
             "Déjame echar un vistazo ...",
-            "Bien,{w=0.2}, ¿qué tenemos por aquí...",
-            "¡Oh!{w=0.2} ¿Qué hay de esto?",
+            "Bien, {w=0.2}, ¿qué tenemos por aquí...",
+            "¡Oh! {w=0.2} ¿Qué hay de esto?",
             "Veamos aquí...",
             "Veamos..."
         ]))
@@ -352,11 +352,11 @@ label music_menu:
 
     elif _return.option_type == jn_custom_music.JNMusicOptionTypes.location:
         $ music_quip = renpy.substitute(random.choice([
-            "¿Parece ser que funciona,{w=0.2} eh?",
+            "¿Parece ser que funciona, {w=0.2} eh?",
             "¡Lo tienes!",
-            "¡Bien,{w=0.2} tú eres el jefe!",
-            "Solo lo habitual,{w=0.2} huh?{w=0.2} ¡Seguro!",
-            "¡Seguro!{w=0.2} Solo dame un segundo...",
+            "¡Bien, {w=0.2}tú eres el jefe!",
+            "Solo lo habitual, {w=0.2} huh? {w=0.2}¡Seguro!",
+            "¡Seguro! {w=0.2}Solo dame un segundo...",
         ]))
         n 2knmsm "[music_quip]"
 
