@@ -3623,8 +3623,8 @@ label talk_work_life_balance:
     if Natsuki.isUpset(higher=True):
         n 4ullaj "Sabes,{w=0.1} [player]..."
 
-    n 1nnmaj "I think it's pretty easy to let your academic or work life creep into your personal time nowadays."
-    n 2nlrsl "I mean...{w=0.3} think about it."
+    n 1nnmaj "Creo que hoy en día es bastante fácil dejar que la vida académica o laboral se cuele en tu tiempo personal."
+    n 2nlrsl "Quiero decir...{w=0.3} piénsalo."
     n 1nnmsl "Con todos teniendo celulares,{w=0.1} más usualmente algún tipo de computadora en casa -{w=0.1} es difícil no estar conectado de alguna manera."
     n 2flrbo "Y como...{w=0.3} si ya hay esa conexión,{w=0.1} entonces ¿qué detiene al trabajo de molestarte durante tu tiempo libre?"
     n 2fsrun "¿O compañeros de clase pidiendo ayuda en el último minuto posible?"
