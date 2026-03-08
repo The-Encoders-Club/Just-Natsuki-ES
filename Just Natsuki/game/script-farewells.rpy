@@ -180,7 +180,7 @@ label farewell_option_sleep:
         extend 4fchsml " Jejeje."
 
         if Natsuki.isEnamored(higher=True):
-            n 3fchbgl "¡Que no te piquen las chinches!"
+            n 3fchbgl "¡Que no te piquen los mosquitos!"
 
         elif Natsuki.isLove(higher=True):
             n 3fchblledz "¡También te amo~!"
@@ -227,7 +227,7 @@ label farewell_option_sleep:
         n 2fsqcal "Pero más te vale quedarte despierto conmigo más tarde.{w=0.75}{nw}"
         extend 4fsrtrl " Ya sabes."
         n 3fsqbglsbl "Para recuperar el tiempo perdido y todo eso."
-        n 3fchbll "¡Noches,{w=0.1} [player]!"
+        n 3fchbll "¡Descansa,{w=0.1} [player]!"
     else:
 
 
@@ -251,7 +251,7 @@ label farewell_option_eat:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_HUNGRY:
         n 1fcsgs "B-{w=0.1}bueno,{w=0.1} ¡duh!{w=0.5} ¡{i}Dijiste{/i} que te morías de hambre!"
         n 2fllpoesi "Cielos..."
-        n 2fdtposbr "Solo haz que sea algo saludable,{w=0.1} ¿entendido?"
+        n 2fdtposbr "Solo prepara algo que sea saludable,{w=0.1} ¿entendido?"
         n 4fsqsm "...Jejeje."
         n 2fchbg "¡Disfruta,{w=0.1} [player]!"
 
@@ -373,12 +373,12 @@ label farewell_option_work:
                     n 2kslsll "..."
             "No, tengo que salir.":
 
-                n 4kcsemlesi "Hombre...{w=1}{nw}"
+                n 4kcsemlesi "Viejo...{w=1}{nw}"
                 extend 4ksqbol " ¿{i}en serio{/i}?"
                 n 1ksrsllsbr "..."
                 n 1fcspusbr "Solo...{w=1}{nw}"
                 extend 4kllsl " ten cuidado,{w=0.2} ¿de acuerdo?"
-                n 2fsqpol "Y más te vale venir a visitar cuando regreses."
+                n 2fsqpol "Y más te vale venir a visitarme cuando regreses."
 
                 if Natsuki.isLove(higher=True):
                     n 2fnmcal "¡Cuídate,{w=0.1} [player]!{w=1}{nw}"
@@ -393,7 +393,7 @@ label farewell_option_work:
 
         if jnIsEaster():
             n 1uskgs "...¿Y en Pascua,{w=0.1} de todos los días?{w=0.5}{nw}"
-            extend 1fslpo " Hombre..."
+            extend 1fslpo " Viejo..."
 
         elif jnIsChristmasEve():
             n 4fskgsl "...¿En Nochebuena?{w=0.5}{nw}"
@@ -416,11 +416,11 @@ label farewell_option_work:
 
         elif not jn_is_weekday():
             n 1uwdaj "Y-{w=0.1}y en fin de semana,{w=0.1} ¿también?{w=0.5}{nw}"
-            extend 2kslpu " Hombre..."
+            extend 2kslpu " Viejo..."
 
         n 2nlrpo "Apesta que tengas que trabajar,{w=0.1} pero lo entiendo.{w=0.5}{nw}"
         extend 2nsrpo " Supongo."
-        n 4fnmpo "...Pero más te vale venir a visitar cuando termines."
+        n 4fnmpo "...Pero más te vale venir a visitarme cuando termines."
         n 4fsqsm "Jejeje."
         n 3fchbg "¡Tómatelo con calma,{w=0.1} [player]!{w=0.2} ¡No dejes que nadie te mangonee!"
 
@@ -466,7 +466,7 @@ label farewell_option_school:
 
         if jnIsEaster():
             n 4uskgs "...¿Y en Pascua,{w=0.1} de todos los días?{w=0.5}{nw}"
-            extend 2fslpo " Hombre..."
+            extend 2fslpo " Viejo..."
 
         elif jnIsChristmasEve():
             n 4fskgsl "...¿En Nochebuena?{w=0.5}{nw}"
@@ -487,7 +487,7 @@ label farewell_option_school:
             extend 2nchsm " ¡No hay problema!"
         else:
 
-            n 1tnmpu "¿Eh?{w=0.2} ¿Estás en la escuela hoy?{w=0.5}{nw}"
+            n 1tnmpu "¿Eh?{w=0.2} ¿Vas a la escuela hoy?{w=0.5}{nw}"
             extend 2nsqpu " ...¿En un {i}fin de semana{/i}?"
             n 2fslpu "..."
             n 2fsqpo "Qué asco..."
@@ -507,7 +507,7 @@ label farewell_option_misc_activity:
     extend 1kllaj " ¿Y tienes que irte para hacer eso también?"
     n 4fcsun "Mmmmmm...{w=0.5}{nw}"
     extend 1kcsaj " okay."
-    n 2fnmpol "...Pero más te vale venir a visitar cuando termines.{w=1}{nw}"
+    n 2fnmpol "...Pero más te vale venir a visitarme cuando termines.{w=1}{nw}"
     extend 2klrpo " ¿Entendido?"
     n 2kllpo "¡Nos vemos pronto,{w=0.1} [player]!"
 
@@ -692,11 +692,11 @@ label farewell_option_extended_leave:
                 extend 4ksqbofsbr " d-{w=0.2}después de todo..."
 
             elif Natsuki.isEnamored(higher=True):
-                n 2kslajlsbl "...Luego,{w=0.2} [player]."
+                n 2kslajlsbl "...Hasta luego,{w=0.2} [player]."
                 n 2kslsllsbl "..."
             else:
 
-                n 2kslajl "Luego,{w=0.2} [player]."
+                n 2kslajl "Hasta luego,{w=0.2} [player]."
                 n 2kslsll "..."
 
     $ import datetime
@@ -838,7 +838,7 @@ label farewell_love_me_to_deal_with:
     n 4kllpul "Awww...{w=0.75}{nw}"
     extend 2kllpol " bueno, está bien."
     n 1fnmcal "Cuídate mucho,{w=0.2} ¿entendido?"
-    extend 3fcsssl " ¡O tendrás que vétrselas conmigo!"
+    extend 3fcsssl " ¡O tendrás que vertelas conmigo!"
     n 3fsqsml "Jejeje."
     n 3fchbgfeaf "¡Adiós por ahora!{w=0.5} ¡Te amo~!"
 
@@ -904,7 +904,7 @@ init python:
     )
 
 label farewell_love_stranger:
-    n 4ccsfllesi "Hombre...{w=1}{nw}"
+    n 4ccsfllesi "Viejo...{w=1}{nw}"
     extend 4tnmfll " ¿Ya?{w=0.75}{nw}"
     extend 2csqeml " Estás bromeando,{w=0.2} ¿verdad?"
     n 1kllsll "..."
@@ -937,7 +937,7 @@ init python:
 label farewell_affectionate_enamored_was_having_fun:
     n 3unmajl "¿Eh?{w=0.5}{nw}"
     extend 3tnmpul " ¿Te vas ahora?"
-    n 4kcsemesi "Hombre..."
+    n 4kcsemesi "Viejo..."
     n 1fllpol "Y yo que me estaba divirtiendo,{w=0.2} también...{w=1}{nw}"
     extend 2fsqpol " vaya aguafiestas,{w=0.2} [player]."
     n 2fcspol "..."
@@ -965,7 +965,7 @@ label farewell_affectionate_enamored_waiting_for_you:
     n 4fsqgsl "Pero más te vale volver pronto."
     extend 3fcsajf " Es grosero hacer esperar a alguien por ti,{w=0.2} d-{w=0.1}después de todo."
     n 4fslssfsbl "Jajaja."
-    n 3fchbglsbr "¡L-{w=0.1}luego,{w=0.1} [player]!"
+    n 3fchbglsbr "¡N-{w=0.1}nos vemos luego,{w=0.1} [player]!"
 
     return { "quit": None }
 
@@ -1006,7 +1006,7 @@ init python:
 label farewell_affectionate_enamored_dont_make_me_find_you:
     n 2unmbol "¿Oh?{w=0.5}{nw}"
     extend 2unmajl " ¿Saliendo ahora,{w=0.1} [player]?"
-    n 1kllpol "Deseo...{w=0.75}{nw}"
+    n 1kllpol "Desearía...{w=0.75}{nw}"
     extend 4kslpol " que no tuvieras que hacerlo..."
     n 4fcsajl "Pero entiendo que tienes cosas que hacer."
     n 2fsqcal "Pero más te vale venir a verme luego.{w=0.5}{nw}"
@@ -1080,7 +1080,7 @@ label farewell_affectionate_enamored_see_me_soon:
     n 1ullajl "Bueno,{w=0.3}{nw}"
     extend 1fllcal " supongo que tenías que irte eventualmente."
     n 2fsqpol "Eso no significa que tenga que gustarme,{w=0.2} sin embargo..."
-    n 4knmpol "Ven a verme pronto,{w=0.2} ¿'kay?"
+    n 4knmpol "Ven a verme pronto,{w=0.2} ¿va?"
 
     return { "quit": None }
 
@@ -1096,7 +1096,7 @@ init python:
     )
 
 label farewell_affectionate_enamored_making_it_up:
-    n 4kslfl "Hombre...{w=1}{nw}"
+    n 4kslfl "Viejo...{w=1}{nw}"
     extend 4cnmfll " ¿en serio?{w=0.75}{nw}"
     extend 4csreml " ¡Vamos!{w=0.75}{nw}"
     n 2ccsslesi "..."
@@ -1122,7 +1122,7 @@ init python:
 
 label farewell_affectionate_enamored_stranger:
     n 1ccsflesi "..."
-    n 1kllfl "Hombre...{w=1}{nw}"
+    n 1kllfl "Viejo...{w=1}{nw}"
     extend 4tnmfl " ¿En serio?{w=0.75}{nw}"
     extend 4ksqflsbr " ¿Estás seguro de que no puedes quedarte un poco más?"
     n 2ccsemlesisbr "..."
@@ -1365,7 +1365,7 @@ init python:
     )
 
 label farewell_normal_happy_oh_right:
-    n 1tnmfleqm "¿Huh?{w=0.75}{nw}"
+    n 1tnmfleqm "¿Eh?{w=0.75}{nw}"
     extend 1ullbo " Oh,{w=0.2} cierto."
     n 1cchsm "¡Hasta luego,{w=0.2} [player]!"
 
@@ -1424,7 +1424,7 @@ init python:
     )
 
 label farewell_upset_distressed_later:
-    n 2nnmsf "Luego,{w=0.2} [player]."
+    n 2nnmsf "Hasta luego,{w=0.2} [player]."
 
     return { "quit": None }
 
@@ -1440,7 +1440,7 @@ init python:
     )
 
 label farewell_upset_distressed_kay:
-    n 3fllsf "Okay.{w=0.2} Luego."
+    n 3fllsf "Okay.{w=0.2} Nos vemos."
 
     return { "quit": None }
 
@@ -1769,7 +1769,7 @@ label farewell_short_session_ask_alt:
                     $ player_initial = jn_utils.getPlayerInitial()
                     n 1fbkwrfess "¡[player_initial]-{w=0.3}[player]!{w=0.75}{nw}"
                     extend 4fllwrf " ¡No salgas con cosas como esa!"
-                    n 2fcspofesi "Yeesh..."
+                    n 2fcspofesi "Dios..."
 
                     if Natsuki.isEnamored(higher=True):
                         extend 2flrpof " Juro que llevas las cosas demasiado lejos a veces."
@@ -1811,7 +1811,7 @@ label farewell_short_session_ask_alt:
             n 2flrem "...{i}Supongo{/i}."
             n 4fsgsm "..."
             n 4uchgnlelg "¡Oh,{w=0.2} anímate,{w=0.2} [player]!"
-            extend 3fchbglelg " ¡Hombre!"
+            extend 3fchbglelg " ¡Viejo!"
             n 3fchgnl "¡Deberías {i}saber{/i} a estas alturas que doy tanto como recibo!"
             n 3fchsml "Jejeje."
             n 1tllss "Ahora,{w=0.2} ¿dónde estábamos?"
@@ -1825,7 +1825,7 @@ label farewell_short_session_ask_alt:
             n 4fslsll "...Supongo que está bien."
             n 3fcsbol "Tienes cosas que hacer.{w=0.5}{nw}"
             extend 3fsrcal " Lo entiendo."
-            n 1fnmtrl "Pero {i}definitivamente{/i} vas a venir a visitar más tarde."
+            n 1fnmtrl "Pero {i}definitivamente{/i} vas a venir a visitarme más tarde."
             n 2kllcal "..."
             n 2knmcasbl "¿Verdad?"
 
@@ -1859,15 +1859,15 @@ label farewell_fake_confidence_ask:
 
     menu:
         n "...¿Verdad?"
-        "¡Verdad!":
+        "¡Claro!":
 
             n 3fcsbgfsbl "¡A-{w=0.3}Ajá!{w=0.75}{nw}"
             extend 3flrsslsbl " ¡Lo sabía!"
-            n 1fcsgsl "N-{w=0.2}no como si te necesitara aquí, o algo tonto como eso.{w=1.25}{nw}"
+            n 1fcsgsl "N-{w=0.2}no es como si te necesitara aquí, o algo tonto como eso.{w=1.25}{nw}"
             extend 2fcspolesi " {i}Obviamente{/i}."
             n 2fslemlsbr "Tendrías que ser bastante solitario para ser {i}tan{/i} dependiente de alguien más."
             n 2kslsllsbr "..."
-            n 1fcswrfesh "Bueno,{w=0.2} c-{w=0.2}como sea!{w=1}{nw}"
+            n 1fcswrfesh "Bueno,{w=0.2} ¡c-{w=0.2}como sea!{w=1}{nw}"
             extend 4fcspol " ¡Suficiente de eso!"
             n 2fllajl "Ya dijiste que te quedarías,{w=0.2} así que..."
             n 4fsldvlsbr "..."
@@ -1882,7 +1882,7 @@ label farewell_fake_confidence_ask:
             n 2fcswrlsbr "B-{w=0.2}bueno,{w=0.2} ¡está bien!"
             n 3flrpolesi "Supongo que eso significa que tendré que probar tu obediencia en otro momento.{w=1}{nw}"
             extend 3fsrdvless " Jejeje."
-            n 3fcsbgless "¡L-{w=0.2}luego,{w=0.2} [player]!"
+            n 3fcsbgless "¡N-{w=0.2}nos vemos,{w=0.2} [player]!"
 
             return { "quit": None }
     return

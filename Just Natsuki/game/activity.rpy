@@ -203,36 +203,36 @@ init python in jn_activity:
             "¡Olvidaste un punto y coma! [tease_emote]",
             "¡¿Cómo sueles leer todas esas cosas?!",
             "Y bien... ¿funciona? [tease_emote]",
-            "Qué ES ese mumbo-jumbo...",
-            "Ni siquiera sé dónde empezaría con las cosas codificantes...",
+            "¿Qué es esta escritua en árabe...?",
+            "Ni siquiera sé dónde empezaría con la codificación...",
             "¿Más cosas de programación?",
-            "Ya veo, ya veo. ¡Estás en el deber de nerd hoy! [tease_emote]",
+            "Ya veo, ya veo. ¡Estás modo nerd hoy! [tease_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.discord,
         window_name_regex="(- discord)",
         notify_text=[
-            "Alguien es una mariposa social, ¿eh?",
+            "Alguien anda de flor en flor, ¿eh?",
             "Sí, sí. Chateando, [player]~",
-            "Hombre... Ojalá tuviera algunos emotes...[sad_emote]",
-            "Tal vez debería comenzar un servidor...",
+            "Viejo... ojalá tuviera algunos emotes...[sad_emote]",
+            "Tal vez debería crear un servidor...",
             "¿Eh? ¿Alguien te envió un mensaje?",
-            "Eh? ¿Alguien te hizo ping? [confused_emote]",
-            "¡No solo pases todo el día apartado allí! [angry_emote]",
-            "No soy tan aburrida para hablar, ¿lo soy? [sad_emote]",
+            "¿Eh? ¿Alguien te ha mencionado? [confused_emote]",
+            "¡No solo pases todo el día encerrado allí! [angry_emote]",
+            "No soy tan aburrida al hablar, ¿verdad? [sad_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
         activity_type=JNActivities.music_applications,
         window_name_regex="(^spotify$|^spotify premium$|^groove$|^zune$|^itunes$|^musicbee$|^aimp$|^winamp$)",
         notify_text=[
-            "¡Será mejor que reproduzcas algo bueno!",
+            "¡Será mejor que pongas algo bueno!",
             "¿Nueva lista de reproducción, [player]?",
-            "¡Reproduzce unas melodías, [player]!",
-            "¿Cuándo puedo elegir algo, eh? [angry_emote]",
+            "¡Asegurate de reproducir temazos, [player]!",
+            "¿Cuándo podre elegir algo yo, eh? [angry_emote]",
             "¡Dale, [player]! [tease_emote]",
-            "Invisible... a ver si captas la referencia, todo un sólido. Jejeje [happy_emote]",
+            "Invencible... a ver si captas la referencia, jeje. [happy_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -244,7 +244,7 @@ init python in jn_activity:
             "¿Vas a jugar algo?",
             "Podrías haber dicho que estabas aburrido ... [sad_emote]",
             "Será mejor que no juegues nada raro...",
-            "Tiempo de jugar, ¿eh?",
+            "Hora de jugar, ¿eh?",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -252,10 +252,10 @@ init python in jn_activity:
         window_name_regex="(- youtube)",
         notify_text=[
             "YouTube, ¿eh? Creo que Sayori subió algo una vez...",
-            "¡Oh! ¡Oh! ¡Déjame mirar! [happy_emote]",
-            "¿Que es [player]?",
+            "¡Oh! ¡Oh! ¡Déjame ver a mi también! [happy_emote]",
+            "¿Que ves [player]?",
             "Será mejor que no estés viendo nada raro...",
-            "Solo... no videos de reacción. Por favor...[angry_emote]",
+            "Solo... no pongas videos de reacciones. Por favor...[angry_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -286,9 +286,9 @@ init python in jn_activity:
         activity_type=JNActivities.anime_streaming,
         window_name_regex="(^crunchyroll$)",
         notify_text=[
-            "¿Cuál es el sabor del mes?",
+            "A ver… ¿cuál es el anime que está de moda ahora?",
             "Tantas opciones...",
-            "Todavía no veo a las chicas parfait en ninguna parte...",
+            "Todavía no veo a las parfait girls en ninguna parte...",
             "¡Opciones infinitas! Jejeje",
             "Podría perder días aquí... [confused_emote]",
         ]
@@ -297,12 +297,12 @@ init python in jn_activity:
         activity_type=JNActivities.work_applications,
         window_name_regex="(- word| - excel| - powerpoint|openoffice|libreoffice)",
         notify_text=[
-            "Ew... trabajo...",
+            "Ew... laburo...",
             "¿Estás seguro de que tienes que hacer esto ahora, [player]? [confused_emote]",
-            "Ugh... Me recuerda mis tareas escolares...",
+            "Ugh... Me recuerda a mis tareas escolares...",
             "Genial... Ahora estoy recibiendo flashbacks de mis proyectos de grupo.",
-            "¡Booo-ring! Jejeje.",
-            "Me recuerda el trabajo escolar... [angry_emote]",
+            "¡Aburriii-doo! Jejeje.",
+            "Me recuerda a el trabajo escolar... [angry_emote]",
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(
@@ -310,7 +310,7 @@ init python in jn_activity:
         window_name_regex="(/ twitter)",
         notify_text=[
             "¡Hay tanto arte genial aquí!",
-            "Te juro que podría perder horas solo bajando por aquí...",
+            "Te juro que podría perder horas scrolleando...",
             "¡Oh! ¡Oh! ¿Soy tendencia?",
             "Debería revisar mi Twitter, ¿eh?",
             "¡Rayos! ¡Tengo que checar mi feed! [confused_emote]",
@@ -320,7 +320,7 @@ init python in jn_activity:
         activity_type=JNActivities.deviantart,
         window_name_regex="(deviantart - |\| deviantart)",
         notify_text=[
-            "Tanto. Arte.",
+            "¡Hay tanto arte!",
             "¡Oh! ¿Publicas cosas aquí, [player]?",
             "Solo... no busques nada raro...",
             "Yo... conozco este lugar.",
@@ -330,7 +330,7 @@ init python in jn_activity:
         activity_type=JNActivities.manga,
         window_name_regex="(- mangadex|- mangasee|- mangakot)",
         notify_text=[
-            "¿Cuál es el sabor del mes?",
+            "¿Qué manga esta de moda ahora?",
             "No hay Parfait Girls aquí... [sad_emote]",
             "¡Oh! ¿Qué estás leyendo? [happy_emote]",
             "¿Buscas la opinión de una EXPERTA? Jejeje.",
@@ -354,7 +354,7 @@ init python in jn_activity:
         notify_text=[
             "¡O-Oye! ¡Menos comida chatarra! [angry_emote]",
             "Cocinar no es TAN difícil, ¿sabes?... [angry_emote]",
-            "Será mejor que no te hagas el hábito...",
+            "Será mejor que no lo hagas un mal hábito...",
             "¡[player]! ¡Piensa en tu billetera! Cielos... [confused_emote]",
             "[player]... vamos... [sad_emote]",
             "Solo... no te acostumbres a esto. [angry_emote] ¿Por favor?",
@@ -375,7 +375,7 @@ init python in jn_activity:
         window_name_regex="(cubase|fl studio|reaper|mixcraft|studio one|logic pro|garageband|cakewalk|pro tools)",
         notify_text=[
             "¡Ooooh! ¿Estás creando ritmos?",
-            "¿Haciendo algunas tonadas? [confused_emote]",
+            "¿Qué estás haciendo ahí? [confused_emote]",
             "... ¿Debería empezar a tomar NOTAS? Jejeje.",
             "¡Oh! ¡Oh! ¡TENGO que escuchar esto!",
         ]
@@ -423,7 +423,7 @@ init python in jn_activity:
             "De compras, ¿eh? [tease_emote]",
             "¿Se te acabó algo de nuevo? Jejeje.",
             "¿Oh? ¿Tienes que comprar algo? [confused_emote]",
-            "Dinero para quemar, ¿eh?"
+            "Dinero que gastar, ¿eh?"
         ]
     ))
     ACTIVITY_MANAGER.registerActivity(JNPlayerActivity(

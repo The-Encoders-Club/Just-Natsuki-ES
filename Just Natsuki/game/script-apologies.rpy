@@ -56,7 +56,7 @@ label player_apologies_start:
         ]
         apologies_menu_items.sort()
 
-    call screen scrollable_choice_menu(apologies_menu_items, ("Go back", None), 400, "mod_assets/icons/apologies.png")
+    call screen scrollable_choice_menu(apologies_menu_items, ("Volver", None), 400, "mod_assets/icons/apologies.png")
 
     if isinstance(_return, basestring):
         $ push(_return)
@@ -183,8 +183,8 @@ label apology_bad_nickname:
             $ Natsuki.calculatedAffinityGain()
         else:
 
-            n 1fslan "...Guau.{w=0.75}{nw}"
-            extend 1fcsanl " Solo guau."
+            n 1fslan "...Wow.{w=0.75}{nw}"
+            extend 1fcsanl " Solo wow."
             n 4fnmfultsc "¿{i}Ahora{/i} eliges disculparte?"
             n 2fcsunltsa "..."
             n 2fcsemltsa "Lo que sea.{w=1}{nw}"
@@ -226,7 +226,7 @@ label apology_cheated_game:
         $ persistent.jn_snap_player_is_cheater = False
 
     elif Natsuki.isNormal(higher=True):
-        n 2tsqpueqm "¿Huh?{w=0.75}{nw}"
+        n 2tsqpueqm "¿Eh?{w=0.75}{nw}"
         extend 2nlrbo " Oh,{w=0.2} eso."
         n 1ncsaj "Sí,{w=0.2} sí.{w=0.75}{nw}"
         extend 1nslca " Está bien."
@@ -320,8 +320,8 @@ label apology_generic:
             extend 2fslsl " al menos."
         else:
 
-            n 1fcsfl "...Huh.{w=0.75}{nw}"
-            extend 1fcsan " Guau."
+            n 1fcsfl "...Eh.{w=0.75}{nw}"
+            extend 1fcsan " Wow."
             n 4fsqgtl "Así que {i}realmente{/i} sientes remordimiento,{w=0.2} entonces."
             n 2fcsunl "..."
             n 2fsqfultsb "Lo que sea.{w=0.75}{nw}"
@@ -478,7 +478,7 @@ label apology_rude:
         n 4nllsl "Sé recibir tanto como doy.{w=0.75}{nw}"
         extend 1nslsssbr " Y tal vez {i}sí{/i} soy un poco brusca a veces."
         n 3fcsaj "Pero eso fue realmente,{w=0.75}{nw}"
-        extend 3fcsem " {i}seriamente{/i}{w=0.5}{nw}"
+        extend 3fcsem " {i}muy{/i}{w=0.5}{nw}"
         extend 3fsqem " grosero."
         n 3fcsfl "No había necesidad de eso en absoluto."
         n 1ncssl "..."
@@ -497,7 +497,7 @@ label apology_rude:
         extend 2nsrsl " contenta de que te estés disculpando por lo que hiciste.{w=0.75}{nw}"
         extend 2fsqaj " Pero tienes que entender."
         n 4fnmgs "¡No puedes simplemente {i}tratar{/i} a la gente así!"
-        n 3knmfl "¿Seriamente crees que le vas a {i}agradar{/i} a la gente si actúas de esa manera?"
+        n 3knmfl "¿Realmente crees que le vas a {i}agradar{/i} a la gente si actúas de esa manera?"
         n 3ncsemesi "Cielos..."
         n 1ncsbo "..."
         n 2nllaj "Te ahorraré el sermón,{w=0.75}{nw}"
@@ -784,7 +784,7 @@ label apology_bad_player_name:
             n 2fllsrl "Porque {i}no{/i} lo hace,{w=0.2} [player]."
             n 2fcssrl "..."
             n 2kcsajsbl "...Mira.{w=1}{nw}"
-            extend 1nllpul " Es agua pasada,{w=0.2} ¿okey?{w=0.75}{nw}"
+            extend 1nllpul " Quedó en el pasado,{w=0.2} ¿okey?{w=0.75}{nw}"
             extend 4fllpol " Acepto tu disculpa."
             n 3fnmpol "Solo usa la cabeza la próxima vez.{w=0.75}{nw}"
             extend 3fcspol " {i}Sé{/i} que hay una sobre tus hombros en algún lugar."

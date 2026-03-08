@@ -344,19 +344,19 @@ label call_next_topic(show_natsuki=True):
                             "¡¡[player]! ¡[player]! ¿Quieres hablar? [happy_emote]",
                             "¡Hola! ¿Tienes un segundo? [happy_emote]",
                             "¿Quieres hablar? [happy_emote]",
-                            "¡¡[player]! ¡Tengo algo! [happy_emote]",
+                            "¡¡[player]! ¡Tengo algo que decirte! [happy_emote]",
                             "¡Heeey! ¿Quieres hablar?",
                             "¡Habla conmigooo! [angry_emote]",
-                            "¡Te estoy hablando, muñeco! [tease_emote]"
+                            "¡Te estoy hablando, mano! [tease_emote]"
                         ]
                     AFFECTIONATE_NOTIFY_MESSAGES = [
                             "¿Quieres hablar?",
                             "¡¡[player]! ¿Podemos hablar?",
-                            "Hey! Hey! ¡Habla conmigo! [angry_emote]",
-                            "¡Hey muñeco! ¡Te estoy hablando!",
-                            "¡[player]! ¡Solo pensé en algo! [confused_emote]",
+                            "¡Hey! ¡Hey! ¡Habla conmigo! [angry_emote]",
+                            "¡Hey mano! ¡Te estoy hablando!",
+                            "¡[player]! ¡Se me acaba de pasar algo por la mente! [confused_emote]",
                             "¡[player]! ¡Quiero hablar contigo!",
-                            "¡Solo pensé en algo, [player]!"
+                            "¡Acabo de pensar en algo, [player]!"
                         ]
                     HAPPY_NOTIFY_MESSAGES = [
                             "¡[player]! ¿Tienes un segundo?",
@@ -653,7 +653,7 @@ label talk_menu:
                 "¿Qué hay de nuevo,{w=0.1} [player]?",
                 "¿Sip,{w=0.1} [player]?",
                 "¿Quieres hablar?",
-                "¡Oye,{w=0.2} [player]!"
+                "¡Hey,{w=0.2} [player]!"
             ]))
 
         elif Natsuki.isDistressed(higher=True):
@@ -678,7 +678,7 @@ label talk_menu:
                 "Sólo escupelo ya.",
                 "Empieza a hablar.",
                 "No sigas con eso.",
-                "¿Qué es lo {i}tú{/i} quieres ahora?",
+                "¿Qué quieres {i}mi{/i} ahora?",
                 "Sigue adelante con eso.",
                 "Habla."
             ]))
@@ -699,12 +699,12 @@ label talk_menu:
             $ push("talk_i_love_you")
             jump call_next_topic
 
-        "Yo siento..." if Natsuki.isHappy(higher=True):
+        "Me siento..." if Natsuki.isHappy(higher=True):
             jump player_admissions_start
 
-        "Quiero decirte..." if Natsuki.isHappy(higher=True):
+        "Quiero decirte que..." if Natsuki.isHappy(higher=True):
             jump player_compliments_start
-        "Quiero decir lo siento...":
+        "Quisiera disculparme...":
 
             jump player_apologies_start
 
@@ -797,7 +797,7 @@ label farewell_menu:
 label outfits_menu:
     call screen scrollable_choice_menu([
         ("¿Puedes ponerte un atuendo para mí?", "outfits_wear_outfit"),
-        ("¿Puedes sugerirme un nuevo atuendo?", "outfits_suggest_outfit"),
+        ("¿Puedo sugerirte un nuevo atuendo?", "outfits_suggest_outfit"),
         ("¿Puedes olvidarte de un atuendo que sugerí?", "outfits_remove_outfit"),
         ("¿Puedes buscar de nuevo nuevos artículos?", "outfits_reload")],
         ("Volver", None),
@@ -881,7 +881,7 @@ label try_force_quit:
 
                 if Natsuki.isAffectionate(higher=True):
                     n 4kllssl "G-{w=0.2}gracias,{w=0.2} [player].{w=1}{nw}"
-                    n 1tllss "Ahora,{w=0.2} ¿Donde estaba yo?{w=1}{nw}"
+                    n 1tllss "Ahora,{w=0.2} ¿Donde estaba?{w=1}{nw}"
                     extend 1unmbo " ~Ah,{w=0.2} cierto.{w=1}{nw}"
 
                 elif Natsuki.isNormal(higher=True):
@@ -892,10 +892,10 @@ label try_force_quit:
 
                 elif Natsuki.isDistressed(higher=True):
                     n 1fsqfr "...gracias.{w=1}{nw}"
-                    n 1fslpu "Cómo estaba yo {i}diciendo{/i}...{w=1}{nw}"
+                    n 1fslpu "Bueno, como {i}estaba{/i} diciendo...{w=1}{nw}"
                 else:
 
-                    n 1fcsfr "Tal vez.{w=1}{nw}"
+                    n 1fcsfr "De acuerdo.{w=1}{nw}"
                     n 2fsqsl "{cps=7.5}Como estaba diciendo.{/cps}{w=1}{nw}"
 
                 $ Natsuki.setForceQuitAttempt(False)
@@ -914,7 +914,7 @@ label try_force_quit:
                     n 2kcsup "...!{nw}"
 
                 elif Natsuki.isNormal(higher=True):
-                    n 4fwmun "...De verdad,{w=0.2} [player]?{w=1}{nw}"
+                    n 4fwmun "...¿De verdad,{w=0.2} [player]?{w=1}{nw}"
                     play audio glitch_c
                     stop music
                     n 2kcsfu "¡Hnnng-!{nw}"
@@ -927,8 +927,8 @@ label try_force_quit:
                     n 2fcsan "¡Nnngg-!{nw}"
                 else:
 
-                    n 1fslun "Heh.{w=1}{nw}"
-                    extend 1fsqfr "...Tal vez {i}tú no deberías{/i} volver.{w=1}{nw}"
+                    n 1fslun "Jeh.{w=1}{nw}"
+                    extend 1fsqfr "...Tal vez {i}no deberías{/i} volver.{w=1}{nw}"
                     play audio glitch_c
                     stop music
                     n 1fcsfr "...{nw}"

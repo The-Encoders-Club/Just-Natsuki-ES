@@ -56,7 +56,7 @@ label random_music_change:
 
     $ track_followup = random.choice([
         "Ahora,{w=0.2} vamos a ver...",
-        "Ahora,{w=0.2} ¿Qué tenemos?",
+        "Bien,{w=0.2} ¿Qué tenemos?",
         "Veamos aquí...",
         "¿Qué más tenemos?",
         "¡Ajá!{w=0.5} ¡Vamos a probar esto!",
@@ -77,10 +77,10 @@ label random_music_change:
     $ track_complete = random.choice([
         "¡Hecho~!",
         "¡Todo listo!",
-        "¡Todo está bien!",
+        "¡Todo correcto!",
         "¡Allá vamos!",
-        "Y...{w=1} ¡estamos bien!",
-        "¡Okie-dokie!{w=0.75} Jejeje."
+        "Y...{w=1} ¡perfecto!",
+        "¡Oki-doki!{w=0.75} Jejeje."
     ])
 
     n 2uchbgeme "[track_complete]{w=2}{nw}"
@@ -131,10 +131,10 @@ label random_music_enable:
     elif preferences.get_volume("music") == 0:
 
         n 1nsqem "Oh...{w=0.5} eh."
-        n 2tsqca "¿Y cómo {i}exactamente{/i} planeas escucharlo con la música apagada?"
+        n 2tsqca "¿Y cómo {i}exactamente{/i} planeas escucharlo con la música muteada?"
         n 2uchbg "Dios mío...{w=0.3} a veces eres un tonto,{w=0.1} [player].{w=0.5}{nw}"
         extend 4nchsm " Jejeje."
-        n 3fwlsm "Vuelve a subirlo,{w=0.1} y luego hablaremo,.{w=0.2} ¿de acuerdo?"
+        n 3fwlsm "Vuelve a subirlo,{w=0.1} y luego hablaremos,{w=0.2} ¿de acuerdo?"
     else:
 
 
@@ -189,7 +189,7 @@ label random_music_disable:
         fadein=2)
     $ jnPause(2)
 
-    n 2nwlbg "...Y allá vamos!"
+    n 2nwlbg "...Y ahí vamos!"
 
     $ jn_custom_music.hideMusicPlayer()
     $ jn_custom_music._last_music_option = jn_custom_music.JNMusicOptionTypes.location

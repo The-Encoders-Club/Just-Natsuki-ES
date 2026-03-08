@@ -1813,7 +1813,7 @@ init -100 python in jn_utils:
             "bobo",
             "payasito",
             "torpe",
-            "neno",
+            "nena",
             "bobo",
             "gran idiota",
             "gran tonto",
@@ -1829,7 +1829,7 @@ init -100 python in jn_utils:
             "tonto",
             "idiota",
             "estúpido",
-            "rosquilla",
+            "gran genio",
             "bobo"
         ])
 

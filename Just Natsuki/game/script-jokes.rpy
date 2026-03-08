@@ -809,7 +809,7 @@ label joke_cute_chicks:
 label joke_lumberjack_axeception:
     n 1unmaj "¿Qué haría un leñador si no pudiera cortar un árbol?"
     n 1flrsm "..."
-    n 1flrss "Tendrían un...{w=1}{nw}"
+    n 1flrss "Tendría un...{w=1}{nw}"
     extend 1fsqbg " {i}hacha{/i}{w=1.25}{nw}"
     extend 1nchgn "-que!"
 
@@ -862,7 +862,7 @@ label joke_running_latte:
     n 1fcsfl "¿Cómo llamas a un barista que no llegó a trabajar a tiempo?"
     n 1nsrsl "..."
     n 1ncsfl "Llegó...{w=1.25}{nw}"
-    extend 1fslcasbl " {i}latte{/i}."
+    extend 1fslcasbl " {i}bien cargado{/i}."
 
     return
 
@@ -887,7 +887,7 @@ label joke_snek_maths:
     return
 
 label joke_balloonist_hot_air:
-    n 1nsqsl "...¿Qué tienen en común un aerostero arrogante y su globo?"
+    n 1nsqsl "...¿Qué tienen en común un aeronauta arrogante y su globo?"
     n 1ncsemesi "..."
     n 1nsrem "Ambos están llenos de...{w=0.75}{nw}"
     extend 1nslajsbr " {i}aire{w=0.3} caliente{/i}."
@@ -900,7 +900,7 @@ label joke_author_cover_story:
     n 1fsqsm "..."
     n 1fcssm "Jeje.{w=0.75}{nw}"
     extend 1fchbg " ¿Qué más?"
-    n 1uchgn "...¡Escribirían una {i}historia de portada{/i}!"
+    n 1uchgn "...¡Se inventa {i}una historia{/i}!"
 
     return
 
@@ -958,7 +958,7 @@ label joke_regular_moovements:
     n 1fsrsl "..."
     n 1fsrpu "Porque no es parte de sus regulares..."
     n 1fcsflesi "..."
-    n 1fslflsbr "...{i}moo{/i}{w=1}-vimeintos."
+    n 1fslflsbr "...{i}moo{/i}{w=1}-vimientos."
 
     return
 
@@ -1002,8 +1002,8 @@ label joke_footless_snakes:
     extend 1tnmfl " ¿{i}te{/i} has preguntado alguna vez cómo se miden las serpientes?"
     n 1uwdaj "¡Especialmente con todos esos tamaños diferentes!"
     extend 1fsqcs " ¿Qué tipo de medida funcionaría {i}mejor{/i}?"
-    n 1fcsss "Bueno,{w=0.2} supongo que te quedarías con el sistema métrico..."
-    n 1fsqbg "...¡Porque definitivamente no vas a usar {i}pies{/i}!"
+    n 1fcsss "Bueno,{w=0.2} supongo que se quedarían con el sistema métrico..."
+    n 1fsqbg "...¡Porque definitivamente no van a usar {i}pies{/i}!"
     extend 1nchgn "!"
 
     return
@@ -1069,7 +1069,7 @@ label joke_cheesy_pizza:
     n 1fsrfl "Pero...{w=0.75}{nw}"
     extend 1fcsem " ugh."
     n 1fslsl "Sí.{w=0.3} De ninguna manera voy a compartir algo...{w=1}{nw}"
-    extend 1nsqpo " {i}tan cursi{/i}."
+    extend 1nsqpo " {i}tan empalagoso{/i}."
 
     return
 
@@ -1122,12 +1122,12 @@ label joke_burned_tongue:
     return
 
 label joke_pointless_pencil:
-    n 1fllfl "Hombre..."
+    n 1fllfl "Viejo..."
     n 1fcsem "Estaba {i}intentando{/i} trabajar en mi poesía,{w=0.2} ¡y mi lápiz decidió romperse!{w=0.75}{nw}"
     extend 1fslpo " Genial."
     n 1cllaj "{i}Iba{/i} a contar un chiste sobre ello..."
     n 1tnmbo "¿Pero ahora?{w=0.5}{nw}"
-    extend 1fsqsm " No tiene {i}punta{/i}."
+    extend 1fsqsm " No tiene {i}punto{/i}."
 
     return
 
@@ -1138,12 +1138,12 @@ label joke_know_the_drill:
     n 1fllfl "Es como...{w=1}{nw}"
     extend 1fcsbo " Entiendo que tienen un trabajo que hacer.{w=0.75}{nw}"
     extend 1fsran " ¡¿Pero seriamente tienen que empezar tan {i}temprano{/i}?!{w=0.75}{nw}"
-    extend 1fcsan " ¡Yeesh!"
+    extend 1fcsan " ¡Dios!"
     n 1cslsl "..."
     n 1cslaj "Pero...{w=1}{nw}"
     extend 1cllca " te terminas acostumbrando a todo el ruido después de un rato,{w=0.2} supongo."
     n 1cnmss "Supongo que eventualmente solo...{w=1}{nw}"
-    extend 1fsqbg " te sabes el {i}taladro{/i},{w=0.75}{nw}"
+    extend 1fsqbg " empatizas con el {i}taladro{/i},{w=0.75}{nw}"
     extend 1nchgn " ¿verdad?"
 
     return
@@ -1159,7 +1159,7 @@ label joke_can_do_attitude:
     extend 1fcssmesm " ¿No es obvio?"
     n 1fcsbg "...Solo necesitas una actitud de{w=0.5}{nw}"
     extend 1fsqbg " ¡yo {i}puedo{/i}!{w=1}{nw}"
-    extend 1uchgn " ...¡hacer latas!"
+    extend 1uchgn " ...¡enlatarlo todo!"
 
     return
 
@@ -1173,7 +1173,7 @@ label joke_out_of_ctrl:
     extend 1fslpo " ¡incluso el otro día escuché sobre lugares quedándose sin partes para teclados!"
     n 1fcsss "...Je."
     n 1fcstr "Supongo que su gestión realmente debe estar{w=0.5}{nw}"
-    extend 1fsqbg " fuera de {i}Control{/i},{w=0.75}{nw}"
+    extend 1fsqbg " fuera de {i}cntrl{/i},{w=0.75}{nw}"
     extend 1fchgn " ¿eh?"
 
     return
@@ -1192,8 +1192,8 @@ label joke_escape_artists:
     n 1cllsl "¿Por qué no deberías confiar en que un escapista aparezca en una invitación?"
     n 1csrbosbr "..."
     n 1ccsemsbr "..."
-    n 1nsrtrsbr "...Porque siempre están siendo{w=0.5}{nw}"
-    extend 1csqcasbr " {i}atados{/i}."
+    n 1nsrtrsbr "...Porque nunca logran{w=0.5}{nw}"
+    extend 1csqcasbr " {i}desatar{/i} su agenda."
 
     return
 
@@ -1240,10 +1240,10 @@ label joke_developers_committed:
     extend 1tllbo " ¿Los que se meten con código y todas esas cosas?"
     n 1tsqsl "..."
     n 1tsqfl "¿No?{w=0.75}{nw}"
-    extend 1clrpu " Huh.{w=1}{nw}"
+    extend 1clrpu " Eh.{w=1}{nw}"
     extend 1csqss " ¿Seguro,{w=0.2} [player]?"
     n 1fcsss "Porque por lo que estoy leyendo aquí..."
-    n 1nchgn "...¡Parece que siempre están bastante {i}comprometidos{/i} ya!"
+    n 1nchgn "...¡Parece que ya están bastante {i}comprometidos{/i} con el repositorio!"
 
     return
 
@@ -1316,7 +1316,7 @@ label joke_bakers:
     n 1ccsemesi "..."
     n 1clrtr "¿Cómo describes a un panadero a punto de romper su propio récord?"
     n 1csrsl "..."
-    n 1ccsflsbl "...Hombre,{w=0.5}{nw}"
+    n 1ccsflsbl "...Viejo,{w=0.5}{nw}"
     extend 1fslemsbl " esto es tonto."
     n 1cllajsbl "Estaría...{w=1}{nw}"
     extend 1csqemsbl " {i}en racha{/i}."
@@ -1325,7 +1325,7 @@ label joke_bakers:
 
 label joke_ravioli_pasta_way:
     n 1cslflsbr "...No puedo {i}creer{/i} que esté leyendo este.{w=0.75}{nw}"
-    extend 1ccsslsbr " Yeesh."
+    extend 1ccsslsbr " Dios."
     n 1csrbo "..."
     n 1clrfl "¿Escuchaste sobre el chef que simplemente no podía dejar los raviolis?"
     n 1cnmsl "..."
@@ -1337,14 +1337,14 @@ label joke_ravioli_pasta_way:
     return
 
 label joke_spices:
-    n 1csqbg "OKay.{w=0.75}{nw}"
+    n 1csqbg "Okay.{w=0.75}{nw}"
     extend 1fcsbs " ¡Entonces!"
     n 1unmss "¿Cuándo empezaría un chef a añadir pimentón y chile en polvo extra a un plato que pediste?"
     n 1cnmsm "..."
     n 1csqss "¿No?{w=0.75}{nw}"
     extend 1fcsaj " ¡Vamos,{w=0.2} [player]!{w=0.75}{nw}"
     extend 1fnmbg " ¡Incluso {i}tú{/i} deberías haber clavado este!"
-    n 1fcsbg "...Cuando quiere{w=0.5}{nw}"
+    n 1fcsbg "...Cuando quisiera{w=0.5}{nw}"
     extend 1fsqss " {i}condimentar{/i}{w=0.75}{nw}"
     extend 1fchbs " tu vida,{w=0.5}{nw}"
     extend 1nchgn " ¡por supuesto!"
@@ -1379,7 +1379,7 @@ label joke_octo_puss:
     return
 
 label joke_roller_blade:
-    n 1fcsbg "Veamos cuánto te {i}china{/i} este,{w=0.5}{nw}"
+    n 1fcsbg "Veamos cuánto te {i}pega{/i} este,{w=0.5}{nw}"
     extend 1fsqbg " [player]!"
     n 1fcsaj "¡Entonces!{w=0.75}{nw}"
     extend 1unmaj " ¿Qué usa un patinador profesional para un afeitado limpio?"
@@ -1388,7 +1388,7 @@ label joke_roller_blade:
     extend 1fsqbg " ¿Ni siquiera una conjetura?{w=0.75}{nw}"
     extend 1fsgsm " Ehehe."
     n 1fcsbs "¡Fácil!"
-    n 1ullbg "¡Usarían una hoja de...{w=0.75}{nw}"
+    n 1ullbg "¡Usarían una cuchilla de...{w=0.75}{nw}"
     extend 1uchbg " {i}patinar{/i}!{w=0.75}{nw}"
     extend 1fchgn " ¡Duh!"
 
@@ -1429,7 +1429,7 @@ label joke_keymakers_lockstep:
     return
 
 label joke_tube_piping_hot:
-    n 1ccsbg "Veamos si este es de tu gusto,{w=0.5}{nw}"
+    n 1ccsbg "A ver si esto es de tu talla,{w=0.5}{nw}"
     extend 1fsgsm " [player]."
     n 1fcsbg "¿Puedes comer comida que alguien preparó dentro de un tubo?"
     n 1fsqsm "..."
@@ -1457,19 +1457,19 @@ label joke_booked_it:
     extend 1fnmbg " Veamos si puedes {i}leer{/i}{w=0.5}{nw}"
     extend 1fcssmesm " este,{w=0.2} [player]."
     n 1fcsaj "¡Entonces!"
-    n 1unmfl "¿Escuchaste sobre ese autor famoso que la policía detuvo el otro día?"
+    n 1unmfl "¿Escuchaste sobre ese cantante famoso que la policía detuvo el otro día?"
     n 1tnmsl "..."
     n 1csqsm "¿No?"
     n 1ccsss "Je.{w=0.75}{nw}"
     extend 1flrbg " No puedo decir que me sorprenda."
-    n 1fchbg "...Porque se fue {i}leyendo{/i},{w=0.75}{nw}"
+    n 1fchbg "...Porque se fue {i}sienti-endo{/i},{w=0.75}{nw}"
     extend 1fchgnelg " ¡obviamente!"
 
     return
 
 label joke_sheep_flock:
     n 1fcsfl "Ugh..."
-    n 1fsrca "Quienquiera que añadió este {i}definitivamente{/i} tenía lana entre las orejas.{w=0.75}{nw}"
+    n 1fsrca "Quien sea que añadió este {i}definitivamente{/i} tenía lana entre las orejas.{w=0.75}{nw}"
     extend 1fsraj " Eso es todo lo que digo."
     n 1fcsflesi "..."
     n 1cllbo "Lo que sea.{w=0.75}{nw}"
@@ -1513,7 +1513,7 @@ label joke_new_heights:
     n 1cslsl "..."
     n 1ccsflesi "Ugh..."
     n 1cllpu "...Alcanzan{w=0.75}{nw}"
-    extend 1csqem " {i}nuevas alturas{/i}."
+    extend 1csqem " {i}la cima{/i}."
 
     return
 
@@ -1545,8 +1545,8 @@ label joke_butterfly:
     return
 
 label joke_crampons:
-    n 1fdrfl "Sheesh...{w=1}{nw}"
-    extend 1fsrem " ¿Es este en serio lo {i}mejor{/i} que pudieron hacer?{w=0.75}{nw}"
+    n 1fdrfl "Dios...{w=1}{nw}"
+    extend 1fsrem " ¿En serio esto es lo {i}mejor{/i} que pudieron hacer?{w=0.75}{nw}"
     extend 1fcsem " Dame un respiro."
     n 1fllfl "Ugh.{w=0.75}{nw}"
     extend 1fcsfl " ¿Qué es lo peor que le puedes dar a un escalador de hielo con un esguince?"
@@ -1564,15 +1564,15 @@ label joke_frog_notes:
     extend 1csgsl " ¿Cómo toman notas las ranas para la clase?"
     n 1clrsl "..."
     n 1fsrsl "..."
-    n 1fcsfl "Usan sus {i}notas{/i}-{w=0.75}{nw}"
-    extend 1csqfl " fures."
+    n 1fcsfl "Usan sus notas {i}croac{/i}-{w=0.75}{nw}"
+    extend 1csqfl " tadas."
 
     return
 
 label joke_sea_urchins:
     n 1ccsflesi "..."
     n 1csqem "¿En serio tengo que leerte {i}este{/i}?{w=0.75}{nw}"
-    extend 1csrfl " Hombre..."
+    extend 1csrfl " Viejo..."
     n 1ccsaj "Bien.{w=0.2} ¿Qué tipo de vida marina causa más problemas en las calles?"
     n 1csgslsbl "..."
     n 1fllemsbl "Ugh.{w=0.75}{nw}"
@@ -1615,13 +1615,13 @@ label joke_wolves_alphabet:
     extend 1fllbg " Veremos quién está{w=0.75}{nw}"
     extend 1fsqss " {i}aullando{/i}{w=0.75}{nw}"
     extend 1fcsss " después de este."
-    n 1fcsaj "'Kay.{w=0.75}{nw}"
+    n 1fcsaj "Va.{w=0.75}{nw}"
     extend 1fcssm " ¡Entonces!"
     n 1unmaj "¿Qué es lo primero que aprendería un lobo si empezara a ir a la escuela?"
     n 1cnmsm "..."
     n 1csqss "¿Oh?{w=0.75}{nw}"
     extend 1csqbg " ¿No vas a morder el anzuelo,{w=0.2} [player]?"
-    n 1ccssm "Ehehe."
+    n 1ccssm "Jeje."
     n 1flrbg "Aprenderían el {i}alfa{/i}-{w=0.75}{nw}"
     extend 1fsqbg "beto,{w=0.5}{nw}"
     extend 1fchbs " ¡Duh!"
@@ -1636,8 +1636,8 @@ label joke_sailor_shipshape:
     n 1cslfl "¿Cómo describes a un marinero que entrena todos los días?"
     n 1cllslsbr "..."
     n 1fdlslsbr "..."
-    n 1fsqfl "...En forma... de{w=0.75}{nw}"
-    extend 1fsrem "{i}barco{/i}."
+    n 1fsqfl "...En forma...{w=0.75}{nw}"
+    extend 1fsrem "{i}naval{/i}."
 
     return
 
@@ -1647,7 +1647,7 @@ label joke_seamstress_thread:
     n 1clrfl "¡Sí!{w=0.75}{nw}"
     extend 1cnmwr " Hablando de implacable.{w=0.75}{nw}"
     extend 1csqemsbr " ¿Te imaginas todo lo que costaría arruinarlo todo,{w=0.2} trabajando así?"
-    n 1ccsfl "Hombre...{w=1}{nw}"
+    n 1ccsfl "Viejo...{w=1}{nw}"
     extend 1tnmpu " ¿Si algo pasara?"
     n 1ccsss "...Je."
     n 1fllss "Supongo que realmente estaría{w=0.5}{nw}"
@@ -1673,7 +1673,7 @@ label joke_sting_operation:
     return
 
 label joke_sculptors_steak_marbled:
-    n 1fcsbg "¡'Kay!{w=0.75}{nw}"
+    n 1fcsbg "¡Va!{w=0.75}{nw}"
     extend 1fsqbg " Entonces,{w=0.2} [player]..."
     n 1fsgss "¿Cómo prefieren los escultores sus filetes?"
     n 1fsgsm "..."
@@ -1694,13 +1694,13 @@ label joke_rhetorical:
     return
 
 label joke_fuzz:
-    n 1ccsflesi "...Hombre,{w=0.2} esto es tonto.{w=0.75}{nw}"
+    n 1ccsflesi "...Viejo,{w=0.2} esto es tonto.{w=0.75}{nw}"
     extend 1csrsl " Bien."
     n 1ccsaj "¿A quién llamas por alguien que solo roba lana,{w=0.2} hilo,{w=0.2} y calcetines esponjosos?"
     n 1cnmbo "..."
     n 1cllbo "..."
     n 1cnmfl "...A la{w=0.5}{nw}"
-    extend 1cslfl " {i}pelusa{/i}-icía."
+    extend 1cslfl " {i}pelus{/i}-ía."
 
     return
 
@@ -1742,7 +1742,7 @@ label joke_rose_thorns:
     n 1ccsss "¡Mejor{w=0.5}{nw}"
     extend 1csgbg " {i}agudiza{/i}{w=0.5}{nw}"
     extend 1fnmbg " el oído para esto!"
-    n 1fcsaj "¡'Kay!{w=0.75}{nw}"
+    n 1fcsaj "¡Va!{w=0.75}{nw}"
     extend 1fcssm " Entonces."
     n 1tsqbg "¿Por qué el jardinero renunció a plantar rosas?"
     n 1fnmsm "..."

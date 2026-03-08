@@ -966,7 +966,7 @@ label event_code_fiddling:
     n "¡Ajá!{w=0.5}{nw}"
     extend " Ya veo,{w=0.2} ya veo."
     n "Entonces,{w=0.3} creo...{w=1}{nw}"
-    extend " si solo...{w=1.5}{nw}"
+    extend " si solo intento...{w=1.5}{nw}"
     extend " muy...{w=2}{nw}"
     extend " cuidadosamente...{w=0.5}{nw}"
 
@@ -1136,7 +1136,7 @@ label event_renpy_for_dummies:
     n "¡Sep!{w=1.5}{nw}"
     extend " ¡No tengo idea de lo que estoy haciendo!"
     n "No puedo creer que pensé que {i}esto{/i} me ayudaría...{w=1.5}{nw}"
-    extend " '{i}galardonado{/i}',{w=0.2} mis polainas."
+    extend " '{i}galardonado{/i}',{w=0.2} según quién."
     $ jnPause(7)
 
     menu:
@@ -1267,7 +1267,7 @@ label event_drinking_strawberry_milkshake:
     play audio straw_sip
     $ jnPause(3)
 
-    n "Guau,{w=0.3} extrañaba estos...{w=1}{nw}"
+    n "Wow,{w=0.3} extrañaba estos...{w=1}{nw}"
     extend " ¡¿por qué no pensé en esto antes?!"
 
     play audio straw_sip
@@ -1292,7 +1292,7 @@ label event_drinking_strawberry_milkshake:
     extend 2flleml " Desearía que dejaras de simplemente {i}aparecer{/i} así..."
     n 1fcseml "Cielos...{w=1}{nw}"
     extend 4fsqpo " ¡casi haces que lo derrame!"
-    n 4flrpo "Al menos déjame terminar aquí muy rápido..."
+    n 4flrpo "Al menos deja que termine con esto..."
 
     show natsuki 2fcsdrl
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -1305,8 +1305,8 @@ label event_drinking_strawberry_milkshake:
 
     n 4ncsss "Ah..."
     n 1uchgn "¡Viejo,{w=0.2} eso dio en el clavo!"
-    n 4fsqbg "Y ahora estoy toda fresca...{w=1}{nw}"
-    extend 3tsqsm " ¿qué pasa, [player]?{w=1}{nw}"
+    n 4fsqbg "Y ahora me siento más fresca...{w=1}{nw}"
+    extend 3tsqsm " ¿qué hay de nuevo, [player]?{w=1}{nw}"
     extend 3fchsm " Jejeje."
 
     return
@@ -1331,20 +1331,20 @@ label event_step_by_step_manga:
     n "..."
     play audio page_turn
     $ jnPause(2)
-    n "Jeez..."
-    n "Who {i}drew{/i} this?!"
-    n "I feel like I'm gonna vomit rainbows or something!"
+    n "Demonios..."
+    n "¡¿Quién {i}dibujo{/i} esto?!"
+    n "¡Siento que voy a vomitar arcoíris o algo así!"
     $ jnPause(3)
     play audio page_turn
     $ jnPause(2)
     play audio page_turn
     $ jnPause(1)
-    n "Man..."
-    n "A-{w=0.3}alright,{w=0.2} enough drooling over the art!{w=1.5}{nw}"
-    extend " You got this thing for a reason,{w=0.2} Natsuki..."
-    n "Step by step..."
-    n "Improve my daily confidence,{w=0.3} huh?{w=1.5}{nw}"
-    extend " Okaaay..."
+    n "Vaya..."
+    n "B-{w=0.3}bueno,{w=0.2} ¡ya basta de babear por el arte!{w=1.5}{nw}"
+    extend " Te lo conseguiste por una razón,{w=0.2} Natsuki..."
+    n "Paso a paso..."
+    n "Mejorar mi confianza diaria,{w=0.3} ¿eh?{w=1.5}{nw}"
+    extend " Bueeeno..."
 
     $ jnPause(1)
     play audio page_turn
@@ -1365,31 +1365,31 @@ label event_step_by_step_manga:
 
     n 1uskemesh "...!"
     $ player_initial = jn_utils.getPlayerInitial()
-    n 1fpawrf "[player_initial]-{w=0.3}[player]!{w=0.2} Again?!{w=1}{nw}"
+    n 1fpawrf "[player_initial]-{w=0.3}[player]!{w=0.2} ¡¿Otra vez?!{w=1}{nw}"
     extend 1fbkwrf " D-{w=0.3}do you really have to barge in like that {i}every{/i} time?"
-    n 1flrunfess "Yeesh...{w=1}{nw}"
-    extend 1fsremfess " I swear you're gonna be the death of me one of these days..."
+    n 1flrunfess "Deminios...{w=1}{nw}"
+    extend 1fsremfess " Te juro que uno de estos días vas a matarme del susto..."
     n 1fslpol "..."
-    n 1tsqsll "...Huh?"
-    n 1tnmpul "What?{w=0.2} Is something on my face?"
+    n 1tsqsll "...¿Eh?"
+    n 1tnmpul "¿Qué?{w=0.2} ¿Tengo algo en la cara?"
     n 1tllpuleqm "..."
-    n 1uskajlesu "O-{w=0.3}oh!{w=0.75}{nw}"
-    extend 1fdwbgl " The book!"
-    n 1fcsbglsbl "I was just..."
-    n 1fllunl "I was..."
+    n 1uskajlesu "¡A-{w=0.3}ah!{w=0.75}{nw}"
+    extend 1fdwbgl " ¡El libro!"
+    n 1fcsbglsbl "Yo solo..."
+    n 1fllunl "Yo..."
     n 1fcsunf "Nnnnnn-!"
-    n 1fcswrl "I-{w=0.2}I just like the artwork!{w=1}{nw}"
-    extend 1fllemlsbl " That's all it is!"
-    n 1fcswrl "I'm {i}super{/i} confident already!"
+    n 1fcswrl "¡S-{w=0.2}solo me gusta el arte!{w=1}{nw}"
+    extend 1fllemlsbl " ¡Eso es todo!"
+    n 1fcswrl "¡Ya tengo {i}mucha{/i} confianza!"
     n 1fllunlsbl "..."
-    n 1fcsemlsbr "A-{w=0.2}and besides,{w=1}{nw}"
-    extend 1fllpol " even if I {i}was{/i} reading it for the self-{w=0.2}help stuff..."
+    n 1fcsemlsbr "Y-{w=0.2}y además,{w=1}{nw}"
+    extend 1fllpol " Aunque {i}sí{/i} lo estuviera leyendo por lo de auto-{w=0.2}ayuda..."
     n 1kllsll "..."
-    n 1kwmpul "...What'd be wrong with that?"
-    n 1fcsbol "It takes real guts to admit to yourself that you can do better.{w=1}{nw}"
-    extend 1fnmbol " Can {i}be{/i} better."
-    n 1fsrbol "...And only a real jerk would tease someone for trying."
-    n 1fcsajl "Never forget that."
+    n 1kwmpul "...¿Que tendría de malo?"
+    n 1fcsbol "Hace falta mucho valor para admitir ante ti misma que puedes hacerlo mejor.{w=1}{nw}"
+    extend 1fnmbol " Que {i}puedes{/i} ser mejor."
+    n 1fsrbol "...Y solo alguien realmente cruel se burlaría de alguien por intentarlo."
+    n 1fcsajl "No lo olvides."
 
     show natsuki 1ccscal
     show black zorder JN_BLACK_ZORDER with Dissolve(0.5)
@@ -1402,8 +1402,8 @@ label event_step_by_step_manga:
     $ jnPause(0.5)
 
     n 4nllcal "..."
-    n 4ullajl "So..."
-    n 3tnmsslsbr "What's new,{w=0.2} [player]?"
+    n 4ullajl "Así que..."
+    n 3tnmsslsbr "¿Qué hay de nuevo,{w=0.2} [player]?"
 
     return
 
@@ -1708,7 +1708,7 @@ label event_wintendo_twitch_battery_dead:
     play audio button_tap_b
     extend " ¡Está justo ahí!{w=0.75}{nw}"
     extend " ¡Estoy TAN {i}cerca{/i}!"
-    play audio button_tap_a
+    play audio button_tap_ahg
     n "Vamos...{w=1}{nw}"
     play audio button_mashing_c
     extend " ¡{i}vamos{/i}...!"
@@ -1873,7 +1873,7 @@ label event_wintendo_twitch_game_over:
     n 1fcswrlsbr "¡T-tú arruinaste totalmente mi ritmo!{w=0.75}{nw}"
     extend 1fsqpolsbl " ¡Gran idiota!"
     n 1kcsemesisbl "..."
-    n 1kdwwr "¿...Y ahora tengo que hacer {i}eso{/i} todo de nuevo?{w=1}{nw}"
+    n 1kdwwr "¿...Y ahora tengo que hacer {i}todo eso{/i} de nuevo?{w=1}{nw}"
     extend 1kcspu " Viejo..."
     n 1fslsl "..."
     n 1flrtr "Supongo que haré eso después."
@@ -1968,7 +1968,7 @@ label event_warm_package:
         n "¡Uuuuuuu...!"
         n "Como si estar atrapada aquí no fuera suficiente frialdad..."
         n "¡Ahora el {i}clima{/i} me está dando una!{w=1} ¡Literalmente!"
-        n "¡Olvida la congelación!{w=0.3} ¡Se me está congelando el-{w=0.5}{i}trasero{/i}!{w=1} He terminado {i}tanto{/i} con esto..."
+        n "¡Olvida la congelación!{w=0.3} ¡Se me está congelando el-{w=0.5}{i}trasero{/i}!{w=1} He tenido {i}suficiente{/i} de esto..."
         n "..."
         n "¡Oh, al diablo!{w=0.75} ¡Soy una chica de acción!"
         n "¡No tengo que aguantar esto!"
@@ -2049,7 +2049,7 @@ label event_warm_package:
         play audio gift_open
         n "...¿Eh?{w=0.2} ¿Y es esto...?"
         n "¡L-lo es!"
-        n "Oh viejo...{w=1} ¡PREMIO MAYOR!{w=0.75} Jejeje."
+        n "Oh viejo...{w=1} ¡JACKPOT!{w=0.75} Jejeje."
 
     play audio switch_flip
     $ jnPause(2)
@@ -2305,7 +2305,7 @@ label event_sanjo:
     n 4ccsemsbl "Ugh..."
     n 2flrflsbr "Realmente desearía que dejaras de hacer eso.{w=0.75}{nw}"
     extend 2fsqposbr " Gran tonto.{w=0.75}{nw}"
-    extend 2ccsposbr " Ya deberías saber que odio que me hagan saltar."
+    extend 2ccsposbr " Ya deberías saber que odio que me asusten."
     n 4ccsemsbl "Y-{w=0.2}y de todos modos,{w=0.2} [player].{w=0.75}{nw}"
     extend 4cllaj " ¿No puedes ver que ya estoy {i}ocupada{/i} aquí?{w=0.75}{nw}"
     extend 3cslbo " Caray."
@@ -2378,7 +2378,7 @@ label event_sanjo:
     extend 3clrpu " Luego simplemente nunca se molestó en llevárselo de vuelta."
     n 3tlraj "Así que...{w=1}{nw}"
     extend 7tnmbo " Supongo que simplemente nos acostumbramos a tenerlo cerca,{w=0.2} supongo."
-    n 4cslfl "...Aún así no explica por qué alguien simplemente decidió empujarlo debajo del escritorio del profesor aunque.{w=0.75}{nw}"
+    n 4cslfl "...Aún así no explica por qué alguien simplemente decidió empujarlo debajo del escritorio del profesor.{w=0.75}{nw}"
     extend 4fslem " Idiotas."
     n 2ccsfl "Bueno,{w=0.2} lo que sea.{w=0.75}{nw}"
     extend 2ulrfl " Ha sido dejado por ahí el tiempo suficiente,{w=0.5}{nw}"
@@ -2399,7 +2399,7 @@ label event_sanjo:
     extend 7unmbo " no es como si realmente tuviera que desviarme de mi camino para cuidarlo tampoco.{w=1}{nw}"
     extend 3cdlss " Creo que puedes adivinar por qué."
     n 1ullss "Un poco de luz solar aquí,{w=0.2} un par de chorritos de agua allá...{w=1}{nw}"
-    extend 2fcsbg " ¿qué tan difícil podría {i}posiblemente{/i} ser?"
+    extend 2fcsbg " ¿qué tan {i}difícil{/i} podría ser?"
     n 2fcssmesm "Jejeje."
     n 4fcsaj "¡Entonces!"
     n 2flrss "Mejor mantén tus ojos y oídos{w=0.5}{nw}"
@@ -2738,7 +2738,7 @@ label event_blackjack_unlock:
     extend 3fsqsm " [player]?"
     n 6fcsbg "...¡Algo de estrategia real!{w=0.75}{nw}"
     extend 6fchgn " ¡Duh!"
-    n 1fnmbg "¿Y qué mejor manera de asegurarse de que realmente estás usando tu coco que un juego donde tienes que pensar por una vez en tus movimientos?"
+    n 1fnmbg "¿Y qué mejor manera de asegurarse de que realmente estás usando el cerebro que en un juego donde tienes que pensar por una vez en tus movimientos?"
     n 7fcsbg "¡Lo adivinaste!{w=0.75}{nw}"
     extend 1fsqbg " Estoy hablando de..."
 
@@ -2752,7 +2752,7 @@ label event_blackjack_unlock:
     n 3fchsm "..."
     n 3fcssmeme "Jejeje."
     n 7ullss "Lo sé,{w=0.2} lo sé.{w=0.75}{nw}"
-    extend 7ccsbgedz " Genio,{w=0.2} ¿verdad?{w=0.75}{nw}"
+    extend 7ccsbgedz " Soy una genio,{w=0.2} ¿verdad?{w=0.75}{nw}"
     extend 6ccssm " Apuesto a que desearías haberlo pensado {i}tú{/i} antes,{w=0.2} ¿eh?"
     n 7ulraj "De hecho había escuchado sobre él hace un tiempo,{w=0.5}{nw}"
     extend 7clrsssbl " pero nunca pensé que fuera algo que realmente pudiera ser divertido de jugar.{w=0.75}{nw}"
@@ -2760,12 +2760,12 @@ label event_blackjack_unlock:
     n 3tnmbo "Así que cuando estaba buscando algo más que hacer con el paquete de cartas,{w=0.2} supongo que simplemente se me vino a la mente."
     n 3tllss "Además.{w=0.75}{nw}"
     extend 1cslsssbr " {i}Dije{/i} que no sabía muchos juegos de cartas antes.{w=0.75}{nw}"
-    extend 1ccsposbr " Estudiar sobre otro estaba claramente muy atrasado."
+    extend 1ccsposbr " Estudiar sobre otro estaba claramente fuera de mis planes."
     n 7unmaj "En serio aunque -{w=0.5}{nw}"
     extend 3fchbg " ¡es perfecto!{w=0.75}{nw}"
     extend 3fspbg " ¡Y es {i}súper{/i} fácil de aprender también!"
     n 3ccsss "Confía en mí,{w=0.2} [player].{w=0.75}{nw}"
-    extend 7tsqss " ¿Dale un par de rondas?"
+    extend 7tsqss " ¿Sale un par de rondas?"
     n 7tsrss "Bueno.{w=0.75}{nw}"
     extend 6ccssmesm " Seguirás perdiendo,{w=0.2} por supuesto.{w=0.75}{nw}"
     extend 3fchgnelg " ¡Pero al menos te divertirás mucho mientras lo haces!"
@@ -2826,7 +2826,7 @@ label event_blackjack_unlock:
 
             n 2cllss "Bueno,{w=0.2} ahora que eso finalmente está fuera del camino..."
             $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
-            n 7fchbgl "¿Qué está pasando,{w=0.2} [chosen_descriptor]?"
+            n 7fchbgl "¿Qué hay de nuevo,{w=0.2} [chosen_descriptor]?"
 
     return
 
@@ -2943,7 +2943,7 @@ label event_internet_connection:
         n "Como si la calefacción rota no fuera suficiente dolor en el trasero.{w=0.75} ¿Ahora la conexión a internet también está fallando?"
     else:
 
-        n "No me digas que la conexión a internet {i}ya{/i} me está fallando..."
+        n "No me digas que la conexión a internet {i}ahora{/i} me está fallando..."
 
     n "¡Vamos,{w=0.2} pedazo de chatarra!{w=0.75} ¡Carga!{w=0.75}{nw}"
     play audio button_tap_c
@@ -3220,7 +3220,7 @@ label event_change_of_atmosphere:
     extend 2flrem " Como probablemente puedes notar.{w=0.75}{nw}"
     extend 2fcsan " No me he estado exactamente {i}divirtiendo{/i} aquí."
     n 2ftrem "{i}'¡Salones de clase nuevos!'{/i},{w=0.5}{nw}"
-    extend 4fsran " mi trasero."
+    extend 4fsran " si como no."
     n 7fcsem "Como...{w=0.3} Siempre fueron bastante pésimos.{w=0.75}{nw}"
     extend 3fslsl " Pero juro que nunca fue {i}tan{/i} malo antes."
     n 4cnmwrl "¡No,{w=0.2} de verdad!{w=0.75}{nw}"
@@ -3228,7 +3228,7 @@ label event_change_of_atmosphere:
 
     if get_topic("event_warm_package").shown_count > 0:
         n 3fcsflsbr "Y-{w=0.2}yo sé que dije que la calefacción estaba totalmente rota aquí ya.{w=0.75}{nw}"
-        extend 1clrwrsbr " ¡Nunca estuvo realmente {i}goteando{/i} por todas partes ni nada!{w=0.75}{nw}"
+        extend 1clrwrsbr " ¡Pero nunca estuvo realmente {i}goteando{/i} por todas partes ni nada!{w=0.75}{nw}"
         extend 2csrunsbr " Al menos no tanto."
     else:
 
@@ -3247,7 +3247,7 @@ label event_change_of_atmosphere:
     extend 3cllemlsbr " Realmente no quiero pensar en eso ahora."
     n 1kcsflesi "..."
     n 1ksrfl "Viejo..."
-    n 2csrsl "Y como si no tuviera suficiente en mi plato.{w=0.75}{nw}"
+    n 2csrsl "Y como si no hubiera tenidog suficiente..{w=0.75}{nw}"
     extend 2csrfl " Ahora tengo que recordar secar este basurero más tarde también.{w=0.75}{nw}"
     extend 2ftrem " Genial."
     n 4knmwr "¡Ni siquiera sé si hay un trapeador por aquí ya!{w=0.75}{nw}"
@@ -3463,7 +3463,7 @@ label holiday_new_years_day:
 
     if jn_is_day():
         n 4tnmpu "...Muy perdida,{w=0.2} en realidad.{w=0.5} Ahora que miro la hora.{w=1}{nw}"
-        extend 4nsrpo " Casi impresionantemente."
+        extend 4nsrpo " Estuve muy cerca."
         n 1kcsemedr "Cielos..."
         n 3fslajl "Podrías haberme despertado antes,{w=0.5}{nw}"
         extend 3fsqpol " idiota."
@@ -3817,10 +3817,10 @@ label holiday_valentines_day:
         n 1kllbolsbl "..."
         n 1fcsbolsbr "Simplemente no se sentía bien no hacer {i}algo{/i}.{w=1}{nw}"
         extend 1fnmbolsbl " Piénsalo,{w=0.2} [player]."
-        n 1fcsemfsbl "¡N-{w=0.2}no tienes que ser todo acaramelado con alguien para demostrarle que importa!{w=0.75}{nw}"
+        n 1fcsemfsbl "¡N-{w=0.2}no tienes que ser todo acaramelado con alguien para demostrarle que te importa!{w=0.75}{nw}"
         extend 1fsrcalsbl " A pesar de lo que insisten todos los anuncios cursis."
         n 1fsqcalsbl "...Y sí [player],{w=0.2} antes de que digas nada.{w=0.75}{nw}"
-        extend 1fcscalsbl " T-{w=0.2}tú sí importas."
+        extend 1fcscalsbl " T-{w=0.2}tú sí me importas."
         n 1flrcalsbl "T-{w=0.2}traerme de vuelta,{w=0.75}{nw}"
         extend 1nllbol " escuchar todos mis pensamientos tontos..."
 
@@ -4400,7 +4400,7 @@ label holiday_halloween:
         n 4fcsfl "Sí.{w=0.75}{nw}"
         extend 4fsgfl " Conoces el tipo,{w=0.2} [player]."
         n 3ftrfl "{i}Bromistas{/i},{w=0.5}{nw}"
-        extend 3fsran " mi trasero."
+        extend 3fsran " una mierda."
         n 4fnmgs "¡En serio!"
         n 4fllem "Entiendo que la noche de travesuras es una cosa también."
         n 2fcswr "¡¿Pero qué clase de 'travesura' implica solo cabrear a la gente?!{w=0.75}{nw}"
@@ -4449,7 +4449,7 @@ label holiday_halloween:
             n 3fchbgl "¡Ahora pongámonos espeluznantes ya,{w=0.2} tú [random_tease]!"
         else:
 
-            n 3fnmbg "Now let's spook things up already!"
+            n 3fnmbg "¡Ahora pongámonos espeluznantes ya!"
 
     $ jn_events.getHoliday("holiday_halloween").complete()
     return
@@ -4524,7 +4524,7 @@ label holiday_christmas_eve:
     show natsuki 1tsqsm at jn_center
 
     menu:
-        extend " ¿estás {i}tú{/i} listo ya,{w=0.2} [player]?"
+        extend " ¿Ya {i}estas{/i} listo,{w=0.2} [player]?"
         "¡Puedes apostar que sí!":
 
             n 1usqct "¿Ojo?"
@@ -4588,12 +4588,12 @@ label holiday_christmas_eve:
         n 1kcscalsbl "...G-{w=0.2}gracias."
         n 1fcsemlsbl "P-{w=0.3}por estar aquí hoy,{w=0.75}{nw}"
         extend 2kslbolsbl " quiero decir."
-        n 1fcsbolsbr "S-{w=0.3}sé que no tenías que venir a visitar en absoluto.{w=0.75}{nw}"
+        n 1fcsbolsbr "S-{w=0.3}sé que no tenías que venir a visitarme en absoluto.{w=0.75}{nw}"
         extend 2ksrpulsbl " Y sería una verdadera idiota al exigirlo..."
         n 1knmpulsbl "Así que solo..."
         n 1kslunlsbl "..."
-        n 1fcsunf "Solo...{w=0.75} sabe que se aprecia.{w=1.25}{nw}"
-        extend 4kwmunl " ¿'Key?"
+        n 1fcsunf "Solo...{w=0.75} que sepas que lo aprecio.{w=1.25}{nw}"
+        extend 4kwmunl " ¿Va?"
         n 2kslbol "De verdad.{w=1.25}{nw}"
         extend 4ksqbol " Gracias."
         n 1ksrcal "..."
@@ -4686,9 +4686,9 @@ label holiday_christmas_day:
     n 4uwdbgl "¡[player]!{w=0.75}{nw}"
     extend 4uwdbsl " ¡[player]!{w=0.2} ¡[player]!"
     n 1uchbsl "¡Está aquí!{w=0.75}{nw}"
-    extend 1uchbgl " ¡Está en realidad,{w=0.5}{nw}"
+    extend 1uchbgl " ¡Maldita sea,{w=0.5}{nw}"
     extend 1fchbsl " finalmente,{w=0.5}{nw}"
-    extend 4uchgnleme " maldita sea {i}AQUÍ{/i}!"
+    extend 4uchgnleme " por fin {i}ESTA AQUÍ{/i}!"
 
     if jn_get_current_time_block in [JNTimeBlocks.early_morning, JNTimeBlocks.mid_morning, JNTimeBlocks.late_morning]:
         n 3fspgs "¡Vamos!{w=0.75}{nw}"
@@ -4918,7 +4918,7 @@ label holiday_christmas_day:
             n 3fsrunlsbr "S-{w=0.2}sé que no puedo conseguirte algún {i}regalo elegante{/i}.{w=0.75}{nw}"
             extend 3fsrajlsbr " Es solo que..."
             n 1ksrbolsbr "..."
-            n 1fcsbofsbr "...Solo sabe que aprecio lo que has hecho.{w=1}{nw}"
+            n 1fcsbofsbr "...Quiero que sepas que aprecio lo que has hecho.{w=1}{nw}"
             extend 4fsldvlsbl " Incluso si es solo escucharme divagar a veces."
             n 1nllpulsbl "Realmente..."
             n 1fcsunlsbl "..."
@@ -5021,7 +5021,7 @@ label holiday_new_years_eve:
         n 1kslpulsbr "Pero...{w=1.25}{nw}"
         extend 4knmpulsbl " ¿[player]?"
         n 1ksrunlsbl "..."
-        n 3fcspolsbl "...No es como si te dijera {i}no{/i} a tu compañía,{w=0.2} sabes.{w=1}{nw}"
+        n 3fcspolsbl "...No es como si le dijera {i}no{/i} a tu compañía,{w=0.2} sabes.{w=1}{nw}"
         extend 3fllpofesssbl " M-{w=0.3}mientras no lo pongas todo asqueroso,{w=0.2} de todos modos."
         n 1fsldvfesdsbr "Jejeje."
     else:
@@ -5238,7 +5238,7 @@ label holiday_natsuki_birthday:
         n 2kslsllsbr "...Por mí."
         n 4kslbolsbr "Y solo estaría mintiendo si dijera que no estaba intentando aún acostumbrarme a ello."
         n 1cnmemlsbr "¡N-{w=0.2}no es como si a {i}nadie{/i} le hubiera importado lo suficiente!{w=0.75}{nw}"
-        extend 1clrfll " Sé que las otras habrían hecho {i}algo{/i}.{w=0.75}{nw}"
+        extend 1clrfll " Sé que las otras habrían hecho {i}algo parecido{/i}.{w=0.75}{nw}"
         extend 4clrajl " Sayori,{w=0.2} Monika..."
         n 4csrfsl "Je.{w=0.75}{nw}"
         extend 4ksrsll " Incluso Yuri.{w=1}{nw}"
@@ -5345,8 +5345,8 @@ label holiday_natsuki_birthday:
         extend 2cslfs " Incluso Yuri.{w=1}{nw}"
         extend 2kslbo " Es solo que..."
         n 4ccsunl "..."
-        n 4ccsfll "Es...{w=0.75}{nw}"
-        extend 4clrbol " no como si fueran a aparecer pronto.{w=0.75}{nw}"
+        n 4ccsfll "No es...{w=0.75}{nw}"
+        extend 4clrbol " como si fueran a aparecer pronto.{w=0.75}{nw}"
         extend 2ksrbol " E-{w=0.2}especialmente no ahora."
         n 2ksrsll "..."
         n 2fcsfllsbl "¡A-{w=0.2}así que!{w=0.75}{nw}"

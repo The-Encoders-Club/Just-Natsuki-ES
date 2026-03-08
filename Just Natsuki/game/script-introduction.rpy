@@ -165,7 +165,7 @@ label introduction_first_meeting:
 
     n 1kskan "Y-{w=0.1}y yo soy..."
     n 4kskaj "...No... {w=1}{nw}"
-    extend 4kscemsbl "oh por favor no.{w=0.5} y-{w=0.3}yo no puedo.{w=0.5} Realmente no puedo ser...{w=0.5}{nw}"
+    extend 4kscemsbl "oh por favor no,{w=0.5} y-{w=0.3}yo no puedo.{w=0.5} Realmente no puedo...{w=0.5}{nw}"
 
     show natsuki 4kcsantsc
     play audio static
@@ -442,7 +442,7 @@ label introduction_acceptance:
     extend 1tnmss " [player],{w=0.3} ¿verdad?"
     n 1ncspusbr "...Bien."
     n 1ullpu "Supongo...{w=1}{nw}"
-    extend 2unmbo " que mejor será que nos conozcamos apropiadamente."
+    extend 2unmbo " que será mejor que nos conozcamos apropiadamente."
     n 2nllpol "No es como si {i}no{/i} tuviéramos todo el tiempo del mundo ahora,{w=0.5}{nw}"
     extend 2tnmbol " ¿eh?"
 

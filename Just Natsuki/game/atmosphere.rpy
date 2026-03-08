@@ -264,8 +264,8 @@ init python in jn_atmosphere:
         night_sky_image="sky night rain",
         notify_text=[
             "Ugh... lloviendo otra vez. [angry_emote]",
-            "Iugh. Lluvia. [angry_emote]",
-            "Hombre... ¿por qué tiene que llover tanto?",
+            "Eww... lluvia. [angry_emote]",
+            "Viejo... ¿por qué tiene que llover tanto?",
             "¿Eh? ¿Está lloviendo? Que asco... [angry_emote]",
         ],
         dim_image="dim medium",
@@ -284,7 +284,7 @@ init python in jn_atmosphere:
             "Esas nubes se ven muy oscuras, ¿eh? :<",
             "Era una noche oscura y tormentosa...",
             "Ugh... Odio las tormentas... [angry_emote]",
-            "Oye... ¿está tormentoso por allá también? :/",
+            "Oye... ¿hay tormenta por allá también? :/",
         ],
         dim_image="dim heavy",
         day_clouds_image="clouds day thunder",
@@ -691,7 +691,7 @@ label weather_change:
                 elif previous_weather.weather_type == jn_atmosphere.JNWeatherTypes.thunder:
                     n 3tllpu "¿Eh?{w=1.25}{nw}"
                     extend 4ullajeex "Oh,{w=0.2} parece que la tormenta ya pasó.{w=1}{nw}"
-                    n 2fcsajsbl "Buena suerte.{w=3}{nw}"
+                    n 2fcsajsbl "Que suerte.{w=3}{nw}"
 
                 elif previous_weather.weather_type == jn_atmosphere.JNWeatherTypes.snow:
                     n 4kllpu "Aww...{w=1.5}{nw}"
@@ -704,7 +704,7 @@ label weather_change:
             if jn_atmosphere.isCurrentWeatherRain():
 
                 if alt_dialogue:
-                    n 1kcsemesi "Hombre...{w=1.25}{nw}"
+                    n 1kcsemesi "Viejo...{w=1.25}{nw}"
                     extend 4kllsl " lluvia… ¿{i}de nuevo{/i}?{w=1}{nw}"
                     extend 3fsrbo " No puede ser...{w=3}{nw}"
                 else:
@@ -721,14 +721,14 @@ label weather_change:
                     extend 3nsrupesd " Seeee...{w=3}{nw}"
                 else:
 
-                    n 1ulremesu "Woah...{w=1}{nw}"
+                    n 1ulremesu "Wow...{w=1}{nw}"
                     extend 2ullpu " Ahora esas son nubes,{w=0.5}{nw}"
                     extend 2tnmbo " ¿Eh?{w=3}{nw}"
 
             elif jn_atmosphere.isCurrentWeatherSnow():
 
                 if alt_dialogue:
-                    n 4uwdajeex "Woah!{w=1}{nw}"
+                    n 4uwdajeex "¡Wow!{w=1}{nw}"
                     n 1ullgs "¡[player],{w=0.2} mira!{w=0.5}{nw}"
                     extend 4uchbgledz " ¡Está nevando!{w=3}{nw}"
                 else:

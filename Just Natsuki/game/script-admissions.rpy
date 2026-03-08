@@ -74,7 +74,7 @@ label admission_angry:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_ANGRY:
         n 1kcsemesi "Por dios, {w=0.2}[player]... {w=1}{nw}"
         extend 2ksqposbl "¿de verdad sigues tan alterado?"
-        n 2fnmpo "... ¿En realidad fuiste a pasar algún tiempo afuera, {w=0.2}como dije?"
+        n 2fnmpo "... ¿Realmente fuiste a pasar un tiempo afuera, {w=0.2}como te dije?"
         n 2klrsl "..."
         n 4klrsssbl "Sinceramente no sé qué más puedo sugerir, {w=0.75}{nw}"
         extend 4knmbosbl "en realidad."
@@ -82,17 +82,17 @@ label admission_angry:
         extend 1fnmajsbl "intenta mantener la calma, {w=0.75}{nw}"
         extend 2fcscasbl "y pensar las cosas {i}adecuadamente{/i}."
         n 2knmca "¿Está bien?"
-        n 1kllsl "Lo último que alguien necesita es que te vayas furioso y te lastimes, {w=0.75}{nw}"
-        extend 4kllfl "o haciendo algo..."
-        n 4kslsr "... Que no podrás recuperar fácilmente."
+        n 1kllsl "Lo último que alguien necesita es que pierdas el control y te lastimes, {w=0.75}{nw}"
+        extend 4kllfl "o hagas algo..."
+        n 4kslsr "... de lo que no podrás recuperarte fácilmente."
         n 2ncsaj "Confía en mí. {w=0.75}{nw}"
         extend 2tnmfl "¿Hacer cosas con enojo, {w=0.2}porque dejaste que todo te afectara? {w=0.75}{nw}"
-        extend 2fcssl "De esa manera nunca sale mejor."
-        n 2kslsl "Debería saberlo."
+        extend 2fcssl "De esa forma nada sale bien."
+        n 2kslsl "Deberías saberlo."
         n 1ncsaj "Así que date algo de tiempo, {w=0.2}[player]. {w=1}{nw}"
         extend 1ullbo "Espacio también, {w=0.2}si lo necesitas."
-        n 4fcsca "{i}Entonces{/i} tómalo como viene."
-        n 4nlrpu "Al menos puedes lograrlo.{w=0.75}.{w=0.75}.{w=0.75}{nw}"
+        n 4fcsca "{i}Entonces{/i} tómalo como calma."
+        n 4nlrpu "Al menos puedes intentarlo.{w=0.75}.{w=0.75}.{w=0.75}{nw}"
 
         if Natsuki.isEnamored(higher=True):
             extend 4knmpu " ¿verdad? {w=1}{nw}"
@@ -102,7 +102,7 @@ label admission_angry:
 
             if Natsuki.isLove(higher=True):
                 $ chosen_endearment = jn_utils.getRandomEndearment()
-                n 4fchsmlsbl "Tú puedes con esto,{w=0.2} [chosen_endearment]!{w=0.5}{nw}"
+                n 4fchsmlsbl "Tú puedes con eso,{w=0.2} [chosen_endearment]!{w=0.5}{nw}"
                 extend 4fchbgleafsbl " ¡Como siempre!"
         else:
 
@@ -122,9 +122,9 @@ label admission_angry:
         n 2ncsfl "Esta bien.{w=0.75}{nw}"
         extend 2nlrfl " Ahora, {w=0.2} ¿qué haría {i}I{/i} si algo -{w=0.5}{nw}"
         extend 2fsrca " o alguien -{w=0.5}{nw}"
-        extend 4tnmsl " ¿De verdad me puse nerviosa?"
-        n 1tllaj "Personalmente, si me pongo muy furioso,{w=0.75}{nw}"
-        extend 3fcsss " Me gusta pasear.{w=0.75}{nw}"
+        extend 4tnmsl " realmente me cabreara?"
+        n 1tllaj "Personalmente, cuando me enojo por algo,{w=0.75}{nw}"
+        extend 3fcsss " Suelo salir y dar un paseo.{w=0.75}{nw}"
         extend 3unmaj " Sabes -{w=0.5}{nw}"
         extend 3nlrbo " distanciarme del problema."
         n 4fcscs "A mí me funcionó cuando estaba en el club,{w=0.2} después de todo."
@@ -355,11 +355,11 @@ label admission_bored:
         extend 3fcsgs " ¡Alguien tiene que tener algo que ver,{w=0.2} [player]!"
         n 4fchgn "... ¡Así que levántate ya y descúbrelo!{w=0.75}{nw}"
         extend 4ullss " ¡Llama por teléfono o algo así!"
-        n 2tnmsl "O, {w=0.2} ya sabes..."
-        n 2tsqsmesm "¿Retomas ese juego o libro que {i}totalmente{/i} ibas a revisar en algún momento...?"
+        n 2tnmsl "Oh también, {w=0.2} ya sabes..."
+        n 2tsqsmesm "¿Retomar ese juego o libro que {i}totalmente{/i} ibas a revisar en algún momento...?"
         n 2usqcs "..."
         n 2fnmss "¿Qué?{w=0.75}{nw}"
-        extend 4fcsbg " ¿Te llamé una vez más, {w=0.2} [player]?{w=0.75}{nw}"
+        extend 4fcsbg " ¿Te atrapé una vez más, {w=0.2} [player]?{w=0.75}{nw}"
         extend 1fsqcs " Jejeje."
         n 2fnmfl "¡Ahora vamos!{w=0.75}{nw}"
         extend 2fcsbg " Nunca faltan cosas que hacer para pasar el tiempo.{w=1}{nw}"
@@ -378,7 +378,7 @@ label admission_bored:
         n 4fcsfl "Espera...{w=0.75}{nw}"
         extend 4tnmpu " ¿Estás aburrido?{w=0.75}{nw}"
         n 1fcsflsbr "E-{w=0.2}espera un momento."
-        n 2fnmeml "Y-{w=0.2}¡¿Y qué estás tratando de decir, {w=0.2}exactamente?!{w=1}{nw}"
+        n 2fnmeml "¡¿Y-{w=0.2}y qué estás tratando de decir, {w=0.2}exactamente?!{w=1}{nw}"
         extend 2fnmgsl " ¿Eh?"
         n 2fcsgslsbr "¿Cómo es posible que te aburras con alguien tan genial como yo cerca?"
         n 2fslposbr "Cielos,{w=0.2} [player]..."
@@ -386,7 +386,7 @@ label admission_bored:
         n 1nsrposbl "..."
         n 4tsrfl "Aunque..."
         n 3nlrss "Bueno,{w=0.2} incluso yo admito.{w=1}{nw}"
-        extend 3tnmfl " que no hay {i}exactamente{/i} muchas cosas que hacer aquí.{w=0.75}{nw}"
+        extend 3tnmfl " que no hay {i}exactamente{/i} muchas cosas interezantes por aquí.{w=0.75}{nw}"
         extend 3fcscal " Además de mí,{w=0.2} quiero decir."
         n 1fslsl "Tiene que haber algo más por aquí."
         n 1nslss "Esto es...{w=0.75}{nw}"
@@ -456,7 +456,7 @@ label admission_bored:
         n 2fsqdvl "..."
         n 1fcsajl "Oh,{w=0.5}{nw}"
         extend 4uchgnl " ¡anímate un poco,{w=0.2} [player]!{w=0.75}{nw}"
-        extend 4flrss " Hombre..."
+        extend 4flrss " Cielos..."
         n 3fcsbg "Pero en serio,{w=0.2} ¡vamos!{w=0.75}{nw}"
         extend 3tnmfl " Si estás lo suficientemente aburrido como para decírmelo..."
         n 4fchbg "¡Entonces levanta el trasero y haz algo,{w=0.2} tonto!{w=0.75}{nw}"
@@ -478,7 +478,7 @@ init python:
     registerTopic(
         Topic(
             persistent._admission_database,
-            prompt="Confidente",
+            prompt="Confiado",
             label="admission_confident",
             unlocked=True,
             affinity_range=(jn_affinity.HAPPY, None)
@@ -489,10 +489,10 @@ init python:
 label admission_confident:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_CONFIDENT:
         n 2nchsm "Jajaja.{w=0.75}{nw}"
-        extend 4tsqcs " ¡Todavía llena de confianza,{w=0.2} ya veo!"
+        extend 4tsqcs " ¡Todavía lleno de confianza,{w=0.2} ya veo!"
 
         if Natsuki.isEnamored(higher=True):
-            n 4ullaj "Aunque no es ninguna gran sorpresa ni nada de eso,{w=0.2} sin embargo.{w=0.75}{nw}"
+            n 4ullaj "Aunque no es ninguna gran sorpresa ni nada de eso,{w=0.2} por supuesto.{w=0.75}{nw}"
             extend 1ullbo " Digo..."
             n 2fchbgl "¡Me gusta pensar que tienes un montón de cosas por las que tener confianza!"
         else:
@@ -586,7 +586,7 @@ label admission_excited:
         extend 4fllss " Nah,{w=0.2} está bien.{w=0.75}{nw}"
         extend 2fcsbg " ¡Me alegra saber que tienes cosas que te emocionan!{w=0.75}{nw}"
         extend 2flrss " Bueno..."
-        n 2fcsssedz "Además de ver a su servidora,{w=0.2} {i}obviamente{/i}.{w=0.75}{nw}"
+        n 2fcsssedz "Además de ver a tu servidora,{w=0.2} {i}obviamente{/i}.{w=0.75}{nw}"
         extend 1fchsmeme " Jejeje."
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_EXCITED
@@ -606,12 +606,12 @@ init python:
 
 label admission_happy:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_HAPPY:
-        n 3nlraj "Guau...{w=0.75}{nw}"
+        n 3nlraj "Wow...{w=0.75}{nw}"
         extend 3unmaj " todo es sol y arcoíris contigo hoy,{w=0.2} ¿no es así?"
         n 4fsqsm "Jejeje."
 
         if Natsuki.isEnamored(higher=True):
-            n 2uchgn "¡Sigue con esas sonrisas,{w=0.2} [player]!"
+            n 2uchgn "¡Sigue con esa alegría,{w=0.2} [player]!"
         else:
 
             n 2fchbg "¡Bien por ti,{w=0.2} [player]!"
@@ -663,7 +663,7 @@ label admission_happy:
 
         n 4tnmss "¿Oh?{w=0.75}{nw}"
         extend 4usqsm " ¡Alguien está de buen humor hoy!"
-        n 3fcsbgedz "¿Estará ayudando que cierto {i}alguien{/i} esté cerca,{w=0.2} me pregunto?"
+        n 3fcsbgedz "¿Estará ayudando que cierta {i}persona{/i} esté cerca,{w=0.2} me pregunto?"
         n 3fsqsmeme "Jejeje."
         n 4fchbg "¡Bien por ti,{w=0.2} [player]!"
 
@@ -701,7 +701,7 @@ label admission_hungry:
             extend 2fchgn " ¡No soy tu niñera!"
 
         n 2fcsaj "¡Ahora levanta el trasero y resuelve algo de una vez!{w=1}{nw}"
-        extend 2flrss " Yeesh..."
+        extend 2flrss " Cielos..."
         $ chosen_descriptor = jn_utils.getRandomTease() if Natsuki.isEnamored(higher=True) else player
         n 4fcsbg "¡Solo mantenlo saludable,{w=0.2} [chosen_descriptor]!"
 
@@ -712,7 +712,7 @@ label admission_hungry:
     elif jn_admissions.last_admission_type == jn_admissions.TYPE_SAD:
         n 2knmbo "...[player]."
         n 2ncssl "Yo...{w=1}{nw}"
-        extend 4knmca " entiendo si tienes habre,{w=0.2} ¿bueno?{w=0.75}{nw}"
+        extend 4knmca " entiendo si tienes habre,{w=0.2} ¿sabes?{w=0.75}{nw}"
         extend 4knmaj " De verdad.{w=1}{nw}"
         extend 1fcssl " Todo el mundo tiene que comer."
         n 1kllfl "Solo..."
@@ -856,7 +856,7 @@ label admission_insecure:
         show natsuki 4knmbol
         menu:
             extend " ¿verdad?"
-            "Verdad":
+            "Así es":
 
                 n 1fcsbo "...Bien.{w=0.75}{nw}"
                 extend 4flrfl " O tendrás que tratar conmigo también.{w=0.75}{nw}"
@@ -864,7 +864,7 @@ label admission_insecure:
                 n 2fsqpo "...{i}Realmente{/i} no quieres eso.{w=1}{nw}"
                 extend 2flrss " Jajaja."
                 n 4klrbo "Entonces..."
-                n 2knmsssbr "¿Querías hablar de otra cosa?"
+                n 2knmsssbr "¿Quieres hablar de otra cosa?"
 
     $ jn_admissions.last_admission_type = jn_admissions.TYPE_INSECURE
     return
@@ -883,7 +883,7 @@ init python:
 
 label admission_proud:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_PROUD:
-        n 2nslaj "Guau...{w=1}{nw}"
+        n 2nslaj "Wow...{w=1}{nw}"
         extend 2tnmpo " {i}todavía{/i} tienes humor para regodearte,{w=0.2} ¿verdad?"
         n 4ucsfl "Está bien.{w=0.75}{nw}"
         extend 4ncsfl " Está bien.{w=1}{nw}"
@@ -911,7 +911,7 @@ label admission_proud:
         n 2fchcs "Jejeje."
         n 4ullaj "Bueno,{w=0.75}{nw}"
         extend 4tnmbo " lo que sea que sea.{w=0.75}{nw}"
-        extend 3fcsbg " ¡Debes estar bastante presumido al respecto para compartirlo conmigo!"
+        extend 3fcsbg " ¡Debes ser bastante presumido al respecto para compartirlo conmigo!"
         $ chosen_descriptor = jn_utils.getRandomEndearment() if Natsuki.isLove(higher=True) else player
         n 3fchbg "¡Buen trabajo,{w=0.2} [chosen_descriptor]!"
 
@@ -1024,10 +1024,10 @@ label admission_sad:
             extend 2klrsllsbr " Así que..."
         else:
 
-            n 1uskfl "H-{w=0.2}he?{w=0.75}{nw}"
+            n 1uskfl "Q-{w=0.2}que?{w=0.75}{nw}"
             extend 4knmboeqm " ¿Te sientes triste ahora?"
             n 2klrflsbr "...¿De dónde vino eso de repente?"
-            n 2ksrflsbr "Hombre...{w=0.75}{nw}"
+            n 2ksrflsbr "Viejo...{w=0.75}{nw}"
             extend 2fcsfllsbl " realmente {i}tenías{/i} que elegir a la peor persona para manejar este tipo de cosas,{w=0.75}{nw}"
             extend 2ksrsllsbl " ¿no es así?"
 
@@ -1049,9 +1049,9 @@ label admission_sad:
         extend 1fcscal " {i}Siempre{/i} es temporal.{w=1}{nw}"
         extend 1flrpul " No importa lo que estés pensando ahora...{w=1.5}{nw}"
         extend 4knmcal " así es como es."
-        n 2fcsfllsbr "I-{w=0.2}I know it sucks!{w=0.75}{nw}"
-        extend 2nslsll " Believe me.{w=0.75}{nw}"
-        extend 4kslbol " And it must have been bad if you had to open up to me about it."
+        n 2fcsfllsbr "¡S-{w=0.2}se que apesta!{w=0.75}{nw}"
+        extend 2nslsll " Creeme.{w=0.75}{nw}"
+        extend 4kslbol " Y debe haber sido malo si tuviste que abrirte conmigo al respecto."
 
         if Natsuki.isAffectionate(higher=True):
             n 4fcsajlsbr "N-{w=0.2}no es que sea un problema ni nada."
@@ -1062,7 +1062,7 @@ label admission_sad:
         show natsuki 4knmsssbr
         menu:
             n "...¿Verdad?"
-            "Verdad":
+            "Si":
 
                 pass
 
@@ -1105,7 +1105,7 @@ init python:
 
 label admission_sick:
     if jn_admissions.last_admission_type == jn_admissions.TYPE_SICK:
-        n 1kcsem "Hombre...{w=1}{nw}"
+        n 1kcsem "Viejo...{w=1}{nw}"
         extend 4knmflsbr " ¿realmente {i}todavía{/i} te sientes enfermo?{w=0.75}{nw}"
         extend 4ksrbosbr " Cielos,{w=0.2} [player]..."
 
@@ -1310,7 +1310,7 @@ label admission_tired:
             n 1fchsmleaf "¡Te amo!"
 
         elif Natsuki.isAffectionate(higher=True):
-            n 1fchbleme "¡No dejes que las chinches piquen~!"
+            n 1fchbleme "¡No dejes que los mosquitos te piquen~!"
 
         $ persistent.jn_player_admission_type_on_quit = jn_admissions.TYPE_TIRED
         $ persistent._jn_player_admission_forced_leave_date = datetime.datetime.now()
@@ -1361,7 +1361,7 @@ label admission_tired:
         n 2fnmgsl "¡Y-{w=0.2}y a quién tienes que agradecerle por eso?!"
         n 4fbkwrl "¡Has estado aquí por {i}siglos{/i},{w=0.2} [player]!{w=1}{nw}"
         extend 4fnmpol " ¿{i}En serio{/i} no te diste cuenta de la hora?"
-        n 1fcsfl "Hombre...{w=0.75}{nw}"
+        n 1fcsfl "Viejo...{w=0.75}{nw}"
         extend 2fsrpo " {i}realmente{/i} necesitas irte."
         n 2unmfll "¡No me malinterpretes!{w=0.75}{nw}"
         extend 4fcsfllsbl " ¡N-{w=0.2}no es que no te quiera aquí ni nada!{w=1}{nw}"

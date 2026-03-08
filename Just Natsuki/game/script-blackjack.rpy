@@ -365,11 +365,11 @@ label blackjack_intro:
     if not persistent._jn_blackjack_explanation_given:
         n 4unmajeex "Oh,{w=0.2} cierto.{w=0.75}{nw}"
         extend 4flrsssbl " Casi lo olvido."
-        n 2nsrsssbl "Así que antes de adelantarme {i}demasiado{/i} aquí..."
+        n 2nsrsssbl "Así que antes de adelantarme {i}demasiado{/i}"
 
         show natsuki option_wait_curious
         menu:
-            n "¿Necesitabas una explicación de cómo funciona todo,{w=0.2} o...?"
+            n "¿Necesitas una explicación de cómo funciona todo,{w=0.2} o...?"
             "¡Sí, por favor!":
 
                 jump blackjack_explanation
@@ -407,7 +407,7 @@ label blackjack_explanation:
         extend 7unmbo " el Blackjack es bastante simple una vez que entiendes las reglas."
     else:
 
-        n 4fcsbg "¡Así que!{w=0.75}{nw}"
+        n 4fcsbg "¡Muy bien!{w=0.75}{nw}"
         extend 7ullss " El Blackjack es en realidad bastante simple,{w=0.5}{nw}"
         extend 3unmaj " una vez que entiendes las reglas."
 
@@ -421,7 +421,7 @@ label blackjack_explanation:
         extend 2fsqsm " No te preocupes,{w=0.2} [player].{w=0.75}{nw}"
         extend 2fcsbgeme " Yo {i}siempre{/i} barajo."
 
-    n 3unmaj "A continuación,{w=0.2} ambos tomamos turnos para ya sea {i}pedir{/i} -{w=0.5}{nw}"
+    n 3unmaj "A continuación,{w=0.2} ambos tomamos turnos ya sea para {i}pedir{/i} -{w=0.5}{nw}"
     extend 3clrss " sacar otra carta,{w=0.5}{nw}"
     extend 6unmbo " o {i}plantarse{/i} -{w=0.5}{nw}"
     extend 3cllsm " que es simplemente saltar nuestro turno."
@@ -442,7 +442,7 @@ label blackjack_explanation:
         n 6ullaj "Bueno, cada carta tiene un valor -{w=0.5}{nw}"
         extend 3ccssm " obviamente -{w=0.5}{nw}"
         extend 4nnmfl " pero no te preocupes por el {i}palo{/i} real:{w=0.75}{nw}"
-        extend 1tlrbo " diamantes o espadas o lo que sea.{w=0.75}{nw}"
+        extend 1tlrbo " diamantes, espadas o lo que sea.{w=0.75}{nw}"
         extend 2fcssmesm " ¡Solo nos importan los {i}números{/i}!"
     else:
 
@@ -460,7 +460,7 @@ label blackjack_explanation:
     n 4cllbg "Pero sí -{w=0.5}{nw}"
     extend 2ullpu " si el as te hiciera {i}perder en tu primer turno{/i},{w=0.5}{nw}"
     extend 2nnmbo " entonces solo vale {i}uno{/i} en su lugar."
-    n 7ulraj "Seguimos tomando turnos hasta que uno de nosotros llegue a veintiuno,{w=0.2} ambos decidamos {i}plantarnos{/i} -{w=0.5}{nw}"
+    n 7ulraj "Seguimos tomando turnos hasta que uno de nosotros llegue a veintiuno,{w=0.2} ambos gdecidamos {i}plantarnos{/i} -{w=0.5}{nw}"
     extend 7unmbo " o uno de nosotros termine con una mano que pase de veintiuno."
     n 6fchbl "...¡Eso significa que te pasaste!"
     n 1cllss "De lo contrario, si ninguno de nosotros termina pasándose,{w=0.5}{nw}"
@@ -471,7 +471,7 @@ label blackjack_explanation:
     extend 6fcsbg " ¡Lo tengo todo cubierto!"
     n 3fchsm "Jejeje."
     n 4fnmsm "¡Pero sí!{w=0.75}{nw}"
-    extend 4ullss " Creo que eso es prácticamente todo lo que tenía."
+    extend 4ullss " Creo que eso es prácticamente todo lo que tenía que explicar."
     n 3ullaj "Así que...{w=1}{nw}"
     extend 7unmbo " ¿qué te parece,{w=0.2} [player]?"
 
@@ -631,9 +631,9 @@ label blackjack_end:
             10: [
                 "¡Oh sí!{w=0.75} ¡Diez!{w=0.75} ¡Ahora {i}eso{/i} es lo que significa ser una pro,{w=0.2} [player]!",
                 "Viejo...{w=1} ¿diez seguidas?{w=0.75} ¡Estoy en {i}racha{/i} hoy!{w=0.75} Jejeje.",
-                "¡Ja!{w=0.75} ¡La gran diez!{w=0.75} ¿Qué tienes que decir a eso,{w=0.2} [player]?",
+                "¡Ja!{w=0.75} ¡El gran diez!{w=0.75} ¿Qué tienes que decir respecto a eso,{w=0.2} [player]?",
                 "¡Sí!{w=0.75} ¡Diez seguidas!{w=0.75} Viejo...{w=1} ¡Soy imparable!",
-                "Cielos...{w=1} ¿cuánto es ahora?{w=0.75} ¿Diez?{w=0.75} ¡Al menos {i}intenta{/i} seguir el ritmo,{w=0.2} [player]!"
+                "Cielos...{w=1} ¿cuánto es ahora?{w=0.75} ¿Diez?{w=0.75} ¡Al menos {i}intenta{/i} seguirme el ritmo,{w=0.2} [player]!"
             ]
         }
         $ chosen_response = renpy.substitute(random.choice(natsuki_streak_milestone_map[persistent._jn_blackjack_natsuki_streak]))
@@ -681,7 +681,7 @@ label blackjack_end:
                 "¡Oh,{w=0.2} por-!{w=0.75} ¡¿{i}Otra{/i} vez me pasé?!{w=0.75} En serio...",
                 "¡C-{w=0.2}como {i}si{/i} me hubiera pasado!{w=0.75} Viejo...",
                 "¡¿Estás bromeando?!{w=0.75} ¡¿Me pasé de nuevo?!",
-                "Tines {i}que{/i} estar bromeando.{w=0.75} ¡¿De nuevo?!",
+                "Tienes {i}que{/i} estar bromeando.{w=0.75} ¡¿De nuevo?!",
                 "Vamos,{w=0.5} [n_name]...{w=1} ¡compórtate!",
                 "¡Uuuuuuu...!{w=0.75} ¡{i}Sabía{/i} que ese era un movimiento de mierda!{w=0.75} Ugh..."
             ],

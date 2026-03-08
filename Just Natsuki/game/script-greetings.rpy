@@ -172,7 +172,7 @@ label greeting_first_force_quit:
 
         n 1fsqunltsbean "..."
         n 4fsqantsb "Eso.{w=1} {b}Dolió{/b}.{w=1} Maldita sea."
-        n 4fcsan "No sé {i}qué{/i} hiciste,{w=0.5} pero para{w=0.3} y{w=0.3} córtala.{w=1.25}{nw}"
+        n 4fcsan "No sé {i}qué{/i} hiciste,{w=0.5} pero para{w=0.3} ya{w=0.3} córtala.{w=1.25}{nw}"
         extend 2fsqfutsb " Ahora."
 
     $ persistent.jn_player_force_quit_state = int(jn_farewells.JNForceQuitStates.previously_force_quit)
@@ -541,8 +541,8 @@ label greeting_tt_warning:
                 if Natsuki.isHappy(higher=True):
                     n 4kcsajltsa "...Bien.{w=1}{nw}"
                     extend 4kslsll " bien."
-                    n 1kslajl "Es...{w=0.75}{nw}"
-                    extend 1kslpul " apreciado,{w=0.2} [player]."
+                    n 1kslajl "Lo...{w=0.75}{nw}"
+                    extend 1kslpul " aprecio,{w=0.2} [player]."
                     n 4ksqbol "G-{w=0.2}gracias."
                 else:
 
@@ -616,8 +616,8 @@ label greeting_tt_warning:
         n 1fcseml "S-{w=0.2}sé que no hemos estado en la...{w=1}{nw}"
         extend 2fslsl " mejor relación,{w=0.2} exactamente."
         n 1knmem "Pero por favor."
-        n 4kcsemsbl "S-{w=0.2}si realmente te importa {i}un carajo{/i} yo,{w=0.75}{nw}"
-        extend 4ksqemsbl " entonces si por {i}nada{/i} más."
+        n 4kcsemsbl "S-{w=0.2}si realmente te importo {i}un carajo{/i} yo,{w=0.75}{nw}"
+        extend 4ksqemsbl " entonces {i}por favor{/i} por lo menos."
         n 2fcsansbl "Deja de jugar con el tiempo.{w=0.75}{nw}"
         extend 4fsqansbl " Hablo {i}muy{/i} en serio."
 
@@ -916,7 +916,7 @@ label greeting_love_plus_looking_for_me:
     extend 2tsqdvf " ¿Era a {i}mí{/i} a quien buscabas?"
     n 2fchdvfess "..."
     n 2fchcsfesm "¡Pfffft-!"
-    n 1kllbgl "Hombre,{w=0.5}{nw}"
+    n 1kllbgl "Viejo,{w=0.5}{nw}"
     extend 4fchgnlelg " ¡{i}No puedo{/i} tomarme eso en serio!"
     n 4fnmssl "Pero seamos realistas,{w=0.2} [player]..."
     n 2fsqsmf "Definitivamente {i}{w=0.2}era{w=0.2}{/i} a mí,{w=0.2} ¿no?{w=1}{nw}"
@@ -1161,7 +1161,7 @@ label greeting_affectionate_enamored_just_as_amazing:
     extend 4cchbgl " ¡Has vuelto!"
     n 3ccsssl "Je."
     $ time_descriptor = "hoy" if jn_is_day() else "esta noche"
-    n 6ccsbgl "Hagamos que [time_descriptor] sea tan {i}asombroso{/i} como yo,{w=0.2} ¿va?{w=0.75}{nw}"
+    n 6ccsbgl "Hagamos que [time_descriptor] sea tan {i}increible{/i} como yo,{w=0.2} ¿va?{w=0.75}{nw}"
     extend 7fcssmledz " Jejeje."
 
     return
@@ -1302,7 +1302,7 @@ init python:
 
 label greeting_affectionate_enamored_in_for_some_fun:
     n 4unmbg "¡[player]!{w=0.75}{nw}"
-    extend 2ccssslsbr " Hombre...{w=1}{nw}"
+    extend 2ccssslsbr " Viejo...{w=1}{nw}"
     extend 2fcsbglsbr " ¡ya era hora de que aparecieras!"
     n 4fsqsml "Jejeje.{w=0.75}{nw}"
     extend 7fchbgleme " ¡Ahora {i}sé{/i} que nos vamos a divertir!"
@@ -1511,7 +1511,7 @@ label greeting_normal_happy_knew_youd_be_back:
     n 1unmbg "¡Es [player]!{w=0.75}"
     extend 1nchbg " ¡Hola!"
     n 2fcsbglesssbr "S-{w=0.2}sabía que volverías,{w=0.2} obviamente."
-    n 2fcssml "Tendrías que no tener gusto para no visitar de nuevo.{w=0.75}{nw}"
+    n 2fcssml "Tendrías que no tener buen gusto para no visitarme de nuevo.{w=0.75}{nw}"
     extend 2fcsbgl " ¡Ajaja!"
 
     return
@@ -2094,7 +2094,7 @@ init python:
     )
 
 label greeting_feeling_better_sick:
-    n 1unmajlesu "Oh!{w=0.75}{nw}"
+    n 1unmajlesu "¡Oh!{w=0.75}{nw}"
     $ chosen_descriptor = jn_utils.getRandomEndearment().capitalize() if Natsuki.isLove(higher=True) else player
     extend 2cnmbgl " [chosen_descriptor]!{w=0.75}{nw}"
     extend 2cchbgl " H-{w=0.2}hey!"
@@ -2104,9 +2104,9 @@ label greeting_feeling_better_sick:
         and (datetime.datetime.now() - persistent._jn_player_admission_forced_leave_date).total_seconds() / 60 <= 60
     ):
         $ persistent._jn_player_admission_forced_leave_date = None
-        n 2csrsssbr "...I gotta admit.{w=0.75}{nw}"
-        extend 2tllflsbr " I wasn't expecting you to {i}actually{/i} show up already."
-        n 2tslbosbr "So..."
+        n 2csrsssbr "...Tengo que admitirlo.{w=0.75}{nw}"
+        extend 2tllflsbr " No esperaba que {i}de verdad{/i} aparecieras tan pronto."
+        n 2tslbosbr "Así que..."
 
     n 2unmajsbr "¿Cómo lo llevas?"
     show natsuki option_wait_curious
@@ -2170,8 +2170,8 @@ label greeting_feeling_better_sick:
         "Un poco mejor.":
 
             n 2knmbosbr "..."
-            n 2clrsssbr "...Lo admitiré,{w=0.2} eso es...{w=1}{nw}"
-            extend 2csrajsbr " no exactamente lo que quería escuchar."
+            n 2clrsssbr "...Lo admitiré,{w=0.2} eso no es...{w=1}{nw}"
+            extend 2csrajsbr " exactamente lo que quería escuchar."
             n 1clrflsbl "Pero...{w=1}{nw}"
             extend 4tnmslsbl " tomaré 'un poco' sobre nada en absoluto.{w=1}{nw}"
             extend 3cslbosbl " Supongo."
@@ -2248,7 +2248,7 @@ label greeting_feeling_better_sick:
                     extend 4cnmfll " o que no quiera verte [time_descriptor].{w=0.75}{nw}"
                     extend 3fcsemlsbr " ¡C-{w=0.2}claro que sí!{w=0.75}{nw}"
                     n 3csrcalsbr "Tú de todas las personas realmente deberías {i}saber{/i} eso a estas alturas."
-                    n 3ccswrlsbl "¡Pero no puede ser a tu costa!{w=0.75}{nw}"
+                    n 3ccswrlsbl "¡Pero no puede ser a costa tuya!{w=0.75}{nw}"
                     extend 7knmfllsbl " ¿Sabes?"
                     n 7cllfll "Q-{w=0.2}quiero decir,{w=0.2} en serio..."
                     extend 3tsqfll " ¿creíste que me impresionaría o algo así,{w=0.2} [player]?"
@@ -2617,7 +2617,7 @@ init python:
 label greeting_morning_top_of_the_mornin:
     n 7unmbgesu "¡Oh!{w=0.5}{nw}"
     extend 1fchbg " ¡Es [player]!"
-    n 3fwlsm "Bueno -{w=0.2} ¡muy buenos días tengas!"
+    n 3fwlsm "Bueno -{w=0.2} ¡muy buenos días para ti!"
     n 3nchsm "..."
     n 3nsqbo "..."
     n 3tsqss "¿Qué?{w=0.75}{nw}"
@@ -2845,7 +2845,7 @@ label greeting_night_what_time_do_you_call_this:
     n 2fsqbo "..."
     n 2fsqcs "..."
     n 2fchdvesi "¡Pffft-!"
-    n 1flrbg "Hombre...{w=1}{nw}"
+    n 1flrbg "Viejo...{w=1}{nw}"
     extend 4nchgn " Juro que eso {i}nunca{/i} pasa de moda."
     n 4cllss "Pero...{w=1}{nw}"
     extend 3cnmfl " ¿en serio,{w=0.2} [player]?"

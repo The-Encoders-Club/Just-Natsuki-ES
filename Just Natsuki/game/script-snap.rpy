@@ -274,7 +274,7 @@ label snap_explanation:
     n 4unmaj "Básicamente,{w=0.2} cada uno recibe medio mazo de cartas."
     n 2nchss "Entonces,{w=0.2} tomamos turnos poniendo una carta boca arriba en la mesa -{w=0.5}{nw}"
     extend 2fsrdv " ¡aunque no podemos {i}escoger o ver{/i} la carta antes,{w=0.2}!"
-    n 4fsgbg "¿Me sigues hasta ahora,{w=0.2} [player]?{w=0.2} Ehehe."
+    n 4fsgbg "¿Me sigues hasta ahora,{w=0.2} [player]?{w=0.2} Jejeje."
     n 1nnmbg "Si la carta recién puesta en la mesa coincide en {i}valor o palo{/i} con la carta que estaba ahí antes..."
     n 4usqsm "Entonces tenemos que gritar{w=0.5}{nw}"
     extend 4fchbs " ¡Snap!"
@@ -312,7 +312,7 @@ label snap_explanation:
             jump snap_start
         "Gracias, [n_name]. Jugaré luego":
 
-            n 1tsqpueqm "¿Huh?{w=0.75}{nw}"
+            n 1tsqpueqm "¿Eh?{w=0.75}{nw}"
             extend 2nsqflsbl " ¿En serio?"
             n 2nslpo "..."
             n 4nllfl "Bueno...{w=1.25}{nw}"
@@ -341,7 +341,7 @@ label snap_start:
     show screen snap_ui
     $ jnPause(1)
 
-    n 1nchbg "¡Vale!{w=0.75}{nw}"
+    n 1nchbg "¡Bien!{w=0.75}{nw}"
     extend 1fchsm " ¡El mazo está barajado!"
     n 4fsqsm "Veamos a quién le toca primero..."
 
@@ -351,7 +351,7 @@ label snap_start:
     $ jn_snap._is_player_turn = random.choice([True, False])
 
     if jn_snap._is_player_turn:
-        n 1fcssm "Ehehe.{w=0.5}{nw}"
+        n 1fcssm "Jeje.{w=0.5}{nw}"
         extend 1fcsbg " Mala suerte,{w=0.2} [player].{w=0.75}{nw}"
         extend 1fchgn " ¡Parece que vas primero!"
     else:
@@ -446,15 +446,15 @@ label snap_quip(is_player_snap, is_correct_snap):
                 "¡Uuuuuu-!",
                 "¡Otra vez no!{w=0.2} Grrr...",
                 "Maldición...",
-                "Miercoles...",
+                "Mierda...",
                 "Qué tonto...",
                 "¿Otra vez?{w=0.2} ¿En serio?",
                 "Ugh...",
                 "Tan ridículo...",
                 "Qué tonto...",
-                "¡Jeez! Como sea...",
-                "¡Jeez!",
-                "¡Jeeeeeez!",
+                "¡Dios! Como sea...",
+                "¡Dios!",
+                "¡Diooooos!",
                 "¡Oh vamos,{w=0.2} [player]!",
                 "¿Cómo eres {i}tan{/i} rápido?!"
             ]))
@@ -519,12 +519,12 @@ label snap_quip(is_player_snap, is_correct_snap):
 
                 $ quip = renpy.substitute(random.choice([
                     "¿Oh?{w=0.2} Alguien está impaciente,{w=0.2} ¿eh?",
-                    "Ups,{w=0.2} [player]~.{w=0.2} Ehehe.",
-                    "Buena esa,{w=0.2} tonto.{w=0.2} ¡Ahaha!",
-                    "Muy suave,{w=0.2} [player].{w=0.2} Ehehe.",
-                    "¡Ahaha!{w=0.2} ¿Qué fue eso,{w=0.2} [player]?",
-                    "Oye,{w=0.2} [player] -{w=0.2} ¡se supone que debes leer las cartas!{w=0.2} Ehehe.",
-                    "¡Gran jugada,{w=0.2} tonto!{w=0.2} ¡Ahaha!"
+                    "Ups,{w=0.2} [player]~.{w=0.2} Jeje.",
+                    "Buena esa,{w=0.2} tonto.{w=0.2} ¡Jajaja!",
+                    "Muy suave,{w=0.2} [player].{w=0.2} Jeje.",
+                    "¡Jajaja!{w=0.2} ¿Qué fue eso,{w=0.2} [player]?",
+                    "Oye,{w=0.2} [player] -{w=0.2} ¡se supone que debes leer las cartas!{w=0.2} Jeje.",
+                    "¡Gran jugada,{w=0.2} tonto!{w=0.2} ¡Jajaja!"
                 ]))
                 show natsuki 2fsqsm zorder JN_NATSUKI_ZORDER
     else:
@@ -533,9 +533,9 @@ label snap_quip(is_player_snap, is_correct_snap):
 
         if is_correct_snap:
             $ quip = renpy.substitute(random.choice([
-                "¡SNAP!{w=0.2} ¡Ahaha!",
-                "¡Snap!{w=0.2} ¡Ahaha!",
-                "¡SNAP!{w=0.2} Ehehe.",
+                "¡SNAP!{w=0.2} ¡Jajaja!",
+                "¡Snap!{w=0.2} ¡Jajaja!",
+                "¡SNAP!{w=0.2} Jeje.",
                 "¡SNAP!",
                 "¡Snap!",
                 "¡Snap~!",
@@ -548,7 +548,7 @@ label snap_quip(is_player_snap, is_correct_snap):
                 "¡Sii!{w=0.2} ¡SNAP!",
                 "¡Sii!{w=0.2} ¡Snap!{w=0.2} ¡Snap!",
                 "¡Snap snap maldito snap!",
-                "¡SNAAAP!{w=0.2} Ehehe.",
+                "¡SNAAAP!{w=0.2} Jeje.",
                 "¡Bam!{w=0.2} ¡Snap!"
             ]))
             show natsuki 4uchbg zorder JN_NATSUKI_ZORDER
@@ -609,10 +609,10 @@ label snap_end:
             extend 2clremsbl " Hombre..."
             n 2ccsfl "Si querías probar un punto,{w=0.2} ya lo hiciste,{w=0.75}{nw}"
             extend 2csqpo " ¿ok?{w=1}{nw}"
-            extend 2cslcasbr " Jeez..."
+            extend 2cslcasbr " Dios..."
 
         elif jn_snap._player_win_streak == 5:
-            n 4fcsem "¡J-{w=0.2}jeez!{w=0.5}{nw}"
+            n 4fcsem "¡D-{w=0.2}dios!{w=0.5}{nw}"
             extend 4flrgs " ¡¿Cinco {i}ya{/i}?!{w=0.75}{nw}"
             extend 2cslca " Vamos."
             n 2fcsajsbl "Nunca {i}dije{/i} que fuera una profesional,{w=0.5}{nw}"
@@ -633,29 +633,29 @@ label snap_end:
     elif jn_snap.last_game_result == jn_snap.JNSnapStates.natsuki_win:
 
         if jn_snap._natsuki_win_streak > 10:
-            n 1fcsss "Hombre,{w=0.5}{nw}"
+            n 1fcsss "Viejo,{w=0.5}{nw}"
             extend 4fcsbg " ¡esto es demasiado{w=0.25}{nw}"
             extend 4fchgn " {i}fácil{/i}!{w=0.75}{nw}"
             extend 4fcsbg " {i}Casi{/i} me siento mal."
             n 2fsqsm "...Casi.{w=0.75}{nw}"
-            extend 2fchsmeme " Ehehe."
+            extend 2fchsmeme " Jeje."
 
         if jn_snap._natsuki_win_streak == 10:
             n 2cllss "Wow...{w=1}{nw}"
             extend 2fchgn " ¿{i}alguien{/i} está teniendo un mal día o qué?"
             n 4fsqbg "...¿O soy yo así de {i}buena{/i}?{w=0.75}{nw}"
-            extend 2fsqsmeme " Ehehe."
+            extend 2fsqsmeme " Jeje."
 
         elif jn_snap._natsuki_win_streak == 5:
             n 2fcsbg "¿Oh?{w=0.75}{nw}"
             extend 2fsqbg " ¿Qué es eso?"
             n 4fchgn "¿El sonido de cinco seguidas {i}ya{/i}?{w=0.75}{nw}"
-            extend 1nchgn " Ehehe."
+            extend 1nchgn " Jeje."
             n 2fcscs "Pero no te preocupes,{w=0.2} [player].{w=0.75}{nw}"
             extend 2fcsbgeme " ¡Hay muchas más de donde vino {i}esa{/i}!"
 
         elif jn_snap._natsuki_win_streak == 3:
-            n 1fcssm "Ehehe.{w=0.75}{nw}"
+            n 1fcssm "Jeje.{w=0.75}{nw}"
             extend 2fchbg " ¡Sip!{w=0.75}{nw}"
             extend 2fcssmesm " ¡Otro más para el Equipo [n_name]!"
         else:
@@ -663,11 +663,11 @@ label snap_end:
             n 1unmbs "¡Sí!{w=0.5}{nw}"
             extend 1uchbg " ¡Gané!{w=0.75}{nw}"
             extend 1fcsbgsbl " C-{w=0.2}como si fuera a terminar de otra forma."
-            n 1fsqsmeme "Ehehe."
+            n 1fsqsmeme "Jeje."
 
 
     elif jn_snap.last_game_result == jn_snap.JNSnapStates.draw:
-        n 1csrfl "...Huh.{w=0.75}{nw}"
+        n 1csrfl "...Eh.{w=0.75}{nw}"
         extend 1tnmfl " ¿{i}Realmente{/i} empatamos?"
         n 2tslpu "..."
         n 2tslaj "Eso es...{w=1}{nw}"
@@ -677,7 +677,7 @@ label snap_end:
     else:
 
 
-        n 4tnmpu "¿Huh?{w=0.5}{nw}"
+        n 4tnmpu "¿Eh?{w=0.5}{nw}"
         extend 4tnmbo " ¿Te rindes?"
         n 1ullaj "Bueno,{w=0.2} supongo que está bien.{w=0.75}{nw}"
         extend 1fchgn " ¡Tomo eso como una victoria para mí!"
@@ -719,7 +719,7 @@ label snap_end:
 
             n 1cllsl "Awww..."
             n 2fsqss "...Aguafiestas.{w=0.75}{nw}"
-            extend 2fchsm " Ehehe."
+            extend 2fchsm " Jeje."
             n 4ullss "Nah,{w=0.5}{nw}"
             extend 4nslss " supongo que está bien.{w=0.75}{nw}"
 
@@ -731,7 +731,7 @@ label snap_end:
             elif jn_snap._natsuki_win_streak >= 3:
                 extend 4fchsm " Y gracias por jugar."
                 n 2fsqcs "...Solo trae más pelea la próxima vez."
-                extend 2fcssm " Ahaha."
+                extend 2fcssm " Jajaja."
                 show natsuki 1fcssm
             else:
 

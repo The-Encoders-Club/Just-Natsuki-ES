@@ -389,7 +389,7 @@ label idle_reading_a_la_mode:
         extend 1nlrsslsbl " Je."
         n 1nsrsssbl "Yo...{w=1}{nw}"
         extend 1nslsssbl " me distraje un poco.{w=0.75}{nw}"
-        extend 1fspgs " Pero hombre,{w=0.2} ¡esta es una buena lectura!"
+        extend 1fspgs " Pero viejo,{w=0.2} ¡esta es una buena lectura!"
         n 1fcsbg "No tienes {w=0.3}{i}idea{/i}{w=0.3} de lo que te estás perdiendo,{w=0.2} [player].{w=0.75}{nw}"
         extend 1fsqsm " Jejeje."
 

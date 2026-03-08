@@ -27,11 +27,11 @@ init python in jn_preferences.random_topic_frequency:
         Gets the descriptor for the random topic frequency, as given by the current frequency.
         """
         return {
-            0: "Never",
-            1: "Rarely",
-            2: "Sometimes",
-            3: "Frequent",
-            4: "Often",
+            0: "Nunca",
+            1: "Casi nunca",
+            2: "A veces",
+            3: "Frecuente",
+            4: "A menudo",
         }.get(store.persistent.jn_natsuki_random_topic_frequency)
 
     def getRandomTopicCooldown():

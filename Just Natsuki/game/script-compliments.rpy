@@ -293,7 +293,7 @@ label compliment_confident:
     else:
 
         n 4fsqct "¿Ojo?{w=1}{nw}"
-        extend 3fsqcs " Lo haces,{w=0.2} ¿verdad?"
+        extend 3fsqcs " Lo entiendes,{w=0.2} ¿verdad?"
         n 3fchgn "¡Ahora eso es {i}justo{/i} lo que me gusta escuchar!"
         n 4fcsbg "Después de todo,{w=0.5}{nw}"
         extend 2fcssmeme " ¿a que simplemente {i}irradio{/i} confianza?"
@@ -459,7 +459,7 @@ label compliment_hilarious:
         n 2fsqfs "No te preocupes,{w=0.2} [player]..."
 
         if Natsuki.isEnamored(higher=True):
-            n 2fchbgleme "¡No escaparás de {i}nuestra{/i} rutina pronto!{w=0.5}{nw}"
+            n 2fchbgleme "¡No escaparás de {i}nuestra{/i} rutina tan pronto!{w=0.5}{nw}"
             extend 4fchsml " Jejeje."
 
             if Natsuki.isLove(higher=True):
@@ -503,10 +503,10 @@ label compliment_hilarious:
 
             if Natsuki.isAffectionate(higher=True):
                 $ chosen_tease = jn_utils.getRandomTease()
-                n 3fchbll "¡Muy agradecida,{w=0.2} [chosen_tease]!"
+                n 3fchbll "¡Te lo agradezco,{w=0.2} [chosen_tease]!"
             else:
 
-                n 3fchbgl "¡Muy agradecida,{w=0.2} [player]!"
+                n 3fchbgl "¡Te lo agradezco,{w=0.2} [player]!"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.hilarious
     return
@@ -532,10 +532,10 @@ label compliment_inspirational:
         extend 2fchsmedz " Supongo que debe ser natural~."
         n 1nchsm "¡Pero gracias,{w=0.2} [player]!"
         n 4fsqsm "No te preocupes."
-        extend 3fwlbg " ¡Siempre puedes contar con su servidora para {i}todas{/i} tus necesidades de inspiración!"
+        extend 3fwlbg " ¡Siempre puedes contar con tu servidora para {i}todas{/i} tus necesidades de inspiración!"
 
         if Natsuki.isEnamored(higher=True):
-            n 3fsrssl "S-{w=0.2}solo como sé que puedo contar contigo.{w=0.75}{nw}"
+            n 3fsrssl "A-{w=0.2}así como sé que puedo contar contigo.{w=0.75}{nw}"
             extend 1fchsml " Jejeje."
     else:
 
@@ -558,7 +558,7 @@ label compliment_inspirational:
 
             n 3fcsbgedz "Bueno,{w=0.2} siéntete libre de inspirarte en mí en cualquier momento,{w=0.2} [player].{w=1}{nw}"
             extend 4fsqss " Después de todo..."
-            n 2fwlbg "Eso es para lo que están los profesionales,{w=0.2} ¿verdad?"
+            n 2fwlbg "Para eso están los profesionales,{w=0.2} ¿verdad?"
 
     $ jn_compliments.last_compliment_type = jn_compliments.JNComplimentTypes.inspirational
     return
@@ -595,7 +595,7 @@ label compliment_style:
                 else:
 
                     n 2fchsml "¡Muchas gracias,{w=0.2} [player]!{w=0.75}{nw}"
-                    extend 2fchgnledz " ¡Se aprecia!"
+                    extend 2fchgnledz " ¡Lo aprecio!"
             else:
 
                 n 4tnmaj "¿Oh?{w=0.5}{nw}"
@@ -638,14 +638,14 @@ label compliment_style:
             if Natsuki.isEnamored(higher=True):
                 n 1fchsmleme "Jejeje.{w=0.75}{nw}"
                 extend 1nchsml " ¡Solo estoy feliz de que te guste este atuendo,{w=0.2} [player]!"
-                n 1ulrbol "Pero entonces...{w=0.75}{nw}"
+                n 1ulrbol "Pero...{w=0.75}{nw}"
                 extend 4tlrbol " ahora que lo pienso..."
                 n 2tsqssl "¿Debería {i}realmente{/i} sorprenderme?"
                 n 3fcsbgl "¡Y-{w=0.2}yo {i}soy{/i} la que lo lleva puesto,{w=0.5}{nw}"
                 extend 3uchgnl " después de todo!"
 
                 if Natsuki.isLove(higher=True):
-                    n 3fchblleaf "¡Te amo también,{w=0.2} [player]~!"
+                    n 3fchblleaf "¡Yo también te amo,{w=0.2} [player]~!"
             else:
 
                 n 1fcsbglsbl "¡J-{w=0.2}ja!{w=0.5}{nw}"
@@ -704,7 +704,7 @@ label compliment_thoughtful:
 
     if jn_compliments.last_compliment_type == jn_compliments.JNComplimentTypes.thoughtful:
         if Natsuki.isEnamored(higher=True):
-            n 1unmaj "...Guau.{w=0.75}{nw}"
+            n 1unmaj "...Wow.{w=0.75}{nw}"
             extend 1ulrbo " Tú...{w=0.75}{nw}"
             extend 4tnmssl " realmente sigues obsesionado con eso, ¿eh?"
             n 1ncsajl "Pero en serio,{w=0.2} [player] -{w=0.5}{nw}"

@@ -17,9 +17,9 @@ En este mod podrás:
 - El mod Just Natsuki en su última versión (Descargar en el repositorio).
  
 **Método manual**
-- Extrae el juego original y copia los archivos de la traduccion, remplaza si el gestor de archivos te lo indica\
+- Extrae el juego original y copia los archivos de la traduccion, remplaza si el gestor de archivos te lo indica
 
-❌ No se garantiza soporte para instalaciones desde gestores de mods ni fuentes externa
+❌ No se garantiza soporte para instalaciones desde gestores de mods ni fuentes externas
 
 ## 🔄 Actualizaciones
 Cuando haya una nueva actualizacion se avisara en el discord o puede revisar la ultima actualización aqui
